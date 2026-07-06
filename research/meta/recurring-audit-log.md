@@ -545,3 +545,9 @@ H1 + H2 + light audits combined token cost: ~452k subagent tokens + inline analy
 
 **Commit:** {SHA-pending}
 
+
+## 2026-07-06 — Two-bracket 30-day close EXECUTED (5 days late; surfaced by full-harness audit)
+- Raw weekly structural-output-hook fires from `hook-fire-log.md`: wk1 (06-12→18) = 7; wk2 (06-19→25) = 7; wk3 (06-26→07-02) = 25; wk4 (07-03→06, 4 days) = 13 ≈ 23/wk pace.
+- Literal pre-registered read: INCREASE → roll back priming. Confound: wk3-4 = heaviest analytical-volume window on record (program days; ~50 verification-subagent fires/wk per cost-yield ledger) — the 2026-06-01 pre-registration never normalized for volume, so the raw signal cannot separate "priming failing" from "more analytical turns".
+- **USER DECISION 2026-07-06: KEEP BOTH hooks; extend 30 days with normalized metric = weekly fires ÷ weekly main-branch commits. Extended close: 2026-08-06** (falling → keep; flat/rising → retire llm-native-priming-hook; structural-output-hook thereafter governed by the standard <5 fires/month inert rule).
+- Meta-lesson for future experiment pre-registrations: fire-count criteria MUST specify a denominator at codification time — raw counts confound with activity level (same INPUT-layer error class as L27's beat-vs-consensus needing a consensus anchor).

@@ -630,12 +630,11 @@
 
 ---
 
-- [ ] **P1 / harness / 2026-07-01** [INFRA, CAL, OPT] — Two-bracket hook retirement decision (30-day close)
-  - Origin: WEEK-3 audit 2026-06-26 confirms 8→6→7 fire pattern = PLATEAU; H1 plateau P~55% / H2 priming-effective P~10% (my model)
-  - Scope: per pre-authorized retirement framework, decide RETIRE both hooks (llm-native-priming + structural-output) OR override + extend experiment based on qualitative review
-  - Cost impact: priming-hook injects ~10-15k tokens per UserPromptSubmit = significant aggregate cost saving on retire
-  - User-authorization required to `rm ~/.claude/llm-native-priming-hook.py` + `rm ~/.claude/structural-output-hook.py`
-  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item A
+- [ ] **P1 / harness / 2026-08-06** [INFRA, CAL, OPT] — Two-bracket experiment EXTENDED close (normalized metric)
+  - Origin: 30-day close ran 2026-07-06 (5d late, harness audit). Raw weekly fires 7→7→25→~23/wk-pace = literal INCREASE, but weeks 3-4 were the heaviest analytical-volume window on record → volume-confounded; pre-registered criteria couldn't cleanly adjudicate. **USER DECISION 2026-07-06: KEEP BOTH, extend 30 days.**
+  - Scope: at 2026-08-06 compute the NORMALIZED metric — weekly structural-output fires ÷ weekly main-branch commits — for the full 2026-06-12→2026-08-06 span. Falling → priming works, keep both. Flat/rising → retire llm-native-priming-hook (structural-output-hook then stands on the ordinary <5 fires/month inert rule).
+  - Cost context: priming injects ~10-15k tokens per UserPromptSubmit — the extension consciously accepts ~30 more days of that spend to buy a clean read.
+  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item A; resolution codified in `research/CLAUDE.md` structural-output-hook entry 2026-07-06
 
 - [ ] **P1 / harness / 2026-07-15** [INFRA, OPT] — Build temporal-attribution-hook + input-data-tier-hook + cohort-decoupling-hook (3 new Stop hooks)
   - Origin: harness-optimization audit 2026-06-26 TIER 2 item B; failure modes H2 + H1 + H3 surfaced as N=2+ pattern in 7 days

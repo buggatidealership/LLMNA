@@ -679,3 +679,9 @@ User has explicitly stated narrative-driven-momentum framing trumps wait-for-pul
 - Risk envelope BORN (`portfolio/risk-envelope.md`): drawdown 30-50% stated (conviction-conditional per user framing) + revealed-preference reconciliation; Germany tax (user: income treatment, advisor confirmation flagged); envelope = DeGiro €95.406,73 only.
 - KIOXIA: user confirms same-window closure AND corrects classification — it was the ALREADY-AGREED derisk executed in full (standing "further derisk" mandate on file), not a pure emotional exit like SKH/SNDK. changes.md 2026-07-05 entry + KIOXIA thesis banner amended accordingly.
 - Still open (non-blocking): fill prices/dates for SKH/SNDK/NBIS/KIOXIA sales.
+
+## 2026-07-06 — retroactive exit documentation: TE + PURR (harness-audit catch, user-adjudicated)
+- The 2026-07-06 full-harness audit found TWO theses still claiming held positions that were absent from both the held list and the exit roster of the 2026-07-05 fresh-start baseline: **TE Connectivity** (thesis claimed ~4.82-5.38% held, last touched 2026-06-04) and **PURR / Hyperliquid Strategies** (thesis claimed ~5.7% held, last touched 2026-05-21).
+- **User adjudication 2026-07-06: both were sold earlier — exits simply never documented.** Exact dates/fills unrecorded (pre-2026-07-05; plausibly part of the June rotations). No proceeds reconstruction attempted — the 2026-07-05 screenshot baseline is already the canonical book state.
+- Both theses now carry EXITED banners (watchlist-reference); INDEX exit roster updated.
+- Process lesson feed: this is the same conversion-layer gap class as the 2026-07-05 lessons.md entry — position changes made outside the harness must be disclosed at the next session, else theses keep answering "HOLD" on dead positions (exactly what the audit caught on HYNIX/SNDK/KIOXIA same day).

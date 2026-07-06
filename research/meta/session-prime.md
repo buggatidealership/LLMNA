@@ -159,8 +159,8 @@ _Prior version claimed "no active pending predictions as of 2026-06-24" — corr
 - **2026-06-25** — Supply chain graph reconstruction (H1 capability application, monthly recurring)
 - **2026-06-26** — Two-bracket LLM-native experiment week-3 check
 - **2026-06-27** — Adversarial bear-case stress-test on held cohort (use B45-corrected base rates)
-- **2026-07-01** — Two-bracket LLM-native experiment 30-day close
-- **2026-07-04** — BOTTLENECK-FORECAST monthly (Layer-3 power gap flagged per `sector/unbypassable-layers.md`)
+- ~~2026-07-01~~ **RESOLVED 2026-07-06** — Two-bracket 30-day close: volume-confounded raw read; user decision KEEP BOTH → extended close **2026-08-06** with normalized metric (fires ÷ weekly commits); see CLAUDE.md hook entry + todo.md
+- **2026-07-04 (OVERDUE)** — BOTTLENECK-FORECAST monthly (Layer-3 power gap flagged per `sector/unbypassable-layers.md`; last_review still 2026-06-04)
 - **2026-07-11** — Codification rule + signal-density-detection 30-day net-positive check
 - **2026-07-12** — B45 priming-bracket effectiveness check (30-day audit) + session-prime maintenance discipline check
 - **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate)

@@ -24,6 +24,7 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - **NOW SOLD 2026-06-22** — same event as DDOG; `companies/NOW/thesis.md` carries EXIT banner + 3-layer GRADE
 - ARM **EXITED** 2026-06-14 — `companies/ARM/thesis.md`; AGC **EXITED** 2026-06-14 — `companies/AGC/thesis.md`
 - AXTI **EXITED** 2026-05-29 — `companies/AXTI/thesis.md`; HDS **EXITED** 2026-06-09 — `companies/HDS/thesis.md`
+- TE **EXITED** (date unrecorded, pre-2026-07-05; user-confirmed 2026-07-06 after harness-audit catch) — `companies/TE/thesis.md`; PURR **EXITED** (same — undocumented earlier sale) — `companies/PURR/thesis.md`
 
 **Active-candidate (not held):** IBIDEN (TIER S+ deep-dig priority; ABF bear-case inverted; glass-core medium-term displacement risk surfaces); CAMT (TIER S equipment vector at PLP layer); BESI (TIER S equipment vector at PLP die-attach layer)
 
