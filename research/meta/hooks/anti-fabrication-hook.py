@@ -18,7 +18,7 @@ each one is grounded — either:
 Exits 2 with stderr if uncited+ungrounded numerical claims are found, which
 surfaces the violations back to Claude as feedback for the next turn.
 
-Scope: only enforces when the cwd is the Health-Calculators repo (the
+Scope: only enforces when the cwd is this research-OS repo (dynamic root; the
 research OS). For all other repos / contexts, exits 0 (no enforcement).
 
 Citation patterns accepted as valid:

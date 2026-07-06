@@ -46,7 +46,7 @@ Exit codes:
   0 — pass (no anti-pattern, or anti-pattern + forward modeling present)
   2 — block (anti-pattern detected without forward modeling)
 
-Scope: only enforces when cwd is inside the Health-Calculators repo.
+Scope: only enforces when cwd is inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative).
 """
 
 import json

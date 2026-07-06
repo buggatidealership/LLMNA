@@ -505,7 +505,10 @@ def main():
     try:
         import os as _os
         _sentinel = _os.path.expanduser("~/.w11-armed-sentinel")
-        _dstate = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "day-state.md")
+        # 2026-07-06 audit fix: resolve via _REPO_ROOT (CLAUDE_PROJECT_DIR-aware)
+        # instead of __file__ — the old __file__-relative path silently broke if
+        # this hook ever ran from an out-of-repo copy (e.g. ~/.claude/ fallback).
+        _dstate = _os.path.join(_REPO_ROOT, "research", "meta", "day-state.md")
         if _os.path.exists(_dstate) and not _os.path.exists(_sentinel):
             print("\n🚨 W11 CONTAINER-SWAP DETECTED: cron wakes are DEAD (fresh container). Run the WAKE-AUDIT PROTOCOL (research/meta/workflow-11-autonomous-day-loop.md): fetch remote log, grade missed wakes, RE-ARM all 5 jobs, touch ~/.w11-armed-sentinel, catch-up closed market windows.")
     except Exception as _e:

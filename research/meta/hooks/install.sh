@@ -1,4 +1,20 @@
 #!/usr/bin/env bash
+# ============================================================================
+# ⚠️ DEPRECATED (2026-06-26 Architecture A; banner added 2026-07-06 audit).
+#
+# DO NOT RUN THIS under Architecture A. Hooks are live via the PROJECT-level
+# `<repo>/.claude/settings.json` (version-controlled, $CLAUDE_PROJECT_DIR-
+# relative paths) — no install step is needed; a fresh clone has hooks
+# active from turn 1. Running this script would copy the legacy mirror
+# settings.json into ~/.claude/settings.json, and since Claude Code MERGES
+# settings files, ALL 16 HOOKS WOULD FIRE TWICE per event.
+#
+# Kept only as a documented fallback if project-level settings ever stop
+# being honored. If you must use it: remove <repo>/.claude/settings.json
+# first, then run this. See research/meta/hooks/DURABLE-ACTIVATION.md.
+# ============================================================================
+#
+# (Historical header below, pre-Architecture-A:)
 # Hook installation script for the AI Sector Research OS.
 #
 # Why this exists: Claude Code on Web spins up an ephemeral container per
@@ -7,12 +23,12 @@
 # is committed to the repo so it survives, but it has to be cp'd into
 # `~/.claude/` each session for Claude Code to invoke the hooks.
 #
-# Two activation paths:
+# Two activation paths (BOTH SUPERSEDED by Architecture A — see banner):
 #
 # 1. Manual per-session activation (typical for ad-hoc sessions):
 #       bash research/meta/hooks/install.sh
 #
-# 2. Durable activation (recommended): configure this script as the
+# 2. Durable activation: configure this script as the
 #    environment setup script in the Claude Code on Web environment
 #    config UI. It then runs automatically at every container start.
 #    Docs: https://code.claude.com/docs/en/claude-code-on-the-web
@@ -31,6 +47,18 @@ set -e
 MIRROR_DIR="$(dirname "$(readlink -f "$0")")"
 CLAUDE_DIR="${HOME}/.claude"
 BACKUP_DATE="$(date +%Y-%m-%d)"
+
+# Double-fire guard (added 2026-07-06 audit): refuse to install while the
+# project-level settings are active — Claude Code merges settings files, so
+# installing the mirror settings.json alongside them fires every hook twice.
+REPO_SETTINGS="${MIRROR_DIR}/../../../.claude/settings.json"
+if [ -f "${REPO_SETTINGS}" ] && [ "${FORCE_INSTALL:-0}" != "1" ]; then
+  echo "ABORT: project-level .claude/settings.json is active (Architecture A)." >&2
+  echo "Running install.sh now would DOUBLE-FIRE all hooks. If you really" >&2
+  echo "intend the ~/.claude fallback, delete the project settings first or" >&2
+  echo "re-run with FORCE_INSTALL=1. See DURABLE-ACTIVATION.md." >&2
+  exit 1
+fi
 
 if [ ! -d "${CLAUDE_DIR}" ]; then
     echo "ERROR: ${CLAUDE_DIR} does not exist; refusing to create." >&2

@@ -41,7 +41,7 @@ Exit codes:
   0 — pass (no full thesis block, or thesis block + M/N score present)
   2 — block (full thesis block without anti-fragility M/N)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json

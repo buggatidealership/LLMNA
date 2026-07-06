@@ -15,7 +15,7 @@ has a back-reference to the artifact in its companies/{TICKER}/thesis.md
 file. If any ticker is missing the back-reference, exit 2 with stderr
 feedback so Claude is forced to complete the cascade.
 
-Scope: only enforces inside the Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 
 Why this exists (B16 in meta/biases-watchlist.md): instructions in
 CLAUDE.md are choices the model can skip. Hooks are deterministic

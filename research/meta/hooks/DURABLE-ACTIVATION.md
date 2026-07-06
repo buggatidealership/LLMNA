@@ -28,8 +28,8 @@ All three merge; hooks in each layer fire in sequence. The project-level layer i
 |---|---|---|---|
 | System | `~/.claude/launcher-settings.json` | system hooks (git-identity, git-check, reply-gate) | managed by platform; we don't touch |
 | User | `~/.claude/settings.json` | INTENTIONALLY EMPTY (just `{"hooks": {}}` + Skill permissions) | ephemeral; gets wiped on container reset; that's now fine |
-| Project | `<repo-root>/.claude/settings.json` | ALL 16 research-OS hooks (SessionStart × 2, UserPromptSubmit × 1, Stop × 13) | **version-controlled**; survives container resets |
-| Hook scripts | `<repo-root>/research/meta/hooks/*.py` + `.sh` | the hook executables themselves | version-controlled; referenced by absolute path from project settings.json |
+| Project | `<repo-root>/.claude/settings.json` | ALL 17 research-OS hooks (SessionStart × 2, UserPromptSubmit × 1, Stop × 14 — borrowed-vs-firstprinciples wired 2026-07-06) | **version-controlled**; survives container resets |
+| Hook scripts | `<repo-root>/research/meta/hooks/*.py` + `.sh` | the hook executables themselves | version-controlled; referenced by `$CLAUDE_PROJECT_DIR`-relative path from project settings.json (corrected 2026-07-06 — this row previously said "absolute path", contradicting the portability commit) |
 
 ## Verification protocol
 
@@ -53,7 +53,7 @@ bash $CLAUDE_PROJECT_DIR/research/meta/hooks/install.sh
 
 This copies all hook scripts and the LEGACY `research/meta/hooks/settings.json` (still kept as the install-target mirror) into `~/.claude/`. Subsequent sessions fall back to user-level enforcement until project-level is restored.
 
-**Note:** if you re-activate the install.sh fallback, you MUST also re-add hooks to `~/.claude/settings.json` (currently emptied for Architecture A). The install.sh handles this automatically because it copies the legacy mirror.
+**Note:** if you re-activate the install.sh fallback, you MUST also re-add hooks to `~/.claude/settings.json` (currently emptied for Architecture A). The install.sh handles this automatically because it copies the legacy mirror. **⚠️ DOUBLE-FIRE HAZARD (added 2026-07-06):** do this ONLY after removing `<repo>/.claude/settings.json` — Claude Code merges settings files, so both layers active = every hook fires twice per event. install.sh now hard-aborts in that state unless `FORCE_INSTALL=1`.
 
 ## Migration history
 

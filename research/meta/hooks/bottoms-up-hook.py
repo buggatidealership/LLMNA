@@ -50,7 +50,7 @@ Exit codes:
   0 — pass (no predictive surface, or prediction + bottoms-up indicator)
   2 — block (forward projection without bottoms-up math)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json

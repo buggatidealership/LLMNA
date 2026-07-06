@@ -66,7 +66,7 @@ Exit codes:
   2 — block (PT framing without classification — user calibration "ok to
       surface, not ok to overweight")
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json

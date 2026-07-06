@@ -37,7 +37,7 @@ Exit codes:
   0 — pass (no constraint discussed, or constraint + bypass route)
   2 — block (constraint named without bypass-route thinking)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json

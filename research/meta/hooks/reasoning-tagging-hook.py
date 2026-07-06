@@ -131,6 +131,11 @@ def load_last_assistant_message() -> str:
     except Exception:
         return ""
 
+    # Recursion guard: never re-block a Stop that a hook already blocked
+    # (infinite-Stop-loop hazard). Added 2026-07-06 audit.
+    if data.get("stop_hook_active"):
+        sys.exit(0)
+
     transcript_path = data.get("transcript_path")
     if not transcript_path or not Path(transcript_path).exists():
         return ""

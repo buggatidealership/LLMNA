@@ -38,7 +38,7 @@ Why this exists: user directive 2026-05-30 verbatim:
    never relies on outdated files. That has to be enforced and cannot just be
    instructed with the rule. This has to be either a hook or a script."
 
-Scope: only enforces inside the Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 
 Origin pattern: same architecture as cascade-enforcement-hook.py +
 anti-fabrication-hook.py (transcript JSONL reading + git status check).
@@ -245,6 +245,10 @@ def main():
         sys.exit(0)
 
     stdin_data = read_stdin_json()
+    # Recursion guard: if a prior Stop-hook block already re-fired this Stop,
+    # do not block again (infinite-Stop-loop hazard). Added 2026-07-06 audit.
+    if stdin_data.get("stop_hook_active"):
+        sys.exit(0)
     transcript_path = get_transcript_path(stdin_data)
     if not transcript_path:
         sys.exit(0)

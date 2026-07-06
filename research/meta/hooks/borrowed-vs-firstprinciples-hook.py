@@ -58,7 +58,7 @@ Exit codes:
       Layer reference / hedge / meta-discussion exemption)
   2 — block (consensus-as-anchor framing without integrity-gate marker)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json

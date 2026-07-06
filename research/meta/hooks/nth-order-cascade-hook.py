@@ -40,7 +40,7 @@ Exit codes:
   0 — pass (no trigger, or trigger + exemption present)
   2 — block (analytical conclusion without N-th order tracing)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json
