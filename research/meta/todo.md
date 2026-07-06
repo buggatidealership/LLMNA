@@ -1,6 +1,6 @@
 # To-Do — AI Sector Research OS
 
-**Last updated:** 2026-06-02 PM (post Citrini-Lotte ingest + Mitsui 4-subagent deep-dive; added Co-Tech 8358.TW investability check P1 + Mitsui entry trigger watch P2; HPE Q2 FY26 GRADE completed earlier today)
+**Last updated:** 2026-07-06 (harness-audit pruning pass: 7 stale items archived/deleted, 4 live items re-framed post-exits, header was 34 days stale; prior: 2026-06-02 PM)
 **Optimizes for:** rate at which signals become defensible, falsifiable, investable conviction earlier than consensus (per `meta/methodology.md` §Meta-First-Principle).
 
 **SessionStart hook sort order:** P0 → P1 → P2 → P3, within priority: artifact-producing > process, within ties: tag count desc, then date asc.
@@ -149,7 +149,7 @@
 
 - [x] **P1 / research / 2026-06-19** [INDP, AF, POS, CAL] — KIOXIA T+24h GRADE WINDOW OPEN — execute grade per `predictions/grading-log.md` KIOXIA prep checklist (8 steps); requires market data subagent (285A.T + SNDK + HYNIX + MU price action Jun 16-19) + MSA-CBA paper verification subagent; T+72h grade follow-up ~2026-06-22
 
-- [ ] **P1 / research / 2026-06-22** [INDP, AF, POS, CAL] — NBIS Nasdaq-100 inclusion T+0 INCLUSION DAY — capture inclusion-day open price + first-day reaction per `predictions/2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md`; T+5 grade ~2026-06-27 / T+15 ~2026-07-07 / T+30 PRIMARY ADJUDICATOR ~2026-07-22 (B48 candidate + R2 user-hypothesis empirical-verification test)
+- [ ] **P1 / research / 2026-07-07** [INDP, AF, POS, CAL] — NBIS inclusion T+15 grade TOMORROW + T+30 PRIMARY ADJUDICATOR 2026-07-22 (B48/R2 test). STATE 2026-07-06: T+0 open was NEVER captured (anchors locked as T2- per user decision — ATH \$299.86 proxy); T+5 graded PROVISIONAL 07-06 (H2-zone entry; pre-07-01 drift ≈FLAT/H1-consistent; unmodeled NEGATIVE confound = Meta-Compute 07-01); position exited 07-03, grades resolve as data-generation. Per `signals/cross-source-log/2026-07-06-nbis-t5-grade-backfill-provisional-data-gapped.md`
 
 - [x] **P1 / research / 2026-06-14** [INDP, AF, POS, CAL] — Kioxia (285A.T) VLSI Symposium June 14-18 watch + L17 candidate test N=1 application (**PRE-REGISTRATION COMPLETE 2026-06-12** at `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md`; pending Pending in `grading-log.md`; T+24h resolution ~June 19-22, T+72h ~June 22-25)
   - Origin: Kioxia 3-subagent deep-dive 2026-06-02 surfaced Stage 3 mid-melt-up with imminent CATEGORY EVENT catalyst (joint Kioxia/SanDisk MSA-CBA paper at VLSI Symposium Hawaii Jun 14-18). Forward P/E 6.24×; FY27 Q1 guide NP ¥869B = 48× YoY profit jump per [Nikkei Asia T1](https://asia.nikkei.com/business/tech/semiconductors/japan-s-kioxia-forecasts-48-fold-quarterly-profit-jump-on-ai-demand). User considering ~€4-5K initial entry parallel to SNDK SIZE UP.
@@ -157,7 +157,7 @@
   - Falsifier: If Kioxia drops >10% pre-VLSI Symposium OR if VLSI presentation doesn't materially validate MSA-CBA architecture, entry timing was wrong
   - Linked: `companies/KIOXIA/thesis.md`, `signals/cross-source-log/2026-06-02-kioxia-nand-volume-shock-verification.md`
 
-- [ ] **P1 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) + L17 candidate test N=1 application (parallel to Kioxia)
+- [ ] **P1 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) — **framing corrected 2026-07-06: SNDK EXITED ~07-01/02; print watch stands as watchlist-reference (L27 cohort test + TC-14 tell), size-up language below is HISTORICAL, deployment envelope-locked.** (Note: 'L17' below = the tombstoned number, see lessons.md — the live framework is L14/L14-v2.)
   - Origin: SNDK 5.2% under-sized vs 8-12% Active-Core target; Stage 2-3 + HIGH-CONCRETE CATEGORY EVENT markers ($42B backlog + Vera Rubin 1,152 TB SSD + MSA-CBA validation imminent + Vera BlueField-4 STX GIDS mandate). User considering ~€5-6K SIZE UP parallel to Kioxia initial entry.
   - Scope: (a) Track SNDK Q2 FY27 print (~late July 2026) — does revenue exceed Q4 FY26 $7.75-8.25B guide? Does backlog grow beyond $42B + 5 contracts? Does NCNR enforceability framework hold under audit?; (b) Stock reaction T+24h validates L14 framework forward-application; (c) If actual reaction +25-40% per Stage 2-3 + CATEGORY framework, L17 codified at N=2 (joint with Kioxia VLSI test)
   - Falsifier: If SNDK Q2 FY27 only +5-10% despite CATEGORY markers, L17 forward-application falsified — L14 only applies backward
@@ -178,7 +178,7 @@
 
 - [ ] **P1 / research / 2026-07-08** [INDP, AF, POS, CAL] — Samsung Q2 PRELIMINARY results (~Jul-7-8) — first hard demand read post-07-02 selloff
   - Origin: 2026-07-02 KR/JP selloff Tier-2 verification (`signals/cross-source-log/2026-07-02-kr-jp-selloff-TIER2-verification-addendum.md`). The 07-02 drawdown was verified sentiment/valuation, NOT demand; Samsung's preliminary (revenue/OP guidance-level) is the first hard test of whether HBM/memory demand is cracking or the drawdown was pure positioning.
-  - Scope: (a) capture prelim numbers + HBM commentary; (b) test vs the falsifier gate — TRIPWIRE: primary-sourced Nvidia BASE-Rubin HBM order-volume cut OR hyperscaler capex cut = the real demand signal (neither exists as of 07-02); (c) cohort reaction read-through to HYNIX (#1 position) + KIOXIA + SNDK.
+  - Scope: (a) capture prelim numbers + HBM commentary; (b) test vs the falsifier gate — TRIPWIRE: primary-sourced Nvidia BASE-Rubin HBM order-volume cut OR hyperscaler capex cut = the real demand signal (neither exists as of 07-02); (c) cohort reaction read-through to HYNIX + KIOXIA + SNDK (ALL watchlist-reference — exited ~07-01/05; read-through informs re-entry framework + L27 N=2 test, not sizing).
   - Linked: `companies/HYNIX/thesis.md`, `signals/cross-source-log/2026-07-02-kr-jp-selloff-TIER2-verification-addendum.md`
 
 - [ ] **P2 / research / 2026-09-15** [INDP, CAL] — Cloudflare AI-crawler enforcement deadline (PD-3 data-enclosure catalyst)
@@ -230,23 +230,6 @@
   - Origin: 2026-05-30 evening session — subagent re-surfaced LSCC as "overlooked." User flagged LSCC already in harness per `companies/LSCC/thesis.md` (created 2026-05-27 as Active-candidate). Need REFRESH not new build.
   - Scope: update LSCC thesis with last 3 days of news (any new design wins for edge AI / NVIDIA Halos Lab Holoscan Sensor Bridge); test personal-computing + mobile-phone filter (LSCC FPGAs serve broader edge incl. PC + mobile AI co-processors); reconcile new evening-brief Edge AI cluster with existing thesis; check AMI close timing
   - Linked: `companies/LSCC/thesis.md` + `signals/cross-source-log/2026-05-30-overlooked-candidates-deep-dive.md`
-
-- [ ] **P2 / verification / 2026-05-30** [AF, POS] — DISCO 6146.T ENTRY decision pending capital allocation post-Monday execution
-  - Origin: Surfaced via Citrini MLCC discussion 2026-05-30 → pivoted to Sumco-bypass-route thesis per `signals/cross-source-log/2026-05-30-citrini-mlcc-tier-rotation.md` discussion. User-confirmed investability 2026-05-30 (DISCO accessible alongside TEL 8035.T + Screen Holdings 7735.T also accessible).
-  - Existing thesis: `companies/DISCO/thesis.md` (May 25 build; anti-fragility 5/5; 70-80% global market share dicing/grinding; near-monopoly moat) + 2026-05-30 Sumco-bypass cross-source synthesis appended.
-  - Scope: After Monday 2026-06-01 MDB/DDOG/NOW execution settles, confirm remaining capital + decide DISCO entry sizing (recommended 3-5% = €5-10K). Resolve via Monday post-execution capital check.
-  - Tracked separately in `predictions/inference-log.md` Entry #3 (~65% confidence, highest of 3 open inferences).
-  - Linked: `companies/DISCO/thesis.md`, `companies/SUMCO/thesis.md`, `predictions/inference-log.md`
-
-- [ ] **P2 / research / 2026-06-06** [INDP, POS, AF] — Computex 2026 post-event INGEST brief (Computex June 2-5; NVIDIA GTC Taipei keynote June 1)
-  - Origin: User commitment 2026-05-30 to deliver brief after Computex ends, synthesizing keynote announcements + cross-portfolio cascade
-  - Scope: (a) Verify NVDA N1/N1X PC processor specs + ARM partnership terms post-keynote; (b) Confirm Microsoft local AI agent software details; (c) Catch other portfolio-relevant announcements; (d) Update ARM AGI CPU thesis with Computex confirmation/falsification; (e) Cascade to held theses per Critical Rule #10
-  - Linked: `signals/cross-source-log/2026-05-30-nvda-msft-arm-coordinated-ai-pc-tease.md`, `signals/cross-source-log/2026-05-30-arm-agi-cpu-deep-dive.md`, `companies/ARM/thesis.md`
-
-- [ ] **P2 / verification / 2026-08-15** [CAL, AF, POS] — ARM Q2/Q3 FY27 earnings verification — AGI CPU revenue contribution + blended margin trajectory + FTC probe direction
-  - Origin: 2026-05-30 ARM AGI CPU deep dive surfaced 3 risks under-weighted in prior coverage: (1) margin dilution (50% AGI CPU GM vs 98% IP licensing GM per CFO Jason Child to CNBC), (2) FTC antitrust probe opened May 2026 investigating ARM degrading/denying architecture licenses to competing licensees, (3) Stage 4 priced-to-perfection (+84% YTD)
-  - Scope: At ARM Q2 FY27 print (~Aug 2026), evaluate (a) AGI CPU revenue contribution % of total, (b) blended GM trajectory, (c) FTC probe status update, (d) any additional named customer wins (AWS / Google / Microsoft transition from "supportive" to actual customers). If all 4 favorable → SIZE UP to Core tier (12-13%) actionable. If any unfavorable → maintain HOLD at 11.36% or reassess.
-  - Linked: `signals/cross-source-log/2026-05-30-arm-agi-cpu-deep-dive.md`, `companies/ARM/thesis.md` AGI CPU section
 
 ### P2 — SoC building-block layer deep-dives (added 2026-05-31)
 
@@ -306,11 +289,6 @@
     2. `.github/workflows/recurring-audit-reminder.yml` runs weekly Monday 9am UTC; creates a GitHub issue when DUE_SOON / DUE_TODAY / OVERDUE fires
   - **Linked**: `meta/methodology.md` (Principles #29-#34), `meta/biases-watchlist.md` (B31-B38), `meta/principle-applications-log.md`, `meta/recurring-audit-log.md`, recent commit log
 
-- [ ] **P2 / verification / 2026-06-15** [INDP, AF] — Schwab June 2026 AI agent launch — triangulation 3rd-data-point candidate
-  - Origin: Robinhood + eToro + Moomoo agentic-trading launches Apr-May 2026 (per `signals/events/2026-05-27-robinhood-agentic-trading.md`). Schwab targeting June 2026 per [WealthManagement.com T3](https://www.wealthmanagement.com/ria-news/schwab-makes-ai-push-with-client-facing-agents-to-roll-out-in-june). If 3rd same-segment data point lands, agentic-brokerage promotes to triangulation per principle #29.
-  - Scope: verify Schwab launch date + scope + tech stack; if launched, promote agentic-brokerage cluster to triangulation.md; cascade to DDOG (regulatory observability mandate validation) + SNDK (compliance NAND demand validation). Also: apply Principle #33 top-down capability decomposition to Schwab as 2nd application of the framework — validation criterion for the principle.
-  - Linked: `signals/events/2026-05-27-robinhood-agentic-trading.md`, `companies/DDOG/thesis.md`, `companies/SNDK/thesis.md`, `meta/methodology.md` principle #33
-
 - [ ] **P2 / research / 2026-06-05** [INDP] — Back-fill China sovereignty cluster TRACE event (verification catch 2026-05-28)
   - Origin: 2026-05-28 verification step caught that `signals/events/2026-05-26-china-ai-sovereignty-cluster.md` does NOT exist despite my session-memory claim. The cluster's prior signals (Huawei LogicFolding May 25 + China talent restrictions May 26 + DeepSeek V4 State AI Fund May 16) exist only as scattered cross-references across ARM thesis + Google I/O event + 13F analysis. Today's "China 9 chips certified" (May 28) signal would be 3rd-4th data point if cluster were properly documented.
   - Scope: (a) Read prior signals from ARM thesis cross-refs, Google I/O event file, 13F analysis to extract verified facts; (b) cross-verify Huawei LogicFolding announcement details + China talent restriction scope via independent T1/T2 sources; (c) consolidate into proper TRACE event file at `signals/events/2026-05-26-china-ai-sovereignty-cluster.md`; (d) IF cluster has 3+ verified same-segment data points within 90 days, promote to `signals/triangulation.md` as 2nd segmented-triangulation entry (advanced-packaging EMIB-T was 1st).
@@ -344,6 +322,32 @@
 ---
 
 ## Archive (completed process items without permanent artifact)
+
+### 2026-07-06 harness-audit pruning pass (7 items archived, 1 deleted)
+
+*(MRVL thesis-build item DELETED per the artifact rule — `companies/MRVL/thesis.md` exists, full 06-12 refresh; MRVL exited 06-27.)*
+
+- [x] **P2 / verification / 2026-05-30** [AF, POS] — DISCO 6146.T ENTRY decision pending capital allocation post-Monday execution
+  - **ARCHIVED 2026-07-06:** premise dead: 'post-Monday-2026-06-01 execution capital check' predates two full book resets; deployment envelope-locked since 07-05. DISCO thesis (5/5 anti-fragility) remains on file for future entry consideration.
+
+- [x] **P2 / research / 2026-06-06** [INDP, POS, AF] — Computex 2026 post-event INGEST brief (Computex June 2-5; NVIDIA GTC Taipei keynote June 1)
+  - **ARCHIVED 2026-07-06:** event was June 2-5; ingest never delivered and is now a month stale; primary cascade target (ARM AGI CPU thesis) exited 06-14. Any Computex-material facts have since arrived through normal feeds.
+
+- [x] **P2 / verification / 2026-08-15** [CAL, AF, POS] — ARM Q2/Q3 FY27 earnings verification — AGI CPU revenue contribution + blended margin trajectory + FTC probe direction
+  - **ARCHIVED 2026-07-06:** scope was a SIZE-UP/HOLD decision on a held ARM position — ARM exited 2026-06-14; item is moot. Re-open only if ARM re-entry is ever considered (thesis retained as watchlist-reference).
+
+- [x] **P2 / verification / 2026-06-15** [INDP, AF] — Schwab June 2026 AI agent launch — triangulation 3rd-data-point candidate
+  - **ARCHIVED 2026-07-06:** 21d overdue; cascade targets (DDOG observability / SNDK compliance-NAND validation) both exited. Agentic-brokerage 3rd-datapoint can resurface organically via Leg B; no standing item needed.
+
+- [x] **P2 / verification / 2026-06-24** [INDP, AF, POS] — TC-9 candidate promotion decision (agentic-observability mandate)
+  - **ARCHIVED 2026-07-06:** RESOLVED NO-PROMOTE 2026-07-06 (documented in triangulation.md index note): promotion review lapsed at the 06-24 audit, then DDOG/NOW — the cluster's beneficiaries — were sold 06-22. TC-9 number stays reserved.
+
+- [x] **P2 / research / 2026-06-20** [INDP, POS] — Document why DDOG + NOW were trimmed -33%/-35% in 2026-06-12 rotation
+  - **ARCHIVED 2026-07-06:** superseded: the -33%/-35% trims became FULL EXITS 2026-06-22 (user self-flagged Critical Rule #8 violation); both theses carry EXIT banners + 3-layer GRADEs — the documentation this item wanted exists in stronger form.
+
+- [x] **P3 / verification / 2026-06-25** [INDP] — Contrail Compute AIX RISC-V AI execution platform T1 verification
+  - **ARCHIVED 2026-07-06:** premise stale: framed as 'ARM-alternative threat watch (ARM held 3.2%)' — ARM exited 06-14; single-source vendor PR never corroborated in 3+ weeks of feeds.
+
 
 (Items that DID produce a permanent artifact are deleted — the artifact replaces the to-do. The artifact location is noted in case future Claude needs to find it.)
 
@@ -548,28 +552,13 @@
   - Scope: at monthly codification audit (2026-06-24), verify session-prime.md (a) is ≤500 lines, (b) all listed CANDIDATE biases are still active (not gone INERT >30 days), (c) listed recent lessons are within rolling-5 window, (d) regime base rate not stale, (e) any codification commits since session-prime creation also updated session-prime
   - Action: prune INERT items; promote/demote per the file's own cap rules; add to consolidated monthly audit checklist
 
-- [ ] **P2 / verification / 2026-06-24** [INDP, AF, POS] — TC-9 candidate promotion decision (agentic-observability mandate)
-  - Origin: 2026-06-12 morning brief surfaced 4-signal stack over 2 days on agentic-deployment-without-observability failing (DN42 agent bankruptcy + KPMG hallucinations report + DeepMind multi-agent safety funding + botsitting 6+hrs/wk). Segment: agentic-application. Direct tailwind for DDOG + NOW (both held). Per Critical Rule #14, N≥3 same-segment same-direction → promotable.
-  - Scope: at 2026-06-24 monthly audit, verify the 4 source items remain T2/T3-tier; check for additional same-segment signals between 2026-06-12 and 2026-06-24; if N≥5 with same direction → promote TC-9 to ACTIVE and cascade sizing-implication review for DDOG + NOW; if signals drift to different sub-segments → keep CANDIDATE and re-examine at next monthly audit
-  - Linked: `signals/cross-source-log/2026-06-12-morning-brief-21-item-triage.md` §5; `companies/DDOG/thesis.md` 2026-06-12 cross-ref; `companies/NOW/thesis.md` 2026-06-12 cross-ref
-
 - [ ] **P2 / verification / 2026-09-30** [INDP, AF, POS] — ALAB Trainium3 Scorpio fabric award watch (Q3 2026 expected per RBC T2)
   - Origin: 2026-06-12 connectivity-layer re-evaluation (`signals/cross-source-log/2026-06-12-connectivity-layer-alab-reevaluation-2subagent.md`) — single most informative upcoming datapoint for the ALAB H1/H3 split
   - Scope: confirm whether AWS Trainium3 scale-up fabric socket goes to ALAB Scorpio or MRVL; if ALAB → entry trigger (a) fires, enter 2-3% per re-evaluation; if MRVL → demote ALAB watchlist P2→P3 + H3 (absorption squeeze) reweights up materially
   - Secondary triggers tracked same item: 2nd CXL hyperscaler disclosure (CATEGORY EVENT, run L14-v2 pre-rally check before entry); ALAB Q2-26 print ~Aug 11 (estimate)
   - Linked: `companies/ALAB/thesis.md` 2026-06-12 re-evaluation
 
-- [ ] **P1 / research / 2026-06-15** [INDP, AF, POS] — Build MRVL thesis on equal footing with ALAB re-eval (NEW HELD POSITION ~5.9%)
-  - Origin: 2026-06-12 PM portfolio rotation introduced MRVL as new ~5.9% holding (44 sh @ $287); no existing thesis file in harness. User asked "should we own both to hedge ALAB" — the question is mal-formed without an MRVL thesis on the connectivity-layer evaluation matrix used for ALAB (`signals/cross-source-log/2026-06-12-connectivity-layer-alab-reevaluation-2subagent.md`).
-  - Scope: full thesis build — apply the same 6-axis connectivity matrix (content-per-accelerator / standard-rail / commercial-revealed-preference / breadth / moat depth / valuation vs B45) to MRVL; XConn integration milestones; 51.2T CPO traction; NVLink Fusion design wins (named); Structera CXL pipeline; AEC competitive position vs Credo; FY27/FY28 framework
-  - Cross-reference: connectivity re-eval cross-source-log + ALAB thesis 2026-06-12 entry; joint-state with ALAB rivalry
-  - Output: `companies/MRVL/thesis.md` + joint MRVL-vs-ALAB comparator section in connectivity log
-
-- [ ] **P2 / research / 2026-06-20** [INDP, POS] — Document why DDOG + NOW were trimmed -33%/-35% in 2026-06-12 rotation
-  - Origin: 2026-06-12 PM rotation cut software-cluster exposure materially; thesis files don't yet reflect rationale; rotation reduces TC-9 (candidate agentic-observability mandate) cascade beneficiaries' weight before TC-9 promotion audit 2026-06-24
-  - Scope: confirm with user whether trim reflects: (a) valuation discipline, (b) thesis conviction softening, (c) capital reallocation to MRVL/SNDK, (d) all of the above; cascade to DDOG + NOW thesis files
-
-- [ ] **P1 / verification / 2026-08-25** [INDP, AF, POS, CAL] — MRVL Q2 FY27 print + L14/L19/B42 watch (HELD ~5.9%)
+- [ ] **P2 / verification / 2026-08-25** [INDP, AF, CAL] — MRVL Q2 FY27 print + L14/L19/B42 watch — **re-framed 2026-07-06: MRVL EXITED 2026-06-27; print = the thesis's pre-registered RE-ENTRY trigger watch (die-design-minority disclosure OR Trainium-4 win), not a held-position falsifier**
   - Origin: 2026-06-12 3-subagent MRVL deep-dive (`signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`); falsifier #1 of MRVL thesis fires/falsifies at this print
   - Scope: (a) Was FY28 custom Si guide RAISED with named NEW XPU customer (Google MPU, new hyperscaler)? → confirms H1 bull; (b) Was guide reaffirmed with no new named customer? → base case dominant; (c) Was guide trimmed? → bear K2 fires → trim trigger; (d) Stock T+24h reaction vs L14/L14-v2 framework — calibration data point
   - Linked: `companies/MRVL/thesis.md` falsifier #1; `predictions/lessons.md` L11/L12/L13; `signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`
@@ -600,7 +589,7 @@
 
 - [x] **DONE 2026-06-12 EVE same-session** — Rubin CPX B40 contradiction RESOLVED via verification subagent: Scenario (c) — June 12 brief recycled Sept 10, 2025 SemiAnalysis article as fresh news (URL confirmed `semianalysis.com/2025/09/10/...`). June 4 cancellation anchor was CORRECT. HYNIX HBM thesis INTACT. B40.1 increment to N=10+. Closed in cross-source-log verification register. Discovery D2 (inference architecture bifurcation) ALSO COLLAPSES — no Rubin CPX = no prefill/decode chip-class split from NVDA side.
 
-- [ ] **P2 / verification / 2026-06-20** [INDP] — Fable 5 / Mythos 5 access-restore check (H1 transient vs H2 structural resolver)
+- [ ] **P2 / verification / 2026-07-13** [INDP] — Fable 5 / Mythos 5 access-restore check (H1 transient vs H2 structural resolver) — **re-dated 2026-07-06 (was 06-20, went 16d overdue unexecuted); still TC-10-live: by now the H1-transient window has long passed, so the check doubles as an H2-structural confirmation datapoint unless access was quietly restored**
   - Origin: 2026-06-12 US export-control directive disabled Fable 5 + Mythos 5 globally (`signals/cross-source-log/2026-06-12-us-export-control-fable-mythos-suspension-model-layer-FIRST.md`). H1 transient (P~45% my model) confirms if access restored allied-tier by ~June 20; if still disabled or a 2nd model-layer action appears, H2 structural-regime weight rises.
   - Scope: check Anthropic status + news for Fable/Mythos restoration; check for any SECOND model-layer export action (any provider); update TC-10 candidate cluster N-count + status
   - Linked: TC-10 in `signals/triangulation.md`; the export-control cross-source-log
@@ -615,11 +604,6 @@
   - Scope: 90-day watch for (a) ITC formal acceptance of Section 337 investigation (procedural milestone); (b) N=2 instance — any other hardware-IP enforcement action targeting AI chip flow; (c) hyperscaler/foundry public commentary
   - Outcome decision tree: ITC accepts + N=2 emerges → promote TC-11 CANDIDATE → ACTIVE → cascade to MRVL/NVDA watchlist + held MRVL thesis update; ITC declines OR no N=2 → keep candidate; close at 2026-09-13 monthly review
   - Linked: TC-11 in `signals/triangulation.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
-
-- [ ] **P3 / verification / 2026-06-25** [INDP] — Contrail Compute AIX RISC-V AI execution platform T1 verification
-  - Origin: 2026-06-13 AM brief item #12 — Epic Semi PR claims first RISC-V AI execution platform. Single source (T2 vendor PR); ARM-alternative thesis watch (ARM held 3.2%).
-  - Scope: verify whether AIX is shipping product OR pre-product PR; if real, what customers / volume / when does it reach commercial scale; does it materially threaten ARM royalty model in next 24-36 months
-  - Linked: `companies/ARM/thesis.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
 
 - [ ] **P1 / research / 2026-06-15** [INDP, AF, POS] — Sizing-decision threads if user proceeds with TC-10 + Layer-3 candidates
   - Origin: 2026-06-14 AM 2-subagent parallel research (`signals/cross-source-log/2026-06-14-eu-sovereign-AI-and-corrected-layer-3-bypass-2subagent.md`) surfaced 4 candidates closing 2 harness gaps:
