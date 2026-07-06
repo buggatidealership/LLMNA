@@ -10,6 +10,7 @@
 - ~2026-07-07: NBIS T+15 inclusion grade (`predictions/2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md`) — US pre-market wake; note the Meta-Compute −15% confound in the grade.
 - 2026-07-03: US markets CLOSED (Jul-4 observed). KR/JP + EU wakes only; US wake = skip-fast.
 - 2026-07-10: TSMC June monthly — TSMC prediction v2 checkpoint (pre-committed).
+- **2026-07-09/10 SKH ADR: pricing Thu 07-09, trading ~07-10.** Cornerstones VERIFIED T1 (Reuters/filing 07-06): Baillie Gifford + Coatue + Situational Awareness, up to $7bn combined; base raise ~$28.07bn @ ₩242,500/ADR ref (the on-file ₩45.4tn/$29.4bn = greenshoe max — reconciled). NEW: ADR = first-ever 13F-reportability for SKH (Q3-26 13Fs ~Nov). Per `signals/cross-source-log/2026-07-06-skh-adr-cornerstones-situational-awareness-verification.md`.
 - Watch-state (no dates): ONTO quote-conflict resolution; Asia-close reconciliation queue.
 - ~~🚨 P0 2026-07-03: NBIS falsifier-arithmetic flag~~ **MOOT (struck 2026-07-06):** resolved by the 07-03 decision package → falsifier honored → ALL 30sh sold 2026-07-03. No T1-close re-check needed; only the T+15/T+30 inclusion grades remain (see calendar row above). Historical detail retained in `companies/NBIS/thesis.md` + `signals/cross-source-log/2026-07-03-AM-global-overnight-queued-verification-jul2-close-metacompute-2nd-order-sbneo-nvidia-buyback-weekend-calendar.md`.
 
