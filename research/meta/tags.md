@@ -160,7 +160,7 @@ Current tail: **TC-14 ACTIVE** (refreshed 2026-07-06; TC-12/13 added 2026-06-25,
 - **TC-9** (NOT IN triangulation.md as own cluster — was INDEX.md notation for DDOG AI-Observability tailwind; do NOT use TC-9 as a cluster reference until formally promoted in triangulation.md)
 - **TC-10** Model-layer sovereignty + export control + competitive-capture + security-incident + bypass-route materialization at national-government tier (N=9 + NBIS UK proof case; H_d 40% / H_a 35% / H_b 35% / H_c 8%)
 - **TC-11** Hardware-IP / patent enforcement at chip-import layer [CANDIDATE N=1; ITC Section 337 UMC patents vs TSMC imports; lapse check ~2026-09-11 if no N+1]
-- **TC-12** DRAM>HBM margin inversion in upcycle [ACTIVE N=5; Mehrotra T1 "non-HBM margins higher than HBM"; extends to legacy DDR4 per Nanya Q1'26]
+- **TC-12** DRAM>HBM margin inversion in upcycle [ACTIVE N=6 (07-06: demand-side corroboration — Nvidia high-stack pushback / 12-Hi mainstay); Mehrotra T1 "non-HBM margins higher than HBM"; extends to legacy DDR4 per Nanya Q1'26]
 - **TC-13** AI power-infrastructure bottleneck cascade [ACTIVE N=7+; transformers/transmission/switchgear/liquid-cooling/MLCC/800V compound binding 2026-2028; P=0.75 (my model) ≥3 bind together]
 - **TC-14** YMTC commodity-NAND westward qualification [ACTIVE promoted N=3 2026-07-05; Lenovo ThinkBook first Western-OEM pre-install; regime-change tell = 2nd+3rd Western-OEM design-win]
 

@@ -3121,3 +3121,12 @@
 **Thesis cascade triggered:** prediction addendum (bar) / envelope §5 (baseline) / SUMCO thesis+todo (date) / funding node (rates leg) / candidates (JP financials theme) / day-state.
 **Position implication delta:** NONE. **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-06-kr-jp-morning-scan-prelim-eve.md` **Commit:** (this commit)
+
+## 2026-07-06 EVE — user-shared 2-input ingest (UBS SKH/Samsung note + Jukan JEDEC-HBM5 relay)
+**Fires:** 2 (Opus, parallel; Tier-2 auto-fire post-gate-lift). **Est. tokens:** ~48k (25.0k UBS-provenance + 22.9k JEDEC-verification).
+**Items verified:** UBS note freshness/provenance + consensus vintage (KR-native) + 2029-rollover context; JEDEC HBM5 thickness story origin/freshness + HBM4 precedent + demand claims + equipment cascade.
+**Yield class:** HIGH (agent A: B40-clean fresh-verdict + bar arbitration for TONIGHT'S print + refuted my "2029 convergence" hypothesis) / HIGH (agent B: B40.1 partial catch — substance 4mo old — + B40.3 extrapolation flag + TC-12 N=6 demand-side corroboration + correctly bounded the BESI cascade).
+**Brief-framing errors caught:** "hybrid bonding not even in HBM5" = extrapolation-not-decision (B40.3); story-freshness illusion (Mar/Apr substance, 07-06 packaging); Visible-Alpha-vs-FnGuide consensus-panel conflation risk neutralized pre-print.
+**Thesis cascade triggered:** HYNIX back-ref / Samsung prediction consensus addendum / TC-12 N=6 (index+body+tags) / BESI watch-line / deep-dig queue #2 premise note.
+**Position implication delta:** NONE. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md` **Commit:** (this commit)

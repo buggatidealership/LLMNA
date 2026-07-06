@@ -1,6 +1,8 @@
 # BESI (BE Semiconductor Industries — AMS:BESI / NASDAQ:BSEMY) — Thesis stub
 
-**Last updated:** 2026-06-15 PM (TSMC PLP / CoPoS ETNews 2-subagent verification — Q1 2026 orders doubled YoY T1; format-agnostic die-attach surfaces as TC-5 N+1 datapoint)
+**Last updated:** 2026-07-06 (HBM hybrid-bonding-slip watch-line added; prior 2026-06-15 PM)
+
+**📌 [2026-07-06] WATCH-LINE — HBM hybrid-bonding insertion may slip past HBM5 (bounded negative on the HBM optionality leg only).** Per `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md`: JEDEC reportedly discussing 20-Hi (HBM5) thickness relaxation to ~900-1,000μm (ZDNet KR 07-06 T2; same pattern as the HBM4 720→775μm relaxation that kept microbumps/TC bonding); Hanmi on record that TC bonders suffice through HBM4 AND HBM5; Nvidia high-stack demand pushback + 12-Hi-mainstay claims corroborated (TC-12 N=6). **Bounded read (do NOT over-cascade):** BESI's current order momentum (Q1-26 €269.7M +105% YoY, Q2 guide +30-40% QoQ, T2) is logic/2.5D/mobile-driven, NOT HBM — only 2 eval tools at a second memory customer. This is a future-optionality haircut on the HBM leg, not an order-flow reversal; the TC-5/PLP die-attach leg (the TIER-S rationale) is untouched. **Falsifier for the watch-line:** a memory maker publicly committing hybrid-bonding insertion for HBM5 (would REVERSE this) — or, in the bear direction, JEDEC formalizing the relaxed standard + a 3rd maker deferring hybrid-bonding capex → then re-tier the HBM optionality leg explicitly. **Position implication: ⚪ NO ACTION — 🟡 — active-candidate status unchanged (not held); entry-trigger framework unchanged; HBM-leg optionality now carries an explicit slip-risk marker.**
 
 ## 2026-06-15 PM back-reference — Q1 2026 orders doubled YoY + format-agnostic die-attach for PLP
 

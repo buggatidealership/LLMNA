@@ -21,7 +21,7 @@ When the user says "deep dig" (with or without target), Claude self-selects the 
 (See "## Completed deep-digs" below)
 
 ### 2. HBM stack-height ASP / HBM3E 12-Hi → HBM4 16-Hi
-- **Status:** queued
+- **Status:** queued — **PREMISE WEAKENING (2026-07-06):** 16-Hi customer discussions "not actively taking place"; 12-Hi likely mainstay even in HBM4E; Nvidia pushing back high-stack demand (TC-12 N=6 demand-side corroboration, per `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md`). If confirmed at next touch, the dig's frame shifts from "16-Hi ASP delta" to "12-Hi-longer + thickness-relaxation economics" (who wins when stack height plateaus: TC-bonder incumbents, conventional-DRAM capacity, NOT hybrid-bonding capex)
 - **Seed source needed:** Per-stack ASP delta data from HBM4 16-Hi vs HBM3E 12-Hi; MR-MUF vs TC-NCF process yield differential
 - **Affected names:** HYNIX (largest held position per `research/portfolio/holdings.md`), Samsung Memory, Micron
 - **Cross-correlation:** Camtek (CAMT — packaging metrology), AIXTRON (compound semi adjacency), substrate makers Ibiden/Shinko
