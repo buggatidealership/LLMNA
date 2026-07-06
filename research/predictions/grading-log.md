@@ -91,6 +91,31 @@ When a resolution date hits:
 
 ---
 
+## [2026-07-06 GRADED — backfill] MU Q3 FY26 print (registered 2026-06-23 in cross-source-log only; resolved 2026-06-24)
+
+**Status:** GRADED 12 days late (audit-surfaced: prediction was never ledgered at registration time; retro-registered + graded 2026-07-06)
+**Pre-registration:** `signals/cross-source-log/2026-06-23-am-subagent-mu-beat-probability-data-pack-tomorrow-print.md`
+**Outcome artifact:** `signals/cross-source-log/2026-06-24-pm-subagent-mu-q3-fy26-earnings-print-l27-first-regime-test.md`
+
+**Predicted (5 hypotheses, 2026-06-23):** modal H1 (P~50%, my model): beat consensus ($34.5-35.6B rev / $19.72-20.49 EPS) + Q4 guide ≥$38B → +10-20% continuation; P(operational beat)=85%; Q4 analyst-modeled range $38-42B; H5 (P~10%): beat + structural disclosure → +15-25%.
+
+**Actual (T1 SEC 8-K):** revenue **$41.46B** (+16.5-20.2% vs consensus), non-GAAP EPS **$25.11** (+22-27%), Q4 FY26 guide **$50.0B ±$1.0B** — +131% of the $38B binary gate and +16.6% above the buy-side high ($42.9B); largest forward guide in Micron history. **H1 FIRED (modal) + H5 PARTIAL** (HBM4 volume-ramp-ahead-of-yield-curve disclosure). 6/6 pre-print directional theses validated. AH reaction ~+2.5% muted — classified in the 06-24 artifact as a distortion artifact of the −13.18% pre-print KOSPI-contagion selloff, not disappointment.
+
+**3-layer GRADE:**
+- **INPUT — the failed layer (partially):** every modeled magnitude band was demolished — the Q4 scenario range topped at $42B vs actual $50B, and the H1 reaction band (+10-20%) never contemplated a +131%-of-gate guide. The optimistic tail was under-sampled EVEN AFTER B45 correction — B45's recursive-persistence pattern (pre-training magnitude conservatism survives its own codification). Second INPUT defect: process — no grading-log stub was registered at prediction time (Critical Rule: PREDICT workflow step skipped), which is why this grade is 12 days late.
+- **COMPUTATION — sound:** 5-hypothesis joint distribution well-formed; P-weights reasonable (modal fired); P(operational beat)=85% resolved TRUE; decoupling of P(beat) from P(positive reaction) was structurally correct.
+- **REASONING — sound:** correctly pre-identified the Q4 guide (not the Q3 beat) as the true binary; correctly applied L21 to classify the muted AH reaction as macro-confounded rather than thesis-negative.
+
+**Diagnostic:** direction right, magnitude wrong by tail-underestimate → INPUT layer (B45-class).
+
+**Reaction leg (Two-Part GRADE protocol):** T+24h close was never formally captured (same process gap); AH +2.5% recorded as CONFOUNDED/NON-SCORING for the bimodal-print framework — does not count for or against L27's reaction predictions.
+
+**L27 verdict:** **N=1 POSITIVE — beat-pattern intact, regime-test GREEN.** Next tests: HYNIX Q2 (~Jul-29) = N=2, MURATA Q1 FY27 (Jul-31) = N=3.
+
+**Calibration adjustment:** for the late-July v2 ensembles (HYNIX/MURATA/SNDK, T-5d re-runs per the earnings program), add an explicit above-buy-side-high tail scenario with non-trivial P — regime-confirmation events keep landing in the unmodeled optimistic tail (consistent with L26/L30).
+
+---
+
 ## [2026-06-26 GRADED] KIOXIA-VLSI-symposium-pre-registration (2026-06-12)
 
 **Status:** GRADED (4-7 days late vs T+24h/T+72h windows)

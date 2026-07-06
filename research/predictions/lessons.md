@@ -754,7 +754,14 @@ In the current AI-supercycle regime (B45 codified 2026-06-12), the per-quarter b
 
 **User explicit sign-off:** *"yes pls codify and we resolve it past Micron earnings."* (2026-06-23 AM, post-image-share)
 
-**Status:** CANDIDATE — N=1 origin 2026-06-23 user articulation; first empirical resolution 2026-06-24 MU after-close print. Cycle-peak detection adjacency: L27 is the FORWARD-LOOKING regime-test complement to user-articulated cycle-peak triggers (cohort-correlation breaks + beat-and-no-rally clustering + dispersion widening per `portfolio/constraints.md` UPDATE 2 2026-06-22 PM).
+**Status:** CANDIDATE — **first empirical resolution GRADED (backfill 2026-07-06): N=1 POSITIVE.** MU Q3 FY26 (2026-06-24): H1 modal FIRED with magnitude amplification — rev $41.46B vs cons $34.5-35.6B, Q4 guide $50.0B vs the $38B binary gate (+131%); beat-pattern intact, regime-test GREEN. Full 3-layer GRADE in `grading-log.md` [2026-07-06 GRADED — backfill] section (failed layer: INPUT magnitude-ceiling, B45-class; computation + reasoning sound; AH reaction CONFOUNDED/NON-SCORING per −13.18% pre-print cohort selloff). N=2 test = HYNIX Q2 ~Jul-29; N=3 = MURATA Q1 FY27 Jul-31. Cycle-peak detection adjacency: L27 is the FORWARD-LOOKING regime-test complement to user-articulated cycle-peak triggers (cohort-correlation breaks + beat-and-no-rally clustering + dispersion widening per `portfolio/constraints.md` UPDATE 2 2026-06-22 PM).
+
+[2026-07-06 backfill; resolved 2026-06-24] MU-Q3-FY26-print
+Predicted: modal H1 P~50% (my model) beat + Q4 guide ≥$38B; P(operational beat) 85%; Q4 modeled range $38-42B; H1 reaction band +10-20%
+Actual: rev $41.46B (+16.5-20.2% vs cons) / EPS $25.11 (+22-27%) / Q4 guide $50.0B ±$1.0B (+131% of gate, +16.6% above buy-side high) — H1 FIRED + H5 partial; AH +2.5% muted (macro-confounded, non-scoring)
+Layer that failed (INPUT / COMPUTATION / REASONING): INPUT — magnitude ceiling: all modeled bands topped out below actual; optimistic tail under-sampled even after B45 correction (B45 recursive-persistence). Secondary process-INPUT: never ledgered at registration (grade ran 12 days late via harness audit).
+Generalizable lesson: in this regime, scenario bands must include an explicit above-buy-side-high tail with non-trivial P; regime-confirmation events keep resolving in the unmodeled optimistic tail (L26/L30-consistent). And: a prediction that never enters grading-log.md functionally doesn't exist to the GRADE loop — ledger registration IS part of the prediction.
+Calibration adjustment: late-July v2 ensembles (HYNIX/MURATA/SNDK) get an above-buy-side-high scenario; L27 N=1 POSITIVE logged; ledger-registration step added to the failure-watch list.
 
 **Cross-ref:**
 - B45 regime-corrected priors (binding)
