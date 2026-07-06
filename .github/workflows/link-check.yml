@@ -1,0 +1,27 @@
+name: Referral-Path Integrity
+
+# The reference layer (INDEX.md, cross-links, tags) is the firm's retrieval
+# spine. This job guarantees referral paths can never silently rot: any push
+# that introduces a NEW broken `research/...` reference fails.
+# Pre-existing breaks are tracked in .github/link-check-baseline.txt.
+
+on:
+  push:
+    paths:
+      - 'research/**'
+      - 'CLAUDE.md'
+      - 'README.md'
+      - '.github/scripts/check-internal-links.py'
+      - '.github/link-check-baseline.txt'
+  pull_request:
+    paths:
+      - 'research/**'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internal referral paths
+        run: python3 .github/scripts/check-internal-links.py
