@@ -1635,6 +1635,29 @@ For every promotion gate / falsifier / monitoring variable in a thesis or cluste
 
 ---
 
+## Principle #42 candidate (added 2026-07-06 per user articulation) — Retrieval-Staleness Verification at Question Time
+
+**User articulation 2026-07-06 (the design input, near-verbatim):** *"Whenever I ask a question similar to the one I just did, instead of relying on a file where you have the last update date, my hypothesis is that running a verification agent instantly to check if the file is outdated on certain aspects or is missing certain variables or functions seems to be a good necessity — to ensure that the patterns you find across the harness are based on the most up-to-date and verified data."*
+
+**The rule:** when the user asks an analytical question whose answer is assembled from harness files AND the answer carries position/tier/candidate-framing weight, do NOT answer from the file alone — fire (or piggyback on an in-flight) verification agent that checks the file's LOAD-BEARING claims for (a) staleness against the live world, (b) missing variables the question implicates. The answer may ship concurrently with an explicit "verification in flight" tag; it must be corrected visibly if the check contradicts it.
+
+**Scope discipline (do NOT re-verify everything):**
+- Fires on: position-relevant Q&A over covered names/layers, especially fast-moving domains (pricing, capacity ramps, qualification races, consensus bars).
+- Lighter pass when the file's load-bearing claims were T1/T2-verified within ~72h — cite the freshness explicitly instead of re-firing (the 2026-07-06 ASMPT/BESI answer pattern: thesis rebuilt 07-03 + same-day equipment-layer verification in flight = acceptable).
+- Exempt: harness-meta, restatement, file-narration (same exemption class as Critical Rule #15).
+- This is the RETRIEVAL-TIME complement to the existing AUDIT-TIME staleness machinery (30-day STALE flags, monthly audits): audits catch drift eventually; this catches it at the moment the file is about to carry an answer.
+
+**Verification-is-a-spectrum doctrine (user, same articulation — context, not a task):** *"Verification will always be a spectrum. It will never be a hundred percent verified or zero percent. There's only so much even a human analyst can do to ensure the accuracy of the data they use to find patterns."* The harness operationalization of that spectrum IS the T1/T2/T3 source-tier + 🟢/🟡/🔴 truth-tier system — the goal of every verification pass is CALIBRATED confidence placement on the spectrum, never binary certainty. A claim moving 🔴→🟡 is a successful verification even though nothing became "100% verified."
+
+**Logged user hypothesis (unverified, 🔴):** LLMs may have a different — humanly-unreplicable — verification level (parallel multi-source sweeps, native-language cross-checks, tireless per-claim gauntlets at near-zero marginal effort). Detectable: the FRAMING-ERROR-CAUGHT rate in `meta/subagent-cost-yield-ledger.md` is the running empirical test; a sustained catch-rate no human analyst workflow could match at comparable cost = supporting evidence. Adjacent to Principle #36 (AI-native operating frame).
+
+**Detectability / falsifier (re-eval 2026-08-06 with the monthly cycle):**
+- POSITIVE: retrieval-time staleness checks catch ≥1 material drift per month that the file-only answer would have propagated (the file said X, the world had moved to Y).
+- NEGATIVE: checks consistently confirm files current → the 72h-freshness heuristic suffices; demote the rule to that heuristic and stop paying the per-question fire.
+- Status: CANDIDATE N=1 (origin: this articulation; first application = the 2026-07-06 BESI/ASMPT question, where the equipment-layer verification agent was already in flight and functioned as exactly this check).
+
+---
+
 ## GDR/ADR Cross-Listing Mechanics (added 2026-06-26 as methodology section)
 
 When ANY held position is a GDR / ADR / depository receipt (HY9H, etc.):

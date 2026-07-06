@@ -62,7 +62,7 @@ Current tail: **B62** (refreshed 2026-07-06; B60/B61 added 2026-07-01/03, B62 = 
 
 ## Principles (meta/methodology.md)
 
-Current tail: **#41 CANDIDATE** (refreshed 2026-07-06; #39-#41 added 2026-06-26 per harness-optimization audit)
+Current tail: **#42 CANDIDATE** (refreshed 2026-07-06; #39-#41 added 2026-06-26 per harness-optimization audit; #42 added 2026-07-06 per user articulation)
 
 - **#1** Bottoms-up before outside view
 - **#2** N-th order > 1st order
@@ -82,6 +82,7 @@ Current tail: **#41 CANDIDATE** (refreshed 2026-07-06; #39-#41 added 2026-06-26 
 - **#39** CANDIDATE — Input-Data-Tier Classification Gate (ADDED 2026-06-26; T0/T1/T2/T3 tag per input item; never back-solve primary-listing price from cross-listing intraday display without ratio + FX verification)
 - **#40** CANDIDATE — Subagent Prompt Date-Context Anchoring (ADDED 2026-06-26; every subagent prompt carries explicit current-date anchor)
 - **#41** CANDIDATE — Cohort-Decoupling Diagnostic in Default Verification Template (ADDED 2026-06-26; idiosyncratic-vs-systemic classification on held-cohort price moves)
+- **#42** CANDIDATE — Retrieval-Staleness Verification at Question Time (ADDED 2026-07-06 per user articulation; position-relevant Q&A over files fires a staleness/missing-variable check instead of trusting last-update dates; 72h-fresh T1/T2 files get a cite-the-freshness lighter pass; includes the verification-is-a-spectrum doctrine + logged 🔴 hypothesis that LLM verification depth is humanly-unreplicable; re-eval 2026-08-06)
 
 ## Truth-Tier markers (Principle #37, ADDED 2026-06-15)
 - **🟢 HARD** — T1 receipt: filing / IR disclosure / gov data / court record / contract / audited spec. Citation URL or document path REQUIRED.
