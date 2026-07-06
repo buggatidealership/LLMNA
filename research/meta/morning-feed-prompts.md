@@ -312,6 +312,8 @@ For any item surfaced by any of the 4 scans that meets ANY of these criteria:
 → Cost: ~80-120k tokens per deep fire
 → Estimated frequency: 1-3 deep fires per week given current signal density
 
+**⚠️ GATE LIFTED (user decision 2026-07-06, first-week review):** Tier-2 deep-fires are AUTO-FIRE — do NOT pause to ask permission when a trigger criterion above is met (consistent with Critical Rule #16 never-ask posture). Binding guards remain: the per-wake budget envelope (Workflow #11) + the 2.5M-tokens/week falsifier ceiling + mandatory ledger entry per fire (review refinement R2) + the per-run convergence line (R1). Re-eval at the 2026-08-06 monthly review.
+
 ---
 
 ## Output template — daily scan artifact format

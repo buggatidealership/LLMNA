@@ -658,7 +658,7 @@
   - Token budget: ~1.6-2.4M/week additive
   - User action: GREENLIGHT activation OR adjust spec first
 
-- [x] **DONE 2026-07-06 (3 days late)** — Workflow #10 first-week review → **CONTINUE-WITH-REFINEMENTS**; full adjudication + R1-R4 refinements in `meta/recurring-audit-log.md` 2026-07-06 entry. POSITIVE condition met repeatedly (≥6 material Tier-2 catches incl. BIS credit-channel); no falsifier hit; cost ~2.5× under ceiling. OPEN SUB-ITEM: Tier-2 auto-fire gate decision PENDING USER; convergence metric (R1) first measurable at the 2026-08-06 monthly.
+- [x] **DONE 2026-07-06 (3 days late)** — Workflow #10 first-week review → **CONTINUE-WITH-REFINEMENTS**; full adjudication + R1-R4 refinements in `meta/recurring-audit-log.md` 2026-07-06 entry. POSITIVE condition met repeatedly (≥6 material Tier-2 catches incl. BIS credit-channel); no falsifier hit; cost ~2.5× under ceiling. Tier-2 auto-fire gate LIFTED per user same day; convergence metric (R1) first measurable at the 2026-08-06 monthly.
 
 ---
 

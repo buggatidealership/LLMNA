@@ -570,6 +570,6 @@ H1 + H2 + light audits combined token cost: ~452k subagent tokens + inline analy
 - **R2 (ledger discipline):** every run gets a `subagent-cost-yield-ledger.md` entry in the same commit — runs 12-14 (07-03/04) kept instrumentation in-artifact only; backfill noted, not repeated.
 - **R3 (criteria 1/5/6 deferred to monthly):** per-source signal/noise + prompt-template optimization have no per-run data (the PROMPT-OPTIMIZATION LOG was never populated); rather than backfill guesswork, the monthly cycle (2026-08-06) collects it prospectively via R1/R2 discipline.
 - **R4 (cadence note):** US/EU ran 2× each vs KR/JP 8× — imbalance currently DEFENSIBLE (book is 100% JP-listed names + the KR/JP window is unattended overnight) but re-check at monthly once Routines fire.
-- **Tier-2 auto-fire gate: PENDING USER DECISION** (asked 2026-07-06; options: lift / keep gated / lift-KR-JP-only). Until answered, the gate stays as-is (user-gated).
+- **Tier-2 auto-fire gate: LIFTED (user decision 2026-07-06, same session).** Scans auto-fire deep verification on trigger criteria, no permission-ask; guards = per-wake envelope + 2.5M/week ceiling + R1/R2 instrumentation. Codified in `morning-feed-prompts.md` Tier-2 trigger-logic section.
 
 **06-26 pre-two-leg prototypes** (the only 2 zero-consumption artifacts) — superseded by the two-leg design same day; no action.
