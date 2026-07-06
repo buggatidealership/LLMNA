@@ -2,7 +2,7 @@
 
 **Trigger:** 2026-07-06 harness audit found the T+5 grade (due 2026-06-27 per `predictions/2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md`) never ran, and the T+0 anchor (2026-06-22 inclusion-day open) was never captured. Backfilled today, 9 days late, ahead of tomorrow's T+15 checkpoint. 2 verification subagents (price-window + catalyst-register) per Critical Rule #16.
 
-**⚠️ DATA-QUALITY BANNER:** all aggregator pages (Yahoo/StockAnalysis/MarketBeat/Nasdaq/WSJ) returned HTTP 403 in this environment; every price below is search-summary grade (**T2-minus, unverified**). The load-bearing T+0 anchor (06-22 open AND close) is **UNOBTAINABLE** from accessible sources. This grade is PROVISIONAL until broker-grade numbers (user DeGiro export or equivalent) lock the anchors — required before the T+30 PRIMARY ADJUDICATION (2026-07-22).
+**⚠️ DATA-QUALITY BANNER (RESOLVED BY USER DECISION 2026-07-06):** all aggregator pages returned HTTP 403 in this environment; every price below is search-summary grade (**T2-minus, unverified**). The load-bearing T+0 anchor (06-22 open AND close) is unobtainable from accessible sources. **User decision 2026-07-06: PROCEED WITH T2- DATA AS FINAL** — anchors for the T+15/T+30 grades = 06-22 intraday ATH $299.86 (best T+0 proxy, conservative: makes pullback reads look WORSE, biasing against H1/R2 ratification) + T+1 close ~$275.4 (secondary anchor) + 07-02 close $215.62. The T+30 grade carries a permanent data-quality caveat, and any B48 promotion off this window is capped at CANDIDATE strength regardless of H bucket.
 
 ## Price record as obtained (all T2-)
 
@@ -43,7 +43,7 @@
 ## Actions
 
 1. T+15 grade due TOMORROW (2026-07-07) — run with whatever 07-06/07-07 closes are obtainable; carry the anchor-gap flag.
-2. **USER INPUT REQUESTED:** broker-grade (DeGiro) numbers for: 06-22 open + close, 06-26 close, 07-02 close — to lock anchors before the 07-22 T+30 primary adjudication.
+2. ~~USER INPUT REQUESTED: broker-grade numbers~~ **RESOLVED 2026-07-06: user opted to proceed with T2- data as final** (see banner). No broker pull; anchors locked as stated with permanent caveat.
 3. B48/R2 codification gate: expect INPUT-CONFOUND deferral unless the T+30 grade can separate pre-/post-07-01 drift (per the finding above).
 4. grading-log.md NBIS row updated (T+5 = provisional H2-zone, data-gapped).
 
