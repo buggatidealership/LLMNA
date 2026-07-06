@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 SessionStart hook for the AI Sector Research OS.
 
@@ -18,7 +21,7 @@ At session start, surfaces:
 Output goes to stdout, which Claude Code injects into the new session's
 context. Always exits 0 (informational, never blocking).
 
-Scope: only enforces when in /home/user/Health-Calculators.
+Scope: only enforces when run inside the investing-OS repo.
 """
 
 import json
@@ -28,14 +31,14 @@ import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-ENFORCEMENT_PATHS = ["/home/user/Health-Calculators"]
-TODO_PATH = Path("/home/user/Health-Calculators/research/meta/todo.md")
-PREDICTIONS_LOG_PATH = Path("/home/user/Health-Calculators/research/predictions/grading-log.md")
-BOTTLENECKS_PATH = Path("/home/user/Health-Calculators/research/sector/bottlenecks.md")
-TIER_CASCADE_LOG_PATH = Path("/home/user/Health-Calculators/research/meta/tier-cascade-log.md")
-SUBAGENT_LEDGER_PATH = Path("/home/user/Health-Calculators/research/meta/subagent-cost-yield-ledger.md")
+ENFORCEMENT_PATHS = [_REPO_ROOT]
+TODO_PATH = Path(_REPO_ROOT + "/research/meta/todo.md")
+PREDICTIONS_LOG_PATH = Path(_REPO_ROOT + "/research/predictions/grading-log.md")
+BOTTLENECKS_PATH = Path(_REPO_ROOT + "/research/sector/bottlenecks.md")
+TIER_CASCADE_LOG_PATH = Path(_REPO_ROOT + "/research/meta/tier-cascade-log.md")
+SUBAGENT_LEDGER_PATH = Path(_REPO_ROOT + "/research/meta/subagent-cost-yield-ledger.md")
 
-REPO_PATH = Path("/home/user/Health-Calculators")
+REPO_PATH = Path(_REPO_ROOT)
 
 # Priority sort: lower = higher priority
 PRIORITY_RANK = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
@@ -331,7 +334,7 @@ def build_briefing() -> str | None:
                 )
             lines.append("")
 
-    lines.append("Read /home/user/Health-Calculators/research/meta/todo.md for full backlog.")
+    lines.append("Read research/meta/todo.md for full backlog.")
     lines.append("=== END BRIEFING ===")
     return "\n".join(lines)
 

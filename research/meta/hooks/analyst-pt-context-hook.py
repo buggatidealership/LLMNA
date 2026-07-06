@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Analyst-PT-Context Stop hook for the AI Sector Research OS.
 
@@ -72,7 +75,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = "/home/user/Health-Calculators"
+REPO_ROOT = _REPO_ROOT
 
 TRIGGER_PATTERNS = [
     r"\babove\s+(the\s+)?(average\s+)?(analyst|consensus|street)\s+(price\s+)?(target|PT)\b",

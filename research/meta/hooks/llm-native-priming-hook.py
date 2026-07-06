@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 LLM-native priming UserPromptSubmit hook for the AI Sector Research OS.
 
@@ -67,7 +70,7 @@ import os
 import re
 import sys
 
-ENFORCEMENT_PATHS = ["/home/user/Health-Calculators"]
+ENFORCEMENT_PATHS = [_REPO_ROOT]
 
 
 def in_scope() -> bool:

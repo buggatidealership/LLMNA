@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Anti-fragility M/N scoring Stop hook for the AI Sector Research OS.
 
@@ -47,7 +50,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = "/home/user/Health-Calculators"
+REPO_ROOT = _REPO_ROOT
 
 P_BULL_PATTERN = r"P\(bull"
 P_BEAR_PATTERN = r"P\(bear"

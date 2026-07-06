@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 LLM-Native-Reasoning pre-Stop hook for the AI Sector Research OS.
 
@@ -93,7 +96,7 @@ import re
 import sys
 from pathlib import Path
 
-ENFORCEMENT_PATHS = ["/home/user/Health-Calculators"]
+ENFORCEMENT_PATHS = [_REPO_ROOT]
 
 
 def in_scope() -> bool:

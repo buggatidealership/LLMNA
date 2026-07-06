@@ -7,7 +7,7 @@
 
 ## TL;DR (current architecture)
 
-Hook activation lives at **`<repo-root>/.claude/settings.json`** with absolute paths to in-repo hook scripts at `/home/user/Health-Calculators/research/meta/hooks/*.py`. This file is **version-controlled and ships with the repo**, so every fresh container clone has hooks active from turn 1, with **zero laptop dependency, zero install.sh dependency, zero `~/.claude/` dependency**.
+Hook activation lives at **`<repo-root>/.claude/settings.json`** with `"$CLAUDE_PROJECT_DIR"`-relative paths to in-repo hook scripts at `research/meta/hooks/*.py` (portable across machines and clone locations since the 2026-07-06 llmna migration). This file is **version-controlled and ships with the repo**, so every fresh container clone has hooks active from turn 1, with **zero laptop dependency, zero install.sh dependency, zero `~/.claude/` dependency**.
 
 The previous Architecture (install.sh copies to `~/.claude/`) is **deprecated** as the activation mechanism; install.sh remains in the repo as a fallback only.
 
@@ -36,9 +36,9 @@ All three merge; hooks in each layer fire in sequence. The project-level layer i
 After any cold session start:
 
 ```bash
-ls -la /home/user/Health-Calculators/.claude/settings.json
-ls -la /home/user/Health-Calculators/research/meta/hooks/*.py | wc -l   # expect 17
-cat /home/user/Health-Calculators/research/meta/hook-fire-log.md | tail -5  # expect recent fires
+ls -la $CLAUDE_PROJECT_DIR/.claude/settings.json
+ls -la $CLAUDE_PROJECT_DIR/research/meta/hooks/*.py | wc -l   # expect 17
+cat $CLAUDE_PROJECT_DIR/research/meta/hook-fire-log.md | tail -5  # expect recent fires
 ```
 
 If hooks are firing per `hook-fire-log.md`, durability is confirmed.
@@ -48,7 +48,7 @@ If hooks are firing per `hook-fire-log.md`, durability is confirmed.
 If for any reason the project-level settings file fails to be read (e.g., Claude Code on Web change in behavior), fall back to the **install.sh approach**:
 
 ```bash
-bash /home/user/Health-Calculators/research/meta/hooks/install.sh
+bash $CLAUDE_PROJECT_DIR/research/meta/hooks/install.sh
 ```
 
 This copies all hook scripts and the LEGACY `research/meta/hooks/settings.json` (still kept as the install-target mirror) into `~/.claude/`. Subsequent sessions fall back to user-level enforcement until project-level is restored.
@@ -64,7 +64,7 @@ This copies all hook scripts and the LEGACY `research/meta/hooks/settings.json` 
 
 ## Linked
 
-- `/home/user/Health-Calculators/.claude/settings.json` — the project-level activation file (Architecture A primary)
+- `$CLAUDE_PROJECT_DIR/.claude/settings.json` — the project-level activation file (Architecture A primary)
 - `research/meta/hooks/settings.json` — legacy mirror (Architecture 0 fallback; install.sh still copies this if invoked)
 - `research/meta/hooks/install.sh` — Architecture 0 installer (deprecated for activation; available for emergency)
 - `research/meta/hooks/README.md` — hook docs

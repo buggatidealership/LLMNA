@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Session-prime SessionStart hook for the AI Sector Research OS.
 
@@ -54,7 +57,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-ENFORCEMENT_PATHS = ["/home/user/Health-Calculators"]
+ENFORCEMENT_PATHS = [_REPO_ROOT]
 SESSION_PRIME_PATH = Path(ENFORCEMENT_PATHS[0]) / "research/meta/session-prime.md"
 FIRE_LOG_PATH = Path(ENFORCEMENT_PATHS[0]) / "research/meta/hook-fire-log.md"
 

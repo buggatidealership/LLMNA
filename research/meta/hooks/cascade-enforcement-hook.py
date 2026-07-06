@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import os as _os
+from pathlib import Path as _Path
+_REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Cascade-enforcement Stop hook for the AI Sector Research OS.
 
@@ -32,7 +35,7 @@ import re
 import subprocess
 import sys
 
-REPO_ROOT = "/home/user/Health-Calculators"
+REPO_ROOT = _REPO_ROOT
 ENFORCEMENT_PATHS = [REPO_ROOT]
 
 
