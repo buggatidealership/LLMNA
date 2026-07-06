@@ -10,6 +10,8 @@ Per `research/signals/cross-source-log/2026-06-04-evening-brief-gemma4-12b-alpha
 
 ---
 
+**⚠️ POSITION STATUS UNRESOLVED (flagged 2026-07-06 harness audit):** this thesis still claims a held position (~4.82-5.38% in entries below), but TE appears in NEITHER the held list NOR the exit roster of the 2026-07-05 fresh-start baseline (`portfolio/holdings.md`: DeGiro = only positions platform; only MURATA + SUMCO held). TE is therefore NOT currently held; the exit date/details are undocumented. Do NOT treat any "HOLD" language below as position guidance. Pending user confirmation of when/how the position closed → then add a proper exit banner + changes.md entry.
+
 **Prior last updated:** 2026-05-26
 **Tier:** Active (held position; partial validation from Aschenbrenner; execution-heavy; **NEW 2026-05-26: AI-adjacent via Supply Chain Inheritance — per principle #28 + B29 reclassification, see Update 2026-05-26 below**)
 **Position target:** 4–7% (user holds ~4.82% per `research/portfolio/holdings.md`)

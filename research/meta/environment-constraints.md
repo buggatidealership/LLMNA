@@ -64,7 +64,7 @@ Container resets `~/.claude/` to system-managed base at every session start. Hoo
 
 - git push retries handle transient network failures up to 4× with exponential backoff per `CLAUDE.md` Critical Rule # / harness convention
 - gh CLI NOT available; use mcp__github__* tools instead
-- Repo scope restricted to `buggatidealership/health-calculators` (other repos denied)
+- Repo scope restricted to `buggatidealership/LLMNA` (other repos denied; updated 2026-07-06 post-migration — was `buggatidealership/health-calculators`, now a frozen safety-net copy)
 
 ---
 

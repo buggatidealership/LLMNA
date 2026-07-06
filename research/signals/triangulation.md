@@ -1,6 +1,6 @@
 # Triangulated Signals (High-Conviction)
 
-**Last material update:** 2026-06-15 PM (Principle #37 Truth-Tier codification — TC-1 / TC-6 / TC-10 retroactively tagged 🟢/🟡/🔴 as convention demonstration; other TCs to be tagged organically on next cascade event affecting each). Prior: 2026-06-11 (PIPELINE REBUILD — repaired silent failure: 72 cross-source-log files / 26 in last 7 days had not produced corresponding promotions; backfilled 7 [ACTIVE] convergence clusters from last 30 days)
+**Last material update:** 2026-07-06 (harness audit: body sections added for TC-11/TC-12/TC-13/TC-14 which existed only as index rows; index-canonical rule stated explicitly below; header corrected — prior header claimed 2026-06-15 while content ran through 2026-07-05 TC-14 promotion). Prior material updates: 2026-07-05 (TC-14 promoted N=3), 2026-06-15 PM (Principle #37 Truth-Tier codification), 2026-06-11 (PIPELINE REBUILD — backfilled 7 [ACTIVE] convergence clusters)
 
 Signals confirmed by ≥3 independent same-segment same-direction sources within 90 days. These outweigh single-article reads.
 
@@ -9,6 +9,8 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 **Aging:** [ACTIVE] → [DORMANT] at 60 days without new instance → [ARCHIVED] at 120 days
 
 ## Quick index (current state — read this first)
+
+**⚠️ INDEX-CANONICAL RULE (made explicit 2026-07-06 harness audit):** the Quick Index N-counts are CANONICAL. Several body sections below lag the index — body instance lists for TC-2 (body lists 6 vs index 7), TC-3 (6 vs 9), TC-4 (3 vs 12), TC-5 (7 vs 8) and TC-6 (body numbering conflict: Walsin AGM never got a numbered slot) were not backfilled after 2026-06-11; the missing instances live in the index cells and their cited `cross-source-log/` artifacts. Backfill body lists on each cluster's next cascade event (do NOT re-derive N from body lists). **TC-9 does not exist as a cluster** — it was an INDEX.md-side notation for the DDOG AI-observability candidate (5 signals, 2026-06-12); promotion review lapsed and DDOG/NOW were sold 2026-06-22 — TC-9 remains an unpromoted/retired candidate; the number stays reserved to avoid ambiguity (matches the `meta/tags.md` TC-9 note).
 
 | Cluster ID | Segment | Status | N | Top thesis impact | Last update |
 |---|---|---|---|---|---|
@@ -168,6 +170,53 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 **Names affected:** broad held cohort
 **PAIRED COUNTERFACTUAL (added 2026-06-14 PM4):** TC-8 bullish anchor (volume outrunning compression) has explicit BEAR-SIDE hedge per `signals/cross-source-log/2026-06-14-pm4-token-cost-elasticity-U8-evans-telecom-3subagent.md` — U8 candidate universal falsifier (token-cost-elasticity inflection at component layer). Evidence: token prices fell ~80% in 12 months ending mid-2026 BUT enterprise AI bills rose ~3× same period (T2 NavyaAI) = volume currently outrunning compression CONFIRMS TC-8. However: telecom analog (Ericsson SEK 273B → 248B 2000-2024 flat while data traffic +1500-2000×) shows volume-outrunning-compression at the END-USER layer can coexist with REVENUE COMPRESSION at the component layer. First U8-adjacent firing: DDR5 RDIMM surpassed HBM in per-wafer profitability Q1 2026 per T2 TrendForce/Digitimes — first concrete signal that memory-intensity-per-dollar is declining at the margin. **TC-8 bullish read intact for 2026-2027 but watch F13 monthly: if DDR5-vs-HBM profitability ratio widens for 2 consecutive quarters, TC-8 bullish bias decays into mixed.**
 
+## TC-11 — Hardware-IP / patent enforcement at chip-import layer [CANDIDATE N=1]
+*(Body section added 2026-07-06 harness audit — cluster previously existed only as an index row.)*
+**Segment:** chip-and-foundry / regulatory
+**Direction:** IMPORT-side friction via patent enforcement (distinct from TC-7's export-side substrate geopolitics)
+**Instances (N=1):**
+1. Republican congresspersons petition ITC to invoke Section 337 to block TSMC chip imports based on UMC patents (T2 Tom's Hardware morning brief #15, 2026-06-13 AM)
+**Convergent read (pending — candidate):** if granted, US-importing TSMC-designed chips face friction; benefits domestic foundry (Intel / TSMC Arizona / Samsung Texas); hurts NVDA/AVGO/AMD/MRVL (mild negative tail).
+**Falsifier / lapse:** no N+1 within 90 days of 2026-06-13 → retire candidate (~2026-09-11).
+
+## TC-12 — DRAM>HBM margin inversion in upcycle [ACTIVE N=5]
+*(Body section added 2026-07-06 harness audit from the index row + cited artifacts — index remains canonical.)*
+**Segment:** memory-and-storage
+**Direction:** commodity DRAM (incl. legacy DDR4) out-margins HBM in this upcycle; supplier-rational behavior = optimize DRAM, not maximize HBM
+**Instances (N=5):**
+1. Mehrotra (Micron CEO) Q1/Q2 FY26 transcripts T1 verbatim "non-HBM margins higher than HBM" — DDR5 ~90% OP margin vs HBM ~70%
+2. SK Hynix HBM3E→DDR5 production conversion / HBM4 ramp slowdown for DDR5 profits (TrendForce 2026-06-23 T1 + corroborators)
+3. Chinese article "AI半导体终局推演2026(II)" continuation claim "DRAM 利润率远超 HBM" (verified)
+4. SK Securities June 15 framework "memory as scarcity-rent asset"
+5. Legacy extension (2026-06-27 REIA experiment): TrendForce May'26 "GM across ALL DRAM segments now top HBM" (T1) + Nanya 2408.TW Q1'26 GM 67.9% / rev +582.9% YoY per `signals/cross-source-log/2026-06-27-REIA-experiment-old-memory-legacy-DRAM-squeeze.md`
+**Convergent read:** HBM has higher capex intensity (3:1 wafer ratio per Micron) at ~70% margin while commodity DDR5 hits ~90% in upcycle; DDR4 squeeze driven by majors' supply-exit (capacity →20-25% of 2024 by end-2026).
+**Names affected:** HYNIX (HBM moat narrative needs DDR5 cash-cow complement), KIOXIA / SNDK (NAND analog) — all three now watchlist-reference post-exits.
+**Falsifier:** Q3/Q4 FY26 prints show HBM margin overtaking DDR5, OR SK Hynix reverses the HBM4 ramp slowdown.
+**Source artifacts:** `signals/cross-source-log/2026-06-25-pm-integrated-synthesis-round5-sk-securities-chinese-continuation.md`
+
+## TC-13 — AI power-infrastructure bottleneck cascade [ACTIVE N=7+]
+*(Body section added 2026-07-06 harness audit from the index row + cited artifacts — index remains canonical.)*
+**Segment:** power-and-cooling / advanced-packaging
+**Direction:** compound binding-constraint: transformer + transmission + switchgear + liquid cooling + MLCC + 800V HVDC all bind within 2026-2028
+**Instances (N=7+):** (1) PJM 5+ year interconnection queues (PJM T1); (2) power transformer 128-week lead times, 345-765kV 4-5y, 30% supply deficit 2025 (Wood Mackenzie T1); (3) switchgear constraints (multiple T2); (4) 50% of planned US DC builds delayed (Tom's Hardware T2); (5) GE Vernova electrification orders +29% YoY Q1 2026, $163B backlog (SEC 8-K T1); (6) Rubin Ultra ~600kW racks / Feynman-class 1.2MW all-liquid (Tom's Hardware + DCD T2); (7) behind-the-meter generation 2GW → 10-15GW by 2028 = partial bypass (Cleanview/Latitude T2)
+**Convergent read:** P=0.75 (my model) that ≥3 of the 7 bottlenecks bind together 2026-2028 → GW-scale campus timelines slip 6-18 months even with memory+GPU supply met. H_bottleneck ranking per Subagent 10: HBM4/4e P=0.95, transformers P=0.90, transmission P=0.85, high-end MLCC P=0.80, switchgear P=0.80, PMICs P=0.65.
+**Names affected:** MURATA (held — MLCC bottleneck direct beneficiary); watchlist ETN/VRT (P1), GEV (P2), CEG/VST/TLN (P2). *(Index row's NBIS/HYNIX held-references are historical — both exited by 2026-07-05.)*
+**Falsifier:** PJM reform delivers <2-year queues by Q4 2026 + transformer lead times <1 year + BTM >20GW by 2028.
+**Source artifacts:** `signals/cross-source-log/2026-06-25-pm-integrated-synthesis-round6-trendforce-800v-hvdc-power-cascade.md` + `signals/cross-source-log/2026-06-25-pm-subagent-10-trendforce-800v-hvdc-rubin-ultra-power-cascade-verification.md`
+
+## TC-14 — YMTC commodity-NAND westward qualification [ACTIVE — promoted at N=3, 2026-07-05]
+*(Body section added 2026-07-06 harness audit from the index row + cited artifacts — index remains canonical.)*
+**Segment:** memory-and-storage
+**Direction:** YMTC crossing from domestic/aftermarket into Western-OEM qualified supply, allocation-driven (incumbents diverting NAND to AI/enterprise eSSD)
+**Instances (N=3):**
+1. YMTC NAND share 8%→13% Q1'26, revenue +445% YoY, tying SanDisk+Micron, near Kioxia 14% (Counterpoint via Digitimes/TechNode T1/T2, seen 2026-06-27)
+2. Apple in talks with YMTC for NAND (FT, Jun-27 ingest; per `signals/cross-source-log/2026-06-27-apple-cxmt-lobbying-2subagent-net-bull-falsifier-not-fired.md`)
+3. FIRST Western-brand OEM pre-install: Lenovo ThinkBook 14 G9 IPL at US retail with YMTC 512GB QLC PC42Q512GBG4Q (Notebookcheck T1 + CN press 2026-07-04; per `signals/cross-source-log/2026-07-05-ymtc-lenovo-global-ssd-verification.md`)
+**Bounds (honest):** one SKU / one OEM / low-margin QLC client tier — the segment incumbents are VOLUNTARILY deprioritizing; zero qualified YMTC datacenter eSSD part; Entity List caps tooling; MATCH Act (bill, Apr-2026) prospective equipment-side risk.
+**Names affected:** consumer-NAND mix of KIOXIA/SNDK (+ Samsung) — NOT the AI/enterprise mix carrying their (watchlist-reference) theses.
+**Regime-change tell (pre-registered):** second+third Western-OEM YMTC SSD design-win (HP/Dell SSD, not just CXMT DRAM tests) → escalate to thesis-level bear-vector review.
+**Falsifier:** incumbent client-SSD allocation normalizes AND YMTC share stalls ≤13% for 2 consecutive quarters.
+
 ---
 
 ## Format spec (kept for reference)
@@ -261,8 +310,6 @@ Falsifier: [what would suggest this convergence is coincidence not pattern]
 ### Promotion criteria reminder — single new article CAN trigger a triangulation if it converges with already-triangulated prior signals. This entry triangulates because Anthropic enterprise dominance was already triangulated (Barclays + multi-source) — the WSJ revenue/profit numbers ADD a new leg (profitability + Broadcom partnership) to an existing high-confidence pattern.
 
 ---
-
-## Initial candidate triangulations (need 3rd source to confirm)
 
 ## Initial candidate triangulations (need 3rd source to confirm)
 

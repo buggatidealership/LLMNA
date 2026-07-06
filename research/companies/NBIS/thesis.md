@@ -127,7 +127,7 @@
 
 **🔴 2026-06-18 PM33 — ENTRY EXECUTED today via user 4-screenshot disclosure; WL-ADD P2 → ACTIVE upgrade; transparent deviation flag per AUTO-EXECUTE STRENGTHENING discipline**
 
-**Tier:** ACTIVE (HELD 58sh; basis ~€14,907; spot €248; currently -€530.80 / -3.50% unrealized; ~12% of invested per holdings.md PM33 canonical)
+**Tier:** EXITED 2026-07-03 — watchlist-reference (entry 58sh 2026-06-18, trimmed 58→30sh on 07-01, remaining 30sh sold 07-03 on the fired trim-falsifier per the approved decision package; T+15/T+30 inclusion grades still resolve; this line previously still read "ACTIVE (HELD 58sh)" — corrected 2026-07-06 harness audit)
 **Position size:** ~14% of invested (NBIS NEW cluster: Sovereign-AI compute)
 **Anti-fragility:** 3/5 scenarios (my model — strong in PC-14 sovereign-AI / non-US-jurisdiction compute scenarios; weak in US-hyperscaler-internalization scenarios)
 

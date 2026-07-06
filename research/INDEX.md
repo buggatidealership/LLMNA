@@ -1,7 +1,7 @@
 # Harness Index — single-file retrieval entry point
 
 **Created:** 2026-06-11 (per signal-density-detection optimization directive)
-**Last refreshed:** 2026-07-01 PM (holdings true-up: SKH 18→16 GDR + NBIS 58→30 trims EXECUTED per screenshot; MRVL exit reflected; ALAB/BE ACTIVE-initiating intent added; cash ~€19,967 earmarked)
+**Last refreshed:** 2026-07-06 (harness audit: CXMT retrieval-rule filenames corrected — both pointers were broken; risk-envelope wording fixed — the file EXISTS since 2026-07-05; hooks-location line corrected to Architecture A. Body content baseline: 2026-07-05 EVE fresh-start)
 **Refresh cadence:** monthly + on major thesis/scenario changes
 **Function:** answer "where did we cover X?" without grep
 
@@ -11,7 +11,7 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 
 - **MURATA** (held 336sh @ €58,50 = €19.656,00 = **20,6%**; BEP €53,67) — `companies/MURATA/thesis.md`
 - **SUMCO** (held 626sh @ €27,25 = €17.058,50 = **17,9%**; BEP €22,31; wafer-hike thesis materializing) — `companies/SUMCO/thesis.md`
-- **Cash:** €58.692,23 = **61,5%** — NO deployment until `portfolio/risk-envelope.md` exists (missing-inputs #1); ALAB/BE initiation intents SUPERSEDED
+- **Cash:** €58.692,23 = **61,5%** — deployment gated by `portfolio/risk-envelope.md` (file EXISTS since 2026-07-05, missing-inputs #1 CLOSED — this line previously said "until it exists"); ALAB/BE initiation intents SUPERSEDED
 - **⚠️ 2026-07-05 state change:** SKH (16 GDR), SNDK (9sh), KIOXIA (~€10k N26) all FULL-EXITED ~Jul-1/2 by user (emotional, non-falsifier; disclosed 2026-07-05; conversion-layer lesson in `predictions/lessons.md`); NBIS exited Jul-3. All four = watchlist-reference with intact theses.
 
 **Exited (watchlist-reference only):**
@@ -73,8 +73,8 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - `meta/cross-domain-pattern-register.md` — 8 verified (P-1 to P-8, P-11) + PC-9/PC-10/PC-12 candidates + PC-13 N=1 CANDIDATE + **PC-14 PROMOTED N=3+ 2026-06-17 Universal Sovereign-AI Bifurcation Doctrine**
 - **Cyclical-inflection-catch protocol (F1-F13)** — codified in 2026-06-14 PM cross-source-log + where-we-are.md pre-committed trim sequence
 - **`companies/NBIS/tracking-variables.md`** — Lead-Lag Variable Framework first application; 15 verified free + 6 paid alt-data sources ranked by signal-to-noise; LEAD-indicator stack first / LAG-indicator stack second
-- **`signals/cross-source-log/2026-06-23-pm-cxmt-semianalysis-verification.md`** — CXMT SemiAnalysis article verification; MONITOR-ONLY watchlist designation confirmed
-- **`signals/cross-source-log/2026-06-23-pm-jukan-cxmt-verification.md`** — Jukan CXMT article verification; secondary CXMT signal
+- **`signals/cross-source-log/2026-06-23-pm-subagent-cxmt-semianalysis-newsletter-verification.md`** — CXMT SemiAnalysis article verification; MONITOR-ONLY watchlist designation confirmed
+- **`signals/cross-source-log/2026-06-23-pm-subagent-jukan-cxmt-china-pricing-discipline-strategic-interpretation.md`** — Jukan CXMT article verification; secondary CXMT signal
 
 ## Discipline / quality
 
@@ -83,7 +83,7 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - `predictions/lessons.md` — **L1-L27** (L26 CANDIDATE multi-decade trend-break = structural-regime-confirmation; L27 CANDIDATE Beat-Consensus-As-Regime-Test; FIRST EMPIRICAL RESOLUTION: MU Q3 FY26 print 2026-06-24 after close)
 - `meta/tags.md` — shorthand dictionary (refreshed 2026-06-24 monthly audit #1; tail counts: L27 / B59 / Principles #38 / Critical Rules #16 / TC-11 / PC-14)
 - `meta/tier-cascade-log.md` — append-only cascade audit trail per Principle #37; 6 cascade events 2026-06-15 + ongoing; first STALE flags arrive ~2026-07-15
-- `~/.claude/*.py` + `*.sh` — 18 live hooks + 2 staged-pending-user-activation at `research/meta/hooks/`
+- Hooks — live via project-level `.claude/settings.json` (Architecture A) pointing at `research/meta/hooks/*.py`: 16 wired (13 Stop + 2 SessionStart + 1 UserPromptSubmit) + environment-level git-check; `~/.claude/` intentionally unused (corrected 2026-07-06 — this line previously claimed "18 live hooks at ~/.claude/")
 - `meta/subagent-cost-yield-ledger.md` — Critical Rule #16 verification-subagent instrumentation (backfilled 36 entries 2026-06-15→2026-06-19; preliminary STRONGLY POSITIVE yield verdict; 2026-07-15 re-eval)
 
 ## Open dissection queue
@@ -131,6 +131,6 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - "What does NDX inclusion mean for NBIS?" → `signals/cross-source-log/2026-06-15-pm3-ndx-inclusion-mechanics-primer-nbis-application.md`
 - "What's the Anthropic 90-min shutdown precedent pattern?" → `meta/cross-domain-pattern-register.md` PC-13 + `signals/triangulation.md` TC-4 acute-phase + TC-10 H_d sub-mechanism
 - "What's the sovereign-AI bifurcation doctrine?" → `meta/cross-domain-pattern-register.md` PC-14 (PROMOTED N=3+)
-- "What is CXMT's status?" → MONITOR-ONLY watchlist; NOT held; TC-1 falsifier candidate; `signals/cross-source-log/2026-06-23-pm-cxmt-semianalysis-verification.md` + `signals/cross-source-log/2026-06-23-pm-jukan-cxmt-verification.md`
+- "What is CXMT's status?" → MONITOR-ONLY watchlist; NOT held; TC-1 falsifier candidate; `signals/cross-source-log/2026-06-23-pm-subagent-cxmt-semianalysis-newsletter-verification.md` + `signals/cross-source-log/2026-06-23-pm-subagent-jukan-cxmt-china-pricing-discipline-strategic-interpretation.md`
 - "What happened with DDOG / NOW?" → SOLD 2026-06-22; Critical Rule #8 violation self-flagged by user; `companies/DDOG/thesis.md` + `companies/NOW/thesis.md` EXIT banners
 - "What's the MU print result?" → L27 first empirical resolution; `predictions/lessons.md` L27 + grading-log

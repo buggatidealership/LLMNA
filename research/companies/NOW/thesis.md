@@ -161,7 +161,7 @@ Combined with same-day alt-data validation cluster (Gartner 6% Copilot Studio pr
 **Position implication:** HOLD at 12.0% (at target 10-13%). Cloudflare crossover elevates conviction in Core thesis.
 
 **Prior last updated:** 2026-05-21
-**Tier:** Core (held position, structural agentic-software winner)
+**Tier:** SOLD 2026-06-22 — watchlist-reference (was Core; see EXIT banner + 3-layer GRADE at top of file; this line previously still read "Core (held position)" — corrected 2026-07-06 harness audit)
 **Position target:** 10–13% (user holds ~12.0% per `research/portfolio/holdings.md` — at target)
 **Anti-fragility:** 4/5 — wins in S1, S2, S3, partial S4
 **Foundation:** `research/wiki/agentic-ai-enterprise.md`

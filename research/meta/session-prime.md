@@ -84,16 +84,19 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **B40** (CONFIRMED VERIFIED-HIGH-CONFIDENCE) — Secondary-source garble taxonomy (3 sub-types). B40.1 stale-recycle (N=9+), B40.2 magnitude-inflation (CONFIRMED N=3), B40.3 attribution-garbling (CONFIRMED N=2). Verify temporal freshness + magnitude + attribution before propagating any T2/T3 signal. Stays here because hook enforcement not yet built; manual discipline required.
 - **B44** (CANDIDATE N=3, origin 2026-06-11) — Chat-summary discipline drift from file-level discipline. File-level work applies T1/T2/T3 tagging / N-th order / native-language / hedge labels correctly; chat summary collapses to prose. Mirror file-level discipline in chat summaries.
 - **B45** (CANDIDATE N=1, origin 2026-06-12) — Pre-training magnitude conservatism in structural-demand regimes. Tail under-modeled by ~5-8×. See §1 above for active priors. Companion to B26 + B28: B45 is the MAGNITUDE-layer error in the structural-anchoring family.
-- **B47** (CANDIDATE N=1, origin 2026-06-15) — Pre-training lead-time conservatism: estimates of gov/regulatory lead-times are wrong by 2-10×. Overstates fast-track gov action; understates regulated EU processes. Every gate-timing estimate gets retroactively case-calibrated. See §9b.
+- **B62** (CANDIDATE N=1, origin 2026-06-15; RENUMBERED from B47 on 2026-07-06 — B47 was already taken by efficiency-driven demand destruction in `biases-watchlist.md`) — Pre-training lead-time conservatism: estimates of gov/regulatory lead-times are wrong by 2-10×. Overstates fast-track gov action; understates regulated EU processes. Every gate-timing estimate gets retroactively case-calibrated. See §9b.
+- **B60** (CANDIDATE N=1, origin 2026-07-01) — Portfolio-anchored ingest bias: discovery legs must stay unanchored to held names.
+- **B61** (CANDIDATE N=1, origin 2026-07-03) — LLM-generated bottleneck fiction as an input class: unsourced single-company monopoly-bottleneck theses from social sources get the full mechanism gauntlet regardless of sharer track record.
 
-## §3. RECENT LESSONS (rolling 5 — verified only, no placeholders)
+## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
 
-- **L21** — Sector regime modifier risk-off: at maximum macro risk-off (Iran war + oil + rates), even bullish fundamentals get sold T+24h. Discount stock-reaction grades 50% in such windows.
-- **L22** — Holistic conviction sometimes BEATS individual confirmation: if multiple held names point the same direction and macro fits, that's stronger than each individual thesis would suggest standalone.
-- **L23** — Market-cap-inverse reaction asymmetry: smaller-cap names move +/-10% on news that moves mega-caps +/-2%. Position-sizing implication: equivalent thesis confirmation → smaller % moves in big caps.
-- **L25** — Explicit Bayesian P-update on new evidence is the CORRECT process, NOT a failure mode. User directive 2026-06-11 verbatim: *"do not call it a failure mode."* Probabilities are statistical calculated vectors; reweighting on new evidence is the L25 pattern functioning as designed.
+- **L26** — Multi-decade trend-line break = structural-regime-confirmation framework (60-year DRAM ASP rupture origin; N=2 watch: MLCC / NAND / CoWoS).
+- **L27** — Beat-Consensus-As-Regime-Test: per-quarter beat-or-miss across the semi cohort = primary regime-validation mechanism (first empirical test = MU Q3 FY26 print 2026-06-24; N=2 watch: HYNIX Q2 + MURATA Q1 FY27 late-Jul).
+- **L28** — Jevons/efficiency-fear misread: "efficiency reduces demand" keeps losing to volume growth (N=3 flavors incl. enterprise rate-limiting).
+- **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
+- **L30** — Supercycle base rates dominate pre-supercycle band priors on cohort ATH events (KIOXIA VLSI grade origin).
 
-_Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Next lesson = L26._
+_Correction note (2026-07-06): this section previously claimed "L24 removed; tail is L25" — WRONG on both counts: L24 exists in lessons.md as a real lesson (mid-cap structural-inflection ATH-break, TY case) and the tail is L30. Numbering gap: L17/L18 carry tombstones (no lesson text). Full list: `predictions/lessons.md` + `meta/tags.md`._
 
 ## §4. CRITICAL RULES (full text in `CLAUDE.md` — numbered list here for orientation)
 
@@ -116,14 +119,18 @@ _Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Ne
 17. Ensemble high-stakes calls — for any binary/numeric decision with sizing consequence (prediction GRADEs, binary-catalyst outcomes, TRIM/EXIT/ENTER on a Core position, tier-gating P-weights), run N=3-5 independent Opus 4.8 samples and report MODE + SPREAD; spread is the signal (5/5 = high-conviction; 3/5 = state uncertainty, don't collapse to false-confident point). Scope: sizing-consequential only, NOT routine. (added 2026-06-27)
 18. Standing dissent mandate — on any thesis conclusion, sizing decision, or user framing, generate the strongest FALSIFYING case BEFORE concluding; if none exists, say so explicitly. Non-optional; suppresses confirmation-of-harness-state + sycophancy. Per-conclusion obligation (distinct from Rule #8 periodic + Leg B search-layer). (added 2026-06-27)
 
-## §5. ACTIVE TRIANGULATION CLUSTERS (one-line each; PARKED clusters excluded)
+## §5. ACTIVE TRIANGULATION CLUSTERS (refreshed 2026-07-06 harness audit; quick-index in `signals/triangulation.md` is CANONICAL for N — this list is orientation only)
 
-- **TC-1** Memory tightness multi-tier (memory-and-storage) [ACTIVE N=11] — consumer-GPU OEM behavioral tier-8 confirmation
-- **TC-2** AI capex on credit + state budgets (infrastructure-IaaS) [ACTIVE N=6]
-- **TC-3** DC-ceiling + EM-migration (power-and-cooling) [ACTIVE N=6]
-- **TC-4** Anthropic enterprise-trust drift (model-and-foundation-lab) [ACTIVE N=3]
-- **TC-5** CoPoS / glass-core packaging firming (advanced-packaging) [ACTIVE N=5]
-- **TC-6, TC-7, TC-8** — see `signals/triangulation.md` for current status and N counts
+- **TC-1** Memory tightness multi-tier (memory-and-storage) [ACTIVE N=22+; 60-yr WSTS trend-break + Jun-22 cohort-wide ATH cluster-state event]
+- **TC-2** AI capex on credit + state budgets (infrastructure-IaaS) [ACTIVE N=7]
+- **TC-3** DC-ceiling + EM-migration (power-and-cooling) [ACTIVE N=9; $130B/75+ projects blocked Q1'26]
+- **TC-4** Anthropic enterprise-trust drift (model-and-foundation-lab) [ACTIVE N=12 + acute-phase transition (Jun-13 90-min shutdown)]
+- **TC-5** CoPoS / glass-core packaging firming (advanced-packaging) [ACTIVE N=8]
+- **TC-6** MLCC AI-server tier bifurcation [ACTIVE N=6] · **TC-7** InP geopolitical bottleneck [N=4] · **TC-8** token consumption [maintained]
+- **TC-10** Model-layer sovereignty + export control [ACTIVE N=9 + NBIS UK proof case] · **TC-11** chip-import patent enforcement [CANDIDATE N=1]
+- **TC-12** DRAM>HBM margin inversion [ACTIVE N=5] · **TC-13** AI power-infrastructure bottleneck cascade [ACTIVE N=7+] · **TC-14** YMTC westward NAND qualification [ACTIVE N=3, promoted 2026-07-05 — bear-vector watch on KIOXIA/SNDK consumer mix]
+
+_Prior version of this section carried N-counts 2-4× stale (e.g. TC-4 listed N=3 vs actual N=12) and omitted TC-10..14 entirely — corrected 2026-07-06._
 
 ## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-05 EVE screenshots; FRESH-START baseline; DeGiro €95.406,73 = the whole book, N26 = bank only)
 
@@ -138,9 +145,14 @@ _Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Ne
 
 _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 when stale — keep it synced on every portfolio screenshot._
 
-## §7. PENDING PREDICTIONS (resolution window not yet passed)
+## §7. PENDING PREDICTIONS (refreshed 2026-07-06 harness audit; canonical ledger = `predictions/grading-log.md` — read its NOT-CANONICAL row tags)
 
-_No active pending predictions as of 2026-06-24. KIOXIA VLSI Symposium 2026-06-12 (T+24h resolution window ~June 19-22) has passed — pending GRADE workflow. See `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md`._
+- **Samsung Q2 prelim — resolves ~2026-07-07 (KEYSTONE):** canonical file = `predictions/2026-07-02-SAMSUNG-Q2-prelim-prediction.md` (rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn). ⚠️ A superseded duplicate file exists — grade ONLY the canonical one.
+- **NBIS Nasdaq-100 inclusion grades:** T+15 ~2026-07-07, T+30 ~2026-07-22 (primary adjudicator). T+5 (due 2026-06-27) NOT yet run — backfill with the T+15 grade. Position exited 07-03; grades still resolve.
+- **10-name earnings prediction board (registered 2026-07-02):** TSMC Jul-16 (checkpoint Jul-10), ASML Jul-15, SK Hynix ~Jul-29, MURATA Jul-31, SNDK late-Jul/Aug, KIOXIA Aug-07, ALAB Aug-11, SUMCO Aug-12, BE ~Jul-30.
+- **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) was never formally ledgered/3-layer-graded — backfill owed.
+
+_Prior version claimed "no active pending predictions as of 2026-06-24" — corrected 2026-07-06; the KIOXIA VLSI grade it referenced was completed 2026-06-26 (L30)._
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (next 90 days from 2026-06-24)
 
@@ -164,7 +176,7 @@ _No active pending predictions as of 2026-06-24. KIOXIA VLSI Symposium 2026-06-1
 - **🔴 SPECULATIVE / IN-FEAR** — Hypothesis, candidate, pre-registered H1-H4, single-source unverified.
 - **STALE** — Auto-flag on 🔴/🟡 entries no cascade-event >30 days.
 
-**Position implication enforcement:** every `Position implication:` line MUST carry a 🟢/🟡/🔴 marker on the same line or directly above. Hook-level enforcement: code shipped to `research/meta/hooks/structural-output-hook.py` mirror; LIVE-PENDING-USER-ACTIVATION via `cp research/meta/hooks/structural-output-hook.py ~/.claude/structural-output-hook.py`. Analyst-discipline enforcement until activated.
+**Position implication enforcement:** every `Position implication:` line MUST carry a 🟢/🟡/🔴 marker on the same line or directly above. Hook-level enforcement: `research/meta/hooks/structural-output-hook.py` is LIVE via project-level `.claude/settings.json` (Architecture A, since 2026-06-26) — the old "pending `cp` to `~/.claude/`" activation instruction is obsolete and must NOT be followed (`~/.claude/settings.json` is intentionally unused; copying would risk double-firing).
 
 **The scoped-cascade rule (load-bearing — when new data lands):**
 

@@ -1,6 +1,6 @@
 # Lessons — Mandatory Pre-Read Before Any New Prediction
 
-**Last updated:** 2026-06-04 PM (L21 NEW from user-articulated sector-regime read + post-AVGO selloff context; April CPI 3.8% hot trigger + broader cohort selloff documented same day)
+**Last updated:** 2026-07-06 (harness audit: L17/L18 tombstones added — those numbers carry no lesson text, see entries; current tail L30 CANDIDATE; content runs through the 2026-07-05 conversion-layer entry)
 
 ## TL;DR
 
@@ -292,6 +292,16 @@ L14 codified at N=2 (NVDA + HPE): "Stage 3-4 + CATEGORY EVENT → +25-40% T+24h.
 Plus L20 below (macro-confounder discount) and L19 below (multi-year framing vs FY raise gap).
 
 Falsification trigger for L14-v2: 2+ more cases where pre-print rally >10% but BEAT+CATEGORY still drives positive T+24h reaction. If that happens, L14-v2 is wrong and we keep L14 original.
+
+---
+
+## L17 — TOMBSTONE (number never codified; added 2026-07-06 harness audit)
+
+**L17 has no lesson text.** The number was referenced as a live "L17 candidate" by `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` and graded as "L17 candidate test N=1 resolution" in `grading-log.md`, but the lesson itself was never written into this file — the insight was absorbed into the L14 family (Stage-4 expectations / T+24h reaction mechanics). Do not cite L17 as a standing lesson; treat legacy L17 references as pointers to the L14/L14-v2 block above.
+
+## L18 — TOMBSTONE (intentionally skipped; added 2026-07-06 harness audit)
+
+**L18 has no lesson text.** During the 2026-06-03 AVGO grading cycle it was recognized as a duplicate of an existing methodology principle and deliberately not codified (see `predictions/2026-06-03-AVGO-Q2FY26.md`). The number stays reserved to keep downstream numbering (L19+) stable.
 
 ---
 
