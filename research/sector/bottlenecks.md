@@ -1,7 +1,51 @@
 # Bottleneck Forecast — Current, Next, Next-Next
 
-**last_review: 2026-06-04** (updated PM session — LPDDR5X / mobile DRAM promoted to 6-18mo next-binding bottleneck)
-**Next review due: 2026-07-04** (monthly cadence — check at session start)
+**last_review: 2026-07-06** (monthly run, 2 days late — WAKE-infrastructure failures consumed 07-03/04; 2 Opus verification subagents, web-swept 2026-07-06)
+**Next review due: 2026-08-06** (monthly cadence — check at session start)
+
+## 2026-07-06 BOTTLENECK-FORECAST — financing promoted to next-binding; LPDDR5X call CONFIRMED (now already-binding); InP sharpest new pinch
+
+**Inputs:** 2 web verification subagents (current-state delta + next-next sweep) + in-repo triangulated state (TC-1 N=22+, TC-12 N=5, TC-13 N=7+, `sector/ai-funding-shock-node.md` built 07-04). WORKFLOW #7 per Workflow #9 macro-first discipline.
+
+### Today's binding (updated)
+
+| Constraint | Fresh read (date/tier) | Direction | Change vs 06-04 file |
+|---|---|---|---|
+| **Grid hardware** (transformers >160wk, HV-class 4-5yr; MV switchgear sold out through 2028; 30-50% of planned 2026 US DC capacity delayed) | Build.inc / SemiAnalysis 2026 T2-T3 | Tightening | PROMOTED to co-#1 current binding (was 6-12mo tier) — TC-13 N=7+ confirms |
+| **LPDDR5X / conventional DRAM** (+89% QoQ Q2'26 LPDDR5X 12GB; 8GB module $40→$110 in 6mo; relief earliest Q4'27 per Counterpoint) | tweaktown/TechTimes 07-03 T2-T3 | Tightening hard | **06-04 next-binding call CONFIRMED — now already-binding**, ahead of the 6-18mo window we forecast |
+| DRAM contract 3Q26 — **3-way dispersion ARBITRATED** | TrendForce 2026-07-03 T2: conventional +13-18% QoQ, PC +15-20%, server +13-18%; Samsung ask "up to +20%" | Tightening, decelerating | The +32% broker note (2026-07-03 day-state open thread) = OUTLIER; low-to-mid case wins; deceleration-from-high-base, not acceleration |
+| HBM4 | All 3 makers qualified + producing for Vera Rubin, Q3 shipments; SKH slowing HBM4 ramp for DDR5 profits (TC-12-consistent) | Demand-tight, multi-source qual = relief vs prior gens | HBM no longer the sharpest pinch — margin inversion (TC-12) redirects supplier behavior |
+| CoWoS | Fully booked; 75-80k → 120-130k wpm exit-2026 | Tight, ramping | Unchanged read |
+| **InP substrate / EML lasers** (>70% supply gap; 2" optical-grade ~3× price YoY; NVDA locked EML capacity, lead times beyond 2027; MOCVD tools 1-2yr) | Digitimes/TrendForce Dec-25→2026 T2 + T3 aggregators | Tightening severely | **SHARPEST NEW ADDITION to current-binding** — TC-7 escalates from geopolitical niche to volume constraint riding the 1.6T/CPO ramp (1.8M→30M+ units 2026) |
+| NAND | 3Q26 flat to +0-5%; ent-SSD lead times 8-14wk | **Easing** (exception: SLC NAND/NOR structural shortage into 2H26, TrendForce 06-16 T2) | NEW: first memory sub-segment to ease |
+
+### 6-12 months (next-binding)
+
+| Constraint | Evidence | P(binding) (my model) |
+|---|---|---|
+| **💰 FINANCING / COST OF CAPITAL — NEW ENTRANT (PD-6 promoted into this file)** | AI/DC credit spreads doubled ~50→>130bps in 3 months (highest since 2009); banks at Oracle-exposure limits; loan syndicates clogging; completions slipping 2027→2028 (Fortune/Bloomberg T2); ~$1.5T tech new debt 2025-27 (CreditSights T2). Gates MARGINAL buildout (neocloud/SPV/tenant-concentrated), NOT mega-cap balance sheets. **Rates-driver note (self-corrected in-cycle):** market prices only ~19% for a hike at the JULY 28-29 meeting specifically (T2/T3) — the near-term leg is quiet, but this does NOT refresh the node's YEAR-END-cumulative hike odds (~two-thirds as of the 07-04 node refresh; different quantity — do not conflate). Live leg near-term = spreads/syndicate-capacity, not the policy rate | **55-65% co-binding on marginal buildout by 2H27** — least consensus-priced item in the sweep |
+| 800V HVDC components (SSTs, DC breakers, busbars — Rubin-class racks ship 3Q26, broad 2H27-28; sidecar TAM ~$11B 2028) | TrendForce 06-25 T2; ST shipping 6-20kW boards now T1 | ~60-70% as the grid-hardware SUB-pinch |
+| Liquid cooling at 600kW racks | Vertiv CoolChip CDU 600 commercially listed (T1 vendor) — supply forming AHEAD of 2027 need | ~40% (downgraded — supply anticipating) |
+| DC skilled trades (439-499K worker shortfall; electricians/substation engineers tightest) | ITIF/Build.inc T2-T3 | 75-80%, but expresses as cost+schedule-slip, not hard stop |
+
+### 12-24 months (next-next — the edge)
+
+| Constraint | Evidence | P(binding by end-2028) (my model) |
+|---|---|---|
+| InP capacity structural (new capacity only post-2027) | Digitimes T2 | 65-75% through 2027, narrowing to 30-50% gap post-2028 |
+| **Low-CTE glass (furnaces)** — the REAL glass-core pinch, not substrate assembly: Corning/Schott/AGC >90% share, furnace build 12-18mo | TrendForce/Digitimes T2; Samsung-Sumitomo ~$310M glass-core JV 2026-07-02 T2; Absolics sampling AMD, first commercial glass-core accelerators late-26/early-27 | 30-40% (enabling-tech more than gate) |
+| 300mm leading-edge wafers — price/allocation gate, not shortage cliff: duopoly "margins over volume," step-up LTAs pricing higher yearly through 2027; NXP/Infineon locked pricing | Semiecosystem/Lapedus T2 | 55-65% — **SUMCO wafer-hike thesis CONFIRMED by independent sweep** |
+| Water/siting permits | Q1'26 figure (75+ projects/$130B blocked) is STALE — no clean Q2'26 aggregate found; regional gate (WHERE not WHETHER) | 50-60% regional |
+
+### Cross-constraint insight (highest-order finding this cycle)
+
+**Financing is upstream of every physical pinch:** if spreads gate neocloud/SPV buildout, marginal demand comes OUT of the transformer/memory/InP queues — the funding constraint partially RELIEVES the physical ones. This coupling (financing ↔ physical demand) is the next verification cycle's focus and is already modeled in `sector/ai-funding-shock-node.md` (canary basket: CoreWeave $4.2B 2026 maturity; Nvidia 10-Q buyback footnote ~Aug). 2nd order (P~60%, my model): a 2H27 financing squeeze hits neocloud GPU demand before it hits hyperscaler memory LTAs — LTA-floored memory names are the relatively insulated leg (TC-12/Micron 16-SCA structure).
+
+**Held-name implications:** MURATA — MLCC demand leg unchanged (TC-13 #4-ranked pinch; 800V adds mandatory IBC-stage content). SUMCO — margins-over-volume + LTA step-up read independently confirmed this cycle. Watchlist-reference memory names (HYNIX/SNDK/KIOXIA): DRAM-dispersion arbitration lands at low-to-mid case — supportive-but-decelerating; Jul-29/late-Jul print predictions unchanged.
+
+**Position implication: 🟡 HOLD both held names — no size change — grid+financing constraints extend the AI-server MLCC demand runway (MURATA) and the wafer price/allocation gate (SUMCO); no falsifier touched; cash deployment still envelope-gated, and the financing-constraint finding argues for keeping the staged-tranche discipline in `portfolio/targets.md` rather than accelerating deployment.**
+
+---
 
 ## 2026-06-04 PM update — LPDDR5X / mobile DRAM promoted to 6-18mo next-binding
 
@@ -16,6 +60,8 @@
 **Portfolio beneficiaries (held):** HYNIX 10.13% (direct LPDDR5X), MURATA 11.45% (MLCC for NPU power delivery), SUMCO 4.43% (wafer), ARM 10.5% (NPU royalty), SNDK 5.2% (on-device storage)
 
 **No new entries required** — existing portfolio captures thesis. HOLD all.
+
+*(⚠️ HISTORICAL — annotated 2026-07-06 audit: the held-list and HOLD-all directive above reflect the June-4 book. As of the 2026-07-05 baseline only MURATA + SUMCO are held; HYNIX/SNDK exited ~07-01/02, ARM exited 06-14. Do not treat as current position guidance.)*
 
 ---
 

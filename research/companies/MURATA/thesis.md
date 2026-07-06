@@ -1,3 +1,6 @@
+**📌 [2026-07-06] BOTTLENECK-FORECAST monthly back-ref** (`sector/bottlenecks.md` last_review 2026-07-06): grid hardware promoted to co-#1 current binding (TC-13-consistent) and FINANCING promoted to 6-12mo next-binding — both EXTEND the AI-server MLCC demand runway (MLCC = TC-13 #4-ranked pinch; 800V HVDC adds mandatory IBC-stage content, broad adoption 2H27-28 per TrendForce 06-25 T2). Financing gates marginal neocloud buildout first, not the hyperscaler server BOM Murata rides. No prediction revision (Jul-31 rev ¥505bn / OP ¥105bn stands).
+**Position implication: HOLD — no size change — 🟡 — forecast reinforces demand-duration; no falsifier touched.**
+
 **📌 [2026-07-03] MLCC HIKES EFFECTIVE + Citi UPGRADE.** +2.97% ¥11,060; Citigroup upgrade to top tier with raised TP (exact TP paywalled — gap). Load-bearing: AI-server/auto high-end MLCC price hikes of 10-40% EFFECTIVE 2026-07-01 (EE Times Japan T2) — lands inside the Q1 FY27 window; DC segment ¥176.7bn FY3/26 = +74% YoY. Positive input to the Jul-31 prediction (rev ¥505bn / OP ¥105bn) — NOT revised; shipment-volume confirmation pending. 07-02's −8.54% was sector beta, recovered. Per `signals/cross-source-log/2026-07-03-kr-jp-morning-fullteam-scan.md`.
 **Position implication: HOLD — no size change — 🟡 — prediction inputs strengthening; grade at the print.**
 

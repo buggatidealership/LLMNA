@@ -551,3 +551,25 @@ H1 + H2 + light audits combined token cost: ~452k subagent tokens + inline analy
 - Literal pre-registered read: INCREASE → roll back priming. Confound: wk3-4 = heaviest analytical-volume window on record (program days; ~50 verification-subagent fires/wk per cost-yield ledger) — the 2026-06-01 pre-registration never normalized for volume, so the raw signal cannot separate "priming failing" from "more analytical turns".
 - **USER DECISION 2026-07-06: KEEP BOTH hooks; extend 30 days with normalized metric = weekly fires ÷ weekly main-branch commits. Extended close: 2026-08-06** (falling → keep; flat/rising → retire llm-native-priming-hook; structural-output-hook thereafter governed by the standard <5 fires/month inert rule).
 - Meta-lesson for future experiment pre-registrations: fire-count criteria MUST specify a denominator at codification time — raw counts confound with activity level (same INPUT-layer error class as L27's beat-vs-consensus needing a consensus anchor).
+
+## 2026-07-06 — Workflow #10 MORNING-FEED first-week review EXECUTED (3 days late; evidence compiled by read-only subagent, ~104k)
+
+**Window audited:** 2026-06-26 → 2026-07-06 (15 keyword/region scans + 4 B60-extension brief-ingest runs). Full run-by-run table in the compilation (agent output, session 2026-07-06); key artifacts + ledger lines cited therein.
+
+**Pre-registered criteria adjudication:**
+- POSITIVE condition ("≥1 Tier-2 deep-fire per week catching cohort-material event"): **MET repeatedly** — ≥6 material catches: BIS AI-credit-channel (→ NBIS trim-trigger set + `sector/ai-funding-shock-node.md` origin; the week's largest risk action), tariff non-event verification (protected ~57% of book from a misread), leaked-OpenAI-financials verification, Samsung −5.84% bad-mark kill, 07-02 false demand-scare stopped pre-cascade into the #1 position, selloff systemic-vs-idiosyncratic adjudications.
+- NEGATIVE condition (5 consecutive zero-Tier-2 scans): never occurred.
+- FALSIFIER (cost >2.5M/week): review week ≈ 0.98-1.0M incl. the user-directed 330k full-team run — ~2.5× under ceiling.
+- FALSIFIER (<30% convergence with user shares): **UNMEASURABLE — the convergence cross-check mandated by `morning-feed-prompts.md` was never instrumented in any run.** See refinement R1.
+- Leg B anti-decorative falsifier: never close to firing — 11 of 12 two-leg runs surfaced nonzero new names/themes; B60 validated (BIS find verbatim-logged as "surfaced ORGANICALLY... NOT pre-seeded").
+
+**VERDICT: CONTINUE-WITH-REFINEMENTS.** No pre-registered NEGATIVE/FALSIFIER threshold hit; discovery + protection yield both demonstrated; 13/15 runs consumed downstream.
+
+**Refinements codified (R1-R4):**
+- **R1 (instrument, don't amend):** every scan MUST append one convergence line to its artifact — "items also surfaced by user same-day: X of Y" — so the <30% falsifier becomes testable by the monthly review (first measurable cycle: 2026-08-06).
+- **R2 (ledger discipline):** every run gets a `subagent-cost-yield-ledger.md` entry in the same commit — runs 12-14 (07-03/04) kept instrumentation in-artifact only; backfill noted, not repeated.
+- **R3 (criteria 1/5/6 deferred to monthly):** per-source signal/noise + prompt-template optimization have no per-run data (the PROMPT-OPTIMIZATION LOG was never populated); rather than backfill guesswork, the monthly cycle (2026-08-06) collects it prospectively via R1/R2 discipline.
+- **R4 (cadence note):** US/EU ran 2× each vs KR/JP 8× — imbalance currently DEFENSIBLE (book is 100% JP-listed names + the KR/JP window is unattended overnight) but re-check at monthly once Routines fire.
+- **Tier-2 auto-fire gate: PENDING USER DECISION** (asked 2026-07-06; options: lift / keep gated / lift-KR-JP-only). Until answered, the gate stays as-is (user-gated).
+
+**06-26 pre-two-leg prototypes** (the only 2 zero-consumption artifacts) — superseded by the two-leg design same day; no action.
