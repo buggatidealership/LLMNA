@@ -1,6 +1,6 @@
 # Grading Log — Open + Resolved Predictions
 
-**Last updated:** 2026-06-02
+**Last updated:** 2026-07-06 (harness audit: duplicate Samsung/ASML/TSMC rows tagged NOT-CANONICAL; reconciliation note corrected — the duplicate Samsung file exists and is now marked SUPERSEDED)
 
 ## TL;DR
 
@@ -12,9 +12,9 @@ Index of every prediction made by the system. Each row resolves to "pending" or 
 |---|---|---|---|---|
 | 2026-06-12 | T+24h ~2026-06-19 to 22 (paper-dependent); T+72h ~06-22 to 25 | KIOXIA | VLSI Symposium 2026 joint Kioxia/SanDisk MSA-CBA paper (L14/L14-v2 forward-application test, L17 candidate N=1) | `2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` |
 | **2026-06-19** | **T+5 ~2026-06-27 / T+15 ~2026-07-07 / T+30 ~2026-07-22 (primary adjudicator)** | **NBIS** | **Nasdaq-100 inclusion effective 2026-06-22 — B48 candidate "event-marker historical-pullback bias" adjudicator test + user R2 hypothesis empirical-verification** | `2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md` |
-| 2026-07-02 | 2026-07-07 prelim (+ full ~Jul-23) | Samsung 005930 | Q2 prelim: rev ₩175-182tn (pt ₩178tn) / OP ₩88-97tn (pt ₩92tn) vs cons ₩171.37tn/₩84.98tn; cohort-barometer reaction bands | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-15 | ASML | Q2: rev pt €8.95B / EPS pt €8.15 / BOOKINGS €11-14bn (pt €12.5bn) / FY26 reaffirm-upper-half P~60% | `2026-07-02-ASML-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-16 (checkpoint Jul-10) | TSMC | Q2: rev pt ~$40.8B (above guide high-end; monthly-math-anchored) / EPS pt ~$4.05/ADR / Q3 guide pt ~$44B | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
+| 2026-07-02 | ~~2026-07-07~~ | ~~Samsung 005930~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev ₩175-182tn variant~~ — pre-correction duplicate; file marked SUPERSEDED; grade ONLY the canonical Samsung row below | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` (SUPERSEDED) |
+| 2026-07-02 | ~~2026-07-15~~ | ~~ASML~~ **⚠️ NOT CANONICAL — do not grade** | ~~EPS pt €8.15 variant~~ — pre-correction numbers; grade ONLY the canonical ASML row below (EPS pt €8.20) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
+| 2026-07-02 | ~~2026-07-16~~ | ~~TSMC~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev pt $40.8B monthly-math variant~~ — self-corrected same-day; grade ONLY the canonical TSMC row below ($40.1B guide-anchored) | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
 | 2026-07-02 | ~2026-07-07 | Samsung (prelim; cohort keystone) | rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn (P beat ~70%); re-open amplifier bands | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
 | 2026-07-02 | 2026-07-15 | ASML | rev pt €8.95B / EPS pt €8.20 / bookings pt ~€12.5bn (LOW conf, INPUT gap flagged) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
 | 2026-07-02 | 2026-07-16 | TSMC | rev pt $40.1B (guide-anchored; SELF-CORRECTION logged — monthly math not held; v2 at Jul-10 June monthly) / EPS pt $3.90 / capex-raise P~55% | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
@@ -26,7 +26,7 @@ Index of every prediction made by the system. Each row resolves to "pending" or 
 | 2026-07-02 | 2026-08-12 | Sumco (HELD) | Q2: rev pt ¥114bn / op result pt −¥1.5bn (better than guided −¥2.5bn loss; P~60%) / H2-profit-language P~55% | `2026-07-02-SUMCO-Q2-earnings-prediction.md` |
 | **2026-07-01** | **T+0 ~2026-07-30 (Q2 print) + T+24h reaction** | **BE** | **FY2026 guidance revision at Q2 print — ensemble (N=5) modal RAISE (floor-lift) rev $3.6-3.9B / EPS $2.05-2.35 / GM ~34-35% / Q2 ~$800M; L22 read = raise ≈ MEET vs consensus. Tests Rule #17 ensemble spread-vs-outcome + L22 + L13 vintage + L19 reaction** | `2026-07-01-BE-Q2-FY26-guide-prediction.md` |
 
-**⚠️ DUPLICATE-ROW RECONCILIATION (2026-07-02 PM):** the table contains TWO row-sets for Samsung/ASML/TSMC. **CANONICAL for grading = the rows referencing `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` / `2026-07-02-ASML-Q2-earnings-prediction.md` (EPS pt €8.20) / `2026-07-02-TSMC-Q2-earnings-prediction.md` (rev pt $40.1B, guide-anchored + Rule #11 self-correction).** The other three rows (rev ₩175-182tn variant / EPS €8.15 / TSMC "$40.8B monthly-math-anchored", filename variant `...-prelim-earnings-prediction.md`) carry the PRE-correction chat-board numbers and reference non-existent files — retained un-edited for audit transparency, NOT graded. The TSMC "$40.8B monthly-math-anchored" claim was explicitly self-corrected same-day (the monthly data was never received — see the TSMC file's Rule #11 section). One prediction, one canonical registration.
+**⚠️ DUPLICATE-ROW RECONCILIATION (2026-07-02 PM; CORRECTED 2026-07-06 harness audit):** the table contains TWO row-sets for Samsung/ASML/TSMC. **CANONICAL for grading = the rows referencing `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` / `2026-07-02-ASML-Q2-earnings-prediction.md` (EPS pt €8.20) / `2026-07-02-TSMC-Q2-earnings-prediction.md` (rev pt $40.1B, guide-anchored + Rule #11 self-correction).** The other three rows carry PRE-correction numbers, are marked NOT-CANONICAL in the table, and are NOT graded. **Correction of the original note's false claim:** the duplicate Samsung file `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` DOES exist on disk (it now carries a SUPERSEDED header); the ASML/TSMC variant rows point at the SAME canonical filenames but with divergent point numbers. The TSMC "$40.8B monthly-math-anchored" claim was explicitly self-corrected same-day (the monthly data was never received — see the TSMC file's Rule #11 section). One prediction, one canonical registration.
 
 **KIOXIA T+24h grade WINDOW OPEN as of 2026-06-19 (today):** VLSI Symposium Day 5 (June 18) likely contains MSA-CBA paper presentation; T+24h stock-reaction grade actionable today through 2026-06-22. **GRADE PREP CHECKLIST:**
 1. Verify MSA-CBA paper actually presented June 14-18 (subagent + VLSI on-demand June 24+ access OR Kioxia/SanDisk co-press release)

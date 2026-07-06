@@ -1,4 +1,6 @@
-**STATUS: APPROVED — OPTION A (user reply "a", 2026-07-03). Execute: SELL 30 sh NBIS Monday 2026-07-06. holdings.md updates ONLY on post-trade screenshot per canon.**
+**STATUS: ✅ CLOSED — EXECUTED EARLY 2026-07-03 (user sold ALL 30 sh same day as approval, ahead of the Monday plan; per `research/meta/day-state.md` 07-03 EVE entry + `portfolio/changes.md` + 2026-07-05 fresh-start baseline in `portfolio/holdings.md`). The Monday-2026-07-06 execution instruction below is SUPERSEDED — position is ZERO, do NOT act on this package. T+15/T+30 inclusion grades still resolve on schedule per the pre-registration. Package retained as the W11 protocol's first completed live package. *(Annotation added 2026-07-06 harness audit.)***
+
+~~STATUS: APPROVED — OPTION A (user reply "a", 2026-07-03). Execute: SELL 30 sh NBIS Monday 2026-07-06. holdings.md updates ONLY on post-trade screenshot per canon.~~
 
 # DECISION PACKAGE — NBIS falsifier adjudication (issued 2026-07-03; the W11 protocol's first live package)
 

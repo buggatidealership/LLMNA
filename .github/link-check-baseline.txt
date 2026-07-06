@@ -7,7 +7,7 @@ research/INDEX.md:134: `signals/cross-source-log/2026-06-23-pm-jukan-cxmt-verifi
 research/companies/AIXTRON/thesis.md:69: `research/companies/LITE/thesis.md`
 research/companies/AIXTRON/thesis.md:70: `research/companies/COHR/thesis.md`
 research/companies/AMBA/thesis.md:161: `signals/cross-source-log/2026-06-01-amba-deep-dive-4-subagent-synthesis.md`
-research/companies/HYNIX/thesis.md:1225: `research/companies/HYNIX/facts.md`
+research/companies/HYNIX/thesis.md:1229: `research/companies/HYNIX/facts.md`
 research/meta/2026-05-26-ath-refresh-and-4092-prediction.md:148: `research/meta/2026-05-25-earnings-streak-stratification-2026-05-25.md`
 research/meta/day-state.md:31: `research/meta/w11-heartbeat-log.md`
 research/meta/signal-density-detection.md:55: `signals/triangulation-archive.md`

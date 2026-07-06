@@ -1,3 +1,7 @@
+**⚠️ POSITION STATUS: FULL EXIT ~2026-07-01/02 (all 16 GDR sold by user; emotional, NON-FALSIFIER exit; disclosed via DeGiro screenshots 2026-07-05).** Per `portfolio/holdings.md` 2026-07-05 fresh-start baseline + `research/INDEX.md` + conversion-layer lesson in `predictions/lessons.md` (2026-07-05 harness-level entry). **All "Position implication: HOLD" entries below (including the 2026-07-03 banners) are HISTORICAL ARTIFACTS from the held period — do NOT treat as current position guidance.** Thesis retained intact as watchlist-reference: the Jul-29 Q2 print prediction (OP pt ₩68tn) still resolves, and all falsifiers/watch-lines (ADR listing Jul-10, Samsung prelim keystone) remain live as re-entry framework. *(Banner added 2026-07-06 harness audit — the exit had not been cascaded into this file.)*
+
+---
+
 **📌 [2026-07-03 EVE] Two offsetting demand-side notes (per `signals/cross-source-log/2026-07-03-evening-brief-ingest-2leg-IN-FLIGHT.md`):** (1) WATCH — Meta "Vistara" CXL ASIC (ISCA-26 T1) reuses decommissioned DDR4 in DDR5 servers, ~40% of Meta servers memory-constrained, 25% inference-server-count cut demonstrated — buyer-side bypass at a top-3 DRAM buyer, magnitude UNQUANTIFIED (weak-medium; watch for fleet-scale disclosure or a second hyperscaler copying it). (2) SUPPORTIVE — Rubin CPX (the GDDR7 prefill accelerator = HBM-attach-dilution vector) reportedly REMOVED from Nvidia's roadmap at GTC-26 w/ Groq-SRAM pivot (MEDIUM-HIGH, The Elec-rooted — confirm before weighting). Net: wash-to-slightly-positive; Q2 prediction (Jul-29) and all falsifiers UNCHANGED.
 **Position implication: HOLD — no size change — 🟡 — offsetting unquantified signals; keystone remains Samsung prelim Jul-7.**
 
@@ -975,7 +979,7 @@ In 3 of 4 hypotheses (P=80%), HYNIX thesis is positive or compounding.
 ---
 
 **Prior last updated:** 2026-06-04 (Samsung HBM5 mockup verification + Alphabet $85B capex anchor; **self-correction** on 2026-06-04 prior-turn overstatement of Samsung HBM5 near-term competitive threat)
-**Tier:** Core — held position, structural moat validated, thesis intact
+**Tier:** EXITED 2026-07-01/02 — watchlist-reference (was Core; structural moat thesis intact; exit was emotional/non-falsifier per top banner)
 **Position target:** 10–14% (user currently holds 10.13% per `research/portfolio/holdings.md` 2026-06-02 — at target lower band)
 **Anti-fragility:** 3.5/5 — wins in S1, S2, S3 (HBM consumed regardless of which chip wins)
 **Foundation:** `research/wiki/hbm-primer.md`

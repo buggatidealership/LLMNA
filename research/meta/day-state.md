@@ -1,6 +1,6 @@
 # DAY-STATE — the autonomous-loop working memory (Workflow #11)
 
-**ARMED SCHEDULE (re-armed 2026-07-03 ~10:10 UTC after WAKE-1 FAIL-infrastructure — process death overnight, see `signals/cross-source-log/2026-07-03-WAKE1-audit-FAIL-infrastructure-process-death.md`): MINIMAL TWO-SLOT SET, UTC-explicit: KR/JP 00:22 UTC daily + EOD 20:17 UTC daily. EU/US slots restored only if today's process survives to EOD. STANDING CONCLUSION: all in-session scheduling is best-effort; perpetuity requires the user-side platform trigger.**
+**ARMED SCHEDULE (header corrected 2026-07-06 harness audit; latest actual state = the 07-04 SAT re-arm below): KR/JP 00:22 UTC daily ONLY, with SAMSUNG-PRELIM ESCALATION baked in (Jul-7 keystone), expiry ~Jul-11. EOD slot deliberately NOT re-armed on 07-04 (weekend). NOTE 2026-07-06: session-start swap-detector fired again — cron wakes presumed DEAD in the current container; re-arm required before tonight's 00:22 UTC Samsung-prelim wake OR (better) user creates the platform Routines per `research/meta/platform-trigger-setup.md` (updated for LLMNA/main). STANDING CONCLUSION: all in-session scheduling is best-effort; perpetuity requires the user-side platform trigger.** *(Prior header text — 07-03 two-slot re-arm — superseded by the 07-04 entry it contradicted; WAKE-1 audit at `signals/cross-source-log/2026-07-03-WAKE1-audit-FAIL-infrastructure-process-death.md`.)*
 
 ## Catalyst clock (next 7 days)
 - **~2026-07-07: SAMSUNG Q2 PRELIM — THE KEYSTONE.** Pre-registered: OP pt ₩92tn vs cons ₩84.98tn (`predictions/2026-07-02-SAMSUNG-Q2-prelim-prediction.md`). First prediction-board resolution; adjudicates positioning-vs-fundamentals for the whole correlated board. Lands in the KR/JP 02:22 wake. GRADE + cascade + notify (materiality gate (c) likely passes either way on the keystone).
@@ -8,7 +8,7 @@
 - 2026-07-03: US markets CLOSED (Jul-4 observed). KR/JP + EU wakes only; US wake = skip-fast.
 - 2026-07-10: TSMC June monthly — TSMC prediction v2 checkpoint (pre-committed).
 - Watch-state (no dates): ONTO quote-conflict resolution; Asia-close reconciliation queue.
-- **🚨 P0 2026-07-03: NBIS falsifier-arithmetic flag** — Jul-2 close reports ($211-229, unverified T2/T3) fall BELOW the $234 (-15% from $275.50) 2026-06-26 trim-trigger threshold, ~3wk ahead of the 2026-07-22 deadline. NOT actioned (T1 close-price gap this session). **First priority next session: get a T1-verified NBIS close and re-check against the falsifier before Samsung-prelim wake.** See `companies/NBIS/thesis.md` + `signals/cross-source-log/2026-07-03-AM-global-overnight-queued-verification-jul2-close-metacompute-2nd-order-sbneo-nvidia-buyback-weekend-calendar.md`.
+- ~~🚨 P0 2026-07-03: NBIS falsifier-arithmetic flag~~ **MOOT (struck 2026-07-06):** resolved by the 07-03 decision package → falsifier honored → ALL 30sh sold 2026-07-03. No T1-close re-check needed; only the T+15/T+30 inclusion grades remain (see calendar row above). Historical detail retained in `companies/NBIS/thesis.md` + `signals/cross-source-log/2026-07-03-AM-global-overnight-queued-verification-jul2-close-metacompute-2nd-order-sbneo-nvidia-buyback-weekend-calendar.md`.
 
 ## Open threads (carried into wakes)
 1. Buy-list = WATCHLIST by user decision 2026-07-02 (`portfolio/targets.md`) — BE/ALAB/ONTO/AVGO/4203; re-triggers listed there; any trigger firing → decision package, NOT entry.
@@ -18,7 +18,7 @@
 5. Discovery programs closed (run #1 both); next: oblivious-layer run #2 2026-10-02 or roadmap event; hidden-AI-apps semi-annual or model release.
 
 ## Pending decision packages
-**RESOLVED: NBIS package → APPROVED A (2026-07-03).** Execute SELL 30sh Monday 2026-07-06; confirm via screenshot; then holdings/INDEX/session-prime cascade. Inbox otherwise empty.
+**INBOX EMPTY.** NBIS package CLOSED — approved A and EXECUTED EARLY the same day (2026-07-03, all 30sh sold per user; see 07-03 EVE entry below). Do NOT execute the package's Monday-07-06 sell instruction — position is zero. Holdings/INDEX/session-prime cascade completed via the 2026-07-05 fresh-start baseline. *(Corrected 2026-07-06 harness audit — this section previously still carried the live sell instruction.)*
 
 ## Yesterday/today digest (2026-07-02 — written at arm time; EOD wake takes over from tomorrow)
 Full-day summary lives in the session commits `99cf1a7d`..`e489204d`: enabling-layer map, two discovery programs (both falsifiers fired honestly), earnings-prediction board complete (10 names), evening-brief cascades (SKH long-horizon plan / Meta-Compute confirmed / Nvidia buyback / PD-8 candidate).
