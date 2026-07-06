@@ -2,6 +2,9 @@
 
 **ARMED SCHEDULE (RE-ARMED 2026-07-06 ~18:20 UTC after swap detection — job 547c1ca4): KR/JP 00:22 UTC daily ONLY, SAMSUNG-PRELIM ESCALATION + NBIS T+15 grade baked into the wake prompt; Tier-2 auto-fire (gate lifted 07-06); 7-day autoexpire ~07-13. Sentinel touched. EOD slot NOT re-armed (per 07-04 decision). STANDING CONCLUSION unchanged: in-session scheduling is best-effort — perpetuity requires the user-side platform Routines per `research/meta/platform-trigger-setup.md` (updated for LLMNA/main; STILL PENDING user execution).** *(Prior header text — 07-03 two-slot re-arm — superseded by the 07-04 entry it contradicted; WAKE-1 audit at `signals/cross-source-log/2026-07-03-WAKE1-audit-FAIL-infrastructure-process-death.md`.)*
 
+## Operating mode note (2026-07-06 EVE)
+**SINGLE-SESSION MODE:** user archived all other LLMNA sessions ~19:50 UTC — this session is the ONLY live thread. Provenance implication: from this point, any main-branch commit NOT from this session = a platform Routine firing (once created) or an anomaly to investigate at wake-audit. Scheduler implication: cron job 547c1ca4 (KR/JP 00:22 UTC, Samsung-prelim escalation) in THIS session is now the sole scheduler — if this container swaps before ~00:22 UTC, tonight's wake dies with it; the Routines setup remains the only durable path.
+
 ## Catalyst clock (next 7 days)
 - **~2026-07-07: SAMSUNG Q2 PRELIM — THE KEYSTONE.** Pre-registered: OP pt ₩92tn vs cons ₩84.98tn (`predictions/2026-07-02-SAMSUNG-Q2-prelim-prediction.md`). First prediction-board resolution; adjudicates positioning-vs-fundamentals for the whole correlated board. Lands in the KR/JP 02:22 wake. GRADE + cascade + notify (materiality gate (c) likely passes either way on the keystone).
 - ~2026-07-07: NBIS T+15 inclusion grade (`predictions/2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md`) — US pre-market wake; note the Meta-Compute −15% confound in the grade.
