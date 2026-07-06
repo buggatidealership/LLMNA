@@ -21,6 +21,14 @@
 - R3: test fire (E4) runs pre-prelim (~20:5x UTC, KR/JP closed) → expected output is a SMALL valid wake (catalyst-clock check, docket read, minimal scan) — small-but-committed = PASS (mirrors WAKE-1 silent-small PASS criterion).
 - R4: double-fire risk tonight (routine 00:22 UTC + in-session cron 547c1ca4 00:22 UTC, same minute) — ACCEPTED for one night as redundancy; if both fire, the second sees a clean tree (first's commit pulled) and no-ops or duplicates harmlessly; cron is retired after the routine's first proven scheduled fire.
 
+## VERDICTS (appended at the pre-registered checkpoints)
+
+- **E1 PASS** (22:13:40Z): trigger created, next_run_at 2026-07-07T00:22:00Z exact → cron = UTC-interpreted, no correction needed. `trig_01CnVFkk2Xk5kmtJPSgTUdBE`.
+- **E2 PASS** (22:14:39Z): EOD trigger, next_run_at 2026-07-07T20:17:00Z (today's slot passed, per pre-registered conditional). `trig_01Du5F6BePkLcBmx9v6SRdh6`.
+- **E3 PASS** (22:15Z): list_triggers shows both, enabled, schedules exact.
+- **E4 — NO EVIDENCE AT THE 45-MIN BOUNDARY (checked 23:28:54Z; fire registered 22:43:22Z, fresh session spawned).** No non-this-session commit on main; no claude/w11-wakes branch created. Provisional grade: **FAIL-leaning-PARTIAL** — hypothesis split (my model): H3 wake still running P~50 (fresh-session cold start + the baked-in prompt instructs a full two-leg scan, which historically runs 30-60+ min — the appended "keep minimal" test note may not have overridden it); H2 session errored/never executed P~35 (WAKE-1/2 precedent justifies infrastructure skepticism, though this is a different mechanism); H1 ran-but-both-pushes-failed P~15 (claude/* pushes are default-allowed, so a total push failure is the least likely). Observation extended ONE window: a late-landing E4 commit remains diagnostic. **No PASS codifications executed; in-session cron 547c1ca4 stays armed.**
+- **E5 (decisive):** scheduled fire 00:22:00Z tonight — carries the Samsung-prelim GRADE. Combined E4-late/E5 evidence check armed for ~00:43Z. If E5 also produces no commit → routines-FAIL verdict, the 07-05 "user-side setup" conclusion partially survives (programmatic CREATION works — E1-E3 — but fresh-session EXECUTION unproven), and diagnosis moves to inspecting a run in the app UI (user-side visibility).
+
 ## Retirement condition (pre-registered)
 
 In-session cron 547c1ca4 gets deleted + Workflow #11 "perpetuity requires user-side setup" language gets rewritten ONLY after E4 PASS **and** E5 PASS (tomorrow's audit). Guide + day-state updated at E4; final retirement at E5.
