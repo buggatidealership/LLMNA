@@ -12,4 +12,5 @@
 
 | UTC timestamp | Session/container note | Action taken |
 |---|---|---|
-| (none recorded) | — | — |
+| (none recorded 07-02→07-06) | — | — |
+| 2026-07-06 ~18:20 UTC | Fresh container (swap-detector fired at session start); harness-audit session | RE-ARMED KR/JP 00:22 UTC wake (job 547c1ca4, Samsung-prelim escalation + NBIS T+15); sentinel touched |
