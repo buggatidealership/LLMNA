@@ -134,3 +134,11 @@ NOW up on the 07-02 rout + DDOG +8.52% on 06-26 (SOXX −5.64%) + IGV +7%/SOXX �
 4. **Samsung fact-check confirmed for the user:** rev ₩171tn vs ₩173tn consensus (−1% miss) / OP +6% beat (on file) — the revenue wrinkle + whisper-anchoring + Kyber tape = the rout decomposition, unchanged.
 **Recommended structure (user-gated):** NOW starter ~€3k from cash (pre-print, with three-branch print rules pre-committed) + OPTIONAL MURATA band-trim to 15% as a separately-labeled sizing decision + SUMCO untouched through Aug-6. Rule #17 ensemble runs on the final numbers when the user picks.
 **Position implication: ⚪ NO ACTION — 🟡 — proposal adjudicated, alternatives structured, execution user-gated; no falsifier fired on either held name (Rule #8 binding).**
+
+## [PM-8] CANONICAL HOLDINGS REFRESH (user screenshots 2026-07-07 PM) — sizing baseline updated; PM-7 numbers revised
+
+Per `portfolio/holdings.md` 2026-07-07 canonical: balance €89.976,12 / cash €58.692,23 (65,2%) / MURATA 18,1% (−9,6% vs BEP — UNDERWATER post-rout) / SUMCO 16,7% (+7,3% vs BEP). No transactions since 07-05 — the −5,7% two-session book decline is pure market move (EUR-terms rout), which also GRADES my earlier ≈−4,2% book-day estimate as UNDERSTATED (missed EUR/JPY translation + the 07-06 leg; INPUT-layer note for the calibration log).
+**Revisions to the PM-7 structure (my model, on the fresh base):**
+- **MURATA band-trim case WEAKENED:** the rout self-corrected 20,6% → 18,1%; residual overage vs the 15% Core ceiling ≈ €2,8k (was ≈€4-5k) — AND the position is now UNDERWATER vs BEP, so a trim realizes a loss. A band-trim remains defensible as pure sizing discipline, but the cost-benefit narrowed materially; my updated modal = HOLD through the Jul-31 print unless the user weighs concentration-comfort over the realized-loss friction.
+- **NOW starter unchanged:** ~€3k from the €58,7k cash = Active-min on the fresh base (band €2,7-7,2k); all PM-5/PM-6 print math unaffected.
+- SUMCO: inside sizing tolerance, green vs BEP, untouched through Aug-6 (unchanged).

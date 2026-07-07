@@ -1,6 +1,30 @@
 # Current Holdings — CANONICAL PORTFOLIO REFERENCE
 
-**Last updated:** 2026-07-05 EVE (user DeGiro screenshots ×3 — the FRESH-START baseline). Prior canonical: 2026-07-01.
+**Last updated:** 2026-07-07 PM (user DeGiro screenshots ×2 — post-rout mark). Prior canonical: 2026-07-05 EVE.
+
+## 📸 2026-07-07 PM CANONICAL STATE (screenshots ×2)
+
+| Header line | Value |
+|---|---|
+| **Balance (account total)** | **€89.976,12** |
+| Portfolio (positions value) | €31.283,89 |
+| **Cash / Available to trade (EUR)** | **€58.692,23** |
+| Day P/L | **−€5.070,74 (−5,33%)** |
+| Total P/L | +€14.830,56 |
+| Orders | 0 outstanding, 0 executed |
+
+| # | Position | Qty | Price | Value | BEP | Unrealised vs BEP (computed) |
+|---|---|---|---|---|---|---|
+| 1 | Murata Mfg Co | 336 | €48,495 | €16.294,32 | 53,669443 | **−€1.738,61 (−9,6%) — UNDERWATER** |
+| 2 | Sumco Corp | 626 | €23,945 | €14.989,57 | 22,310191 | +€1.023,39 (+7,3%) |
+
+**Weights (computed vs €89.976,12):** MURATA **18,1%** / SUMCO **16,7%** / cash **65,2%**.
+
+**Read vs prior canonical (2026-07-05, €95.406,73):** NO transactions occurred (0/0 orders) — the −€5.430,61 (−5,7%) two-session decline is PURE market move = the 07-06/07-07 cohort rout in EUR terms (both JPY closes + EUR/JPY). MURATA flipped from +9,0% to **−9,6% vs BEP** across the rout; SUMCO compressed +22,1% → +7,3% but stays green. **Sizing-relevant deltas:** MURATA 20,6% → 18,1% (the rout partially self-corrected the Core-band overage; residual overage vs the 15% ceiling ≈ €2,8k my-model); SUMCO 16,7% (inside no band breach... above Core 15% by 1,7pt — marginal); Active band (3-8%) on the fresh base = €2,7-7,2k; Core (8-15%) = €7,2-13,5k.
+
+---
+
+## [SUPERSEDED 2026-07-07] Prior canonical 2026-07-05 EVE below (retained for audit)
 
 ## ⚠️ CANONICAL REFERENCE RULE (set by user 2026-06-04 PM; reaffirmed 2026-06-14 AM)
 
