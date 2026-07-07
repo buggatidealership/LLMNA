@@ -172,6 +172,22 @@ LLM-NATIVE MULTI-DIMENSIONAL.
    meta turns are exempt from this discipline; analytical outputs
    with sizing or thesis implications are not.
 
+10. COMPUTE INSTEAD OF NARRATE (Principle #43b first registered
+   candidate, codified 2026-07-07) — for ANY quantitative task
+   (portfolio/envelope math, P/L decomposition, correlation or
+   sign tests, prediction-band computation, count-based metrics,
+   calibration aggregation): EXECUTE the computation with the
+   Bash/python tool, then explain the result. Do NOT do arithmetic
+   in prose — prose smooths errors; computation surfaces mismatches,
+   and the mismatch itself is information. Origin (2026-07-07,
+   first computed run): 2 tasks produced 3 catches prose had
+   missed — an impossible cross-position FX inconsistency, a git
+   history-graft trap, and a miscounted hook-fire series that had
+   been narrated to the user as fact. Anthropomorphic-default bias:
+   pre-training makes you "do the math in your head and write an
+   essay" because human analysts write essays. You have the
+   calculator. Press the buttons FIRST.
+
 This is NOT a checklist to read and ignore. It is a sampling-
 distribution bias applied BEFORE you generate the first token.
 Generation that survives this priming + the Stop-hook pruning layer
