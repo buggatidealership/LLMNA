@@ -46,3 +46,21 @@ Per close-verification agent (~18k, T2 multi-snapshot + T1 FN intraday):
 - **⚠️ AGENT-CONFLICT FLAG (not propagated):** this agent claimed the "SKH ADR pricing Thursday" framing may be conflated and "SK Hynix has no primary US-listed ADR line" — CONTRADICTED by the stronger 07-06 T1 verification (Reuters + the launch filing itself: cornerstones, ₩242,500/ADR ref, pricing Thu 07-09, trading ~07-10; `2026-07-06-skh-adr-cornerstones-situational-awareness-verification.md`). On-file state STANDS; the open question the agent legitimately raised: whether the sell-the-news tape pressures Thursday's pricing/cornerstone-hold — no source yet either way.
 
 **Position implication: ⚪ NO ACTION — 🟡 — MURATA/SUMCO closes in verification (JP agent in flight); no held-name falsifier fires on cohort price action (Rule #8); the cycle-peak tell set (user-registered) is surfaced for user attention, with the L27 N=3/N=4 prints as the designed adjudicators.**
+
+---
+
+## [09:35Z UPDATE] JP contagion register (partial — individual names not yet indexed)
+
+| Instrument | 07-07 | Tag |
+|---|---|---|
+| Nikkei 225 | 68,256.96, **−2.12%** (−1,480.73) | T1 Nikkei 大引け |
+| TOPIX | 4,062.26, −0.97% | T2 single-source |
+| Kioxia 285A | **≈−11%** — CORRECTION: the earlier −12% claim overstated ~1pt (Nikkei headline "11%安" T1; do NOT conflate with the separate 07-02 −14.89% intraday event) | T1 magnitude |
+| KOSPI close print RESOLVED | **7,656.31, −4.90%** (Nikkei T1) — the −5.81% figure was an intraday-labeled print | T1 |
+| TEL/Advantest/Disco | down, cohort direction only | T2 |
+| **MURATA 6981** | 07-07 close NOT INDEXED yet; direction down (T3). ⚠️ NEW held-name flag: a stale quote page shows the 07-06 close at ¥10,250 **−7.49%** — if real, the held #1 position had a >5% day YESTERDAY that pre-dated this rout; T3-grade, re-pull armed | pending |
+| **SUMCO 3436** | 07-07 NOT INDEXED; 07-06 was UP +1.51% (¥5,171 — consistent with the on-file Jul-3 ¥5,094 18.5-yr high); 07-07 direction genuinely uncertain | pending |
+
+**JP press framing (unanimous, T1/T2 Nikkei/Fisco/kabutan):** Korea semi-selloff contagion — profit-taking on the run-up after Samsung's record prelim, spilling to JP semis + electronic parts (Murata, Taiyo Yuden named); **Morgan Stanley "AI investment-cycle turn" warning cited as amplifier** (new sell-side bear datapoint — same family as the L27 falsifier-watch question).
+
+**Re-pull armed ~13:00Z** (daily bars index in 2-4h per the agent): MURATA/SUMCO/Kioxia exact closes + the Murata 07-06 −7.49% verification. Held-name tier-2 criteria (>5% move) will adjudicate on verified data, not stale quotes.
