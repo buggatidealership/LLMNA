@@ -3183,3 +3183,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md`
 **Commit:** (this commit)
+
+### [2026-07-07 PM-4 — NOW Jul-22 beat anatomy + signal dashboard] 2 Opus; HIGH both — 8/8 beat-and-raise base rate isolates the AI-ACV line as THE binding variable; joint P(clean stock-up event) ~0.30 converges independently with the pre-registered H1 P~35; FX agent-conflict caught and quarantined
+**Trigger source:** user directive ("what must be true for a beat-all-and-raise + map the directional data sources"). **Subagents fired:** 2 (Opus, parallel). **Estimated token cost:** ~114k (actual 34.5 + 79.1).
+**Per-subagent yield:** beat-anatomy HIGH (8-quarter T1 base-rate table; compressing-magnitude catch; raise-size nuance; AI-ACV ramp math $900M-1.0bn Q2 gate; "technical vs stock-up beat are two different events"); signal-map HIGH (the SAP/Infosys-print-Jul-23 structural gap — no peer read before NOW; Accenture-mixed decomposition; Gartner 3rd up-revision; crowd-out-vs-attach fulcrum mapped to the framework spine).
+**Brief-framing errors caught:** FX DIRECTION CONFLICT between the two agents (DXY-headwind vs weak-USD-tailwind) — flagged NOT propagated, arbitration armed ~Jul-20; NOW thesis stale Jul-29 date corrected to Jul-22 (banner).
+**Thesis cascade triggered:** NOW thesis pre-registration banner + date fix; mandate artifact PM-5/PM-6 sections.
+**Position implication delta:** NONE — staged-entry decision remains user-gated with the ~Jul-20 re-pull armed.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md` (PM-5/PM-6)
+**Commit:** (this commit)
