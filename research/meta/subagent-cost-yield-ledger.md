@@ -3141,3 +3141,14 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-feed-kr-jp-legA-postrout.md` + `2026-07-07-morning-feed-kr-jp-legB-DISCOVERY.md`
 **Commit:** (this commit)
+
+### [2026-07-07 MIDDAY — AI Intelligence Brief gauntlet (B61 class)] 3 Opus; HIGH ×3 — promoted the ONE fresh item (Kyber delay, market-moving) + killed 6 recycles incl. a funding-node double-count; ADR downsize adjudicated pre-rout-mechanical with cornerstones holding
+**Trigger source:** user-shared daily LLM-generated digest (own agent, B61 benign-aggregation sub-type). **Subagents fired:** 3 (Opus, parallel). **Estimated token cost:** ~65k (actual 19.0 + 24.4 + 21.8).
+**Items verified:** Kyber/Rubin-Ultra delay; Rubin CPX; H100-vs-GB200 TCO; SKH ADR live state + Huawei-Korea; Colossus 2 + xAI raise; Trainium 5GW; Railway/Cowork/Slackbot/GLM-5.2 app-layer rows.
+**Per-subagent yield:** A HIGH (Kyber FRESH-CONFIRMED 07-06 w/ NVIDIA denial + PCB/CCL cascade table + the held-name kill-line: rack slip ≠ component/wafer volume cut; also refuted my own NVL144-garble suspicion — visible self-correction); B HIGH (downsize ₩45.45tn→₩43.14tn adjudicated as PRE-rout mechanical reset; cornerstone tell INTACT; NEW negative-basis watch ~9.2%; Huawei-Korea split verdict; SKH Q2 Street ₩61-66tn bar datapoint); C HIGH (6-item recycle sweep incl. Colossus-1-specs-on-Colossus-2 garble + xAI Jan-raise double-count block; app-layer rows back-dated for the P1 framework).
+**Brief-framing errors caught:** Colossus 2 spec cross-contamination; xAI raise presented as simultaneous-new; CPX/TCO/Trainium/Railway/Cowork/Slackbot staleness-as-fresh; "Blackwell packaging offshore 2028" attribution smear; "3x H20" rounding (2.87×).
+**Thesis cascade triggered:** HYNIX (ADR midday banner), MURATA + SUMCO (Kyber second-driver banners; 2027 assumptions stand), day-state, B61 N+1 note, todo P1 evidence rows.
+**Position implication delta:** NONE — 🟡 HOLD both held names; no falsifier touched.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-brief-b61-gauntlet-kyber-skh-adr-applayer.md`
+**Commit:** (this commit)
