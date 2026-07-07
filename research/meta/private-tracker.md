@@ -13,8 +13,9 @@ Names that matter to public-market thinking but don't have tickers. Track their 
 - Watch: IPO progression; on-prem deal scale; partner shifts
 
 ### Anthropic
-- Status: Strong #2 to OpenAI in scale, but passed OpenAI in enterprise share by April 2026
+- Status: Strong #2 to OpenAI in scale, but passed OpenAI in enterprise share by April 2026; **IPO path OPENED — confidential draft S-1 filed 2026-06-01**
 - Public-market relevance: Compute customer (AMZN AWS, GOOG); Anthropic-Amazon partnership deep; Anthropic-AVGO custom Si partnership announced May 2026
+- **2026-06-01 STATE CHANGE (backfilled 2026-07-07 — event was never logged; caught via US Leg B re-surface + Rule #16/B63 adversarial verification):** Confidential draft S-1 filed with SEC (IPO path opened). T1 company-confirmed ([anthropic.com](https://www.anthropic.com/news/confidential-draft-s1-sec)) + CNBC/CNN/NPR/TechCrunch independent. FACT: filing itself; concurrent ~$65B Series H @ $965B valuation (T1/T2 reported); RRR ~$47B at filing (T2 CNBC). SPECULATION (T3, unconfirmed): Oct-2026 Nasdaq listing, >$60B raise, GS/JPM/MS leads, "$1T IPO" framing — company explicitly says shares/price/exchange/timing NOT set; confidential S-1 = option, not commitment. **Re-surfaced 2026-07-07 via Crunchbase H1 roundup = STALE-RECYCLE (B40/B61) — do not re-log as new.** B63 note: Anthropic-favorable item; adversarial pass run, core fact survived on company-confirmation tier.
 - **2026-06-11 update (per `signals/cross-source-log/2026-06-11-june10-evening-brief-triage-b40-n9.md`):**
   - **MSFT restricted internal employee use of Fable 5** (removed from internal GitHub Copilot model picker) over the Mythos-class retention requirement — which **overrides existing ZDR agreements** (T1 Anthropic Help Center: 30-day retention all platforms, up to 2 years if classifier-flagged). MSFT simultaneously sells Fable 5 via Foundry = customer-balking, not competitor positioning (T2 Verge/Reuters).
   - Named-researcher false positives (Unutmaz/Jackson Lab, Verdon) + **Anthropic acknowledged safeguards too stringent** (T2 The Register).

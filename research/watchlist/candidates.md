@@ -1,6 +1,22 @@
 # Watchlist Candidates
 
-**Last updated:** 2026-06-23 PM-CXMT-SEMIANALYSIS (CXMT entry added as MONITOR-ONLY with binding investability barrier — STAR Market A-share listing direct-INACCESSIBLE for Euro retail; access via China A-share ETF only; flag BIS Entity List status; 1 SemiAnalysis framing-error caught on Qimonda IP chain "Inotera/Powerchip" claim contradicted by primary sources documenting Polaris Innovations/WiLAN chain)
+**Last updated:** 2026-07-07 US-LEG-B (defense-electronics + power-capex additions)
+
+---
+
+### ⚪ Counter-drone / defense-electronics cluster — Northrop Grumman (NOC) reference name (added 2026-07-07, US Leg B discovery)
+
+Per `signals/cross-source-log/2026-07-07-morning-feed-us-DISCOVERY.md`. NATO Ankara summit unveiled ~$40B (T1, in-window) counter-drone + UAV procurement cluster (Northrop named). Surfaced ORGANICALLY by the unanchored newspaper read — the harness has ZERO defense-electronics framework (flagged in the 07-07 absence answer). Latent read-through: defense electronics is passives-dense (MLCC content) — a possible SECOND non-AI demand leg for the MURATA thesis, unquantified. Status: radar-only; no framework, no thesis. Promotion trigger: N≥3 same-direction defense-electronics procurement signals in 90 days → build the framework before any name-level work.
+
+### ⚪ Joulent (private) — $1.75B energy round (added 2026-07-07, US Leg B discovery)
+
+Per same artifact. Private AI-datacenter-energy company raising $1.75B (T2, in-window) inside the $1.1T→$1.4T utility-capex re-rate story. No listed expression; logged as an S3 (power binds) datapoint. Track via `meta/private-tracker.md` only if it recurs.
+
+**Routing note 2026-07-07:** Siemens Energy (ENR.DE, below) gets an S3 N+1 from the same window (utility-capex re-rate + GEV −9% tape). CRNX / GPC / FI surfaced by Leg B but connected to nothing (stated explicitly per anti-manufactured-relevance rule) — logged in the artifact, NOT added here.
+
+---
+
+**Prior header:** 2026-06-23 PM-CXMT-SEMIANALYSIS (CXMT entry added as MONITOR-ONLY with binding investability barrier — STAR Market A-share listing direct-INACCESSIBLE for Euro retail; access via China A-share ETF only; flag BIS Entity List status; 1 SemiAnalysis framing-error caught on Qimonda IP chain "Inotera/Powerchip" claim contradicted by primary sources documenting Polaris Innovations/WiLAN chain)
 
 ---
 
