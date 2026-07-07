@@ -20,6 +20,23 @@
 
 **Weights (computed vs €89.976,12):** MURATA **18,1%** / SUMCO **16,7%** / cash **65,2%**.
 
+### [17:13 refresh — screenshots ×3, expanded P/L columns] (supersedes the marks above by minutes; same positions)
+
+| Header | Value |
+|---|---|
+| Balance | **€89.937,11** / Portfolio €31.244,88 / Cash €58.692,23 |
+| Day P/L | **−€5.109,75 (−5,38%)** — per-name: MURATA −€2.355,36 (−12,62% EUR-terms) + SUMCO −€2.754,40 (−15,55% EUR-terms) = −€5.109,76 ✓ |
+| Total P/L | +€14.791,55 |
+
+| Name | Price | Value | Unrealised P/L | **Lifetime Total P/L (column)** |
+|---|---|---|---|---|
+| MURATA | €48,50 | €16.296,00 | −€1.736,93 (−9,63%) | **+€4.075,66** |
+| SUMCO | €23,88 | €14.948,88 | +€982,70 (+7,03%) | **+€306,92** |
+
+- **⚠️ EUR-terms day moves EXCEEDED the JPY closes** (MURATA −12,62% vs −10,13% JPY; SUMCO −15,55% vs −11,62% JPY, as displayed by DeGiro's day-P/L column) — FX translation amplified the rout for the EUR book; note for envelope math (JPY-close-based estimates UNDERSTATE EUR book damage).
+- **NEW: SUMCO dividend upcoming** — ¥10,0000 × 626 = ¥6.260,00 gross, tax −¥958,72 → net ¥5.301,28 (≈€29 order-of-magnitude (my estimate)); CA ID 919327.
+- Note: no closed-positions table visible in these screenshots (SKH/SNDK/NBIS realized fills remain UNKNOWN — the audit gap from 2026-07-05 stands; the lifetime Total-P/L column above partially fills it for the two OPEN names only).
+
 **Read vs prior canonical (2026-07-05, €95.406,73):** NO transactions occurred (0/0 orders) — the −€5.430,61 (−5,7%) two-session decline is PURE market move = the 07-06/07-07 cohort rout in EUR terms (both JPY closes + EUR/JPY). MURATA flipped from +9,0% to **−9,6% vs BEP** across the rout; SUMCO compressed +22,1% → +7,3% but stays green. **Sizing-relevant deltas:** MURATA 20,6% → 18,1% (the rout partially self-corrected the Core-band overage; residual overage vs the 15% ceiling ≈ €2,8k my-model); SUMCO 16,7% (inside no band breach... above Core 15% by 1,7pt — marginal); Active band (3-8%) on the fresh base = €2,7-7,2k; Core (8-15%) = €7,2-13,5k.
 
 ---
