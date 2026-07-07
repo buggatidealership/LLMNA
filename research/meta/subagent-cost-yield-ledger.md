@@ -3152,3 +3152,14 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-brief-b61-gauntlet-kyber-skh-adr-applayer.md`
 **Commit:** (this commit)
+
+### [2026-07-07 PM — Twitter batch (Jukan frames + foundry + CXL + CXMT)] 2 Opus; HIGH both — Samsung foundry-coupled HBM4 threat = sharpest named bear-leg variable yet for the SKH re-entry framework; CXMT adoption adjudicated scarcity-driven (pricing-power confirmation) with 2 pre-registered share-taker triggers
+**Trigger source:** user-shared Twitter batch (2 screenshots + 4 text relays). **Subagents fired:** 2 (Opus, parallel — KR foundry/CXL + TW/CN CXMT). **Estimated token cost:** ~47k (actual 24.4 + 22.5).
+**Items verified:** Samsung Foundry June monthly profit + HBM4-base-die-on-4nm + ~80% yield; CXL 3.1 delay + Intel Diamond Rapids slip; CXMT Taiwan-PC adoption + MSI DDR5-8200 validation + scarcity-vs-cost adjudication.
+**Per-subagent yield:** KR HIGH (foundry FRESH-CONFIRMED w/ tier discipline — T2 single-origin Bloter, internal-transfer-volume nuance vs open-market wins; the SKH-pays-TSMC-toll coupling read; Diamond Rapids 2027 T1-confirmed; Oct invalidation watch pre-registered); TW HIGH (MSI milestone T1-confirmed fresh; ROG-Certified "licensing" garble caught B40.2; scarcity-vs-cost adjudicated with the ~7%-discount kill-fact; relief-valve→share-taker 3rd-order frame + 2 concrete triggers).
+**Brief-framing errors caught:** ASUS ROG-Certified overstated as China-die licensing; "3x H20" rounding (prior batch); CXL granular dates flagged unverifiable-at-source.
+**Thesis cascade triggered:** HYNIX 🔴 foundry-threat banner; candidates CXMT escalation watch; grading-log panel pin; lessons L27 narrative-corroboration note; day-state.
+**Position implication delta:** NONE — ⚪/🟡 — competitive variable pre-registered with dated adjudicator, no falsifier fired, no held-name touch.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-twitter-batch-jukan-reaction-regime-cxmt-taiwan-foundry.md`
+**Commit:** (this commit)

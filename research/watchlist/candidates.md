@@ -1718,6 +1718,8 @@ Per `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investa
 ### NOT ACCESSIBLE
 CXMT (Shanghai STAR ~H2'26 IPO, no ADR); Naura/AMEC/Piotech (China A/STAR); SK Hynix/Samsung direct KRX (SK Hynix Nasdaq ADR ~July 10 = workaround).
 
+**[2026-07-07] CXMT ESCALATION WATCH — capability milestone + 2 pre-registered transition triggers.** MSI validated CXMT dies at DDR5-8200 dual-DIMM (T1 Tom's/VideoCardz/Coolaler 07-06 — hand-tuned AGESA, not EXPO-native); HP/Dell qualifying CXMT DRAM, Acer/ASUS sourcing via Chinese partners (entry/channel only). ADJUDICATED SCARCITY-DRIVEN, not cost (CXMT retail only ~7% cheaper per Club386; the driver is Big-3 vacating consumer for HBM/server at 3-5× revenue/wafer — Micron exited consumer entirely) = **near-term Big-3 pricing-power CONFIRMATION, 2027+ share-taker risk accumulating inside the vacuum** (share ~4-5%, ~300k wpm → 350-450k end-2026 consensus; our carried 750k = outer bound). **Triggers that flip relief-valve → share-taker: (1) CXMT EXPO/JEDEC-native retail productization; (2) Western-brand LAPTOP design-wins (not channel modules).** Either fires → escalate to thesis-level China-substitution review. Per `signals/cross-source-log/2026-07-07-twitter-batch-jukan-reaction-regime-cxmt-taiwan-foundry.md`.
+
 **HARNESS-GAP NOTE:** Priority-1 power names PARTIALLY ANSWER the open EU-sovereign-AI investable-expression research gap (todo P1 2026-06-25) + the standing Layer-3 power gap (no power name held). If user confirms DeGiro access to the ⭐ EU names, these are P2-candidate promotions for the AI-power-infrastructure theme (TC-13 investable expression).
 
 ---
