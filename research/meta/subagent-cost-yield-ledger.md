@@ -3193,3 +3193,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md` (PM-5/PM-6)
 **Commit:** (this commit)
+
+### [2026-07-07 PM-7 — US morning-feed 2-leg + 2 verification fires] 4 Opus; HIGH 3 / MEDIUM 1 — Leg A single-cause attribution error CAUGHT by verification (Samsung-led ~55%, not DeepSeek); Anthropic S-1 tracker GAP found + backfilled; 07-07 graded CONFOUNDED rotation test (H1 70→65)
+**Trigger source:** "good morning US" (Workflow #10) + Rule #16 auto-fires on the two load-bearing Leg B items. **Subagents fired:** 4 (2 scan legs + 2 verification; Opus, parallel pairs). **Estimated token cost:** ~181k (actual 57.5 + 86.9 + 12.8 + 23.6).
+**Per-subagent yield:** Leg A MEDIUM (rotation table + NBIS/NOW tape capture + Samsung/Kyber items, but WRONG single-cause attribution + missed equipment-layer >5% breaches — both corrected downstream); Leg B HIGH (Iran/Hormuz + NATO counter-drone + utility-capex + Anthropic S-1 re-surface — four structurally-invisible-to-Leg-A items, validates two-leg design); verify-1 HIGH (S-1 = STALE-RECYCLE, 06-01 T1 company-confirmed; exposed the tracker never logged it; B63 adversarial pass survived); verify-2 HIGH (PARTIAL-FRESH DeepSeek verdict; Samsung-led attribution split; L27/B42 same-day beat→−7% timing correction; GEV/Barclays-Siemens-Energy decomposition; CONFOUNDED-test grade with pre-registered clean-test criteria).
+**Brief-framing errors caught:** 3 (Leg A DeepSeek attribution; Leg A "no >5% trigger"; main-session "pre-print" Samsung timing tag).
+**Thesis cascade triggered:** NOW banner (tape input + H1 65); watchlist (counter-drone/NOC + Joulent + Siemens-Energy correction); private-tracker Anthropic backfill; both scan artifacts.
+**Position implication delta:** NONE — cash-patience read reinforced (Iran gate HOT); NOW staged-entry unchanged, user-gated.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×3). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-feed-pre-us-scan.md` + `2026-07-07-morning-feed-us-DISCOVERY.md` (§6 synthesis)
+**Commit:** (this commit)

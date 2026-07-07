@@ -107,3 +107,12 @@ Would need a paid intraday tape / EOD aggregator snapshot to close these.
 - [Yahoo Finance — NBIS](https://finance.yahoo.com/quote/NBIS/)
 - [TradingEconomics — US 10Y](https://tradingeconomics.com/united-states/government-bond-yield)
 - [moomoo — SpaceX NDX add / AMZN bonds](https://www.moomoo.com/community/feed/u-s-market-outlook-nvidia-s-stock-price-fell-following-116878953480198)
+
+---
+
+## POST-VERIFICATION CORRECTION (appended 2026-07-07 ~23:15 UTC — visible self-correction per Rule #11)
+
+Two Leg A reads were corrected by the Rule #16 deep verification (full detail: `2026-07-07-morning-feed-us-DISCOVERY.md` §6):
+1. **Attribution:** the semi rout was Samsung-memory-earnings-LED (~55%), DeepSeek secondary (~25%), Iran-oil overlay (~20%) (my-model split, T2 breadth-anchored) — item 1's "driver: DeepSeek" single-cause read was an anchored-scan artifact. Samsung closed −7% ON its record-OP prelim day (timing correction: prelim reaction, not pre-print).
+2. **Tier-2 trigger check §6:** "no >5% breach" was WRONG at the equipment layer — AMAT ~−10%, Intel ~−10%, AMD ~−8%, WDC −7.6% all breached. Deep fire executed (2 Opus verification agents); attribution established; no further fan-out.
+3. **Rotation verdict refined:** 07-07 = CONFOUNDED test (not merely "mild falsifier-relevant"); H1 P~70 → P~65 (my model). Clean-test criteria pre-registered in §6 of the DISCOVERY artifact.

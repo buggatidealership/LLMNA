@@ -87,3 +87,30 @@ Honest note: the chip selloff and memory/AI-capex anxiety dominate the tape too,
 ---
 
 **Anti-confirmation discipline applied:** memory-shortage / HBM / AI-capex restatements were penalized; only genuinely-new data points (DeepSeek in-house inference chip, Broadcom-Apple Baltra, Iran sanctions revocation, $1.1T→$1.4T utility delta, Anthropic IPO filing) were promoted. No portfolio connection was forced onto the biotech/auto-parts/fintech/crypto/defense items — absence stated explicitly.
+
+---
+
+## 6. MAIN-LOOP SYNTHESIS — Leg B vs Leg A delta + Rule #16 verification verdicts (appended 2026-07-07 ~23:15 UTC)
+
+### Leg B vs Leg A delta (the anti-confirmation alpha)
+
+Leg B surfaced FOUR things the portfolio-anchored Leg A structurally could not have:
+1. **Iran/Hormuz strikes + oil +5%** — the day's biggest macro item; invisible to an anchored scan; reframes the cash-deployment gate (patience read on the ~65% cash).
+2. **Samsung as the LEAD driver of the semi rout** — Leg A attributed the tape to DeepSeek; verification (below) shows Samsung's beat-then-−7% was dominant. Leg A's single-cause attribution was an anchored-scan artifact.
+3. **NATO counter-drone $40B cluster** — zero-framework blind spot; routed to watchlist (NOC reference name).
+4. **Anthropic S-1 re-surface** — exposed a genuine tracker GAP (the 06-01 filing had never been logged); backfilled.
+
+### Verification verdict 1 — Anthropic IPO: CONFIRMED-STALE-RECYCLE (B40/B61)
+Confidential draft S-1 filed **2026-06-01** (T1 company-confirmed + CNBC/CNN/NPR/TechCrunch independent) — 36 days old, repackaged by a Crunchbase H1 roundup as fresh. Core fact survived the B63 adversarial pass on company-confirmation tier. Oct-Nasdaq/$60B-raise/GS-JPM-MS-leads = T3 speculation. Routed: `meta/private-tracker.md` backfill entry dated 06-01 with stale-resurface flag. Deferred unverified T3 side-flag (verifier search artifact): alleged Fable-5 service outage/return early-July — NOT propagated; queue for next brief gauntlet.
+
+### Verification verdict 2 — DeepSeek chip: PARTIAL-FRESH; 07-07 tape: CONFOUNDED rotation test
+- **DeepSeek inference ASIC = PARTIAL-FRESH** (Reuters Exclusive 2026-07-07, T2 wire): genuinely new sourcing/framing (own-design INFERENCE ASIC; cuts Nvidia AND Huawei; active foundry+memory talks; effort began ~1yr ago) on the known 2025 recruiting/Ascend thread. NOT full-fresh: no foundry, node, HBM supplier, tapeout, or on-record comment. Weak-to-moderate directional signal; ~zero 12-24mo supply-model impact. MURATA/SUMCO read: chip-design-agnostic substrate layers — an in-house ASIC still consumes wafers + passives; S2 fragmentation if anything ADDS sockets. No falsifier fired.
+- **07-07 attribution (verified, T2 breadth-anchored):** Samsung memory-earnings shock ~55% / DeepSeek AI-capex-doubt ~25% / Iran-oil overlay ~20% (my-model split from cited press attribution + breadth). NOT a broad risk-off: Dow −0.25%, Russell 2000 −0.90%, S&P −0.45%, energy UP on oil +5%. Damage concentrated: AMAT/Intel ~−10%, AMD ~−8%, MU −4.7%, KLA −5%+, WDC −7.6%, SNDK −6.1%, SK Hynix −6%, Samsung −7%, GEV −8.96%, NVDA −2.5%.
+- **Samsung timing correction (L27/B42-relevant):** the −7% Samsung close WAS the same-day reaction to the record-OP prelim (247WallSt/Bloomberg T2: "out-earned Apple and Nvidia and tanked 7%"; "misses lofty AI expectations" — OP beat consensus ₩89.4tn vs ₩84.6tn, revenue ₩171tn shy of ₩173tn panel). Earlier main-session note had tagged the 07-07 close "pre-print" — CORRECTED here (visible self-correction per Rule #11). Signed-whisper read (B42): consensus beat + positioning/whisper miss → down. Pre-registered T+24h adjudicator stays the 07-08 KRX close (~06:00Z) — same-day reaction is L27-tick-consistent but the formal grade waits.
+- **GEV −8.96% decomposition:** Barclays SELL downgrade of Siemens Energy (watchlist name — sympathy transmission) + insider/CEO selling + AI-DC-runway nerves = AI-complex-idiosyncratic, NOT geopolitical. S3 power theme: this is a NEGATIVE near-term analyst-sentiment datapoint (analyst-PT framing; neutral, not used as valuation argument), not a re-rate confirmation.
+
+### Rotation hypothesis update (H1 semis→software inverse-rotation)
+07-07 is a **CONFOUNDED, unusable test day**: the semi leg was dominated by an idiosyncratic memory-earnings shock, software fell too on shared AI-demand doubt, and an oil overlay sat on top. Update: **H1 P~70 → P~65 (my model)** — mild haircut for "software absorbed no outflow when semis routed," heavily discounted for confounds. Clean-test criteria (pre-registered): semis weak on flat/green software with NO memory-earnings and NO oil/geopolitical catalyst in-window. Next likely windows: any non-event-day before NOW's Jul-22 print.
+
+### Tier-2 trigger audit (post-verification)
+Leg A's "no >5% trigger" was WRONG at the equipment layer: AMAT −10%, Intel −10%, AMD −8%, WDC −7.6% all breach. The deep verification THIS section documents (2 Opus agents) constitutes the required deep fire; attribution established (Samsung shock), no further fan-out warranted tonight. All moves inside B45 supercycle routine band (±5-12%) — no "extreme" labeling.

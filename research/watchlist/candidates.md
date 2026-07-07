@@ -12,7 +12,7 @@ Per `signals/cross-source-log/2026-07-07-morning-feed-us-DISCOVERY.md`. NATO Ank
 
 Per same artifact. Private AI-datacenter-energy company raising $1.75B (T2, in-window) inside the $1.1T→$1.4T utility-capex re-rate story. No listed expression; logged as an S3 (power binds) datapoint. Track via `meta/private-tracker.md` only if it recurs.
 
-**Routing note 2026-07-07:** Siemens Energy (ENR.DE, below) gets an S3 N+1 from the same window (utility-capex re-rate + GEV −9% tape). CRNX / GPC / FI surfaced by Leg B but connected to nothing (stated explicitly per anti-manufactured-relevance rule) — logged in the artifact, NOT added here.
+**Routing note 2026-07-07 (corrected post-verification):** Siemens Energy (ENR.DE, below) — **Barclays SELL downgrade in-window dragged GEV −8.96% via sympathy** (T2, per DISCOVERY artifact §6): a NEGATIVE near-term analyst-sentiment datapoint on the power/AI-DC-runway theme (analyst-PT framing; neutral, not a valuation argument). The $1.1T→$1.4T utility-capex re-rate remains the structural S3 datapoint; the two coexist (structural up, sentiment down) — classic analyst-lag-vs-structural tension (B28), do NOT net them into one signal. CRNX / GPC / FI surfaced by Leg B but connected to nothing (stated explicitly per anti-manufactured-relevance rule) — logged in the artifact, NOT added here.
 
 ---
 
