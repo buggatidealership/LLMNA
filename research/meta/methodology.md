@@ -1677,6 +1677,20 @@ For every promotion gate / falsifier / monitoring variable in a thesis or cluste
 
 ---
 
+## Principle #44 candidate (added 2026-07-07, user brain-dump #2 same session) — Detection Over Prediction: business-model emergence is unforecastable; position in the substrate, detect the emergence
+
+**User articulation (near-verbatim):** *"You cannot predict the revenue models before a new type of business model emerges... 2007 Facebook — everybody knew user growth, nobody knew monetization; they ended up with ads. Same for Google... in 1999 the biggest companies did not look like the biggest of 2018... even today you would not have expected NVIDIA to be the largest company in the world... continuous changing leadership at the top... it always ties back to the revenue models."* (Flagged by user as unverified hypothesis.)
+
+**The principle (harness formulation, my model):**
+1. **Revenue-model emergence is structurally unpredictable ex-ante; it is DETECTABLE early ex-post.** The job is not to forecast the winning monetization but to instrument for its emergence (the application-layer framework's pricing-transition evidence — non-seat ACV share, outcome-pricing traction, headcount-budget funding — IS this instrumentation running live, research-verified 2026-07-07).
+2. **Under model-uncertainty, own what every candidate model must consume** (substrate positioning). All competing AI monetization models converge on inference → memory/wafers/passives. This retroactively formalizes the held-book design (MURATA/SUMCO) and the user's same-day universal-substrate instinct — the two brain dumps are one thesis.
+3. **The Cisco warning (Rule #18 counterweight, recall-based history):** the era's largest company tends to be the scarce-input seller of the dominant buildout (Cisco 2000 → NVDA now) — and substrate kings are ERA-BOUND: the input stays essential, the pricing power dies with the buildout. Therefore the substrate strategy's binding falsifier is BUILDOUT MATURATION, not component substitution — which is why the 2027 demand-duration tripwires (coding-deceleration, capex guides) outrank the technology-substitution falsifiers in firing order.
+4. **Leadership-turnover corollary:** 2035's giants are most likely the native winners of the emergent model (currently: the labs, per the capture stack) — public expressions run through their inputs and distribution (SKH-ADR/AGI-fund anchoring; NEC/Fujitsu configuration-sellers). Ties to #43 (configuration) and the end-demand-durability model.
+
+**Detectability / falsifier (re-eval 2026-08-07 with #43):** POSITIVE = the emergence-instrumentation (pricing-transition metrics) produces a detected shift BEFORE consensus labels it (e.g., the seat→outcome transition being tracked now resolves as called); NEGATIVE = "detection" only ever confirms what the press already named → the instrumentation is a lagging mirror, keep the substrate rule, drop the detection claim. Status: CANDIDATE N=1 articulation; the substrate half has retroactive support (the book's design + the framework's convergence findings).
+
+---
+
 ## GDR/ADR Cross-Listing Mechanics (added 2026-06-26 as methodology section)
 
 When ANY held position is a GDR / ADR / depository receipt (HY9H, etc.):
