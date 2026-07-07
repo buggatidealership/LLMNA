@@ -31,10 +31,56 @@
 
 **Timing read (data, not decision):** pre-print entry = paying top-decile vol into a name that punished flawless prints twice, with the whole AI-thesis mark-to-market ~2 weeks away; post-print entry = paying up if it finally rallies a beat, but with the licensing-reset datapoint in hand. The rotation tailwind is real but partly upgrade-driven.
 
-## Deliverables on return
+## AGENT C RETURNED (~31k) — NEC 6701: the Anthropic-Shock INVERSION is the bull spine; the Fujitsu dual-signing 34 days later is the bear spine
 
-1. `companies/NEC/thesis.md` + `companies/FUJITSU/thesis.md` (new folders, Conviction Format, macro-anchored to `sector/application-layer-framework.md`)
-2. NOW/DDOG re-entry DECISION PACKAGE (entry-timing analysis incl. the correlation verdict; sizing OPTIONS against the €58k envelope; user executes)
-3. Correlation-hypothesis verdict routed to the framework + T5
+**The divergence fact (research-verified 2026-07-07, T1/T2):** NEC fell ~17% to ¥3,606 (02-24 low) in the February "Anthropic Shock" that HALVED Baycurrent/SHIFT/NRI — then **RALLIED +5.2% on its own Anthropic partnership day (04-23)** while the consulting cohort stayed halved. The market reclassified NEC from AI-victim to AI-beneficiary. Defensive ¥30bn buyback 02-09 (T1 Nikkei).
 
-**Position implication: ⚪ NO ACTION yet — 🟡 — mandate logged; all four workstreams verification-gated; Rule #17 ensemble reserved for the final entry-package call if it gets that far.**
+**State:** mcap ¥5.94trn (T1 Yahoo JP 07-07); working price ~¥4,400 (⚠️ EN-Yahoo shows stale ¥3,752 — JP-native cap + Minkabu target-math arbitrated; VERIFY exact close before any package); fwd P/E 17.5 = **cheapest of the big-3** (Fujitsu ~19.2, NTT Data ~28); analyst avg target ¥5,991 "strong buy" (T2 Minkabu 07-06). FY26/3: net ¥270.2bn +54.3% record; IT Services rev ¥2,422bn +4.3%; BluStellar ¥705bn +30% (⚠️ organic-vs-reclassification split unconfirmed — data gap); FY27/3 guide: OP ¥420bn +5.7%, BluStellar ¥840bn +19%; 2030 plan: BluStellar ¥1.3trn at 25% margin (from 14.5%).
+
+**Bear spine / falsifier #1:** Fujitsu signed its own Anthropic strategic partnership 2026-05-27 (Claude to ~100k, SAME verticals) → "Japan's first global partner" = non-exclusive after 34 days; all big-3 on Claude (~420k seats, T2/T3 note-analyst "commoditization" framing). Anthropic commercial terms NOT disclosed (data gap). Also: BluStellar decel below mid-teens % = invalidation threshold; defense (+15%) budget-cycle exposed; margin-definition reconcile needed (13.4% Non-GAAP vs 7.6% GAAP IT-Services — 決算短信 pull required before facts.md).
+
+**Catalysts:** Q1 FY27/3 print **2026-07-29 15:30 JST (same day as SK Hynix)**. Access: TSE 6701 direct (DeGiro); NIPNF/NIPNY ADRs illiquid, not recommended.
+
+**Conviction-format anchors (agent's 3 numbers):** (1) BluStellar +30%→+19% guided decel = the gating monitorable; (2) the 14.5%→25% margin bridge = the whole 人月→outcome conversion; (3) fwd P/E 17.5 vs NTT Data ~28 = the safety margin cushioning the commoditization bear.
+
+## AGENT B RETURNED (~41k) — DDOG: fully round-tripped ABOVE our exit; rotation confirmed on its tape too; but spot > consensus PT with a fresh decel downgrade
+
+**State (research-verified 2026-07-07):** ~$259.3-259.6 (T1), vs our late-June exit window ~$240-249 (T1 exact 06-26/06-29) = **+7-8% above the emotional exit**, only ~7% below the 06-01 ATH ($277.49 close). Mcap ~$90.9bn; FY26 guide $4.30-4.34bn (raised); implied fwd EV/S ~20-21× (T2 calc) — **the SaaS-reset multiple damage has largely repaired for DDOG specifically.** Bernstein DOWNGRADE Outperform→Market Perform PT $226 (below spot; models total-growth decel ~500bps to ~29% with non-AI 85% of rev peaking Q3); Benchmark Street-high $330; **consensus avg PT ~$243 = BELOW spot.** News: DASH 06-09 (AI Guard launch — Prompt+Tool Protection live, ZERO disclosed revenue = narrative stage); Adaptive ML acquired 06-30 (RLOps, terms undisclosed).
+**Correlation leg — CONFIRMED on DDOG's tape too:** 06-26 SOXX −5.64% vs **DDOG +8.52%** (T1); 07-01 SOXX −6.4% vs software surge; reported institutional rotation commentary (T1/T2). But 07-06: semis +2.68% AND software up — the rotation is a market-structure trade that can reverse as fast.
+**Reaction pattern (OPPOSITE of NOW):** last two prints beat-and-raise → **+31% (Q1, May-7)** and up (Q4) — DDOG gaps UP on beats, bar now raised. Q2 guide ~$1.1bn (conservative-guider pattern). Print 2026-08-06 AMC (T1, same day as SUMCO).
+**Fragile-tier flag (our own framework applied):** AI-native cohort 22 customers >$1M / 5 >$10M; OpenAI = largest customer, ARR est $170-300M (T3 wide); "core ex-largest grows ≥20%" is management's own hedge framing. Bernstein: AI-Labs growth "plateauing" — this is Tier-B fragile demand per `sector/application-layer-framework.md` §3.
+
+## AGENT D RETURNED (~31k) — FUJITSU 6702: segment conversion WORKING, group line masked by deflation+PC-reversal; the ¥0-provision Horizon tail is the binary
+
+**State (research-verified, T1/T2):** ¥3,326 (07-03), −30% off the Oct-25 ¥4,668 high — **fell 13%+ on its OWN 04-28 FY27 guidance shock (net guided −31%), NOT on the Anthropic narrative** (its Anthropic deal came AFTER, 05-27). PER ~19×. Aggressive returns: 16.0% of shares CANCELLED (03-31) + new ¥150bn buyback through 03-27 (T1).
+**Segment vs group (the crux):** Services Solutions adj OP record ¥361.4bn +25%, margin 15.4%→17.4% guided; Uvance ¥709.3bn +47% target-HIT → FY27 ¥840bn (34% mix); BUT group net FY27 guided **−31%** (asset-sale base effect + PC pull-forward reversal + overseas −11.3%) — **mix accretion is real at segment level and masked at group EPS.** Tokita: "man-month model will collapse"; internal case 3 person-months→4 hours (~100×); 2035 target Uvance 70% mix / ¥3trn AI. Whether delivery-cost savings are RETAINED as margin vs passed to clients = undisclosed crux.
+**Deal structure asymmetry:** Anthropic = 戦略的提携 (strategic), OpenAI = 連携 (collaboration only) — not a symmetric dual-source; moat rests on FDE + Takane/Kozuchi (no disclosed revenue — gap).
+**THE BINARY: UK Horizon — £1.48bn paid to 11,500+ claimants, total redress ~£2bn, Fujitsu provision = ¥0** ("moral obligation" only; UK Govt: Fujitsu "should bear the cost"; T1 ITV/Hansard). Provision-trigger = the Wyn Williams final report (timing unconfirmed). Un-quantified tail that lands on one headline.
+**Catalysts:** Q1 FY27/3 ~late-Jul/early-Aug; access TSE 6702 direct (FJTSY ADR thin).
+
+## USER ROTATION HYPOTHESIS — FINAL VERDICT: CONFIRMED (2-agent tape convergence)
+
+NOW up on the 07-02 rout + DDOG +8.52% on 06-26 (SOXX −5.64%) + IGV +7%/SOXX −8.5% 8-session spread + reported institutional-rotation commentary (T1/T2, both agents independently). **H1 real-rotation FINAL P~70 (my model, up from 40 pre-test).** Caveats: partly idiosyncratic catalysts on both names' up-days; symmetric days exist (07-06 both up); it is a market-structure flow, not a hedge guarantee. Portfolio-construction implication: a software leg is a REAL diversifier against MURATA/SUMCO semi beta in rout regimes — the user's daily-observation instinct was correct and is now codified.
+
+## DECISION PACKAGE (delivered 2026-07-07 PM — user executes; all sizing = options, not instructions)
+
+**Envelope math (my model, derived from user statements):** €58k cash ≈ 61.5% of book → book ≈ €94k → Active band (3-8%) ≈ €2.8-7.5k per name; Core band (8-15%) ≈ €7.5-14k.
+
+**Joint decision matrix (all facts research-verified 2026-07-07, this artifact):**
+
+| | NOW | DDOG | NEC 6701 | FUJITSU 6702 |
+|---|---|---|---|---|
+| Price vs our June exit | +~$6-10 (near exit) | **+7-8% ABOVE exit** | n/a (new) | n/a (new) |
+| Multiple state | EV/NTM ~5.6× vs 13× mean (crushed) | fwd EV/S ~20-21× (repaired); spot > avg PT | fwd P/E 17.5 (big-3 cheapest) | PER ~19× |
+| Print + pattern | **Jul-22**; beat→DOWN ×2 (−11%, −17%) | **Aug-6**; beat→UP (+31% Q1) | **Jul-29** (=SKH day) | ~late-Jul/Aug (TBC) |
+| Key unresolved variable | AI-ACV marks to market Jul-22 | AI-native/OpenAI concentration + decel | BluStellar decel + data gaps ×4 | **Horizon ¥0-provision binary** |
+| Rotation-diversifier fit | ✓ (tape-confirmed) | ✓ (tape-confirmed) | partial (JP beta) | partial |
+| Package verdict | **Staged: optional Active-min starter now (rotation+valuation floor); main tranche decision POST-Jul-22** | **WAIT to Aug-6** — entering now = paying above the emotional exit at a full multiple on a fresh decel downgrade = the B9 regret-chase | **Post-Jul-29 preferred** — the print adjudicates falsifier #1 + closes freshness gaps | **BLOCKED** — un-sizable tail until Horizon bounds; NEC = cleaner expression of the same thesis |
+
+**Modal recommendation (my model): deploy in stages, not at once — ≤ one Active-min starter (≈€3k) pre-print (NOW, the crushed-multiple + confirmed-rotation leg), hold the rest of the €58k through the July print gauntlet (Jul-22 NOW / Jul-23 Samsung full / Jul-29 NEC+SKH / Aug-6 DDOG+SUMCO), and make the main deployments on printed evidence.** The reaction-regime data cuts BOTH ways and differs BY NAME: NOW sells beats (pre-print entry unattractive); DDOG gaps up on beats (waiting has a real chase cost — accepted, because its bear variable only resolves on the print and spot is already above consensus PT). Pre-print entry into NOW beyond a starter contradicts the name's own N=2 pattern; full-cash deployment pre-gauntlet contradicts the evidence-gated discipline this package exists to enforce.
+
+**Rule #17 note (auditable):** ensemble NOT run at package stage — the package presents weighted options, no single graded number resolves; ensemble (N=3-5) fires when the user picks a lane and a sizing commit becomes the call.
+
+**Position implication: ⚪ NO ACTION until user selects — 🟡 — two new Watchlist theses on file (NEC gated Jul-29, FUJITSU blocked on Horizon); NOW staged-entry option open (user-gated); DDOG wait-to-print; rotation-diversifier rationale CONFIRMED (H1 P~70 my model) and codified.**
+
+**Ledger:** 4 fires ~130k (27.1 NOW + 40.9 DDOG + 31.3 NEC + 31.1 Fujitsu), all HIGH.

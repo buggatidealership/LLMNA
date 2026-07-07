@@ -3173,3 +3173,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-applayer-framework-4agent-step0.md`
 **Commit:** (this commit)
+
+### [2026-07-07 PM-3 — Re-entry mandate execution (NOW/DDOG/NEC/Fujitsu)] 4 Opus; HIGH ×4 — rotation hypothesis TAPE-CONFIRMED (H1 P~70); NOW print-date correction (Jul-22); DDOG regret-chase flag; 2 new thesis files; Horizon ¥0-provision binary surfaced
+**Trigger source:** user mandate (add-willingness + full autonomy). **Subagents fired:** 4 (Opus, parallel). **Estimated token cost:** ~130k (27.1 + 40.9 + 31.3 + 31.1).
+**Per-subagent yield:** NOW HIGH (Jul-22 date catch — a decision-relevant correction; beat→down ×2 pattern; EV/NTM 5.6× vs 13×; Guggenheim-concedes-AI-leg nuance; rotation tape); DDOG HIGH (+7-8%-above-exit round-trip = the B9 regret-chase catch; spot>consensus-PT; Bernstein decel; fragile-tier concentration framing; rotation tape ×2); NEC HIGH (Anthropic-Shock INVERSION divergence fact; commoditization-in-34-days bear; conviction anchors + 4 named data gaps); FUJITSU HIGH (segment-vs-group masking decomposition; Horizon £2bn/¥0-provision binary; deal-structure asymmetry catch).
+**Brief-framing errors caught:** my own carried "NOW prints Jul-29" corrected to Jul-22; EN-Yahoo stale NEC price flagged vs JP-native.
+**Thesis cascade triggered:** `companies/NEC/thesis.md` + `companies/FUJITSU/thesis.md` CREATED (Conviction Format, Watchlist); decision package in the mandate artifact; day-state.
+**Position implication delta:** NONE executed — package delivered user-gated (staged-deployment modal recommendation; DDOG wait; FUJITSU blocked).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md`
+**Commit:** (this commit)
