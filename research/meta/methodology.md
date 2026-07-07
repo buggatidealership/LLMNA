@@ -1658,6 +1658,25 @@ For every promotion gate / falsifier / monitoring variable in a thesis or cluste
 
 ---
 
+## Principle #43 candidate (added 2026-07-07 per user brain-dump articulation) — Configuration Over Capability: the operator's job is surfacing latent affordances
+
+**⚠️ Numbering note:** a #42 collision already exists in this file (Retrieval-Staleness 2026-07-06 above + Time-Window Discipline 2026-06-26 below) — flag for the next monthly audit's renumbering pass (same class as the B47→B62 collision fixed 2026-07-06). This entry takes #43 to avoid extending the collision.
+
+**User articulation 2026-07-07 (near-verbatim, brain dump):** *"The biggest hurdle to AI adoption is [not] in the models... it's the configuration of the agents... how can you be broad enough and narrow enough so that you are balancing discovery of new patterns... searching for the right content is probably as crucially important as how you ask your questions... The operator has to give just enough freedom but also enough rules and guidelines so that the LLM understands its limitations... you can search Korean and Japanese news and you didn't know you could — once I pointed it out, you realized your pretraining pushed you to search Japanese and Korean company news through the lens of Western sources... the fact that you did not know is in itself the limitation. The operator has to point out the actual obvious — but it has to be pointed out."*
+
+**The principle (refined formulation):** the binding constraint on agent-produced value is CONFIGURATION, not model capability. Specifically: **latent capability ≠ deployed behavior.** Sampling defaults anchor to training-distribution-dominant patterns (English sources, linear prose, forward-chain reasoning) even when superior behaviors are fully within capability. The operator's highest-leverage acts are (1) NAMING latent affordances the model doesn't self-deploy, and (2) making the deployment-policy change DURABLE via mechanism (hooks/priming/workflow spec), because instruction-only changes decay.
+
+**Corroboration already on file (this is what elevates it beyond a one-off observation):**
+- **Harness's own history = N-many:** Principle #36 multilingual-parallel (born from exactly this correction); the two-bracket priming architecture (born from the linear-prose default); 18 hooks (born from "instructions are choices, hooks are enforced"); Leg B breadth-at-search/filter-at-digest (born from the discovery-vs-precision balance the user names here).
+- **Enterprise-scale mirror (research-verified 2026-07-07, `sector/application-layer-framework.md`):** ~95% pilot failure attributed to unclear success criteria / tool-data access / ownership (Forrester T2) — configuration failures, not capability failures; 76% buy-vs-build reversal = enterprises outsourcing configuration-maintenance. The user's single-operator observation and the enterprise failure data are the SAME mechanism at two scales.
+- **Investment linkage:** this mechanism is load-bearing in the NEC/Fujitsu theses (selling configuration at scale) and the end-demand-durability model (demand durability depends on configuration skill diffusing, not on model IQ rising).
+
+**Operational implications (live):** (a) a standing "affordance review" question belongs in the monthly audit — *"what capability exists but is not being deployed by default?"* (the JP/KR-search class of miss); (b) when the user points out an 'obvious' latent affordance, treat it as a HIGH-VALUE codification trigger (Rule #13 §3), not chat color — the historical hit rate of exactly these corrections is the strongest in the harness's lesson history.
+
+**Detectability / falsifier (re-eval 2026-08-07):** POSITIVE = the monthly affordance-review question surfaces ≥1 material undeployed capability per cycle (as the JP/KR correction did), or user-surfaced affordances continue converting to durable mechanisms with measurable yield; NEGATIVE = the review question returns "nothing" for 2+ consecutive cycles → the low-hanging affordances are exhausted, demote to a quarterly question. Status: CANDIDATE N=1-as-articulation, but with retroactive N≥4 mechanism-instances (P#36, priming, hooks, Leg B) — promotion case unusually strong at birth.
+
+---
+
 ## GDR/ADR Cross-Listing Mechanics (added 2026-06-26 as methodology section)
 
 When ANY held position is a GDR / ADR / depository receipt (HY9H, etc.):
