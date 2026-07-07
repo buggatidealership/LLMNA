@@ -36,6 +36,21 @@
 - **E5 fire REGISTERED server-side: `last_fired_at 2026-07-07T00:22:46Z`** on the KR-JP trigger — the scheduler works (fires on schedule, survives everything). Execution evidence (a commit) still pending at 00:45Z; window open to ~01:10Z.
 - **Contingency (pre-committed now):** if E5 shows no commit by ~01:10Z, THIS session runs the Samsung-prelim GRADE catch-up itself (wake-audit protocol step 4) — the keystone does not wait on infrastructure debugging.
 
+## FINAL VERDICT (01:14Z 2026-07-07)
+
+**E5 execution-FAIL.** 51 minutes after the server-registered 00:22:46Z fire: zero wake commits, zero fallback branch. Combined with E4's identical silence (2.5h), the split verdict is now settled:
+
+| Layer | Verdict |
+|---|---|
+| Programmatic Routine CREATION (E1-E3) | ✅ PASS — triggers create, schedule, list, and fire exactly as specified |
+| Server-side SCHEDULER | ✅ PASS — fires on time (00:22:46Z), survives container swaps that killed every in-session scheduler |
+| Fresh-session EXECUTION (E4 + E5) | ❌ FAIL — two spawned sessions, zero repo evidence from either. Leading hypothesis (my model): **headless permission stall P~50** (spawned session hangs on an interactive permission prompt it cannot answer — e.g. Bash/git-push approval); session-startup error P~35; push-fail-without-fallback P~15 |
+| In-session cron (547c1ca4) | ❌ DEAD (silent container-swap kill, 3rd consecutive — question permanently settled) |
+
+**Diagnosis path: USER-SIDE ONLY.** What the two spawned sessions (22:43:22Z test + 00:22:46Z scheduled) actually did is visible only in the claude.ai / mobile app session list. The user opening either run = the distinguishing evidence between H-stall / H-error / H-push-fail. Until then the two LLMNA routines STAY ENABLED (fires are cheap; each firing is another data point) but are NOT trusted for coverage.
+
+**Contingency executed:** Samsung-prelim GRADE catch-up run from the main session (verification agent fired 01:15Z); NBIS T+15 check armed. The 07-05 conclusion is REVISED, not retired: perpetuity requires platform Routines AND the fresh-session execution path proven — the latter needs one user-side run inspection.
+
 ## Retirement condition (pre-registered)
 
 In-session cron 547c1ca4 gets deleted + Workflow #11 "perpetuity requires user-side setup" language gets rewritten ONLY after E4 PASS **and** E5 PASS (tomorrow's audit). Guide + day-state updated at E4; final retirement at E5.
