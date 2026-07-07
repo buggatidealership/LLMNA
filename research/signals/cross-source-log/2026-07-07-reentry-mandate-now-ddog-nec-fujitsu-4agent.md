@@ -84,3 +84,14 @@ NOW up on the 07-02 rout + DDOG +8.52% on 06-26 (SOXX −5.64%) + IGV +7%/SOXX �
 **Position implication: ⚪ NO ACTION until user selects — 🟡 — two new Watchlist theses on file (NEC gated Jul-29, FUJITSU blocked on Horizon); NOW staged-entry option open (user-gated); DDOG wait-to-print; rotation-diversifier rationale CONFIRMED (H1 P~70 my model) and codified.**
 
 **Ledger:** 4 fires ~130k (27.1 NOW + 40.9 DDOG + 31.3 NEC + 31.1 Fujitsu), all HIGH.
+
+## [PM-4 ADDENDUM] USER COUNTER-HYPOTHESIS on the NOW Jul-22 reaction — SIGNED-WHISPER refinement (pre-registered)
+
+**User hypothesis (verbatim-adjacent, flagged unverified by user):** the whisper/sell-the-beat regime likely does NOT extend to NOW — it hasn't reclaimed ATH, is still beaten down from the SaaSpocalypse narrative, and a beat would catch funds/research firms offside → asymmetric pop UP.
+
+**Adjudication (my model, from on-file data):**
+- **Mechanism ACCEPTED as a B42 refinement — whisper-anchoring is SIGNED:** reaction = actual vs POSITIONING-ADJUSTED whisper. Samsung (run-up, whisper>consensus) → beat sold. NOW (−50% off high, EV/NTM 5.6× vs 13×; the upgrading bull himself expects AI disappointment T1) → whisper<consensus on the AI line. Same mechanism, opposite sign — the regime model is not "all beats get sold."
+- **Empirical counter (Rule #18):** the washed-out-pop thesis already failed ONCE in this name — Q1 print 04-22 came AFTER the 04-10 drawdown low (−60%, T1), beat everything, still fell −17% (T1 CNBC): forward optics (cRPO decel) dominated positioning. N=1 against. Also: the washout has partially unwound since late June (+~10% off lows on rotation + upgrade) — bar modestly re-raised.
+- **PRE-REGISTERED two-channel reaction structure for 2026-07-22 (feeds the earnings-program P1):** H1 washed-out pop (beat incl. AI-ACV upside → outsized UP) P~35; H2 pattern-repeat (beat but forward-optics sell) P~35; H3 mixed/muted (IV deflation) P~30 (my model). **The pivot metric = the AI-monetization line (Now Assist ACV vs the $1.5bn-target pace + first post-licensing-reset print): AI-ACV surprise = H1 trigger; revenue-beat-with-AI-inline = H2 trigger.**
+- **L27 linkage:** NOW beating INCLUDING the AI line and still selling off = evidence the sell-every-print regime exceeds positioning — would be a genuinely new regime datapoint (log to the falsifier-watch context, non-scoring for the L27 counter itself which is memory-cohort-scoped).
+- Resolution: grade the reaction channel at Jul-22 close (+T+24h per Two-Part protocol); outcome routes to B42 (signed-whisper refinement CONFIRM/REFUTE) + the NOW staged-entry decision.
