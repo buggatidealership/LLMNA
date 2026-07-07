@@ -15,7 +15,8 @@ Index of every prediction made by the system. Each row resolves to "pending" or 
 | 2026-07-02 | ~~2026-07-07~~ | ~~Samsung 005930~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev ₩175-182tn variant~~ — pre-correction duplicate; file marked SUPERSEDED; grade ONLY the canonical Samsung row below | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` (SUPERSEDED) |
 | 2026-07-02 | ~~2026-07-15~~ | ~~ASML~~ **⚠️ NOT CANONICAL — do not grade** | ~~EPS pt €8.15 variant~~ — pre-correction numbers; grade ONLY the canonical ASML row below (EPS pt €8.20) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
 | 2026-07-02 | ~~2026-07-16~~ | ~~TSMC~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev pt $40.8B monthly-math variant~~ — self-corrected same-day; grade ONLY the canonical TSMC row below ($40.1B guide-anchored) | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
-| 2026-07-02 | ~2026-07-07 | Samsung (prelim; cohort keystone) | rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn (P beat ~70%); re-open amplifier bands | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
+| ~~2026-07-02~~ | ~~Samsung prelim~~ **✅ GRADED 2026-07-07 (fundamental leg; reaction T+24h finalizes 07-08) — see GRADED section below.** OP ₩89.4tn band-hit, +4.45% beat vs updated bar; rev ₩171tn small band-miss; reaction leg MISS (−5.35% vs +0-3% band); L27 N=2 fundamental POSITIVE + falsifier-watch counter opened. ASP-dispute adjudication → full print ~Jul-23 (new pending row below) | | | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
+| 2026-07-07 | ~2026-07-23 (full print) | Samsung 005930 | CARRY-OVER components from the prelim grade: (a) three-way Q2 blended-DRAM-ASP dispute adjudication (>~63% QoQ test — needs division split); (b) guidance-language component; (c) division-level OP vs the ex-provision >₩100tn wire claims | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` (carry-over section) |
 | 2026-07-02 | 2026-07-15 | ASML | rev pt €8.95B / EPS pt €8.20 / bookings pt ~€12.5bn (LOW conf, INPUT gap flagged) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
 | 2026-07-02 | 2026-07-16 | TSMC | rev pt $40.1B (guide-anchored; SELF-CORRECTION logged — monthly math not held; v2 at Jul-10 June monthly) / EPS pt $3.90 / capex-raise P~55% | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
 | 2026-07-02 | ~2026-07-29 | SK Hynix (HELD #1) | Q2: rev pt ₩88tn / OP pt ₩68tn (vs cons ₩63.0tn; P(beat)~75%) / NI pt ~₩51tn; 2027-HBM-language pre-registered; v2 ensemble T-5d | `2026-07-02-SKHYNIX-Q2-earnings-prediction.md` |
@@ -88,6 +89,30 @@ When a resolution date hits:
 4. Append lesson to `lessons.md` if a generalizable insight emerged
 5. Update bias entries in `biases-watchlist.md` if a new pattern was revealed
 6. Move row from Pending to Graded with link to grading doc
+
+---
+
+## [2026-07-07 GRADED — fundamental leg; reaction leg provisional] SAMSUNG Q2 2026 PRELIM (the keystone; registered 2026-07-02, resolved 2026-07-07 ~08:40 KST)
+
+**Executed by the main session as wake catch-up** (both routine-spawned sessions produced no output — see `signals/cross-source-log/2026-07-06-routine-creation-preregistration-and-test.md`). Verification: 1 Opus agent, ≥5 T2 wires corroborating the T1 공시; register in `signals/cross-source-log/2026-07-07-samsung-prelim-grade-wake-catchup.md`.
+
+**Predicted (canonical file):** rev ₩172-183tn pt ₩178tn; OP ₩87-97tn pt ₩92tn; P(OP>consensus)~70%; reaction bands: OP ≥₩90tn → +3-8%, ₩85-90tn → +0-3%, <₩85tn → −5-10%. Graded vs the 07-06 UPDATED bar (FnGuide OP ₩85.59tn) per the prelim-eve addendum.
+
+**Actual (T1 공시 via ≥5 T2 wires):** revenue **₩171tn** (+129% YoY); OP **₩89.4tn** (+1810% YoY, record; single-quarter OP > NVIDIA's latest quarter, T2 framing). Bonus provision ~₩20tn — ex-provision OP >₩100tn per multiple wires. First-hour reaction: 005930 **−5.35%** to ₩301,000; KOSPI −0.46%; SKH sympathy unquantified (flagged).
+
+**Component adjudication:**
+- OP: **BAND HIT** (89.4 ∈ 87-97); point −2.8%; **consensus BEAT +4.45%** vs updated ₩85.59tn bar (+5.2% vs original ₩84.98tn) — P(beat)~70% resolved TRUE. Whisper (~₩90tn): whisper-INLINE, exactly the pre-documented scenario.
+- Revenue: **BAND MISS (small)** — ₩171tn vs band floor ₩172tn; in-line with consensus. Falsifier 2 (<₩170tn) did NOT fire.
+- Provision: ~₩20tn actual = top of the 07-04 preview range (₩10-20tn) — per the pre-registered carve-out, the miss-vs-point is a COMPUTATION one-off (provision), NOT an ASP-model failure; ex-provision >₩100tn implies the ASP flow-through model was right-to-conservative.
+- ASP three-way dispute: **NOT ADJUDICABLE at prelim** (consolidated-only, no division split — pre-documented) → transfers to the full print ~Jul-23.
+- Reaction (PROVISIONAL — formal T+24h closes tomorrow): actual −5.35% first hour vs the predicted +0-3% band for an ₩85-90tn print → **REACTION LEG MISS**. Mechanism: whisper-anchoring — the market graded vs the ~₩90tn whisper + brokers-raised bars (News1: bars raised toward ₩90tn into the print), not the official consensus. Cohort-decoupling (#41): 005930 −5.35% vs KOSPI −0.46% = idiosyncratic-leaning, diagnostic incomplete (SKH move unverified).
+
+**3-layer GRADE:**
+- INPUT — revenue leg: the pre-flagged gap fired as flagged (Q1 base never independently pulled; QoQ inference leaned on pricing math) → small band-miss. Bar-creep was correctly pre-managed.
+- COMPUTATION — sound: OP band hit; point-gap = provision one-off per the pre-registered carve-out.
+- REASONING — fundamental leg strong (whisper risk, carve-out, and conditional reaction bands all pre-identified). Reaction leg: the file SAW the whisper-inline risk but kept official-consensus-anchored reaction bands → **generalizable: in whisper-elevated setups, band the reaction vs the WHISPER, not the official bar** (B42/L14-v2 family — logged as B42 N+1, not a new lesson number).
+
+**L27 verdict: N=2 fundamental POSITIVE — beat-pattern intact, regime-test GREEN on the operational leg.** BUT: first clean beat-with-negative-reaction datapoint → **L27 falsifier-watch counter 1 of 2 OPENED (provisional pending T+24h close)** — if HYNIX (Jul-29) or MURATA (Jul-31) also beats operationally with negative cohort response, the "fundamentals diverge from price" reframe question fires per the pre-registered L27 falsifier.
 
 ---
 

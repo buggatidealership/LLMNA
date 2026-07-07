@@ -14,3 +14,5 @@
 |---|---|---|
 | (none recorded 07-02→07-06) | — | — |
 | 2026-07-06 ~18:20 UTC | Fresh container (swap-detector fired at session start); harness-audit session | RE-ARMED KR/JP 00:22 UTC wake (job 547c1ca4, Samsung-prelim escalation + NBIS T+15); sentinel touched |
+| 2026-07-07 00:22:46Z | PLATFORM ROUTINE fire REGISTERED server-side (trig_01CnVFkk) — but spawned session produced ZERO repo output (execution-FAIL, see pre-registration artifact); in-session cron 547c1ca4 found DEAD same check (3rd swap-kill) | Scheduler survives; execution layer is the broken link |
+| 2026-07-07 ~01:15-01:40Z | MAIN SESSION wake catch-up (pre-committed contingency) | Samsung prelim GRADE executed (OP ₩89.4tn beat / reaction −5.35% / L27 N=2 + falsifier-watch); cascades committed; NBIS T+15 check armed |
