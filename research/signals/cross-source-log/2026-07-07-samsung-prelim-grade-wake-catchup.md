@@ -64,3 +64,23 @@ Per close-verification agent (~18k, T2 multi-snapshot + T1 FN intraday):
 **JP press framing (unanimous, T1/T2 Nikkei/Fisco/kabutan):** Korea semi-selloff contagion — profit-taking on the run-up after Samsung's record prelim, spilling to JP semis + electronic parts (Murata, Taiyo Yuden named); **Morgan Stanley "AI investment-cycle turn" warning cited as amplifier** (new sell-side bear datapoint — same family as the L27 falsifier-watch question).
 
 **Re-pull armed ~13:00Z** (daily bars index in 2-4h per the agent): MURATA/SUMCO/Kioxia exact closes + the Murata 07-06 −7.49% verification. Held-name tier-2 criteria (>5% move) will adjudicate on verified data, not stale quotes.
+
+---
+
+## [09:45Z UPDATE] USER-PROVIDED closes (T2-user, voice; 13:00Z re-pull cross-verifies) — BOTH HELD NAMES >5% DOWN → tier-2 fired
+
+| Name | User-reported 07-07 | vs agent data | Note |
+|---|---|---|---|
+| Samsung | −6.92% | **EXACT MATCH** with the verified close — cross-validates the user feed | ✓ |
+| SK Hynix | **−6.06%** | ⚠️ CONFLICTS with agent −8.45% (T2 alphasquare) — plausible source/venue variance (KRX vs GDR view); reconcile at re-pull, do NOT overwrite either | flagged |
+| Kioxia | −11.26% | refines the Nikkei "≈11%安" T1 magnitude | ✓ |
+| **MURATA (held 20,6%)** | **−10.13%** | agent had direction-only; user number = first magnitude | tier-2 FIRED |
+| **SUMCO (held 17,9%)** ("Zoom call" = SUMCO, transcription mapping) | **−11.62%** | sharp reversal from +1.51% / 18.5-yr high the prior day | tier-2 FIRED |
+
+**Cohort-decoupling decomposition (Principle #41, on user numbers):** MURATA −10.13% and SUMCO −11.62% vs Nikkei −2.12% — the JP held names fell ~5× the index and MORE than the Korean epicenter names (Samsung −6.92%). Verdict: **SYSTEMIC to the global AI-semi complex** (KR→JP contagion, amplified in AI-supply names), NOT idiosyncratic to either held name — no company-specific news in either (JP press names them only inside the cohort list). B45 regime context: −5-12% single-day cohort moves are within the documented regime base rate — but a coordinated −6 to −12% cohort day AFTER a record beat is the H2/H3 signature, not routine volatility.
+
+**Book impact (my calc from user numbers):** MURATA 20,6% × −10.13% ≈ −2.1% of book; SUMCO 17,9% × −11.62% ≈ −2.1%; **combined ≈ −4.2% book day** (cash 61,5% dampens).
+
+**Hypothesis reweight (my model, small shift on the JP amplification):** H1 positioning-flush P~45→40; H2 reaction-regime-shift P~35→38; H3 cycle-peak-tells P~20→22. Adjudicators unchanged (HYNIX Jul-29, MURATA Jul-31).
+
+**Falsifier check (both held theses):** NO written falsifier on either MURATA or SUMCO references price action — MURATA's live inputs are the Jul-31 print + MLCC-hike shipment confirmation; SUMCO's sharpened falsifier fires at the Aug-6 print (LTA language). **Position implication: 🟡 HOLD both — no size change — Rule #8 binding: cohort drawdown ≠ falsifier. Envelope note (conversion-layer lesson, 2026-07-05): this is precisely the day-type the risk envelope (30-50% conviction-conditional tolerance) was written for — the −4.2% book day sits well inside it; the July-1/2 emotional-exit pattern is the documented failure mode to NOT repeat.**
