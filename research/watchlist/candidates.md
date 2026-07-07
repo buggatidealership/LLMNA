@@ -1851,3 +1851,13 @@ Full build at `companies/ASMPT/` + `signals/cross-source-log/2026-07-03-asmpt-4a
 - Per `signals/cross-source-log/2026-07-06-kr-jp-morning-scan-prelim-eve.md`: JGB 10Y 2.830% = ~30-yr high (Nikkei T1, Jul-6, Takaichi-fiscal framing); mega-banks/life insurers re-rate on long-end steepening; UNDER-crowded vs semis (no listicle presence found); dated catalysts = BOJ path + Takaichi budget cycle + yen-defense scenario.
 - Anti-fragility note (the reason it cleared): pays in BOTH branches — BOJ hikes to defend the yen (NIM up) OR lets the curve steepen (reinvestment yields up); partially UNCORRELATED with the memory factor = rare portfolio-diversifying candidate class for this book.
 - Gate: THEME only — no name picked; before any promotion: name-level dig (MUFG/SMFG/Mizuho vs T&D/Dai-ichi trade-offs, duration-mismatch risk on EXISTING bond books marked down as yields rise — the honest bear), sized vs the envelope once approved. Sell-side divergence noted (Nomura still gaming year-end yields LOWER — T2): the theme has a real two-sided argument.
+
+## 2026-07-07 — Leg B discovery routing (KR/JP unanchored read; per `signals/cross-source-log/2026-07-07-morning-feed-kr-jp-legB-DISCOVERY.md`)
+
+- **JP GRID/TRANSFORMER CLUSTER (TC-13 domestic-JP leg; surfacing chain: Leg B grid read — 5-10yr DC connection waits, transformer 3-4yr leads, backlogs into 2030s; KEY MECHANISM: on-site generation bypasses the interconnect queue but NOT the step-up transformer = the non-bypassable pinch):**
+  - **Toshiba 6502.T** — transformer capex +2.4× / ¥480B (T2)
+  - **Meidensha 6508.T** — ¥160B capex (T2)
+  - **Daihen 6622.T** — ¥10B (T2, smaller pure-play)
+  - **Hitachi 6501.T** — $1B+ US grid investment (T2; conglomerate-dilution math required per Principle #22)
+- **SIer-DISRUPTION / APPLICATION-LAYER CLUSTER (surfacing chain: 日経ビジネス cover "death of SaaS → death of the SIer"; NEC ~30k staff on Claude, Fujitsu dual-sourcing Anthropic/OpenAI):** NEC 6701.T, Fujitsu 6702.T, SHIFT 3697.T — flagged as the harness's named APPLICATION-LAYER blind spot (absence-question answer); framework build required BEFORE any tiering (see todo).
+- **Narrative-correction note (no candidate):** Hanwha Ocean 042660.KS lost the ~₩60T Canada submarine tender to TKMS on NATO-interoperability — KR-defense-export supercycle narrative cracked (contradiction catch, logged for source-calibration value).

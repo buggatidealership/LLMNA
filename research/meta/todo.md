@@ -665,3 +665,8 @@
   - Triggers: "good morning Korea and Japan" + "good morning EU" + "good morning US"
   - Spec: `meta/methodology.md` Workflow #10 KEYWORD-TRIGGER REPLACEMENT section
   - Status: LIVE; first fire on next user trigger message
+
+- [ ] **P1 / research / 2026-07-07** [INDP, AF, BOT] — Build the APPLICATION/SOFTWARE-SERVICES-LAYER framework (the named blind spot)
+  - Origin: Leg B absence-question 2026-07-07 (`2026-07-07-morning-feed-kr-jp-legB-DISCOVERY.md`) — KR/JP front pages lead with enterprise-AI application-layer disruption ("death of SaaS → death of the SIer"; NEC ~30k staff on Claude, Fujitsu dual-sourcing) and the harness has ZERO framework for it. Second-order: validates enterprise-inference durability (end-demand model input) while threatening the software layer we exited (DDOG/NOW/TEAM class).
+  - Scope: mechanism map (who loses: SIers/SaaS seats; who wins: inference suppliers + integrators-turned-agent-operators); JP names first (NEC/Fujitsu/SHIFT); tie to end-demand-durability model + PD-2 layer-invasion; investable-surface screen LAST (framework before tiering).
+  - Linked: `sector/themes.md` T5, `meta/cross-domain-pattern-register.md` PD-2, end-demand item above
