@@ -54,3 +54,7 @@
 ## Retirement condition (pre-registered)
 
 In-session cron 547c1ca4 gets deleted + Workflow #11 "perpetuity requires user-side setup" language gets rewritten ONLY after E4 PASS **and** E5 PASS (tomorrow's audit). Guide + day-state updated at E4; final retirement at E5.
+
+## [2026-07-07 20:45Z ADDENDUM] Data point #3 — EOD-synthesis routine (trig_01Du5F6B, 20:17Z): SILENT
+
+Fire registered server-side 20:17:22Z (list_triggers last_fired_at, T1 platform metadata); git evidence ZERO (no origin/main commit since 20:10Z, no claude/w11-wakes fallback branch, heartbeat-log untouched). **Verdict unchanged and STRENGTHENED: scheduler PASS 3/3, fresh-session execution FAIL 0/3.** Hypothesis reweight (my model): H1 headless permission stall P~50→65 (three different prompts/times, same zero-output signature — systematic, not transient); H2 spawn errors before first tool call P~25; H3 runs-but-cannot-push-and-has-no-write-path P~10 (fallback-branch instruction present in both prompts and never used). Next data point: tomorrow's 00:22Z KR/JP fire. THE diagnosis remains user-side: open ONE spawned run in the claude.ai / mobile app UI — transcript visibility is the only way to distinguish H1/H2/H3.
