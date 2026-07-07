@@ -175,3 +175,11 @@ Current tail: **TC-14 ACTIVE** (refreshed 2026-07-06; TC-12/13 added 2026-06-25,
 - **Medtech-biotech-AI sector thesis** — `sector/medtech-biotech-ai-thesis.md` (two-branch Application × Equipment)
 - **Subagent cost-yield ledger** — `meta/subagent-cost-yield-ledger.md` (Critical Rule #16 instrumentation; backfilled 36 entries 2026-06-15→2026-06-19; preliminary STRONGLY POSITIVE Rule #16 verdict)
 - **Tier-cascade log** — `meta/tier-cascade-log.md` (per Principle #37 scoped-cascade audit trail; 6+ cascade events 2026-06-15; first STALE flags arrive ~2026-07-15)
+
+## 2026-07-07 additions (brain-dump codification batch)
+
+- **#43** — Configuration Over Capability (CANDIDATE, retro-N≥4): latent capability ≠ deployed behavior; operator surfaces affordances, mechanisms make them durable. `meta/methodology.md`
+- **#43b** — Compute Instead of Narrate protocol + BOUNDARY RULE (settleable-by-arithmetic → MUST compute; meaning/probability/mechanism → narrate, anchored): behavioral audit ≠ introspection; affordance claims = predictions (self-report T3, executed T1); anthropomorphic-default bias named. First tests: 2 tasks → 3 catches. Tool: `meta/structural-output-metric.py`. Priming-hook item 10.
+- **#44** — Detection Over Prediction (CANDIDATE): business-model emergence unforecastable → instrument for it; substrate positioning under model-uncertainty; Cisco era-bound warning (buildout-maturation falsifiers fire before substitution falsifiers). `meta/methodology.md`
+- **B63** — Model-provenance bias (CANDIDATE, preventive): Anthropic/lab-favorable conclusions get mandatory adversarial treatment. `meta/biases-watchlist.md`
+- **⚠️ known collision for next audit:** two "#42" candidates in methodology.md (retrieval-staleness 07-06 + time-window 06-26) — renumber at the 2026-07-24 audit (same class as the B47→B62 fix).

@@ -12,12 +12,12 @@ Build durable, asymmetric conviction in AI-sector positions BEFORE consensus cat
 
 ```
 Predict → Grade (3-layer: INPUT / COMPUTATION / REASONING)
-       → Lesson (predictions/lessons.md, currently L1-L27)
-       → Bias (meta/biases-watchlist.md, currently B1-B59 incl. B40 3-type garble taxonomy CONFIRMED; B45 regime-corrected priors; B46 N=2 promotion MET; B54/B55/B58/B59 new 2026-06-22 PM)
-       → Principle (meta/methodology.md, currently #1-#38 candidates #35-#38)
+       → Lesson (predictions/lessons.md, currently L1-L30; L17/L18 tombstoned)
+       → Bias (meta/biases-watchlist.md, currently B1-B63 incl. B45 regime priors; B60 anchored-ingest; B61 LLM-generated inputs; B62 lead-time (renumbered); B63 model-provenance 2026-07-07)
+       → Principle (meta/methodology.md, currently #1-#44; candidates incl. #42 retrieval-staleness, #43 configuration-over-capability + #43b COMPUTE-INSTEAD-OF-NARRATE boundary rule, #44 detection-over-prediction — all 2026-07-06/07)
        → Hook (deterministic Stop hook at ~/.claude/, currently 18 live)
-       → Pattern (meta/cross-domain-pattern-register.md, currently P-1 to P-11 verified + PC-12/PC-13 candidates + PC-14 verified N=3+ Universal Sovereign-AI Bifurcation Doctrine)
-       → Triangulation (signals/triangulation.md, currently TC-1 to TC-11 (TC-10 ACTIVE N=9; TC-11 CANDIDATE N=1))
+       → Pattern (meta/cross-domain-pattern-register.md, currently P-1 to P-11 + PC-12..PC-15; PD-1..PD-8 in the 2026-07-01 Leg-B register)
+       → Triangulation (signals/triangulation.md, currently TC-1 to TC-14; TC-13 grid-hardware ACTIVE N=8+)
        → Monitor (meta/principle-applications-log.md, monthly audit cycle; codification rule + signal-density first re-eval 2026-07-11)
        → Retire OR refine OR codify-deeper based on real-catch vs false-positive metrics
 ```
