@@ -3163,3 +3163,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-twitter-batch-jukan-reaction-regime-cxmt-taiwan-foundry.md`
 **Commit:** (this commit)
+
+### [2026-07-07 PM-2 — APPLICATION-LAYER FRAMEWORK build (Workflow #9 step-0, user "go")] 4 Opus; HIGH ×4 — the named blind spot closed: framework v1 shipped with unit-of-disruption re-specification + new earliest 2027 demand tripwire + 2 JP names elevated
+**Trigger source:** user "go" on the queued framework build. **Subagents fired:** 4 (Opus, parallel — JP SIer ground truth / SaaS-seat economics / winners map / adversarial Rule #18). **Estimated token cost:** ~114k (actual 41.4 + 24.8 + 23.3 + 24.5).
+**Per-subagent yield:** L1 HIGH (press-vs-order-books gap = the framework's central finding; NEC-30k + Fujitsu dual-source confirmed w/ scope corrections; SCSK/TIS/NTT-Data record books T1; SHIFT test-case anatomy); L2 HIGH (ServiceNow ~50% non-seat new ACV; ETR 59%-cut-subs-first; Fin outcome-pricing proof; TAM-redefinition headcount-budget finding); L3 HIGH (capture stack ranked; ~65-75% Tier-A ROI-paid demand; coding-deceleration tripwire — decision-grade for the 2027 duration question); L4 HIGH (76% buy-vs-build reversal kills the insourcing mechanism; exit-cohort NRR prints; per-seat + 人月 identified as the two genuinely impaired units).
+**Brief-framing errors caught:** "death of SIer" reclassified opinion-serial-not-order-data; Accenture record-vs-decelerating arbitrated (Q2 record → Q3 −2% YoY, both T1); JP ¥-figure garbles corrected from search snippets to IR originals.
+**Thesis cascade triggered:** `sector/application-layer-framework.md` CREATED; candidates SIer-cluster tiered; todo P1 build-item closed → P2 standing items; end-demand P1 gains app-layer half; themes T5 back-ref; day-state.
+**Position implication delta:** NONE — ⚪/🟡 — two names elevated to thesis-build (no sizing); exit-cohort re-underwrite user-gated.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-applayer-framework-4agent-step0.md`
+**Commit:** (this commit)

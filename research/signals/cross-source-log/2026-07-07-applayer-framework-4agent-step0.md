@@ -56,6 +56,21 @@
 
 ---
 
-## LEG 1 (JP SIer ground truth) — in flight; appended on return.
+## LEG 1 RETURNED (~41k, deepest of the four) — JP SIer ground truth: "in the PRESS the SIer is dying; in the ORDER BOOKS the SIer is having a record year"
+
+**All three carried claims CONFIRMED with corrective nuance:**
+- **Nikkei cover thesis CONFIRMED but reclassified:** the "SIerの死" piece (日経ビジネス serial launched 2026-06-30, T1 URL) is a Kimura-column OPINION lineage + NEC-Anthropic backstory framing — evidence base = stock moves + AI demos, NOT project cancellations or order data. The underlying "man-month collapse in 3-5 years" (Kimura 極言暴論 ~Feb-26) is logic-driven narrative, T2.
+- **NEC-30k CONFIRMED (T1 press 2026-04-23) — scope corrected: INTERNAL dev productivity** (Claude+Claude Code to ~30k employees), with the client-facing piece separate (BluStellar Scenario, Opus 4.7 + Cowork). NEC FY26/3: IT Services OP margin +320bps to 13.4%; **BluStellar ¥705bn +30% = 32% of domestic IT** (T1 IR).
+- **Fujitsu dual-source CONFIRMED (2026-05-27, T1/T2):** Claude + ChatGPT Enterprise/Codex to ~100k employees; FDE model; model-choice by data-sovereignty (Anthropic → gov/finance/defense/critical-infra). **Uvance ¥709.3bn +47% — mid-term target HIT; Services Solutions adj OP record +25%** (T1). CEO explicitly: exiting man-month toward outcome-based.
+
+**The economics:** contract-dev man-month core ≈ ¥8.77trn of the ¥18.8trn JP IT-services market (T2 JISA); labor share 58.4%, OP margin 5.5% — textbook labor arbitrage. **"Anthropic Shock" (Feb-26 Cowork + Accenture guidance cut) HALVED Baycurrent/NRI/SHIFT/INTLOOP off Aug-25 highs (T2)** — the market repriced the narrative. **BUT the order books (all T1 IR): SCSK orders +10.8%/backlog +18.4%; TIS record rev+OP; NTT Data orders up all fields + largest-ever DC order, OP +51%; NEC/Fujitsu records. ZERO AI-attributed profit warnings from JP primes.**
+
+**SHIFT = the cleanest live test case of the whole thesis:** H1 FY26/8 rev +16.8% but recurring profit −16% (margin 14.4%→11.0%, front-loaded AI investment); its own AI Test Agent cuts test execution up to 80% (self-cannibalization by choice); offset = AI-driven modernization service (Devin-based) booked **¥2.55bn in ~2 months, ¥4bn 2027 target** (T1/T2). The bet = does upstream/modernization scale faster than test-hour deflation. H2 print = the adjudicator.
+
+**Leg-1 mechanism verdicts:** (1) man-hour deflation = NARRATIVE, not yet in any order book (asserted 3-5yr horizon); (2) outcome-repricing escape hatch = VISIBLE T1 (Uvance/BluStellar records — disruption converting to margin TAILWIND for primes); (3) implementation-demand supercycle FIRST = VISIBLE T1 (backlogs at records — enterprises need SIers to deploy agents). Data-hygiene note: JP figures corrected from garbled search snippets to ¥-denominated IR originals; T1 numerics should be re-confirmed against linked PDFs before facts.md promotion.
+
+---
+
+## STEP-0 COMPLETE — synthesis at `sector/application-layer-framework.md` (same commit); ledger 4 fires ~114k (24.8+23.3+24.5+41.4), all HIGH.
 
 **Position implication: ⚪ NO ACTION (step-0 evidence staging) — 🟡 — no tiering, no sizing; framework synthesis follows all four legs.**
