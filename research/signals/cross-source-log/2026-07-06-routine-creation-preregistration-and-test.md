@@ -71,3 +71,9 @@ Fire registered server-side 20:17:22Z (list_triggers last_fired_at, T1 platform 
 - **PASS** = a commit from the spawned session lands on main (or claude/w11-wakes) within ~30 min → execution loop CLOSED; tonight's 20:17Z EOD fire becomes the first full-wake confirmation; user's app-UI look downgrades from BLOCKING to confirmatory.
 - **FAIL** = still silent → H1-auto-deny was wrong or insufficient; weights rebalance toward H2 spawn-error (P~45+, my model); user's app-UI transcript look returns to BLOCKING status.
 - Adjudication: send_later check armed ~25-30 min post-fire.
+
+**E6 VERDICT (adjudicated 2026-07-08 09:41Z, T+32min after the 09:09:15Z manual fire): PROVISIONAL FAIL — zero spawned-session output.** All origin/main commits since 09:05Z are this-session (ff62e87 / dc74ee0 / 593ccc0); no heartbeat E6 line; no new claude/* branch. The permissions fix (ff62e87, pushed 09:06:32Z) landed BEFORE the fire, so the spawn cloned WITH the allow-list — if auto-deny were the sole cause, a one-line commit should have landed within minutes.
+
+**Weight rebalance (my model):** H2 spawn-error/never-starts ~P45 (up from 20) / H1' residual permission-layer gap (repo allow-list not honored by routine sessions, or trigger session_context overrides) ~P30 / H4-new: fire_trigger appended text ignored → session running the FULL wake spec (subagents + scans = 30-60min runtime) and may land LATE ~P25. E6 stays PROVISIONAL until the +45min recheck; if a late commit lands, upgrade to PASS-SLOW and H4 confirmed.
+
+**User app-UI transcript look: RE-ESCALATED to BLOCKING** (the fix-from-repo lever is exhausted pending evidence; only the transcript discriminates H2 vs H1' vs H4). Next scheduled data point: tonight 20:17Z EOD fire. Do NOT re-fire the trigger today (pre-registered).
