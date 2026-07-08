@@ -2,7 +2,7 @@
 
 **Created:** 2026-07-08 (user design question: "what must be true to create a holistic LLM-native analysis of the overall markets — what variables must be tracked")
 **Trigger context:** SKH ADR oversubscribed (primary-market demand) vs deteriorating secondary tape — a signed divergence the harness currently reads ad-hoc, per-event, not systematically.
-**Status:** SPEC ONLY. Build gated on the three prerequisites in §4.
+**Status:** P1 ACTIVE (2026-07-08) — USER DECISION: HYBRID sourcing ("use scrappable sources and keep sharing screenshots"). Constraint discovered same day: environment network policy blocks BOTH Bash-curl AND main-session WebFetch to data hosts (stooq/FRED/frankfurter all proxy-403); research agents' web tools DO reach cnyes/tradingeconomics/kabutan/bloomingbit-class sources. Working shape: (1) templated PULL-AGENT with fixed roster (US wrap + tradingeconomics yields/DXY/oil + cnyes TW + bloomingbit KR + kabutan JP) returning strict CSV → (2) `meta/market-state-compute.py` → (3) `sector/market-state-log.md` entry. Cost ~15-25k tokens/refresh. **UPGRADE PATH (user-side, ~2 min): widen the environment's network access (claude.ai environment settings → network policy → add stooq.com, fred.stlouisfed.org, api.frankfurter.app) → Tier-A becomes a pure script at zero token cost.** First vector computed 2026-07-08 (seed run, mixed-session inputs — see log).
 **Scope guard:** the mission excludes macro TRADES. This function is a CONDITIONING layer — it feeds the cash-deployment gate, entry-package timing, and sizing modifiers for AI-sector decisions. It never generates its own positions.
 
 ## 1. The LLM-native design principles (what makes this NOT a human macro note)
