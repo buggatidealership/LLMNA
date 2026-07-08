@@ -4,6 +4,10 @@
 
 ---
 
+### ⚪ Cloudflare (NET) + Circle (CRCL) — agentic-commerce toll positions (added 2026-07-08, Workflow #9)
+
+Per `signals/cross-source-log/2026-07-08-cloudflare-agentic-payments-2agent-workflow9.md` + `sector/agentic-commerce-framework.md` (new stub) + `companies/NET/thesis.md` (Watchlist). NET = the 83.5%-reverse-proxy enforcement surface, ~32x P/S, option-not-cashflow verdict; CRCL = settlement rail, radar-only. Activation tell pre-registered: first frontier lab paying tolls at scale. CCL-trio note (2383/6274/6213 TW): 07-08 green-on-red-tape divergence UNRESOLVED (no catalyst found; structural bid = EMC/TUC hikes + Korea CCL +74.5% YoY, T2) — if divergence persists >=3 sessions, log as scarcity-rotation datapoint (priced-for-growth -> priced-for-scarcity inside the AI complex).
+
 ### ⚪ SambaNova (private) — Nvidia-challenger inference silicon, IPO-candidate watch (added 2026-07-08, brief gauntlet)
 
 Per `signals/cross-source-log/2026-07-08-morning-brief-b61-gauntlet-gpt56-fable5-sambanova-nand-check.md`. $1B Series F first close @ $11B (2026-07-08, T1 TechCrunch/Bloomberg/CNBC; lead General Atlantic; Intel Capital/BlackRock/QIA/Vista+). The re-rate: ~7x the collapsed ~$1.6B Intel acquisition bid (late-2025) and ~5x the Feb-26 $2.2B Series E — catalyst = **JPMorganChase on-prem inference win** (SN40L/SN50). Radar rationale: enterprise on-prem secure inference = a TC-15-adjacent demand vector the merchant-ASIC frame misses; no listed expression (IPO watch). NOT actionable; private.

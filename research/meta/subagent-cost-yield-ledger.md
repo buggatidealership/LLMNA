@@ -3235,3 +3235,13 @@
 **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-08-morning-brief-b61-gauntlet-gpt56-fable5-sambanova-nand-check.md`
 **Commit:** (this commit)
+
+### [2026-07-08 PM-1 — Cloudflare deep-dive: announcement verification + agentic-payments layer pass] 2 Opus; HIGH both — NET +8.6% MISATTRIBUTION caught (Scotiabank upgrade, not the Gateway); demand-side truth-serum surfaced (x402 ~$28k/day, half synthetic, vs ~$3B lump-sum licensing); new framework stub + NET Watchlist thesis
+**Trigger source:** user deep-dive order (Rule #16 + Workflow #9). **Subagents fired:** 2 (Opus, parallel). **Estimated token cost:** ~49k (actual 18.5 + 30.2).
+**Per-subagent yield:** announcement-verifier HIGH (waitlist-not-GA; tape misattribution; x402-under-Linux-Foundation w/ Anthropic membership; CF-doesn't-own-the-standard structural catch); layer-pass HIGH (bot-majority 57.5% T1; crawl-to-referral 11,122:1 Anthropic; realized-vs-narrative gap 2-3 orders of magnitude; CF's own per-crawl->Pay-Per-Use pivot as the demand tell; toll-position map w/ listed tickers; hedged pot math; CCL side-check honest UNRESOLVED).
+**Brief-framing errors caught:** 2 (user tape attribution; "past 72h" freshness).
+**Thesis cascade triggered:** NEW `sector/agentic-commerce-framework.md` v0.1 CANDIDATE + NEW `companies/NET/thesis.md` (Watchlist, AF 3/5) + watchlist entries + application-layer sibling back-ref.
+**Position implication delta:** NONE — NO ACTION on NET (option-not-cashflow at ~32x P/S); activation tell pre-registered gates entry-package work.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-cloudflare-agentic-payments-2agent-workflow9.md`
+**Commit:** (this commit)
