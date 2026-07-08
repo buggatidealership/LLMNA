@@ -4,6 +4,10 @@
 
 ---
 
+### 🟢 CCL-scarcity cluster — Nittobo 3110.T (bypass pick) + Elite Material 2383.TW + TUC 6274.TW + Mitsui Kinzoku 5706.T (added 2026-07-08, user-surfaced divergence -> TC-16)
+
+Per `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md` (2 Opus) + TC-16 (promoted N=4). User eyeballed the trio green on a red tape; the layer pass found the real theme: content/rack +233% GB300->VR NVL72 (T2 MS BOM) against two inelastic upstream chokes — **Nittobo ~90% T-glass (TSE 3110, the under-covered single-point choke; relief 2027)** and **Mitsui HVLP4 foil (TSE 5706, the H2-26 rotating pinch)** — with EMC/TUC as the NVDA-design-in pass-through collectors (June rev +120.69%/+107.72% YoY, Q2+Q3 hikes, sold-out). Ranked: Nittobo (bypass, purest rent) > EMC (primary CCL) > TUC > Mitsui > ITEQ/Shengyi/Kingboard (beta/lower quality). JP legs are TSE-listed (likely DeGiro-accessible like MURATA/SUMCO — user verifies). Falsifiers + Kyber-EXTENDS verdict in the artifact. NOT an entry package — theme candidacy; any entry via fresh envelope-gated decision package only (Rule #17 ensemble at sizing).
+
 ### ⚪ Cloudflare (NET) + Circle (CRCL) — agentic-commerce toll positions (added 2026-07-08, Workflow #9)
 
 Per `signals/cross-source-log/2026-07-08-cloudflare-agentic-payments-2agent-workflow9.md` + `sector/agentic-commerce-framework.md` (new stub) + `companies/NET/thesis.md` (Watchlist). NET = the 83.5%-reverse-proxy enforcement surface, ~32x P/S, option-not-cashflow verdict; CRCL = settlement rail, radar-only. Activation tell pre-registered: first frontier lab paying tolls at scale. CCL-trio note (2383/6274/6213 TW): 07-08 green-on-red-tape divergence UNRESOLVED (no catalyst found; structural bid = EMC/TUC hikes + Korea CCL +74.5% YoY, T2) — if divergence persists >=3 sessions, log as scarcity-rotation datapoint (priced-for-growth -> priced-for-scarcity inside the AI complex).

@@ -141,3 +141,10 @@ last_review: 2026-06-02 (Computex Day 1 INGEST)
 ---
 ## CANDIDATE INPUT for next BOTTLENECK-FORECAST run (logged 2026-07-02; NOT a forecast run — last_review unchanged)
 **Packaging MATERIALS + assembly-equipment as the next-next bottleneck (INF-1, P~65% my model):** per `signals/cross-source-log/2026-07-02-ectc-INFERENCE-pass-8-second-order-reads.md` — every post-CoWoS scaling path (sub-25µm bumps, panel warpage/overlay, sub-2µm damascene RDL, microfluidic sealants, glass edge-chemistry) gates on a materials/equipment layer dominated by TSE-listed Japanese chemistry names + bonding-tool vendors (BESI Tier-S). The capacity-slot bottleneck (CoWoS) is priced and now has credible second-sources (EMIB-T cert end-2026); the enabling-layer bottleneck is not. Evaluate for the "next 12-24mo" slot at the next full forecast run alongside the existing power/HBM entries.
+
+---
+
+## 2026-07-08 INTERIM REGISTER UPDATE (not a full monthly run; per `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md` + TC-16 promotion)
+
+**NEW next-binding candidate — the T-glass → HVLP4 rotation in the CCL stack:** (a) Japanese T-glass/NER-glass cloth: Nittobo ~90% share, full capacity, zero inventory, relief 2027 (T1 Nikkei) = the deepest structural choke behind AI server boards; (b) HVLP4 copper foil rotates in as the 6-12mo pinch (Mitsui ~490t/mo vs ~560t/mo H2-26 demand; gap → ~2,500t 2027, T2 Digitimes/Goldman). Visible layer (CCL makers) = pass-through toll-collectors; Nvidia already dual-tracking upstream directly. Bypass-route names: Nittobo 3110.T (the choke itself), Mitsui Kinzoku 5706.T (foil), vs consensus EMC/TUC. Kyber slip does NOT relieve this (shared across GB300/Rubin generations). Slots alongside the existing InP + financing next-binding candidates; full re-rank at the 2026-08-06 monthly run.
+**last_review unchanged (2026-07-06 monthly stands; this is an interim addendum).**

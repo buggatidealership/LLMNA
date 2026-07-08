@@ -3245,3 +3245,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-08-cloudflare-agentic-payments-2agent-workflow9.md`
 **Commit:** (this commit)
+
+### [2026-07-08 PM-2 — CCL trio divergence deep-dive] 2 Opus; HIGH both — TC-16 PROMOTED (glass-cloth/laminate scarcity N=4); binding node relocated UPSTREAM (Nittobo ~90% T-glass / Mitsui HVLP4) per bypass-route discipline; June-revenue trigger hypothesis KILLED on timing; Kyber adjudicated EXTENDS-not-cuts
+**Trigger source:** user observation (CCL trio green on red tape) + explicit research order. **Subagents fired:** 2 (Opus, TW/JP-native per #36). **Estimated token cost:** ~81k (actual 29.8 + 51.7).
+**Per-subagent yield:** tape/catalyst agent HIGH (June revenues pinned w/ dates — killed my monthly-revenue trigger hypothesis honestly; Kyber-immunity ranked primary; refused false-precision closes; TAIEX conflict flagged); layer agent HIGH (two-layer binding verdict; MS $/rack BOM 233pct; Goldman TAM; hike chronology; TRACE on Kyber w/ P-weights; ranked expressions incl. the non-consensus Nittobo leg; falsifier set).
+**Brief-framing errors caught:** 1 (my own H1 monthly-revenue trigger — killed on print-date evidence).
+**Thesis cascade triggered:** TC-16 -> triangulation.md; bottlenecks.md interim register addendum (T-glass->HVLP4 rotation); watchlist CCL-scarcity cluster (4 names ranked); artifact PARTs 1-2.
+**Position implication delta:** NONE executed — theme candidacy only; any entry = fresh decision package, user-gated.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md`
+**Commit:** (this commit)
