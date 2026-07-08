@@ -3224,3 +3224,14 @@
 **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-08-twitter-batch-spacexai-cursor-zhipu-chip-china-model-curbs-3agent.md`
 **Commit:** (this commit)
+
+### [2026-07-08 AM-3 — Morning brief B61 gauntlet: GPT-5.6/Fable-5 cluster + SambaNova bundle + NAND contradiction check] 3 Opus; HIGH 3/3 — parked Fable-5 flag RESOLVED (export-control suspension); NAND false-contradiction KILLED by T1 before cascade; SambaNova apples-to-oranges framing caught; non-default read #11 codified
+**Trigger source:** user's AI Intelligence Brief (B61-class digest, 68 sources). **Subagents fired:** 3 (2 bundles + 1 contradiction-class check; Opus, KR/JP-native on the NAND check per #36). **Estimated token cost:** ~55k (actual 17.1 + 16.4 + 21.3).
+**Per-subagent yield:** lab-cluster HIGH (Fable-5 timeline reconstructed T1/T2 — Jun-12→Jul-1 export-control suspension resolves the parked 07-07 T3 flag; GPT-5.6 tier pricing T1; Commerce-clearance datapoint; two-tier pricing upgraded from my "narrative" triage with hard numbers — a main-loop TRIAGE MISS caught by the agent); bundle-2 HIGH (SambaNova acquisition-price-vs-valuation framing error + "more than doubling" understatement caught; storage piece correctly classed RESTATEMENT; UK NSIP dated to Nov-2025 legislation vs "new" framing); NAND-check HIGH (SupplyICs "flat to -5% Q3" CONTRADICTED-BY-T1 — TrendForce 07-03: NAND +10-15% Q3, DRAM +13-18%, Samsung +20% ask; the false contradiction was stopped BEFORE touching TC-1/KIOXIA/SNDK — the double-verification save; keeper = NAND momentum-deceleration second-derivative datapoint).
+**Brief-framing errors caught:** 5 (digest "no pricing details" stale; "Lab Watch: nothing notable" misclassification; SambaNova framing ×2; storage vendor-narrative) + 1 main-loop triage miss (two-tier item) + 1 false-sign kill (NAND).
+**Thesis cascade triggered:** where-we-are non-default read #11 (model weights as export-controlled goods, both sides); private-tracker Anthropic (suspension timeline + H2 P~45→55) + OpenAI (GPT-5.6 entry); application-layer framework cost-floor hard numbers; KIOXIA + SNDK NAND-deceleration banners; watchlist +SambaNova.
+**Position implication delta:** NONE — held names untouched (DRAM/HBM leg re-confirmed); NAND reaction-regime bar noted for the watchlist-reference cohort into late-July prints.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×6 + false-contradiction kill).
+**Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-morning-brief-b61-gauntlet-gpt56-fable5-sambanova-nand-check.md`
+**Commit:** (this commit)
