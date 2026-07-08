@@ -14,7 +14,14 @@
 6. Keep **"Also include default list of common package managers" CHECKED**
 7. **Save changes** (applies to NEW sessions only — I test with a fetch on the next fresh session)
 
-## 2. Routine transcript look (~30 sec) — closes the E6 diagnosis (5 silent spawns)
+## 0. ⭐ FIX THE ROUTINE REPO BINDING (~2 min) — THE root-cause fix (do this one first; may be superseded if my E7 test passes — I'll update)
+1. Desktop browser → **claude.ai/code/routines**
+2. Open **"KR-JP morning wake"** → Edit → in the routine form find the **repository selector** → select **buggatidealership/LLMNA** → Save
+3. Repeat for **"EOD synthesis"**
+4. (Alternative/belt-and-braces: in the environment settings for "Analyst", update its source repo to LLMNA)
+Why: your screenshots proved the spawns run in the old Health-Calculators environment — the routines' repo binding never migrated.
+
+## 2. ~~Routine transcript look~~ ✅ DONE 2026-07-08 (user opened the run from a push notification — the screenshots WERE the diagnosis; E-series root cause found)
 1. **claude.ai/code/routines** → click **"KR-JP morning wake"** or **"EOD synthesis"**
 2. The routine's page lists **past runs** — open ANY one (each is a full session transcript)
 3. Tell Claude what you see (screenshot or one sentence). Outcome map (my model, per the E6 artifact): empty/immediate-error = spawn-error (~P45) · work attempted but tool calls denied = allow-list-not-honored (~P30) · anything else (~P25)
