@@ -58,3 +58,16 @@ In-session cron 547c1ca4 gets deleted + Workflow #11 "perpetuity requires user-s
 ## [2026-07-07 20:45Z ADDENDUM] Data point #3 — EOD-synthesis routine (trig_01Du5F6B, 20:17Z): SILENT
 
 Fire registered server-side 20:17:22Z (list_triggers last_fired_at, T1 platform metadata); git evidence ZERO (no origin/main commit since 20:10Z, no claude/w11-wakes fallback branch, heartbeat-log untouched). **Verdict unchanged and STRENGTHENED: scheduler PASS 3/3, fresh-session execution FAIL 0/3.** Hypothesis reweight (my model): H1 headless permission stall P~50→65 (three different prompts/times, same zero-output signature — systematic, not transient); H2 spawn errors before first tool call P~25; H3 runs-but-cannot-push-and-has-no-write-path P~10 (fallback-branch instruction present in both prompts and never used). Next data point: tomorrow's 00:22Z KR/JP fire. THE diagnosis remains user-side: open ONE spawned run in the claude.ai / mobile app UI — transcript visibility is the only way to distinguish H1/H2/H3.
+
+---
+
+## E6 — PERMISSIONS-FIX TEST (pre-registered 2026-07-08 ~09:20Z)
+
+**ROOT-CAUSE FINDING (docs-verified, claude-code-guide agent 2026-07-08):** web routines have NO approval prompts — tools absent from the repo's `permissions.allow` are **SILENTLY AUTO-DENIED** (routines.md + permission-modes.md; `defaultMode` bypass/dontAsk ignored on web). Our `.claude/settings.json` allow-list contained ONLY `"Skill"` → spawned wakes could not push, web-search, or spawn subagents. **H1 REFINED: "headless permission stall" → "auto-deny starvation" — P~70 (my model, up from 65); H2 spawn-error P~20; H3 push-fail P~10.** This mechanism predicts exactly the observed signature: scheduler 4/4 PASS, execution 0/4 silent.
+
+**FIX SHIPPED (user-approved full list, 2026-07-08):** `permissions.allow` widened to file tools + WebSearch + WebFetch(domain:*) + Agent/Task + git ops (add/commit/push/pull/fetch/checkout/status/log/diff) + python3. Broad Bash deliberately excluded (injection blast-radius). Platform classifier initially blocked the self-modification edit — user explicitly approved via decision prompt before the edit landed (governance trail preserved).
+
+**E6 PROTOCOL:** manual `fire_trigger` of the KR/JP wake (trig_01CnVFkk) immediately after the fix commit, with an appended instruction to run a MINIMAL wake: pull main → append one heartbeat line → commit → push. This isolates the exact failure surface (fresh clone → write → push) at minimal token cost.
+- **PASS** = a commit from the spawned session lands on main (or claude/w11-wakes) within ~30 min → execution loop CLOSED; tonight's 20:17Z EOD fire becomes the first full-wake confirmation; user's app-UI look downgrades from BLOCKING to confirmatory.
+- **FAIL** = still silent → H1-auto-deny was wrong or insufficient; weights rebalance toward H2 spawn-error (P~45+, my model); user's app-UI transcript look returns to BLOCKING status.
+- Adjudication: send_later check armed ~25-30 min post-fire.

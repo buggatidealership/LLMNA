@@ -93,8 +93,28 @@
         ]
     },
     "permissions": {
+        "_comment": "HEADLESS ALLOW-LIST (added 2026-07-08, E6 fix; user-approved same day). Web routines have NO approval prompts - tools not listed here are SILENTLY AUTO-DENIED (per code.claude.com/docs/en/routines.md + permission-modes.md: defaultMode bypass/dontAsk is ignored on web). 4/4 silent wake spawns traced to this: allow-list held only 'Skill', so spawned sessions could not push, search, or spawn verification agents. Scope kept deliberate: git ops + python3 (compute scripts) + web read tools + subagents + file tools. NOT allowed: broad Bash (injection blast-radius control - wake sessions read untrusted web content and push to main). Protected paths (.claude/, .git/) still always prompt on web by design - wakes can never widen their own permissions.",
         "allow": [
-            "Skill"
+            "Skill",
+            "Read",
+            "Write",
+            "Edit",
+            "Glob",
+            "Grep",
+            "WebSearch",
+            "WebFetch(domain:*)",
+            "Agent",
+            "Task",
+            "Bash(git add *)",
+            "Bash(git commit *)",
+            "Bash(git push *)",
+            "Bash(git pull *)",
+            "Bash(git fetch *)",
+            "Bash(git checkout *)",
+            "Bash(git status*)",
+            "Bash(git log *)",
+            "Bash(git diff *)",
+            "Bash(python3 *)"
         ]
     }
 }
