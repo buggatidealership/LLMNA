@@ -3203,3 +3203,13 @@
 **Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×3). **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-feed-pre-us-scan.md` + `2026-07-07-morning-feed-us-DISCOVERY.md` (§6 synthesis)
 **Commit:** (this commit)
+
+### [2026-07-08 AM-1 — Samsung T+24h reaction grade inputs] 1 Opus; HIGH — beat-and-no-rally tick #1 CONFIRMED at T+24h (stabilization −6.2/−6.5% below pre-print, computed); HYNIX ADR oversubscription (~1,000 institutions) surfaced on pricing eve; two hallucinated/recycled tape clusters self-caught and discarded by the agent
+**Trigger source:** pre-registered T+24h adjudicator (07-08 KRX close), scheduled work. **Subagents fired:** 1 (Opus; KR-native parallel per #36). **Estimated token cost:** ~37k (actual 37.4k).
+**Per-subagent yield:** HIGH — direction ≥3-source corroborated; agent flagged its own data limits honestly (intraday ~09:55 KST only, no official settle; Japan 07-08 cohort UNVERIFIED; discarded two internally-impossible "close" clusters as hallucinated/recycled — B61-class self-catch).
+**Brief-framing errors caught:** prev-close basis discrepancy (296,000 vs 297,000) surfaced and COMPUTED as immaterial (#43b).
+**Thesis cascade triggered:** grading-log T+24h finalization; lessons.md L27 tick #1 confirmed; HYNIX thesis 07-08 banner (rebound decoupling + ADR oversubscription).
+**Position implication delta:** NONE — watchlist-reference names; Jul-9/10 ADR tells + Jul-29/31 L27 adjudicators unchanged.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** grading-log.md T+24h section (grade artifact; no separate log file — grade lives in the ledger of record)
+**Commit:** (this commit)

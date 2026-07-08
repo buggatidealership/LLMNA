@@ -92,7 +92,9 @@ When a resolution date hits:
 
 ---
 
-## [2026-07-07 GRADED — fundamental leg; reaction leg provisional] SAMSUNG Q2 2026 PRELIM (the keystone; registered 2026-07-02, resolved 2026-07-07 ~08:40 KST)
+## [2026-07-07 GRADED — fundamental leg; reaction T+24h GRADED-PROVISIONAL 2026-07-08] SAMSUNG Q2 2026 PRELIM (the keystone; registered 2026-07-02, resolved 2026-07-07 ~08:40 KST)
+
+**T+24h REACTION FINALIZATION (2026-07-08, provisional on official settle — T1 tape 403-blocked, same treatment as NBIS T+15; direction corroborated ≥3 independent T2 incl. Korean-native etoday/fnnews, per 1 Opus verification agent):** 07-08 session = **STABILIZATION, not recovery**: Samsung gapped −3.55% (low ₩283,000), reversed to ₩298,500 **+0.84% intraday ~09:55 KST**; SK Hynix **+5.20%** to ₩2,315,500; KOSPI +0.90% after opening −2.66%. Computed cumulative from implied pre-print close (python, both prev-close bases 296,000/297,000): **−6.21% to −6.53% below pre-print** — the print-day loss was RETAINED. Press attribution: bargain-hunting into memory ~60% / AI-capex-doubt backdrop ~25% / HYNIX-specific ADR-oversubscription tailwind ~15% (press-supported weights). Cohort-decoupling (#41) COMPLETED: reporter (Samsung +0.8%) lagged cohort (HYNIX +5.2%) on the bounce — HYNIX pure-play HBM + ADR demand vs Samsung ₩400tn fab-hub capex overhang. **VERDICT: beat-and-no-rally CONFIRMED at T+24h — L27 falsifier counter tick #1 STANDS (1 of 2). No second leg down (base-built), so this is bimodal-print whisper-regime behavior (B42), not capitulation.** Settle-confirm folds into the next KR/JP artifact; basis discrepancy (296,000 vs 297,000 prev close) computed as immaterial to the verdict.
 
 **Executed by the main session as wake catch-up** (both routine-spawned sessions produced no output — see `signals/cross-source-log/2026-07-06-routine-creation-preregistration-and-test.md`). Verification: 1 Opus agent, ≥5 T2 wires corroborating the T1 공시; register in `signals/cross-source-log/2026-07-07-samsung-prelim-grade-wake-catchup.md`.
 
