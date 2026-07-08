@@ -3255,3 +3255,13 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md`
 **Commit:** (this commit)
+
+### [2026-07-08 PM-3 — Nittobo/Mitsui JP-native tie-in] 1 Opus; HIGH — B39 adjudicated per name (Nittobo PARTLY PRICED / Mitsui PARTLY REMAINS = the multi-vector distortion); 1:5 Nittobo split caught (data-hygiene save); TC-16 gap numbers SHARPENED (HVLP4-equiv ~320t/mo vs ~1,200t/mo demand); T-glass share-denominator reconciliation flag opened
+**Trigger source:** user accessibility confirmation + "continue" (Workflow #9 step 4). **Subagents fired:** 1 (Opus, JP-primary per #36). **Estimated token cost:** ~37k (actual 36.9k).
+**Per-subagent yield:** HIGH — verified user tape both names; segment-level two-leg decomposition (Mitsui foil flat-guided inside metals rolloff = the mispricing); JP-T1 capex corroboration (Fukushima 3x, foil 580->1,200t/mo roadmap); Rule #18 bear cases named w/ live second-source threats (Taiwan Glass, Co-Tech); honest data gaps (segment %, print dates inferred).
+**Brief-framing errors caught:** 1 (split-adjusted pricing — raw YTD/ATH reads would mislead any sizing math).
+**Thesis cascade triggered:** 2 new Watchlist theses; watchlist cluster B39 update; artifact PART 3; TC-16 refinement noted.
+**Position implication delta:** NONE — both NO ACTION, user-gated; pre-entry checkpoints = ~Aug-1/08 Q1 prints + share-denominator reconciliation.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md` (PART 3)
+**Commit:** (this commit)

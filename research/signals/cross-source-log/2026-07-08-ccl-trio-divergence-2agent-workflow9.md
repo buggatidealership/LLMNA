@@ -55,3 +55,17 @@ Content per rack **~$116,700 (VR NVL72) vs ~$35,100 (GB300) = +233%** (T2 Morgan
 **Falsifiers:** Nittobo Fukushima pull-in to 2H-26 + Taiwan Glass/Fulltech yield fix (glass gap closes); HVLP4 gap closes early (Co-Tech 400t + Mitsui adds); a Q3 hike rolls back (stick-rate watch); AI-server unit growth <~28% YoY (TrendForce base); GB300 volume ALSO cut (demand-cut ≠ manufacturability-slip — that WOULD be real).
 
 ### Divergence question CLOSED: the 07-08 green-on-red = Kyber-immunity repricing on top of a sold-out, multi-round-hiking, revenue-doubling layer — the user's eyeball caught a genuine scarcity-tier theme, not noise. Rotation reading (priced-for-growth → priced-for-scarcity) SUPPORTED as the secondary mechanism.
+
+---
+
+## PART 3 — Nittobo + Mitsui Kinzoku company tie-in (JP-native pass, 1 Opus agent, 2026-07-08 PM)
+
+**User tape VERIFIED (both names):** Nittobo ~+77% from Jan low (user said ~+80% ✓), −46% off the 05-07 ATH ¥6,580 (split-adj; **1:5 split effective 2026-07-01, T1 Nikkei — raw charts mislead**); Mitsui ~+60-100% YTD base-dependent (user said ~+60% ✓), −38% off the 05-27 ATH ¥57,700. The 3-month drawdowns = May-peak consolidation + FY27 guidance optics (both guided consolidated declines: Nittobo net −59.3% special-gain rolloff; Mitsui OP −30.5% metals inventory-gain rolloff — NEITHER is an AI-leg deterioration, T1 Nikkei/kabutan).
+
+**B39 verdicts (my model, math in theses):** Nittobo **PARTLY PRICED** (~40x fwd P/E on depressed net; monopoly real but paid-for; double-squeeze bear = Taiwan Glass scale-up ~2027 meets Nittobo's own new capacity). Mitsui **asymmetry PARTLY REMAINS — best setup of the pair**: the −12.7% guidance-day sell treated a two-leg company as one peaking smelter while the foil leg is guided FLAT and structurally short 28%/39%/38% 2026-28E (T2 Goldman/EMSOne; HVLP4-equiv ~320t/mo today vs ~1,200t/mo 2026 demand — SHARPER than PART 2's Digitimes gap figures; TC-16 refined).
+
+**Structural-vs-cyclical:** Nittobo STRUCTURAL (portfolio repositioned, subsidized expansion); Mitsui HYBRID (the mispricing AND the risk — ~53% of FY26 profit was cyclical zinc).
+
+**RECONCILIATION FLAG (open):** PART 2 carried "Nittobo ~90% T-glass share" (T1 Nikkei-derived); tie-in surfaced "Taiwan Glass ~20-25% share targeting 40%" (T2 note/XenoSpectrum) — likely different denominators (T-glass strictly vs low-CTE cloth broadly); resolve before any entry package. Also open: exact Nittobo segment OP % split; Q1 print dates inferred from prior year (Nittobo ~08-01, Mitsui ~08-08) — confirm on IR calendars.
+
+**Routing:** `companies/NITTOBO/thesis.md` + `companies/MITSUI-KINZOKU/thesis.md` created (both Watchlist, NO ACTION, user-gated); watchlist cluster entry updated with B39 verdicts; ledger PM-3.
