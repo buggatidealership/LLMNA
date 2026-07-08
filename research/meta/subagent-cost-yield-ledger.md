@@ -3213,3 +3213,14 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** grading-log.md T+24h section (grade artifact; no separate log file — grade lives in the ledger of record)
 **Commit:** (this commit)
+
+### [2026-07-08 AM-2 — Twitter batch: SpaceXAI+Cursor / Zhipu chip / China model curbs] 3 Opus; HIGH 3/3 — TC-15 promoted (labs internalizing inference silicon N=4); SUMCO framing-error CAUGHT on own 07-07 cascade (China wafer localization); $60bn Cursor deal caught as B40.1 stale-recycle (2nd time); launch claim correctly parked single-source
+**Trigger source:** user Twitter shares (3 screenshots + 1 text digest), Rule #16 auto-fire. **Subagents fired:** 3 (Opus, parallel; CN-native per #36). **Estimated token cost:** ~59k (actual 17.3 + 23.6 + 17.8).
+**Per-subagent yield:** xAI/Cursor HIGH (fact/memo/speculation split; $60bn = STALE Jun-16 already in corpus; Wednesday-launch = single-source memo, Reuters-unverified → PARKED; Cursor ~40-50%-of-Anthropic-revenue concentration fact extracted); Zhipu HIGH (exploratory-tier substance correctly de-weighted; the CLUSTER enumeration = the real yield: core-lab N=4 → TC-15 promotion; SMIC >93% utilization + HBM gap = the bypass-route insight; SUMCO China-localization correction); China-curbs HIGH (CONFIRMED-FRESH proposal-stage w/ SPC-journal anchor; fact-vs-discussion split; OpenRouter 61% Chinese-weights stat; distribution-surrender counter-tension = the B63 adversarial pass).
+**Brief-framing errors caught:** 3 (my own 07-07 "fragmentation adds SUMCO sockets" incomplete-geography read; $60bn presented-as-new; model-launch memo-tier presented as fact).
+**Thesis cascade triggered:** TC-15 → triangulation.md; SUMCO correction banner; MURATA TC-15 back-ref; private-tracker xAI→SpaceXAI rewrite + Anthropic Cursor-concentration + B63 both-directions note; application-layer framework §capture-stack N+1 + §cost-floor variable; watchlist +Zhipu radar.
+**Position implication delta:** NONE — MURATA/SUMCO HOLD unchanged (SUMCO demand-map refined, spine untouched); no watch-name action.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×3, incl. one on our own prior cascade — the highest-value class).
+**Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-twitter-batch-spacexai-cursor-zhipu-chip-china-model-curbs-3agent.md`
+**Commit:** (this commit)

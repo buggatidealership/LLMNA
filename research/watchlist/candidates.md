@@ -4,6 +4,10 @@
 
 ---
 
+### ⚪ Zhipu / Z.ai (HK-listed 2026-01-08, first listed LLM company; STAR A-share approved 06-01) — radar-only (added 2026-07-08, Twitter-batch gauntlet)
+
+Per `signals/cross-source-log/2026-07-08-twitter-batch-spacexai-cursor-zhipu-chip-china-model-curbs-3agent.md`. ~HK$52.8bn cap; FY25 rev RMB724M +131.9%, net loss RMB4.72bn; GLM-5.2 fastest-growing model on Vercel (~27x weekly token growth, T2); TC-15 core member (custom-chip inquiries, exploratory). Radar rationale: the only LISTED pure frontier-lab expression globally; HK access precedent exists (3986.HK). NOT a candidate: pre-profit, China-policy beta (named in the MOFCOM curb meetings), valuation ~73x sales (derived). Promotion trigger: sustained GLM overseas monetization disclosure + curb-scope resolution.
+
 ### ⚪ Counter-drone / defense-electronics cluster — Northrop Grumman (NOC) reference name (added 2026-07-07, US Leg B discovery)
 
 Per `signals/cross-source-log/2026-07-07-morning-feed-us-DISCOVERY.md`. NATO Ankara summit unveiled ~$40B (T1, in-window) counter-drone + UAV procurement cluster (Northrop named). Surfaced ORGANICALLY by the unanchored newspaper read — the harness has ZERO defense-electronics framework (flagged in the 07-07 absence answer). Latent read-through: defense electronics is passives-dense (MLCC content) — a possible SECOND non-AI demand leg for the MURATA thesis, unquantified. Status: radar-only; no framework, no thesis. Promotion trigger: N≥3 same-direction defense-electronics procurement signals in 90 days → build the framework before any name-level work.
