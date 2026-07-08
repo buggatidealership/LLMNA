@@ -40,6 +40,11 @@
 
 ## Open
 
+- [ ] **P2 / research / 2026-07-08** [INDP, CAL, INFRA] — MARKET-STATE FUNCTION build (spec at `sector/market-state-function-spec.md` v0.1) — LLM-native holistic market read: computed state vector (dispersion/correlation/divergence, not index levels) + P-weighted regime taxonomy w/ pre-registered flips + divergence ledger. GATED ON: (1) USER DECISION — market-data source (API key vs daily agent-pull vs hybrid); (2) compute-layer P2 build; (3) routines execution (E6 saga). Conditioning layer only — never macro trades (mission guard).
+  - Origin: user design question 2026-07-08 (SKH-ADR-oversubscribed-vs-deteriorating-tape divergence example).
+  - Scope: phases P1-P3 per spec §5; kill condition = 30 refreshes of pure narration.
+  - Linked: `sector/market-state-function-spec.md`, `sector/ai-funding-shock-node.md`, compute-layer todo item.
+
 - [ ] **P1 / research / 2026-07-08** [INDP, AF, POS] — ANTHROPIC IPO DECISION PACKAGE (pre-registered BEFORE any listing exists — user proposed "sell all, buy the IPO big stack" 07-08; dissent delivered, middle path = build the framework now)
   - Origin: user hypothesis 2026-07-08 (`signals/cross-source-log/2026-07-08-user-hypothesis-expectations-treadmill-sell-all-buy-anthropic-ipo.md`); B63 governs the ENTIRE package (model-provenance — adversarial treatment mandatory on every bull claim).
   - Scope: (a) valuation-band framework — what $-valuation makes the entry asymmetric vs the ~$965B Series H / ~$47B RRR anchors (compute forward-revenue multiples vs listed comps at their IPOs); (b) entry-route menu with pros/cons: IPO-day retail vs post-lockup vs post-first-earnings vs not-at-all; (c) allocation CAP pre-committed at Active tier (3-8%) — NOT "big stack" — with the livelihood-correlation argument written in; (d) the exposure-overlap map (user already has Anthropic exposure via workflow dependence + the semi book IS lab-capex-downstream); (e) Rule #17 ensemble at any execution decision; (f) trigger to activate: public F-1/S-1 flip or exchange/date confirmation (currently T3 speculation only).
