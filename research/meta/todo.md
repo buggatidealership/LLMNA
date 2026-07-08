@@ -40,6 +40,11 @@
 
 ## Open
 
+- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST pending (3 items: env network allowlist -> zero-token data scripts; routine-transcript look -> closes E6; old-branch deletion). Full steps: `meta/user-browser-checklist.md`. RE-SURFACE to user each morning until empty.
+  - Origin: user 2026-07-08 "save everything I must do in a browser so I can recall it tomorrow."
+  - Scope: user completes in browser; I verify (fetch test / transcript read / branch gone) and delete items.
+  - Linked: `meta/user-browser-checklist.md`, `sector/market-state-function-spec.md` §6, E6 artifact.
+
 - [ ] **P2 / research / 2026-07-08** [INDP, CAL, INFRA] — MARKET-STATE FUNCTION build (spec at `sector/market-state-function-spec.md` v0.1) — LLM-native holistic market read: computed state vector (dispersion/correlation/divergence, not index levels) + P-weighted regime taxonomy w/ pre-registered flips + divergence ledger. GATED ON: (1) USER DECISION — market-data source (API key vs daily agent-pull vs hybrid); (2) compute-layer P2 build; (3) routines execution (E6 saga). Conditioning layer only — never macro trades (mission guard).
   - Origin: user design question 2026-07-08 (SKH-ADR-oversubscribed-vs-deteriorating-tape divergence example).
   - Scope: phases P1-P3 per spec §5; kill condition = 30 refreshes of pure narration.
