@@ -3276,3 +3276,7 @@
 **Escalation note (budget):** 3rd agent justified as prediction-resolution-day (SKH ADR divergence-ledger #1) + thesis-CONTRADICTING signal (protocol: contradiction earns the verification cost).
 **Cross-source-log:** `2026-07-09-morning-feed-kr-jp-legA.md` + `2026-07-09-morning-feed-kr-jp-DISCOVERY.md`
 **Commit:** (this commit)
+
+### [2026-07-09 PM — Tier-2 verifier RETURN (closes the midday in-flight entry)] 1 Opus 33.7k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** Claim 1 CONFIRMED (TC-6 N+1 booked 6→7); Claim 2 numbers CONFIRMED but inference REFRAMED to immaterial via Murata IR sensitivity math (JP −7% ≈ −¥0.9bn ≈ 0.05% of rev). **Framing errors caught: 2** — (a) "90% of BOM" was actually 90% of retail price (denominator swap in the Leg-B carry); (b) low-end demand destruction hits the lowest-MLCC-content tail (magnitude overstatement). Day total: 3 fires ≈ 167k, all HIGH, zero ZERO.
+**Cross-source-log:** `2026-07-09-murata-2claim-tier2-verification.md` **Commit:** (this commit)
