@@ -7,11 +7,11 @@
 |---|---|---|---|---|
 | 80-100% | 7 | 7 | 100% | in-band |
 | 60-79% | 15 | 11 | 73% | in-band |
-| 40-59% | 8 | 5 | 62% | in-band |
-| 20-39% | 1 | 1 | 100% | underconfident |
+| 40-59% | 9 | 6 | 67% | underconfident |
+| 20-39% | 2 | 1 | 50% | underconfident |
 | 0-19% | 1 | 1 | 100% | underconfident |
 
-*Ledger rows: 70 total, 38 skipped (unresolved/malformed).*
+*Ledger rows: 73 total, 39 skipped (unresolved/malformed).*
 
 ## Prose-era graded outcomes (Layer-1 bootstrap tally — heterogeneous multi-target rows, treat as directional)
 | TRUE-leaning | FALSE-leaning | MIXED | UNPARSEABLE | total prose rows |

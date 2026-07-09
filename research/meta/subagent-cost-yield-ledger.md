@@ -3299,3 +3299,7 @@
 ### [2026-07-09 EVE — CN movers verification (user tape share)] 1 Opus 55.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
 **Yield:** name-identity decode (Knowledge Atlas=Zhipu confirmed); MY H1 driver-attribution corrected (Apple-CXMT backdrop vs 业绩预告+CXMT-IPO proximate — the pre-listed alt won); Jul-8 "Zhipu plunge 17%" headline-contamination catch; GigaDevice still-below-Jun-28-mark framing catch (+21.75% = rebound not breakout); CXMT IPO Jul-16 calendar add; 3 locked-P claims resolved same-day → calibration ledger. Day: 8 fires ≈ 336k, all HIGH.
 **Artifact:** `2026-07-09-cn-movers-gigadevice-zhipu-minimax-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT — d-Matrix/Parasail + APS/UPI verification (user newsletter shares)] 1 Opus 63.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** "NVIDIA+d-Matrix joint system" DEFLATED to third-party Parasail deployment (8th framing catch today — do-not-propagate flag set); HBM-displacement bear-vector adjudicated immaterial + flipped to LPDDR5-demand mild-reinforce; TC-13 #9 promoted (new upstream-equipment sub-segment); APS 054620 named into the absence register; 6 locked-P hypothesis resolutions → calibration ledger (+3 rows entered, 3 redundant-FALSE omitted). Day total: 9 fires ≈ 455k, all HIGH, 8 framing catches, zero ZERO.
+**Artifact:** `2026-07-09-dmatrix-parasail-aps-upi-verification.md` **Commit:** (this commit)

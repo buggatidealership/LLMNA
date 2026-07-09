@@ -69,3 +69,6 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-08,2026-07-02-SAMSUNG-Q2-prelim,005930,reaction-band-t24h,,FALSE,,REASONING,"close -6.92% vs +0-3% band — whisper-anchoring (B42)"
 2026-07-06,2026-06-19-NBIS-nasdaq-100-inclusion,NBIS,t5-checkpoint,,MIXED,,,"GRADED-PROVISIONAL — H2-zone ~-5%; Meta-Compute confound; T+30 primary adjudicator"
 2026-07-07,2026-06-19-NBIS-nasdaq-100-inclusion,NBIS,t15-checkpoint,,MIXED,,,"GRADED-PROVISIONAL CONFOUNDED — new window low -30.1%; T+30 primary adjudicator"
+2026-07-09,dmatrix-item-h1-partnership-frame,NVDA/d-Matrix,driver-frame-attribution,50,MIXED,,REASONING,"technical prefill/decode split TRUE; partnership frame FALSE — Parasail third-party deployment"
+2026-07-09,dmatrix-item-h2-acquihire,NVDA/d-Matrix,event-type,30,FALSE,,,"no investment/acquihire — vendor relationship only"
+2026-07-09,aps-upi-h1-upstream-consolidation,054620.KQ,event-type,55,TRUE,,,"real filing; TC-13 #9 new sub-segment"
