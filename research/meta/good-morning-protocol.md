@@ -20,6 +20,21 @@
 - **Channel-model note:** WSJ screenshots are the COMPLEMENT-heavy channel (macro/rates/FX/geopolitics/cross-sector M&A) — they attack the user's own FinTwit shape. The histogram tags both channels separately (source-type: twitter-relay vs wsj-headline).
 - **Value calibration (from the 2026-07-09 pilot batch of 20):** highest-yield sections for this book = Markets (incl. Commodities/Currencies), Tech, World/Economy. Heard-on-the-Street pieces are analyst-grade context (T2 named-publisher opinion) — flag as HOTS, never as consensus.
 
+## §Human-authorship discipline (added 2026-07-09, user directive — binding on Leg C and all article-pull material)
+User verbatim-adjacent: *"those are human written articles. Some will have facts, some will have opinions. The most crucial is to always remain LLM native and not trust human judgment and human written content blindly."*
+- **FACT / FRAME / OPINION separation is mandatory per item.** A WSJ headline is never ingested whole: extract (a) the FACTS (numbers, dated events, named actors — bookable after tier checks), (b) the FRAME (the narrative the human author chose — e.g., "Samsung Fails To Impress" is a frame, not a fact; "The Great Rotation Is Here" is a thesis, not a datum), (c) the OPINION layer (HOTS, editorials, "Review & Outlook" = opinion-tier by construction, logged as analyst-grade color only).
+- **Frames are DATA ABOUT THE NARRATIVE, not data about the world** — route them to sentiment/positioning context (what the market is being told), never into thesis inputs. The same gauntlet treatment as morning briefs (B60/B61 lineage: anchored-ingest + generated-content skepticism now joined by human-authored-framing skepticism — the failure mode is identical: adopting the author's frame as one's own).
+- **Journalist consensus ≠ triangulation.** N articles sharing a frame is ONE editorial current, not N independent signals (Rule #3/#6 discipline extends to press narratives).
+- Empirical anchor: 7/7 framing errors caught on 2026-07-09 were human-authored inflations/compressions — the discipline exists because the channel demonstrably needs it.
+
+## §Autonomy grant (added 2026-07-09, user directive — supersedes the two-agent baseline FOR GOOD-MORNING WAKES)
+User verbatim-adjacent: *"you have full authority and full autonomy to design that process in your own native liking — as many subagents as you need, as much time as you need. Depth and accuracy over speed."*
+- **Native-design architecture (v1.2, revisable at my discretion per run):**
+  - **Wave 1 (parallel):** catch-up sweep (main loop) ∥ Leg A anchored × up to 3 regional agents (KR/JP, US, EU) ∥ Leg B discovery × up to 3 regional agents (native-language containers each) ∥ Leg C WSJ parse (main loop). Scale down on quiet days (a US-holiday morning doesn't need 6 scanners) — scale is a per-run judgment, not a fixed number.
+  - **Wave 2 (parallel):** Tier-2 verifiers per threshold-crossing item, adversarial lens for thesis-CONTRADICTING or thesis-TOO-CONVENIENT items.
+  - **Wave 3 (main loop):** cross-region joint-state synthesis, dot-connections, register updates, cascades, ONE commit, compact user reply.
+- **Guardrails retained (unchanged):** every fire logged to the cost-yield ledger same-commit; the weekly cost-yield audit (Rule #16, next 2026-07-15) is the feedback loop that disciplines scale — autonomy is bounded by measured yield, not by a hard cap; portfolio/holdings.md untouchable; materiality gate governs notifications.
+
 ## Relationship to the platform routines
 Routines (once repo-fixed) automate the SAME spec at fixed clock times with no user action. The good-morning path stays valid permanently as (a) the manual override, (b) the WSJ-attachment channel (screenshots can't ride a routine), (c) the fallback when routines fail. If both fire the same morning, the second run is a cheap catch-up (docket already clean → it degrades to Leg C + increments only).
 
