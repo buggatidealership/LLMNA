@@ -3287,3 +3287,7 @@
 ### [2026-07-09 midday-3 — China H200 permission verification (user share)] 1 Opus 22.5k; HIGH + FRAMING-ERROR-CAUGHT ×2
 **Yield:** tweet REFUTED (3-axis headline inflation); MY OWN two-gate framing INVERTED and corrected (US gate open since Feb-26, ~10 firms cleared May-14 — China's own reluctance was the binding gate; self-correction logged per Rule #11); HBM read-through capped by the Hopper-inventory nuance (upper bound 27.5 PB computed but NOT bookable); MURATA/SUMCO non-linkage. Day total now 5 fires ≈ 215k, all HIGH, 4 framing errors caught, zero ZERO.
 **Artifact:** `2026-07-09-china-h200-permission-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 PM — Apple/CXMT + DeepSeek verification (user batch)] 1 Opus 30.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** CXMT boundary adjudicated legacy→AMBER (the load-bearing call); Jul-9-SKH-rally-on-CXMT attribution REFUTED (technical rebound; CXMT is bearish-KR — catch prevents a false "substitution-shrugged-off" booking); Leg A date-shift RESOLVED (KR rows = Jul-8); ADR gap corrected 17-23%→~12.8%; two-stack N=2 coherence booked; Tier-2 queue item closed. Day: 6 fires ≈ 246k, all HIGH, 6 framing catches.
+**Artifact:** `2026-07-09-apple-cxmt-deepseek-two-stack-verification.md` **Commit:** (this commit)
