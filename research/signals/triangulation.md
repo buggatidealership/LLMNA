@@ -120,6 +120,8 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 **Falsifier:** TSMC publicly rejects glass-core for CoPoS (SCHMID currently states "under review"); BESI Q2 2026 orders fail to sustain Q1 doubling (signals AI packaging order cycle not durable); Camtek Golden Eagle competitor at 600mm format with hyperscaler win (would compress inspection rent)
 
 ## TC-6 — MLCC AI-server tier bifurcation [ACTIVE]
+
+**2026-07-09 N+1 CANDIDATE (PENDING Tier-2 verification — do not bump N):** purported Morgan Stanley note: MLCC content per VR200/Rubin rack ~$4,320 vs GB300 ~$1,530 (+182%) — surfaced via T3 relay (Bitget) in the Jul-9 KR/JP Leg A scan (`cross-source-log/2026-07-09-morning-feed-kr-jp-legA.md`); verifier in flight; book on confirmation only.
 **Segment:** advanced-packaging / passives
 **Direction:** premium-tier Japanese/Korean concentration hardens; mid-tier backfill to Chinese; duration extends beyond 2027 (equipment-lead-time binding)
 

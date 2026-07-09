@@ -3265,3 +3265,14 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md` (PART 3)
 **Commit:** (this commit)
+
+### [2026-07-09 midday — W10 KR/JP post-close 2-leg MANUAL WAKE + 1 Tier-2 verifier] 3 Opus; Legs A+B HIGH, verifier IN FLIGHT
+**Trigger source:** user "good morning Korea and Japan" (routines disabled pending user-side repo fix — manual wake). **Subagents fired:** 3 (Leg A anchored 74.8k; Leg B discovery 58.6k; Tier-2 verifier on the 2 MURATA claims — tokens TBD on return). **Estimated token cost:** ~133k booked + verifier TBD.
+**Per-subagent yield:** Leg A HIGH (full rebound tape + SKH ADR pending-state w/ widened-gap math + Bain/Kioxia overhang-clear + MS MLCC/rack candidate + honest data-gap flags on exact held closes); Leg B HIGH (JGB 2.900% regime thread = framework gap now flagged in both held theses; memory→handset demand-destruction CONTRADICTING signal vs MURATA consumer leg; SKH ADR access-gate removal → HYNIX reopen candidate; KR defense/power rotation absence-answer).
+**Brief-framing errors caught:** none (no brief — direct scan).
+**Thesis cascade triggered:** MURATA + SUMCO thesis entries (same commit); TC-6 pending-candidate note; day-state catalyst clock (SKH ADR grade deferred to Jul-10 KST — correctly NOT closed); watchlist candidates ×3.
+**Position implication delta:** NONE — both held names HOLD; all new signals verification-gated.
+**Material yield class:** HIGH (pending verifier). **Audit-day classification:** POSITIVE.
+**Escalation note (budget):** 3rd agent justified as prediction-resolution-day (SKH ADR divergence-ledger #1) + thesis-CONTRADICTING signal (protocol: contradiction earns the verification cost).
+**Cross-source-log:** `2026-07-09-morning-feed-kr-jp-legA.md` + `2026-07-09-morning-feed-kr-jp-DISCOVERY.md`
+**Commit:** (this commit)
