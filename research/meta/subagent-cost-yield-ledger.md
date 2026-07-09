@@ -3283,3 +3283,7 @@
 
 ### [2026-07-09 midday-2 — Samsung GAIA verification (user Twitter share)] 1 Opus 25.6k; HIGH + FRAMING-ERROR-CAUGHT ×1
 **Yield:** origin pinned (Hankyung 단독 Jul-9, genuinely fresh, single-source unnamed); PIM claim REFUTED-as-attached (relay conflated GAIA with the separate HBM-PIM roadmap — the embellishment would have created a false DRAM read-through); Mach-1-rebrand hypothesis killed; captive-4nm self-loading read feeds the Jul-7 Samsung-foundry watch. **Artifact:** `2026-07-09-samsung-gaia-ai-pc-accelerator-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 midday-3 — China H200 permission verification (user share)] 1 Opus 22.5k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** tweet REFUTED (3-axis headline inflation); MY OWN two-gate framing INVERTED and corrected (US gate open since Feb-26, ~10 firms cleared May-14 — China's own reluctance was the binding gate; self-correction logged per Rule #11); HBM read-through capped by the Hopper-inventory nuance (upper bound 27.5 PB computed but NOT bookable); MURATA/SUMCO non-linkage. Day total now 5 fires ≈ 215k, all HIGH, 4 framing errors caught, zero ZERO.
+**Artifact:** `2026-07-09-china-h200-permission-verification.md` **Commit:** (this commit)
