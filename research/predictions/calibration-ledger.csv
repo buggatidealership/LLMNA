@@ -1,1 +1,2 @@
 date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct,layer_failed,notes
+2026-07-09,divergence-ledger-1-skh-adr-second-cut,SKH-ADR,second-cut-at-final-pricing,,TRUE,-12.3,,"binary pre-registration no locked P — calibration-ungradeable; logged as the worked example driving the pre-commit-P lesson; outcome TRUE (cut -12.3% vs re-reference; demand premium +8.0% vs spot)"

@@ -11,7 +11,7 @@
 | 20-39% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
 | 0-19% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
 
-*Ledger rows: 0 total, 0 skipped (unresolved/malformed).*
+*Ledger rows: 1 total, 1 skipped (unresolved/malformed).*
 
 ## Prose-era graded outcomes (Layer-1 bootstrap tally — heterogeneous multi-target rows, treat as directional)
 | TRUE-leaning | FALSE-leaning | MIXED | UNPARSEABLE | total prose rows |
