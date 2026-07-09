@@ -3303,3 +3303,7 @@
 ### [2026-07-09 NIGHT — d-Matrix/Parasail + APS/UPI verification (user newsletter shares)] 1 Opus 63.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
 **Yield:** "NVIDIA+d-Matrix joint system" DEFLATED to third-party Parasail deployment (8th framing catch today — do-not-propagate flag set); HBM-displacement bear-vector adjudicated immaterial + flipped to LPDDR5-demand mild-reinforce; TC-13 #9 promoted (new upstream-equipment sub-segment); APS 054620 named into the absence register; 6 locked-P hypothesis resolutions → calibration ledger (+3 rows entered, 3 redundant-FALSE omitted). Day total: 9 fires ≈ 455k, all HIGH, 8 framing catches, zero ZERO.
 **Artifact:** `2026-07-09-dmatrix-parasail-aps-upi-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT-2 — Bloomberg 3-item verification] 1 Opus 29.2k; HIGH + FRAMING-ERROR-CAUGHT ×3
+**Yield:** "Codex 5.5" decoded (=GPT-5.5); Meta TWO-stories-merged untangled (pay-per-use API REAL+fresh vs vendor-benchmark claims B63-flagged); Apple item = STALE-RECYCLE of Jun-26 FT lobbying (prevented false fresh-catalyst booking); Micron $250B T1 + GlobalWafers nugget → SUMCO F1 cross-ref; inference-price-war table assembled (end-demand capture leg). H1 nexus TRUE at P~55. Day final: 10 fires ≈ 484k, all HIGH, 11 framing catches.
+**Artifact:** verdicts appended to `2026-07-09-bloomberg-3item-meta-micron-apple-intake.md` **Commit:** (this commit)

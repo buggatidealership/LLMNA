@@ -72,3 +72,6 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-09,dmatrix-item-h1-partnership-frame,NVDA/d-Matrix,driver-frame-attribution,50,MIXED,,REASONING,"technical prefill/decode split TRUE; partnership frame FALSE — Parasail third-party deployment"
 2026-07-09,dmatrix-item-h2-acquihire,NVDA/d-Matrix,event-type,30,FALSE,,,"no investment/acquihire — vendor relationship only"
 2026-07-09,aps-upi-h1-upstream-consolidation,054620.KQ,event-type,55,TRUE,,,"real filing; TC-13 #9 new sub-segment"
+2026-07-09,bloomberg-3item-h1-nexus,MACRO,pattern-attribution,55,TRUE,,,"verifier joint read: coherent not coincidental"
+2026-07-09,bloomberg-3item-h2-editor-artifact,MACRO,pattern-attribution,25,MIXED,,,"1 of 3 items (Apple) was radio recompression"
+2026-07-09,bloomberg-3item-h3-costpush,MACRO,pattern-attribution,20,MIXED,,,"consistent elements; unadjudicated; GM falsifier-watch set"
