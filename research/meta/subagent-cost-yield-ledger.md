@@ -3291,3 +3291,7 @@
 ### [2026-07-09 PM — Apple/CXMT + DeepSeek verification (user batch)] 1 Opus 30.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
 **Yield:** CXMT boundary adjudicated legacy→AMBER (the load-bearing call); Jul-9-SKH-rally-on-CXMT attribution REFUTED (technical rebound; CXMT is bearish-KR — catch prevents a false "substitution-shrugged-off" booking); Leg A date-shift RESOLVED (KR rows = Jul-8); ADR gap corrected 17-23%→~12.8%; two-stack N=2 coherence booked; Tier-2 queue item closed. Day: 6 fires ≈ 246k, all HIGH, 6 framing catches.
 **Artifact:** `2026-07-09-apple-cxmt-deepseek-two-stack-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 PM-2 — MS CoPoS/Feynman/SiC + TSMC preview verification (user batch)] 1 Opus 33.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** relay's "CoPoS 2028" decompressed (Feynman Ultra 2029 = CoPoS proper; pull-in ~6-12mo); SiC carrier held at speculation-tier (no primary); broker attribution pinned (GF/Pu — prevents sell-side numbers booking as consensus); EUV-cap refined to Low-NA story w/ independent Barclays corroboration = next-bottleneck candidate; SUMCO interposer-substitution headwind honestly logged against the packaging-tailwind temptation. Day: 7 fires ≈ 280k, all HIGH, 7 catches, zero ZERO.
+**Artifact:** `2026-07-09-ms-copos-feynman-sic-tsmc-preview-verification.md` **Commit:** (this commit)
