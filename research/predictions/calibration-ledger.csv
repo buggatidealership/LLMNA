@@ -75,3 +75,6 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-09,bloomberg-3item-h1-nexus,MACRO,pattern-attribution,55,TRUE,,,"verifier joint read: coherent not coincidental"
 2026-07-09,bloomberg-3item-h2-editor-artifact,MACRO,pattern-attribution,25,MIXED,,,"1 of 3 items (Apple) was radio recompression"
 2026-07-09,bloomberg-3item-h3-costpush,MACRO,pattern-attribution,20,MIXED,,,"consistent elements; unadjudicated; GM falsifier-watch set"
+2026-07-09,evening-brief-h1-pricing-front,MACRO,pattern-attribution,50,TRUE,,,"3 of 4 layers fresh-verified; state-gate softened to voluntary; infra leg inverts to tightness confirmation"
+2026-07-09,evening-brief-h2-collage,MACRO,pattern-attribution,30,MIXED,,,"1 of 4 items stale-recycle (Meta RAM)"
+2026-07-09,evening-brief-h3-independent,MACRO,pattern-attribution,20,FALSE,,,"pattern held; items not independent"

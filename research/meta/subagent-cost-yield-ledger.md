@@ -3307,3 +3307,7 @@
 ### [2026-07-09 NIGHT-2 — Bloomberg 3-item verification] 1 Opus 29.2k; HIGH + FRAMING-ERROR-CAUGHT ×3
 **Yield:** "Codex 5.5" decoded (=GPT-5.5); Meta TWO-stories-merged untangled (pay-per-use API REAL+fresh vs vendor-benchmark claims B63-flagged); Apple item = STALE-RECYCLE of Jun-26 FT lobbying (prevented false fresh-catalyst booking); Micron $250B T1 + GlobalWafers nugget → SUMCO F1 cross-ref; inference-price-war table assembled (end-demand capture leg). H1 nexus TRUE at P~55. Day final: 10 fires ≈ 484k, all HIGH, 11 framing catches.
 **Artifact:** verdicts appended to `2026-07-09-bloomberg-3item-meta-micron-apple-intake.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT-3 — evening-brief 3-item verification] 1 Opus 23.3k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** "regulatory approval" DEFLATED to voluntary EO early-access review with T1 WH denial (prevents booking a licensing-regime that does not exist — regime node correctly labeled instead); Meta RAM = stale-recycle + read INVERTED to DRAM-tightness corroboration; Arora buyer-side arithmetic (98% deflation × 3x bills) = end-demand P1's best buyer-side datapoint; watch-item correctly held OPEN; Anthropic same-regime facts → private-tracker (B63-flagged). Day FINAL: 11 fires ≈ 507k, all HIGH, 13 framing catches, zero ZERO.
+**Artifact:** verdicts appended to `2026-07-09-evening-brief-b61-gauntlet-gpt56-panw-ramreuse.md` **Commit:** (this commit)
