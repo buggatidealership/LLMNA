@@ -3280,3 +3280,6 @@
 ### [2026-07-09 PM — Tier-2 verifier RETURN (closes the midday in-flight entry)] 1 Opus 33.7k; HIGH + FRAMING-ERROR-CAUGHT ×2
 **Yield:** Claim 1 CONFIRMED (TC-6 N+1 booked 6→7); Claim 2 numbers CONFIRMED but inference REFRAMED to immaterial via Murata IR sensitivity math (JP −7% ≈ −¥0.9bn ≈ 0.05% of rev). **Framing errors caught: 2** — (a) "90% of BOM" was actually 90% of retail price (denominator swap in the Leg-B carry); (b) low-end demand destruction hits the lowest-MLCC-content tail (magnitude overstatement). Day total: 3 fires ≈ 167k, all HIGH, zero ZERO.
 **Cross-source-log:** `2026-07-09-murata-2claim-tier2-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 midday-2 — Samsung GAIA verification (user Twitter share)] 1 Opus 25.6k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** origin pinned (Hankyung 단독 Jul-9, genuinely fresh, single-source unnamed); PIM claim REFUTED-as-attached (relay conflated GAIA with the separate HBM-PIM roadmap — the embellishment would have created a false DRAM read-through); Mach-1-rebrand hypothesis killed; captive-4nm self-loading read feeds the Jul-7 Samsung-foundry watch. **Artifact:** `2026-07-09-samsung-gaia-ai-pc-accelerator-verification.md` **Commit:** (this commit)
