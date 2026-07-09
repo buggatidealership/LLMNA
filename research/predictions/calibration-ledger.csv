@@ -1,2 +1,5 @@
 date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct,layer_failed,notes
 2026-07-09,divergence-ledger-1-skh-adr-second-cut,SKH-ADR,second-cut-at-final-pricing,,TRUE,-12.3,,"binary pre-registration no locked P — calibration-ungradeable; logged as the worked example driving the pre-commit-P lesson; outcome TRUE (cut -12.3% vs re-reference; demand premium +8.0% vs spot)"
+2026-07-09,cn-movers-h1-gigadevice-apple-cxmt-driver,3986.HK,proximate-driver-attribution,65,MIXED,,REASONING,"Apple-CXMT was backdrop not proximate; own flagged alt (业绩预告 +1099% + CXMT IPO filing) was the driver — adversarial alt-listing worked"
+2026-07-09,cn-movers-h2-zhipu-fundraising,2513.HK,move-driver-attribution,50,TRUE,,,"$4bn placement absorbed + JPM TP raise"
+2026-07-09,cn-movers-h3-minimax-differentiation,100.HK,move-driver-attribution,40,TRUE,,,"lockup expiry (listed suspect) + JPM downgrade; differentiation-not-rotation confirmed"

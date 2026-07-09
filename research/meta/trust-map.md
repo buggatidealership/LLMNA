@@ -7,11 +7,11 @@
 |---|---|---|---|---|
 | 80-100% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
 | 60-79% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
-| 40-59% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
+| 40-59% | 2 | 2 | 100% | underconfident |
 | 20-39% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
 | 0-19% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
 
-*Ledger rows: 1 total, 1 skipped (unresolved/malformed).*
+*Ledger rows: 4 total, 2 skipped (unresolved/malformed).*
 
 ## Prose-era graded outcomes (Layer-1 bootstrap tally — heterogeneous multi-target rows, treat as directional)
 | TRUE-leaning | FALSE-leaning | MIXED | UNPARSEABLE | total prose rows |

@@ -3295,3 +3295,7 @@
 ### [2026-07-09 PM-2 — MS CoPoS/Feynman/SiC + TSMC preview verification (user batch)] 1 Opus 33.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
 **Yield:** relay's "CoPoS 2028" decompressed (Feynman Ultra 2029 = CoPoS proper; pull-in ~6-12mo); SiC carrier held at speculation-tier (no primary); broker attribution pinned (GF/Pu — prevents sell-side numbers booking as consensus); EUV-cap refined to Low-NA story w/ independent Barclays corroboration = next-bottleneck candidate; SUMCO interposer-substitution headwind honestly logged against the packaging-tailwind temptation. Day: 7 fires ≈ 280k, all HIGH, 7 catches, zero ZERO.
 **Artifact:** `2026-07-09-ms-copos-feynman-sic-tsmc-preview-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 EVE — CN movers verification (user tape share)] 1 Opus 55.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** name-identity decode (Knowledge Atlas=Zhipu confirmed); MY H1 driver-attribution corrected (Apple-CXMT backdrop vs 业绩预告+CXMT-IPO proximate — the pre-listed alt won); Jul-8 "Zhipu plunge 17%" headline-contamination catch; GigaDevice still-below-Jun-28-mark framing catch (+21.75% = rebound not breakout); CXMT IPO Jul-16 calendar add; 3 locked-P claims resolved same-day → calibration ledger. Day: 8 fires ≈ 336k, all HIGH.
+**Artifact:** `2026-07-09-cn-movers-gigadevice-zhipu-minimax-verification.md` **Commit:** (this commit)
