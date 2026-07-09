@@ -5,13 +5,13 @@
 ## P-band calibration curve (from calibration-ledger.csv — the computable record)
 | Band | N graded | N TRUE | Hit rate | Calibration read |
 |---|---|---|---|---|
-| 80-100% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
-| 60-79% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
-| 40-59% | 2 | 2 | 100% | underconfident |
-| 20-39% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
-| 0-19% | 0 | 0 | n/a | NO STRUCTURED DATA YET |
+| 80-100% | 7 | 7 | 100% | in-band |
+| 60-79% | 15 | 11 | 73% | in-band |
+| 40-59% | 8 | 5 | 62% | in-band |
+| 20-39% | 1 | 1 | 100% | underconfident |
+| 0-19% | 1 | 1 | 100% | underconfident |
 
-*Ledger rows: 4 total, 2 skipped (unresolved/malformed).*
+*Ledger rows: 70 total, 38 skipped (unresolved/malformed).*
 
 ## Prose-era graded outcomes (Layer-1 bootstrap tally — heterogeneous multi-target rows, treat as directional)
 | TRUE-leaning | FALSE-leaning | MIXED | UNPARSEABLE | total prose rows |
