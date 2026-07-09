@@ -336,3 +336,13 @@ When I write any directional "reinforces X" claim that isn't grounded in (a) inl
 
 **Source tier:** legislative facts T1 (congress.gov H.R.8170); ramp/share inputs T2; the P~55% itself is (my model) synthesis, NOT sourced.
 **Cross-references:** `signals/cross-source-log/2026-06-26-pm-pax-silica-match-act-4subagent-verification.md`; `companies/HYNIX/thesis.md` Round 9; `companies/KIOXIA/thesis.md` + `companies/SNDK/thesis.md` 2026-06-26 PM cross-refs.
+
+---
+## Entry: 2026-07-09 — THE ONE-COMPANY PICK (user open question, pre-registered for grading)
+**Date made:** 2026-07-09 EVE | **Ticker:** SKHY (SK Hynix ADR) | **Type:** PATTERN INFERENCE (cross-corpus synthesis)
+**Source signal:** user hypothetical — "one company if you could just deploy" (~€58k deployable; held: MURATA/SUMCO; zero memory + zero software exposure)
+**Inference chain:** deepest verified thesis (HBM deficit thru 2027, LTA floors — research-verified Jul-02..09) [fact] + access gate fell this week (SKHY, priced AT spot w/ 7× demand — fact, Jul-09 grade artifact) + book has zero memory exposure after a non-falsifier exit [fact] + locked P(beat)~75% Jul-29 print [pre-registered] → highest edge-density single deployment [extrapolation]. Runner-up logic: NOW = better diversifier/thinner edge; ASMPT = higher non-consensus/lower evidence; TSMC = the no-harness 10-yr answer (anti-fragile max), different question.
+**Bear case stated (Rule #18):** Samsung captive-HBM flywheel + CXMT amber + record KR tape — all 2027+ vectors vs a 2026-27 LTA-floored earnings thesis; not a veto, is the falsifier set.
+**Confidence:** P~60 (my model) that SKHY outperforms the NOW/ASMPT/TSMC alternatives set over 6 months from a post-Jul-13 entry window.
+**Resolution criterion:** relative total return SKHY vs NOW vs ASMPT vs TSM, entry-window close 2026-07-14 → 2027-01-14. **Resolution date:** 2027-01-14. Outcome: PENDING.
+**Execution status:** NO ACTION — pick-on-record only; entry = user-gated decision package + Rule #17 ensemble + envelope gates (drawdown tolerance + US-ADR tax question OPEN). Anti-chase discipline: not before regular trading Jul-13.
