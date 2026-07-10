@@ -32,4 +32,13 @@
 - Claims: temporary restriction; China ~1.6% of global supply; "Qatar offline"; +1-3% spot tightening; chips/MRI/aerospace/cryo exposure. Qatar-offline plausibly couples to the US-Iran exchange (on file from WSJ wrap). Route: complement/macro channel + SUMCO input-cost watch (inert-gas usage in crystal growth/wafer fab — materiality check assigned).
 
 ## Verifier verdicts
-PENDING at artifact creation — (A) NDR/memory/CPU, (B) helium/Qatar, (C) Anthropic/Meta.
+
+### Verifier B — helium/Qatar (returned; ~18.3k, 11 tool uses; yield HIGH — 2 catches both directions)
+- **(a) CONFIRMED-FRESH and UNDERSTATED: it is a full temporary export BAN**, not a "restriction" — MOFCOM + GAC joint Announcement 2026 No. 29 (商务部/海关总署公告2026年第29号), HS code 2804290010, effective TODAY 2026-07-10, issued under the Foreign Trade Law — NOT a dual-use-catalog action (T1 mofcom.gov.cn + Xinhua EN + Sina/163 mirrors, native-CN verified).
+- **(b) CONFIRMED:** China ~1.6% of global helium production (USGS MCS 2026: US 42.6% / Qatar 33.2% / Russia 9.5%). **Amplifier: China is a net helium IMPORTER** — its exports are a fraction of even that 1.6%.
+- **(c) Qatar CONFIRMED-STALE-RECYCLE:** Ras Laffan hit by Iranian strikes Mar-2 and Mar-18/19; QatarEnergy force majeure Mar-4; repairs quoted up to 5 years. Real, ongoing, 4-month-old backdrop — not news. **Magnitude CONTESTED, do not average:** 11-14%-of-Qatar-exports/11%-of-global-at-risk (gasworld/AGBI) vs ~30%-of-global (Exiger high-end). Spot 6N helium +110% since end-Feb, suppliers suspending spot quotes (T2 multi) = market genuinely tight.
+- **(d) "+1-3% tightening" — UNVERIFIED, LIKELY INVENTED + DIRECTIONALLY DUBIOUS (#43b-class catch):** no attribution anywhere; a net-importer's export ban removes <0.5% of physical global supply (my model per verifier arithmetic). Sentiment color only; never a sized input.
+- **(e) Semi exposure real but WRONG NAME: fabs (backside cooling, leak detection, CVD/ALD carrier; semis ~20-25% of helium demand; Asian fabs ~2-3mo inventory) — NOT wafer makers. SUMCO Czochralski pulling is ARGON-ambient → SUMCO helium COGS exposure = NEGLIGIBLE.** Routed as fab-customer cost color (TSMC/Samsung/Micron), complement channel; the read of the ban itself = China strategic-materials signaling on an already-tight market (hoarding signal, not supply subtraction).
+
+### Verifier A — NDR/memory/CPU: PENDING; verdict appended on return.
+### Verifier C — Anthropic financials + Meta rumor: PENDING; verdict appended on return.
