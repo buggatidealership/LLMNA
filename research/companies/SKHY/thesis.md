@@ -13,7 +13,7 @@ World #1 HBM maker, bought via the record $26.51bn US ADR listing (grade CONFIRM
 - Size 6.0% of book = WITHIN the Active 3-8% band from the same view. Timing = before the Jul-13 regular tape (anti-debut-chase gate overridden by user decision).
 - Book joint-state at entry: MURATA + SUMCO (upstream memory-cycle) + now direct memory-maker beta; cash ~€53.1k remaining.
 
-## Bull case (P~45%, my model — the user's structural branch + H1/H2 blend)
+## Bull case (P~35-40%, my model — CORRECTED 2026-07-10 NIGHT: originally written P~45 hours after the user's purchase with ZERO new evidence vs the midday pre-purchase weights (chop 50/crack 30/structural 20) — the +5-10pp was accommodation drift toward the held position, caught on user challenge ("you must not always agree with me"). Corrected to the pre-purchase-consistent blend; the drift instance is logged in predictions/lessons.md. The user's structural branch + cost-driven-GM path)
 - MS "2-3 years tight supply" (T2) + Patel 2-3x further price path + KV-cache/inference demand mechanism; HBM4 generational ASP steps = the cost-driven GM path where GP dollars grow through margin compression (per `sector/memory-gross-profit-bridge.md` Lens 3).
 - Structural variant (user's thesis; my H3 at P~20 within this): capacity 20-30%/yr vs demand doubling = not a cycle but a regime; SKH = #1 beneficiary with HBF hedge (SanDisk-SKH MoU).
 - Expected return: +40-80% over 12-18mo in the bull branch (my model, B45-adjusted regime priors).
