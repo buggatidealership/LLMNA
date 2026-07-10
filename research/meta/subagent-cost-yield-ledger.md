@@ -3339,3 +3339,7 @@
 ### [2026-07-10 — SKHY ADR CHECK-IN] 1 Opus ≈32.2k; HIGH
 **Yield:** 3 corrections to carried state — WI timing (began Fri, "$158 Thu" premature/not-tape), ADS ratio pinned 10:1 T1 (parity math rebuilt: pricing +2.5-2.9% vs ordinary; $158-if-real = +9% vs ordinary, denominator trap disarmed), Seoul Jul-10 close corrected to −0.27%/₩2,180,000 (intraday +4% fully retraced). Greenshoe 15% hypothesis downgraded (~5% favored). Cornerstone scale-back $7bn→$5bn booked. Grade unaffected.
 **Artifact:** appended to `2026-07-09-skh-adr-final-pricing-divergence-grade-1.md` **Commit:** (this commit)
+
+### [2026-07-10 EVE — FLOWS + DAILY-UPDATE BATCH] 2 Opus ≈54.7k; both HIGH
+**Yield:** SOXX $5.4bn record CONFIRMED and PINNED TO THE SELLOFF DAY Jul-7 (buy-the-dip at 13.3% of pre-flow AUM computed; 11.73% source figure = denominator mislabel caught; "300%" belongs to complex not SOXX; echo-lineage collapse 8 outlets → 2); Apollo $35B borrower MIS-ATTRIBUTION killed (= ANTHROPIC TPU-lease SPV; no price print — tell #8 armed, not fired); Rapidus = RANGE + DISCOUNT (27-38% under TSMC N2, computed); Meta Iris = inference-weighted margin-relief not NVDA-destruction; HBF bypass route CONFIRMED (SNDK/Kioxia/SKH MoU); 2 garbles killed (DeepSeek 87x/China-only; NVLink 128-vs-32 lanes).
+**Artifact:** `2026-07-10-eve-soxx-flows-weka-memory-hierarchy-daily-update-2agent.md` **Commit:** (this commit)

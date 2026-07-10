@@ -129,3 +129,6 @@ Update affected `companies/{TICKER}/interpretations.md` and run TRACE if materia
 - **"Watermelon"** (internal, Wang to employees Jul-2 T2): caught up to **GPT-5.5** on watched benchmarks, **still in training**, needs ~10x Muse Spark compute; Opus-level coding model "pretty soon."
 - **Muse Spark 1.1** shipped Jul-9 (Bloomberg): first paid Meta model, positioned ~Opus-4.8/GPT-5.5, aggressive pricing (~5.9x undercut, booked Jul-9).
 - ICML rumor "internal model at Mythos-5 level, deployment-ready" = **REFUTED AS FRAMED** (escalates above both on-record claims; "still training" contradicts deployment-ready). Zero-weight color; "Meta not out of the race" = the fair kernel.
+
+## Anthropic compute-financing structure (added 2026-07-10 EVE)
+- **$35B Apollo+Blackstone-arranged credit facility: SPV purchases Google/Broadcom custom TPUs and LEASES them to Anthropic** (Bloomberg Jul-9 T2; Athene holds a slice). Delayed-draw, ~16 tranches over ~1yr; ~$15B expected tradeable by early 2027; no secondary price print yet (funding-shock node tell #8 armed). Read jointly with the same-day financials booking: op-profit-ex-SBC positive WHILE ~$19B/yr compute spend is partly off-balance-sheet via lease SPV — the profitability optics and the leverage live in different vehicles. B63 note: verified on non-Anthropic sources.
