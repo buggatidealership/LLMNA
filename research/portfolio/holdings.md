@@ -114,3 +114,13 @@
 - `portfolio/changes.md` — 2026-07-05 screenshot truth-up entry
 - `predictions/lessons.md` — 2026-07-05 harness-level conversion-layer lesson
 - Risk envelope (`portfolio/risk-envelope.md`) — IN PROGRESS; scale + deployability answered by this screenshot + user statement; drawdown tolerance + tax regime pending
+
+
+## 2026-07-10 EVE snapshot (screenshots canonical — SKHYV buy)
+| Position | Qty | Entry/state | EUR value (at snapshot) |
+|---|---|---|---|
+| MURATA (MUR1/6981) | 336 sh | held | (within portfolio line) |
+| SUMCO (S3X/3436) | 626 sh | held | (within portfolio line) |
+| **SKHYV → SKHY (SK Hynix ADR)** | **37 ADS** | **@ $173.45, 2026-07-10, €5,628.35 incl fees** | ~€5,612 |
+| Cash (EUR) | — | — | €53,063.88 |
+**Balance €93,597.97 | Portfolio €40,534.09 | Day P/L +€1,112.32 (+1.20%) | Total P/L +€18,452.41** (DeGiro screenshots 2026-07-10 ~18:45)
