@@ -111,3 +111,12 @@ Update affected `companies/{TICKER}/interpretations.md` and run TRACE if materia
 - ORCL Stargate thesis: marginally weakened (Stargate buildout intact but OpenAI exclusivity premium reduced)
 - AVGO custom Si: TITAN program less differentiated vs MSFT in-house alternatives
 - MSFT: strengthened (own-frontier optionality reduces OpenAI dependency)
+
+## OpenAI leadership + IPO state (updated 2026-07-10; per `signals/cross-source-log/2026-07-10-morning-brief-b61-gauntlet-simo-msft-emissions-lyzr.md`)
+
+- **Fidji Simo stepped down to part-time advisor Thu 2026-07-09** (her own staff note T1; medical — POTS relapse, on leave since Apr-2026). Title at departure: **"CEO, AGI Deployment"** (renamed from CEO of Applications — title correction booked 2026-07-10 after verifier refuted my garble-suspicion). No named successor; Brockman absorbed product scope during leave; Altman searching. "Pre-IPO leadership vacuum" = T2 editorial frame, held as frame not fact.
+- **OpenAI confidentially FILED for IPO ~June 2026 — one week AFTER Anthropic's filing** (T2 multi-outlet via Simo coverage); timeline reportedly pushed to >=2027.
+- **GPT-5.6 named "preferred model" in M365 Copilot Jul-9 (OpenAI's own words, T1)** — read as DEFENSIVE: Copilot is now explicitly multi-model (Claude = DEFAULT for Excel+PowerPoint since ~2026-05-04, Word to follow; MSFT elevating in-house MAI, this-week Word/Excel-to-MAI reports = the "breakup chatter"). **E5 exclusivity-premium-compression cluster: +1 datapoint (within the 90-day promotion window's spirit — relationship dilution continuing).**
+
+## Anthropic governance (updated 2026-07-10)
+- **Ben Bernanke appointed to the Long-Term Benefit Trust Thu 2026-07-09** (T1 anthropic.com + Bloomberg/CNBC independent). LTBT = the body that appoints/removes a board majority; trustees hold no equity. Framing explicitly scoped to AI-and-the-economy research — a named macro voice inside a lab. Governance color; no valuation surface. (B63-checked: facts hold on non-Anthropic sources.)
