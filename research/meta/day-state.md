@@ -212,3 +212,6 @@ Build complete: method fitted on 2 cycles → adversary killed the validation cl
 
 ## 2026-07-11 — SEALED DIFF DONE (worldview → v3)
 User's picture arrived post-commit (protocol held). Convergent: personalization-scale, context-switching-cost, 1→2-not-0→1. His additions adopted: BUSINESS-MODEL layer (§7: agents-don't-have-attention → ad-model succession — selection-function auction / fiduciary / personalization-rent; the ~2031 war = merchant-paid placement vs user-paid loyalty), combination rule (primitive PAIRS), rebundling (S2 re-specified). Pushback logged: persuasion retargets to agent selection functions, not human psychology. New waypoint 2028-F (fluid-UI GA, P~35). His 80/20→20/80 = pre-registered user hypothesis.
+
+## 2026-07-11 — WORLDVIEW v4: §8 interface-resolution model (user discussion thread continuing)
+I1 chat 15 / I2 wrappers 25 / I3 user-built 5 / I4 OBSERVED-COMPILATION 45 (my model); context-moat depth upgrade booked (clicks→disclosed reasons, cross-domain generalization); labs-win-everything countered (commoditized intelligence → scarce = observation rights/liability/proposal-distribution; electricity analogy); discriminator waypoint 2028-G (initiation share) added.
