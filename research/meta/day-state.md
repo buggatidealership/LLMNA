@@ -200,3 +200,6 @@ SOXX +$5.4bn record = Jul-7 SELLOFF-DAY buy-the-dip (13.3% of pre-flow AUM); SOX
 
 ## 2026-07-10 NIGHT — SNDK/SKHY buy-view stated on user request (inference-log entry added, user-gated)
 SNDK NO-now (P~65 my model, 6mo relative leg vs SKHY; ceiling-flattening + regret-chase discipline vs our own exit-miss); SKHY qualified-yes = pre-registered pick with structure (post-Mon tape only; ≤~5% premium gate vs ordinary; staged halves around the Jul-13/16 gauntlet + SKH late-Jul GM print; Active 3-8% cap on joint-state grounds — book already ~38% upstream memory). If user executes → build full decision package first (ensemble sizing per Rule #17, drawdown-tolerance + German-ADR-tax opens).
+
+## 2026-07-10 NIGHT — GROSS-PROFIT BRIDGE BUILT (user question → model, CLASS-1)
+`sector/memory-gross-profit-bridge.md` + script: GM-offset conditions formalized — (1) compression must be COST-driven (ASP rising through it; sign test per print), (2) AI-tier inelasticity holds, (3) LTA share + no bypass at volume. Break-evens computed: Patel's 88→70 path needs +25% revenue to hold GP flat; at commodity cost = ASP −58%/units ×3 = impossible → commodity leg has NO offset; HBM generational mix + NAND-via-HBF(2027+) are the only benign paths. TC-1 marker upgraded to mechanism-tagged. First live runs: SKH late-Jul, SNDK Aug-5.
