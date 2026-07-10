@@ -120,3 +120,12 @@ Update affected `companies/{TICKER}/interpretations.md` and run TRACE if materia
 
 ## Anthropic governance (updated 2026-07-10)
 - **Ben Bernanke appointed to the Long-Term Benefit Trust Thu 2026-07-09** (T1 anthropic.com + Bloomberg/CNBC independent). LTBT = the body that appoints/removes a board majority; trustees hold no equity. Framing explicitly scoped to AI-and-the-economy research — a named macro voice inside a lab. Governance color; no valuation surface. (B63-checked: facts hold on non-Anthropic sources.)
+
+## Anthropic financial state (updated 2026-07-10, B63-hardened verification — non-Anthropic sources; per `signals/cross-source-log/2026-07-10-nvda-ndr-memory-jukan-cycle-anthropic-helium-3agent.md`)
+- **ARR: $60B+ (SemiAnalysis Jul-8) / ~$69B (Yipit Jul-10)**; disclosed path $9B end-25 → $30B Apr → $47B mid-May. >=3 independent sources.
+- **Profitability, correctly framed: first OPERATING profit ~$559M Q2-2026 EXCLUDING SBC** (WSJ/CNBC via internal investor materials ~May-20; non-GAAP). SemiAnalysis projects Q3 GAAP EBIT >$1B (~6% margin). **NOT free cash flow: The Information (T1) — cash-flow-positive target DELAYED to 2028** (~$12B training + ~$7B inference spend 2026). Blended gross margin ~65% (recovered from -94%); >80% = Opus-4.8 API per-token unit economics only; 77% = 2028 target. NEVER relay "FCF-positive"/"profitable" unqualified — that is the IPO-managed narrative (confidential S-1 ~Jun-1; OpenAI filed ~1wk later).
+
+## Meta frontier-model state (updated 2026-07-10)
+- **"Watermelon"** (internal, Wang to employees Jul-2 T2): caught up to **GPT-5.5** on watched benchmarks, **still in training**, needs ~10x Muse Spark compute; Opus-level coding model "pretty soon."
+- **Muse Spark 1.1** shipped Jul-9 (Bloomberg): first paid Meta model, positioned ~Opus-4.8/GPT-5.5, aggressive pricing (~5.9x undercut, booked Jul-9).
+- ICML rumor "internal model at Mythos-5 level, deployment-ready" = **REFUTED AS FRAMED** (escalates above both on-record claims; "still training" contradicts deployment-ready). Zero-weight color; "Meta not out of the race" = the fair kernel.
