@@ -215,3 +215,6 @@ User's picture arrived post-commit (protocol held). Convergent: personalization-
 
 ## 2026-07-11 — WORLDVIEW v4: §8 interface-resolution model (user discussion thread continuing)
 I1 chat 15 / I2 wrappers 25 / I3 user-built 5 / I4 OBSERVED-COMPILATION 45 (my model); context-moat depth upgrade booked (clicks→disclosed reasons, cross-domain generalization); labs-win-everything countered (commoditized intelligence → scarce = observation rights/liability/proposal-distribution; electricity analogy); discriminator waypoint 2028-G (initiation share) added.
+
+## 2026-07-11 — WORLDVIEW v5: SS9 anti-entrenchment protocol (user directive)
+Frozen originals (amendments never retire scores) / blind grading (frozen prompt template committed pre-resolution) / Ptolemy test (defenses must tighten falsifiers) / mechanical rewiring (FALSE -> 5pp to S4 + mandatory 3-world generation, lattice-excluded) / drift detector (P-change without resolution event = flag). Residual vulnerability stated: prompt-design contamination; mitigated by pre-committing the grader template now.
