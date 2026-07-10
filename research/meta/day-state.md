@@ -218,3 +218,6 @@ I1 chat 15 / I2 wrappers 25 / I3 user-built 5 / I4 OBSERVED-COMPILATION 45 (my m
 
 ## 2026-07-11 — WORLDVIEW v5: SS9 anti-entrenchment protocol (user directive)
 Frozen originals (amendments never retire scores) / blind grading (frozen prompt template committed pre-resolution) / Ptolemy test (defenses must tighten falsifiers) / mechanical rewiring (FALSE -> 5pp to S4 + mandatory 3-world generation, lattice-excluded) / drift detector (P-change without resolution event = flag). Residual vulnerability stated: prompt-design contamination; mitigated by pre-committing the grader template now.
+
+## 2026-07-11 — WORLDVIEW v6: SS10 continuous-evolution channel (user correction adopted)
+Ledger/lattice separation: WV-ledger: intake lines (continuous, classified-at-intake, both principals) + quarterly weight revisions (first 2026-10-11, ledger-citations required) + year-end blind falsification unchanged. Drift detector amended accordingly. Wake protocol note: consumer-AI usage observations now route a WV-ledger: line when relevant.
