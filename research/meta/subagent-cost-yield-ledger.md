@@ -3335,3 +3335,7 @@
 ### [2026-07-10 — GITLAB DEEP DIVE + SNDK PRE-TASK] 3 Opus ≈86.6k; all HIGH
 **Yield:** SNDK = NAND converged to GM ceiling (78.4%→79-81% guide, QoQ delta collapse) → user's memory-late read data-confirmed, TC-1 TV extended, exit-miss GRADE flagged; GTLB full state (EV/S fwd 3.8x, CRR >$20M usage-repricing live, DBNRR bleed 122→117) → WATCHLIST-ADD with pre-registered Sep adjudicators; 3 corrections — "GitHub commits severalfold" → +25.1% YoY (Octoverse T1), user's "−62% from ATH" → −75% (−62% = 52wk-high distance), NOW+9.9% date-attribution flag OPENED (Jun-26 vs Jul-10, reconcile next wake); review-bottleneck thesis T1-corroborated (DORA/Veracode).
 **Artifact:** `2026-07-10-gitlab-deepdive-3agent-sndk-pretask.md` **Commit:** (this commit)
+
+### [2026-07-10 — SKHY ADR CHECK-IN] 1 Opus ≈32.2k; HIGH
+**Yield:** 3 corrections to carried state — WI timing (began Fri, "$158 Thu" premature/not-tape), ADS ratio pinned 10:1 T1 (parity math rebuilt: pricing +2.5-2.9% vs ordinary; $158-if-real = +9% vs ordinary, denominator trap disarmed), Seoul Jul-10 close corrected to −0.27%/₩2,180,000 (intraday +4% fully retraced). Greenshoe 15% hypothesis downgraded (~5% favored). Cornerstone scale-back $7bn→$5bn booked. Grade unaffected.
+**Artifact:** appended to `2026-07-09-skh-adr-final-pricing-divergence-grade-1.md` **Commit:** (this commit)
