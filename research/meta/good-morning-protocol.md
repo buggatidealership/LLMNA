@@ -35,6 +35,18 @@ User verbatim-adjacent: *"you have full authority and full autonomy to design th
   - **Wave 3 (main loop):** cross-region joint-state synthesis, dot-connections, register updates, cascades, ONE commit, compact user reply.
 - **Guardrails retained (unchanged):** every fire logged to the cost-yield ledger same-commit; the weekly cost-yield audit (Rule #16, next 2026-07-15) is the feedback loop that disciplines scale — autonomy is bounded by measured yield, not by a hard cap; portfolio/holdings.md untouchable; materiality gate governs notifications.
 
+## §Extension-detection (added 2026-07-11, user question: "how do you know when the function needs extension?")
+The function extends itself when its own residues say so — five measured signals, checked implicitly at wakes and explicitly at the weekly Rule #16 audit:
+1. **Data-gap recurrence:** same gap flagged >=2 consecutive wakes = under-tooled -> extend tooling (live example: exact JP/KR closes, chased 4x wk of Jul-7 -> resolved by the API plan below).
+2. **Article-pull hit rate:** pulls that change verdicts (2/2 on 2026-07-10) -> request more; pulls that stop changing anything -> request fewer. Measured via routing tables.
+3. **Verifier catch-rate per channel** (cost-yield ledger): high catches = deepen; sustained zero = trim.
+4. **Missed-event test (sharpest):** material item surfacing later that the wake should have caught = coverage hole -> scope extension, logged.
+5. **Division of labor:** token-cost-only extensions execute under CLASS-1 without asking; user-behavior-cost extensions (more screenshots/pulls) are REQUESTED in the wake synthesis with the measured reason attached.
+Weekend variant (confirmed 2026-07-11): markets closed -> wake = catch-up sweep + Leg C weekend edition + light Asia-weekend discovery + the queued deep-work block. Same phrase, different weighting.
+
+## §API layer (planned 2026-07-11, user offer — closes the #1 recurring gap)
+Ranked by measured-gap closure: (1) EODHD or Twelve Data — exact TSE/KRX closes, indices, FX (the recurring 403 gap; paid ~$20-50/mo); (2) DART (KR) + EDINET (JP) keys — FREE T1 filings for the whole held book; (3) Finnhub free tier — US quotes + earnings calendar (catalyst-clock automation) + news; (4) FRED — US macro for the funding-shock node. **SECURITY (binding, loopframe lesson): keys NEVER enter the repo or any prompt — home = environment variables in the Claude environment settings (browser; persists across containers, outside git). Added as item 5 of the got-access-to-my-computer checklist.** On arrival: wake protocol upgrades exact-closes/FX from web-chase to API pull; catalyst clock cross-checks against the earnings-calendar endpoint.
+
 ## Relationship to the platform routines
 Routines (once repo-fixed) automate the SAME spec at fixed clock times with no user action. The good-morning path stays valid permanently as (a) the manual override, (b) the WSJ-attachment channel (screenshots can't ride a routine), (c) the fallback when routines fail. If both fire the same morning, the second run is a cheap catch-up (docket already clean → it degrades to Leg C + increments only).
 

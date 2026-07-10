@@ -221,3 +221,6 @@ Frozen originals (amendments never retire scores) / blind grading (frozen prompt
 
 ## 2026-07-11 — WORLDVIEW v6: SS10 continuous-evolution channel (user correction adopted)
 Ledger/lattice separation: WV-ledger: intake lines (continuous, classified-at-intake, both principals) + quarterly weight revisions (first 2026-10-11, ledger-citations required) + year-end blind falsification unchanged. Drift detector amended accordingly. Wake protocol note: consumer-AI usage observations now route a WV-ledger: line when relevant.
+
+## 2026-07-11 — STANDING CHECKLIST ITEM 5 ADDED + weekend wake confirmed
+"Got access to my computer" checklist now: (0) routine re-bind, (1) network allowlist, (3) stale branches, (4) loopframe pause + KEY ROTATION, **(5) NEW: add API keys as environment variables in Claude environment settings (EODHD/Twelve Data + DART + EDINET + Finnhub + FRED per good-morning-protocol §API layer) — keys never in repo/prompts.** Tomorrow: weekend good-morning (catch-up + Leg C weekend WSJ + deep-work block: funding-shock refresh, end-demand build, SKHY Monday-prep).
