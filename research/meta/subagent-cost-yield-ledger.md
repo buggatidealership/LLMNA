@@ -3319,3 +3319,7 @@
 ### [2026-07-10 — ARTICLE-PULL VERIFICATION PAIR (Oracle downgrade + GPIF/JGB)] 2 Opus verifiers ≈54.7k; both HIGH
 **Yield:** 3 framing catches on 2 T1 article bodies — (1) Oracle outlook = STABLE (BBB/neg resolved INTO the cut; "inching to junk" frame capped; one-agency event, Moody's Baa2/neg = next domino); (2) GPIF = JAWBONING not mechanism (MHLW gate, no instrument/date; market skeptical per Bloomberg JP); (3) Friday JGB/yen rally = partly RETRACEMENT of 骨太-blueprint selloff (WSJ omitted). Hard T1 adds: Oracle $160B debt / FY27 capex $90-95B / FOCF −$42B / OpenAI ≈ half RPO / $20B equity plan; GPIF allocation splits; intervention zone 163→165. JGB module v1 BUILT + corrected same commit.
 **Artifact:** `2026-07-10-article-pulls-oracle-downgrade-gpif-jgb.md` **Commit:** (this commit)
+
+### [2026-07-10 — CXMT IPO 2-AGENT VERIFICATION (user momentum-buy question)] 2 Opus ≈59.5k; both HIGH
+**Yield:** trade adjudicated BEFORE any capital question reached sizing: (1) access = UNEXECUTABLE for Euro retail (T1 SSE Connect rules; DeGiro/IBKR checked; no ADR/HK line); (2) momentum base rate INVERTED the frame — cohort 5.5-6.6x multiples are allocation-only, debut-close buyers got +4.6%/−16.3%; (3) Entity-List correction to candidates.md (CXMT NOT BIS-listed; DoD 1260H instead); (4) ¥4.41/share debunked as arithmetic artifact; (5) prospectus financials booked (first profit 2025 → H1'26 ¥50-57bn guide). Pre-reg: day-1 pop >+300% P~60% (my model).
+**Artifact:** `2026-07-10-cxmt-ipo-verification-2agent.md` **Commit:** (this commit)
