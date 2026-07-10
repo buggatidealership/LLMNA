@@ -13,6 +13,10 @@
 
 ---
 
+- [ ] **P1 / research / 2026-07-12** [INDP, AF, POS, BOT] — 2030 WORLD-REVIEW build (user-designed input spec, 2026-07-10 night)
+  - Origin: user request "state an input to develop your LLM-native research-based world review of AI in 2030"; full 5-element input block delivered in chat + summarized here: (1) contracted-future first (research what 2030 is already written in today's contracts/lead-times before speculating), (2) adoption-as-residue (deployment-residue curves, not announcements), (3) waypoints-or-decoration (every claim emits dated 2027/28/29 falsifiable waypoints wired to catalyst clock + calibration ledger), (4) decision surface (per-branch layer winners + what the 2030-aware book holds differently today), (5) sealed-diff protocol (user sends HIS 2030 picture only after mine is committed; Leg A/Leg B diff = key deliverable).
+  - Scope: weekend-class, ~15-25 agent fires; SHARE EVIDENCE with funding-shock refresh + end-demand P1 (legs overlap). Fires when user sends the input block.
+  - Linked: sector/ (new file), meta/successful-deployment-search-spec.md, sector/ai-funding-shock-node.md
 - [ ] **P1 / prediction / 2026-07-06** [INDP, AF, POS, CAL] — SUMCO Q2 FY2026 FULL COMPONENT-LEVEL PRE-REGISTRATION (upgrade of the directional earnings-program entry, per user directive 2026-07-06: build OWN forecast — revenue / OP / net / guidance-language incl. LTA-commentary probability — bottoms-up (volume x ASP x LTA-mix + forex + Saga depreciation), THEN compare vs consensus; the three-outcome table adjudicates the analysts-will-chase vs price-ahead question)
   - Origin: user pushback on the 2026-07-06 deep dive's PT framing (correct B28 application) + explicit self-prediction directive
   - Scope: prediction file locked BEFORE the print; SEQUENCE: (1) Samsung Jul-7 prelim demand read, (2) print date RESOLVED Aug-6 per `2026-07-06-kr-jp-morning-scan-prelim-eve.md`, (3) build + pre-register this week
