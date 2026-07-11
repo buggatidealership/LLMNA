@@ -14,3 +14,18 @@
 **Signal-density note (Rule #14):** item 6's Alberta siting joins TC-3 (DC-ceiling + EM-migration) direction — non-US siting as grid-bypass; counted only after verification. Item 5 routes to `sector/ai-funding-shock-node.md` tell #8 on verifier return.
 
 **Position implication: NO ACTION pending verifiers — 🟡 the only book-touching item is #5 (funding-node tell = SKHY falsifier #4 / MURATA-SUMCO mark amplifier via TC-17); a confirmed DISCOUNT quote would be the first hard repricing datum of the AI-credit stack.** (my model)
+
+## Verifier verdicts (returned same session; 2 Opus ≈ 41.3k)
+
+### Item 5 — Apollo secondary: T3 TENSE ERROR CAUGHT; tell #8 UN-FIRED, instrument REFINED
+- **"Has begun trading" REFUTED** — Bloomberg Jul-9 (T2) says "SET TO begin trading": notes drawn "over coming months" → then eligible; ~$15bn tradeable by EARLY 2027 (Bloomberg single-primary, forward-looking). NO secondary quote exists anywhere (verifier searched for it directly, repeatedly). A "trading has begun" booking would have been a false positive — our 07-10 node entry already carried the correct tense; the tweet added only the error.
+- **Tranche structure verified (T2, June syndication):** A1 ~$6bn @ Treasuries+100bp; A2 ~$24-25bn @ ~5.50-5.75% all-in, "priced at par" = PRIMARY language (laundering trap flagged — never read as a secondary quote); **Class B ~$4.5bn @ 8.5% fixed, NOT Broadcom-backed**. Broadcom residual-value backstop covers seniors only, cap UNDISCLOSED (B63: the most load-bearing risk term is the non-public one).
+- **Tell #8 refinement cascaded to `sector/ai-funding-shock-node.md`:** primary instrument = the CLASS B quote (seniors trade on Broadcom credit; the unbacked junior is where AI-collateral repricing shows first). Watch clock: first eligible prints likely Q4-26.
+
+### Item 6 — Meta: Alberta CONFIRMED-FRESH T1; roadmap table = STALE-RECYCLE; 3 garbles killed
+- **Alberta DC CONFIRMED (T1 Meta newsroom, groundbreaking ~Jul-8/9):** Sturgeon County, **1 GW**, AI-optimized, ~270,000 m², **largely natural-gas powered**, 33rd DC, LARGEST outside US (Demasi on record). Dollar figure: Meta's own language **CA$13bn+ total** (US$9-10bn band — the tweet's "$10B" is soft; do not pin).
+- **MTIA roadmap table = official Meta disclosure of MAR-11-2026** (ai.meta.com "Four MTIA Chips in Two Years") — specs exactly right (BW 6.1→27.6 TB/s = 4.52x computed ✓; HBM 216→384-512GB), but STALE-RECYCLE as news, already in TC-15's corroborating adjacents. **HBM supplier for MTIA = UNVERIFIED — no Korea-memory read may attach to MTIA on this evidence.**
+- Fresh leg (single-source Reuters memo, heavily syndicated ≠ corroborated): Sept production = **Iris = MTIA 400 specifically** (not all four; MTIA 300 already deployed); ~7GW→~14GW 2026→27 = the "doubling" (memo language); TSMC fab + Broadcom design, node undisclosed; **"testing took 4 months" CONTRADICTED (~6 weeks per reporting)**; MTIA explicitly ADDITIVE to Nvidia purchases (~$145bn AI infra spend cited), not displacement.
+- **Cascade:** TC-3 (DC-ceiling + EM-migration) N+1 — first-Canada 1GW gas-powered siting = the grid-bypass mechanism at hyperscaler tier (also rhymes with TC-13 gas-turbine demand — cross-segment, noted not counted).
+
+**Position implication: NO ACTION — 🟡 tell #8 stays armed-not-fired with a better instrument (Class B); Alberta reinforces TC-3/TC-13 direction (held MURATA beneficiary-adjacent, watchlist GEV); the MTIA-HBM demand read stays capped until a supplier is named.**
