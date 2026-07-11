@@ -123,6 +123,9 @@ Update affected `companies/{TICKER}/interpretations.md` and run TRACE if materia
 - Context corrections that must travel with this item: Siri already runs on Gemini (the Apple-OpenAI deal was dead pre-suit; OpenAI mulled suing Apple in May); "400 ex-Apple employees" = pleaded allegation. Watch: preliminary-injunction motion (the only near-term market-relevant event); device unveil timing vs docket.
 - IPO surface: adds a litigation-risk disclosure line to the ~2027 IPO stack (42-state AG subpoena + this). No valuation surface yet.
 
+## OpenAI safety-org reshuffle (added 2026-07-11; per `signals/cross-source-log/2026-07-11-sat-eve-ai-brief-routing.md`)
+- **Johannes Heidecke (head of safety systems, ~2yr in role) leaving after reorg** (Wired Jul-11 primary; Bloomberg relay; the brief's "Sebastian" = B61 garble, killed). Safety teams → **Mia Glaese** (VP research/alignment, expanded); **Saachi Jain** interim head of safety systems; Mark Chen: safety "integrated into frontier development." Read: second senior departure in a week (Simo Jul-9) + safety folded under research = pre-IPO org-consolidation color; watch for external-critique cycle (the Anthropic-vs-OpenAI political-risk piece Jul-8 already frames it).
+
 ## Anthropic governance (updated 2026-07-10)
 - **Ben Bernanke appointed to the Long-Term Benefit Trust Thu 2026-07-09** (T1 anthropic.com + Bloomberg/CNBC independent). LTBT = the body that appoints/removes a board majority; trustees hold no equity. Framing explicitly scoped to AI-and-the-economy research — a named macro voice inside a lab. Governance color; no valuation surface. (B63-checked: facts hold on non-Anthropic sources.)
 
