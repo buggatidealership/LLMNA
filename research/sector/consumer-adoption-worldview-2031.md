@@ -87,6 +87,11 @@ Two update channels, deliberately separated so evolution cannot contaminate fals
 **Drift-detector amendment (supersedes §9.5's narrower form):** a P-change is legal iff linked to (a) a blind-graded waypoint resolution or (b) a quarterly revision with ledger citations. All else = narrative-drift flag.
 Channel separation rationale: soft signals are infinitely interpretable — they may accumulate continuously but may only move weights at revision points where the whole quarter's ledger is weighed jointly (no single-story reweighting, the worldview-level analog of Critical Rule #6). Year-end blind waypoint grading (§5/§9) remains the only channel that can score the worldview WRONG, as opposed to shifting it.
 
+## Evidence ledger (append-only; §10 channel 1)
+- **WV-ledger: 2026-07-11** — Apple sues OpenAI over the io hardware device (5:26-cv-07078, T1/T2 verified per `2026-07-11-sat-apple-openai-asia-scan-flags-resolved.md`). Branch: **incumbent-sweep overlay + I-question hardware leg — SUPPORTS the overlay's mechanism** (incumbents defend the device surface with legal force, not just product; the S2-agency hardware bet now carries litigation timeline-risk). Also ORTHOGONAL to S1-S4 weights directly (no consumer-behavior content). Classified before outcome known: if the injunction bid FAILS, the datapoint flips to weak-CONTRADICT on the overlay (legal moat proves hollow).
+- **WV-ledger: 2026-07-11** — Meta faces EU action over addictive app design (WSJ headline-layer T2, unverified body). Branch: **S3-attention — SUPPORTS the regulation-cap mechanism generalizing beyond companions** (the same engagement-mechanics regulation that caps the companion segment reaching incumbent feeds). Weak single signal, headline-only.
+- **WV-ledger: 2026-07-11** — Record companies to label AI-generated songs (WSJ headline-layer T2). Branch: **verification/provenance layer (PC-17-adjacent) — SUPPORTS** the value-migrates-to-verification pattern reaching consumer media; ORTHOGONAL to S-weights.
+
 ## Fluidity metadata
 Built 2026-07-10/11 under user commission + CLASS-1. **Falsifier:** the §5 grading rule (waypoint hit-rate). **Contamination inherited from §1 stated.** Re-eval: annually at each year-end wake; full refresh 2027-07. Adversarial pass: verdict appended below.
 

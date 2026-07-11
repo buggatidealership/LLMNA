@@ -407,3 +407,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-10 23:33:48Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-11 00:05:27Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-11 00:19:00Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-11 10:39:14Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-11 10:44:02Z session-prime-hook event=compact injected=False (skipped non-startup)

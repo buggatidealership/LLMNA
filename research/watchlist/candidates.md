@@ -1918,6 +1918,8 @@ Per `signals/cross-source-log/2026-07-10-cxmt-ipo-verification-2agent.md` — up
 - **Pre-registered (calibration only):** CXMT day-1 pop >+300%, P~60% (my model), resolves at listing ~late-Jul.
 **Position implication: NO ACTION — 🟡 — unexecutable directly; proxies (GigaDevice 3986.HK / ACMR) already graded correlated-China-memory-beta-not-diversifier; H2 falsifier logged (if CXMT holds post-debut on fundamentals 2+ wks, re-examine the GigaDevice proxy on its own numbers).**
 
+**2026-07-11 SAT update (Asia scan):** greenshoe CONFIRMED — CICC over-allotment up to 15% (→ ~7.69bn sh, raise >$5bn if exercised, T2); timeline enriched: payment due Jul-20. Scan relayed "offer ~RMB 4.41/sh, cap ~RMB 295bn" — carries the SAME arithmetic-artifact risk flagged 07-10 (price is not set until Jul-15); do not treat as a price print. No oversubscription figure can exist before Jul-13 books — pre-Jul-13 "Nx oversubscribed" claims = unsourced. Jul-16 is a triple-catalyst day (CXMT subscription + TSMC Q2 call + BOK). Per `signals/cross-source-log/2026-07-11-sat-apple-openai-asia-scan-flags-resolved.md`.
+
 ### 🟡 GitLab (GTLB, Nasdaq — DeGiro-accessible) — WATCHLIST-ADD 2026-07-10 (user-directed deep dive; rotation-frame candidate #1)
 Per `signals/cross-source-log/2026-07-10-gitlab-deepdive-3agent-sndk-pretask.md` (3 Opus agents, Workflow #9; H1/H2/H3 pre-registered before data).
 - **What it is (first-principles):** system of record for software production (propose→test→approve→ship + audit trail). Thesis: generation commoditizes → bottleneck migrates to verification/governance (T1: DORA review-time +91%, PR size +154%; Veracode 45% AI-code OWASP fail, FLAT across model generations = durable scan demand).

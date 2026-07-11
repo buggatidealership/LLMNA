@@ -10,7 +10,7 @@
 | JGB 5Y | 1.985% (−4.5bp) | 2026-07-10 | same |
 | JGB 10Y | 2.77% (−11bp; Jul-6 print 2.830% = highest since Oct-1996, Nikkei T1) | 2026-07-10 | same + funding-shock node rates-leg refresh 07-06 |
 | JGB 40Y | 3.950% (−8.5bp) | 2026-07-10 | same |
-| JGB 30Y | ⚠️ SERIES CONFLICT OPEN (carried 2.810% vs refresher 4.04%; both suspect vs the 10Y/40Y anchors now on file) | — | reconciliation assigned in `sector/ai-funding-shock-node.md` leg 2 |
+| JGB 30Y | **~3.93% (−10bp Jul-10; 4.030% Jul-9; 4.005% Jul-7)** — CONFLICT CLOSED 2026-07-11: the refresher ~4.0% series was correct; the carried 2.810% was stale/wrong (likely a 10Y-region contamination). Fits between the 10Y 2.77% and 40Y 3.95% anchors | 2026-07-10 | TradingEconomics JP-30Y series T2, reconciled at Sat wake 07-11 |
 | Nikkei | 68,695.73 (+1.4% on GPIF remarks) | 2026-07-10 | WSJ article body T1 |
 | Intervention state | ¥11.7T spent Apr-May, ineffective; market watch-level ~¥163; FX reserves >$1T | 2026-07-06/10 | CNBC T1 (07-06) + WSJ body (07-10) |
 | GPIF | ~$1.8T AUM; Katayama (FM): "looking to pursue measures to encourage pension funds, including the GPIF, to make further investments in Japanese financial assets" (Fri 07-10) | 2026-07-10 | WSJ article body T1 |

@@ -118,6 +118,11 @@ Update affected `companies/{TICKER}/interpretations.md` and run TRACE if materia
 - **OpenAI confidentially FILED for IPO ~June 2026 — one week AFTER Anthropic's filing** (T2 multi-outlet via Simo coverage); timeline reportedly pushed to >=2027.
 - **GPT-5.6 named "preferred model" in M365 Copilot Jul-9 (OpenAI's own words, T1)** — read as DEFENSIVE: Copilot is now explicitly multi-model (Claude = DEFAULT for Excel+PowerPoint since ~2026-05-04, Word to follow; MSFT elevating in-house MAI, this-week Word/Excel-to-MAI reports = the "breakup chatter"). **E5 exclusivity-premium-compression cluster: +1 datapoint (within the 90-day promotion window's spirit — relationship dilution continuing).**
 
+## OpenAI legal — Apple trade-secrets suit (added 2026-07-11; per `signals/cross-source-log/2026-07-11-sat-apple-openai-asia-scan-flags-resolved.md`)
+- **Apple v. Liu et al, 5:26-cv-07078 N.D. Cal., filed Fri 2026-07-10** (T1 docket exists, T2 multi confirmed). Targets the HARDWARE device program: Chang Liu (ex-Apple EE, laptop + downloaded files — the strong count), Tang Tan (OpenAI CHO, interview-conduct allegations — the weak count per the dismissed xAI-v-OpenAI precedent), io Products co-defendant. Remedy sought includes destroy/redesign injunction = the device-timeline risk vector (analyst opinion, UNDER-DISCUSSION).
+- Context corrections that must travel with this item: Siri already runs on Gemini (the Apple-OpenAI deal was dead pre-suit; OpenAI mulled suing Apple in May); "400 ex-Apple employees" = pleaded allegation. Watch: preliminary-injunction motion (the only near-term market-relevant event); device unveil timing vs docket.
+- IPO surface: adds a litigation-risk disclosure line to the ~2027 IPO stack (42-state AG subpoena + this). No valuation surface yet.
+
 ## Anthropic governance (updated 2026-07-10)
 - **Ben Bernanke appointed to the Long-Term Benefit Trust Thu 2026-07-09** (T1 anthropic.com + Bloomberg/CNBC independent). LTBT = the body that appoints/removes a board majority; trustees hold no equity. Framing explicitly scoped to AI-and-the-economy research — a named macro voice inside a lab. Governance color; no valuation surface. (B63-checked: facts hold on non-Anthropic sources.)
 
