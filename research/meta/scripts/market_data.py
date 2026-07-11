@@ -78,7 +78,8 @@ def status():
         else:
             body, err = None, "no-probe-defined"
         blocked = err or ("denied" in (body or "").lower()[:200])
-        print(f"  {name}: present ({src}) — {'LIVE' if body and not blocked else f'BLOCKED/{err or 'denied'}'} — {purpose}")
+        state = "LIVE" if (body and not blocked) else "BLOCKED/" + (err or "denied")
+        print(f"  {name}: present ({src}) — {state} — {purpose}")
 
 
 def quote(symbol):
