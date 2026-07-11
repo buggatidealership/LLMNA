@@ -1,0 +1,52 @@
+# END-DEMAND DURABILITY MODEL — is the demand under the supercycle real, and for how long? (BUILT 2026-07-11)
+
+**Origin:** oldest P1 (2026-06-30, KJ Leg B absence-question: the harness had a SUPPLY model and a FUNDING model but no model of whether AI end-demand is *durable*). Built at the Sat deep-work block once both evidence layers landed: adoption-structure (three-layer agent framing, 07-02) + capture-structure (M365 force-bundling, 07-06) + buyer-side arithmetic (Arora, 07-09) + consumer leg (worldview embryo inventory, 07-10). Co-located with `sector/ai-funding-shock-node.md` (the funding node models who LENDS; this models who PAYS).
+
+## 0. The reframe the model is built on
+The OpenAI-leak ($1.6 spent per $1 revenue, on file since the P1 was opened) does NOT pose "is demand real?" — usage is overwhelming (TC-8). It poses **DURATION risk: how much of today's AI revenue is paid by end-payers receiving ≥$1 of value per $1 paid, vs paid by capital markets (VC/debt/vendor financing) routed THROUGH customers?** The supercycle ends not when usage falls but when the subsidized share is forced to shrink faster than the durable share grows.
+
+**Core identity:** AI revenue = DURABLE (end-payer value-backed) + SUBSIDIZED (capital-markets-backed). The funding node governs the subsidized leg's refinancing; THIS model tracks the durable leg's growth rate and the crossover.
+
+## 1. The final-dollar decomposition (who ultimately pays) — layer scorecard
+| Layer | Evidence anchors (on file) | Durability grade (my model) | The honest gap |
+|---|---|---|---|
+| **Enterprise seat-capture** | M365 Copilot force-bundling live 07-01: E3 +8-13% / E5 +5-8% enterprise-wide price capture (T1 Licensing FAQ, per `2026-07-06-morning-brief-b61-gauntlet-financialization-deltas.md`); class-action friction, churn data none yet | **HIGH near-term, coercion-shaped** — capture ≠ willingness-to-pay; durable only until renewal cycles let CIOs push back. P~70 it holds through 2027 renewals (my model) | force-bundled revenue LOOKS like demand but is priced-in-the-dark; first churn print = the tell |
+| **Enterprise vertical (high-WTP)** | Pharma cluster N≥3 TRIANGULATED (Claude Science + GPT-Rosalind/Novo + Merck-Google $1bn + Cohere North-for-Pharma, per `2026-07-01-evening-brief-terafab-colossus-agentic-demand-2agent.md`) | **HIGHEST-QUALITY durable leg** — sticky, P&L-justified, pre-IPO labs building it deliberately | small vs total AI revenue; durable ≠ large yet |
+| **Enterprise agentic (bounded-task)** | Three-layer framing (07-02 EVE): bounded-task agents WORK; enterprise-wide agents need embedded humans — the 4-company deployment-subsidiary cluster = labs paying their own staff to make deployments succeed = **demand-side subsidy, booked as revenue** | **MIXED** — bounded-task = durable; embedded-human tier = subsidized-in-kind | Zuckerberg town-hall: frontier agentic gains plateauing — the capability assumption under the $1T sizings |
+| **Consumer subscription** | ChatGPT ~1B MAU / 50M paid (T1 Feb-26, worldview Leg 3); Duolingo AI tier 30%+ of revenue (T3); companions ~$120M run-rate vs 80-120min/day engagement | **THIN** — ~5% paid-conversion at the flagship; the engagement standout (companions) is the monetization laggard AND regulation-capped | **retention/habit data = INDUSTRY-WIDE DISCLOSURE GAP (the missing dataset of the cycle)** — reach is proven, habit is not |
+| **Consumer commerce/ads** | Rufus 300M+ users, ~$12bn incremental sales, +60% purchase likelihood (T1 May-26); OpenAI Instant Checkout PIVOTED away Mar-26 at ~12 live merchants (T1) — the honest tell; AI-search monetization formats only now arriving | **EARLY-EMBRYO** — the Facebook-shaped monetization layer (worldview §7 selection-function auction) is designed but not built | agentic-commerce cap still ON (trust/liability rails); over-hyped 12mo / under-hyped 36mo |
+| **Surplus leakage (unmonetized demand)** | ~1 in 6 US adults use AI for health monthly, inside general ChatGPT, $0 attributed (T1 APA/JAMA); hidden-AI-apps surplus map (07-02) | **LATENT durable demand** — value delivered, revenue $0; monetizable by verticalization | until monetized it funds NOTHING in the capex chain |
+| **Sovereign** | TC-10 national-tier deals (UK £1.7bn Nebius etc.); PC-13 panic-procurement | **DURABLE but political** — budget-cycle, not P&L, logic | regime-dependent; not price-elastic in either direction |
+
+## 2. The elasticity race (the quantitative spine)
+Arora buyer-side arithmetic (CNBC T1, 07-09, per day-state FINAL): AI pricing "must fall up to 90%," **per-token prices −98% while enterprise bills grew 3x** — i.e., volume grew ~150x against the price collapse (computed from those two anchors as an implied order of magnitude; mix effects unmodeled — directional only). **The durability condition is a Jevons race: token volume growth must exceed token price decline every year, at the PAYING tier.** Supporting: Meta Model API undercutting ~5.9x (07-09, price war live); Anthropic blended GM ~65% with FCF pushed to 2028 ($12bn training + $7bn inference 2026) = even the winners' unit economics fund growth from capital markets, not customers, through at least 2027.
+- **Tunguz crossover frame (T2 single-author, directional):** AI spend per worker vs salary — bear 41% / base 140% / bull 230% of salary by 2029. The base case says the enterprise budget CAN absorb the race (AI substitutes labor line-items); the bear says the race hits a budget wall in ~2 years.
+- **BOJ Tankan counter-evidence (T1, 07-01):** large-mfg DI +22 (8-yr high), capex +6.8%, explicitly crediting AI/semi demand + pricing pass-through — NO demand destruction visible at the component/capex layer yet. The race is being WON at present readings.
+
+## 2b. Inherited half-build (integrated, not duplicated)
+`sector/application-layer-framework.md` (07-07, 4-agent step-0) supplies the app-layer capture map this model sits on: **~65-75% of disclosed app-layer run-rate = Tier-A ROI-paid end-demand** (durability-POSITIVE — the largest single durable-share estimate on file); AI billed against HEADCOUNT budgets (TAM expansion, not IT-budget shrink — the mechanism behind Tunguz's base case); insourcing dead (76% buy-vs-build reversal); **earliest tripwire = coding-agent growth DECELERATION (fires before capex guides)** — adopted as tracking variable #0, ahead of the six below. Evidence-collection discipline for all TVs: `meta/successful-deployment-search-spec.md` (success = past tense + recurring payment + named counterparty + survived renewal). Durable-top-end counterweight also on file: agentic scientific discovery = non-saturating test-time-compute demand (06-30 artifact; real but modest, B45/B40.1-flagged) — the model carries BOTH poles (burn-risk bottom, non-saturating top).
+
+## 3. Where this model plugs into the harness
+- **U8/F13 falsifiers** (token-elasticity / demand-destruction) now have a home: they are the tells of the SUBSIDIZED share shrinking faster than the DURABLE share grows.
+- **Funding node coupling:** tell #7 (Moody's-Oracle) and #8 (Apollo-tranche discount) firing = the subsidized leg repricing → this model's crossover clock ACCELERATES (the durable share must carry sooner).
+- **GP-bridge coupling:** memory condition 2 (AI-tier price-inelasticity) is the upstream shadow of this model's paying-tier durability — if the durable share stalls, the ASP↑ leg of the artifact path dies ~2 quarters later.
+- **Worldview coupling (§7):** the three monetization archetypes (selection-function auction / user-paid fiduciary / personalization rent) are the CANDIDATE mechanisms by which the consumer layers move from THIN/EMBRYO to durable. WV-ledger lines feed both artifacts.
+
+## 4. Pre-registered tracking variables (run at earnings seasons + wake intake)
+1. **Paying-tier ratio proxies** (per print): MSFT — first Copilot seat/churn disclosure; OpenAI/Anthropic — ARR vs disclosed burn (the $1.6/$1 successor number); labs' deployment-subsidiary headcount growth (in-kind subsidy trend).
+2. **Coercion-capture stress:** E3/E5 renewal-cohort commentary + the class-action docket; ANY reported Copilot price-capture rollback = durable-share DOWNGRADE.
+3. **Vertical replication:** does a second pharma-class vertical cluster triangulate (legal, coding-at-enterprise, finance)? Each N≥3 vertical = durable-share UPGRADE.
+4. **Consumer habit disclosure:** first credible DAU/WAU-retention disclosure by a major assistant = closes the missing dataset; direction decides.
+5. **Commerce cap-lift:** agentic-checkout relaunch at >100 merchants OR dispute-rights framework = embryo→growth reclassification.
+6. **Tankan-class macro reads:** quarterly — first print crediting AI demand SOFTENING at component layer = the earliest macro tell.
+
+**Scenario weights (my model, initial):** durable-share crossover BEFORE the funding leg reprices (soft landing into real demand) P~45; funding repricing FIRST (duration-shock, capex air pocket, then durable re-acceleration) P~35; demand-destruction proper (volume race lost, U8/F13 fire) P~20. Re-weight at each tell above.
+
+## 5. Position linkage (Rule #10 cascade targets)
+- **SKHY/SUMCO/MURATA (held):** all three sit UPSTREAM of the paying-tier question; scenario 2 (funding-first) hits marks hard without breaking theses (Rule #8 applies); scenario 3 fires L-series/GP-bridge falsifiers properly.
+- **GTLB (watchlist):** its Sep print IS a tracking-variable-3 instrument (enterprise dev-tooling durability).
+- **NOW re-entry framework:** tracking-variable-1/2 readings gate the regret-chase question at the Jul-22 print.
+
+**Fluidity metadata:** built 2026-07-11. Falsifier for the MODEL itself: if two consecutive quarters of tells (1)-(6) produce readings that change no scenario weight and no position decision, the model is decorative → fold the TVs into the funding node and retire. Re-eval 2026-10-11 (co-scheduled with the worldview quarterly revision — the two artifacts share the consumer-monetization seam).
+
+**Position implication: NO ACTION — model build; scenario weights initialize at 45/35/20 (my model); first live reads = MSFT/mega-cap prints late-Jul + SKH GP-bridge run.** 🟡

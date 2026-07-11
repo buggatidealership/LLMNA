@@ -53,3 +53,5 @@ Read ladder (my model, 🟡):
 
 ## Position implication (Critical Rule #11)
 **Position implication: HOLD — no size change — Friday WI close $168.01 marks the position −3.1%; the −3.1% is entirely premium/flow mechanics (Seoul line was −0.27%), so no thesis content yet; premium template above runs Monday; GP-bridge late-Jul SKH print = first fundamental adjudicator; second-half staging available POST-print if sign test reads ARTIFACT and premium ≤~5-10%.** 🟡
+
+**2026-07-11 SAT — end-demand-durability model back-reference (Rule #10):** `sector/end-demand-durability-model.md` — SKHY is the book's most direct expression of the paying-tier question (HBM buyers ARE the subsidized-vs-durable boundary); model condition-2 coupling: if the durable share stalls, the GP-bridge ASP↑ leg dies ~2 quarters later — same falsifier chain as thesis falsifier #1/#4. TC-17 (crowded-but-hedged N=5) flags amplified beta on the fresh position. Position implication: HOLD — unchanged from today's print section above. 🟡
