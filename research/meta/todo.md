@@ -674,3 +674,8 @@
   - Origin: 2026-07-12 pilot (`meta/experiments/2026-07-12-llm-native-compression-pilot.md`) — V1 telegraphic hit 12/12 at 27.6% of size; decision rule triggered
   - Scope: re-run probe battery with 3 readers per variant (fresh probes, second author-blind set if feasible); if replicated, rewrite session-prime.md in telegraphic form (keep human-skimmable) inside the 30k-char cap = ~3.6x state headroom; log two-audience constraint decision
   - Linked: meta/experiments/2026-07-12-llm-native-compression-pilot.md, meta/session-prime.md
+
+- [ ] **P1 / research / 2026-07-14** [INDP, AF, OPT] — Newly-viable frontier PHASE 2: hunting-map sweep (Mode B candidate register)
+  - Origin: user framework 2026-07-12 (`wiki/newly-viable-frontier.md`) — "what can LLM-native business models enable that previously wasn't possible or economically unviable"
+  - Scope: multi-agent enumeration of cost structures w/ cognition >~50% COGS + latent demand at lower price points ("only the rich could afford X") + impossible-at-any-price primitives; run the viability-flip screen (pre-2023 labor prices) on each candidate; rank into a Mode-B candidate register; apply toy-detector + Griffin attribution filter; condition design on the historical base-rate agent's H1/H2/H3 verdict (if H3, add graveyard denominator)
+  - Linked: wiki/newly-viable-frontier.md, wiki/agent-native-organization.md, sector/end-demand-durability-model.md
