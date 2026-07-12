@@ -7,7 +7,9 @@
 2. **[P1, open since ~2026-07-06] Risk-envelope Phase-1 approval** — proposed single-position cap ≤15% (`portfolio/risk-envelope.md`); SUMCO sits at ~17.9% pending this decision. Blocked on #1 (the cap should derive from the purpose, not precede it).
 3. **[P2, open since 2026-07-11] "Got access to my computer" checklist** — env vars for the 5 API keys + network allowlist hostnames + ROTATE the pasted Finnhub key (pre-burned) + routine re-bind + stale-branch cleanup. Needs a laptop session, not a chat answer.
 4. **[P2, asked 2026-07-11] DeGiro availability checks** — (a) Nanya 2408 TWSE ordinary (ISIN TW0002408002 / WKN 553579): tradable? (b) SKHY: orderable at Monday regular-way open? (c) German ADR tax note from the SKHY entry package: any broker documentation on Korean withholding via ADR?
-5. **[P3, open since ~2026-06] Drawdown tolerance, stated numerically** — "which mark-to-market loss can you sleep through without wanting to act?" — subsumable into #1's answer if it covers it.
+5. ~~[P3] Drawdown tolerance~~ — merged into #6.
+6. **[P2, asked 2026-07-12] ONE clarification on the capital ladder:** when you said "roughly a hundred k... hard for me to stomach downsides" — did you mean (a) ~€100k is the max BOOK SIZE you're comfortable running (adopted provisionally), or (b) ~€100k is the max LOSS you could stomach across everything? One word answers it: SIZE or LOSS.
 
 ## ANSWERED (pointer log)
-- (none yet under this register; historical answers live in `meta/user-source-profile.md`)
+- **#1 BOOK PURPOSE — ANSWERED 2026-07-12** (same day asked): full extraction at `meta/user-source-profile.md` §purpose; risk-envelope v2 derived same commit. Residual ambiguity spun into open #6 below.
+- **#5 DRAWDOWN — PARTIALLY ANSWERED 2026-07-12** (full-book loss sleepable; €280k floor): merged into #6 clarification.
