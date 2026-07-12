@@ -670,3 +670,7 @@
 - [ ] **P2 / process / 2026-08-09** [INDP, OPT] — User-channel coverage model first monthly audit: compute share-classification histogram from verification artifacts (per user-source-profile §channel-coverage, codified 2026-07-09); rank absence-question-register rows by recurrence; promote ≥2-recurrence rows to research items. Falsifier check: histogram ≠ the guessed map, else drop per-share tags.
   - Origin: user question 2026-07-09 "what must be true for you to research my blind spots?"
   - Linked: meta/user-source-profile.md, meta/absence-question-register.md
+- [ ] **P2 / harness / 2026-07-24** [INFRA, OPT, CAL] — LLM-native compression: N=3-per-variant ensemble replication + session-prime format-migration decision
+  - Origin: 2026-07-12 pilot (`meta/experiments/2026-07-12-llm-native-compression-pilot.md`) — V1 telegraphic hit 12/12 at 27.6% of size; decision rule triggered
+  - Scope: re-run probe battery with 3 readers per variant (fresh probes, second author-blind set if feasible); if replicated, rewrite session-prime.md in telegraphic form (keep human-skimmable) inside the 30k-char cap = ~3.6x state headroom; log two-audience constraint decision
+  - Linked: meta/experiments/2026-07-12-llm-native-compression-pilot.md, meta/session-prime.md
