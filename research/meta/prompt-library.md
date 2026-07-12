@@ -23,3 +23,17 @@
 "[NAME] valuation/ownership/access. Repo anchors (do not re-verify): [list]. RETRIEVE: (1) price/cap/share count + P/E DECOMPOSED — trailing (which quarters? loss quarters included?) vs latest-annualized vs published forward estimates, SHOW THE MATH; user-supplied multiples get reconciled to a basis, not accepted or dismissed; (2) ATH/chart landmarks WITH share-base comparability check (recaps/splits/placements); (3) ownership changes + insider/parent direction; (4) access instruments for a German retail investor (ISIN/WKN/ADR + liquidity warnings); (5) analyst state tier-tagged, DO NOT average (L1). Computed values marked (computed)."
 
 **Position implication: N/A — harness infrastructure. Detectability: ledger prompt-miss attributions + patch count at the 2026-08-11 re-eval.** 🟡
+
+## Block F — SUBSTANCE-VALIDATOR v1 (added 2026-07-12, user-designed: "validate the statement itself, not who said it")
+**When:** any CONFIRMED-FRESH institutional statement with thesis weight (CEO forecasts, guidance language, analyst structural calls). Runs AFTER block B (verifier) — never instead of it. Division of labor: B = past (authenticity/freshness/attribution), F = present (proxy consistency), grading calendar = future (resolution).
+**Core design rule — DISCRIMINATING POWER:** every proxy must state what it would show in the TRUE world AND in the FALSE world (e.g., vendor hype at a cycle top). A proxy that reads the same in both worlds is non-discriminating → drop or downweight, explicitly. Strongest false-world calibration available: the same proxy's reading at the last cycle top (2018 analog for memory).
+**Template skeleton:**
+1. Role line ("SUBSTANCE-VALIDATION agent, block F") + date anchor + EXECUTE-NOW forcing + native-language query seeds.
+2. The claim verbatim + its already-established attribution verdict (so the agent doesn't redo block B's work).
+3. STEP 1 decompose: 5-8 present-tense implications that MUST hold now if the claim is true.
+4. STEP 2 per-implication proxy + discriminating test (TRUE-world vs FALSE-world reading) + cycle-top analog.
+5. STEP 3 pull current readings, T1/T2, show bottoms-up arithmetic (capacity adds vs demand growth), include revealed-preference proxies (prepayments > contract length > commentary) and counter-proxies (insider/parent selling).
+6. STEP 4 output contract: proxy table (proxy | reading+source+tier+date | TRUE-consistent/FALSE-consistent/NON-DISCRIMINATING | weight) + fraction-on-TRUE-side + 3-5 PRE-REGISTERED future observables with dates → these become tracking variables.
+7. Honesty rules: show arithmetic; licensed negatives only; no sell-side averaging; the deliverable is the table, not an opinion.
+**Value class:** converts unfalsifiable-today forward statements into (a) a present-tense consistency scorecard and (b) a pre-registered falsifier set — i.e., it manufactures gradeable structure from commentary (feeds who-caught-it/gradeable-fraction metrics).
+**Fluidity metadata:** v1 2026-07-12, N=1 first application same day (Kwak 2027-worst-year claim). Falsifier: if 3 consecutive applications produce only non-discriminating proxies OR readings that never differ from what block B + priors already implied, the block is decorative → merge into block B as a step. Re-eval with prompt-library falsifier 2026-08-11.
