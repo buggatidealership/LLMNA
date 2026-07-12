@@ -679,3 +679,13 @@
   - Origin: user framework 2026-07-12 (`wiki/newly-viable-frontier.md`) — "what can LLM-native business models enable that previously wasn't possible or economically unviable"
   - Scope: multi-agent enumeration of cost structures w/ cognition >~50% COGS + latent demand at lower price points ("only the rich could afford X") + impossible-at-any-price primitives; run the viability-flip screen (pre-2023 labor prices) on each candidate; rank into a Mode-B candidate register; apply toy-detector + Griffin attribution filter; condition design on the historical base-rate agent's H1/H2/H3 verdict (if H3, add graveyard denominator)
   - Linked: wiki/newly-viable-frontier.md, wiki/agent-native-organization.md, sector/end-demand-durability-model.md
+
+- [ ] **P1 / research / 2026-07-15** [INDP, AF, OPT, CAL] — AGENTIC-DAU runway instrument: build proxy basket + first reading (then monthly recurring)
+  - Origin: user-designed 2026-07-12 night (`wiki/newly-viable-frontier.md` §6b) — demand-runway metric for compute/memory vs agentic adoption curve
+  - Scope: define basket (Claude Code/Copilot/Cursor-class disclosed users; agent MAUs; API token volumes; enterprise seats); document per-component source+tier+date; compute first composite reading + honest uncertainty band; wire into end-demand-durability-model TVs; set monthly refresh
+  - Linked: wiki/newly-viable-frontier.md §6b, sector/end-demand-durability-model.md
+
+- [ ] **P2 / research / 2026-07-20** [INDP, AF] — Chokepoint-history study: ASML/TSMC precedent comparison
+  - Origin: user question 2026-07-12 ("has there ever been that amount of chokepoint?")
+  - Scope: historical chokepoints (Standard Oil, De Beers, Intel x86, Boeing/Airbus, others surfaced) vs ASML EUV/TSMC leading-edge on: capability-vs-supply control, replication time/cost, what happened to margins when substitutes arrived; deliverable = wiki entry + implications for TC-13/TC-16 chokepoint names
+  - Linked: wiki/newly-viable-frontier.md §6b
