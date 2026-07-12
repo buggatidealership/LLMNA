@@ -132,12 +132,15 @@ _Correction note (2026-07-06): this section previously claimed "L24 removed; tai
 
 _Prior version of this section carried N-counts 2-4× stale (e.g. TC-4 listed N=3 vs actual N=12) and omitted TC-10..14 entirely — corrected 2026-07-06._
 
-## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-05 EVE screenshots; FRESH-START baseline; DeGiro €95.406,73 = the whole book, N26 = bank only)
+## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-12 session-prime audit; SKHY entry 2026-07-10 added; re-verify against holdings.md on every screenshot)
 
-**2 held names (both DeGiro); re-verify at session start against holdings.md:**
-1. MURATA 336sh (MUR1) — €19.656,00 — **20,6%** (BEP €53,67; Q1 FY27 print ~late July, L22 test)
-2. SUMCO 626sh (S3X) — €17.058,50 — **17,9%** (BEP €22,31; wafer-hike thesis materializing)
-+ Cash €58.692,23 — **61,5%** — LOCKED until `portfolio/risk-envelope.md` exists; ALAB/BE intents SUPERSEDED.
+**3 held names (all DeGiro):**
+1. MURATA 336sh (MUR1) — ~20,6% at the 07-05 baseline (BEP €53,67; Q1 FY27 print 2026-07-31, L22/L27 test)
+2. SUMCO 626sh (S3X) — ~17,9% at the 07-05 baseline (BEP €22,31; Q2 pre-registered `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md`, print 2026-08-06)
+3. SKHY 37 ADS @ $173.45 (2026-07-10, ~6.0% at entry, computed) — bought at +19.7% ADR premium over Seoul ordinary (ABOVE the pre-stated ≤~5% gate, user override, both being graded); regular-way tape opens 2026-07-13; premium template + read ladder in `companies/SKHY/thesis.md`
++ Cash ~€53.1k after SKHY entry (per thesis entry facts) — governed by `portfolio/risk-envelope.md` v4 (capital ladder: floor €160k inviolable at total-wealth level; rungs gated on graded evidence).
+
+**⚠️ PRINCIPAL CONTEXT (booked 2026-07-11/12 — read `meta/user-source-profile.md` before any sizing talk):** purpose/capital-ladder/fluidity-rule/PF-register (PF-1 panic-exit = largest counterfactual cost; Rule #8 is its countermeasure); NO position cap (Q7); inputs are an evolving function — do NOT ossify single utterances. Standing directive 2026-07-12: if user input is required, ASK (queue: `meta/principal-questions.md`).
 
 **⚠️ 2026-07-05 STATE CHANGE (read before ANY position talk):** SKH 16 GDR + SNDK 9sh + KIOXIA ~€10k(N26) FULL-EXITED ~Jul-1/2 by user — EMOTIONAL exits, NOT falsifier fires, disclosed 2026-07-05; NBIS exited Jul-3. All four theses intact → watchlist-reference. Conversion-layer lesson in `predictions/lessons.md` (2026-07-05): sizing must track REVEALED drawdown tolerance; re-entries only via fresh envelope-gated decision packages. Do NOT propose redeployment before the risk envelope exists.
 
@@ -145,28 +148,28 @@ _Prior version of this section carried N-counts 2-4× stale (e.g. TC-4 listed N=
 
 _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 when stale — keep it synced on every portfolio screenshot._
 
-## §7. PENDING PREDICTIONS (refreshed 2026-07-06 harness audit; canonical ledger = `predictions/grading-log.md` — read its NOT-CANONICAL row tags)
+## §7. PENDING PREDICTIONS (refreshed 2026-07-12; canonical ledger = `predictions/grading-log.md` — read its NOT-CANONICAL row tags)
 
-- **Samsung Q2 prelim — resolves ~2026-07-07 (KEYSTONE):** canonical file = `predictions/2026-07-02-SAMSUNG-Q2-prelim-prediction.md` (rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn). ⚠️ A superseded duplicate file exists — grade ONLY the canonical one.
-- **NBIS Nasdaq-100 inclusion grades:** T+15 ~2026-07-07, T+30 ~2026-07-22 (primary adjudicator). T+5 (due 2026-06-27) NOT yet run — backfill with the T+15 grade. Position exited 07-03; grades still resolve.
-- **10-name earnings prediction board (registered 2026-07-02):** TSMC Jul-16 (checkpoint Jul-10), ASML Jul-15, SK Hynix ~Jul-29, MURATA Jul-31, SNDK late-Jul/Aug, KIOXIA Aug-07, ALAB Aug-11, SUMCO Aug-12, BE ~Jul-30.
-- **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) was never formally ledgered/3-layer-graded — backfill owed.
+- **SUMCO Q2 FY2026 pre-registration (print 2026-08-06):** canonical = `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (rev/OP/net bands + 5 guidance-language P's + three-outcome table).
+- **SKHY gate-vs-override grading LIVE:** premium template runs at every close from Jul-13 (`companies/SKHY/thesis.md` — anchors: WI +15.6% / entry +19.3-19.7% / gate ≤~5%); one-way fungibility + TSMC-ADR ~+21% precedent booked 2026-07-12.
+- **NBIS T+30 grade 2026-07-22** (primary adjudicator; T+15 graded CONFOUNDED 07-07).
+- **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix ~late-Jul (GP-bridge first run), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
+- **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
+- **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) 3-layer backfill owed; Samsung Q2 prelim GRADE completed (resolved Jul-7/8).
 
 _Prior version claimed "no active pending predictions as of 2026-06-24" — corrected 2026-07-06; the KIOXIA VLSI grade it referenced was completed 2026-06-26 (L30)._
 
-## §8. UPCOMING RECALIBRATIONS / AUDITS (next 90 days from 2026-06-24)
+## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
-- **2026-06-25** — Supply chain graph reconstruction (H1 capability application, monthly recurring)
-- **2026-06-26** — Two-bracket LLM-native experiment week-3 check
-- **2026-06-27** — Adversarial bear-case stress-test on held cohort (use B45-corrected base rates)
-- ~~2026-07-01~~ **RESOLVED 2026-07-06** — Two-bracket 30-day close: volume-confounded raw read; user decision KEEP BOTH → extended close **2026-08-06** with normalized metric (fires ÷ weekly commits); see CLAUDE.md hook entry + todo.md
-- **2026-07-04 (OVERDUE)** — BOTTLENECK-FORECAST monthly (Layer-3 power gap flagged per `sector/unbypassable-layers.md`; last_review still 2026-06-04)
-- **2026-07-11** — Codification rule + signal-density-detection 30-day net-positive check
-- **2026-07-12** — B45 priming-bracket effectiveness check (30-day audit) + session-prime maintenance discipline check
-- **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate)
-- **2026-07-24** — Monthly consolidated audit (next cycle)
-- **2026-07-31** — SNDK Q2 FY27 print + L17 candidate test
-- **2026-09-12** — B45 cohort base-rate quarterly recalibration
+- **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate) + Rule #16 30-day re-eval
+- **2026-07-24** — Monthly consolidated audit: first who-caught-it ratio + gradeable-fraction spot-sample + macro-anchor false-positive sampling (gap flagged in the 2026-07-12 audit)
+- **2026-07-27** — Rules #17 (ensemble) + #18 (dissent) re-evals
+- **2026-08-06** — Structural-output normalized-metric decision (fires ÷ commits) + SUMCO print
+- **2026-08-11** — Prompt-library re-eval (`meta/prompt-library.md` falsifier: unused = decorative)
+- **2026-08-12** — session-prime-cascade-hook falsifier check (hook built 2026-07-12)
+- **2026-09-11/12** — Question-generation asymptote falsifier + constraint-differential quarterly sweep + B45 cohort quarterly recalibration
+- **2026-10-11** — Worldview quarterly revision + end-demand-durability model re-eval
+- Past-due carried: BOTTLENECK-FORECAST monthly (last_review 2026-06-04) — run at next substantive weekday wake. 2026-07-12 audits COMPLETED (see `meta/recurring-audit-log.md`).
 
 ## §9. TRUTH-TIER TAGGING + SCOPED-CASCADE RULE (Principle #37 CANDIDATE — ADDED 2026-06-15, load-bearing for every analytical output)
 

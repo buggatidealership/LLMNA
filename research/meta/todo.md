@@ -537,12 +537,6 @@
   - Origin: `INDEX.md` monthly refresh cadence; tags.md sync with newly added principles/biases/lessons
   - Scope: regenerate INDEX held-positions section against `portfolio/holdings.md`; sync tags.md against actual file state; cross-source-log >30 days summarized into triangulation entries OR explicitly flagged as noise
 
-- [ ] **P1 / harness / 2026-07-12** [INFRA, CAL] — B45 priming-bracket effectiveness check (30-day audit)
-  - Origin: 2026-06-12 user-articulated cross-session-anchoring concern; H1+H3 priming-hook addition + CLAUDE.md banner shipped same day to counter pre-training magnitude conservatism
-  - Scope: grep session transcripts 2026-06-12 to 2026-07-12 for magnitude-categorizing language ("extreme", "elevated", "exhaustion-signaling", "above expectation", "stretched", "priced-to-perfection") combined with %-magnitude language. Cross-check: did each instance reference B45 / regime base rate / cohort empirical data? If yes → priming works. If no → priming failed; escalate to H2 (build deterministic magnitude-claim Stop hook)
-  - Metrics: POSITIVE = ≥80% of magnitude flags reference B45/regime; NEGATIVE = <50% reference (instructions not enforced); FALSIFIER = 3+ magnitude-categorizing instances with NO B45 reference → build Stop hook same day
-  - Linked: `meta/biases-watchlist.md` B45, `meta/hooks/llm-native-priming-hook.py`, `CLAUDE.md` regime-corrected-priors banner
-
 - [ ] **P1 / research / 2026-09-12** [CAL, INDP] — B45 cohort base-rate quarterly recalibration
   - Origin: B45 codification 2026-06-12 — empirical regime base rates need quarterly re-verification; falsifier in B45 specifies "if cohort median 18-month return drops below +60% in next measurement period, revert toward standard prior"
   - Scope: re-run the 15-name AI-infrastructure basket subagent calibration (same names + Kioxia reference) for Jan/Feb 2026 → Sep 2026 window. Compute new band counts. If extreme-outlier count drops below 2 of 15 (vs current 6 of 15), regime priors weakened — update CLAUDE.md banner + priming hook item 8 to reflect new base rate. If extreme-outlier count stays ≥4 of 15, regime priors confirmed — B45 promoted from CANDIDATE to CONFIRMED.
@@ -552,12 +546,6 @@
 - [x] **DONE 2026-06-26** — DURABLE HOOK ACTIVATION resolved via Architecture A (project-level `.claude/settings.json`), NOT laptop env-setup-script as originally planned. H1 test 2026-06-26 14:52:32Z confirmed Claude Code on Web reads `<repo-root>/.claude/settings.json` (diagnostic hook fired). Migration: all 16 research-OS hooks moved to `<repo>/.claude/settings.json` with absolute paths to `/home/user/Health-Calculators/research/meta/hooks/*.py`; `~/.claude/settings.json` emptied (backup at `~/.claude/settings.json.bak.pre-arch-a-2026-06-26`) to prevent merge duplication. Result: zero laptop dependency, zero install.sh dependency, zero ~/.claude/ dependency for hook persistence — settings ride with the repo via git clone. install.sh deprecated as primary activation; remains as emergency fallback. Full architecture rationale + verification protocol + migration history at `meta/hooks/DURABLE-ACTIVATION.md`. Falsifier: 2026-07-19 30-day audit checks `hook-fire-log.md` for fires on fresh-container sessions; if no fires, Architecture A failed and we fall back to install.sh + the original laptop-env-script approach.
 
 - [x] **DONE 2026-06-26** — Activate session-prime-hook + macro-anchor-hook in mirror `research/meta/hooks/settings.json` (USER AUTHORIZED 2026-06-26 via "yes try it and test it"). Both hooks now wired in mirror + installed to `~/.claude/settings.json` via `install.sh`. Smoke-tested: session-prime-hook returns full `session-prime.md` as `additionalContext` on SessionStart events (exit 0); macro-anchor-hook fail-open on empty input (exit 0). DURABILITY caveat: persistence across container restarts still depends on P0 item directly above (install.sh as Web UI env setup script) — laptop required for that piece. Until then, run `bash research/meta/hooks/install.sh` at start of every fresh cloud container (or trigger via keyword pattern TBD). 2026-07-12 effectiveness audit unchanged.
-
-- [ ] **P1 / harness / 2026-07-12** [INFRA, CAL] — Session-prime + B45 priming effectiveness joint audit (30-day check)
-  - Origin: 2026-06-12 cross-session-anchoring defense stack (CLAUDE.md banner + priming hook item 8 + session-prime force-load)
-  - Scope: grep transcripts 2026-06-12 → 2026-07-12 for (a) magnitude-categorizing language without B45 reference; (b) revert to pre-training base rates on AI-infra names; (c) session-prime.md staleness — was it updated when codifications happened?
-  - Metrics: POSITIVE = <2 magnitude-flag instances without B45 reference + session-prime updated within 7 days of every codification commit; NEGATIVE = ≥3 magnitude reverts OR ≥2 codifications without session-prime update → escalate to magnitude-claim Stop hook + session-prime-cascade-hook
-  - Linked: `meta/session-prime.md`, `meta/biases-watchlist.md` B45, `meta/hooks/llm-native-priming-hook.py`, `meta/hook-fire-log.md`
 
 - [x] **P2 / harness / 2026-06-24** [INFRA] — Session-prime curation rule integration into monthly audit
   - Origin: 2026-06-12 session-prime.md created with explicit cap rules (500-line hard / 250-400 target) — needs first monthly audit verification
@@ -590,12 +578,6 @@
   - Trade-off: more output friction (analytical responses must explicitly anchor to macro / tag claims / tie micro-to-macro); user explicitly accepted "slower replies, more accuracy" trade
   - Falsifier already in place per Critical Rule #15: 30-day fire-rate audit; retire if <3x/month OR false-positive >30%
   - Linked: `CLAUDE.md` Critical Rule #15; `meta/biases-watchlist.md` B46; `meta/hooks/macro-anchor-hook.py`
-
-- [ ] **P1 / harness / 2026-07-12** [INFRA, CAL] — Macro-anchor hook + B46 effectiveness audit (30-day check)
-  - Origin: 2026-06-12 codification of Critical Rule #15 + B46
-  - Scope: grep `meta/hook-fire-log.md` for macro-anchor-hook entries 2026-06-12→2026-07-12; cross-check transcripts for analytical outputs that PASSED the hook's pattern check but still exhibited B46 (framing-vs-institutional contradiction); if pattern persists despite tagging discipline → escalate to Workflow #9 mandatory pre-research subagent
-  - Metrics: POSITIVE = ≥3 fires AND each caught a genuine recall-anchored output AND user reports framing improvements; NEGATIVE = <3 fires (inert) OR ≥30% false-positive rate
-  - Linked: `meta/hooks/macro-anchor-hook.py`; `meta/biases-watchlist.md` B46; `CLAUDE.md` Critical Rule #15; `meta/hook-fire-log.md`
 
 - [x] **DONE 2026-06-12 PM** — Workflow #9 MACRO-FIRST RESEARCH full specification — completed early (was due 2026-06-20); written into CLAUDE.md Core Workflows section as Workflow #9 incorporating user's 5-step pipeline articulation verbatim (research pass → first-principles articulation → metric evaluation → future inference via triangulation + pattern-matching against P-register/TC-clusters → company tie-in). Quality bar + #8 relationship + origin failure + falsifier all specified. Artifact: CLAUDE.md §Workflow 9.
 

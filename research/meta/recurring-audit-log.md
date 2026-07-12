@@ -573,3 +573,27 @@ H1 + H2 + light audits combined token cost: ~452k subagent tokens + inline analy
 - **Tier-2 auto-fire gate: LIFTED (user decision 2026-07-06, same session).** Scans auto-fire deep verification on trigger criteria, no permission-ask; guards = per-wake envelope + 2.5M/week ceiling + R1/R2 instrumentation. Codified in `morning-feed-prompts.md` Tier-2 trigger-logic section.
 
 **06-26 pre-two-leg prototypes** (the only 2 zero-consumption artifacts) — superseded by the two-leg design same day; no action.
+
+## 2026-07-12 — Three P1 harness audits (B45 priming / session-prime / macro-anchor+B46) + Workflow #9 re-eval — COMPLETED (computed, Principle #43b)
+
+**Method note (binding for future runs):** session transcripts do not survive container recycling, so the pre-registered "grep transcripts" scope is not executable. Adopted instrument: (a) `meta/hook-fire-log.md` fire counts, (b) git-diff scan of lines ADDED to research/ in the window 2026-06-12→2026-07-12 (60,354 added lines scanned). Artifact-level, deterministic, reproducible.
+
+**1. B45 priming-bracket effectiveness — VERDICT: POSITIVE (keep; no Stop-hook escalation).**
+- Window-added lines with magnitude-categorizing language + a number: 111; of these, 41 lacked an on-line calibration marker — manual inspection shows they are source quotes, scenario labels (H5 "extreme volatility"), agent-relay text, and pre-existing Stage-4 labels, NOT decision-inputs calling regime moves extreme. Whole-file scan finds 91 magnitude lines WITH nearby B45/regime refs.
+- Behavioral spot-checks in window: Nanya −36% intra-cycle round-trip read as B45 regime beta (not exhaustion); TC-17 crowding measured against base rates rather than declared stretched. The falsifier threshold (≥3 uncalibrated magnitude-categorizing decision-inputs) is NOT met.
+- Caveat logged: line-level scanner overcounts because calibration markers often sit at section level; instrument is good enough for the audit question, not for per-line attribution.
+
+**2. Session-prime + maintenance discipline — VERDICT: HOOK WORKS, DISCIPLINE BROKEN → ESCALATION EXECUTED.**
+- session-prime hook-fire-log lines in window: 275 (cold-start injection firing reliably).
+- Staleness finding: session-prime.md last updated 2026-07-08 while 2026-07-09→12 shipped the heaviest codification run on record (prompt-library, end-demand model, SKHY entry, principal-profile suite, capital ladder) with ZERO session-prime updates — ≥2 skips = the §10 pre-registered escalation condition.
+- Actions taken today: (a) §6 held-cohort refreshed (SKHY added, principal-context pointer added); (b) §7/§8 calendar refreshed; (c) **`session-prime-cascade-hook.py` BUILT + wired into `.claude/settings.json`** (narrow new-codification-ID trigger, fail-open, falsifier 2026-08-12). Net-positive test: cost = ~100-line fail-open hook + small false-positive risk; benefit = kills the exact staleness class that degrades every future cold session's baseline calibration.
+
+**3. Macro-anchor + B46 — VERDICT: NOT INERT; KEEP; instrumentation gap noted.**
+- macro-anchor fire-log lines in window: 91 (vs <3/month inert threshold — passed by ~30×).
+- B46 recurrence: no new user-caught framing-vs-institutional contradictions booked since the 2026-06-12 origin (B46 remains N=1) — the failure class the hook targets has not recurred.
+- Gap: false-positive rate is not derivable from the log (fires aren't classified at fire time). Improvement candidate for the 2026-07-24 monthly audit: sample 10 fires, classify legit/false, decide whether the >30% falsifier needs live instrumentation.
+
+**4. Workflow #9 detectability re-eval (due 2026-07-12) — VERDICT: POSITIVE, KEEP.**
+- #9-shaped runs changed conclusions vs #8-alone in window: Nanya deep-dive (pre-registered H's + base-rate pattern-matching flipped a prospective buy to entry-gated watchlist); end-demand durability model (macro-first reframe of the OpenAI-leak question from "is demand real" to duration risk). Not generic landscape regurgitation → the collapse-to-preflight condition is not met.
+
+Next recurring: monthly consolidated audit 2026-07-24 (first who-caught-it ratio + gradeable-fraction readings); structural-output normalized-metric decision 2026-08-06; session-prime-cascade-hook falsifier 2026-08-12; B45 quarterly 2026-09-12.
