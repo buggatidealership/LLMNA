@@ -8,7 +8,8 @@
 3. **[P2, open since 2026-07-11] "Got access to my computer" checklist** — env vars for the 5 API keys + network allowlist hostnames + ROTATE the pasted Finnhub key (pre-burned) + routine re-bind + stale-branch cleanup. Needs a laptop session, not a chat answer.
 4. **[P2, asked 2026-07-11] DeGiro availability checks** — (a) Nanya 2408 TWSE ordinary (ISIN TW0002408002 / WKN 553579): tradable? (b) SKHY: orderable at Monday regular-way open? (c) German ADR tax note from the SKHY entry package: any broker documentation on Korean withholding via ADR?
 5. ~~[P3] Drawdown tolerance~~ — merged into #6.
-6. **[P2, asked 2026-07-12] ONE clarification on the capital ladder:** when you said "roughly a hundred k... hard for me to stomach downsides" — did you mean (a) ~€100k is the max BOOK SIZE you're comfortable running (adopted provisionally), or (b) ~€100k is the max LOSS you could stomach across everything? One word answers it: SIZE or LOSS.
+6. ~~ANSWERED 2026-07-12 (same day):~~ SIZE — and escalated in-message (100k→180k stretch→280k enthusiasm→160k-reserve rational). Consistency computed, ladder adopted: floor €160k / rungs 100k→140k→180k gated on graded evidence / €220k max at near-deterministic bar. Per `portfolio/risk-envelope.md` v3 + `meta/user-source-profile.md` §capital-ladder.
+7. **[P2, opened 2026-07-12] Phase-1 single-position cap ≤15%: yes or no?** — now fully anchored (path-quality rationale, not survival); SUMCO ~17.9% is the live case. One word answers it.
 
 ## ANSWERED (pointer log)
 - **#1 BOOK PURPOSE — ANSWERED 2026-07-12** (same day asked): full extraction at `meta/user-source-profile.md` §purpose; risk-envelope v2 derived same commit. Residual ambiguity spun into open #6 below.
