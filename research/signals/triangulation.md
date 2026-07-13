@@ -328,3 +328,7 @@ These have 2 sources already and could trigger on next confirming signal:
 2. **Custom silicon revenue at hyperscalers growing >50% YoY** — partial signal from AVGO commentary + Trainium/Maia mentions. Need an explicit hyperscaler disclosure.
 
 3. **Power becomes binding within 18 months** — VST/CEG re-rate + transformer lead time extensions reported. Need a specific hyperscaler announcing "delayed deployment due to power" to triangulate.
+
+## 2026-07-13 increments (body-note; index refresh at 2026-07-24 monthly audit)
+- **TC-10 N+1:** Meituan LongCat-2.0 — 1.6T-param frontier model trained entirely on ~50k domestic Chinese chips (Huawei/Moore Threads/MetaX; T1 Caixin Jul-7) = first frontier run with zero US silicon; sovereignty/compute-self-sufficiency leg. Per `cross-source-log/2026-07-13-mon-morning-scan-2leg.md`.
+- **TC-13 instance (12):** PJM asked DOE to order datacenters onto backup generation within 15 min of emergency signal (T2 Jul-3) — first formal compute-vs-residential rationing mechanism at a major grid operator. Same artifact.

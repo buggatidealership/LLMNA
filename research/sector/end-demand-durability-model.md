@@ -40,7 +40,7 @@ Arora buyer-side arithmetic (CNBC T1, 07-09, per day-state FINAL): AI pricing "m
 5. **Commerce cap-lift:** agentic-checkout relaunch at >100 merchants OR dispute-rights framework = embryo→growth reclassification.
 6. **Tankan-class macro reads:** quarterly — first print crediting AI demand SOFTENING at component layer = the earliest macro tell.
 
-**Scenario weights (my model, initial):** durable-share crossover BEFORE the funding leg reprices (soft landing into real demand) P~45; funding repricing FIRST (duration-shock, capex air pocket, then durable re-acceleration) P~35; demand-destruction proper (volume race lost, U8/F13 fire) P~20. Re-weight at each tell above.
+**Scenario weights (my model; REWEIGHTED 2026-07-13 — initial 45/35/20):** durable-share crossover first P~40; funding repricing FIRST P~40 (raised from 35 on funding-node tell #9 CONFIRMED: lending-side tightening — FT redemption data, PitchBook origination collapse, Fitch record defaults, Oracle-PIMCO bank-retreat; per `sector/ai-funding-shock-node.md` 2026-07-13); demand-destruction proper P~20. Re-weight at each tell.
 
 ## 5. Position linkage (Rule #10 cascade targets)
 - **SKHY/SUMCO/MURATA (held):** all three sit UPSTREAM of the paying-tier question; scenario 2 (funding-first) hits marks hard without breaking theses (Rule #8 applies); scenario 3 fires L-series/GP-bridge falsifiers properly.
