@@ -711,3 +711,8 @@
 - [ ] **P1 / harness / 2026-07-24** [INFRA, OPT, CAL] — DETECTOR-COVERAGE AUDIT (user hypothesis 2026-07-13: rules+patterns co-dependent; unruled data = patterns buried in plain sight)
   - Scope: enumerate ALL intake streams (tape, prints, contracts, flows, FX, insider filings, patents, hiring, credit, native-language legs) × which rule/detector each flows through (B45, freshness-parity, tells, templates, GM-marker...); output = coverage matrix + top-3 unruled streams + detector candidates for each; pairs with the TC hit-rate audit (patterns side) at the same monthly
   - Linked: meta/methodology.md, meta/biases-watchlist.md, signals/triangulation.md
+
+- [ ] **P2 / research / 2026-07-20** [OPT, INDP] — WEEKLY anomaly-clustering pass #1 (recurring weekly)
+  - Origin: user design 2026-07-13 (`signals/anomaly-register.md`) — cross-domain co-occurrence hunt over the anomaly register, segment-gate open for discovery, closed for action
+  - Scope: 1 agent reads register; finds n≥3 independent-source mechanism-rhymes across segments; outputs PC-candidates to cross-domain-pattern-register w/ falsifiers; ages out stale entries
+  - Linked: signals/anomaly-register.md, meta/cross-domain-pattern-register.md

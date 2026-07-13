@@ -434,3 +434,5 @@ TRIGGER-DATE vs SYSTEM-DATE RECONCILIATION (per Principle #40 codified 2026-06-2
 ```
 
 **These three additions** (time window + direct primary fetch + date reconciliation) **should be applied at next scan iteration** — fix the 3 prompt-optimization gaps caught in today's first fire.
+
+## Leg B patch (2026-07-13, anomaly-register intake): every Leg B prompt now requests a SECOND output bucket — "ANOMALIES (2-3 max): uncommon/surprising items with NO thesis contact and NO obvious segment home; one line each with source+tier+why-uncommon." These route to `signals/anomaly-register.md`, not the cross-source log. The investable digest bucket is unchanged.
