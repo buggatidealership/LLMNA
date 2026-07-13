@@ -18,5 +18,10 @@ WSJ Markets LIVE lead: **"SK Hynix Slumps in Korea After Rallying in U.S. Debut 
 
 **Position implication: HOLD all three — no size change — narrative layer confirms the contained read; SKHY US open + close (premium ladder) is today's remaining live instrument.** 🟡
 
-## 5. AI-bonds verification verdict (appended on landing)
-_(pending)_
+## 5. AI-bonds verification verdict (landed; 1 Opus ≈ 24.7k)
+- **ATTRIBUTION CORRECTION (own-intake catch):** the exact headline matches a **PitchBook LCD piece (~Jul-9, data through Jul-8, T2 specialist desk)** syndicated widely; WSJ authorship/date of the app item UNCONFIRMED (WSJ's own AI-bond front is an older ~June private-placement piece). Booked as PitchBook-LCD-sourced, this-week fresh, NOT today-breaking, NOT stale.
+- **Numbers (T2, arithmetic checks):** 2026 YTD AI-related issuance $218bn IG + ~$28bn AI-HY ≈ **$246bn = "quarter-trillion"** — correctly an ISSUANCE figure (distinct from ~$1.2tn outstanding Oct-25 / MS $570bn 2026 forecast / JPM $4.1tn-through-2030 denominators).
+- **NEW tell-class data → funding-node tell #10 (issuance-side demand fatigue):** Amazon $25bn drew only ~1.6× cover ("far below" March fervor; Bloomberg corroborated); **CoreWeave Jun-11 notes par → 96.50 (10.42%, >500bps, ~110bps wide of next DC name)** — secondary repricing on merchant-compute paper (Bloomberg Jul-2 independent); **Oracle CDS >125bps (2009 levels) + S&P at lowest IG rung** (date of S&P action unpinned — recheck; tell-#7-ADJACENT, Moody's leg still unfired); aggregate tech-IG spread near multi-decade lows = the strain is NAME-SPECIFIC bifurcation (contracted infra vs merchant compute), not to be averaged away.
+- **Delta vs held:** genuine SECOND AXIS — tell #9 was the LENDING side (redemptions/origination); tell #10 is the ISSUANCE/secondary side (cover compression + repricing of existing paper). Apollo Class B junior tranche untouched (still pre-print, uncontradicted). No primary deal PULLED — do not overstate.
+- **Consensus-arrival:** cluster arrived THIS WEEK, Bloomberg-led (Jul-1/2/7 pieces + FT) — marker fires for the AI-credit-saturation thread (same logic as turbine-castings Jul-10); the non-consensus residual = the specific tranche-level tells (#7/#8) and the coupling to memory-capex timing.
+- **Scenario weights UNCHANGED at 40/40/20** — the underlying data is Jul-1-9 vintage, partially contemporaneous with tell #9's confirmation set; no double-counting on same-week evidence.
