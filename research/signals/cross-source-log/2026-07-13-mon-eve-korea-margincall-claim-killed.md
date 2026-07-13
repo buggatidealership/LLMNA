@@ -15,3 +15,5 @@
 3. **B61/B40.2 exhibit:** regulator-attributed precision + same-day impossibility + 60-70× base-rate violation = the fabrication signature; killed pre-propagation. Do NOT let "1.2M/320k" enter contagion or capitulation-bottom reasoning anywhere.
 
 **Position implication: HOLD all three — no size change — real content = Tuesday-open flow watch (pre-registered above); fabricated content = quarantined.** 🟡
+
+**Cross-ref (same evening):** SKH ordinary drawdown from record pinned at −38.2% (₩2,987,000 Jun-25 → ₩1,845,000 today, computed; per `2026-07-13-mon-eve-newsletter-yongin-hbm4-verification.md`) — the honest scale of what the leveraged cohort was levered INTO.
