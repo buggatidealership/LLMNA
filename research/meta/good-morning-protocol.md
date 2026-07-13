@@ -52,3 +52,6 @@ Routines (once repo-fixed) automate the SAME spec at fixed clock times with no u
 
 ## Fluidity metadata
 Codified 2026-07-09 (user articulation). Falsifier: if 14 days of good-mornings produce Leg C routing tables where <20% of routed items ever touch a thread/thesis/register, the WSJ layer is decorative — trim to Markets+Tech sections only. Re-eval at the 2026-08-09 channel-model audit.
+
+## UNASKED-QUESTION STEP (added 2026-07-13, user-designed; applies to Leg C routing + all INGEST)
+For every ingested item (screenshot, brief, tweet, note), the routing entry must carry ONE line: **"Unasked: [macro] how might this matter to AI holistically that we haven't considered? / [micro] how might this touch the book?"** — generate the question NOT yet asked, don't force an answer. Questions that feel alive graduate to `signals/anomaly-register.md` or a watch item; the rest stand as records of considered-and-passed. Operationalizes the question-generation inventory (methodology, 2026-07-11) at the intake layer. Falsifier (re-eval 2026-08-13): if 30 days of unasked-question lines produce ZERO graduations to register/watch items, the step is ritual — retire it.
