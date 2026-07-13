@@ -682,3 +682,21 @@
   - Origin: user question 2026-07-12 ("has there ever been that amount of chokepoint?")
   - Scope: historical chokepoints (Standard Oil, De Beers, Intel x86, Boeing/Airbus, others surfaced) vs ASML EUV/TSMC leading-edge on: capability-vs-supply control, replication time/cost, what happened to margins when substitutes arrived; deliverable = wiki entry + implications for TC-13/TC-16 chokepoint names
   - Linked: wiki/newly-viable-frontier.md §6b
+
+- [ ] **P1 / research / 2026-07-14** [INDP, POS, CAL] — TSMC-ADR premium-history study (SKHY catch-down calibration)
+  - Origin: user belief-debt question 2026-07-13; premium = dominant near-term SKHY risk (event artifact read ladder)
+  - Scope: TSMC ADR-vs-Taipei premium behavior in Taiwan drawdown episodes (compress/cushion/lag + half-lives); Korean Seoul→ADR conversion-approval mechanics (what breaks the one-way valve); output = catch-down odds calibration into SKHY read ladder
+  - Linked: companies/SKHY/thesis.md, signals/events/2026-07-13-korea-semi-crash-adr-unwind.md
+
+- [ ] **P1 / research / 2026-07-16** [INDP, AF, POS] — Engineering-out state audit (SKHY falsifier #2 live gauge)
+  - Origin: user belief-debt question 2026-07-13; falsifier currently instrumented only by Aug FMS/Hot Chips gate reads
+  - Scope: PRODUCTION evidence (not papers) for KV-cache compression, sparse attention, flash-tier KV offload (HBF-adjacent), cheaper-DRAM-flavor architectures; quantify distance of "less memory-hungry technique does not exist yet" (newsletter Vik claim); output = engineering-out gauge + tripwire refresh
+  - Linked: companies/SKHY/thesis.md falsifier #2, sector/memory-gross-profit-bridge.md
+
+- [ ] **P2 / research / 2026-07-14** [CAL] — Cheap pins: HBM4 $4-5/Gb second source (TrendForce official) + S&P-Oracle rating-action date (tell-#7-adjacent)
+  - Linked: signals/cross-source-log/2026-07-13-mon-eve-newsletter-yongin-hbm4-verification.md, sector/ai-funding-shock-node.md
+
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, OPT] — TC-cluster predictive hit-rate audit (grade the pattern-matcher; fold into monthly)
+  - Origin: user harness-upgrade question 2026-07-13 — 18 TC clusters, zero measured hit rate
+  - Scope: for each ACTIVE cluster: did promotion LEAD subsequent prices/prints (lead time, direction accuracy)? retirement criteria per cluster; output = pattern-matcher calibration table + methodology note
+  - Linked: signals/triangulation.md, meta/recurring-audit-log.md
