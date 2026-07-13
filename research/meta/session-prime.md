@@ -153,7 +153,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **SUMCO Q2 FY2026 pre-registration (print 2026-08-06):** canonical = `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (rev/OP/net bands + 5 guidance-language P's + three-outcome table).
 - **SKHY gate-vs-override grading LIVE:** premium template runs at every close from Jul-13 (`companies/SKHY/thesis.md` — anchors: WI +15.6% / entry +19.3-19.7% / gate ≤~5%); one-way fungibility + TSMC-ADR ~+21% precedent booked 2026-07-12.
 - **NBIS T+30 grade 2026-07-22** (primary adjudicator; T+15 graded CONFOUNDED 07-07).
-- **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix ~late-Jul (GP-bridge first run), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
+- **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix Jul-29 (T1-pinned 07-13; GP-bridge first run + pre-registered miss-isn't-bearish ladder in SKHY thesis), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
 - **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
 - **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) 3-layer backfill owed; Samsung Q2 prelim GRADE completed (resolved Jul-7/8).
 
