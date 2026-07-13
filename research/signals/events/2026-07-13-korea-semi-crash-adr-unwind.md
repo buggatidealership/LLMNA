@@ -1,0 +1,25 @@
+# EVENT 2026-07-13 — Korea semi crash: SK Hynix −15.37% (largest one-day fall on record), KOSPI circuit breaker; Taiwan DIVERGED
+
+**Verified (1 Opus agent ≈ 34k, Korean/Japanese/Chinese primaries; per verdict table in agent transcript; user TradingView reads corroborated):**
+- **000660 close ₩1,845,000 −15.37% — largest single-day fall on record** (fnnews 종합2보 + Bloomberg/CNBC multi, T2 near-T1). Samsung −10.70% (₩254,500). **KOSPI broke 7,000; sell sidecar 10:34; level-1 circuit breaker 13:28:32 (7th of year, 20-min halt); intraday −7.96%** (close not cleanly pinned — band high-6,800s to ~7,000, honest gap). Flows intraday: **foreign net −₩2.235tn, institutions −₩0.573tn, retail +₩2.723tn**.
+- Nikkei −1.92% (67,242.73); **Kioxia ~−13%** (exact % vendor-soft); Tokyo Electron/Advantest down.
+- **TAIWAN DIVERGED — the falsifying datum vs "cycle broke": TWSE +0.06%, TSMC +1.04% (NT$2,440) on its record June print; Nanya spiked +7% intraday on the 79.5% GM print before Hynix contagion turned it slightly negative** (udn T2). Memory fundamentals printed STRONG the same day Korea crashed.
+
+## Driver ranking (press attribution + adversarial read; do not collapse)
+1. **Sell-the-news post-ADR-listing profit-taking** (most-cited: Bloomberg/CNBC/Nikkei/Korean press) — the listing WAS the event; Seoul cashed out the Monday after.
+2. **KIS below-consensus 2Q preview** (this morning, verified in `cross-source-log/2026-07-13-mon-kis-skh-preview-verification.md`) — freshest company-specific catalyst; note KIS KEPT Buy/₩3.8m target; the market traded the headline layer of mechanics we pre-registered hours earlier.
+3. **ADR-flow rotation:** Bloomberg — ordinary now at **>20% discount to the ADR** (premium EXPANDED from Fri ~15.6%); US institutions rotating swaps→cash ADR.
+4. **Leverage/ETF supply-demand unwind** (etnews) — amplifier, not initiator. **= TC-17's predicted mechanism firing: crowding+leverage transmitted an ESTIMATES-layer headline into a record down-day → TC-17 N+1 (validation-class instance).**
+5. Hormuz/oil risk-off backdrop (secondary). 6. HBM-ASP fear = inside driver #2, not double-counted.
+
+## Adjudication (my model, 🟡)
+**Korea-centric positioning/valuation/leverage unwind around the listing event — NOT a memory demand/pricing break.** Same-day falsifiers against the bearish read: TSMC record June (T1), Nanya 79.5% GM print, TrendForce Q3 contract +13-18% carried. No written falsifier fired for any held name (Rule #8 binding; PF-1 countermeasure live — this is the exact January-pattern weather, held).
+**B45 register note:** −15.37% record single-day extends the regime's magnitude profile to the DOWNSIDE tail — the calibration file's ±5-12% routine band under-modeled downside events too; feed to the 2026-09-12 quarterly recalibration.
+
+## Position state (computed scenarios in chat log; entry facts per thesis)
+- **SKHY 37 ADS @ $173.45:** premium EXPANDED >20% (Bloomberg) = ADR holders cushioned vs the Seoul crash TODAY; **the dominant position-specific risk is now CATCH-DOWN (ADR converging down to the ordinary)** — a market-structure variable, not thesis content (read-ladder discipline). Read ladder extended: premium >+20% sustained = extreme closed-end state, mark protected but fragile; catch-down to Fri-premium (~15.6%) ≈ $142 ≈ −18% vs entry (computed). Tonight's first regular close = the extreme-conditions ladder test with leveraged ETFs live day one.
+- SUMCO −2.12% (mild, user T2); MURATA −6.51% (booked this morning). Cash position unchanged.
+**Entry-grading note:** the +19.7% entry premium vs ≤~5% gate now grades against an EXPANDED premium — the override hasn't been punished via premium compression but via the underlying's crash; both legs keep grading at the Jul-29 print.
+
+## Cascades (same commit): SKHY thesis event section; SUMCO/MURATA back-refs; TC-17 N+1; B45 note above; user SaaS-rotation observation (DDOG/NOW green premarket, T2-user unverified) logged as pattern-candidate N=2 (user-observed; third instance → register entry).
+**Position implication: HOLD all three — no size change — no falsifier fired; adjudicators: tonight's SKHY close (premium ladder extreme test), Tuesday Taiwan/US follow-through, Jul-15 CXMT pricing, Jul-29 SKH print (GP-bridge #1 + pre-registered miss-isn't-bearish ladder).** 🟡

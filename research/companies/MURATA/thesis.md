@@ -1137,3 +1137,5 @@ Per `signals/cross-source-log/2026-07-10-nvda-ndr-memory-jukan-cycle-anthropic-h
 **2026-07-13 MON — funding-node tell #9 back-ref (Rule #10):** per `sector/ai-funding-shock-node.md` — lending-side tightening confirmed; end-demand scenario weights 40/40/20 (my model). MURATA exposure: server-BOM orders lag credit tightening by ~2 quarters in the funding-first branch; diversified mix cushions. Position implication: HOLD — no size change — Jul-31 print is the next instrument. 🟡
 
 **2026-07-13 — TSMC June monthly back-ref (Rule #10):** record June / Q2 top-of-guidance (artifact above, H1) — AI server build momentum supportive for the MLCC/BOM leg; today's −6.5% Tokyo mark reads as positioning, not demand (B45). Position implication: HOLD — no size change — Jul-31 print next. 🟡
+
+**2026-07-13 EVENT back-ref (Rule #10):** Korea semi crash (per `signals/events/2026-07-13-korea-semi-crash-adr-unwind.md`) — Murata −6.51% inside the regional risk-off; no falsifier contact; Jul-31 print unchanged. Position implication: HOLD — no size change. 🟡

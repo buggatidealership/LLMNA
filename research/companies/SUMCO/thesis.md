@@ -578,3 +578,5 @@ Per `signals/cross-source-log/2026-07-10-nvda-ndr-memory-jukan-cycle-anthropic-h
 **2026-07-13 MON — funding-node tell #9 back-ref (Rule #10):** per `sector/ai-funding-shock-node.md` — lending-side tightening confirmed; scenario reweight 40/40/20 (my model). SUMCO exposure: funding-first branch = capex-order air pocket risk with a lag (wafer LTAs cushion, per TC-18); falsifier chain unchanged. Position implication: HOLD — no size change — Aug-6 pre-registration stands. 🟡
 
 **2026-07-13 — TSMC June monthly back-ref (Rule #10):** record NT$442.68bn / Q2 top-of-guidance (artifact above, H1 grade) — foundry wafer-demand supportive 2nd-order for the LTA thesis. Position implication: HOLD — no size change — Aug-6 pre-registration unchanged. 🟡
+
+**2026-07-13 EVENT back-ref (Rule #10):** Korea semi crash (per `signals/events/2026-07-13-korea-semi-crash-adr-unwind.md`) — SUMCO −2.12% (mild; user T2); Korea-centric unwind, Taiwan diverged, wafer fundamentals untouched (TSMC record same day). Position implication: HOLD — no size change. 🟡
