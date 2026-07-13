@@ -17,7 +17,7 @@
   - Origin: user request + v2 refinement (verbatim-adjacent: "as if somebody asked you in 1999 how end consumers would interface with the Internet and what applications would be used at scale... a lot of people would not have foreseen Facebook or Google. That's what I want to hone in on. Doesn't have to be 2030 — any year"). SPEC v2 (supersedes v1 legs 1-2; keeps 3-5): **Leg 0 RETRODICTION-FIRST** — fit the forecasting method on TWO historical cycles (1999 internet, 2007 mobile) with the loser-gate (method must retrodict pets.com/WAP/push-tech failures too, else hindsight cosplay; pre-training contamination stated: the METHOD is the deliverable, not outcome memory). **Leg 1 PRIMITIVES-NOT-APPS** — what AI makes FREE + what NEW primitive has no pre-AI analog (persistent personal memory/context, delegated agency, synthetic relationships) — winners live on primitives, not better chatbots. **Leg 2 EMBRYO INVENTORY** — today's at-scale consumer residues ranked SixDegrees-2026 vs already-winner (usage curves, not press). **Leg 3 LATTICE + SURPRISE QUOTA** — each branch needs ≥1 mechanism-backed candidate as absurd-sounding today as life-uploading in 1999. Target year derived from the analogy's own timing structure (infra inflection + 8-10yrs ≈ 2030-2033). RETAINED from v1: waypoints wired to catalyst clock/calibration ledger; decision surface (venues/layers capturing the consumer surge per branch → book implications); sealed-diff protocol (user's picture only after mine is committed).
   - Scope: weekend-class, ~15-25 agent fires; SHARE EVIDENCE with funding-shock refresh + end-demand P1 (legs overlap). Fires when user sends the input block.
   - Linked: sector/ (new file), meta/successful-deployment-search-spec.md, sector/ai-funding-shock-node.md
-- [ ] **P1 / USER-ACTION / 2026-06-27** [POS] — DeGiro/M26 availability check on REIA-surfaced investable names (do tonight when time allows)
+- [ ] **P1 / USER-ACTION / 2026-07-13** [POS] — DeGiro/N26 availability check on REIA-surfaced names — LIST HANDED TO USER 2026-07-13; RESULT #1: Nanya 2408.TW NOT available on DeGiro or N26 (user-verified) → watchlist-INSTRUMENT only
   - Origin: 2026-06-27 REIA Batch #2-4 (power / CPU-server / CXMT) per `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md`. All are watchlist-level / PRE-THESIS — availability check gates whether they're worth a Workflow #9 thesis build.
   - ⭐ PRIORITY (EU-accessible + fills Layer-3 power + EU-sovereign-AI gaps) — check these first:
     - [ ] Siemens Energy — ENR (Xetra/Frankfurt)
@@ -50,7 +50,7 @@
   - Scope: phases P1-P3 per spec §5; kill condition = 30 refreshes of pure narration.
   - Linked: `sector/market-state-function-spec.md`, `sector/ai-funding-shock-node.md`, compute-layer todo item.
 
-- [ ] **P1 / research / 2026-07-08** [INDP, AF, POS] — ANTHROPIC IPO DECISION PACKAGE (pre-registered BEFORE any listing exists — user proposed "sell all, buy the IPO big stack" 07-08; dissent delivered, middle path = build the framework now)
+- [ ] **P3 / research / 2027-01-15** [CAL] — ANTHROPIC IPO DECISION PACKAGE — CALENDAR-PARKED 2026-07-13 per user decision (no IPO before >=2027; B63-mandatory package pre-registered in meta/principal-questions.md; revisit at first S-1/listing news or 2027-01-15, whichever first). Was: P1 ANTHROPIC IPO DECISION PACKAGE (pre-registered BEFORE any listing exists — user proposed "sell all, buy the IPO big stack" 07-08; dissent delivered, middle path = build the framework now)
   - Origin: user hypothesis 2026-07-08 (`signals/cross-source-log/2026-07-08-user-hypothesis-expectations-treadmill-sell-all-buy-anthropic-ipo.md`); B63 governs the ENTIRE package (model-provenance — adversarial treatment mandatory on every bull claim).
   - Scope: (a) valuation-band framework — what $-valuation makes the entry asymmetric vs the ~$965B Series H / ~$47B RRR anchors (compute forward-revenue multiples vs listed comps at their IPOs); (b) entry-route menu with pros/cons: IPO-day retail vs post-lockup vs post-first-earnings vs not-at-all; (c) allocation CAP pre-committed at Active tier (3-8%) — NOT "big stack" — with the livelihood-correlation argument written in; (d) the exposure-overlap map (user already has Anthropic exposure via workflow dependence + the semi book IS lab-capex-downstream); (e) Rule #17 ensemble at any execution decision; (f) trigger to activate: public F-1/S-1 flip or exchange/date confirmation (currently T3 speculation only).
   - Linked: `meta/private-tracker.md` (Anthropic), `sector/application-layer-framework.md` §capture-stack, the 07-08 hypothesis artifact.
@@ -117,7 +117,7 @@
 
 ### P1 — High priority (next session — added 2026-05-28 end of session)
 
-- [ ] **P1 / research / 2026-06-09** [INDP, AF, POS] — Structural Winners Cohort dissection — name-by-name deep-dive
+- [ ] **P2 / research / 2026-08-15** [INDP, AF, POS] — Structural Winners Cohort dissection — name-by-name deep-dive
   - Origin: 2026-06-08 PM user-articulated 4-way structural winner + 12-architecture resilience synthesis; user directive: "save that entire list, and we can talk about this list tomorrow... maybe dissect them a little bit more"
   - Scope: Read `research/meta/structural-winners-cohort.md` — go through the 27 ranked names tier-by-tier. Priority dissection order: TIER 1 NEW (Shin-Etsu Chemical 4063.T + Nidec 6594.T), then TIER 2 cluster (TEL + AMAT + LRCX + KLA + ASML + APH + Hirose + TXN + ADI), then TIER 3 single-dependency names. Per Principle #36 multilingual parallel for Japan TSE names (Japanese press for Shin-Etsu + Nidec + TEL + Hirose + Daikin + Lasertec + HOYA + Harmonic Drive + Nabtesco).
   - Linked: `meta/structural-winners-cohort.md` (THE list); `signals/cross-source-log/2026-06-08-*` (all today's cascades supporting the synthesis)
@@ -168,7 +168,7 @@
   - Falsifier: If Kioxia drops >10% pre-VLSI Symposium OR if VLSI presentation doesn't materially validate MSA-CBA architecture, entry timing was wrong
   - Linked: `companies/KIOXIA/thesis.md`, `signals/cross-source-log/2026-06-02-kioxia-nand-volume-shock-verification.md`
 
-- [ ] **P1 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) — **framing corrected 2026-07-06: SNDK EXITED ~07-01/02; print watch stands as watchlist-reference (L27 cohort test + TC-14 tell), size-up language below is HISTORICAL, deployment envelope-locked.** (Note: 'L17' below = the tombstoned number, see lessons.md — the live framework is L14/L14-v2.)
+- [ ] **P2 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) — **framing corrected 2026-07-06: SNDK EXITED ~07-01/02; print watch stands as watchlist-reference (L27 cohort test + TC-14 tell), size-up language below is HISTORICAL, deployment envelope-locked.** (Note: 'L17' below = the tombstoned number, see lessons.md — the live framework is L14/L14-v2.)
   - Origin: SNDK 5.2% under-sized vs 8-12% Active-Core target; Stage 2-3 + HIGH-CONCRETE CATEGORY EVENT markers ($42B backlog + Vera Rubin 1,152 TB SSD + MSA-CBA validation imminent + Vera BlueField-4 STX GIDS mandate). User considering ~€5-6K SIZE UP parallel to Kioxia initial entry.
   - Scope: (a) Track SNDK Q2 FY27 print (~late July 2026) — does revenue exceed Q4 FY26 $7.75-8.25B guide? Does backlog grow beyond $42B + 5 contracts? Does NCNR enforceability framework hold under audit?; (b) Stock reaction T+24h validates L14 framework forward-application; (c) If actual reaction +25-40% per Stage 2-3 + CATEGORY framework, L17 codified at N=2 (joint with Kioxia VLSI test)
   - Falsifier: If SNDK Q2 FY27 only +5-10% despite CATEGORY markers, L17 forward-application falsified — L14 only applies backward
@@ -598,13 +598,6 @@
   - Scope: 90-day watch for (a) ITC formal acceptance of Section 337 investigation (procedural milestone); (b) N=2 instance — any other hardware-IP enforcement action targeting AI chip flow; (c) hyperscaler/foundry public commentary
   - Outcome decision tree: ITC accepts + N=2 emerges → promote TC-11 CANDIDATE → ACTIVE → cascade to MRVL/NVDA watchlist + held MRVL thesis update; ITC declines OR no N=2 → keep candidate; close at 2026-09-13 monthly review
   - Linked: TC-11 in `signals/triangulation.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
-
-- [ ] **P1 / research / 2026-06-15** [INDP, AF, POS] — Sizing-decision threads if user proceeds with TC-10 + Layer-3 candidates
-  - Origin: 2026-06-14 AM 2-subagent parallel research (`signals/cross-source-log/2026-06-14-eu-sovereign-AI-and-corrected-layer-3-bypass-2subagent.md`) surfaced 4 candidates closing 2 harness gaps:
-    - **TC-10 (EU-sovereign-AI):** Capgemini (CAP.PA) + Deutsche Telekom (DTE.DE) as cleanest pair, both ~12x fwd P/E, both Degiro-accessible
-    - **Layer-3 power-bypass (Time-to-Power):** Bloom Energy (BE) as ONLY empirical near-zero-TTQ name (55-day Oracle deployment); Vertiv (VRT) for density-bypass
-  - Scope IF user gives go: build full thesis files for top 2 (likely BE + one EU sovereign-AI name) with Bull/Bear/Base + falsifiers; verify current pricing T2 pre-sizing; size at 2-3% Active-band each on entry; integrate with existing held cohort joint state
-  - Falsifier of going forward: user prefers to wait for monthly audit 2026-06-24 cycle to fold into supply-chain reconstruction first
 
 ---
 
