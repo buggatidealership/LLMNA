@@ -700,3 +700,14 @@
   - Origin: user harness-upgrade question 2026-07-13 — 18 TC clusters, zero measured hit rate
   - Scope: for each ACTIVE cluster: did promotion LEAD subsequent prices/prints (lead time, direction accuracy)? retirement criteria per cluster; output = pattern-matcher calibration table + methodology note
   - Linked: signals/triangulation.md, meta/recurring-audit-log.md
+
+- [ ] **P1 / research / 2026-07-15** [INDP, AF, BOT, OPT] — BOTTLENECK-FORECAST (Workflow #7, OVERDUE since ~Jul-4) run as NEXT-REGIME sweep
+  - Origin: user broadened-Q1 2026-07-13 + mission statement ("forecast the NEXT bottleneck before consensus"); this week's consensus-arrival markers (castings WSJ, AI-credit Bloomberg, HBM4 syndication) = the CURRENT bottleneck is found; edge has moved
+  - Scope: what binds 2027-28 AFTER memory capacity lands (Yongin pull-forwards = the clock): TC-13 non-bypassable power pinches, TC-16 glass/CCL, packaging, HBF-era memory hierarchy, unknowns; beneficiaries + confirm-signals + accessible expressions; update sector/bottlenecks.md last_review (Rule #5)
+  - Linked: sector/bottlenecks.md, signals/triangulation.md TC-13/TC-16, wiki/newly-viable-frontier.md
+- [ ] **P2 / research / 2026-07-17** [INDP, OPT] — EU coverage-gap audit: Leg B German-sweep "nothing" = reality or detection failure? (constraint-differential applied geographically)
+  - Scope: systematic DE/FR/NL AI-supply-chain enumeration vs our sweep prompts; either licensed clean-negative or blind-spot map + prompt-library patch
+  - Linked: meta/prompt-library.md block A, meta/morning-feed-prompts.md
+- [ ] **P1 / harness / 2026-07-24** [INFRA, OPT, CAL] — DETECTOR-COVERAGE AUDIT (user hypothesis 2026-07-13: rules+patterns co-dependent; unruled data = patterns buried in plain sight)
+  - Scope: enumerate ALL intake streams (tape, prints, contracts, flows, FX, insider filings, patents, hiring, credit, native-language legs) × which rule/detector each flows through (B45, freshness-parity, tells, templates, GM-marker...); output = coverage matrix + top-3 unruled streams + detector candidates for each; pairs with the TC hit-rate audit (patterns side) at the same monthly
+  - Linked: meta/methodology.md, meta/biases-watchlist.md, signals/triangulation.md
