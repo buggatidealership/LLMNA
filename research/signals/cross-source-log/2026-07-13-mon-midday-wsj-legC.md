@@ -1,0 +1,22 @@
+# 2026-07-13 MON MIDDAY — WSJ screenshots (9 pages, Leg C routing; T2 headline-layer)
+
+## 1. NARRATIVE-LAYER VERDICT (answers the standing question from the event artifact)
+WSJ Markets LIVE lead: **"SK Hynix Slumps in Korea After Rallying in U.S. Debut — AI stocks are selling off as investors question whether the dizzying trade... has more room to run."** Framing = AI-positioning/froth question, NOT the Fed/inflation reflex chain. Consensus narrative landed closer to the verified read (positioning unwind) than the reflex-arc story — the "Korea-structure-specific" layer (ADR rotation, leverage unwind, CB mechanics) remains ours alone (per `signals/events/2026-07-13-korea-semi-crash-adr-unwind.md` driver ranking).
+**Futures datum (screenshot chart, FactSet, as of 7:20 ET):** Nasdaq-100 futures recovered −1.5% → ~−1.0%; Dow ~flat; index tickers printing green in-app. **US importing the TAIWAN story (contained), not the Korea story — consistent with the dispersion diagnostic.** SKHY first regular session (opens 15:30 CET) = the live test; premium template runs at close.
+
+## 2. NEW + VERIFICATION-WORTHY
+- **"The Quarter-Trillion-Dollar Onslaught of AI Bonds Is Testing Investors' Limits"** (WSJ Markets) — funding-node thread reaching WSJ Markets the morning after tell #9 confirmed; verifier in flight (date, coverage of the ~$250bn figure, NEW tell-class data vs held, consensus-arrival assessment). Verdict appended below on landing.
+
+## 3. MACRO/POLITICS COLOR (no thesis contact; logged)
+- **Senator Lindsey Graham died suddenly (aortic tear, preliminary)** — Top Stories cluster ("Scramble to Replace", "Final Mission: Saving Ukraine"). SC governor to fill seat quickly. 3rd-order watch only (P~40 my model that Ukraine-funding politics shift becomes a market layer): Ukraine-aid champion gone; no AI-sector contact.
+- **Hormuz continuation:** "U.S. and Iran Trade New Rounds of Attacks"; "Iran Rushing Its Own Ships Through"; nuclear-deal pessimism (Jul-10) — consistent with the verified morning state (Brent ~$79); no update needed.
+- "Think the S&P 500 Looks Cheap? Read the Fine Print" — valuation-narrative color, TC-17-adjacent sentiment texture.
+
+## 4. RECYCLES / ALREADY-CARRIED (B40.1 killed)
+- **Apple's 'Thermonuclear' Response to the OpenAI Threat** — analysis layer on the Jul-10 suit we hold verified (5:26-cv-07078, OpenAI entities as defendants); "litigation to delay a rival" = narrative escalation noted in private-tracker context, NO new facts detected at headline layer.
+- Anthropic-political-risks piece = Jul-8, already referenced in private-tracker. Turbines/castings = Jul-10, TC-13 instance 11. AI-drugs-timeline (Jul-12), Intel's Insiders, iPhone pricing, Media-deals, Bangkok fire, foie gras = color/non-domain, no routing.
+
+**Position implication: HOLD all three — no size change — narrative layer confirms the contained read; SKHY US open + close (premium ladder) is today's remaining live instrument.** 🟡
+
+## 5. AI-bonds verification verdict (appended on landing)
+_(pending)_
