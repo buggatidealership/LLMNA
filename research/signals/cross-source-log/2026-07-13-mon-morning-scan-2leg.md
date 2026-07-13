@@ -33,3 +33,9 @@ Private-credit lending-side tightening corroborated ≥4 independent T1/T2 legs 
 ## Open at publication: TSMC June number (release crossed 13:30 TWT; pull agent in flight — appended on landing).
 
 **Position implication: HOLD all three — no size change — tell #9 is one notch upstream of any falsifier (Rule #8 pre-committed: funding-first branch hits marks, not theses); today's adjudicators = SKHY first regular close (premium ladder) + TSMC June print + CXMT pricing runway.** 🟡
+
+## TSMC June pull — appended ~14:00 TWT (number still in index-lag; re-poll armed)
+- Number NOT retrievable ~30 min post-release (crawler lag + primaries 403 to agent fetcher AND to house curl — sec.gov/pr.tsmc.com not on the proxy allowlist → added as concrete case for today's allowlist session).
+- **Locked anchors for the print read (T1/computed):** Apr NT$410.73bn + May NT$416.98bn = NT$827.71bn; TSMC Q2 guide US$39.0-40.2bn ≈ NT$1,236-1,274bn @~31.7 → **implied in-guidance June = NT$408-446bn, midpoint ≈ NT$427.6bn (computed)**. Our carried NT$400-440bn consensus band validated.
+- **YoY-BASE CAVEAT (grade with this):** June-2025 base ≈ NT$263.8bn (back-solved: May-25 320.5 × (1−0.177) per the 2025 TrendForce piece) — depressed by strong-TWD; a ~NT$425bn print reads optically ~+60% YoY but the base inflates it; MoM vs May's 416.98 is the honest demand read.
+- **Stale-recycle trap flagged:** TrendForce "June revenue plunges 17.7% MoM" = JUNE 2025 — do not ingest as current.
