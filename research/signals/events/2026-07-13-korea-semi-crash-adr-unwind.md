@@ -23,3 +23,5 @@
 
 ## Cascades (same commit): SKHY thesis event section; SUMCO/MURATA back-refs; TC-17 N+1; B45 note above; user SaaS-rotation observation (DDOG/NOW green premarket, T2-user unverified) logged as pattern-candidate N=2 (user-observed; third instance → register entry).
 **Position implication: HOLD all three — no size change — no falsifier fired; adjudicators: tonight's SKHY close (premium ladder extreme test), Tuesday Taiwan/US follow-through, Jul-15 CXMT pricing, Jul-29 SKH print (GP-bridge #1 + pre-registered miss-isn't-bearish ladder).** 🟡
+
+**EVE ADDENDUM (per `cross-source-log/2026-07-13-mon-eve-korea-margincall-claim-killed.md`):** KOSPI official close PINNED 6,806.93 −8.95% (−669pt, T2 multi — replaces the band). Viral "1.2M margin-called/320-360k wiped" claim = FABRICATED-LIKELY (60-70× worst-day base rate, T+1 mechanics impossible, single Xueqiu source); real leverage stats: 빚투 ₩37.74tn record, Jul-9 반대매매 ₩142.2bn ratio 10.2%. **Pre-registered knock-on: Tuesday Jul-14 Seoul open = mechanical forced-sale wave (반대매매 T+1) → read any gap-down at open as FLOW not information; premium template + Rule #8 discipline apply.**
