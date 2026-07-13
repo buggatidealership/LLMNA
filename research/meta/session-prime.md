@@ -87,6 +87,7 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **B62** (CANDIDATE N=1, origin 2026-06-15; RENUMBERED from B47 on 2026-07-06 — B47 was already taken by efficiency-driven demand destruction in `biases-watchlist.md`) — Pre-training lead-time conservatism: estimates of gov/regulatory lead-times are wrong by 2-10×. Overstates fast-track gov action; understates regulated EU processes. Every gate-timing estimate gets retroactively case-calibrated. See §9b.
 - **B60** (CANDIDATE N=1, origin 2026-07-01) — Portfolio-anchored ingest bias: discovery legs must stay unanchored to held names.
 - **B61** (CANDIDATE N=1, origin 2026-07-03) — LLM-generated bottleneck fiction as an input class: unsourced single-company monopoly-bottleneck theses from social sources get the full mechanism gauntlet regardless of sharer track record.
+- **B64** (CANDIDATE N=1, origin 2026-07-13, user-flagged) — Model-affinity contamination: Claude-family models reportedly favor NOW in pick-a-stock settings; house NOW thesis cites Anthropic T1 material = closed-loop risk. Any NOW decision package: adversarial pass mandatory, Anthropic-sourced validation corroborating-only, case must survive with Anthropic evidence removed.
 
 ## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
 
