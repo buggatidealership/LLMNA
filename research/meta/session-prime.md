@@ -160,6 +160,20 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 
 _Prior version claimed "no active pending predictions as of 2026-06-24" — corrected 2026-07-06; the KIOXIA VLSI grade it referenced was completed 2026-06-26 (L30)._
 
+## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
+
+- **MACRO STATE CHANGED:** Hormuz CLOSED (Iran), Brent ~$85 (was ~$79), 10Y 4.61%; June CPI COOL (−0.4% MoM, **core FLAT**, 3.5% YoY) → Sept hike odds ~63%; live tension = cool-backward-data vs hot-forward-oil. Per `cross-source-log/2026-07-14-tue-cpi-print-reaction.md` + `...-tue-morning-scan-3agent.md`.
+- **SKHY LIVE:** Mon US close **$152.35 (−9.32%; position −12.16% vs $173.45 entry)**; premium >+20% EXTREME branch sustained (catch-down targets in thesis). Seoul −15.37% record Jul-13 → **Tue forced-sale FLOW read CONFIRMED** (closed +3.69%). Jul-29 GP-bridge now a NAMED duel: KIS branch-a (₩60.4tn/mix-drag) vs SemiAnalysis branch-b (implied ₩67.6-72.2tn/commodity-torque).
+- **ENTERPRISE MEMORY PULL-FORWARD** (IBM warning Jul-14, BROAD-corroborated TD Synnex/MS/Dell/HPE): SKHY near-term REINFORCE; MS "borrowed-2027-demand" now consensus-adjacent → tail-discount deepens. `...-tue-ibm-warning-enterprise-memory-pullforward.md`.
+- **Funding-node tell #11** (asset-level distribution) — 3 axes now (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
+- **NEW INSTRUMENTS:** `meta/education-ai-adoption-instrument.md` + `meta/lab-scaffolding-usage-instrument.md` (feed agentic-DAU; §6b demand-side verdict = general assistants win, scaffolds created-and-abandoned; **15% seat-activation haircut prior**).
+- **CYBER LIVING THESIS** `wiki/ai-cybersecurity-value-migration.md`: finder=fixer REFUTED as static; living arc H1-wins ~20 / H2-static ~55 / H3-partial ~25. **€50k IPO decision: cyber is NOT an independent Anthropic leg — size on frontier-inference-demand, not the cyber narrative.**
+- **Principle #45** (event-anchored re-eval dates; calendar = backstop only) added. **B64** model-affinity contamination binding on any NOW re-entry.
+- **HOUSE REPAIR:** SpaceX is PUBLIC (SPCX, Nasdaq Jun-12, absorbed xAI) — private-tracker corrected.
+- **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
+- **Jul-15 (TOMORROW):** CXMT price + ASML print + Seoul 반대매매 official print (read as FLOW) + Warsh Senate round 2.
+- **OPEN USER-GATED (standing forcing item):** browser/API session — ROTATE Finnhub key FIRST, keys as env vars, allowlist data.sec.gov + pr.tsmc.com; unlocks EUV-layer checklist + Sensor Tower/QuestMobile/AVC + the 5 proxy-blocked cyber-thesis docs. Re-raise at wake.
+
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
 - **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate) + Rule #16 30-day re-eval
