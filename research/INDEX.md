@@ -108,8 +108,11 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 | **2026-07-11** | Codification-rule + signal-density-detection first re-eval | `meta/codification-rule.md` + `meta/signal-density-detection.md` |
 | **2026-07-12** | B45/B46/macro-anchor-hook audit (co-located with Critical Rule #15 falsifier check) | B46 CONFIRMED-or-RETIRE decision; macro-anchor-hook activation decision |
 | **2026-07-15** | Critical Rule #16 subagent-cost-yield 30-day re-eval | `meta/subagent-cost-yield-ledger.md` |
-| **~2026-07-22 to late-Jul** | HYNIX Q2 print (L27 N=2 test); MURATA Q1 FY27 print (L17 candidate test + L22 falsifier; T9 promotion trigger N=3 watch; beat-analyst-consensus test); SNDK Q2 FY27 print | HYNIX Core / MURATA held / SNDK held |
-| 2026-07-31 | SNDK Q2 FY27 print + L17 candidate test | SNDK held |
+| **2026-07-29** | SK HYNIX Q2 print (L27 N=2 test; KIS-vs-SemiAnalysis GP duel) — verified 2026-07-14 | SKHY held 37 ADS |
+| **2026-07-31** | MURATA Q1 FY27 print ~14:00 JST (L22 falsifier; T9 promotion watch) + KIOXIA Q1 FY27 print 15:30 JST — verified 2026-07-14 | MURATA held / KIOXIA reference |
+| **2026-08-05** | SNDK Q4+FY26 print AMC (CORRECTED from stale "Jul-31 Q2 FY27"; T1 IR) + Investor Day Aug-13 | SNDK reference (exited) |
+| **2026-08-06** | SUMCO Q2 interim print (wafer-hike thesis) | SUMCO held |
+| — | **FULL BOOK+WATCHLIST EARNINGS CALENDAR (chronological, source-tiered): `predictions/earnings-calendar-2026-h2.md` (built 2026-07-14)** | all held + watchlist names |
 | 2026-08-13 | HTFL Q2 print | HTFL Stage 1 entry binary |
 | **2026-09-12** | B45 cohort base-rate quarterly recalibration | Magnitude conservatism re-anchor |
 | **2026-09-13** | **PC-13 90-day promotion check** (Government emergency-order model-shutdown precedent N=2 watch) | TC-10 H_d + bypass-route cohort |
