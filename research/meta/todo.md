@@ -716,3 +716,8 @@
   - Origin: user design 2026-07-13 (`signals/anomaly-register.md`) — cross-domain co-occurrence hunt over the anomaly register, segment-gate open for discovery, closed for action
   - Scope: 1 agent reads register; finds n≥3 independent-source mechanism-rhymes across segments; outputs PC-candidates to cross-domain-pattern-register w/ falsifiers; ages out stale entries
   - Linked: signals/anomaly-register.md, meta/cross-domain-pattern-register.md
+
+- [ ] **P2 / research / 2026-07-16** [POS, CAL] — ASML post-print: run the 8-item EUV-ladder residual checklist (FMS-2025 deck = highest value; 5 items proxy-blocked → needs browser session) before ANY entry-framework build
+  - Origin: 2026-07-14 user-commissioned EUV workflow adjudication (true-but-priced verdict)
+  - Scope: convert 1c "≥5" to exact integer if possible; decompose ₩11.95tn order; test residual edge vs the three offsets; output = pullback-conditioned entry framework OR explicit no-framework verdict
+  - Linked: `signals/cross-source-log/2026-07-14-tue-euv-layers-workflow-adjudication.md`, `watchlist/candidates.md`
