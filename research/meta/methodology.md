@@ -1713,6 +1713,24 @@ For every promotion gate / falsifier / monitoring variable in a thesis or cluste
 
 ---
 
+## Principle #45 candidate (added 2026-07-14 per user question "how do you reason around the timing of the re-eval") — EVENT-ANCHORED RE-EVAL DATES, calendar as backstop not primary
+
+**Origin:** user flagged that the cyber-thesis re-eval date (2026-10-14) was arbitrary — "a quarter out, co-scheduled with the other instruments" = scheduling convenience masquerading as analysis. Correct.
+
+**The principle:** a re-eval date must be set by **information-arrival, not the calendar.** The question is NOT "how long until I look again" but "**what is the next dated event that could move a load-bearing/crux variable, and when does it print?**" Anchor the re-eval to that event.
+1. **PRIMARY = event-anchored:** the earliest dated catalyst that could flip a crux variable (an earnings print, a product release, a scheduled disclosure, a filing date). Name the event, not just the date.
+2. **SECONDARY = calendar backstop:** a long-dated fallback that fires ONLY if no event has, so a thesis cannot go inert unnoticed. This is the ONLY correct use of a bare calendar date.
+3. **Pure-calendar is correct ONLY** for a variable that genuinely drifts continuously with NO discrete catalyst (a slow base rate) — and even then, state WHY there's no event anchor.
+4. **Decision-relevance override:** if the thesis gates a specific decision (a capital deployment, a sizing call), the re-eval should fire **just-in-time before that decision**, not on a metronome — re-eval spend (workflows run 400-600k tokens) must respect decision-timing, not habit.
+
+**Failure modes each avoids:** pure-calendar → stale-or-premature (looks when the clock says, not when reality changed); pure-event → orphaning (if the event never comes, thesis sits unreviewed → hence the backstop). Pairs with the "living-thesis reframe" (2026-07-14): a living thesis's observables ARE its event anchors — the re-eval fires when an observable prints, not on a date.
+
+**Meta-gap this closes:** the harness has ~19 hooks enforcing CONTENT discipline and nothing disciplining WHEN re-evals fire. Every future codification's re-eval line should read "re-eval on [named event] (backstop [date])" not "re-eval [date]".
+
+**Detectability / falsifier (re-eval on the 2026-08 monthly codification audit — itself an event anchor: the audit is the recurring review catalyst):** POSITIVE = new codifications ship with event-anchored re-evals AND those events fire the reviews more punctually/relevantly than the old calendar dates would have; NEGATIVE = "event anchors" degenerate into the same arbitrary dates with an event-name pasted on, adding nothing → revert to simple quarterly. Status: CANDIDATE N=1 (user-articulated); retro-applied to the cyber thesis + this session's two instruments same-day (below).
+
+---
+
 ## GDR/ADR Cross-Listing Mechanics (added 2026-06-26 as methodology section)
 
 When ANY held position is a GDR / ADR / depository receipt (HY9H, etc.):
