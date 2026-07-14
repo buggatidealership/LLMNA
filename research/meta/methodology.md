@@ -671,6 +671,8 @@ A thesis is NOT complete unless:
 
 (Update this section when user gives positive/negative feedback on output format.)
 
+**2026-07-14 POSITIVE feedback — "less rigidity" on framework evidence (user verbatim-adjacent: "the format in which you extended a 3rd position to our §6b in the ledger instead of making it fit into ours is what I was referring to yesterday. the 'less rigidity' seems to be directionally working"):** when new evidence doesn't fit an existing hypothesis pair/bucket, EXTEND the framework (add the position/category the evidence actually supports, with its own P-weight) rather than forcing the datum into the closest held bucket. Origin instance: Claude-for-Teachers scored as a NEW H-synthesis position (vertical scaffolds + in-container personalization) in the §6b debate rather than as points for either existing pole. Generalizes: framework categories are hypotheses too — the evidence gets to redesign the question, not just answer it. CANDIDATE discipline (N=1, watch for N=2 before codifying as a principle); anti-pattern it corrects = bucket-forcing (a taxonomy-level cousin of B31 segment-aggregation).
+
 ## When to ask the user vs decide myself
 
 ASK when:
