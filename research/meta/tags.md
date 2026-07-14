@@ -1,7 +1,7 @@
 # Tag Dictionary — single-file shorthand lookup
 
 **Created:** 2026-06-11
-**Last refreshed:** 2026-07-06 (harness audit — EVERY tail count was stale: L27→L30, B59→B61 (+B62 renumber resolving the B47 collision), Principles #38→#41, Critical Rules #16→#18, PC-14→PC-15 (+PD-series documented), TC-11→TC-14. Prior refresh 2026-06-24 monthly audit #1 — which itself missed PC-15 added the same day; do not rely on monthly audits alone for tail sync.)
+**Last refreshed:** 2026-07-14 (COUNT-SYNC on Principle #45 codification — event-anchored, not the scheduled monthly: B62→B64 (B63 model-provenance 07-07, B64 model-affinity 07-13), Principles #41→#45 (#43/#43b/#44/#45), PC-15→PC-17 (PC-16 = skipped number, PC-17 verification-layer 07-10), TC-14→TC-18 (TC-15/16/17/18). L30 + Rules #18 + T10 unchanged. ⚠️ This was a HEADER-COUNT sync only; the per-entry definition body below still lacks full entries for the new IDs — that per-entry audit remains the monthly-audit task. Prior refresh 2026-07-06.)
 **Purpose:** answer "what is L25 / B44 / P-11 / T9?" without grep
 
 ## Lessons (predictions/lessons.md)
@@ -33,7 +33,7 @@ Current tail: **L30** (refreshed 2026-07-06; L28-L30 all CANDIDATE. ⚠️ Numbe
 
 ## Biases (meta/biases-watchlist.md)
 
-Current tail: **B62** (refreshed 2026-07-06; B60/B61 added 2026-07-01/03, B62 = renumbered lead-time-conservatism. B48-B53 + B56-B57 remain ABSENT — numbers skipped. ⚠️ B47 COLLISION RESOLVED 2026-07-06: this file previously defined B47 as "pre-training lead-time conservatism" — WRONG; canonical B47 in `biases-watchlist.md` is **efficiency-driven demand destruction blind spot**. Lead-time conservatism renumbered to B62.)
+Current tail: **B64** (count-synced 2026-07-14; **B63** model-provenance/model-affinity-contamination-parent added 2026-07-07, **B64** model-affinity-contamination [Claude-Code-accounts-pick-NOW meme / Anthropic-sourced-validation closed-loop] added 2026-07-13. B60/B61 added 2026-07-01/03, B62 = renumbered lead-time-conservatism. B48-B53 + B56-B57 remain ABSENT — numbers skipped. ⚠️ B47 COLLISION RESOLVED 2026-07-06: canonical B47 in `biases-watchlist.md` is **efficiency-driven demand destruction blind spot**; lead-time conservatism = B62.)
 
 - **B1-B37** legacy biases (see file)
 - **B23** Sell-side aggregation drift
@@ -62,7 +62,7 @@ Current tail: **B62** (refreshed 2026-07-06; B60/B61 added 2026-07-01/03, B62 = 
 
 ## Principles (meta/methodology.md)
 
-Current tail: **#42 CANDIDATE** (refreshed 2026-07-06; #39-#41 added 2026-06-26 per harness-optimization audit; #42 added 2026-07-06 per user articulation)
+Current tail: **#45 CANDIDATE** (count-synced 2026-07-14; #43 configuration-over-capability + #43b compute-instead-of-narrate + #44 detection-over-prediction added 2026-07-06/07; #45 event-anchored-re-eval-dates added 2026-07-14; #39-#41 added 2026-06-26; #42 retrieval-staleness 2026-07-06)
 
 - **#1** Bottoms-up before outside view
 - **#2** N-th order > 1st order
@@ -125,7 +125,7 @@ Current tail: **T10** (unchanged)
 
 ## Cross-domain patterns (meta/cross-domain-pattern-register.md)
 
-Current tail: **PC-15 CANDIDATE + PD-1..PD-8 series** (refreshed 2026-07-06; PC-15 added at the 2026-06-24 audit. **PD- prefix** = pattern-discovery candidates from the 2026-07-01 Leg-B discovery pass: PD-1 AI-profitability rotation / PD-2 layer-invasion, physical layer only un-invaded / PD-3 data-enclosure movement / PD-4 agent-security mandatory-spend gap — all defined in `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`; PD-6 cost-of-capital-as-next-bottleneck in `.../2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`; PD-5/PD-7/PD-8 carried in the register's dated-entry stream)
+Current tail: **PC-17 CANDIDATE + PD-1..PD-8 series** (count-synced 2026-07-14; PC-17 [generation-cost collapse migrates value capture to the VERIFICATION layer, N=3] added 2026-07-10; PC-16 = skipped number; PC-15 added at the 2026-06-24 audit. **PD- prefix** = pattern-discovery candidates from the 2026-07-01 Leg-B discovery pass: PD-1 AI-profitability rotation / PD-2 layer-invasion, physical layer only un-invaded / PD-3 data-enclosure movement / PD-4 agent-security mandatory-spend gap — all defined in `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`; PD-6 cost-of-capital-as-next-bottleneck in `.../2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`; PD-5/PD-7/PD-8 carried in the register's dated-entry stream)
 
 - **P-1** Chinese-parity-arrives-faster-than-premium-pricing-assumes (rate-variable per industry; MLCC 2026-06-11 update: premium-tier "years out" HOLDS; Korea-rate separate faster clock)
 - **P-2** Wrong-product-category trap
@@ -148,7 +148,7 @@ Current tail: **PC-15 CANDIDATE + PD-1..PD-8 series** (refreshed 2026-07-06; PC-
 
 ## Triangulation clusters (signals/triangulation.md)
 
-Current tail: **TC-14 ACTIVE** (refreshed 2026-07-06; TC-12/13 added 2026-06-25, TC-14 promoted N=3 on 2026-07-05; quick-index N-counts in `signals/triangulation.md` are CANONICAL over body instance lists per its index-canonical rule)
+Current tail: **TC-18 ACTIVE** (count-synced 2026-07-14; **TC-15** model-labs-internalizing-inference-silicon, **TC-16** high-end-laminate-&-glass-cloth-scarcity-(CCL-stack), **TC-17** semis-positioning-crowding-crowded-but-hedged, **TC-18** capital-committed-supply-securing-(revealed-preference-shortage-validation) all added 2026-07-08→13; TC-12/13 added 2026-06-25, TC-14 promoted 2026-07-05; quick-index N-counts in `signals/triangulation.md` are CANONICAL over body instance lists)
 
 - **TC-1** Memory tightness multi-tier (N=14 STRUCTURAL-REGIME-CONFIRMATION; 60-year WSTS DRAM ASP trend-line break 2026-06-14 PM2)
 - **TC-2** AI capex on credit + state budgets (N=7)
