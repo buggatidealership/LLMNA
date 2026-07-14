@@ -525,3 +525,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-14 21:15:22Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-14 21:30:09Z session-prime-cascade-hook FIRE (new-codification-ids=METH::## Principle #99 candidate (added 2026-01-01 SYNTHETIC-TEST) — verification fixture, revert immediately)
 - 2026-07-14 22:25:47Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-14 22:40:18Z structural-output-hook FIRE (structural-markers-missing)
+- 2026-07-14 22:40:18Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)

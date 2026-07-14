@@ -122,6 +122,10 @@ None currently observed.
 
 ---
 
+### Tracking-series datapoint #1 (2026-07-14 EVE — first T1 enterprise-demand instance)
+
+IBM's investor letter (2026-07-14, 8-K Ex 99.1, verbatim agent-verified): "clients were distracted with rapidly-evolving, industry-wide cybersecurity concerns in the quarter" — cited as a contributing driver of the Z/Transaction-Processing shortfall. No specific incident named (generic industry-wide framing). Same-day market read: cybersecurity incumbents rallied on the line (CRWD+, T2 CNBC 2026-07-14). **Shape-read: H2-static-consistent** — the enterprise response channels attention/spend toward INCUMBENT security vendors, not toward labs; a datapoint against the finder=fixer arc and for the ~55-weight static branch. Arc-observable it feeds: enterprise security-spend reallocation (demand side). Per `signals/cross-source-log/2026-07-14-eve-twitter-brief-ibm-letter-tsmc-2nm-china-dram-3agent.md`.
+
 ## LIVING-THESIS REFRAME (2026-07-14 EVE, user correction: "a thesis, not a given — the evolutionary arc")
 **The prior verdict above graded the STATIC snapshot (is finder=fixer true today = no). The user's actual claim is DYNAMIC: as models compound, does the frontier→incumbent capability gap WIDEN until the finder=fixer coupling that's false today becomes true?** That is not refuted — it is OPEN and time-resolvable. Re-centered here as a tracked position, not a closed verdict.
 
