@@ -158,3 +158,5 @@ Per Agent 1 research:
 - Duration remains Long (3-5 years) — the HBM5 (2028-2029) mandatory hybrid-bonding transition is the structural anchor; near-term competitive landscape is BESI + ASMPT duopoly
 
 **Falsifier reinforcement:** ASMPT achieves hybrid-bonding precision parity with BESI; Kulicke & Soffa or Applied Materials enters production-scale hybrid bonding; HBM5 timeline slips beyond 2029.
+
+**2026-07-14 back-ref (Rule #10):** Y1 beneficiary map (per `signals/cross-source-log/2026-07-14-tue-yongin-y1-equipment-verification-beneficiary-map.md`) — confirms the existing timing call: TCB (Hanmi/ASMPT/Hanwha) carries HBM through HBM4E 16-hi; hybrid bonding = 2027-28+ leg. No pull-forward of the BESI window. Position implication: NO ACTION — watchlist P2 unchanged. 🟡
