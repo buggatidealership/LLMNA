@@ -522,3 +522,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-14 20:14:53Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-14 20:27:49Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-14 20:54:31Z session-prime-hook event=compact injected=False (skipped non-startup)
+- 2026-07-14 21:15:22Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-14 21:30:09Z session-prime-cascade-hook FIRE (new-codification-ids=METH::## Principle #99 candidate (added 2026-01-01 SYNTHETIC-TEST) — verification fixture, revert immediately)

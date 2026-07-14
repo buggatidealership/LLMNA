@@ -613,11 +613,10 @@
   - Cost: ~30min build each; minimal runtime; requires user `cp` to `~/.claude/` for activation
   - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item B
 
-- [ ] **P2 / process / 2026-07-15** [INFRA, CAL] — session-prime-cascade-hook FIX (root cause DIAGNOSED 2026-07-14; do not re-diagnose — execute the spec)
-  - Full spec + reproduction: `meta/hooks/session-prime-cascade-hook-fix-spec.md`
-  - One-line cause: regex demands dash immediately after ID (`#45 —`) but house headers are `## Principle #45 candidate (added DATE …) —` → 0 hits across all 26 Jul-14 commits incl. f6ce2d5 (Principle #45); PLUS zero telemetry (no log_fire), so its own 30-day falsifier is unverifiable
-  - Deliverables: loosened patterns (bounded annotation between ID and dash; counter-bumps must still pass), log_fire on fires+exceptions only, candidate-policy documented, 30-day backtest (must catch f6ce2d5 + Jul-9→12 origin batches; FP <30%), synthetic exit-2 test, docstring falsifier refreshed
-  - Origin: hook shipped 2026-07-12, dead-on-arrival (never matched a real header); staleness it was built to catch happened 2026-07-14 and was caught manually at session close (commit 7836719)
+- [ ] **P2 / process / 2026-07-15** [INFRA, CAL] — session-prime-cascade-hook v2 fix: INDEPENDENT VERIFICATION (fix APPLIED 2026-07-14 EVE same-session; do NOT re-fix — adversarially verify)
+  - Run the pre-registered protocol: `meta/hooks/session-prime-cascade-hook-fix-verification-prompt.md` (6 gates: selftest 21/21, fail-open, independent 30-day backtest with 12 must-fire + 5 must-suppress anchor SHAs, live exit-2/exit-0 paths, blind-spot hunt, wiring). Recompute everything; treat the fixing session's numbers as pre-registrations to test, not truths (B63 applies)
+  - On VERIFIED: flip fix-spec status, close this item, book verification artifact. On PARTIAL/REFUTED: book evidence + surface to user
+  - History: v1 shipped 2026-07-12 dead-on-arrival (ID-dash-adjacency regex matched no real header, zero telemetry); diagnosed + rebuilt as ID-set-diff design 2026-07-14 per `meta/hooks/session-prime-cascade-hook-fix-spec.md`
 
 - [ ] **P2 / process / 2026-07-15** [INFRA, OPT] — Weekly competitive-product surveillance subagent (add to recurring schedule)
   - Origin: harness-optimization audit 2026-06-26 TIER 3; MRVL Trainium 3 loss + SNDK MU 245TB ION both surfaced POST-HOC via monthly H2 bear-case workflow (should surface earlier)

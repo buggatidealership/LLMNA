@@ -1,6 +1,15 @@
 # FIX SPEC — session-prime-cascade-hook.py (root cause DIAGNOSED 2026-07-14, fix not yet applied)
 
-**Status:** OPEN. Diagnosis complete + reproduced; handed to a future session because the diagnosing session was closing.
+**Status:** ~~OPEN~~ → **APPLIED 2026-07-14 EVE, same session** (user: "do you want to fix it?"). v2 rebuilt
+on ID-set-diff design (added-IDs − removed-IDs; supersedes the "loosen regexes" requirement below with
+something strictly stronger — it also kills the edit/promotion FP class the original patterns couldn't).
+Results at apply time: `--selftest` 21/21 real-corpus fixtures; 30-day backtest 42 true fires (incl.
+f6ce2d5 #45, f500a4d static-collapse lesson, bda9df9 rules-patterns candidate, the full Jul-9→12 origin
+batch, back through B47 Jun-14), 5 correctly suppressed (session-prime co-committed), FP ≤2.5% (one
+borderline TC-14 promotion-into-table); live fire path exit 2 + telemetry line 2026-07-14 21:30:09Z in
+hook-fire-log.md; suppression path exit 0; fail-open preserved. Scope extended: pattern-register now
+canonical. **INDEPENDENT VERIFICATION PENDING** — run `session-prime-cascade-hook-fix-verification-prompt.md`
+in a fresh session; do not mark this closed until that verdict is VERIFIED.
 **Todo pointer:** `meta/todo.md` P2/process entry "session-prime-cascade-hook fix".
 **The miss it must prevent recurring:** 2026-07-14 shipped Principle #45, B64-referencing tail syncs, and 2 candidate lessons across canonical files in 26 commits — the hook fired ZERO times, and `session-prime.md` went stale at Jul-13 until caught manually at session close (commit 7836719). This is the exact staleness class the hook was built (2026-07-12) to catch.
 
