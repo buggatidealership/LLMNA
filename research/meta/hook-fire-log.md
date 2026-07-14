@@ -511,3 +511,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-14 15:14:23Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-14 16:12:10Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-14 17:10:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-14 17:44:45Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-14 18:30:20Z session-prime-hook event=resume injected=False (skipped non-startup)
