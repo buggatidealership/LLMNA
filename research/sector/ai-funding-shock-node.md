@@ -89,3 +89,17 @@ Per `signals/cross-source-log/2026-07-14-tue-morning-scan-3agent.md` (WSJ "Data-
 - **Node status UNCHANGED: NOT FIRED — this is LOAD, not shock.** Issuance is being ABSORBED (S&P at highs, SKHY +27% post-raise, Zhipu 10×). The node fires on absorption FAILURE (tells #7/#8 tranche prints, cover-ratio compression, canary-basket stress), not on issuance volume. Narrative field: Arnott/Paulsen late-cycle current vs Marks/Ilmanen counter — both logged, neither is a tell. PD-8 N+1. S&P div yield 1.05% record low (Research Affiliates) = valuation color under B45 discipline, not a signal.
 - Unasked[macro] (→ BOTTLENECK-FORECAST queued run): if the buildout's marginal funding shifts from cash flow to capital markets, the next binding constraint may be the equity/credit WINDOW — evaluate a financial rung on the bottleneck ladder.
 Per `signals/cross-source-log/2026-07-15-wed-article-pulls-deepseek-funding-issuance-surge.md`.
+
+
+## FINANCIAL-RUNG SPEC (added 2026-07-15, user question: "how do you compute the answer or direction of the output" — makes the equity/credit-window hypothesis falsifiable; input to the queued BOTTLENECK-FORECAST run)
+
+A constraint binds when the marginal project is rationed or repriced — both observable. Direction = trajectory of a weekly ABSORPTION INDEX over six computable series (thresholds pre-registered at first full BOTTLENECK-FORECAST computation):
+1. Cover ratios per deal, trended (baseline on file: Amazon 1.6× cover, tell #10).
+2. New-issue concession vs issuer secondary curve (NOT yet instrumented — data gap; needs API layer).
+3. Below-issue rate: % of AI-complex paper under issue at T+30 (instance on file: CoreWeave par→96.50; denominator missing).
+4. Rationing count: pulled/downsized/postponed deals per quarter (currently zero observed; trivially countable).
+5. Issuance÷absorption flow: the ~$1.5T net-supply swing (Elm Wealth, 07-15 artifact) vs absorption evidence (SKHY "$26 billion-plus" absorbed, ADR +27.29%; Zhipu $4B follow-on at >10-fold mcap).
+6. Marginal cost-vs-return of capital (Oracle CDS >125bps + negative cash flow = marginal name has left internal funding; hyperscaler internal-funding share = DATA GAP, the computable falsifier of the whole hypothesis).
+DECISION RULE: index trajectory, two pre-registered thresholds — TIGHTENING (financial rung climbs the ladder) and FIRING (node fires). Ladder comparability requires a TIME CONSTANT per rung: physical rungs relieve in years, the window in weeks → episodic-fast constraint → weekly cadence.
+CURRENT COMPUTED DIRECTION (2026-07-15): series 1/3/6 marginal stress, 4/5 absorption winning → LOADING, NOT BINDING.
+BYPASS ROUTES (Rule #9 — a closed private window migrates, not stops): states (KRW700T KR budget + PBOC ¥1.4T op, both this week, per 07-15 wake artifact), private credit (card-delinquency divergence puzzle, absence-register), vendor financing (PD-8). Binding = primary window AND bypass channels tighten together.
