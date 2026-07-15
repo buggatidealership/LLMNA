@@ -14,10 +14,10 @@ GFHK: SKH 2Q rev ₩85tn, GM 63%, "positive." House-verified estimates layer (`2
 
 ## N-order cascade
 - 1st (P>80%): Q3 DRAM settles nearer +13-18% than ~30% ask; first customer-resistance signal of cycle logged. (DRAM-pure names' torque marginal loser.)
-- 2nd (P~60%): NAND relative torque up (KV-offload + substitution) → **pure-NAND marginal winners = SNDK (Aug-5) + Kioxia (Jul-31) — both EXITED house names (Rule #18: stated plainly)**; MU dual; SKHY partially hedged via HBF.
+- 2nd (P~60%): NAND relative torque up (KV-offload + substitution) → **pure-NAND marginal winners = SNDK (Aug-5) + Kioxia (Jul-31) — both EXITED house names (Rule #18: stated plainly)**; MU dual; SKHY holds a LAGGED partial hedge via HBF co-ownership (SanDisk-led alliance, T1 PR 2026-02-25; samples H2-26, volume ~2030; complement-not-substitute per the 07-01 adjudication caveats).
 - 3rd (P~40%): pushback improves capex-per-token → EXTENDS demand duration (resistance now = longer cycle); mild positive to 2027-duration crux.
 - 4th (P~20%): substitution + pushback cap DRAM capex appetite as CXMT ~$80B capacity lands 2027+ → bear-tail compounds in commodity DRAM specifically while NAND tightens (mix inversion of consensus).
-- 5th (P~20%, my model): KV-offload standardizes → memory bifurcates into state-storage (NAND-econ) vs bandwidth (HBM-econ), commodity DRAM squeezed — the HBF endgame.
+- 5th (P~20%, my model): KV-offload standardizes → memory bifurcates into state-storage (NAND-econ) vs bandwidth (HBM-econ), commodity DRAM squeezed — the endgame the SanDisk+SK Hynix HBF ROADMAP anticipates (2027 roadmap not shipped product — Rule #18 caveat on file; monitor: watchlist/HBF-trajectory-monitor.md).
 
 ## Watches armed
 - Kioxia Jul-31 + SNDK Aug-5 prints UPGRADED to NAND-rotation reads (calendar notes stand).
@@ -38,3 +38,6 @@ GFHK: SKH 2Q rev ₩85tn, GM 63%, "positive." House-verified estimates layer (`2
 | (Agent's "earnings 07-22") | **REJECTED** | The previously-DISCARDED aggregator date resurfacing; house calendar Jul-29 stands (≥3 KR sources, 07-14 verification). Same wrong date now seen twice — dedup-register note |
 
 **Trace status after verification:** 1st-order (P>80%) now T1; 2nd-order NAND rotation strengthened by the Gartner ASP series (SNDK Aug-5 / Kioxia Jul-31 reads upgraded again); the tiering caveat slightly softens the 5th-order bifurcation frame (offload-not-displacement → commodity DRAM squeezed at the CAPACITY margin, not replaced). Jul-29 duel: still 2-branch; the decoded ~₩53.6tn OP quasi-branch is noted as the bear tail BELOW KIS, unattributed.
+
+
+## CORRECTION (2026-07-15 EVE, user source-challenge): my phrasings "SK Hynix's HBF product" and "NAND-as-HBM-substitute" exceeded the record — HBF is a SanDisk-LED alliance standard SK Hynix co-owns (T1 sandisk.com PR 2026-02-25), a 2027 ROADMAP (samples H2-26, volume ~2030), and the on-file adjudication says complement-NOT-substitute. Compression-drift, my authorship, same class as the B40.x verb-drift documented in relays earlier today (N=1 self-instance). Directional hedge claim survives; compressed wording corrected in-place above.
