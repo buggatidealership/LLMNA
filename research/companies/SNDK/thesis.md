@@ -645,3 +645,7 @@ Per `signals/cross-source-log/2026-06-03-counterpoint-nand-shares-trendforce-las
 ---
 **🚨 2026-07-05 POSITION CLOSED — USER-EXECUTED FULL EXIT (9 sh → 0, ~Jul-1/2), SCREENSHOT-CONFIRMED 2026-07-05.** Emotional exit alongside SKH, NOT a falsifier fire (valuation chatter was a watch-item only; BofA PT raise same window per the Jul-3 entry above). THESIS ANALYTICALLY INTACT → WATCHLIST-REFERENCE: Q4 FY26 print watch, LTA-vs-glut adjudication, TC-14 YMTC tell all standing. DON'T-ADD ensemble = moot. Re-entry = fresh envelope-gated package. Per `portfolio/holdings.md` 2026-07-05 canonical + `predictions/lessons.md`.
 **Position implication: 🟢 NO POSITION — closed by user, screenshot-confirmed — watchlist-reference.**
+
+
+## 2026-07-15 EVE — HBF competitive map extended to FOUR postures (moat nuance, keep-verdict UNCHANGED)
+Samsung confirmed building its OWN HBF (early concept-design since ~Oct-2025, KR-primary T2; undated samples; ambiguous alliance-vs-proprietary posture) = the standard-setter moat premium from the 06-28 keep-verdict now carries a named third-camp fragmentation risk, no longer only Kioxia's. Micron = abstainer betting CXL+QLC substitution (its 245TB ION + CZ122 = a different architecture answering the same KV-offload demand). My read: keep-verdict INTACT — Samsung is ~a year behind with no dates and SanDisk+SKH still set the OCP terms — but Gate-1 of the trajectory monitor now carries the Samsung watch items, and FMS Aug-2026 is the next posture reveal. Per `signals/cross-source-log/2026-07-15-wed-eve-hbf-micron-samsung-roadmap.md`.
