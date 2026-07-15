@@ -16,7 +16,7 @@
 
 | Date (2026) | Name | Status in OS | Print | Conf. | Timing / notes |
 |---|---|---|---|---|---|
-| **Jul-16 Thu** | CXMT 688825.SH | 🔴 monitor-only | *(not earnings — STAR listing day; priced Jul-15)* | 🟢 | Subscription code 787825; the Jul-15 "CXMT price" tomorrow-item resolves here |
+| **Jul-16 Thu** | CXMT 688825.SH | 🔴 monitor-only | *(not earnings — SUBSCRIPTION 申购 day; priced Jul-14 eve ¥8.66, listing ~late-Jul TBD)* | 🟢 T1 | CORRECTED 07-15 (was "listing day; priced Jul-15"); raise ¥57.9B base (computed 6.69B sh × ¥8.66), mcap ~¥580B |
 | **Jul-21 Tue** | Northrop Grumman NOC | ⚪ reference (defense-electronics radar) | Q2 2026 | 🟢 T1 | BMO, 9:30am ET call |
 | *Jul-22 Wed* | *(context: IBM full Q2 + NBIS T+30 — house triple-adjudication day, already on calendar)* | | | | |
 | **Jul-29 Wed** | **SK HYNIX 000660 / SKHY** | **HELD 37 ADS** | Q2 2026 | 🟢 T1-leaning (≥3 KR sources) | KR morning; **the named KIS-vs-SemiAnalysis GP-bridge duel resolves here** |
