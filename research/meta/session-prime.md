@@ -168,7 +168,7 @@ _Prior version claimed "no active pending predictions as of 2026-06-24" — corr
 - **Funding-node tell #11** (asset-level distribution) — 3 axes now (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
 - **NEW INSTRUMENTS:** `meta/education-ai-adoption-instrument.md` + `meta/lab-scaffolding-usage-instrument.md` (feed agentic-DAU; §6b demand-side verdict = general assistants win, scaffolds created-and-abandoned; **15% seat-activation haircut prior**).
 - **CYBER LIVING THESIS** `wiki/ai-cybersecurity-value-migration.md`: finder=fixer REFUTED as static; living arc H1-wins ~20 / H2-static ~55 / H3-partial ~25. **€50k IPO decision: cyber is NOT an independent Anthropic leg — size on frontier-inference-demand, not the cyber narrative.**
-- **Principle #45** (event-anchored re-eval dates; calendar = backstop only) added. **B64** model-affinity contamination binding on any NOW re-entry.
+- **#45** event-anchored re-evals added; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
 - SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
 - **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
 - **Jul-15 DONE:** ASML Q2 GRADED (rev+3.9% above-band / EPS−7.4% below-band / bookings DEAD-METRIC→**L31** metric-existence-check candidate / FY guide RAISED €43–45B = equipment-leg torque confirmed).残: CXMT price, 반대매매 print, Warsh R2, TSMC call Jul-16.
