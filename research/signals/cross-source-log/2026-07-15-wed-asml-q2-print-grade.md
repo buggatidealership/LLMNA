@@ -42,3 +42,14 @@ The memory-capex→litho chain the prediction called directional is CONFIRMED be
 1. T+24h reaction grade tomorrow (2026-07-16) on the guide-raise frame.
 2. L31 candidate: pre-registration metric-existence check (any predicted metric must be verified still-disclosed at registration date).
 3. Q3 ASML pre-registration (due before Oct print): resolve the EPS below-the-line opacity first.
+
+## Edge-vs-consensus (user question 2026-07-15, computed)
+
+| Component | Our pt (error vs actual) | Consensus (error) | Winner |
+|---|---|---|---|
+| Revenue | €8.95 (3.76%) | LSEG €9.04 (2.80%) | **CONSENSUS** — we sat €0.09B BELOW consensus; actual beat both |
+| EPS | €8.20 (8.04%) | ~€8.005 (5.47%) | **CONSENSUS** — we sat €0.195 ABOVE consensus; actual came below both |
+| Bookings | dead metric | no registered consensus | — |
+| FY guide | both branches under-called | consensus expectation UNREGISTERED at pre-registration (previews leaned raise-ward, T3 recall — inadmissible for grading) | ungraded |
+
+**Verdict: NO — negative point-edge vs consensus on both gradeable components (N=1 print).** The prediction's honest LOW-conf flag anticipated this, but the program's purpose (L1: edge over sell-side, not adjustment of it) means this outcome is exactly what the calibration ledger exists to count. Standing metric from here: every grade logs BOTH errors; edge = consensus_error − our_error, cumulated across the wave. Where we did add value at this print was thesis-layer, not point-layer: the memory→litho torque call (confirmed via guide raise) and the pre-committed reaction frame — neither of which consensus points capture. Do not let that soften the point-layer scoreboard: 0-for-2.
