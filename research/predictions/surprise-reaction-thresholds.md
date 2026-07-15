@@ -26,3 +26,33 @@ N=15 guidance rows; several T+1 figures are AH/PM proxies; reactions NOT excess-
 
 ## Falsifier / out-of-sample test (pre-registered)
 Every print on the house calendar Jul-21→Aug-19 (NOC, IBM-full, SKHY, EMC, NET, MURATA, Kioxia, ALAB, SNDK, Nittobo, IFX, SUMCO, SoftBank, ENR, NBIS, Mitsui, TUC, CRCL, ACMR, GigaDevice) is an out-of-sample test row: log surprise + T+1, grade the fitted crossings. If the 8-20% bucket's 4/4-positive breaks below 60% hit-rate on ≥10 new rows, refit; if the sell-the-news zone stops being modal, the regime changed — re-anchor before trusting either.
+
+
+## v1.1 ADDENDUM (2026-07-15 EVE, user variable-extension: "market cap, how well known, analyst coverage, options — there might be even more")
+
+**SIZE-CLASS STRATIFICATION (computed on the panel, positive-surprise rows >3%; cap classes coarse/recall-based-flagged):**
+
+| Class | N | mean surprise | mean reaction | pay-rate | % positive |
+|---|---|---|---|---|---|
+| MEGA (>$200B class) | 11 | +11.1% | **+0.6%** | −0.12 | **45%** |
+| MID | 9 | +13.2% | +6.9% | +0.80 | 100% |
+| SMALL (<$15B class) | 2 | +39.0% | +19.2% | +0.65 | 100% |
+
+**Finding: size class dominates surprise size in this panel.** The v1 blended crossings are misleading per-class: for MEGAS the crossings are far too low (NVDA guide +7.4% → −5.0%; the entire NVDA/AMD/MU-Sep sell-the-news cluster is mega); for MID/SMALL too high (mid-caps paid from ~+3-5%). MECHANISM (my model): coverage/pre-pricing density — 40-60 analysts + dense options OI + index flows mean the reported surprise-vs-street is not a surprise to the marginal price-setter; in thinner names reported surprise ≈ true surprise. The AEHR pop was as much a COVERAGE-VACUUM effect as a magnitude effect — exactly the user's point.
+
+**CLASS-CONDITIONAL WORKING RULES (v1.1, indicative):** MEGA: reliable pop needs bookings-override disclosure or >+20-30% surprise; sub-+10% beats = sell-the-news modal. MID: pay zone starts ~+3-5%; the v1 +8-20% bucket read is mid-cap-driven. SMALL: pays large but B39 entry-priced and volatile; N=2 only.
+
+**FULL VARIABLE ROSTER for v2 (stratify-don't-regress at N=32; multivariate only on the API-era rebuild, target N=150-300 = cohort × 8-12 quarters):**
+1. Surprise %, type-separated (guide / bookings / actuals) — v1 core
+2. Size class / liquidity (TESTED above — strongest)
+3. Coverage density: analyst count + ESTIMATE DISPERSION (tight consensus = pre-priced bar; wide dispersion = market doesn't know → more reaction per unit surprise)
+4. Positioning: run-into-print, short interest, options-implied move (the priced bar)
+5. Options structure: OI/gamma at print (dealer hedging amplifies small-cap moves, dampens or accelerates mega moves)
+6. Index/passive/product share (live house example: SKHY +27.29% amplified by leveraged single-stock ETF LAUNCHES, on file 07-15 wake artifact)
+7. Disclosure structure: bookings/backlog discloser or not (v1 override variable — interacts with #3: undisclosable metrics cannot be pre-priced)
+8. Retail attention / how-well-known (user variable; proxy: social volume, retail flow share)
+9. Name-specific reaction beta (prior-print reaction history)
+10. Calendar congestion (same-day cohort prints — house Aug-5-7 cluster = shared attention denominator)
+Unifying frame (my model): variables 2-10 all proxy ONE latent quantity — EXPECTATIONS EFFICIENCY: how much of the reported surprise the marginal price-setter already knew. v2's real spec: reaction = f(true surprise) where true surprise = reported surprise × (1 − expectations efficiency).
+
+Falsifier addendum: out-of-sample grading (Jul-21→Aug-19 calendar) now logs size class per row; if MEGA rows pop on sub-+10% surprises repeatedly, the stratification read is wrong — refit.
