@@ -78,3 +78,7 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-09,evening-brief-h1-pricing-front,MACRO,pattern-attribution,50,TRUE,,,"3 of 4 layers fresh-verified; state-gate softened to voluntary; infra leg inverts to tightness confirmation"
 2026-07-09,evening-brief-h2-collage,MACRO,pattern-attribution,30,MIXED,,,"1 of 4 items stale-recycle (Meta RAM)"
 2026-07-09,evening-brief-h3-independent,MACRO,pattern-attribution,20,FALSE,,,"pattern held; items not independent"
+2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,revenue-point,,MISS-LOW,+3.91,COMPUTATION,"actual 9.3 vs pt 8.95; ABOVE entire 8.7-9.2 band; direction right (guide-below-consensus resolves up) magnitude conservative B45-shaped"
+2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,eps-point,,MISS-HIGH,-7.44,COMPUTATION,"actual 7.59 vs pt 8.20; BELOW 7.90-8.60 band despite rev+GM beat; below-the-line opacity unresolved"
+2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,bookings-point,,UNGRADEABLE,,INPUT,"metric discontinued after Q1-2026 - already dead at registration; L31 candidate origin (metric-existence check)"
+2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,fy-guide-reiterate,70,FALSE,,REASONING,"guide RAISED 43-45 vs prior 36-40 (+15.8pct mid); both modeled branches (reiterate P70 / upper-half P40) under-called; outcome outside branch set"

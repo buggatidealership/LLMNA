@@ -169,9 +169,9 @@ _Prior version claimed "no active pending predictions as of 2026-06-24" — corr
 - **NEW INSTRUMENTS:** `meta/education-ai-adoption-instrument.md` + `meta/lab-scaffolding-usage-instrument.md` (feed agentic-DAU; §6b demand-side verdict = general assistants win, scaffolds created-and-abandoned; **15% seat-activation haircut prior**).
 - **CYBER LIVING THESIS** `wiki/ai-cybersecurity-value-migration.md`: finder=fixer REFUTED as static; living arc H1-wins ~20 / H2-static ~55 / H3-partial ~25. **€50k IPO decision: cyber is NOT an independent Anthropic leg — size on frontier-inference-demand, not the cyber narrative.**
 - **Principle #45** (event-anchored re-eval dates; calendar = backstop only) added. **B64** model-affinity contamination binding on any NOW re-entry.
-- **HOUSE REPAIR:** SpaceX is PUBLIC (SPCX, Nasdaq Jun-12, absorbed xAI) — private-tracker corrected.
+- SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
 - **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
-- **Jul-15 (TOMORROW):** CXMT price + ASML print + Seoul 반대매매 official print (read as FLOW) + Warsh Senate round 2.
+- **Jul-15 DONE:** ASML Q2 GRADED (rev+3.9% above-band / EPS−7.4% below-band / bookings DEAD-METRIC→**L31** metric-existence-check candidate / FY guide RAISED €43–45B = equipment-leg torque confirmed).残: CXMT price, 반대매매 print, Warsh R2, TSMC call Jul-16.
 - **OPEN USER-GATED (standing forcing item):** browser/API session — ROTATE Finnhub key FIRST, keys as env vars, allowlist data.sec.gov + pr.tsmc.com; unlocks EUV-layer checklist + Sensor Tower/QuestMobile/AVC + the 5 proxy-blocked cyber-thesis docs. Re-raise at wake.
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
