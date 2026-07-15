@@ -26,4 +26,15 @@ GFHK: SKH 2Q rev ₩85tn, GM 63%, "positive." House-verified estimates layer (`2
 
 **Position implication: HOLD all three — no size change — claims 1-2, if corroborated, shift RELATIVE torque within memory (NAND > DRAM at the margin) without firing any held-name falsifier; the honest read that the rotation favors exited names (SNDK/Kioxia) is a data-generation note for the re-entry framework, NOT an entry signal (user-gated, fresh package required).** 🟡
 
-## AGENT-PENDING: GFHK identity/authenticity + pushback + KV-offload corroboration + claim-3 reconciliation (appends on return)
+## AGENT RETURNED — verdicts final (1 Opus agent, ~28.4k)
+
+**Source: GFHK UNIDENTIFIABLE — B61-class quarantine.** Zero footprint EN/KR/CN; best structural guess GF Securities HK (inference only); original excerpt un-locatable. No GFHK track-record entry created; logged as "unidentified source, single-relay." All claims below stand ONLY on independent corroboration.
+
+| Claim | Final verdict | Independent basis |
+|---|---|---|
+| Q3 pushback vs ~30% asks | **T1 CORROBORATED** — trace's 1st-order upgraded | TrendForce cut Q3 DRAM to +13-18% explicitly BELOW Samsung's 20% target (07-03); ADATA chairman: suppliers notified +20-30% DRAM / +35-40% NAND (07-08); KIS conventional-DRAM Q2 ASP +~30%. Two camps mapped: supplier-target (20-30%) vs realized-post-pushback (13-18%) |
+| KV-offload + DRAM→NAND | **T2 CORROBORATED with caveat** | BigDATAwire "one of NAND's biggest AI-DC growth opportunities" (07-07); Samsung KV-offload-to-SSD whitepaper; **Gartner NAND ASP +243.8% YoY Q2'26, >250% Q3/Q4**; eSSD top-5 +>50% QoQ, Solidigm +75% QoQ. CAVEAT booked: 3-tier hierarchy (HBM→DRAM→NAND µs-vs-ns), OFFLOAD not displacement — "substitution" overstated as displacement, real at the capacity margin |
+| SKH rev ₩85tn / "GM 63%" | **DECODED: OPM mislabeled as GM → a disguised BEAR call** | GM 63% impossible: Bernstein SKH DRAM GM Q2 = 90.9% (blended low-80s); house 74.6%-OPM anchor VALIDATED (KIS-origin + Bernstein cross-check). Decode: 63% OPM → OP ~₩53.6tn = ~17% below ₩64.8tn consensus — coherent with the KIS HBM-LTA-cap bear thread that drove the Jul-13 record session. "Positive view" + below-consensus numbers = the excerpt is internally contradictory; quarantine holds |
+| (Agent's "earnings 07-22") | **REJECTED** | The previously-DISCARDED aggregator date resurfacing; house calendar Jul-29 stands (≥3 KR sources, 07-14 verification). Same wrong date now seen twice — dedup-register note |
+
+**Trace status after verification:** 1st-order (P>80%) now T1; 2nd-order NAND rotation strengthened by the Gartner ASP series (SNDK Aug-5 / Kioxia Jul-31 reads upgraded again); the tiering caveat slightly softens the 5th-order bifurcation frame (offload-not-displacement → commodity DRAM squeezed at the CAPACITY margin, not replaced). Jul-29 duel: still 2-branch; the decoded ~₩53.6tn OP quasi-branch is noted as the bear tail BELOW KIS, unattributed.
