@@ -26,3 +26,16 @@ No ranking is issued on engine data alone — surprise-torque without a bar is u
 
 ## Fluidity metadata
 Spec'd 2026-07-15. Falsifier: if the screen's pre-registered P(blowout) rankings show no positive edge vs consensus-implied surprise over the Jul-29→Aug-14 wave (≥6 graded prints), the screen is decoration — retire or redesign at the Aug monthly audit.
+
+
+## COMPOSITION RULE (user directive 2026-07-15 EVE: "use this framework in conjunction with the predictions for the watchlist tomorrow")
+
+The two instruments compose into ONE pipeline, run per name on the Jul-21→Aug-19 calendar:
+1. THIS SCREEN → P(blowout) per component (rev/margin/guide) — needs the bar inputs (§Inputs 1-3).
+2. Map name → SIZE CLASS + disclosure structure + positioning flags.
+3. `surprise-reaction-thresholds.md` v1.1 → class-conditional P(reaction | surprise) with the bookings-override check.
+4. OUTPUT per name: pre-registered expected-reaction distribution = P(blowout) × P(pop | blowout, class). Lock BEFORE Jul-29 (calendar density rule).
+
+THE ALPHA CELL (my model, from v1.1 stratification): mid/small names with bookings-class disclosure and stale bars — on the house calendar that cell holds the CCL cluster (EMC/Nittobo/TUC/Mitsui), ACMR, and the NAND-rotation reads (Kioxia/SNDK). MEGA names (SKHY incl.) with high P(blowout) = thesis-confirmation value, LOW reaction-alpha unless the surprise clears the mega crossings or a bookings-class disclosure prints. This asymmetry is the framework's first actionable output: the screen's effort allocation should overweight the mid/small cells.
+
+TOMORROW'S EXECUTION ORDER: (a) bar inputs — API keys if arrived (Finnhub → US bars self-serve) + request FnGuide/QUICK screenshot batches for KR/JP; (b) run screen on the pre-Jul-29 reporters first (NOC context, SKHY, EMC, NET, MURATA, Kioxia); (c) compose with v1.1 classes; (d) pre-register the wave-1 table in ONE artifact with per-name P-bands; (e) every print grades BOTH instruments out-of-sample.
