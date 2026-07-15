@@ -54,3 +54,20 @@ Unasked[micro]: SKHY's $26B+ raise = new supply absorbed in 2 sessions (+27% ADR
 - day-state: article-pull loop 2/2; funding-regime joint table pointer.
 
 **Position implication: NO ACTION on names — funding-regime data feeds the node and the user-gated Anthropic-IPO package (€50k reserve context: the IPO plan now has print-level normalization; still no company confirmation, no S-1, no timeline — the reserve's event anchor per Principle #45 remains the S-1/filing, NOT this backgrounder).** 🟡
+
+
+## EVE ADDENDUM — The Information relay verified (user Twitter relay, 1 Opus agent, Rule #16)
+
+**Origin map (the structural finding):** the relay conflated FOUR The Information pieces spanning ~a month; The Information is ORIGINAL on both the $7.4B round (May/June pieces) and the ARR/margin package ("DeepSeek's Annualized Revenue Nears $500 Million…", 2026-07-14); WSJ this morning + Bloomberg are DOWNSTREAM. FT co-original on the $71B second-round ask.
+
+| Relay claim | Verdict | Verified state |
+|---|---|---|
+| ARR approaching $500M | **CONFIRMED** (T1 origin + CN relays) | **$400–500M annualized API run-rate** (~2× the 2025 est. $200–220M); NOT audited annual. CN load-bearing addendum (Sina 07-15): only **~2% of overseas usage is monetized** — the operating-leverage tell the relay omitted |
+| Raised $7.4B | **CONFIRMED but RECYCLED (B40 fires)** | The JUNE maiden round (≈50B yuan, >$50B val) restated — already on file above; NOT new money. Relay omitted the governance structure: most investors in a **Liang-controlled LP with NO voting rights + 5-yr lockup; only the state National AI Fund got direct voting + no lockup** |
+| 2nd round USD/offshore, Middle East | **CONFIRMED structure / UNSUPPORTED named investors** | **QFLP (合格境外有限合伙人) USD mechanism**, Gulf capital explicitly targeted; intent only, zero committed LPs named. Size omitted by relay: **~$1.5B new money at the ~$71B ask (FT/Bloomberg)** = ~20% of the June round (computed) — a valuation-MARK event more than a capital event |
+| Banks hired for STAR IPO next year | **PARTIAL — overstated** | "In talks with accounting and banking advisors"; NO banks named. STAR file by end-2026 / list as early as Q2 2027 ✓ matches file |
+| >50% GM on V4 | **CONFIRMED** (T1 + CN multi-relay) | Nets **inference compute ONLY** (not training amortization, not free usage); mechanism = V4 KV-cache/chips-per-query efficiency (coheres with house 06-25 V4 kv-cache log). V4 = current flagship ✓. Do NOT conflate with the Mar-2025 "545% theoretical" 24-hour figure. Demand denominator: V4-Flash peaked ~5.34T tokens/week (CN) |
+
+**Multiple structure (computed, on confirmed band):** DeepSeek 100–125× ARR at the June mark, **142–178× at the $71B ask** vs Anthropic **20.5×** run-rate (on-file $965B / ~$47B RRR) → the ask prices DeepSeek at **~7.7× Anthropic's revenue multiple on ~1/94th the revenue** (mid-band, computed). Zhipu (>$90B listed) already trades above DeepSeek's June mark. Reads (my model): H1 P~45% — scarcity premium on "China's frontier lab" inside a regulator-opened listing window (the CN public market will pay it, as Zhipu 10× shows); H2 P~35% — the multiple gap narrows via DeepSeek revenue ramp (2%-monetization lever: 10% monetization ≈ 5× overseas revenue, direction-only my-model) rather than valuation compression; H3 P~20% — the gap is the bubble tell and the STAR listing is the distribution event (coheres with the Arnott late-cycle current, NOT adopted as thesis).
+
+**Cascade:** private-tracker DeepSeek entry updated (ARR band + margin + QFLP/ME + governance + recycled-flag); funding node: the ~$1.5B/$71B mark feeds tell #11 (asset-level distribution — a mark-up round with tiny primary = the asset-level signature); cyber-thesis touch: >50% inference GM is a COUNTER-datapoint to the pass-through-thin-margin leg (booked as arc-observable input, N=1, self-reported-to-journalists tier). Ledger: 1 fire ~66.8k, HIGH (recycled catch + origin map + 3 omitted load-bearing numbers surfaced).
