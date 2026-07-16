@@ -10,7 +10,7 @@
 | KOSPI (Thu) | **6,803.66** (Hana Bank screen, WSJ Leg C photo; −480.75) — arithmetically ties 7,284.41 × (1−6.60%) | **−6.60%** | T1-photo/T2 |
 | SK Hynix 000660 (Thu) | −8~10% intraday, close pending; Wed close ₩2,082,000 | −8~10% intraday | T1 news1 intraday |
 | Samsung 005930 (Thu) | −5~7% intraday, close pending | −5~7% intraday | T2 |
-| **Nikkei 225 (Thu)** | **69,404.50 — GREEN, Advantest + Kioxia LED GAINS** | **+87.00** | T1 |
+| **Nikkei 225 (Thu)** | **69,404.50 — GREEN, Advantest + Kioxia LED GAINS** (leadership double-sourced on user provenance probe: Fisco Jul-16 contribution ranking via Yahoo Finance JP — "2銘柄で約311円分押し上げ"; contribution figure, NOT per-name closes — no Kioxia/Advantest prices on file) | **+87.00 ⚠️ DISPUTED** — does not tie to on-file Jul-15 close 68,751.51 (implies +652.99, computed); one of the two agent figures is wrong → reconcile queue | T1/T2 mixed |
 | Murata 6981 (HELD) | ~¥8,603 (vs ¥9,860 Jul-10) — fills the Jul-15 gap, exact close still unconfirmed | down | T2 approx |
 | SUMCO 3436 (HELD) | Jul-15 close ¥5,074 −4.39%; a ¥4,649 −8.38% print likely = Thu Jul-16 — **reconcile exact closes** | −4.4% then −8.4%? | T2/C |
 | S&P / Nasdaq / Dow (Wed) | 7,572.40 / 26,269.23 / 52,658.64 | +0.38% / +0.62% / +0.29% | T1 |
