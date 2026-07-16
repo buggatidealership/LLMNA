@@ -10,7 +10,7 @@ FACTS come from the sources below, computed and arithmetic-checked — never fro
 | Env var | Service | Verified | Serves | Limits / gotchas |
 |---|---|---|---|---|
 | `FINNHUB_API_KEY` | finnhub.io | 2026-07-16 live-call | US earnings calendar (1,500 entries tested), quotes | **/stock/eps-estimate PREMIUM-GATED (403)** — do not use; calendar-embedded estimate fields untested |
-| `EODHD_API_TOKEN` | eodhd.com | 2026-07-16 live (KRX) | **Deterministic closes: KRX verified (005930.KO, same-day)**; US (SKHY.US, TSM.US) | **20 calls/day**; ~1yr history; Tokyo suffix UNRESOLVED (6981.TSE 404 — run exchanges-list once to pin); token in old-session remote rigs may be stale (401) — fresh containers fine |
+| `EODHD_API_TOKEN` | eodhd.com | 2026-07-16 live (KRX + exchanges-list) | **Deterministic closes: KRX (.KO) verified same-day; KOSDAQ .KQ, Taiwan .TW/.TWO also in list**; US tickers | **20 calls/day**; ~1yr history; **TOKYO NOT COVERED on this tier** (exchanges-list: 70 exchanges, Japan absent — the 6981.TSE 404 was coverage, not suffix); token in old-session remote rigs may be stale (401) |
 | `FRED_API_KEY` | fred.stlouisfed.org | 2026-07-16 live (DGS10) | Macro/rates series (funding-node financial rung) | generous limits |
 | `DART_API_KEY` | opendart.fss.or.kr | 2026-07-16 live (status 000) | Korean official filings — SKHY primaries | individual-tier daily cap |
 | `FMP_API_KEY` | financialmodelingprep.com | 2026-07-16 live | **US analyst estimates + earnings calendar (blowout input #1)** | **`/stable/` endpoints ONLY** — `/api/v3/` returns 403 "Legacy Endpoint" for post-Aug-2025 keys; fields renamed (`epsAvg`, `revenueAvg`); ~250 calls/day |
@@ -26,13 +26,14 @@ FACTS come from the sources below, computed and arithmetic-checked — never fro
 | `twse_client.py` | TWSE openapi + TPEx openapi | 2026-07-16 live (2330/2383/2408 closes; **EMC June monthly revenue +120.7% YoY**; TUC 6274 same-day close) | Taiwan daily closes + **monthly revenue prints (blowout input #5)** for the CCL cluster + Nanya DRAM tell; TPEx serves SAME-DAY closes; occasional IncompleteRead → built-in retry |
 
 ## Standing gaps (no free route — do not chase)
-DRAM/NAND spot+contract (TrendForce/DRAMeXchange, paid — most valuable paid upgrade for the memory book) · KR/JP consensus (FnGuide/QUICK — user screenshot batches remain the route) · options flow (paid) · KOFIA 반대매매 (portal, agent-fetched) · KOFIA freesis raw (403s agents).
+**JP daily tape (Murata/SUMCO/Kioxia): NO keyless machine route** — EODHD tier lacks Tokyo; Stooq is JS-challenge-walled; J-Quants free tier delayed (recall-based). Stays agent-fetched w/ date-pins; candidates: EODHD paid tier, J-Quants verify. · DRAM/NAND spot+contract (TrendForce/DRAMeXchange, paid — most valuable paid upgrade for the memory book) · KR/JP consensus (FnGuide/QUICK — user screenshot batches remain the route) · options flow (paid) · KOFIA 반대매매 (portal, agent-fetched) · KOFIA freesis raw (403s agents).
 
 ## Disciplines (binding)
 1. **NEVER-ECHO:** key values never printed/logged/committed; fetch scripts read os.environ; test agents report presence/length/status only.
 2. **Vendor data is an input, not truth:** consensus figures cross-check against filed actuals (EDGAR/DART) before entering any pre-registration bar (origin: MU FY26 consensus 8.4×-in-3yr sanity flag, 2026-07-16).
 3. **Quota budgeting:** EODHD 20/day (tape fetch ≈6-8), AV 25/day — batch, don't poll.
-4. **Env-var changes apply to NEW containers only**; same-day verification = remote agent (Finnhub/EODHD-era rigs may hold stale snapshots) or a fresh session.
+4. **Env-var propagation is EVENTUALLY-CONSISTENT, not strictly boot-time** (2026-07-16 empirical: a long-running session's container picked up 4 newly-added keys mid-day). Verify presence by running `bash meta/tools/setup.sh` + reading /tmp/llmna-boot-status.txt — never assume either way.
+5. **Boot status file:** the cloud environment's Setup-script field runs `meta/tools/setup.sh` at container start → `/tmp/llmna-boot-status.txt` (key presence + keyless-endpoint reachability + repo HEAD). Read it at wake instead of re-testing.
 
 ## Falsifier / re-eval
 Monthly audit: any registry row not exercised in 30 days gets flagged; any gotcha proven wrong gets corrected here (not in day-state). If this file drifts from reality (a session hits a documented-as-working endpoint that fails), fixing THIS FILE is part of the fix.
