@@ -16,10 +16,10 @@
 
 | Date (2026) | Name | Status in OS | Print | Conf. | Timing / notes |
 |---|---|---|---|---|---|
-| **Jul-16 Thu** | CXMT 688825.SH | 🔴 monitor-only | *(not earnings — SUBSCRIPTION 申购 day; priced Jul-14 eve ¥8.66, listing ~late-Jul TBD)* | 🟢 T1 | CORRECTED 07-15 (was "listing day; priced Jul-15"); raise ¥57.9B base (computed 6.69B sh × ¥8.66), mcap ~¥580B |
+| **Jul-16 Thu** | CXMT 688825.SH | 🔴 monitor-only | *(not earnings — SUBSCRIPTION 申购 day; priced Jul-14 eve ¥8.66, listing ~late-Jul TBD)* | 🟢 T1 | CORRECTED 07-15 (was "listing day; priced Jul-15"); raise ¥57.9B base (computed 6.69B sh × ¥8.66), mcap ~¥580B. **07-16 update: 中签 results Jul-20 (T+2); listing still unannounced; ¥29.5B agent figure re-adjudicated to house ¥57.9B (STCN "largest A-share IPO in ~19yrs" > SMIC ¥53.2B only coheres with 57.9)** |
 | **Jul-21 Tue** | Northrop Grumman NOC | ⚪ reference (defense-electronics radar) | Q2 2026 | 🟢 T1 | BMO, 9:30am ET call |
 | *Jul-22 Wed* | *(context: IBM full Q2 + NBIS T+30 — house triple-adjudication day, already on calendar)* | | | | |
-| **Jul-29 Wed** | **SK HYNIX 000660 / SKHY** | **HELD 37 ADS** | Q2 2026 | 🟢 T1-leaning (≥3 KR sources) | KR morning; **the named KIS-vs-SemiAnalysis GP-bridge duel resolves here** |
+| **Jul-29 Wed** | **SK HYNIX 000660 / SKHY** | **HELD 37 ADS** | Q2 2026 | 🟢 **T1 (SEC 6-K: call Jul-29 09:00 Seoul, upgraded 07-16)** | KR morning; **the named KIS-vs-SemiAnalysis GP-bridge duel resolves here**; bar datum 07-16: KIS preview put Q2 OP ~8% BELOW consensus (Jul-13 repricing) — bar lowered into the print |
 | **Jul-29 Wed** | Elite Material 2383.TW | 🟢 watchlist (CCL/TC-16) | Q2 board approval | 🟢 board / 🔴 conf | Board approves financials Jul-29; 法說會 not yet posted (statutory filing deadline Aug-14) |
 | **Jul-30 Thu** | Cloudflare NET | ⚪ watchlist (agentic-commerce) | Q2 2026 | 🟡 T2 | AMC (typical) |
 | **Jul-31 Fri** | **MURATA 6981.T** | **HELD 336 sh** | Q1 FY3/27 | 🟢 T2 multi | ~14:00 JST; **L22 test + T9 promotion watch** |

@@ -189,3 +189,6 @@ When a resolution date hits:
 
 **Status: ✅ GRADED (T+0 fundamental + T+24h + T+72h stock-reaction)**
 
+
+- **2026-07-16 ASML T+24h reaction grade (closes 07-15 pending row): POSITIVE-SUSTAINED** — ADR +2.87% regular close $1,775.64, AH +3.51% toward $1,838 near 52-wk high (T1). Guide-raise frame (3rd consecutive FY raise €43-45B) dominated; no fade. Original bookings-keyed reaction frame remained void (metric dead, L31). Per `signals/cross-source-log/2026-07-16-thu-morning-wake-3leg.md`.
+- **2026-07-16 TSMC Q2 pre-registration — PARTIAL: rev component only.** Predicted pt $40.1B; actual $39.62B (NT$1.27T, +36% YoY, ABOVE guide, T1 pre-release Jul-13) = point −1.2% too high, direction right. EPS pt $3.90 + capex-raise P~55% + Q3 guide = PENDING post-call re-scan (armed same day). Status: pending-completion.
