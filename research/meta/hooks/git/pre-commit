@@ -1,0 +1,37 @@
+#!/bin/bash
+# LLMNA git pre-commit hook (built 2026-07-16, user directive: "make diff-before-commit binding").
+# Version-controlled at research/meta/hooks/git/pre-commit; activated per-container by
+# meta/tools/setup.sh via `git config core.hooksPath research/meta/hooks/git`.
+#
+# Function 1 — DIFF-BEFORE-COMMIT (deterministic): print the staged diff into the commit
+#   output so the committer (LLM or agent) has the exact content in-context at commit time.
+#   Origin: 2026-07-16 — two hook-fire-log telemetry commits were pushed unread; user made
+#   the review binding. A hook cannot force attention, but it CAN make the look automatic.
+# Function 2 — SECRETS SCAN (blocking): refuse commits whose ADDED lines contain key-shaped
+#   assignments (NEVER-ECHO enforcement at the last gate). Override for a false positive:
+#   append `# secretscan-ok` to the flagged line.
+
+echo "=== pre-commit: staged changes (diff-before-commit rule, 2026-07-16) ==="
+git diff --cached --stat
+
+ADDED_LINES=$(git diff --cached | grep -c "^+[^+]" 2>/dev/null || echo 0)
+if [ "$ADDED_LINES" -le 400 ]; then
+  git diff --cached | grep "^+[^+]" | head -400
+else
+  echo "(large diff: $ADDED_LINES added lines — showing first 60; review the artifact files directly)"
+  git diff --cached | grep "^+[^+]" | head -60
+fi
+
+# Secrets scan on added lines only (values, not names — env-var NAMES are fine to commit)
+LEAK=$(git diff --cached | grep "^+[^+]" | grep -Ev "secretscan-ok" | \
+  grep -E "(API_KEY|API_TOKEN|APIKEY|_SECRET|PASSWORD|PRIVATE_KEY)[\"']?\s*[:=]\s*[\"']?[A-Za-z0-9._-]{12,}")
+if [ -n "$LEAK" ]; then
+  echo ""
+  echo "=== pre-commit: BLOCKED — key-shaped assignment in staged content (NEVER-ECHO) ==="
+  echo "$LEAK" | head -5 | sed -E 's/([A-Za-z0-9._-]{6})[A-Za-z0-9._-]+/\1***REDACTED***/g'
+  echo "If this is a false positive, append '# secretscan-ok' to the line and re-stage."
+  exit 1
+fi
+
+echo "=== pre-commit: OK ==="
+exit 0

@@ -26,4 +26,7 @@ OUT=/tmp/llmna-boot-status.txt
   echo "--- repo ---"
   cd /home/user/LLMNA 2>/dev/null && echo "HEAD: $(git rev-parse --short HEAD 2>/dev/null) ($(git log -1 --format=%cd --date=format:%Y-%m-%d 2>/dev/null))"
 } > "$OUT" 2>&1 || true
+# Diff-before-commit + secrets-scan pre-commit hook (binding, user directive 2026-07-16):
+cd /home/user/LLMNA 2>/dev/null && git config core.hooksPath research/meta/hooks/git || true
+
 exit 0
