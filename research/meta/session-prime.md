@@ -131,7 +131,6 @@ _Correction note (2026-07-06): this section previously claimed "L24 removed; tai
 - **TC-10** Model-layer sovereignty + export control [ACTIVE N=9 + NBIS UK proof case] · **TC-11** chip-import patent enforcement [CANDIDATE N=1]
 - **TC-12** DRAM>HBM margin inversion [ACTIVE N=5] · **TC-13** AI power-infrastructure bottleneck cascade [ACTIVE N=7+] · **TC-14** YMTC westward NAND qualification [ACTIVE N=3, promoted 2026-07-05 — bear-vector watch on KIOXIA/SNDK consumer mix]
 
-_Prior version of this section carried N-counts 2-4× stale (e.g. TC-4 listed N=3 vs actual N=12) and omitted TC-10..14 entirely — corrected 2026-07-06._
 
 ## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-12 session-prime audit; SKHY entry 2026-07-10 added; re-verify against holdings.md on every screenshot)
 
@@ -158,7 +157,6 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
 - **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) 3-layer backfill owed; Samsung Q2 prelim GRADE completed (resolved Jul-7/8).
 
-_Prior version claimed "no active pending predictions as of 2026-06-24" — corrected 2026-07-06; the KIOXIA VLSI grade it referenced was completed 2026-06-26 (L30)._
 
 ## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
 
