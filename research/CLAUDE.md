@@ -129,6 +129,7 @@ research/
     ├── time-to-x-framework.md         ← bypass-route mapping for any binding constraint
     ├── private-tracker.md             ← OpenAI, Anthropic, xAI, etc. (no ticker)
     ├── tags.md                        ← (added 2026-06-11) shorthand dictionary L1-L27 / B1-B59 / Principles 1-38 / Critical Rules 1-18 / Themes T1-T10 / Patterns P-1 to PC-14 / Triangulation TC-1 to TC-11 (refreshed 2026-06-24 monthly audit #1; Rules #17-18 added 2026-06-27)
+    ├── data-access.md                 ← (added 2026-07-16) CANONICAL fact-layer registry: API keys (env-var names, verified endpoints, quotas, gotchas) + keyless clients at meta/tools/ (edgar_client.py, twse_client.py) + NEVER-ECHO disciplines — read BEFORE fetching any market/filing data
     ├── codification-rule.md           ← (added 2026-06-11) what triggers chat-only → file codification (Principle #35 candidate / Critical Rule #13 candidate)
     ├── signal-density-detection.md    ← (added 2026-06-11) S0-raw → S4-theme-elevated promotion ladder; enforces signals/triangulation.md repair
     ├── cross-domain-pattern-register.md ← cross-domain mechanism index (P-1 to P-11 verified + PC-12/PC-13 candidates + PC-14 verified N=3+)
