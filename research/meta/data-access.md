@@ -35,5 +35,12 @@ FACTS come from the sources below, computed and arithmetic-checked — never fro
 4. **Env-var propagation is EVENTUALLY-CONSISTENT, not strictly boot-time** (2026-07-16 empirical: a long-running session's container picked up 4 newly-added keys mid-day). Verify presence by running `bash meta/tools/setup.sh` + reading /tmp/llmna-boot-status.txt — never assume either way.
 5. **Boot status file:** the cloud environment's Setup-script field runs `meta/tools/setup.sh` at container start → `/tmp/llmna-boot-status.txt` (key presence + keyless-endpoint reachability + repo HEAD). Read it at wake instead of re-testing.
 
+## ROADMAP — user directive 2026-07-16 EVE: two new tracks ("you must get access to ETF/fund flows + institutional money flows, and minutes-latency news headlines")
+| Track | Route | Cost | Status |
+|---|---|---|---|
+| Flows/institutional | **ICI weekly fund flows** (official, free) · **13F via edgar_client** (Q2 season ~mid-Aug, filing-grade positioning) · ETF-flow dailies (etf.com class, agent-fetched T2) · BofA FMS monthly (press/screenshot) · KR foreign flows (KRX, agent) | free | next-boot wiring test |
+| Real-time headlines | **Finnhub /news + /company-news endpoints (KEYED, untested)** · **GDELT 2.0 (keyless, ~15-min refresh)** · wire RSS | free | next-boot test — if Finnhub news works, the wake gains a minutes-latency headline layer |
+Rationale (user hypothesis, booked): human pattern-matching binds on ingestion; the system's doesn't — but pattern-capacity scales the false-pattern rate too, so every new data track feeds PRE-REGISTERED tells (tripwires, node tells), never free-form pattern hunting. Discriminating-signal ranking for competing-scenario resolution: flows/positioning > forward prices (spreads live via FRED; options gapped) > supply-chain leading indicators (TW monthlies live) > surveys.
+
 ## Falsifier / re-eval
 Monthly audit: any registry row not exercised in 30 days gets flagged; any gotcha proven wrong gets corrected here (not in day-state). If this file drifts from reality (a session hits a documented-as-working endpoint that fails), fixing THIS FILE is part of the fix.
