@@ -171,7 +171,7 @@ _Prior version claimed "no active pending predictions as of 2026-06-24" — corr
 - **#45** event-anchored re-evals added; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
 - SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
 - **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
-- **Jul-15 DONE:** ASML Q2 GRADED (rev+3.9% above-band / EPS−7.4% below-band / bookings DEAD-METRIC→**L31** metric-existence-check candidate / FY guide RAISED €43–45B = equipment-leg torque confirmed).残: CXMT price, 반대매매 print, Warsh R2, TSMC call Jul-16.
+- **Jul-15/16 DONE:** ASML + TSMC Q2 both GRADED (TSMC capex-raise P55 HIT $60-64B; EPS above band both prints → **L32** candidate guidance-upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE Jul-16: read `meta/data-access.md` BEFORE fetching any market/filing data** — 6 keyed APIs (env vars, NEVER-ECHO) + keyless `meta/tools/` edgar_client + twse_client; facts-first wake order per methodology #43b/3e.
 - **OPEN USER-GATED (standing forcing item):** browser/API session — ROTATE Finnhub key FIRST, keys as env vars, allowlist data.sec.gov + pr.tsmc.com; unlocks EUV-layer checklist + Sensor Tower/QuestMobile/AVC + the 5 proxy-blocked cyber-thesis docs. Re-raise at wake.
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
