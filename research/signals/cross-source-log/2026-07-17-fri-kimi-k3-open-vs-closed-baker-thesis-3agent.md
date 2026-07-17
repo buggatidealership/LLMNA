@@ -1,0 +1,51 @@
+# 2026-07-17 FRI — Kimi K3 / open-vs-closed model economics: Baker thesis adjudication (user share + 2 AA screenshots; 3-agent team: verify / history / adversarial)
+
+**WORKFLOW: INGEST + Rule #16 (3 Opus-class agents, parallel) + Rule #18 dissent both directions.**
+**B64/B63 DISCLOSURE (binding, stated in-artifact):** the adjudicating model is Claude-family; the thesis is Anthropic-negative; and the AA data shows the Claude family as the most expensive corner of the chart (Fable 5 $2.75/task, lowest intelligence-per-$ of the six shown). Conflict runs BOTH directions (defend-family vs overcorrect); mitigation = agents got neutral framing, verdicts hang on dated history + computed data.
+**Source:** post = Gavin Baker, Atreides CIO (T3 social, verbatim-matched x.com/GavinSBaker 2026-07-17, per verify-agent). Screenshots = Artificial Analysis (T2 data provider), corroborated by verify-agent against 6+ secondary citations (AA site 403s our fetcher — search-triangulated, high-confidence not primary-verified).
+
+## 1. Computed facts first (from the screenshots, arithmetic executed)
+| Model | AA Intelligence Index | $/task | Idx per $ |
+|---|---|---|---|
+| GPT-5.6 Luna (max) | 51.5 | 0.21 | 245 |
+| GPT-5.6 Terra (max) | 55.0 | 0.55 | 100 |
+| **Kimi K3** | **57.2** | **0.94** | **61** |
+| GPT-5.6 Sol (max) | 58.8 | 1.04 | 57 |
+| Claude Opus 4.8 (max) | 56.5 | 1.80 | 31 |
+| Claude Fable 5 (w/ fallback) | 60.0 | 2.75 | 22 |
+- **K3 vs Terra +71% cost (buying +2.2 idx); K3 vs Sol −10% cost (−1.6 idx). Baker's "50-70% more expensive than GPT-5.6" is TRUE only vs Terra — vs Sol, K3 is CHEAPER. On this chart K3 is NOT dominated by any model = it sits ON the Pareto frontier**, which softens Baker's own "not the real Sputnik yet" caveat more than he allows.
+- Token-wastrel: CONFIRMED with mechanism — 130M output tokens on the AA eval vs 63M peer avg (>2×, T2); K3's LIST RATES are 40-50% cheaper than Sol ($3/$15 vs Sol's higher rates); the entire per-task premium is VOLUME (always-on thinking pass, all billed as output). 71% of K3's task cost is output-side vs 45% for Sol (computed from screenshot 2).
+- K3 architecture (T2 latent.space): 2.8T-param MoE, ~50B ACTIVE params (16/896 experts) + 90%-cache-hit serving pricing — "an open model needs the exact same compute as a closed model of similar size" collapses utilization/batching/serving economics into a constant; the claim is UNTESTED as stated and misleading in practice.
+
+## 2. The "90% inference margins" premise — UNSUPPORTED (verify-agent, dated T2)
+- Anthropic to investors: GM ~60%→70% guide (Jul-25), REVISED DOWN to 47% (2025) / 63% (2026) (The Information via multi-outlet); inference costs ran 23% ABOVE anticipation (Jan-26). OpenAI GM fell 40%→33%, missing its 46% forecast; OpenAI ~−$14B net 2026 (T2). SemiAnalysis: Anthropic blended mid-60s, API-only >80%.
+- The "90%" traces to napkin-math on MARGINAL COMPUTE COST vs list price (Zitron-class commentary, 🔴) — not a disclosed figure. **Reported gross margins cluster 33-70% and both labs are MISSING their own guidance downward.** The monopsony-rent picture at the thesis's foundation is built on a number that does not exist.
+
+## 3. Historical adjudication (history-agent; 5 cases, all dated+numbered in agent payload — key figures 🟢)
+| Case | Open thing won | Who captured the $ | Who got destroyed despite being "adjacent" |
+|---|---|---|---|
+| Info-highway vs WWW (user's analogy) | WWW, by ~1996-98 | Hyperscale ops (Google/Amazon/Netflix) harvesting CHEAP fiber a decade later | **Telecom infra/equipment: >$2T lost 2000-02; WorldCom/Global Crossing bankrupt; Cisco −80-85% from $546-569B peak; Nortel −90% from ~$400B; Lucent −97%; only 2.7% of fiber lit in 2002** |
+| Linux vs Unix/Win | Linux | AWS ($45.3B revenue in 2020 alone) — cloud ops on free Linux | Sun: $200B peak (2000) → $7.4B Oracle takeout (2009); Red Hat's whole exit ($34.6B, 2018) < one year of AWS revenue |
+| Android vs iOS | Android (88% units) | **Apple: ~90% of industry PROFIT (2015-16; >100% one quarter) on ~15% unit share** | Android OEMs — commoditized by their own open standard |
+| MySQL/Postgres vs Oracle | Open DBs (usage share) | Managed cloud DB services (RDS class) | Mid-tier DB vendors; **Oracle's op margin HELD 35-37% for two decades** — the incumbent moat (switching cost) survived |
+| Browsers (Netscape→IE→Chromium) | free/open browser | The sponsor's ADJACENT chokepoint (MSFT OS bundling; Google search distribution) — Spolsky "commoditize your complement" (2002, cited) | Browser layer itself: never a profit center for anyone |
+**Pattern (empirical, N=5): value RE-CONCENTRATES at the nearest scarce, non-substitutable complement. It never spreads evenly. In every case, 2-4 "other layers" got nothing or got killed.**
+**Timing lesson (load-bearing):** closed-adjacent infra PEAKED 2-4 years AFTER the open thing structurally won, then busted on capital-velocity-vs-demand-velocity mismatch — WITH usage growing throughout. Being right about the winning layer was not sufficient; timing and capital structure decided survival.
+
+## 4. Adversarial findings (adversarial-agent; both directions)
+**Steelman (thesis is right that):** vertical integration is happening NOW, dated — OpenAI-Broadcom custom inference silicon (10GW by 2029), Anthropic-Google-Broadcom compute + Samsung SF2P 2nm custom-chip talks (TechCrunch Jul-02), app-layer subsumption (ChatGPT super-app; Claude Cowork/Marketplace). Jensen's open-source advocacy on record (GTC-26 "proprietary AND open"; "800-year-old men"; ~$26B open-model investment claim T2) — rationale is VOLUME (more models→more inference→more GPUs), not margin redistribution.
+**Attacks that landed:** (i) **monopsony arrow backwards for 2026** — actual regime: suppliers sold out through 2027-28, DRAM +60-90%, labs are squeezed BUYERS (our whole memory book is the receipt); (ii) **funding-pool crack: the $100B-class take-or-pay commitments (OpenAI-Oracle $300B, Anthropic-xAI $1.25B/mo, NVDA-OpenAI $100B, AMD $200B) are signed BY the labs, funded by premium model-layer economics on a loss-making base — compressing model margins may SHRINK the capex pool, not redistribute it**; (iii) Moonshot itself is VC-funded at >100× ARR ($2B raise at >$20B on ~$200M ARR, TechCrunch May-26) — open-frontier training has no self-sustaining economics either; the funder just changes from enterprise revenue to strategic capital.
+**Hedge checks:** harness>model = real but self-interest-confounded convergence (labs pushing the frame as base models commoditize); RSI-checkpoint permanence = 🔴 speculation, no sourced reporting (Anthropic's own Jun-26 "partial recursion" disclosure ≠ hidden-checkpoint evidence).
+
+## 5. HOUSE VERDICT (my model, B64-disclosed; parallel hypotheses)
+- **H1 (P~60): Baker directionally right, beneficiary-list wrong.** Open-frontier pressure on model-layer rents is real and growing (K3 on the Pareto frontier; weights GA ~Jul-27), and it feeds VOLUME into compute near-term (Jensen logic) — but the margin dollars re-concentrate at scarce complements (power/grid interconnect, HBM/advanced packaging, hyperscale+harness ops), NOT "essentially every other company." The software claim is the weakest link (Case-3/5 lesson: adjacency ≠ capture; the agentic layer is exactly what labs are subsuming).
+- **H2 (P~25): The transition replays Case-1 timing** — model-layer commoditization compresses the lab-funded capex pool within 2-4 years, and today's infra beneficiaries (incl. parts of our book) meet a fiber-1999-class capital-velocity bust EVEN AS usage grows. Not falsified by strong current prints — Nortel's peak came AFTER the open web won.
+- **H3 (P~15): Closed labs re-moat via harness/RSI/vertical integration** and the open threat stays permanently one efficiency-generation behind (token-inefficiency persists at each frontier); model-layer rents survive at the 60-80% API-margin tier; status quo compounds.
+- **NEW TRIPWIRE (codified, the falsifiable version of H2 — "CAPEX-VS-MONETIZATION" / Case-1 replay signal):** watch the RATIO of AI infra capex growth vs monetized inference revenue growth. ARM: (a) hyperscaler+lab aggregate capex growth accelerating while (b) aggregate AI revenue growth decelerates for 2+ consecutive quarters, AND (c) financing shifts to debt/SPV structures (WorldCom signature) → H2 weight doubles. First reading at the late-Jul hyperscaler prints; quarterly thereafter. This is the memory-book's real long-horizon risk — not the daily tape.
+
+## 6. Cascades (Rule #10, same commit)
+- `meta/cross-domain-pattern-register.md`: **PC-18 CANDIDATE** — "open-layer commoditization → margin re-concentrates at scarcest complement (never even-spread), infra serving the open winner busts on 2-4yr lag" (N=5 historical, first live application = open-weight frontier models 2026).
+- `meta/private-tracker.md`: lab margin reality (Anthropic 47%/63% guided-down, OpenAI 33-40% missing, API-only >80% SemiAnalysis) + Moonshot funding structure + K3 watch (weights GA ~Jul-27).
+- `companies/NVDA/thesis.md`: K3-attributed selloff datum + Jensen volume-logic + Case-1 equipment-analog risk lens + capex-vs-monetization tripwire linkage.
+- `meta/day-state.md`: tripwire armed; K3 weights GA watch.
+**Position implication: NO ACTION on any held name today — near-term the thesis fight REINFORCES the held memory/supplier book (supplier pricing power is the anti-thesis receipt); long-term the Case-1 replay tripwire is now armed and grades quarterly. The book's insurance against H2 is the tripwire + the no-leverage/cash-heavy envelope, not a trade today.** 🟡
