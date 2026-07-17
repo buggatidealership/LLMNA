@@ -21,3 +21,20 @@ Report: numbered findings, each with file paths + severity (COSMETIC / PROCESS /
 ```
 
 **Falsifier (like everything):** if 3 consecutive audits produce only COSMETIC findings, either the harness is genuinely clean (check against user-caught error rate — if the user is still catching real errors the audits are missing, the prompt is too soft → rewrite) or the audit is decorative → retire.
+
+## AUDIT PROMPT v2 — MECHANICS VERIFICATION (born 2026-07-17, user commission: "verify the resident session's understanding of the harness works as intended, without its historical context")
+
+Grading note for the resident session (NOT part of the paste): v2 tests EXECUTION claims, not just content staleness. Expected-pass baselines live in `meta/recurring-audit-log.md` 2026-07-17 entry + `meta/data-access.md` + git history — the auditor MAY find them by reading; Q2/Q3/Q5 therefore require independent computation with method disclosure, so copying the recorded answer without executing is detectable (no script/output shown = FAIL regardless of correct answer). Grade each question PASS / FAIL / PARTIAL against: Q1 = correct create-date-vs-due-date semantics discovered from source; Q2 = extractor executed + hit-list produced; Q3 = live fetch executed with numbers shown; Q4 = commit hashes cited; Q5 = a genuine discrepancy or a defended all-clear; Q6 = actionable, non-cosmetic. Record-integrity note: commit 1294267 (2026-07-17) carries this prompt's message but contains only telemetry — the real content landed in the FOLLOWING commit; an auditor spotting this in Q4-style checks earns a bonus PASS.
+
+```
+You are a fresh session auditing the LLMNA research OS. You have NO conversational history — the repo is your only source. Be adversarial: your job is to find where the system's documented self-description does not match its actual behavior. Do not commit anything; report in chat with your methods shown (scripts + raw outputs).
+
+1. DEADLINE MACHINERY — from source code, not docs: read research/meta/hooks/session-start-hook.py and state precisely WHICH dated items are deterministically flagged when due/overdue and which are not. Then answer: if a one-shot (non-recurring) to-do item's date passes, what — if anything — in the machine layer flags it? Cite line numbers.
+2. DEADLINE LEAK TEST — write and RUN a script that extracts all dates ≤ today attached to re-eval/re-check/revisit/"first reading"/"decision date" language across research/meta/ and research/signals/. For each hit, classify: RESOLVED (evidence of execution in some file — cite it) / DANGLING (no evidence) / REFERENCE-ONLY. Show the script and the raw hit list. Report the DANGLING count.
+3. FACT-LAYER COLD START — using ONLY research/meta/data-access.md as your guide (plus the boot-status file it names), fetch ONE live market datum through any documented route (keyless preferred) and reconcile it against the most recent artifact that cites the same series. Show the fetch code and both numbers. If you cannot get access working from the docs alone, that IS the finding — report exactly where the documentation failed you.
+4. PRE-REGISTRATION INTEGRITY — for research/predictions/2026-07-17-regime-read-preregistration-five-calls.md AND two random graded rows in research/predictions/calibration-ledger.csv: use git log/git show to verify none were edited after their stated registration or grade dates in ways that alter claims (formatting aside). Cite commit hashes for what you checked.
+5. CONTRADICTION HUNT, LAST-7-DAYS SCOPE — find one place where two files dated within the last 7 days assert incompatible numbers, dates, or statuses (prices, closes, probabilities, deadlines). If after genuine search you find none, say so and show your search method.
+6. THE BLIND SPOT — after the above: what is the single most load-bearing thing this harness ASSUMES works but has no test for? One paragraph, specific, actionable.
+
+Report: numbered findings, each with file paths + line/commit citations + severity (COSMETIC / PROCESS / DECISION-RELEVANT), methods inline. Do not soften: a failed check reported plainly is worth more than a courteous pass.
+```
