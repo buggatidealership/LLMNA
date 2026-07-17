@@ -170,6 +170,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
 - **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
 - **Jul-15/16 DONE:** ASML + TSMC Q2 both GRADED (TSMC capex-raise P55 HIT $60-64B; EPS above band both prints → **L32** candidate guidance-upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE Jul-16: read `meta/data-access.md` BEFORE fetching any market/filing data** — 6 keyed APIs (env vars, NEVER-ECHO) + keyless `meta/tools/` edgar_client + twse_client; facts-first wake order per methodology #43b/3e.
+- **L34 PROMOTED (Jul-17, N=2): self-model drift — BINDING: harness-behavior claims require same-turn source reads; harness CODE changes require an independent verification agent before being reported applied. Full rule in lessons.md L34.**
 - **RESOLVED Jul-16:** the browser/API forcing item — keys live (Finnhub rotated ✓); residual asks: ECOS signup, EDINET (parked).
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
