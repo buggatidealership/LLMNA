@@ -45,3 +45,6 @@ Report: numbered findings, each with file paths + line/commit citations + severi
 
 ## EXTERNAL BENCHMARK-AUDIT COMMISSION v1 (born 2026-07-17; designed for cross-family reviewers — first addressee: Kimi K3, which reviewed the repo same day and offered this audit unprompted)
 Purpose: the one external metric the harness structurally lacks — the track record graded against BENCHMARKS and NULL MODELS, not against our own bands or street consensus alone. Reviewer requirements: non-Claude-family model preferred (weights-independence); repo access; adversarial default. Results land back with the user; the resident session grades the audit against this commission text and books repairs. Reusable quarterly.
+
+## CROSS-FAMILY FINGERPRINT COMMISSION v1 (born 2026-07-17; the question only a different-weights reviewer can answer — audit-hierarchy rung between user and fresh-session)
+Purpose: the corpus is a longitudinal behavioral record of ONE model family; a cross-family reader can detect training fingerprints (habits, aversions, blindspots, over-fit rules) invisible to the resident by construction. Output class: B65+ candidate biases (family-specific), rule-overfit flags, with file-cited evidence. Symmetry requirement: the reviewer must also state where its OWN training biases the diagnosis. Results graded by resident + user; repairs booked like any audit.
