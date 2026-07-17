@@ -13,6 +13,11 @@
 
 ---
 
+- [ ] **P1 / harness / 2026-07-20** [INFRA, CAL, recurring] — PROSE-DEADLINE monthly sweep #1 (recurring monthly; born from 2026-07-17 self-verification Test D)
+  - Origin: self-audit found 2 methodology "First re-eval 2026-07-15" items with no execution evidence + proved session-start hook date-flags ONLY recurring items (create-date semantics otherwise)
+  - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion)
+  - Linked: meta/recurring-audit-log.md 2026-07-17 entry, meta/hooks/session-start-hook.py
+
 - [ ] **P1 / process / 2026-07-19** [INFRA] — USER-SIDE API KEYS outstanding (fact-layer completion; per `meta/flows-positioning-acquisition-plan.md` + `meta/data-access.md`)
   - Origin: 2026-07-17 flows/positioning plan + registry gaps
   - Scope: (1) **ECOS_API_KEY** (ecos.bok.or.kr — KR credit/margin macro series; already queued, highest yield); (2) **KRX Open-API key** (openapi.krx.co.kr-class signup, Korean forms like DART — unlocks T1 daily foreign net-flows per KR stock incl. SK Hynix; else stays agent-bridged T2); (3) **EDINET_API_KEY** (parked — JP filings; MFA signup flow); env-var names already reserved in data-access.md. Add each to the cloud environment settings; session verifies via setup.sh boot probe.
