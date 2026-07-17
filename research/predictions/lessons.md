@@ -924,3 +924,10 @@ Actual: 393 commits behind; every state-claim built on the stale snapshot was wr
 Layer that failed (INPUT): the auditor applied our own B40 temporal-freshness failure to its own substrate — it date-pinned press claims but never date-pinned its OWN repo copy. Same family as L34 (self-model drift): the system's own state is a data source requiring freshness verification like any other.
 Generalizable lesson: ANY session (audit or resident) must verify corpus currency (fetch + BEHIND-count) before treating repo state as ground truth; "the file doesn't exist" and "nothing happened since X" are claims about a SNAPSHOT until the remote is checked.
 Calibration adjustment: setup.sh now prints BEHIND-count at boot; audit prompts carry STEP-0 sync; promotion to full lesson at N=2 (any future stale-state reasoning incident).
+
+[2026-07-17] L36-CANDIDATE→HOOK (escalated same day per the instructions-vs-hooks principle) — count-then-commit failed 3× in one day as an instruction; now deterministic
+Predicted (implicitly, each time): "the count I narrate in the commit message matches the staged file."
+Actual: three same-day commits carried false cap claims (30,335-class Jul-16 origin; 30,184 and 30,027 today) — the instruction "compute first, then commit" was written after instance 1 and violated twice anyway, including once where the verifying assertion fired but a mis-chained shell committed regardless.
+Layer that failed (REASONING→PROCESS): narrating verification is not verification; even executed checks fail if the action isn't GATED on them in the same chain.
+Generalizable lesson: recurring instruction-failure at N≥3 = build the hook, stop re-writing the instruction. BUILT: pre-commit Function 3 blocks any commit staging session-prime.md ≥30,000 chars; negative-tested live (blocked at 30,439).
+Calibration adjustment: any future "X verified" claim in a commit message must be produced by a gate that would have aborted the commit otherwise — messages assert what gates enforced, nothing more.
