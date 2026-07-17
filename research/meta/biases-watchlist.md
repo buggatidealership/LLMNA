@@ -1200,6 +1200,8 @@ Independent corroboration: Holy Stone Enterprise 1-1.5yr "high-end MLCC equipmen
 - `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` — origin case (reweight from PM to PM-2)
 - `meta/codification-rule.md` §1 — triggered codification (introduces new bias + methodological insight)
 
+**REGIME-BREAK LINKAGE (added 2026-07-17, cross-family review catch — Kimi K3 dissent #4):** B45's supercycle magnitude priors have quarterly recalibration but previously NO falsifier for the regime itself ending — they were learned INSIDE the supercycle (as was L30). Now bound: **if the CAPEX-VS-MONETIZATION tripwire (PC-18 artifact, armed 2026-07-17) fires at 2+ consecutive quarters, B45's regime priors are SUSPENDED pending full recalibration and L30 is re-graded** — supercycle priors must not be carried across a detected regime boundary. Per `signals/cross-source-log/2026-07-17-fri-kimi-k3-cross-family-harness-review-adjudication.md`.
+
 ### B46 — Framing-vs-institutional-signal inconsistency (CANDIDATE — N=1 origin 2026-06-12)
 
 **Pattern:** I produce a detail-rich analytical framing (bear case, concentration risk, kill scenarios) that logically CONTRADICTS a credible institutional signal (CEO public endorsement, multi-billion strategic investment, multi-year contract, public design-win disclosure) without surfacing the contradiction. The micro details look rigorous but float as noise because they are not anchored to the macro thesis that institutional behavior implies.
