@@ -184,8 +184,12 @@ def parse_pending_predictions(text: str) -> list[dict]:
         if len(cells) < 4 or cells[0].lower().startswith(("date made", ":-", "-")):
             continue
         total_data_rows += 1
-        if "NOT CANONICAL" in line or "GRADED" in line:
-            continue  # retired/struck rows retained in table for audit trail
+        if "NOT CANONICAL" in line or "✅ GRADED" in line:
+            # Retired/struck rows retained in table for audit trail.
+            # MUST match the house marker "✅ GRADED" exactly — a bare "GRADED"
+            # substring falsely skipped a live held-name row containing
+            # "UPGRADED" (verifier catch, 2026-07-17).
+            continue
         made_m = date_re.search(cells[0])
         res_m = date_re.search(cells[1])
         if not (made_m and res_m):
