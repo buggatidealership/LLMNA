@@ -84,6 +84,6 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,fy-guide-reiterate,70,FALSE,,REASONING,"guide RAISED 43-45 vs prior 36-40 (+15.8pct mid); both modeled branches (reiterate P70 / upper-half P40) under-called; outcome outside branch set"
 2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,rev-point,,HIT-BAND,+1.21,COMPUTATION,"actual 39.62 vs pt 40.1; in band 39.5-40.6; street 38.1 was -3.84 - mine closer both-errors"
 2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,rev-ge-guidemid,75,TRUE,,REASONING,"actual 39.62 vs threshold 39.6 - resolved TRUE by 0.02B"
-2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,eps-point,,MISS-LOW,-8.2,COMPUTATION,"actual ~4.25 computed (NT27.25, rev-implied FX 32.06; 6-K pending) vs pt 3.90; ABOVE band top 4.05; street 3.81 was -10.3 - mine closer; L32 candidate origin"
+2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,eps-point,,MISS-LOW,-10.5,COMPUTATION,"FILING-GRADE FINAL 07-17: actual US$4.31/ADR (6-K Ex-99.1) vs pt 3.90 = +10.5pct above; ABOVE band top 4.05; street 3.81 was -11.6; provisional ~4.25 was itself low; L32 N=2 confirmed"
 2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,q3-up-sequential,80,TRUE,,REASONING,"Q3 guide 44.6-45.8 mid +14.1pct QoQ computed"
 2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,capex-raise,55,TRUE,,REASONING,"full raise 52-56 -> 60-64 (+14.8pct mid) exceeds registered raise-or-top-end-language class; falsifier capex-cut opposite"

@@ -57,3 +57,9 @@
 ## Catalyst clock
 - T+24h TSM ADR reaction grade tomorrow (fresh-container tape pull — the +2-5% frame resolves there).
 - Jul-21 NOC · Jul-22 IBM Q2 + NOW + NBIS T+30 · Jul-29 SKHY (bar lowered per KIS, demand backdrop now capex-confirmed).
+
+## FILING-GRADE COMPLETION (2026-07-17 wake, edgar_client 6-K accession 000104617926000451 Ex-99.1) 🟢
+- **Q2 FINAL: revenue NT$1,270.38B (+36.0% YoY, +12.0% QoQ); net income NT$706.56B (+77.4% YoY, +23.4% QoQ); diluted EPS NT$27.25 = US$4.31/ADR.**
+- **EPS grade FINAL: MISS-LOW — house point $3.90, actual $4.31 = +10.5% above point (computed).** The Jul-16 provisional ~$4.25 estimate was itself low. L32 (guidance/margin upside under-branching) instance CONFIRMED at filing grade — N=2 pattern (ASML EPS −7.4% below-band the other direction; both misses = band/branch architecture, not direction bias).
+- **Print-day ADR reaction grade (T+0, computed FMP): TSM −2.32% ($419.48→$409.74) ON a record +36%/+77% print with capex raise** — while Taipei closed +1.2% at a record NT$2,470 (TWSE, session ended before the US rout deepened). Reaction verdict: **SELL-THE-RECORD — the market's bar is above even a record print in the current risk-off regime; "good news isn't enough" tell #2 this week** (tell #1 = ASML T+24h giveback). Regime datum for the Jul-29 SKHY print bar (KIS-lowered bar meets the same tape).
+- ASML T+24h reaction grade CLOSED (docket item): day-0 +2.23%, T+24h −1.67%, net +0.52% from pre-print across two sessions — RESILIENT vs cohort (MU −8.94% Jul-13→16 computed) = the guide-raise held the line in a falling tape. Booked to ASML grade artifact by reference.
