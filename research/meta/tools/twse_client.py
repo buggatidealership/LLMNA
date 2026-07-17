@@ -72,3 +72,20 @@ if __name__ == "__main__":
             print(json.dumps(row, ensure_ascii=False))
     else:
         print(__doc__)
+
+
+def t86_institutional(date_yyyymmdd, codes=None):
+    """Per-stock institutional flows (三大法人買賣超) for one trading day.
+    Free, keyless. Fields include foreign net shares (index 4) and
+    3-institution total net (last column). Returns list of rows, or the
+    subset matching `codes` (set of ticker strings) if given.
+    Verified 2026-07-17: 1,327 rows for 2026-07-16; publishes T+0 evening TW time."""
+    import json as _json, urllib.request as _rq
+    url = ("https://www.twse.com.tw/rwd/zh/fund/T86?date=%s"
+           "&selectType=ALLBUT0999&response=json" % date_yyyymmdd)
+    req = _rq.Request(url, headers={"User-Agent": UA})
+    d = _json.loads(_rq.urlopen(req, timeout=20).read())
+    rows = d.get("data", [])
+    if codes:
+        rows = [r for r in rows if r[0].strip() in codes]
+    return rows
