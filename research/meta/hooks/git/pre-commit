@@ -14,7 +14,7 @@
 echo "=== pre-commit: staged changes (diff-before-commit rule, 2026-07-16) ==="
 git diff --cached --stat
 
-ADDED_LINES=$(git diff --cached | grep -c "^+[^+]" 2>/dev/null || echo 0)
+ADDED_LINES=$(git diff --cached | grep -c "^+[^+]" 2>/dev/null)  # grep -c prints 0 itself on no match; the old `|| echo 0` produced "0\n0" (verifier catch)
 if [ "$ADDED_LINES" -le 400 ]; then
   git diff --cached | grep "^+[^+]" | head -400
 else
@@ -38,9 +38,13 @@ fi
 #   staged file was over it. The instruction failed repeatedly; this is deterministic.
 #   Cap = MAX_INJECT_CHARS in session-prime-hook.py (over-cap content gets truncated
 #   at injection, silently breaking the cold-boot ledger).
-if git diff --cached --name-only | grep -q "research/meta/session-prime.md"; then
-  SP_CHARS=$(git show :research/meta/session-prime.md 2>/dev/null | wc -c)
-  if [ "$SP_CHARS" -ge 30000 ]; then
+if git diff --cached --name-only | grep -qx "research/meta/session-prime.md"; then
+  # CHARS not bytes (verifier catch 2026-07-17: wc -c counts bytes; the cap it
+  # enforces is MAX_INJECT_CHARS = Python len() = characters; file was 30,339
+  # bytes / 29,977 chars — byte-counting would spuriously block). Boundary -gt
+  # mirrors the injection hook's truncation threshold (> 30000) exactly.
+  SP_CHARS=$(git show :research/meta/session-prime.md 2>/dev/null | python3 -c "import sys; print(len(sys.stdin.read()))")
+  if [ "$SP_CHARS" -gt 30000 ]; then
     echo ""
     echo "=== pre-commit: BLOCKED — session-prime.md staged at ${SP_CHARS} chars (cap 30000) ==="
     echo "Prune before committing; the injection hook truncates over-cap content silently."
