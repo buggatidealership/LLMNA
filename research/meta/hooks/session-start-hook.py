@@ -149,6 +149,9 @@ def format_recurring_item(item: dict, status: str, days: int) -> str:
     return f"  {prefix} ({suffix}) — {item['priority']} / {item['category']} [{tags}] — {item['title']}"
 
 
+pending_parse_stats = {"total": 0, "matched": 0}
+
+
 def parse_pending_predictions(text: str) -> list[dict]:
     """
     Pending predictions: items in the `## Pending` section of grading-log.md
@@ -164,24 +167,43 @@ def parse_pending_predictions(text: str) -> list[dict]:
     if not m:
         return pending
     section = m.group(1)
-    # Table rows look like: | YYYY-MM-DD | YYYY-MM-DD | TICKER | EVENT | FILE | DIRECTION |
-    row_re = re.compile(
-        r"^\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(\d{4}-\d{2}-\d{2})[^|]*\|\s*([A-Z]+)\s*\|\s*([^|]+)\s*\|",
-        re.MULTILINE,
-    )
-    for row in row_re.finditer(section):
-        made, resolution, ticker, event = row.groups()
+    # Row parse WIDENED 2026-07-17 (fresh-session audit Finding 2: the strict
+    # regex matched 2 of 17 live data rows — bold/strikethrough markers, ~dates,
+    # and non-caps tickers like "SK Hynix (HELD #1)" were all invisible).
+    # Now: tolerate **/~~/~ decoration around dates, accept any non-pipe ticker
+    # text, and skip rows explicitly retired (GRADED / NOT CANONICAL strike-rows).
+    # Coverage is COUNTED and surfaced so silent parse-drift is visible per-session.
+    total_data_rows = 0
+    matched_rows = 0
+    date_re = re.compile(r"(\d{4}-\d{2}-\d{2})")
+    for raw in section.splitlines():
+        line = raw.strip()
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 4 or cells[0].lower().startswith(("date made", ":-", "-")):
+            continue
+        total_data_rows += 1
+        if "NOT CANONICAL" in line or "GRADED" in line:
+            continue  # retired/struck rows retained in table for audit trail
+        made_m = date_re.search(cells[0])
+        res_m = date_re.search(cells[1])
+        if not (made_m and res_m):
+            continue
+        matched_rows += 1
         try:
-            res_date = datetime.strptime(resolution, "%Y-%m-%d").date()
+            res_date = datetime.strptime(res_m.group(1), "%Y-%m-%d").date()
         except ValueError:
             continue
         if res_date <= today:
             pending.append({
-                "made": made,
-                "resolution": resolution,
-                "ticker": ticker.strip(),
-                "event": event.strip(),
+                "made": made_m.group(1),
+                "resolution": res_m.group(1),
+                "ticker": re.sub(r"[*~]", "", cells[2]).strip(),
+                "event": re.sub(r"[*~]", "", cells[3]).strip()[:120],
             })
+    pending_parse_stats["total"] = total_data_rows
+    pending_parse_stats["matched"] = matched_rows
     return pending
 
 
@@ -271,7 +293,12 @@ def build_briefing() -> str | None:
             lines.append("PENDING GRADES (predictions past resolution date):")
             for p in pending:
                 lines.append(f"  {p['ticker']} {p['event']} — predicted {p['made']}, resolved {p['resolution']}")
-            lines.append("")
+        lines.append(
+            f"  (pending-parser coverage: {pending_parse_stats['matched']} live rows parsed"
+            f" of {pending_parse_stats['total']} data rows — unmatched rows are retired/undated;"
+            f" if a LIVE row is missing here, the parser drifted: see 2026-07-17 audit)"
+        )
+        lines.append("")
 
     # Bottlenecks last review
     if BOTTLENECKS_PATH.exists():

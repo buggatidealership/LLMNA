@@ -25,6 +25,11 @@ OUT=/tmp/llmna-boot-status.txt
   done
   echo "--- repo ---"
   cd /home/user/LLMNA 2>/dev/null && echo "HEAD: $(git rev-parse --short HEAD 2>/dev/null) ($(git log -1 --format=%cd --date=format:%Y-%m-%d 2>/dev/null))"
+  # Snapshot-currency guard (added 2026-07-17 after a fresh-session audit ran on an
+  # 11-day-stale container clone, 393 commits behind, and mistook it for reality):
+  git fetch origin main --quiet 2>/dev/null || true
+  BEHIND=$(git rev-list --count HEAD..origin/main 2>/dev/null || echo "?")
+  echo "BEHIND origin/main: ${BEHIND} commits $( [ "${BEHIND}" != "0" ] && echo '<<< STALE CLONE — git pull BEFORE trusting any repo state' )"
 } > "$OUT" 2>&1 || true
 # Diff-before-commit + secrets-scan pre-commit hook (binding, user directive 2026-07-16):
 cd /home/user/LLMNA 2>/dev/null && git config core.hooksPath research/meta/hooks/git || true

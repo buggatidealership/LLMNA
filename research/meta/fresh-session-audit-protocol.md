@@ -38,3 +38,5 @@ You are a fresh session auditing the LLMNA research OS. You have NO conversation
 
 Report: numbered findings, each with file paths + line/commit citations + severity (COSMETIC / PROCESS / DECISION-RELEVANT), methods inline. Do not soften: a failed check reported plainly is worth more than a courteous pass.
 ```
+
+**v2 AMENDMENT (2026-07-17, from the first v2 run's Finding-0):** every audit prompt now begins with a STEP 0: `git fetch origin main && git rev-list --count HEAD..origin/main` — if the clone is behind, PULL FIRST and state the delta in the report. The first v2 run audited an 11-day-stale container snapshot (393 commits behind), concluded the OS had been "dormant 11 days," and reported multiple canonical files as "never existed." The auditor never questioned its snapshot's currency — the exact temporal-freshness failure (B40-class) the OS polices in market data, applied to its own substrate. Snapshot-independent findings from that run were still HIGH-VALUE (parser-coverage gap CONFIRMED worse on current repo: 2/17 rows; read-only-session/git-check collision; parser-contract blind spot) — staleness invalidated the state-claims, not the mechanism-claims.

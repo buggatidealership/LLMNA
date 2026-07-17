@@ -15,7 +15,7 @@
 
 - [ ] **P1 / harness / 2026-07-20** [INFRA, CAL, recurring] — PROSE-DEADLINE monthly sweep #1 (recurring monthly; born from 2026-07-17 self-verification Test D)
   - Origin: self-audit found 2 methodology "First re-eval 2026-07-15" items with no execution evidence + proved session-start hook date-flags ONLY recurring items (create-date semantics otherwise)
-  - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion)
+  - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion); (4) MERGED from v2 audit 07-17: backfill the MU formal 3-layer GRADE (owed since 06-24, now parser-visible); (5) decide the read-only-session/git-check collision (exempt hook-fire-log vs log outside tree); (6) add parser coverage tests to meta/tests/ (real todo.md + grading-log.md, fail on unmatched live rows)
   - Linked: meta/recurring-audit-log.md 2026-07-17 entry, meta/hooks/session-start-hook.py
 
 - [ ] **P1 / process / 2026-07-19** [INFRA] — USER-SIDE API KEYS outstanding (fact-layer completion; per `meta/flows-positioning-acquisition-plan.md` + `meta/data-access.md`)

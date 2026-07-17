@@ -916,3 +916,10 @@ Actual (hook source): only recurring-keyword items + grading-log pending rows ar
 Layer that failed (INPUT): I described the harness's behavior from my mental model of it, not from its code — the same failure mode as citing recalled market facts without a print. The harness IS a data source; read it before asserting it.
 Generalizable lesson: claims about what the harness DOES get the same discipline as claims about markets — verify against source (code/files) before asserting; computed self-tests > confident self-description.
 Calibration adjustment: harness-mechanics explanations get a source-check pass (read the hook/file) before sending; promotion test N=2 if another self-description error surfaces within 60 days.
+
+[2026-07-17] CANDIDATE L35 (N=1: first v2 fresh-session audit) — snapshot-currency check before reasoning over any corpus
+Predicted (by the auditor, structurally): its clone = current reality.
+Actual: 393 commits behind; every state-claim built on the stale snapshot was wrong while every mechanism-claim survived.
+Layer that failed (INPUT): the auditor applied our own B40 temporal-freshness failure to its own substrate — it date-pinned press claims but never date-pinned its OWN repo copy. Same family as L34 (self-model drift): the system's own state is a data source requiring freshness verification like any other.
+Generalizable lesson: ANY session (audit or resident) must verify corpus currency (fetch + BEHIND-count) before treating repo state as ground truth; "the file doesn't exist" and "nothing happened since X" are claims about a SNAPSHOT until the remote is checked.
+Calibration adjustment: setup.sh now prints BEHIND-count at boot; audit prompts carry STEP-0 sync; promotion to full lesson at N=2 (any future stale-state reasoning incident).
