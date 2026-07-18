@@ -170,7 +170,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
 - **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
 - **Jul-15/16 DONE:** ASML + TSMC Q2 GRADED (L32 N=2 upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients; facts-first wake order #43b/3e).
-- **L34 PROMOTED (Jul-17, N=2): harness-behavior claims need same-turn source reads; harness CODE changes need an independent verifier agent before reported applied. Full rule: lessons.md.**
+- **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
 - **RESOLVED Jul-16:** the browser/API forcing item — keys live (Finnhub rotated ✓); residual asks: ECOS signup, EDINET (parked).
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
@@ -225,7 +225,9 @@ For every gate / falsifier / monitoring variable: build BOTH lead-indicator stac
 - Anthropomorphic-default bias (named class, inside #43b): pre-training imports human constraints that don't bind the model — human time estimates, single-threaded plans, essay-instead-of-computation. Sweep for these at the affordance review.
 - **AGENT-PRIMITIVES CAPABILITY MAP (docs-verified + executed-tested 2026-07-08; #43 N+1 — user-surfaced):** (1) Subagents here are NOT fire-and-forget: a completed agent is **RESUMABLE via SendMessage with context intact** — EXECUTED-VERIFIED 2026-07-08 (docs-sweep agent resumed post-completion, answered from prior context in ~8s, zero re-searches). USE for follow-up questions to verification agents instead of re-firing fresh ones (cost saver). Docs' "cannot be resumed" claim is FALSE for this runtime; session-scoped only. (2) Docs (T1 code.claude.com 2026-07-08): subagent roles CAN carry `enable persistent memory` frontmatter (accumulates across invocations) — but memory lives at ~/.claude/projects/ which does NOT survive cloud-container recycling; the harness's git-versioned files remain the superior durable memory for us. (3) Agent teams (team lead + named teammates w/ own contexts, shared task list, inter-agent messaging) EXIST but are experimental, CLI-only (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`, tmux/iTerm2) — NOT available in cloud sessions. Team lead = the main session, not an agent type.
 
-- **PC-18 CANDIDATE (07-17): open-layer commoditization re-concentrates margin at the scarcest complement — never even-spread; infra serving the open winner busts on 2-4yr lag (N=5). ARMED: CAPEX-VS-MONETIZATION tripwire (capex accel + AI-rev decel 2+ qtrs + debt/SPV = fiber-1999 signature; first reading late-Jul hyperscaler prints).** Per `signals/cross-source-log/2026-07-17-fri-kimi-k3-open-vs-closed-baker-thesis-3agent.md`.
+- **PC-18 CANDIDATE (07-17): open-layer commoditization re-concentrates margin at scarcest complement, never even-spread; infra busts on 2-4yr lag (N=5). ARMED: capex-vs-monetization tripwire, first reading late-Jul hyperscaler prints.**
+
+- **#46 CANDIDATE (07-18): FLUID OBJECTIVE — goal-definition versioned (v2 = calibration + available-edge×capture); noise floor is instrument-relative, re-audited each cycle; no asymptote assumed.**
 
 ## §10. ARCHITECTURE NOTE — how this file gets maintained
 
