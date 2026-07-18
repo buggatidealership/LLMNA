@@ -1,8 +1,17 @@
 # Watchlist Candidates
 
-**Last updated:** 2026-07-07 US-LEG-B (defense-electronics + power-capex additions)
+**Last updated:** 2026-07-18 BOTTLENECK-FORECAST next-regime sweep (consumables + test-layer radar cluster)
 
 ---
+
+### ⚪ Consumables + test-layer radar cluster — JX Advanced Metals 5016.T + Fujimi 5384.T (+ KYEC 2449.TW / GUC 2454.TW noted) — radar/pre-thesis (added 2026-07-18, 4-agent sweep incl. adversarial native-JP pass)
+
+Per `signals/cross-source-log/2026-07-18-sat-bottleneck-next-regime-sweep-4agent.md` (sweep of record). Frame: `sector/design-invariance-ladder.md` — durable profit = invariance × concentration × qualification moat, now with a NARRATIVE-CONTAMINATION DISCOUNT term (adversarial verification before B39 on shock-narrative sub-layers).
+- **JX Advanced Metals (5016.T, listed Mar-2025):** ~64% global SEMICONDUCTOR sputtering-target share (company/IPO-sourced 🟡 — not third-party audited; Nikkei variants say ~60%) = highest single-vendor concentration verified anywhere in the consumables stack; thin coverage post-IPO. Gates: independent share verification + B39 asymmetry pass + DeGiro accessibility (user-side).
+- **Fujimi (5384.T):** pure-play CMP slurry, top-5 layer 65-70% concentrated; Q3 FY26 rev ¥51,445M confirmed vs 決算短信, AI/HPC-attributed growth all regions. Cleanest small-cap pure-play; lower concentration edge than targets/gases. Gates: B39 + valuation screen.
+- **KYEC (2449.TW) / GUC (2454.TW) — noted, not opened:** test/burn-in concentration (KYEC >90% NVDA final-test, ~100% Google TPU FT, 🟡 T2-T3) and HBM base-die design (GUC, 3nm-class) are the two NEW register candidates from the same sweep; name-level work waits for the 2026-08-06 monthly re-rank promotion decision.
+- **EXPLICITLY NOT ADDED — Kanto Denka (4047.T):** the sweep's flashiest surface, excluded two-sided: ~3.2× H1-2026 re-rate (moderate-confidence) rode a partly-REFUTED "permanent WF6 cessation" narrative (no TDnet disclosure; fake-news label; FY27 sales guided +45%). B39 FAIL + refutation = downside risk if the debunk propagates. Real residual: sole-domestic-NF3 monopoly on a fire-damaged line — re-examine only at post-print reset with the H1-H4 markers (artifact §3b).
+- **Central Glass (4044.T):** not added — WF6 immaterial to it; market already discriminated correctly (never re-rated).
 
 ### 🟢 CCL-scarcity cluster — Nittobo 3110.T (bypass pick) + Elite Material 2383.TW + TUC 6274.TW + Mitsui Kinzoku 5706.T (added 2026-07-08, user-surfaced divergence -> TC-16)
 
