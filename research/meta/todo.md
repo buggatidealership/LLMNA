@@ -13,6 +13,10 @@
 
 ---
 
+- [ ] **P1 / prediction / 2026-07-21** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check (Program v2 amendment #2: 150 provenance-tagged calls by Oct audit, ~2/day via formalizing implicit wake calls; weekly tally at Monday wakes; kill-metric per program doc)
+  - Origin: K3 plan review Q4 — n is the binding constraint, not method
+  - Linked: predictions/probability-resolution-program.md, meta/tools/brier_tally.py
+
 - [ ] **P1 / harness / 2026-07-20** [INFRA, CAL, recurring] — PROSE-DEADLINE monthly sweep #1 (recurring monthly; born from 2026-07-17 self-verification Test D)
   - Origin: self-audit found 2 methodology "First re-eval 2026-07-15" items with no execution evidence + proved session-start hook date-flags ONLY recurring items (create-date semantics otherwise)
   - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion); (4) MERGED from v2 audit 07-17: backfill the MU formal 3-layer GRADE (owed since 06-24, now parser-visible); (5) decide the read-only-session/git-check collision (exempt hook-fire-log vs log outside tree); (6) add parser coverage tests to meta/tests/ (real todo.md + grading-log.md, fail on unmatched live rows)

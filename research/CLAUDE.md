@@ -282,7 +282,7 @@ Build bottoms-up where possible (capacity gates, unit economics). Do NOT just we
 **Required components:**
 - Event being predicted + resolution date
 - Point estimate(s) with units
-- Calibrated probability per component
+- Calibrated probability per component **with P-PROVENANCE (Program v2, 2026-07-18): class base-P cited from `predictions/base-rates.md` + evidence-stack count + deviation justification; ensemble spread report-only, never sets P**
 - Comparison to consensus AND to alternative scenarios
 - 2–3 explicit falsification conditions
 - Bottoms-up reasoning, then comparison to outside view
