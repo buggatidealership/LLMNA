@@ -1,0 +1,6 @@
+event,date,harness_stance,human_action,price_at_event,price_last(2026-07-17),move_since,ex_post_verdict,source
+MRVL full exit,2026-06-27,3/3 ensemble: TRIM 8%→5%,sold ALL 44sh,266.70 (06-26 close),188.68 (07-17),-29.3%,override vindicated,portfolio/changes.md + yahoo MRVL
+SKH emotional exit,~2026-07-01,HOLD (falsifier intact),sold all 16 GDR,"2187000 KRW (07-01 close, ordinary)",1842000 KRW (07-15),-15.8%,override vindicated,changes.md + yahoo 000660.KS
+SNDK emotional exit,~2026-07-01,HOLD (falsifier intact),sold all 9 sh,2032.22 (07-01 close),1354.82 (07-17),-33.3%,override vindicated,changes.md + yahoo SNDK
+NBIS exit,2026-07-03,decision-package approved sell,sold all 30 sh,215.62 (07-02 close),177.71 (07-17),-17.6%,vindicated,changes.md + yahoo NBIS
+SKHY premium buy,2026-07-10,gate ≤~5% premium BLOCKED (user override),bought 37 ADS @173.45,173.45 entry,154.03 (07-17),-11.2%,override wrong — gate correct,changes.md + yahoo SKHY
