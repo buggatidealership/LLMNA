@@ -20,3 +20,5 @@ The market has one thing we don't: **flows/positioning data** (our registry's #1
 
 ## Grading plan
 Each call grades at its resolution date into calibration-ledger.csv (category: regime-read). Call #4 grades in stages (Jul-20 KOFIA / Jul-22 triple / end-July capex season). Wrong-side outcomes feed lessons per the 3-layer structure; the point of this file is to be checkable, not to be right.
+
+**2026-07-18 ADDENDUM (call #4):** third selling-mechanism branch surfaced (Jukan: market pricing 2028 supply early) — VERIFIED-WEAK (Jefferies: 15-20% of announced capacity lands by 2028; bottoms-up gate concurs) → booked at LOW weight; H1 (unwind) retains primary weight into the Mon Jul-20 KOFIA discriminator. Per `signals/cross-source-log/2026-07-18-sat-jukan-memory-pov-3claim-adjudication.md`.
