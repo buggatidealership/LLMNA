@@ -36,7 +36,8 @@ Why: your screenshots proved the spawns run in the old Health-Calculators enviro
 3. If an old environment (Health-Calculators-era "Analyst" or similar) still exists in the list, consider deleting it so stale spawns can't happen — that deletion is YOURS to make (HIGH-tier by our own matrix if done agent-side).
 Why: guards now self-install via the repo's project hooks (f027157) for any FRESH clone — but a container that boots an old cached snapshot predating today carries neither the guards nor the self-installer. Fresh clone from the right environment = fully guarded from turn 1.
 
-## 4. ⭐ GitHub branch protection on main (~2 min) — the ONE catastrophe-stop I cannot bypass (added 2026-07-19, destructive-change governance)
+## 4. ⭐ GitHub branch protection on main (~2 min) — RECLASSIFIED REQUIRED after K3 red-team (2026-07-19): the ONLY layer that survives a server-side API bypass
+**K3 finding E6:** every guard I built is client-side. An agent (or a poisoned instruction) that calls the GitHub API directly — `gh api -X DELETE .../branches/main`, `gh repo delete`, or `curl` with the repo token — bypasses ALL of them by construction, because the record lives on GitHub's servers, not on my machine. Branch protection is the only stop that runs where the record actually lives. This moved from "nice backstop" to "the one layer I genuinely cannot substitute for."
 1. github.com → **buggatidealership/LLMNA** → **Settings → Branches** (or Settings → Rules → Rulesets on the new UI)
 2. Add a protection rule / ruleset for branch **`main`**
 3. Enable: **"Do not allow force pushes"** (blocks history rewrite) and **"Restrict deletions"** (blocks branch wipe)

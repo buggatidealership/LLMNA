@@ -740,3 +740,8 @@
   - Origin: Jul-07 Ankara cluster + GM-Defense/Lockheed munitions MOU (T1 CNBC Jun-16) + NATO $50B package w/ US-prime EU co-production (T1 Jul-07); per 2026-07-19 wake Leg B
   - Scope: passives-density (MURATA second demand leg) quantification + segment map + named-name screen (NOC reference); framework file under sector/
   - Linked: watchlist/candidates.md (counter-drone cluster), companies/MURATA/thesis.md
+
+- [ ] **P1 / harness / 2026-07-19** [INFRA, CAL] — DESTRUCTION-DEFENSE SYNTHESIS: merge K3 + Claude-new-session reviews, build HELD amendments
+  - Origin: K3 red-team ADOPT-WITH-AMENDMENTS (2026-07-19); guard v2 built the deterministic pattern-coverage, HELD the architecture pending the Claude cross-review the user is running.
+  - Scope: after Claude review lands — build nonce challenge-response tokens (K3#3, replaces blanket env tokens), Edit/Write matcher on enforcement files (K3#7, warn-or-nonce not hard-block to avoid self-edit alarm fatigue), cumulative cross-commit thresholds (K3#6), semantic settings-diff guard (K3#8, hook-count-may-not-decrease + allow-list-may-not-widen), hook-content hash-manifest self-heal (K3#1). Each verified before "applied" per L34.
+  - Linked: signals/cross-source-log/2026-07-19-sun-late-k3-destruction-defense-redteam-adjudication.md, meta/destructive-change-governance.md §Held, meta/hooks/git-guard-pretooluse.py
