@@ -61,7 +61,10 @@ fi
 #   this stop is deterministic).
 PROTECTED_RE='^(research/CLAUDE\.md|\.claude/settings\.json|research/INDEX\.md|research/meta/hooks/|research/meta/tools/|research/meta/methodology\.md|research/meta/biases-watchlist\.md|research/meta/session-prime\.md|research/predictions/lessons\.md|research/predictions/grading-log\.md|research/predictions/calibration-ledger|research/portfolio/)'
 if [ "$OPERATOR_APPROVED_DELETION" != "1" ]; then
-  DELETED=$(git diff --cached --name-only --diff-filter=D)
+  # --no-renames: a `git mv` of a protected file must surface as D(old)+A(new), not R
+  # (rename evasion, verifier catch #1 2026-07-19). core.quotePath=false: non-ASCII
+  # paths must not arrive shell-quoted, which defeats the ^-anchored regex (catch #2).
+  DELETED=$(git -c core.quotePath=false diff --cached --name-only --no-renames --diff-filter=D)
   DEL_COUNT=$(printf '%s' "$DELETED" | grep -c . 2>/dev/null)
   PROT_DEL=$(printf '%s\n' "$DELETED" | grep -E "$PROTECTED_RE")
   if [ -n "$PROT_DEL" ]; then
@@ -78,7 +81,11 @@ if [ "$OPERATOR_APPROVED_DELETION" != "1" ]; then
     echo "Operator pre-approval required (destructive-change-governance.md)."
     exit 1
   fi
-  for f in $(git diff --cached --name-only --diff-filter=M | grep -E "$PROTECTED_RE"); do
+  # while-read, not for-in: filenames with spaces must not word-split into tokens whose
+  # git-show failures silently skip the check (fail-open, verifier catch #3 2026-07-19).
+  # Process substitution keeps the loop in this shell so `exit 1` propagates.
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
     HEAD_L=$(git show "HEAD:$f" 2>/dev/null | wc -l)
     STAGED_L=$(git show ":$f" 2>/dev/null | wc -l)
     if [ "$HEAD_L" -ge 20 ] && [ $((STAGED_L * 100)) -lt $((HEAD_L * 60)) ]; then
@@ -87,7 +94,7 @@ if [ "$OPERATOR_APPROVED_DELETION" != "1" ]; then
       echo "Operator pre-approval required (destructive-change-governance.md)."
       exit 1
     fi
-  done
+  done < <(git -c core.quotePath=false diff --cached --name-only --no-renames --diff-filter=M | grep -E "$PROTECTED_RE")
 fi
 
 echo "=== pre-commit: OK ==="
