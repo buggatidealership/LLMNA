@@ -52,3 +52,7 @@
 - Kill: call #4 grades → this instance retires; the signature template survives as reusable.
 
 Retrofit queue (wave 2, todo-tracked): BR-1 base-rate classes, brier_tally.py, deadline parser, volume quota, adjustment-alpha gate.
+
+---
+## WAVE-1 EXECUTION RESULT (2026-07-19, same-day): success-metric first datum
+3 blind adversaries vs 9 pre-committed author worlds → 19 findings, **12/19 (~63%) NON-OVERLAP** = the measured blind-spot lists (channel: referee-protocol). Two pre-registered discriminators amended BEFORE their readings (H3 trigger two-path; KOFIA re-based to investor-type flows). Adjudication of record: `signals/cross-source-log/2026-07-19-sun-k3-design-review-adjudication-blind-adversary-wave1.md`. Falsifier status: decisively not touched at first execution.
