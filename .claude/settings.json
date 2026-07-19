@@ -2,10 +2,25 @@
     "$schema": "https://json.schemastore.org/claude-code-settings.json",
     "_comment": "PROJECT-LEVEL hook config (Architecture A, codified 2026-06-26). All hooks point to in-repo paths so that container resets do NOT wipe hook activation. Survives across sessions and machines because it's version-controlled. See research/meta/hooks/DURABLE-ACTIVATION.md for full rationale. ~/.claude/settings.json is intentionally emptied to prevent merge-duplication of hook fires (Claude Code merges settings files per launcher-precedent).",
     "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/git-guard-pretooluse.py"
+                    }
+                ]
+            }
+        ],
         "SessionStart": [
             {
                 "matcher": "",
                 "hooks": [
+                    {
+                        "type": "command",
+                        "command": "git -C \"$CLAUDE_PROJECT_DIR\" config core.hooksPath research/meta/hooks/git"
+                    },
                     {
                         "type": "command",
                         "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/session-start-hook.py"
