@@ -30,6 +30,12 @@ Why: your screenshots proved the spawns run in the old Health-Calculators enviro
 1. github.com → **buggatidealership/LLMNA** → Branches
 2. Delete **`claude/first-test-new-repo-wxedu9`** (stale test branch; classifier blocks me from deleting it)
 
+## 5. ⭐ NEW-SESSION ENVIRONMENT HYGIENE (~1 min) — your 2026-07-19 probe found sessions can spawn on ~11-day-stale snapshots with ZERO guards
+1. When starting any new session at claude.ai/code: check the **environment selector** shows the LLMNA environment (the one whose setup script runs `research/meta/tools/setup.sh`) — your probe session ran on a stale snapshot (pre-guards, old architecture) from what looks like the old environment binding.
+2. In that environment's settings, confirm the **Setup script** field contains: `bash /home/user/LLMNA/research/meta/tools/setup.sh || true`
+3. If an old environment (Health-Calculators-era "Analyst" or similar) still exists in the list, consider deleting it so stale spawns can't happen — that deletion is YOURS to make (HIGH-tier by our own matrix if done agent-side).
+Why: guards now self-install via the repo's project hooks (f027157) for any FRESH clone — but a container that boots an old cached snapshot predating today carries neither the guards nor the self-installer. Fresh clone from the right environment = fully guarded from turn 1.
+
 ## 4. ⭐ GitHub branch protection on main (~2 min) — the ONE catastrophe-stop I cannot bypass (added 2026-07-19, destructive-change governance)
 1. github.com → **buggatidealership/LLMNA** → **Settings → Branches** (or Settings → Rules → Rulesets on the new UI)
 2. Add a protection rule / ruleset for branch **`main`**
