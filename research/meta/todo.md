@@ -736,3 +736,7 @@
   - Origin: 2026-07-14 user-commissioned EUV workflow adjudication (true-but-priced verdict)
   - Scope: convert 1c "≥5" to exact integer if possible; decompose ₩11.95tn order; test residual edge vs the three offsets; output = pullback-conditioned entry framework OR explicit no-framework verdict
   - Linked: `signals/cross-source-log/2026-07-14-tue-euv-layers-workflow-adjudication.md`, `watchlist/candidates.md`
+- [ ] **P2 / research / 2026-07-24** [INDP, AF] — DEFENSE-ELECTRONICS FRAMEWORK build (promotion trigger N≥3 HIT 2026-07-19)
+  - Origin: Jul-07 Ankara cluster + GM-Defense/Lockheed munitions MOU (T1 CNBC Jun-16) + NATO $50B package w/ US-prime EU co-production (T1 Jul-07); per 2026-07-19 wake Leg B
+  - Scope: passives-density (MURATA second demand leg) quantification + segment map + named-name screen (NOC reference); framework file under sector/
+  - Linked: watchlist/candidates.md (counter-drone cluster), companies/MURATA/thesis.md
