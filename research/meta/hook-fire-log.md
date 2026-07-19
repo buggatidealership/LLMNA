@@ -669,3 +669,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-19 10:22:22Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-19 10:27:49Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-19 10:38:28Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-19 10:45:21Z session-prime-cascade-hook FIRE (new-codification-ids=METH::## Principle #47 CANDIDATE — VERDICTS ATTACH TO DISTRIBUTIONS, NOT DATA POINTS (user-articulated 2026-07-19))

@@ -229,9 +229,11 @@ For every gate / falsifier / monitoring variable: build BOTH lead-indicator stac
 
 - **#46 CANDIDATE (07-18): FLUID OBJECTIVE — goal-definition versioned (v2 = calibration + available-edge×capture); noise floor is instrument-relative, re-audited each cycle; no asymptote assumed.**
 
+- **#47 CANDIDATE (07-19): VERDICTS ATTACH TO DISTRIBUTIONS, NOT POINTS — no verdict on single outcomes; the ledger convicts the PROCESS (Brier vs base, 2σ floor); only provenance-tagged points move dials; wins graded as rigorously as losses (L32/timidity/PF-1 receipts); failure-study = engine, capture = goal.**
+
 ## §10. ARCHITECTURE NOTE — how this file gets maintained
 
-Per Critical Rule #13 codification cascade discipline (updated 2026-06-12): every commit that adds a new bias / lesson / principle / critical rule / triangulation cluster MUST also update this file in the same commit. The `cascade-enforcement-hook.py` does not currently check for session-prime updates — manual enforcement until N≥2 skips trigger building `~/.claude/session-prime-cascade-hook.py`. Audit at 2026-07-12 + monthly thereafter: if codifications happened but session-prime wasn't updated, the maintenance discipline is broken and needs hook-enforcement.
+Per Critical Rule #13 cascade discipline: every commit adding a new bias/lesson/principle/rule/TC cluster MUST update this file in the same changeset — ENFORCED by `session-prime-cascade-hook.py` (v2 ID-set-diff rebuild 07-14; live catch 2026-07-19 on #47). Monthly audit continues.
 
 **Curation rule location:** §0 above (codified 2026-06-24). The curation rule is embedded in this file rather than a separate file because the rules that govern injection ARE themselves part of what the session needs to know cold.
 
