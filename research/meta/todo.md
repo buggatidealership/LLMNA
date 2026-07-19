@@ -740,3 +740,7 @@
   - Origin: Jul-07 Ankara cluster + GM-Defense/Lockheed munitions MOU (T1 CNBC Jun-16) + NATO $50B package w/ US-prime EU co-production (T1 Jul-07); per 2026-07-19 wake Leg B
   - Scope: passives-density (MURATA second demand leg) quantification + segment map + named-name screen (NOC reference); framework file under sector/
   - Linked: watchlist/candidates.md (counter-drone cluster), companies/MURATA/thesis.md
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL] — Instrument-commissioning RETROFIT WAVE 2: BR-1 classes, brier_tally.py, deadline parser, volume quota, adjustment-alpha gate (blocks + birth hypotheses + blind-adversary diffs per meta/instrument-commissioning.md)
+  - Origin: v2 design adopted 2026-07-19 (K3 review, user-delegated); wave 1 = tripwire/H3-trigger/KOFIA done same-day
+  - Scope: INSTRUMENT BLOCK in each canonical file; one blind adversary per instrument; first computed concentration view at the next monthly audit
+  - Linked: meta/instrument-commissioning.md
