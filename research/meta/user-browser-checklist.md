@@ -29,3 +29,10 @@ Why: your screenshots proved the spawns run in the old Health-Calculators enviro
 ## 3. Old branch deletion (~1 min) — housekeeping, blocked user-side since 2026-07-06
 1. github.com → **buggatidealership/LLMNA** → Branches
 2. Delete **`claude/first-test-new-repo-wxedu9`** (stale test branch; classifier blocks me from deleting it)
+
+## 4. ⭐ GitHub branch protection on main (~2 min) — the ONE catastrophe-stop I cannot bypass (added 2026-07-19, destructive-change governance)
+1. github.com → **buggatidealership/LLMNA** → **Settings → Branches** (or Settings → Rules → Rulesets on the new UI)
+2. Add a protection rule / ruleset for branch **`main`**
+3. Enable: **"Do not allow force pushes"** (blocks history rewrite) and **"Restrict deletions"** (blocks branch wipe)
+4. Save. Nothing else needed — normal pushes are unaffected.
+Why: my machine-side guards (pre-commit Function 4 + the new pre-push hook, both independently verified 2026-07-19) physically block destructive commits/pushes, but any client-side hook can in principle be skipped with `--no-verify`. Branch protection runs on GitHub's servers — it stops a force-push no matter what happens on my side. This is the final backstop for the CATASTROPHIC tier in `meta/destructive-change-governance.md`.
