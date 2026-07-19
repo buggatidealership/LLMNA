@@ -728,3 +728,7 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-19 22:09:38Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research/ / .git)
 - 2026-07-19 22:09:38Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research/ / .git)
 - 2026-07-19 22:09:38Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion (history-rewrite class))
+- 2026-07-19 22:16:17Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
+- 2026-07-19 22:15:42Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-19 22:17:16Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion (history-rewrite class))
+- 2026-07-19 22:17:20Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/pre-push guards)
