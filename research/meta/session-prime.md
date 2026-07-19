@@ -95,7 +95,7 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **L27** — Beat-Consensus-As-Regime-Test: per-quarter beat-or-miss across the semi cohort = primary regime-validation mechanism (first empirical test = MU Q3 FY26 print 2026-06-24; N=2 watch: HYNIX Q2 + MURATA Q1 FY27 late-Jul).
 - **L28** — Jevons/efficiency-fear misread: "efficiency reduces demand" keeps losing to volume growth (N=3 flavors incl. enterprise rate-limiting).
 - **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
-- **L30** — Supercycle base rates dominate pre-supercycle band priors on cohort ATH events (KIOXIA VLSI grade origin).
+- **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
 
 _Correction note (2026-07-06): this section previously claimed "L24 removed; tail is L25" — WRONG on both counts: L24 exists in lessons.md as a real lesson (mid-cap structural-inflection ATH-break, TY case) and the tail is L30. Numbering gap: L17/L18 carry tombstones (no lesson text). Full list: `predictions/lessons.md` + `meta/tags.md`._
 
