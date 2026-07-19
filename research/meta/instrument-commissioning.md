@@ -59,3 +59,47 @@ Retrofit queue (wave 2, todo-tracked): BR-1 base-rate classes, brier_tally.py, d
 
 ## CATCH LOG (design-level) — 2026-07-19, channel: PRINCIPAL
 User question "state what the 30k session-prime cap is based on — do not assume, verify" exposed an uncommissioned material parameter: MAX_INJECT_CHARS=30000 (session-prime-hook.py, born 2026-06-12, in-code comment "~7-8K tokens"; ≈3.8% of a 200k context, computed) is consumed by the pre-commit cap gate, breaks silently in both directions (truncation of load-bearing ledger vs context bloat), and carries NO birth hypothesis, falsifying observable, or calibration record — the documented basis is a round-number budget at hook creation. → ADDED to wave-2 retrofit queue as I-9 (cap parameter): candidate birth hypotheses to write = false-tight world (prime items evicted whose absence measurably degrades first-turn calibration — observable: bias-recurrence in cold sessions' first analytical turns) and false-loose world (prime bloat crowding task context — observable: cold-start summarization/compaction frequency); calibration route = vary-and-measure is impractical, so hindsight certificate over eviction decisions (what was cut at each cap-forced trim, did its absence ever bite). Also logged: this catch is the design's own success metric performing — the principal channel found an uncommissioned instrument the sweep hadn't reached, consistent with the honest-floor clause (orthogonal channels irreplaceable).
+
+---
+## RETROFIT WAVE 2 — author-side birth hypotheses (written 2026-07-19 EVE, BEFORE blind-adversary results; executed same-day per NO-DELAY rule)
+
+### I-4 BR-1 base-rate classes (measurement; canonical: predictions/base-rates.md; feeds: P-provenance base-P of EVERY new registration)
+- Atoms: {beat, "actual EPS strictly > FMP epsEstimated (robust variant: |Δ|>$0.01)", "vendor consensus divergence widening vs press medians / vendor precision change"}; {class-membership, "rule-based ex-ante cohort", "a name qualifying for 2 classes, or class definition drifting at re-derive"}.
+- Author false-HIGH world: survivorship — the cohort is names that survived to print in an up-cycle; delisted/acquired/withdrawn names absent (observable: original-universe reconciliation at quarterly re-derive).
+- Author false-LOW world: regime-dependence — 82.8% measured entirely inside the 2025-26 supercycle; the class base-P is a regime parameter wearing a universal costume (observable: same-class rate computed over 2022-23 down-cycle backtest).
+- Known-answer: the 53/64 robust recompute (already executed 07-18).
+- Shared-inputs: FMP /stable/earnings (ALSO feeds earnings-calendar checks + brier ledger resolution coding) — first concentration-view entry.
+- Kill: FMP methodology/precision change, or class tripwire (>10pp below base for 2 qtrs) fires.
+
+### I-5 brier_tally.py (measurement, code-backed; canonical: meta/tools/ + program doc; feeds: program audits, Oct go/kill decision)
+- Atoms: {resolution-coding, "outcome mapped to 0/1 as ledgered by author", "ambiguous/partial outcomes coded by author judgment — coder drift; a second coder disagrees"}; {bucket-width, "0.1 bins for REL/RES", "conclusion flips under 0.05/0.2 binning (already flagged bucketing-dependent)"}.
+- Author false-GOOD world: selection — only formalized calls enter the ledger; the unformalized implicit-call population (the quota's target) may score differently (observable: curve shift as quota formalization proceeds).
+- Author false-BAD world: sub-floor noise read as signal — movements < the 0.071 detection floor narrated as improvement/decay (observable: the floor itself; escort rule = never narrate sub-floor deltas).
+- Known-answer: embedded selftest (0.1978/0.1844/0.1777) — already passing.
+- Kill: ledger schema migration; supersession by a better scoring rule at the Oct audit.
+
+### I-6 deadline parser (enforcement/measurement; canonical: meta/hooks/session-start-hook.py parse_pending_predictions; feeds: wake catch-up sweep = what gets graded)
+- Atoms: {live-row, "date-bearing ledger row lacking '✅ GRADED'/'NOT CANONICAL' markers", "marker vocabulary drift — a new status word (SUPERSEDED, WITHDRAWN, MERGED) not in the skip-list silently reclassifies rows"}; {coverage, "N live of M data rows reported", "coverage line static across sessions while ledger grows = parser frozen"}.
+- Author false-SILENCE world: prose-deadline class — commitments living outside the ledger table entirely (Test-D origin; the monthly prose sweep is the compensating control, due tomorrow).
+- Author false-NOISE world: resurrection — a genuinely retired row lacking the exact marker string re-surfaces as "pending" and consumes wake attention (historical: the UPGRADED/GRADED substring incident, inverse direction).
+- Known-answer: the 07-17 verifier-agent catch (GRADED substring) = historical negative control; coverage line = per-run self-report.
+- Kill: todo/ledger migration to structured data (YAML/CSV) retires the regex parser.
+
+### I-7 volume quota (quota; canonical: program doc + todo; feeds: Oct audit kill-metric)
+- Atoms: {provenance-tagged call, "registered call w/ base-P + evidence stack + resolution date", "tag inflation — trivial/no-decision calls tagged to make count (Goodhart); observable: DECISION/DISCRIM tag share falling while count rises"}.
+- Author false-GOOD world: quantity hits 150 while decision-relevance collapses (the quota Goodharts itself).
+- Author false-BAD world: undercount — implicit wake calls (the quota's raison d'être) still not formalized, quota reads behind while actual call volume is on pace (observable: wake artifacts containing P-statements absent from the ledger — auditable by grep).
+- Known-answer: none computable; hindsight certificate = recount of Jul wake artifacts vs ledger entries.
+- Kill: Oct audit adjudicates per program doc (quota is born with its death date — the model instrument).
+
+### I-8 adjustment-alpha gate (measurement; canonical: program doc; feeds: whether house deviations from base-P earn their keep — report-only until ~Oct-16)
+- Atoms: {adjustment-alpha, "Brier(system) − Brier(base-P-only) over identical call set", "class-mix confound: alpha shift driven by WHICH classes got called, not by deviation skill (observable: per-class alpha decomposition)"}.
+- Author false-NEGATIVE world: timidity suppression — deviations right-signed but undersized (measured: 8/8 true-but-timid) → alpha reads near-zero while directional skill is real (observable: sign-test vs magnitude-test divergence).
+- Author false-POSITIVE world: regime tailwind — in an up-cycle, above-base deviations auto-win; alpha is beta in costume (observable: alpha computed on down-tape weeks only).
+- Known-answer: current ledger snapshot (system 0.1978 vs base 0.1844 = alpha currently NEGATIVE — the honest starting reading).
+- Kill: built-in — 90-day report-only window ends at Oct audit: promote to binding or retire.
+
+### I-9 session-prime cap parameter (threshold; canonical: session-prime-hook.py + pre-commit gate; feeds: what every cold session knows)
+- (Per catch log above:) false-TIGHT world: load-bearing item evicted, cold-session first-turn calibration degrades (observable: bias-recurrence in cold sessions' first analytical outputs); false-LOOSE world: prime bloat crowds working context (observable: cold-start compaction frequency).
+- Known-answer: none; hindsight certificate = audit of the 3 cap-forced trims to date (what was cut; did its absence bite).
+- Kill: injection architecture change (e.g., retrieval-based priming replaces full-file inject).
