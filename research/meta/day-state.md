@@ -271,3 +271,4 @@ Ledger/lattice separation: WV-ledger: intake lines (continuous, classified-at-in
 - Jul-22 triple thresholds captured: IBM cons $3.02/$17.86B; NOW sub-rev $3.815-3.82B, cRPO 19.5%, ex-Armis ~20%.
 - Defense-electronics N≥3 promotion trigger HIT (GM-Lockheed + NATO $50B + Jul-07 Ankara cluster) → framework build queued as todo.
 - Brent >95 watch DAILY until resolved either way.
+- **SUN EVE batch booked** (`2026-07-19-sun-eve-weisenthal-mooncake-sunday-3input-batch.md`): Zhipu CORRECTED ($167B peak/$66B now, −28.49% Jul-17 multi-causal); SPCX WORLD-STATE (SpaceX+xAI public since Jun-12, $123.99 < $135 IPO — decompose rocket-vs-AI before any read); Mooncake KVCache N=4 industry-wide → "serving-substrate memory" row candidate for Aug-6; TC-19 candidate (edge-inference embodied-AI, 2028+ staged); capex-vs-monetization consensus-arrival marker #2 (Weisenthal).

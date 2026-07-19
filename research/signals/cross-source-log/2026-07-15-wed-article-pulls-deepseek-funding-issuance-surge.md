@@ -7,7 +7,7 @@
 FACTS (bookable):
 - DeepSeek IPO **as early as Q2 2027**, Shanghai; aiming to **file paperwork by end of 2026**; timeline subject to regulatory clearance.
 - Raised **$7.4B last month** — maiden external round — at **>$50B valuation**; Liang Wenfeng now raising again at **$71B+** ask, "several billion" targeted. Backers: state AI fund + Tencent + CATL. Hiring push to double workforce.
-- **Zhipu (2513.HK, house radar name): raised $4B in a post-IPO share sale; market cap surged >10-fold since the January IPO to >$90B.**
+- **Zhipu (2513.HK, house radar name): raised $4B in a post-IPO share sale; market cap surged >10-fold since the January IPO to >$90B.** *(⚠️ CORRECTED 2026-07-19: the >$90B WSJ figure was STALE at booking — verified peak was HK$1.3T ≈ $167B on 2026-06-22 (证券时报 T2); stock then crashed −28.49% on Jul-17 to HK$1,107 ≈ $66B mcap, −62.9% peak-to-trough. Per `2026-07-19-sun-eve-weisenthal-mooncake-sunday-3input-batch.md` — use the corrected series for any comp work incl. the Anthropic-IPO anchor.)*
 - **ByteDance in talks to borrow $20B — would be its largest loan outside China — for AI spending.**
 - Chinese regulators **relaxed rules so unprofitable AI startups can list on the Nasdaq-like Shanghai market** (STAR).
 - Joe Tsai (June, Paris): "In the China context, we're very underinvested in infrastructure and in the AI supply chain."
