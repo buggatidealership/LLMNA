@@ -54,7 +54,7 @@
 
 ## Open
 
-- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST pending (3 items: env network allowlist -> zero-token data scripts; routine-transcript look -> closes E6; old-branch deletion). Full steps: `meta/user-browser-checklist.md`. RE-SURFACE to user each morning until empty.
+- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST pending (UPDATED 07-19: routine re-bind item RETIRED — superseded by agent-side self-bind Routine trig_01WM2zxPAcrKzr8YCnpHkYHP; REMAINING user-side: loopframe posting-routines PAUSE + embedded API-key ROTATION [security, platform refuses agent-side disable], env network allowlist, stale-branch deletion). Full steps: `meta/user-browser-checklist.md`. RE-SURFACE each morning until empty.
   - Origin: user 2026-07-08 "save everything I must do in a browser so I can recall it tomorrow."
   - Scope: user completes in browser; I verify (fetch test / transcript read / branch gone) and delete items.
   - Linked: `meta/user-browser-checklist.md`, `sector/market-state-function-spec.md` §6, E6 artifact.
