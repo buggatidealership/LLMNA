@@ -1979,3 +1979,11 @@ Per `signals/cross-source-log/2026-07-11-sat-nanya-deepdive-3agent-synthesis.md`
 - **Most-EXPOSED (the only real disintermediation, narrow):** Rapid7 RPD (VM discovery commoditizes, −62% 1yr, absent from lab partner rosters); SentinelOne S (right architecture, sub-scale → M&A target); Tenable TENB (discovery pure-play hedging into "act").
 - **Model-agnostic clean survivor:** NVDA (security is token-hungry but demand is model-agnostic — the general inference-volume leg, already held-adjacent thesis).
 - Note: surfaced as the ACCESSIBLE expression of "if the cyber value migration is real, it accrues to listed incumbents not the unlisted lab." No entry package — segment outside the held book; logged for the phase-2 Mode-B hunting map + any future security-layer expansion decision.
+
+### ⚪ MEMORY-ECOSYSTEM VERB FUNNEL (pre-candidate, verification-gated — logged 2026-07-19 from the KVCache/HBF Q&A thread)
+Frame: per `signals/cross-source-log/2026-07-19-sun-eve-weisenthal-mooncake-sunday-3input-batch.md` — bit-growth broadens across the tier ladder (DC DRAM pools + eSSD + HBF + edge LPDDR), so screen the VERB layer (create/stack/connect/test/feed) for toll-collectors paid on every branch, preferring them over rung-pickers (Weisenthal payer-fragility caveat). NOT candidates yet — every name below is recall-based on share/moat and UNCHECKED on B39 + narrative-contamination discount (the Kanto Denka lesson applies: AI-complex re-rates likely):
+- STACK: Disco 6146.T (grind/dice, ~monopoly-class recall) — BESI already has its own watchlist item; ASMPT; Hanmi (KRX gap).
+- CONNECT: Rambus (interface IP/chips), Montage 688008.SS (server buffers, CN gap), Astera Labs ALAB (CXL), Phison 8299.TWO / Silicon Motion SIMO (SSD controllers riding the on-file eSSD record quarter).
+- TEST: Advantest (ATE lead >6mo on-file), Aehr (own entry exists), KYEC (register candidate 07-18).
+- CREATE input tie-back: WF6/tungsten gas = memory-cell wiring — links the 07-18 consumables sweep to the memory frame directly.
+Next step (gate): one verification pass per verb (share/backlog/B39/access) BEFORE any name-level thesis work; fold into the Aug-6 bottleneck re-rank alongside the "serving-substrate memory" row.
