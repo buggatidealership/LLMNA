@@ -33,7 +33,7 @@ Current tail: **L30** (refreshed 2026-07-06; L28-L30 all CANDIDATE. ⚠️ Numbe
 
 ## Biases (meta/biases-watchlist.md)
 
-Current tail: **B64** (count-synced 2026-07-14; **B63** model-provenance/model-affinity-contamination-parent added 2026-07-07, **B64** model-affinity-contamination [Claude-Code-accounts-pick-NOW meme / Anthropic-sourced-validation closed-loop] added 2026-07-13. B60/B61 added 2026-07-01/03, B62 = renumbered lead-time-conservatism. B48-B53 + B56-B57 remain ABSENT — numbers skipped. ⚠️ B47 COLLISION RESOLVED 2026-07-06: canonical B47 in `biases-watchlist.md` is **efficiency-driven demand destruction blind spot**; lead-time conservatism = B62.)
+Current tail: **B65** (B65 context-fluency added 2026-07-20 — in-context familiarity misread as verification, `biases-watchlist.md`; prior tail count-synced 2026-07-14; **B63** model-provenance/model-affinity-contamination-parent added 2026-07-07, **B64** model-affinity-contamination [Claude-Code-accounts-pick-NOW meme / Anthropic-sourced-validation closed-loop] added 2026-07-13. B60/B61 added 2026-07-01/03, B62 = renumbered lead-time-conservatism. B48-B53 + B56-B57 remain ABSENT — numbers skipped. ⚠️ B47 COLLISION RESOLVED 2026-07-06: canonical B47 in `biases-watchlist.md` is **efficiency-driven demand destruction blind spot**; lead-time conservatism = B62.)
 
 - **B1-B37** legacy biases (see file)
 - **B23** Sell-side aggregation drift

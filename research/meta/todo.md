@@ -13,6 +13,17 @@
 
 ---
 
+- [ ] **P1 / harness / 2026-08-03** [INFRA, CAL] — 1c meta-count tripwire hook (recompute-and-compare): build AFTER 2 weeks of anti-fab fire-log data exists
+  - Origin: dual red-team 2026-07-20 (K3 recompute-and-compare redesign + fresh-Claude sharpened trigger: count-word + harness-noun + past-window token, NO first-person requirement — third-person phrasing is the dominant miss; fresh-Claude corpus backtest: zero FPs across 108,883 corpus sentences)
+  - Scope: Stop hook; trigger per fresh-Claude spec; action per K3 (recompute from hook-fire-log / git rev-list, block on mismatch with computed truth in feedback; source-missing = allow). Ship as TRIPWIRE honestly labeled low-FP/low-recall — 1a+1b are the real fix. Pre-ship backtest: must catch the "three times today" trigger sentence, ≤1 FP per 20 legit replayed meta-statements. Falsifier: >2 FPs in 30d → retire; 0 catches AND 0 FPs in 90d → decorative, retire.
+  - Linked: meta/hooks/ (new), meta/redteam/2026-07-20-self-trust-dual-review-adjudication.md
+- [ ] **P2 / harness / 2026-07-24** [INFRA] — fire-logging as HOUSE STANDARD: shared log_fire helper module + migrate remaining Stop hooks
+  - Origin: fresh-Claude "what's missing" #1 (2026-07-20): fire evidence is ephemeral for most live hooks — only session-prime/macro-anchor/structural-output/cascade + (now) anti-fab log; block messages for the rest die with the container. The next "N times today" claim will be about a different hook.
+  - Scope: meta/hooks/hook_fire_log.py shared helper (house format, repr-escape, fail-open); migrate remaining Stop hooks opportunistically at the 07-24 monthly audit; verify no double-fire/format break (structural-output-metric.py filters by hook name — format is proven multi-tenant).
+  - Linked: meta/hooks/, meta/hook-fire-log.md
+- [ ] **P3 / harness / 2026-07-24** [OPT] — session-prime per-item relative-age tags ([added YYYY-MM-DD · N days ago], computed at inject)
+  - Origin: K3 mechanism-3 (priming temporal decay) 2026-07-20; the TODAY header shipped same day — per-item tags need parseable per-item dates (mostly present in house headers), scoped to the audit. Companion candidate: European decimal-comma normalization for grounding (parked — over-grounding risk needs a design pass).
+  - Linked: meta/hooks/session-prime-hook.py, meta/session-prime.md
 - [ ] **P1 / prediction / 2026-07-21** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check (Program v2 amendment #2: 150 provenance-tagged calls by Oct audit, ~2/day via formalizing implicit wake calls; weekly tally at Monday wakes; kill-metric per program doc)
   - Origin: K3 plan review Q4 — n is the binding constraint, not method
   - Linked: predictions/probability-resolution-program.md, meta/tools/brier_tally.py
