@@ -179,8 +179,16 @@ def find_violations(text: str) -> list[tuple[str, str, str]]:
 GROUNDED = "GROUNDED"
 FABRICATED = "FABRICATED"
 INCONCLUSIVE = "INCONCLUSIVE"
+SKIP = "SKIP"  # degenerate needle — never a fabrication, never logged (K3 r2 #7)
 
 FIRE_LOG = os.path.join(_REPO_ROOT, "research", "meta", "hook-fire-log.md")
+
+# Shared grounding budget per message (K3 r2 #6): without it, worst case is
+# forms x retry x 10s x K needles serial inside a Stop hook — a 5-number
+# message could hang >3 minutes under exactly the infra stress where
+# timeouts actually happen. Past the deadline everything unresolved is
+# INCONCLUSIVE.
+BUDGET_SECONDS = 15.0
 
 
 def _collapse_ws(s: str) -> str:
@@ -194,38 +202,65 @@ def _collapse_ws(s: str) -> str:
     return re.sub(r"\s+", "", s)
 
 
-def _grep_repo(needle: str):
-    """One grep -F pass. Returns (returncode_or_None, exception_name_or_None)."""
+def _grep_repo(needle: str, timeout: float = 10):
+    """One grep -F pass. Returns (returncode_or_None, exception_name_or_None).
+
+    K3 r2 hardening: `-e` before the needle (a leading-dash needle like
+    '-12.62%' otherwise parses as grep options → rc=2 → INCONCLUSIVE forever
+    for signed forms — empirically confirmed 2026-07-20, latent today).
+    `--exclude=hook-fire-log.md` + `--exclude-dir=audits`: the fire log and
+    committed audit packs must NOT be grounding evidence — otherwise the hook
+    MINTS ITS OWN EXEMPTIONS (fire once on a fabricated number → its
+    repr-logged needle grounds every later use; empirically confirmed
+    2026-07-20 by planting a logged line and re-grepping → rc=0)."""
     try:
         result = subprocess.run(
-            ["grep", "-r", "-F", "-l", "--include=*.md", needle, RESEARCH_DIR],
+            ["grep", "-r", "-F", "-l", "--include=*.md",
+             "--exclude=hook-fire-log.md", "--exclude-dir=audits",
+             "-e", needle, RESEARCH_DIR],
             capture_output=True,
             text=True,
-            timeout=10,
+            timeout=timeout,
         )
         return result.returncode, None
     except Exception as e:  # TimeoutExpired, FileNotFoundError, anything
         return None, type(e).__name__
 
 
-def ground_needle(number_str: str):
-    """Classify a needle as GROUNDED / FABRICATED / INCONCLUSIVE.
+def _is_infra_error(rc) -> bool:
+    """Infra error iff rc not in (0, 1). K3 r2 #1: a signal-killed grep
+    (OOM SIGKILL) returns NEGATIVE rc — the old `rc is None or rc >= 2`
+    test let -9 fall through to FABRICATED, i.e. a false FIRE under exactly
+    the infra stress the three-valued design exists to absorb (empirically
+    confirmed via monkeypatch 2026-07-20)."""
+    return rc not in (0, 1)
 
-    Semantics (fresh-Claude amendment, 2026-07-20): grep rc=0 → GROUNDED;
-    rc=1 is grep working correctly (clean no-match) → FABRICATED, no retry;
-    rc>=2 or exception → retry ONCE → still bad → INCONCLUSIVE.
-    Tries the raw needle, then the whitespace-collapsed form.
-    Returns (status, diag) where diag = {needle: repr, rc, exc} — plumbed to
-    the fire log so any future FP is self-diagnosing (needles repr()-escaped
-    because invisible-unicode-space needles reproduce their own illegibility
-    if logged raw).
-    """
+
+def ground_needle(number_str: str, deadline: float = None):
+    """Classify a needle as GROUNDED / FABRICATED / INCONCLUSIVE / SKIP.
+
+    Semantics: grep rc=0 → GROUNDED; rc=1 (clean no-match) → FABRICATED, no
+    retry; any other rc (None/exception, >=2, negative signal-kill) → retry
+    ONCE → still bad → INCONCLUSIVE. Tries the raw needle, then the
+    whitespace-collapsed form. `deadline` (time.monotonic-based) is the
+    shared per-message budget — past it, unresolved forms are INCONCLUSIVE
+    ("BudgetExceeded"), never FABRICATED.
+
+    Returns (status, diag); diag = {"needle": repr, "forms": [(form-repr,
+    rc, exc), ...], "matched_form": repr-or-absent} — PER-FORM outcomes
+    (K3 r2 #3: recording only the last form's rc made mixed outcomes
+    unreadable: raw=infra-error + collapsed=rc-1 logged as `rc=1 exc=None`,
+    hiding the reason it didn't fire). All reprs because invisible-unicode
+    needles reproduce their own illegibility if logged raw. On GROUNDED,
+    matched_form says WHICH form hit — collapsed-match means the file's
+    spacing differs from the claim's, which matters at FP adjudication."""
+    import time
     needle = number_str.strip()
-    diag = {"needle": repr(needle), "rc": None, "exc": None}
+    diag = {"needle": repr(needle), "forms": []}
     if not needle:
-        return INCONCLUSIVE, diag
+        return SKIP, diag
     if not os.path.isdir(RESEARCH_DIR):
-        diag["exc"] = "NoResearchDir"
+        diag["forms"].append(("<none>", None, "NoResearchDir"))
         return INCONCLUSIVE, diag
 
     forms = [needle]
@@ -235,23 +270,34 @@ def ground_needle(number_str: str):
 
     worst = FABRICATED
     for form in forms:
-        rc, exc = _grep_repo(form)
-        if rc is None or rc >= 2:
-            rc, exc = _grep_repo(form)  # retry once on infra error only
-        diag["rc"], diag["exc"] = rc, exc
+        timeout = 10.0
+        if deadline is not None:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                diag["forms"].append((repr(form), None, "BudgetExceeded"))
+                return INCONCLUSIVE, diag
+            timeout = min(10.0, max(0.5, remaining))
+        rc, exc = _grep_repo(form, timeout)
+        if _is_infra_error(rc):
+            rc, exc = _grep_repo(form, timeout)  # retry once on infra error only
+        diag["forms"].append((repr(form), rc, exc))
         if rc == 0:
+            diag["matched_form"] = repr(form)
             return GROUNDED, diag
-        if rc is None or rc >= 2:
+        if _is_infra_error(rc):
             worst = INCONCLUSIVE  # infra error → cannot prove absence
     return worst, diag
 
 
 def classify_violations(violations: list[tuple[str, str, str]]):
-    """Split violations into (fabricated, inconclusive) with diags.
-    GROUNDED violations are dropped (file = source of truth)."""
+    """Split violations into (fabricated, inconclusive) with diags, under one
+    shared time budget. GROUNDED dropped (file = source of truth); SKIP
+    dropped silently (degenerate needle, never logged)."""
+    import time
+    deadline = time.monotonic() + BUDGET_SECONDS
     fabricated, inconclusive = [], []
     for v in violations:
-        status, diag = ground_needle(v[0])
+        status, diag = ground_needle(v[0], deadline)
         if status == FABRICATED:
             fabricated.append((v, diag))
         elif status == INCONCLUSIVE:
@@ -259,23 +305,37 @@ def classify_violations(violations: list[tuple[str, str, str]]):
     return fabricated, inconclusive
 
 
-def log_fire(status: str, entries) -> None:
+def _format_fire_line(status: str, entries, ts: str) -> str:
+    """One house-format log line. FIRE lines carry ALL fabricated needles
+    (K3 r2 #4: truncating could drop the very needle that caused the block,
+    leaving the line unable to explain itself); INCONCLUSIVE detail caps at 5
+    (content-free spam guard)."""
+    cap = len(entries) if status == "FIRE" else 5
+    detail = "; ".join(
+        f"{d['needle']} forms={d['forms']}" for _, d in entries[:cap]
+    )
+    return f"- {ts} anti-fabrication-hook {status} (n={len(entries)} {detail} verdict:pending)"
+
+
+def log_fire(status: str, entries) -> str:
     """Append a house-format line to hook-fire-log.md. Never raises.
-    Needles repr()-escaped; verdict:pending is flipped to TRUE-FIRE /
-    FALSE-POSITIVE at adjudication (next-turn discipline; monthly audit
-    samples flips against transcripts)."""
+    Returns the formatted line EITHER WAY so the caller can embed it in the
+    block feedback — the transcript then backs up the log (K3 r2 #8: a
+    disk-full/perms failure otherwise silently recreates the un-logged
+    'three times today' condition). Verdict:pending flips to TRUE-FIRE /
+    FALSE-POSITIVE at adjudication; the flip line must cite its computed
+    source (grep/log read), and the monthly audit samples flips against
+    transcripts."""
+    line = ""
     try:
         from datetime import datetime, timezone
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
-        detail = "; ".join(
-            f"{d['needle']} rc={d['rc']} exc={d['exc']}" for _, d in entries[:5]
-        )
+        line = _format_fire_line(status, entries, ts)
         with open(FIRE_LOG, "a") as f:
-            f.write(
-                f"- {ts} anti-fabrication-hook {status} (n={len(entries)} {detail} verdict:pending)\n"
-            )
+            f.write(line + "\n")
     except Exception:
         pass
+    return line
 
 
 def main():
@@ -319,7 +379,7 @@ def main():
     if not fabricated:
         sys.exit(0)
 
-    log_fire("FIRE", fabricated)
+    fire_line = log_fire("FIRE", fabricated)
     violations = [v for v, _diag in fabricated]
 
     # Build feedback message — show first 5 violations
@@ -344,19 +404,24 @@ def main():
         "If the number truly exists in a file but the hook missed it, the string",
         "form may differ ($163B vs '163 billion') — restate using the exact form",
         "from the file.",
+        "",
+        f"Fire-log line (transcript backup; also appended to meta/hook-fire-log.md): {fire_line}",
     ]
     print("\n".join(msg_lines), file=sys.stderr)
     sys.exit(2)
 
 
 def selftest() -> int:
-    """Regression suite for the 2026-07-20 three-valued grounding rebuild.
-    Run: python3 anti-fabrication-hook.py --selftest. Writes log lines to a
-    temp file (monkeypatches FIRE_LOG), never the real hook-fire-log."""
-    global FIRE_LOG
+    """Regression suite: 2026-07-20 three-valued rebuild + K3-round-2 patch.
+    Run: python3 anti-fabrication-hook.py --selftest. Log lines go to a temp
+    file (monkeypatches FIRE_LOG), never the real hook-fire-log. Fixture rule
+    (K3 r2): each future FP adjudication ADDS a fixture for the newly
+    observed needle shape — the needle distribution drifts; the suite must
+    follow it or it proves the code, not the corpus."""
+    global FIRE_LOG, RESEARCH_DIR
     import tempfile
     failures = []
-    _real_log = FIRE_LOG
+    _real_log, _real_dir = FIRE_LOG, RESEARCH_DIR
 
     def check(name, cond):
         if not cond:
@@ -365,47 +430,89 @@ def selftest() -> int:
     with tempfile.TemporaryDirectory() as td:
         FIRE_LOG = os.path.join(td, "test-fire-log.md")
 
-        # Mechanism (A): with-space / unicode-space needles must ground when
-        # the no-space form exists in the repo ('30.2%' on file since Jun/Jul).
-        for form in ["30.2 %", "30.2 %", "30.2 %", "30.2%"]:
+        # 1-4 Mechanism (A): with-space / unicode-space (NBSP, U+202F)
+        # needles ground when the no-space form exists in the repo.
+        for form in ["30.2 %", "30.2\u00a0%", "30.2\u202f%", "30.2%"]:
             status, diag = ground_needle(form)
             check(f"ground[{form!r}]=GROUNDED (got {status})", status == GROUNDED)
 
-        # Genuinely absent number → FABRICATED (proven absence, rc=1).
+        # 5-6 Genuinely absent number: FABRICATED (rc=1), per-form diag.
         status, diag = ground_needle("83.4719%")
-        check(f"absent-> FABRICATED (got {status})", status == FABRICATED)
-        check("absent diag rc==1", diag["rc"] == 1)
+        check(f"absent gives FABRICATED (got {status})", status == FABRICATED)
+        check("per-form diag recorded rc=1", bool(diag["forms"]) and diag["forms"][0][1] == 1)
 
-        # Infra error → INCONCLUSIVE, never FABRICATED (simulate via bad dir).
-        global RESEARCH_DIR
-        _real_dir = RESEARCH_DIR
+        # 7 Signed needle (leading dash): -e guard means clean rc, not option-error.
+        status, diag = ground_needle("-83.4719%")
+        check(f"signed absent gives FABRICATED not INCONCLUSIVE (got {status})", status == FABRICATED)
+
+        # 8 Negative rc (signal-killed grep) gives INCONCLUSIVE, never false FIRE.
+        _orig_grep = globals()["_grep_repo"]
+        globals()["_grep_repo"] = lambda n, timeout=10: (-9, None)
+        status, _ = ground_needle("55.55%")
+        globals()["_grep_repo"] = _orig_grep
+        check(f"rc=-9 gives INCONCLUSIVE (got {status})", status == INCONCLUSIVE)
+
+        # 9 Missing research dir gives INCONCLUSIVE.
         RESEARCH_DIR = "/nonexistent-selftest-dir"
         status, _ = ground_needle("12.34%")
         RESEARCH_DIR = _real_dir
-        check(f"bad-dir -> INCONCLUSIVE (got {status})", status == INCONCLUSIVE)
+        check(f"bad-dir gives INCONCLUSIVE (got {status})", status == INCONCLUSIVE)
 
-        # log_fire writes one repr-escaped line; never raises.
-        log_fire("FIRE", [(("30.2 %", "percentage", "ctx"), {"needle": repr("30.2 %"), "rc": 1, "exc": None})])
-        with open(FIRE_LOG) as f:
-            line = f.read()
-        check("log line written", "anti-fabrication-hook FIRE" in line)
-        check("needle repr-escaped (no raw U+202F)", " " not in line and "202f" in line)
+        # 10 Empty needle gives SKIP (never a fabrication, never logged).
+        status, _ = ground_needle("   ")
+        check(f"empty gives SKIP (got {status})", status == SKIP)
+
+        # 11-12 Expired budget gives INCONCLUSIVE BudgetExceeded.
+        import time
+        status, diag = ground_needle("77.77%", deadline=time.monotonic() - 1)
+        check(f"expired-budget gives INCONCLUSIVE (got {status})", status == INCONCLUSIVE)
+        check("BudgetExceeded recorded", any("BudgetExceeded" in str(x) for x in diag["forms"]))
+
+        # 13-15 Self-minting guard (hermetic temp corpus): needles present
+        # ONLY in hook-fire-log.md / audits/ must NOT ground; regular files do.
+        corpus = os.path.join(td, "research")
+        os.makedirs(os.path.join(corpus, "audits"))
+        with open(os.path.join(corpus, "hook-fire-log.md"), "w") as fh:
+            fh.write("- ts anti-fabrication-hook FIRE (n=1 '91.837%' rc=1 verdict:pending)\n")
+        with open(os.path.join(corpus, "audits", "pack.md"), "w") as fh:
+            fh.write("expected output: 64.297%\n")
+        with open(os.path.join(corpus, "real.md"), "w") as fh:
+            fh.write("a real grounded figure: 12.345%\n")
+        RESEARCH_DIR = corpus
+        s1, _ = ground_needle("91.837%")
+        s2, _ = ground_needle("64.297%")
+        s3, _ = ground_needle("12.345%")
+        RESEARCH_DIR = _real_dir
+        check(f"log-only needle does NOT ground (got {s1})", s1 == FABRICATED)
+        check(f"audits-only needle does NOT ground (got {s2})", s2 == FABRICATED)
+        check(f"regular-file needle still grounds (got {s3})", s3 == GROUNDED)
+
+        # 16-19 log_fire: line written + returned; FIRE carries ALL needles;
+        # repr-escaped; verdict field.
+        entries = []
+        for i in range(7):
+            n = repr(f"{i}0.0\u202f%")
+            entries.append(((f"x{i}", "percentage", "ctx"), {"needle": n, "forms": [(n, 1, None)]}))
+        line = log_fire("FIRE", entries)
+        check("log line written+returned", "anti-fabrication-hook FIRE" in line and os.path.exists(FIRE_LOG))
+        check("FIRE line carries ALL 7 needles", line.count("forms=") == 7)
+        check("repr-escaped (U+202F never raw)", "\u202f" not in line and "202f" in line)
         check("verdict field present", "verdict:pending" in line)
 
-        # log_fire failure path: unwritable log → silent pass (fail-open).
+        # 20 log_fire write-failure: silent, line still RETURNED (transcript backup).
         FIRE_LOG = "/nonexistent-dir/x.md"
         try:
-            log_fire("FIRE", [])
-            ok = True
+            line = log_fire("FIRE", entries[:1])
+            ok = "anti-fabrication-hook" in line
         except Exception:
             ok = False
-        check("log_fire never raises", ok)
+        check("log_fire never raises + returns line on write-failure", ok)
 
-    FIRE_LOG = _real_log
+    FIRE_LOG, RESEARCH_DIR = _real_log, _real_dir
     if failures:
         print("SELFTEST FAIL:\n  " + "\n  ".join(failures))
         return 1
-    print("SELFTEST PASS (8 checks)")
+    print("SELFTEST PASS (20 checks)")
     return 0
 
 
