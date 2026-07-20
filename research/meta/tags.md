@@ -1,7 +1,7 @@
 # Tag Dictionary — single-file shorthand lookup
 
 **Created:** 2026-06-11
-**Last refreshed:** 2026-07-14 (COUNT-SYNC on Principle #45 codification — event-anchored, not the scheduled monthly: B62→B64 (B63 model-provenance 07-07, B64 model-affinity 07-13), Principles #41→#45 (#43/#43b/#44/#45), PC-15→PC-17 (PC-16 = skipped number, PC-17 verification-layer 07-10), TC-14→TC-18 (TC-15/16/17/18). L30 + Rules #18 + T10 unchanged. ⚠️ This was a HEADER-COUNT sync only; the per-entry definition body below still lacks full entries for the new IDs — that per-entry audit remains the monthly-audit task. Prior refresh 2026-07-06.)
+**Last refreshed:** 2026-07-20 (PARTIAL count-sync after fresh-Claude r2 drift audit: B-tail B65, L-tail L39 [L38 component-vs-system + L39 detail-not-truth/retrieval, both 07-19/20], Principle tail #46; per-entry definition bodies for new IDs still owed to the monthly audit. Prior refresh 2026-07-14 (COUNT-SYNC on Principle #45 codification — event-anchored, not the scheduled monthly: B62→B64 (B63 model-provenance 07-07, B64 model-affinity 07-13), Principles #41→#45 (#43/#43b/#44/#45), PC-15→PC-17 (PC-16 = skipped number, PC-17 verification-layer 07-10), TC-14→TC-18 (TC-15/16/17/18). L30 + Rules #18 + T10 unchanged. ⚠️ This was a HEADER-COUNT sync only; the per-entry definition body below still lacks full entries for the new IDs — that per-entry audit remains the monthly-audit task. Prior refresh 2026-07-06.)
 **Purpose:** answer "what is L25 / B44 / P-11 / T9?" without grep
 
 ## Lessons (predictions/lessons.md)

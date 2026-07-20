@@ -247,7 +247,15 @@ def ground_needle(number_str: str, deadline: float = None):
     ("BudgetExceeded"), never FABRICATED.
 
     Returns (status, diag); diag = {"needle": repr, "forms": [(form-repr,
-    rc, exc), ...], "matched_form": repr-or-absent} — PER-FORM outcomes
+    rc, exc), ...], "matched_form": repr-or-absent} — PER-FORM outcomes.
+    KNOWN LIMITS (documented per fresh-Claude r2): grep -F substring
+    semantics has no word boundary — an absent needle that is a SUFFIX of
+    any present number falsely grounds (e.g. absent 0.2% grounds against a
+    file containing 130.2%); this leading-digit-truncation class joins the
+    round-number class as structurally unprotected — canaries must be
+    non-suffix unusual-precision. Also: if research/ is missing entirely,
+    the INCONCLUSIVE verdict cannot be logged (the log path lives inside
+    the missing dir) — accepted corner, the whole OS is absent then.
     (K3 r2 #3: recording only the last form's rc made mixed outcomes
     unreadable: raw=infra-error + collapsed=rc-1 logged as `rc=1 exc=None`,
     hiding the reason it didn't fire). All reprs because invisible-unicode
@@ -263,10 +271,22 @@ def ground_needle(number_str: str, deadline: float = None):
         diag["forms"].append(("<none>", None, "NoResearchDir"))
         return INCONCLUSIVE, diag
 
-    forms = [needle]
     collapsed = _collapse_ws(needle)
-    if collapsed and collapsed != needle:
-        forms.append(collapsed)
+    if "\n" in needle or "\r" in needle:
+        # Newline-needle fix (fresh-Claude r2, highest-risk defect): \s* in
+        # the claim regex spans line breaks, so wrapped prose yields needles
+        # like "99.9371\n%". grep -F treats an embedded newline as TWO
+        # patterns — the bare unit line matches ANY file containing that
+        # character → false GROUNDED, recorded as affirmative verification.
+        # A raw multi-line needle can never legitimately match line-based
+        # grep, so query ONLY the collapsed form; dropping raw loses nothing.
+        forms = [collapsed] if collapsed else []
+        if not forms:
+            return SKIP, diag
+    else:
+        forms = [needle]
+        if collapsed and collapsed != needle:
+            forms.append(collapsed)
 
     worst = FABRICATED
     for form in forms:
@@ -279,7 +299,18 @@ def ground_needle(number_str: str, deadline: float = None):
             timeout = min(10.0, max(0.5, remaining))
         rc, exc = _grep_repo(form, timeout)
         if _is_infra_error(rc):
-            rc, exc = _grep_repo(form, timeout)  # retry once on infra error only
+            # Retry once on infra error only — RE-CHECKING the deadline first
+            # (fresh-Claude r2: the retry previously reused the full timeout
+            # without a recheck, so a hung first grep spent 10s+10s before the
+            # budget engaged; measured 20.06s vs the documented 15s. True
+            # bound now ≈ budget + one in-flight grep).
+            if deadline is not None:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    diag["forms"].append((repr(form), rc, exc or "BudgetExceeded"))
+                    return INCONCLUSIVE, diag
+                timeout = min(10.0, max(0.5, remaining))
+            rc, exc = _grep_repo(form, timeout)
         diag["forms"].append((repr(form), rc, exc))
         if rc == 0:
             diag["matched_form"] = repr(form)
@@ -423,7 +454,12 @@ def selftest() -> int:
     failures = []
     _real_log, _real_dir = FIRE_LOG, RESEARCH_DIR
 
+    ran = {"n": 0}  # computed check-count (fresh-Claude r2: the pass-count
+    # was a hard-coded literal — an un-computed count inside the tool that
+    # enforces computed counts, guaranteed to drift under the fixture rule)
+
     def check(name, cond):
+        ran["n"] += 1
         if not cond:
             failures.append(name)
 
@@ -444,6 +480,15 @@ def selftest() -> int:
         # 7 Signed needle (leading dash): -e guard means clean rc, not option-error.
         status, diag = ground_needle("-83.4719%")
         check(f"signed absent gives FABRICATED not INCONCLUSIVE (got {status})", status == FABRICATED)
+
+        # 7b-7c Newline needles (wrapped prose — fresh-Claude r2 fixtures):
+        # raw multi-line form is dropped, only collapsed queried. A wrapped
+        # ABSENT needle must be FABRICATED (not falsely GROUNDED via grep's
+        # embedded-newline OR-semantics); a wrapped PRESENT token grounds.
+        status, diag = ground_needle("83.4719\n%")
+        check(f"wrapped-absent gives FABRICATED (got {status})", status == FABRICATED)
+        status, diag = ground_needle("30.2\n%")
+        check(f"wrapped-present gives GROUNDED via collapse (got {status})", status == GROUNDED)
 
         # 8 Negative rc (signal-killed grep) gives INCONCLUSIVE, never false FIRE.
         _orig_grep = globals()["_grep_repo"]
@@ -512,7 +557,7 @@ def selftest() -> int:
     if failures:
         print("SELFTEST FAIL:\n  " + "\n  ".join(failures))
         return 1
-    print("SELFTEST PASS (20 checks)")
+    print(f"SELFTEST PASS ({ran['n']} checks)")
     return 0
 
 

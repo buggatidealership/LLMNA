@@ -41,3 +41,9 @@
 9. Clock source unverified (monthly cross-check booked).
 
 **Position implication: NO ACTION (harness-meta). 🟢 patch shipped + selftest-verified 20/20 (all 8 K3-r2 defects closed, 3 empirically confirmed first); 🟡 residuals register updated with 4 new entries; fresh-Claude round-2 now verifies the PATCHED build — its findings adjudicate against this artifact. Net-positive test: two recursion-grade defects (self-minting exemptions, false-FIRE-under-stress) killed for one file edit; every fix has a fixture.**
+
+---
+## CORRECTIONS (2026-07-20, fresh-Claude ROUND-2 drift audit)
+1. **"grounding grep over all 555 research/*.md files" was a STALE RECALLED COUNT (B65 instance, mine):** the corpus was 724-727 files at every build-era commit (727 recomputed 2026-07-20); 555 was the true count on 2026-07-06 — a 14-day-old number restated without recomputation. The ~7ms timing claim replicates (reviewer re-measured 8.6ms mean over 727 files).
+2. **AGC "since 2026-06-01" — RE-CONFIRMED COMPUTED, reviewer's OVERSTATED verdict overturned with a caveat:** re-running the cited command in the full-history repo reproduces exactly `2026-06-01 0e6fb36` (AGC facts.md's single commit; repo history bottoms 2026-03-29). The round-2 reviewer's clone bottomed at the repo import, making the date irreproducible IN THAT ENVIRONMENT — an environment artifact, not recall drift. Caveat adopted: provenance claims that depend on pre-import history should note "full-history repo required" when cited.
+Full round-2 adjudication: `2026-07-20-self-trust-freshclaude-r2-adjudication.md`.

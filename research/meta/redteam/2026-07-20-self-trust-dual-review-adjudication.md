@@ -33,3 +33,10 @@
 - The commissioning insight held: the two reviewers' catches were near-disjoint (K3: architecture, falsifier design, temporal decay; fresh-Claude: mechanism resolution, backtest numbers, duplication, recursion) — same non-overlap phenomenon as the instrument waves, now observed on harness self-governance.
 
 **Position implication: NO ACTION (harness-meta; no market exposure). 🟢 for the shipped mechanism (selftest-verified, dual-red-teamed, live-fire triple-confirmed); 🟡 for the staged 1c (backtested but unbuilt). Net-positive test (Rule #11 Class-1): kills a demonstrated error class (un-computed self-claims + two confirmed FP mechanisms) for one hook-edit + one inject-edit; every piece ships with its own falsifier.**
+
+---
+## CORRECTIONS (2026-07-20, from the fresh-Claude ROUND-2 drift audit — no silent edits; the lines above stand as the record of what was claimed)
+1. **"~45/~35/~30 weights ... dropped" is GARBLED (B65 instance, mine):** the spec's Item-2 triple was **~45/~20/~35** (H2/H1/H3); **~35/~35/~30** was the UNRELATED 1a-bis mechanism-hypothesis set. I blended two H-sets into one triple inside the artifact codifying the blending bias. The substantive ruling (weights were unfounded precision on N=1, dropped) stands.
+2. **"5× on one token" is UNRECEIPTED:** the committed log has zero anti-fabrication lines from that session (old hook predated logging); the count exists only in a dead transcript. Status: reviewer-reported, unverifiable — not a repo fact.
+3. **"0 FPs across 108,883 corpus sentences" is UNRECEIPTED:** no script, corpus dump, or output was committed; the number's only repo occurrences are its own restatements. The 1c pre-ship backtest must reproduce it, not cite it.
+Full round-2 adjudication: `2026-07-20-self-trust-freshclaude-r2-adjudication.md`.
