@@ -3407,3 +3407,19 @@
 | 2026-07-16 | Healthcare-rotation hypothesis research (user brain-dump, Rule #16 EVE) | 1 | ~58.5k actual | rotation evidence + LLY driver + HTFL catalysts + cohort tape + counter-case | HIGH (BofA FMS 07-14 T2 = the rotation datapoint; Pills-vs-Providers decomposition kills the naive read; LLY = idiosyncratic GLP-1 T1 8-K; medical-AI cohort COUNTER-tape (Lunit -34pct/1m); CMS SaMS catch = decision-relevant vs Jun-10 HTFL thesis — entry condition 1 reopened) | 1 (user destination mis-specification surfaced honestly) | yes (artifact addendum + HTFL thesis + day-state + tripwire spec) | NO ACTION / HTFL gate = document-read | tripwire = the "before the falsifier" instrument the user asked for |
 | 2026-07-16 | Truth API latency-product verification (user relay, Rule #16 LATE) | 1 | ~24.5k actual | 11 claims + origin chain + comps | HIGH (T1 8-K anchor found; fresh-not-recycle confirmed; "fastest" tiered as Reuters paraphrase not SLA; price gap held honest; Canter ethics quote T2-named; LLM-training-licensing lead surfaced separate) | 1 (superlative-vs-SLA separation) | yes (artifact + attention-thread adjacency) | NO ACTION | latency-tiering of facts = same-day validation of the two-track directive |
 | 2026-07-20 | FRESH-SESSION good-morning degraded increment: WSJ-LTA verify + Iran/US-close capture + KRX full-day flows (Rule #16, 3 parallel) | 3 | ~164.7k actual (67.7k+56.1k+40.9k, computed) | LTA-piece FACT/FRAME split + H3 dashboard + H1/H2 discriminator | HIGH ×3 (agent-1: FRAME-ONLY verdict w/ Fitch/news-desk ID + category-error flag + CoreWeave-puts-inverts-the-thesis 2nd-order + Micron auto-LTA expansion found; agent-2: Jordan strike = Jul-17 DETAIL dedup catch prevents escalation double-count + Brent settle conflict flagged + chips-bounced close; agent-3: discriminator RESOLVED H1 w/ stock-level foreign buys in SKH/Samsung + units kept in printed 억/조) | 3 (frame-as-fact risk killed; escalation double-count avoided; morning-partial-flows extrapolation corrected) | yes (eve artifact + five-calls addendum #5 + day-state + morning-artifact addendum) | NO ACTION (user-gated; book dark, JP closed) | run by the pre-registered fresh-session experiment; grade pending by adjudicating session |
+
+### [2026-07-20 NIGHT] WSJ LTA article body verification (MCHP precedent + BIS report + renegotiation sweep)
+
+**Trigger source:** user-shared article body (7 screenshots, WSJ Fitch LTA piece — Leg C follow-up closure)
+**Subagents fired:** 1 (Opus verifier, 17 tool-uses, ~27k tokens actual)
+**Estimated token cost:** ~27k (actual subagent_tokens)
+**Items verified:** MCHP PSP existence/terms/unwind; Sanghi quote provenance; BIS AER 2026 existence/quote/date; July-2026 memory-LTA renegotiation sweep
+**Per-subagent yield:**
+- Verifier: HIGH — T1-confirmed both load-bearing claims, caught the BIS late-June date (B40 freshness class: WSJ repackaging), demoted the Sanghi quote to single-source, re-confirmed zero LTA cancellations
+**Brief-framing errors caught:** WSJ implied-freshness on the BIS citation (late-June report framed as current); "exemptions" wording traced to WSJ-only sourcing
+**Thesis cascade triggered:** companies/SKHY/thesis.md (falsifier-watch enrichment)
+**Position implication delta:** NONE (HOLD unchanged)
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-20-mon-eve-fresh-session-goodmorning-9wsj-degraded-increment-3agent.md` §CLOSURE
+**Commit:** (this commit)
