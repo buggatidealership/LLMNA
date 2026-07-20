@@ -13,7 +13,11 @@
 
 ---
 
-- [ ] **P1 / harness / 2026-08-03** [INFRA, CAL, DUE] — 1c meta-count tripwire hook (recompute-and-compare): build AFTER 2 weeks of anti-fab fire-log data exists
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, DUE] — RECEIPTS HOOK Phase 1 (say–do gap enforcement; K3 proposal adjudicated 2026-07-20)
+  - Origin: user commission via K3 ("optimal build to eliminate output-not-matching-actions"); adjudication + full spec at `meta/hooks/receipts-hook-spec.md` — every K3 incident citation verified (L36 verbatim; 2 mislabeled commits; cap-gate live)
+  - Scope: corpus FP backtest of the action-verb trigger FIRST (1c methodology); then checks 1-amended (claim-SHA accuracy — push-state stays with git-check), 3 (file-claim marker check), 4-if-cheap (Cron/sentinel); three-valued verdicts + fire-log diags + selftest; pre-commit telemetry-only-diff guard (kills the mislabeled-commit class); route built diff through K3 + fresh session BEFORE settings.json wiring. 1c (2026-08-03) is SUBSUMED as this hook's count-leg — do not build it separately.
+  - Linked: meta/hooks/receipts-hook-spec.md, meta/redteam/2026-07-20-self-trust-dual-review-adjudication.md (1c spec), meta/hook-fire-log.md
+- [ ] **P1 / harness / 2026-08-03** [INFRA, CAL, DUE] — 1c meta-count tripwire = COUNT-LEG of the receipts hook (SUBSUMED 2026-07-20 per `meta/hooks/receipts-hook-spec.md`): join the count-recompute check to the Phase-1 receipts hook AFTER 2 weeks of anti-fab fire-log data exists
   - Origin: dual red-team 2026-07-20 (K3 recompute-and-compare redesign + fresh-Claude sharpened trigger: count-word + harness-noun + past-window token, NO first-person requirement — third-person phrasing is the dominant miss; fresh-Claude corpus backtest: zero FPs across 108,883 corpus sentences — REVIEWER-REPORTED, UNRECEIPTED in repo [no script/output committed; flagged by fresh-Claude r2 drift audit]; the 1c pre-ship backtest must REPRODUCE this, not cite it)
   - Scope: Stop hook; trigger per fresh-Claude spec; action per K3 (recompute from hook-fire-log / git rev-list, block on mismatch with computed truth in feedback; source-missing = allow). Ship as TRIPWIRE honestly labeled low-FP/low-recall — 1a+1b are the real fix. Pre-ship backtest: must catch the "three times today" trigger sentence, ≤1 FP per 20 legit replayed meta-statements. Falsifier: >2 FPs in 30d → retire; 0 catches AND 0 FPs in 90d → decorative, retire.
   - Linked: meta/hooks/ (new), meta/redteam/2026-07-20-self-trust-dual-review-adjudication.md
