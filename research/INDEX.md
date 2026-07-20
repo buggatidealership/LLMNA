@@ -80,11 +80,11 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 ## Discipline / quality
 
 - `meta/methodology.md` — principles 1-38 (#37 CANDIDATE Truth-Tier Taxonomy + Scoped-Cascade Rule; #38 CANDIDATE Lead-Lag Variable Framework; 47+ sections + TOC pending)
-- `meta/biases-watchlist.md` — biases 1-59 (B40 3-type taxonomy CONFIRMED; B45 regime-corrected priors; B46 framing-vs-institutional-signal N=2 PROMOTION THRESHOLD MET; B47 efficiency-demand-destruction blind spot; B54/B55/B58/B59 CANDIDATE 2026-06-22 PM; B48-B53/B56-B57 currently ABSENT/SKIPPED)
+- `meta/biases-watchlist.md` — biases B1-B65 (tail synced 2026-07-20; B40 3-type taxonomy CONFIRMED; B45 regime-corrected priors; B46 framing-vs-institutional-signal CONFIRMED N=2 (written-in 07-20); B47 efficiency-demand-destruction blind spot; B54/B55/B58/B59 CANDIDATE 2026-06-22 PM; B48-B53/B56-B57 currently ABSENT/SKIPPED)
 - `predictions/lessons.md` — **L1-L27** (L26 CANDIDATE multi-decade trend-break = structural-regime-confirmation; L27 CANDIDATE Beat-Consensus-As-Regime-Test; FIRST EMPIRICAL RESOLUTION: MU Q3 FY26 print 2026-06-24 after close)
 - `meta/tags.md` — shorthand dictionary (refreshed 2026-06-24 monthly audit #1; tail counts: L27 / B59 / Principles #38 / Critical Rules #16 / TC-11 / PC-14)
 - `meta/tier-cascade-log.md` — append-only cascade audit trail per Principle #37; 6 cascade events 2026-06-15 + ongoing; first STALE flags arrive ~2026-07-15
-- Hooks — live via project-level `.claude/settings.json` (Architecture A) pointing at `research/meta/hooks/*.py`: 16 wired (13 Stop + 2 SessionStart + 1 UserPromptSubmit) + environment-level git-check; `~/.claude/` intentionally unused (corrected 2026-07-06 — this line previously claimed "18 live hooks at ~/.claude/")
+- Hooks — live via project-level `.claude/settings.json` (Architecture A) pointing at `research/meta/hooks/*.py`: 19 wired (15 Stop + 2 SessionStart + 1 UserPromptSubmit + 1 PreToolUse git-guard; recomputed 2026-07-20) + environment-level git-check; `~/.claude/` intentionally unused (corrected 2026-07-06 — this line previously claimed "18 live hooks at ~/.claude/")
 - `meta/subagent-cost-yield-ledger.md` — Critical Rule #16 verification-subagent instrumentation (backfilled 36 entries 2026-06-15→2026-06-19; preliminary STRONGLY POSITIVE yield verdict; 2026-07-15 re-eval)
 
 ## Open dissection queue
@@ -118,7 +118,7 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 | **2026-09-13** | **PC-13 90-day promotion check** (Government emergency-order model-shutdown precedent N=2 watch) | TC-10 H_d + bypass-route cohort |
 | **2026-09-17** | PC-14 first re-eval (Universal Sovereign-AI Bifurcation Doctrine) | TC-10 + T6 + NBIS thesis |
 | 2026-11-XX | Epic Penny launches | WAY moat falsifier |
-| **2026-07-24 (next monthly audit)** | INDEX.md + tags.md refresh + monthly audit #2 | All meta/ frameworks; L27 empirical resolution graded; B46 promotion decision |
+| **2026-07-24 (next monthly audit)** | INDEX.md + tags.md refresh + monthly audit #2 | All meta/ frameworks; L27 empirical resolution graded (B46 promotion EXECUTED 2026-07-20) |
 
 ## Retrieval rules
 

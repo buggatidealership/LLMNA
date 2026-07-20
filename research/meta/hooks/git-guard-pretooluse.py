@@ -44,8 +44,13 @@ LOG = os.path.join(REPO, "research", "meta", "hook-fire-log.md")
 CANON_HOOKS = "research/meta/hooks/git"
 
 # repo-record / enforcement targets whose destruction is record-loss, not scratch work
+# 2026-07-20 K3-Swarm G-24 fix: dynamic repo root + $CLAUDE_PROJECT_DIR + bare `.`/`./`
+# (cwd inside the repo) — the old list hardcoded only the literal path, so
+# `find . -delete` and rmtree('.') passed the has_repo gate unexamined.
 REPO_TOKENS = re.compile(
-    r"(/home/user/LLMNA|(^|[\s'\"=(/])research(/|\b)|\.git(/|\b)|\bmethodology|"
+    r"(" + re.escape(REPO) + r"|/home/user/LLMNA|\$\{?CLAUDE_PROJECT_DIR\}?|"
+    r"(^|[\s'\"=(])\.(/|['\"]|\s|$)|"
+    r"(^|[\s'\"=(/])research(/|\b)|\.git(/|\b)|\bmethodology|"
     r"\bsession-prime|\blessons\.md|\bgrading-log|calibration-ledger|CLAUDE\.md|"
     r"settings\.json|(^|[\s'\"=(/])portfolio(/|\b)|meta/hooks)"
 )
@@ -117,16 +122,19 @@ def main() -> None:
         if is_git and re.search(r"\bpush\b", s) and re.search(
                 r"\bpush\b[^|;&]*(--force(-with-lease)?\b|\s-f\b|--delete\b|\s-d\b|\s[:+]\S)", s):
             block("force-push / remote-ref deletion / +refspec (history-rewrite class)", cmd)
-        # core.hooksPath tampering (disable the git-level guards) — allow only canonical
-        m = re.search(r"core\.hooksPath[=\s]+(\S+)", s)
+        # core.hooksPath tampering (disable the git-level guards) — allow only canonical.
+        # Case-insensitive (K3-Swarm G-25 fix): git config keys are case-insensitive,
+        # so `core.hookspath` was an evasion against the old case-sensitive patterns.
+        m = re.search(r"(?i)core\.hookspath[=\s]+(\S+)", s)
         if m and m.group(1).strip("'\"") != CANON_HOOKS:
             block("core.hooksPath override to a non-canonical value (disables git guards)", cmd)
-        if re.search(r"config[^|;&]*--unset[^|;&]*core\.hooksPath", s):
+        if re.search(r"(?i)config[^|;&]*--unset[^|;&]*core\.hookspath", s):
             block("unsetting core.hooksPath (disables git guards)", cmd)
         if is_git and re.search(
                 r"\b(reset\s+--hard|clean\s+-[a-z]*f[a-z]*|reflog\s+expire|gc\b[^|;&]*--prune|"
                 r"branch\s+-[dD]\b|update-ref\s+-d|filter-branch|filter-repo|"
                 r"stash\s+(drop|clear)|checkout\s+(-f|--force)|switch\s+(-f|--force)|"
+                r"restore\s+[^|;&]*(--worktree|--staged|\.(\s|$))|"
                 r"worktree\s+remove[^|;&]*(--force|-f))\b", s):
             block("git plumbing that discards commits/refs/working-tree (history/record class)", cmd)
         # mv of .git or a protected tree out from under the repo
@@ -135,7 +143,11 @@ def main() -> None:
 
     # ---- file-destruction class (DELETION token) ----
     if not del_ok:
-        if re.search(r"\brm\s+(-[a-zA-Z]*r[a-zA-Z]*f|-[a-zA-Z]*f[a-zA-Z]*r|-r\s+-f|-f\s+-r)\b", s):
+        # Long-flag forms included (K3-Swarm G-23 fix): `rm --recursive --force`
+        # escaped the short-flag-only regex; LLM agents emit long flags habitually.
+        if re.search(r"\brm\s+(-[a-zA-Z]*r[a-zA-Z]*f|-[a-zA-Z]*f[a-zA-Z]*r|-r\s+-f|-f\s+-r"
+                     r"|--recursive\b[^|;&]*--force\b|--force\b[^|;&]*--recursive\b"
+                     r"|--recursive\b[^|;&]*-[a-zA-Z]*f|-[a-zA-Z]*r[a-zA-Z]*\b[^|;&]*--force\b)", s):
             tail = s.split("rm", 1)[1]
             if re.search(rf"(\s|=|'|\"|^)({re.escape(REPO)}(/research|/\.git|/portfolio)?/?|"
                          r"research/?|\.git/?|portfolio/?|\.|/)(\s|$|'|\")", tail):
@@ -151,9 +163,14 @@ def main() -> None:
             block("truncate -s0 on a repo path (content erasure)", cmd)
         if has_repo and re.search(r"\bdd\b[^|;&]*\bof=", s):
             block("dd of= onto a repo path (content overwrite)", cmd)
-        # single-> truncating redirect onto an enforcement/protected file (not >> append)
+        # single-> truncating redirect onto an enforcement/protected file (not >> append).
+        # Protected list aligned with destructive-change-governance §1b (K3-Swarm G-26 fix):
+        # CLAUDE.md, biases-watchlist, grading-log, calibration-ledger, INDEX.md,
+        # portfolio/, meta/tools/ were named protected there but missing here.
         if re.search(r"(^|[^>])>\s*[^>|;&]*"
-                     r"(\.git/|meta/hooks/|settings\.json|methodology|session-prime|lessons\.md)", s):
+                     r"(\.git/|meta/hooks/|meta/tools/|settings\.json|methodology|"
+                     r"session-prime|lessons\.md|CLAUDE\.md|biases-watchlist|"
+                     r"grading-log|calibration-ledger|INDEX\.md|portfolio/)", s):
             block("truncating redirect (>) onto an enforcement/protected file", cmd)
 
     sys.exit(0)

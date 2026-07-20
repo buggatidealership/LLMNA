@@ -8,6 +8,12 @@
 | trig_01WM2zxPAcrKzr8YCnpHkYHP | KR-open wake (LLMNA, self-bind) | 22 0 * * 1-5 (weekdays 00:22Z) | self-bind → this session | 2026-07-19 15:50Z |
 | trig_01Jpj7pjfkxAB5z9JCqVLhr4 | EOD conditional synthesis (LLMNA, self-bind) | 17 20 * * * (daily 20:17Z) | self-bind → this session | 2026-07-19 15:59Z |
 
+## ACTIVE ONE-SHOTS (added 2026-07-20 EVE — CORRECTION per K3-Swarm G-42: these were created 2026-07-20 17:51Z, commit 930ae1e, WITHOUT the same-turn census update this file's own binding rule requires — first violation of the rule, caught by external audit within 24h; existence re-verified via list_triggers 2026-07-20 EVE)
+| ID | Name | Fires | Purpose |
+|---|---|---|---|
+| trig_011yct3vV4NjPNMWtGfawKQT | send_later 2026-07-24T06:30Z | 2026-07-24 06:30Z (one-shot) | Monthly-audit build wake: receipts-hook Phase 1, log_fire house standard, B47 hook decision, B65 canary |
+| trig_01CtG2CzRc9J2EikoNd6QFpL | send_later 2026-08-03T06:30Z | 2026-08-03 06:30Z (one-shot) | 1c count-leg build wake (backtest must REPRODUCE the corpus-FP result) |
+
 ## INERT (fired one-shots, self-disabled — audit trail, kept)
 11 send_later self-check-ins, 2026-07-06 → 2026-07-16 (E4-E7 test adjudications, NBIS/SKH/TSMC grade follow-ups). IDs in the 2026-07-19 list_triggers snapshots (session record + day-state SUN-EVE-#5/#6).
 

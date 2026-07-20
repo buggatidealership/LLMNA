@@ -54,6 +54,7 @@ Testing:
   python3 session-prime-cascade-hook.py --selftest    → fixture suite, exit 0 all-pass
 """
 
+import json
 import re
 import subprocess
 import sys
@@ -198,6 +199,17 @@ def changeset_files():
 
 def main():
     try:
+        # Recursion guard (K3-Swarm G-20 fix, 2026-07-20): house convention since
+        # 2026-07-06 — an un-remediated block must not re-fire forever. This was
+        # the only wired Stop hook without it (v2 rebuilt 07-14 missed the pattern).
+        try:
+            payload = json.loads(sys.stdin.read() or "{}")
+            if payload.get("stop_hook_active"):
+                sys.exit(0)
+        except SystemExit:
+            raise
+        except Exception:
+            pass  # unreadable stdin never disables enforcement (fail-closed here)
         added, removed, evidence = changeset_keys()
         new_keys = added - removed
         if not new_keys:

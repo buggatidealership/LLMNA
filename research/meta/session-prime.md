@@ -156,7 +156,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **NBIS T+30 grade 2026-07-22** (primary adjudicator; T+15 graded CONFOUNDED 07-07).
 - **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix Jul-29 (T1-pinned 07-13; GP-bridge first run + pre-registered miss-isn't-bearish ladder in SKHY thesis), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
 - **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
-- **Overdue GRADE debt:** MU Q3 FY26 (resolved 2026-06-24) 3-layer backfill owed; Samsung Q2 prelim GRADE completed (resolved Jul-7/8).
+- **GRADE debt: NONE** — the long-carried "MU 3-layer backfill owed" was PHANTOM (full grade existed since 07-06; row+prose synced 07-20). Samsung Q2 prelim GRADE completed Jul-7/8.
 
 
 ## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
@@ -177,7 +177,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
 - **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate) + Rule #16 30-day re-eval
-- **2026-07-24** — Monthly consolidated audit: first who-caught-it ratio + gradeable-fraction spot-sample + macro-anchor false-positive sampling (gap flagged in the 2026-07-12 audit)
+- **2026-07-24** — Monthly consolidated audit: first who-caught-it ratio + gradeable-fraction spot-sample + macro-anchor FP sampling + INCONCLUSIVE-rate first reading + META-OVERHEAD ratio first computation + K3-Swarm disposition list (audit-log SHA backfill, dead re-evals run-or-retire, hook doc-sweep)
 - **2026-07-27** — Rules #17 (ensemble) + #18 (dissent) re-evals
 - **2026-08-06** — Structural-output normalized-metric decision (fires ÷ commits) + SUMCO print
 - **2026-08-11** — Prompt-library re-eval (`meta/prompt-library.md` falsifier: unused = decorative)

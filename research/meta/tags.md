@@ -6,7 +6,7 @@
 
 ## Lessons (predictions/lessons.md)
 
-Current tail: **L30** (refreshed 2026-07-06; L28-L30 all CANDIDATE. ⚠️ Numbering gap: **L17 and L18 have NO entries in lessons.md** — "L17 candidate" is referenced by the KIOXIA VLSI pre-registration/grade but was never codified under that number, and L18 was deliberately skipped as duplicate of an existing principle; tombstones in lessons.md. The legacy "L17–L20" group line below predates this discovery — only L19/L20 exist.)
+Current tail: **L39** (synced 2026-07-20 per K3-Swarm G-34; L31-L39 definition bodies still owed — see header note; prior refresh 2026-07-06; L28-L30 all CANDIDATE. ⚠️ Numbering gap: **L17 and L18 have NO entries in lessons.md** — "L17 candidate" is referenced by the KIOXIA VLSI pre-registration/grade but was never codified under that number, and L18 was deliberately skipped as duplicate of an existing principle; tombstones in lessons.md. The legacy "L17–L20" group line below predates this discovery — only L19/L20 exist.)
 
 - **L1** Bottoms-up before outside view
 - **L2** Operate ONLY on thesis falsification, never on macro noise
@@ -48,7 +48,7 @@ Current tail: **B65** (B65 context-fluency added 2026-07-20 — in-context famil
 - **B43** Stage 4 reaction bias (NVDA Q2 FY27 context)
 - **B44** Chat-summary discipline drift from file-level discipline (CANDIDATE)
 - **B45** Pre-training magnitude conservatism in structural-demand regimes — 15-name AI-infra basket empirical base rate: 6/15 >+200%, 6/15 +100-200%; single-day +5-12% cohort moves routine; REGIME-CORRECTED PRIOR BINDING; quarterly recalibration next 2026-09-12
-- **B46** Framing-vs-institutional-signal inconsistency (CANDIDATE → N=2 PROMOTION THRESHOLD MET 2026-06-14; N=1 MRVL Jensen-reframe + N=2 GEV CEO TTQ; promote to CONFIRMED at monthly audit 2026-06-24)
+- **B46** Framing-vs-institutional-signal inconsistency (**CONFIRMED** — N=2 threshold met 2026-06-14 [MRVL Jensen-reframe + GEV CEO TTQ]; promotion decided at the 06-24 audit but never written into canonical files until 2026-07-20 — K3-Swarm G-14 caught the 27-day say–do gap)
 - **B47** Efficiency-driven demand destruction blind spot in supply-constrained theses (CANDIDATE N=1 origin 2026-06-14 PM4; canonical per `biases-watchlist.md` — this line previously mis-assigned B47 to lead-time conservatism, now B62)
 - **B54** T1-as-rulebook discipline — T1 measured-data functions as permanent rules (AlphaGo Zero game-rules analogy); T2/T3 are time-bound framings (CANDIDATE N=1 origin 2026-06-22 PM)
 - **B55** Reflexivity-as-native-LLM-edge underweighted — price-vs-narrative divergence is the load-bearing reflexivity signal; harness defaults to fundamental-OR-price but not cross-correlated (CANDIDATE N=1 origin 2026-06-22 PM)
@@ -62,7 +62,7 @@ Current tail: **B65** (B65 context-fluency added 2026-07-20 — in-context famil
 
 ## Principles (meta/methodology.md)
 
-Current tail: **#45 CANDIDATE** (count-synced 2026-07-14; #43 configuration-over-capability + #43b compute-instead-of-narrate + #44 detection-over-prediction added 2026-07-06/07; #45 event-anchored-re-eval-dates added 2026-07-14; #39-#41 added 2026-06-26; #42 retrieval-staleness 2026-07-06)
+Current tail: **#47 CANDIDATE** (synced 2026-07-20 per K3-Swarm G-34; #46 fluid-objective-function 07-18, #47 verdicts-attach-to-distributions 07-19; prior sync 2026-07-14; #43 configuration-over-capability + #43b compute-instead-of-narrate + #44 detection-over-prediction added 2026-07-06/07; #45 event-anchored-re-eval-dates added 2026-07-14; #39-#41 added 2026-06-26; #42 retrieval-staleness 2026-07-06)
 
 - **#1** Bottoms-up before outside view
 - **#2** N-th order > 1st order
@@ -94,7 +94,7 @@ Current tail: **#45 CANDIDATE** (count-synced 2026-07-14; #43 configuration-over
 
 ## Critical Rules (CLAUDE.md)
 
-Current tail: **#18** (refreshed 2026-07-06; Rules #17-#18 added 2026-06-27 per user LLM-native-audit directive)
+Current tail: **#19** (synced 2026-07-20; Rule #19 destructive-change governance added 2026-07-19 — full text now in CLAUDE.md Critical Rules + `meta/destructive-change-governance.md`; Rules #17-#18 added 2026-06-27)
 
 - **#6** Segment-classify before triangulating
 - **#9** Bypass-route thinking
@@ -125,7 +125,7 @@ Current tail: **T10** (unchanged)
 
 ## Cross-domain patterns (meta/cross-domain-pattern-register.md)
 
-Current tail: **PC-17 CANDIDATE + PD-1..PD-8 series** (count-synced 2026-07-14; PC-17 [generation-cost collapse migrates value capture to the VERIFICATION layer, N=3] added 2026-07-10; PC-16 = skipped number; PC-15 added at the 2026-06-24 audit. **PD- prefix** = pattern-discovery candidates from the 2026-07-01 Leg-B discovery pass: PD-1 AI-profitability rotation / PD-2 layer-invasion, physical layer only un-invaded / PD-3 data-enclosure movement / PD-4 agent-security mandatory-spend gap — all defined in `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`; PD-6 cost-of-capital-as-next-bottleneck in `.../2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`; PD-5/PD-7/PD-8 carried in the register's dated-entry stream)
+Current tail: **PC-21 CANDIDATE + PD-1..PD-8 series** (synced 2026-07-20 per K3-Swarm G-34; PC-18 07-17, PC-19/PC-20/PC-21 07-20 — bodies in the register; prior sync 2026-07-14; PC-17 [generation-cost collapse migrates value capture to the VERIFICATION layer, N=3] added 2026-07-10; PC-16 = skipped number; PC-15 added at the 2026-06-24 audit. **PD- prefix** = pattern-discovery candidates from the 2026-07-01 Leg-B discovery pass: PD-1 AI-profitability rotation / PD-2 layer-invasion, physical layer only un-invaded / PD-3 data-enclosure movement / PD-4 agent-security mandatory-spend gap — all defined in `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`; PD-6 cost-of-capital-as-next-bottleneck in `.../2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`; PD-5/PD-7/PD-8 carried in the register's dated-entry stream)
 
 - **P-1** Chinese-parity-arrives-faster-than-premium-pricing-assumes (rate-variable per industry; MLCC 2026-06-11 update: premium-tier "years out" HOLDS; Korea-rate separate faster clock)
 - **P-2** Wrong-product-category trap
@@ -148,7 +148,7 @@ Current tail: **PC-17 CANDIDATE + PD-1..PD-8 series** (count-synced 2026-07-14; 
 
 ## Triangulation clusters (signals/triangulation.md)
 
-Current tail: **TC-18 ACTIVE** (count-synced 2026-07-14; **TC-15** model-labs-internalizing-inference-silicon, **TC-16** high-end-laminate-&-glass-cloth-scarcity-(CCL-stack), **TC-17** semis-positioning-crowding-crowded-but-hedged, **TC-18** capital-committed-supply-securing-(revealed-preference-shortage-validation) all added 2026-07-08→13; TC-12/13 added 2026-06-25, TC-14 promoted 2026-07-05; quick-index N-counts in `signals/triangulation.md` are CANONICAL over body instance lists)
+Current tail: **TC-19** (synced 2026-07-20 per K3-Swarm G-34; TC-19 edge-inference embodied-AI 07-19; prior sync 2026-07-14; **TC-15** model-labs-internalizing-inference-silicon, **TC-16** high-end-laminate-&-glass-cloth-scarcity-(CCL-stack), **TC-17** semis-positioning-crowding-crowded-but-hedged, **TC-18** capital-committed-supply-securing-(revealed-preference-shortage-validation) all added 2026-07-08→13; TC-12/13 added 2026-06-25, TC-14 promoted 2026-07-05; quick-index N-counts in `signals/triangulation.md` are CANONICAL over body instance lists)
 
 - **TC-1** Memory tightness multi-tier (N=14 STRUCTURAL-REGIME-CONFIRMATION; 60-year WSTS DRAM ASP trend-line break 2026-06-14 PM2)
 - **TC-2** AI capex on credit + state budgets (N=7)

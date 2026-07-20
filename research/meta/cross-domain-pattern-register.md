@@ -246,7 +246,7 @@ PC-14 now explicitly includes the CHINA-SIDE instance of the doctrine, confirmin
 - FALSIFIER: France/Germany REVERSE the Palantir decision within 90 days (unlikely given EUR 655M sovereign budget commitment + bureaucratic momentum) → would suggest doctrine is contestable rather than structural
 - COMPLICATION: existing PC-13 N=1 promotion criterion was "DIFFERENT event/regulator/jurisdiction" — PC-14 has BROADER scope (meta-pattern across multiple mechanisms) so PC-13 sub-instance counting toward PC-14 N is appropriate
 
-**Held cohort impact (per AM6b cascade — already committed `451dc3c`):**
+**Held cohort impact (per AM6b cascade — already committed `42cfcb9`; SHA remapped 2026-07-20 post-history-rewrite, K3-Swarm G-41):**
 - **NOW** — NEW EU SOVEREIGN-AI WATCH CONDITION (6-18mo monitoring, 4 trigger conditions registered, 25/50/100% partial-trim sequencing)
 - MRVL — MILD POSITIVE (EU sovereign AI = new custom-Si demand pool outside US)
 - HYNIX — Mild positive (sovereign AI compute = HBM demand across stacks)

@@ -1,6 +1,6 @@
 # Current Holdings — CANONICAL PORTFOLIO REFERENCE
 
-**Last updated:** 2026-07-07 PM (user DeGiro screenshots ×2 — post-rout mark). Prior canonical: 2026-07-05 EVE.
+**Last updated / CURRENT CANONICAL STATE: 2026-07-10 EVE** (user DeGiro screenshots — SKHY buy; see the "2026-07-10 EVE snapshot" section below: MURATA 336 sh + SUMCO 626 sh + **SKHY 37 ADS @ $173.45**, cash €53,063.88, balance €93,597.97). The 07-07 PM table below is the PRIOR mark, kept for history — header re-rolled 2026-07-20 (K3-Swarm G-54: cold sessions were reading a 2-position stale book).
 
 ## 📸 2026-07-07 PM CANONICAL STATE (screenshots ×2)
 
