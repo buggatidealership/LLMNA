@@ -2000,3 +2000,8 @@ Next step (gate): one verification pass per verb (share/backlog/B39/access) BEFO
 - **Why WATCH not thesis:** CXL memory pooling is real long-run TAM (34.6% CAGR to 2031, Mordor directional) but PRE-REVENUE to 2027-28 (CXL Consortium target; Samsung delayed CMM-D to 2027). Near-term ALAB story = PCIe6/AI-fabric, not CXL. Verify: is ALAB a connectivity play (Scorpio/Aries, ties to the AI-fabric/interconnect theme) more than a CXL play? — that's the real thesis angle if any.
 - **Adjacent:** Montage (688008.SS) = RCD/MRCD-MDB moat (1 of 2 global suppliers), CXL MXC = optionality only. MRVL: CXL immaterial vs Trainium/optical.
 - **Falsifier:** CXL memory pooling slips past 2028 OR ALAB's connectivity moat (Scorpio/Aries) erodes to merchant competition → the watch lapses.
+
+## 2026-07-20 — Primemas (private) — CXL controller fabless, world-first CXL 3.0 SoC (surfaced via the CXL-halt Round-2 re-verification)
+- **Origin:** the "PrimeMass" named in the (unverified) Big-Three-CXL-halt note = garbled **Primemas** — a REAL Korean fabless. Per `2026-07-20-mon-cxl-halt-ROUND2-consolidated-3layer-verdict-selfcorrection.md`.
+- **What it is:** "Hublet" chiplet CXL 3.0 SoC controller; claims world's-first CXL 3.0 SoC customer samples (2025-06-24, T1 press release); Micron AVL (validation-lab) partnership (mid-2025). NOT publicly investable (private startup).
+- **Why WATCH:** private CXL-controller pure-play; tracks the fabless-division-of-labor thesis. Watch for a funding round / IPO / a confirmed design-win-in-shipping-product (vs validation-only). Falsifier: stays validation-only, no shipping design win by 2027.
