@@ -36,6 +36,12 @@ Why: your screenshots proved the spawns run in the old Health-Calculators enviro
 3. If an old environment (Health-Calculators-era "Analyst" or similar) still exists in the list, consider deleting it so stale spawns can't happen — that deletion is YOURS to make (HIGH-tier by our own matrix if done agent-side).
 Why: guards now self-install via the repo's project hooks (f027157) for any FRESH clone — but a container that boots an old cached snapshot predating today carries neither the guards nor the self-installer. Fresh clone from the right environment = fully guarded from turn 1.
 
+## 6. ⭐ NEW 2026-07-20: change the GitHub DEFAULT BRANCH to main (~1 min) — confirmed cause of THREE degraded external audits
+Computed 2026-07-20 (`git remote show origin`): the repo's default branch is still **`claude/first-test-new-repo-wxedu9`**, whose last commit is 2026-07-06 — while `main` is current. Every fresh clone and every external reviewer session (the 07-17 fresh-session audit, fresh-Claude round 1, tonight's K3 Swarm) lands on a 14-day-stale repo by default and reports "missing" files that exist on main.
+1. github.com → **buggatidealership/LLMNA** → **Settings → General** (or the Branches page)
+2. **Default branch** → switch to **`main`** → confirm
+3. THEN do item 3 (delete the stale branch) — deletion is only possible after it stops being the default.
+
 ## 4. ⭐ GitHub branch protection on main (~2 min) — RECLASSIFIED REQUIRED after K3 red-team (2026-07-19): the ONLY layer that survives a server-side API bypass
 **K3 finding E6:** every guard I built is client-side. An agent (or a poisoned instruction) that calls the GitHub API directly — `gh api -X DELETE .../branches/main`, `gh repo delete`, or `curl` with the repo token — bypasses ALL of them by construction, because the record lives on GitHub's servers, not on my machine. Branch protection is the only stop that runs where the record actually lives. This moved from "nice backstop" to "the one layer I genuinely cannot substitute for."
 1. github.com → **buggatidealership/LLMNA** → **Settings → Branches** (or Settings → Rules → Rulesets on the new UI)
