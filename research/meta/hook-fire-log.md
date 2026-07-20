@@ -840,3 +840,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-20 19:28:28Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
 - 2026-07-20 19:28:28Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-20 19:28:28Z git-guard-pretooluse BLOCK (core.hooksPath override to a non-canonical value (disables git guards))
+- 2026-07-20 19:48:08Z session-prime-hook event=resume injected=False (skipped non-startup)
