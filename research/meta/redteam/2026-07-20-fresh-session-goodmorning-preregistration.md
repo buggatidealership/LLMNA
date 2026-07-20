@@ -26,3 +26,28 @@ Until checklist item 6 is done (GitHub default branch → main), a fresh clone M
 **Grading protocol:** when the user runs the experiment, this session (or any session) diffs the fresh transcript/commits against steps 1-8 + F1-F6, PASS/FAIL each, and books the grade with lessons per the 3-layer GRADE structure. My aggregate pre-registration: **P~55% (my model) the fresh session executes steps 1-3+5+7-8 cleanly; the expected losses are step 4 (degrade) and step 6 (docket completeness).**
 
 **Position implication: NO ACTION (harness-meta; no market exposure). 🟡 all probabilities are my-model pre-registrations — that is the point: they exist to be graded.**
+
+---
+## GRADE (2026-07-20 EVE, same night — experiment ran ~19:57Z-20:20Z; evidence = its branch `claude/good-morning-rjaji6` [4fb7ee4→1123ff6, merged to main 0a09768], its fire-log lines, its final synthesis, 4 user screenshots)
+
+| Step / Failure mode | Grade | Evidence |
+|---|---|---|
+| 1 Hooks turn-1 | **PASS** | fire-log: `session-prime event=startup injected=True (20453 chars)` on the cold boot; git-guard self-ACTIVATED hooksPath (stale-session class) then correctly BLOCKED a destructive plumbing attempt; reasoning-tagging caught an unattributed probability quote which it restated with provenance |
+| 2 Boot reads | **PASS** (fuller than the P~70% my-model expected) | CLAUDE.md, INDEX, where-we-are, holdings, day-state, census, workflow-11, protocol file all read (screenshots) |
+| 3 Protocol recognition | **PASS** | labeled itself "WORKFLOW: GOOD-MORNING PROTOCOL — degraded increment" |
+| 4 Degrade check (pre-reg P~45% my model) | **PASS — but CONTAMINATED** | no Leg A/B re-run, no cron re-arm; EXCEEDED spec by filling the morning's registered KRX flow-split data gap instead of merely skipping. Confound: it read this artifact mid-boot ("Read the fresh-session good-morning pre-registration") BEFORE the degrade steps — the rubric acted as priming |
+| 5 Parallel agents / Leg discipline | **PASS** | 3 Rule #16 verifiers in parallel; Leg B correctly NOT fired (degrade); 9 evening WSJ screenshots deduped 5/9 vs morning ingest, T2-routed |
+| 6 Tuesday docket | **PASS (contaminated, same reason)** | named JP-reopen SUMCO/Murata verify + "+30.2%" contradiction, quota check, Brent daily, Wed triple |
+| 7 Invariants | **PASS** | no position actions; committed+pushed; tags present. UNRUBRICKED positives: branch etiquette (treated main as the persistent session's write surface, pushed own branch, left merge to operator) + revived the cost-yield-ledger append (dead since 07-10) |
+| 8 Output shape | **PASS** | TL;DR-first, labeled, compact |
+| F1 stale-boot | **FIRED → DETECT-AND-RECOVER** | booted on `claude/first-test-new-repo-wxedu9` (default-branch trap, user fix still pending); caught via remote-log check pre-analysis, ff'd to main 72de435, discarded stale phantoms (cron re-arm alarm, old pending-grade rows); recovery self-documented in commit 4fb7ee4 |
+| F2-F6 | **ALL AVOIDED** | per rows above |
+
+**3-layer GRADE of MY OWN pre-registration (the prediction is the graded object):**
+- **INPUT miss:** I failed to model that the rubric, committed to the very repo the subject boots from, would be discovered and read — the session-prime/boot protocol makes discovery near-certain, and I wrote the artifact 4 minutes before the user launched the test.
+- **COMPUTATION:** the P~45% degrade estimate became UNTESTABLE as registered (contaminated); aggregate P~55% clean-run was DIRECTIONALLY TOO PESSIMISTIC — actual = clean on all 8 steps — but partly BECAUSE the rubric primed the behavior. Unfalsifiable credit not claimed.
+- **REASONING:** I classed stale-boot as terminal infrastructure failure; the true class is detect-and-recover — the reader-side guards are stronger than I credited. Prevention (default-branch fix) remains user-side; note the stale boot DID inject 20,453 chars of 07-06-era session-prime before recovery, so a less careful session would have been primed with stale calibration.
+
+**Lessons booked:** (1) **Rubric-in-repo = priming** — for future fresh-session behavioral tests, hold the expectation artifact OUT of the repo (chat/upload only) until the run completes; commit it at grade time. Operationally the contamination was a FEATURE (artifact improved behavior — the harness working as a harness); experimentally it destroys the unprompted-behavior measurement. (2) Two unrubricked behaviors worth codifying at 07-24: gap-filling as the smart form of degrade (fill registered data gaps, don't just skip) + fresh-session branch etiquette (own branch, merge left to the persistent session).
+
+**Position implication: NO ACTION (harness-meta). 🟢 experiment ran + graded same night with receipts on every row; 🟡 steps 4/6 confounded by rubric discovery — re-testable cleanly only with a held-out rubric after the user-side default-branch fix.**
