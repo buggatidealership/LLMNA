@@ -841,6 +841,9 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-20 19:28:28Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-20 19:28:28Z git-guard-pretooluse BLOCK (core.hooksPath override to a non-canonical value (disables git guards))
 - 2026-07-20 19:48:08Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-20 20:01:17Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
+- 2026-07-20 20:01:17Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))
+- 2026-07-20 19:54:46Z session-prime-hook event=startup injected=True (20453 chars) [fresh-session cold boot on stale branch; branch ff'd to origin/main 72de435 same session; line re-appended]
 - 2026-07-20 20:05:33Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-20 20:07:40Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-20 20:32:50Z session-prime-hook event=resume injected=False (skipped non-startup)

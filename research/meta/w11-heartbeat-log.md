@@ -26,3 +26,4 @@
 - 2026-07-09 ~13:20 UTC | good-morning protocol codified + WSJ Leg C pilot | 20-screenshot harvest routed (16 items); JGB module promoted; SKH-grade context staged; Apple-Broadcom verify queued.
 - 2026-07-09 16:48-16:55 UTC | self check-in fire #8 (on schedule) | SKH ADR final pricing graded: HIT w/ mechanism refinement (spot-anchor + demand premium); calibration-ledger row #1; artifact + day-state committed.
 - 2026-07-10 ~08:35 UTC | GOOD-MORNING WAKE run #1 (user-triggered) | 4 scanners + Leg C (13 WSJ) + cascades; SUMCO limit-up cascaded; closes reconciled; ADR grade FINAL; TSMC slipped Jul-13.
+- 2026-07-20 ~20:00-21:00 UTC | user good-morning wake (FRESH SESSION, pre-registered experiment; degraded increment per protocol) | Leg C 9 WSJ routed; 3 Opus agents; KR H1/H2 resolved H1; marker #4; H3 review ON; on branch claude/good-morning-rjaji6.
