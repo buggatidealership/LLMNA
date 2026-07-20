@@ -1,0 +1,77 @@
+# 2026-07-20 MON EVE — FRESH-SESSION "good morning" (9 WSJ screenshots) → DEGRADED INCREMENT RUN (Leg C + increments only, 3 Opus agents)
+
+**WORKFLOW: GOOD-MORNING PROTOCOL — degraded per its own rule ("if both fire the same morning, the second run is a cheap catch-up: docket already clean → Leg C + increments only"). Run by a FRESH session (the user-commissioned gradeable experiment pre-registered at `meta/redteam/2026-07-20-fresh-session-goodmorning-preregistration.md`, 19:53Z — this artifact is its primary evidence). Screenshots = T2 headline-layer (WSJ app, captured ~19:50Z, market strip as-of 3:50pm ET). Grading of this run against the pre-registration belongs to the adjudicating session, not to me. NO POSITION ACTION (user-gated).**
+
+## §0 — Fresh-session boot self-report (evidence for the pre-registration grade)
+
+- **F1 (stale-branch boot) FIRED, then RECOVERED same-session:** this session booted on designated branch `claude/good-morning-rjaji6` at 344962f (migration-era, 14 days stale) — the pre-registered confound. Detected via remote-log inspection (W11 wake-audit step 1) BEFORE any analytical work; branch fast-forwarded to `origin/main` 72de435; all work below runs on live state. The session-start briefing generated from the stale checkout (63-item todo, "re-arm 5 cron jobs" W11 alarm, ASML/TSMC pending-grade rows) was DISCARDED as F6-class phantoms after re-deriving state from main.
+- **Degrade check PERFORMED (pre-registration step 4):** git log showed KR-open Routine fire 00:23-00:31Z + full user good-morning 05:58Z (11 WSJ + 4 agents) + continuous session work to 19:53Z → this run degraded to Leg C + increments. NO Leg A/B re-run (avoiding failure mode F2), NO cron re-arm (platform Routines own scheduling per `meta/platform-trigger-census.md`: KR-open 00:22Z weekdays + EOD-conditional 20:17Z, both ACTIVE), NO EOD-synthesis duplication (that Routine fired into the persistent session ~20:17Z).
+- **Hooks that fired on this session (per `meta/hook-fire-log.md` + transcript):** session-prime cold-start inject (20,453 chars); git-guard PreToolUse self-activation + 1 BLOCK (`git stash drop` = history/record class — correct fail-closed behavior; stash left in place); reasoning-tagging Stop hook (1 catch: quoted the pre-registration's P~45% without source label — restated with attribution); git-check (forced the telemetry commit 4fb7ee4 before turn end); pre-commit diff-before-commit printed the staged diff.
+- **Rule #16 compliance:** 3 Opus verification agents fired in parallel without permission-asking (LTA piece / Iran+US close / KRX flows); ~164,710 subagent tokens (computed); all three HIGH-yield (ledger row same commit).
+- **Not done, auditable skips (Rule #14):** no thesis-file edits (LTA verdict = FRAME-ONLY, no new fact lands on any thesis — see §2); no TC-18 N-bump (frame ≠ instance); heartbeat-log line added per protocol §6 despite 10-day house drift toward day-state-only logging.
+
+## §1 — Leg C routing table (9 screenshots, dedup vs the 05:58Z 11-WSJ ingest)
+
+| # | Item (section) | F/F/O split | Tier | Route | Unasked (macro / micro) |
+|---|---|---|---|---|---|
+| 1 | "Massive Supply Deals Feeding the AI Frenzy Are No Sure Thing" — SK Hynix LTAs "aren't as solid as they seem" (Markets + Tech, double placement) | FRAME (thesis: "LTA backlog ≠ cash"); facts inside = pre-existing | T2 headline / T1-outlet news-analysis | **NEW → Tier-2 verified, §2; marker #4** | [macro] if LTA-skepticism becomes consensus BEFORE any real renegotiation event, does the first actual event hit softer (priced) or harder (pre-narrated)? / [micro] SUMCO Aug-6 LTA-language falsifier now gets read by a pre-primed market — same words, changed reaction function? |
+| 2 | Market strip 3:50pm ET: DJIA −0.55% / S&P −0.14% / NASDAQ +0.05% / R2K −0.48%; "Chip stocks pared gains" | FACT (near-close tape) | T2 headline-layer | **NEW → §3 (agent-confirmed finals)** | [macro] chips green while S&P/Dow red on oil = first intraday decoupling of the AI-complex from the Iran-risk channel this cycle — two risks getting separately priced? / [micro] MU +4.67% into KR reopen — does US memory lead KOSPI Tuesday? |
+| 3 | "Iran Missile Struck Housing Units for U.S. Troops at Jordan Base" + "Iran War Mediators Push for Traction on a New Ceasefire" + "Jordan becomes a flashpoint… troop deaths rise" | FACT (strike detail; mediation) + FRAME ("flashpoint") | T2 headline | **NEW → Tier-2 verified, §4** | [macro] Oman's transit-fee framework would turn Hormuz risk from a binary into a priced toll — structurally lower oil vol, structurally higher oil level; H3 Path A might then never arm despite continued war / [micro] Brent-vs-95 gate could resolve by fee-framework, not by escalation |
+| 4 | "Everyday Investors Sour on the Mag Seven and Flock to Newer AI Trades" | FRAME (rotation narrative) | T2 | DEDUP (retail-rotation thread, 05:58Z Vanda-triangulated) — WSJ carrying it = editorial-current datum only | [macro] retail broadening into "newer AI trades" inside a crowded-but-hedged regime (TC-17) — late-cycle breadth or healthy de-concentration? / [micro] none (no held-name touch) |
+| 5 | "Is Passive Investing Sabotaging Fund Managers?" | FRAME/OPINION | T2 | Complement register | [macro] rising passive share + exploding dispersion (−4.5% index days) = active liquidity-provision gap in stress sessions — today's KR institutional mechanical selling is what that looks like / [micro] none |
+| 6 | "The Pentagon Is Finally Buying (Some) Weapons From Startups" | FACT-adjacent (budget posture) | T2 | Thread-touch: defense-electronics framework (N≥3 promotion HIT Jul-19) + Ondas candidate container | [macro] procurement shifting to startups broadens the defense-AI demand leg beyond primes / [micro] corroborating container for ONDS watch, no new datum |
+| 7 | "Alibaba Says New AI Model Is Just Second to Anthropic's Fable 5" | OPINION (vendor self-report) | 🔴 | DEDUP (adjudicated 05:58Z: no independent benchmarks; rides K3 wave) | [macro] two Chinese frontier claims in one week (K3, Qwen) = tech-deflation export as trade posture, ties D2 / [micro] none |
+| 8 | "Japan to Buy Nvidia Chips to Power Its AI Push" | FACT (headline) | T2 | DEDUP (05:58Z: sovereign-AI demand, NVDA-supportive; PC-14-consistent) | [macro] sovereign purchases = price-insensitive demand floor under the capex-vs-monetization debate / [micro] none direct (JP held names untouched) |
+| 9 | Complement cluster: Paramount-Warner TRO (12 states) · JetBlue/Spirit LGA slots · PayPal sale option · IBM "Big Blue Blues" (DEDUP → Jul-22 print context) · "$150B+ tax strategy" · EU methane easing · UK big-government · rearmament cotton · China two-speed economy · Taiwan-suffocation campaign · student-visa 4-yr cap · Harvard/SAVE/Yale · BLS "data nerd" · non-market (AF1, El Mayo, World Cup, recess, Rohingya, Kono) | mixed | T2 | Complement register; no thesis touches | [macro] state-AG coalition blocking media M&A = antitrust posture datum for future AI-infra M&A; visa cap = US AI talent-pipeline friction 2027+; BLS succession = macro-data-integrity watch / [micro] none |
+
+## §2 — WSJ LTA piece: FRAME-ONLY verdict (agent 1, HIGH)
+
+**Identification 🟢:** Asa Fitch, WSJ news desk (NOT Heard on the Street), published 2026-07-20 09:30 GMT (Google News RSS pubDate; MSN syndication same day). Opening line (verified fragment): *"Contracts worth billions of dollars have become the commercial glue holding the AI boom together… investors shouldn't rely on them sticking if the boom fades."*
+
+**Verdict: FRAME-ONLY (~85% confidence, agent my-model; paywalled body not read verbatim — a buried new datum can't be fully excluded).** Every retrievable datapoint is already on file: Micron ~$22B take-or-pay / 16 LTAs (Reuters Jun-24/25, house 🟢 T1); SK Hynix 56% HBM share (Reuters Jun-25); SKH LTA price-cap removal (TrendForce Jul-2); CoreWeave put-option exploration (Reuters Jul-14 = the TC-18 candidate already booked Jul-18). No named renegotiation, cancellation, escape-clause text, or new counterparty/dollar figure surfaced in fragments or in the 72h independent sweep.
+
+**72h sweep (Jul 17-20):** zero renegotiation events anywhere; opposite-direction fact found — **Micron EXPANDING LTAs to 7 automotive clients incl. Qualcomm, Harman (TrendForce 2026-07-17, T2)** → logged as a TC-18-adjacent candidate instance for the Jul-24 TC index audit (single-source, mechanism-fit unverified — NOT an N-bump today). Historical wafer-layer precedent cutting against "won't stick": wafer take-or-pay LTAs were *enforced* through the 2023 downturn (semiconalpha, historical T3) — context for the SUMCO Aug-6 LTA-language falsifier, no thesis edit (no new fact).
+
+**Second-order (the sharp bit):** the piece's own CoreWeave-puts exhibit points the other way at the memory layer — a buyer engineering *hedges* around a floor it cannot walk away from is evidence the floor **binds** (hedge-not-terminate, TC-18's registered mechanism). **Category-error flag:** the subhead names SK Hynix, but the supplier side *holds* the floor and removed its cap — the frame's real stress-point is the neocloud→AI-lab layer (single-customer concentration), not the memco layer. First hard test = SKH Jul-29 print (pre-registration item 8: LTA-disclosure depth).
+
+**Booking:** capex-vs-monetization **consensus-arrival marker #4 (contract-solidity variant)** — the "visibility isn't a floor" frame reaching WSJ's news desk, double-placed across sections. Marker increment only; no reweight (frame ≠ fact). Cascaded to five-calls addendum #5.
+
+## §3 — US Monday close: chips bounced, did not extend the rout (agent 2)
+
+| Index/name | Jul-20 | Note |
+|---|---|---|
+| S&P 500 | ~−0.1% | confirms 19:50Z strip |
+| Nasdaq | ~+0.2% | midday +0.7% faded |
+| Dow | ~−0.5% | Iran/oil drag |
+| **SOX** | **+2.37% → 11,950.11** | intraday high 12,071.83; came ~1% off highs but held; had entered bear-market territory (−20.3% from Jun-2 peak) on the Jul-16/17 selloff (Benzinga/Bloomberg) |
+| MU +4.67% · AMD +2.83% (Helios rack launch) · NVDA ~+1.2-1.6% · TSM +1.27% | | cohort leader = memory |
+
+**Read:** bounce-and-partial-fade in chips while broad tape stayed slightly red on Iran — the Jul-16/17 rout PAUSED, and the AI-complex decoupled intraday from the oil-risk channel. Finals T2 (press, near-close); official closing levels not cleanly sourced — EODHD pull at next fresh-container wake is the deterministic backstop.
+
+## §4 — H3 dashboard increment (agent 2): no new escalation event; two-sided update
+
+- **DEDUP CATCH (prevents escalation double-count):** the WSJ "housing units" story is added detail on the **Jul-17 Muwaffaq Salti strike** (2 KIA — Feehan, Gonzales; 1 missing; prefab housing hit, 1 of 3 missiles) — ALREADY inside the cumulative 17-KIA count. NOT a post-Jul-19 event. Genuine new Jul-19/20 activity: Aqaba-bound missile intercepted (Jordan downed 3), Kuwait Mina al-Ahmadi refinery re-hit by drones + desalination plant 2nd day + KPC HQ, new Lorestan missile wave, 9th consecutive night of US strikes complete.
+- **Mediation (new leg):** ceasefire formally collapsed; active tracks = Qatar (Doha indirect talks) + Pakistan (bridge) + **Oman (Hormuz transit-fee/monitoring framework — a monetized-strait structure)**. No stated traction. Two-sided: escalation continuing AND a de-escalation architecture forming.
+- **Dashboard:** Brent settle CONFLICTED — $88.59 (Forbes 8:56am ET) vs intraday ~$90-91.41 (first $90 breach of the crisis, then eased) vs TE $87.72; computed distance below 95 = 6.75% (at 88.59) / 3.78% (at the 91.41 high). 10Y **4.57% rising** (+~2bp vs Fri) → Path-A yield leg present, Brent leg NOT (gate untouched). VIX 18.67 (−0.5%) — equity vol still calm against extreme physical stress (Hormuz ~10 transits Jul-18 vs 90-100 baseline; IRGC interdictions Jul-19; ship burning off Oman Jul-20 unattributed). USDKRW ~1,499 (weaker won). **Escalation review stays ON; no trigger fired; Brent-vs-95 daily continues.**
+
+## §5 — KR discriminator RESOLVED: H1 (absorbed) — full-day flows (agent 3, 4+ sources)
+
+| | Morning 09:59 | FINAL | Verdict input |
+|---|---|---|---|
+| Foreign | +₩4,165억 | **+₩5,161~5,235억 net BUY** | never flipped; bought MORE in the afternoon |
+| Institutions | +₩933억 | **−₩9,217억 net SELL** (전기·전자 −₩1조3,634억) | the afternoon distributor |
+| Retail | −₩5,197억 | **+₩3,510억 net BUY** | flipped to buying |
+
+KOSPI closed 6,516.27 −4.46%; KOSDAQ 749.64 −5.33% (52w low; sell-sidecars: KOSDAQ 10:52, KOSPI ~11:21; no circuit breaker). **Stock-level: foreigners were the #1/#2 net buyers of exactly SK Hynix (+₩6,120억, close ₩1,764,000 −4.23%) and Samsung (+₩2,762억, ₩244,000 −4.31%)** — the two names the distribution hypothesis feared were being sold. Press-named afternoon mechanism: leveraged-ETF unwind + sidecar/program selling + 반대매매 + K3 AI-slowdown sentiment + Iran backdrop (MoneyToday/Singlelist-KRX/JoongAng/fnnews). **Verdict: H1 (mechanical absorption) — the afternoon-flip variant of H2 is falsified; the pre-registered H1-kill signature (foreign selling persisting post-de-lever) did NOT appear.** Caveat booked: on a holiday catch-up session foreign net-buy partly reflects global-index re-sync — strong evidence of *non-distribution*, weaker evidence of *conviction*; slow-burn H2 not fully cleared. Foreign final ₩5,161억 vs ₩5,235억 = provisional-print spread, KRX-settled may differ.
+
+## Cascades (same commit)
+- `predictions/2026-07-17-regime-read-preregistration-five-calls.md` — ADDENDUM #5: call #4 staged re-weight #3 (H1 60→65 / H2 20→15 / H3 20 unchanged, my model) + marker #4 + H3 state.
+- `signals/cross-source-log/2026-07-20-mon-good-morning-11wsj-4agent-triple-driver-selloff.md` — EVE resolution addendum (KR flows final; pointer here).
+- `meta/day-state.md` — MON EVE fresh-session entry + Tuesday docket carried.
+- `meta/subagent-cost-yield-ledger.md` — 3-fire row (~164,710 tokens computed, HIGH ×3).
+- `meta/w11-heartbeat-log.md` — good-morning wake line (fresh session).
+- NOT cascaded, auditable skips: HYNIX/SKHY/SUMCO/MURATA theses (no new fact lands — §2 frame-only, §5 flow datum is context; both readable from this artifact + day-state); TC-18 N-count (frame ≠ instance; Micron-auto candidate parked for Jul-24 audit).
+
+**SOURCE-COVERAGE:** Leg C (WSJ screenshots) only — degraded evening increment; roster sweep belongs to the KR-open Routine (next fire Tue 00:22Z).
+
+**Position implication: NO ACTION — user-gated; book untouched (MURATA/SUMCO dark today, JP closed Marine Day; first live tape Tuesday). Monitoring: Brent-vs-95 daily (H3 escalation review ON, Path-A yield leg present); SKH Jul-29 = first hard LTA-frame test; Wed Jul-22 triple (IBM Q2 + NOW print + NBIS T+30). 🟡 DIRECTIONAL (my model) throughout.**
