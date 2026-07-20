@@ -189,7 +189,7 @@ LLM-NATIVE MULTI-DIMENSIONAL.
    calculator. Press the buttons FIRST.
 
 11. HARNESS-HISTORY COUNTS ARE COMPUTED, NEVER RECALLED (added
-   2026-07-20, #43b clause 3e / B65 context-fluency) — any quantified
+   2026-07-20, #43b clause 3f / B65 context-fluency) — any quantified
    claim about the harness's own history or state ("the hook fired N
    times", "I committed X times today", "this fired twice") is a
    COUNT over session/repo data: produce it with a tool call (grep
