@@ -789,3 +789,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-20 06:32:00Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-20 06:43:17Z session-prime-cascade-hook FIRE (new-codification-ids=PC-19)
 - 2026-07-20 06:52:10Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-20 07:01:36Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
