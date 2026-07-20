@@ -97,10 +97,23 @@ def sort_key(item: dict) -> tuple:
 # not a create date. Surface aggressively when due/overdue.
 RECURRING_KEYWORDS = ["monthly", "weekly", "audit cycle", "recurring", "next cycle"]
 
+# DUE-tag convention (added 2026-07-20, user-audit-forced): a ONE-SHOT dated
+# build/deliverable can carry the tag "DUE" in its tag bracket ([INFRA, DUE])
+# to get the same date-as-due elevation as recurring items. Origin: the 1c
+# tripwire (due 2026-08-03) and the 07-24 hook-work items had dates but NO
+# elevation mechanism — deferral dates without deterministic wakes are
+# procrastination with a timestamp. Non-recurring, non-DUE items keep their
+# date as create-date (sort only) — this prevents flooding the briefing with
+# 70+ old items whose dates are creation dates.
+
 
 def is_recurring(item: dict) -> bool:
     title = item["title"].lower()
-    return any(kw in title for kw in RECURRING_KEYWORDS)
+    if any(kw in title for kw in RECURRING_KEYWORDS):
+        return True
+    # DUE tag (in the parsed tag list, e.g. [INFRA, CAL, DUE]): one-shot
+    # dated builds get the same date-as-due elevation as recurring items.
+    return "DUE" in [t.upper() for t in item.get("tags", [])]
 
 
 def due_status(item: dict) -> tuple[str, int]:

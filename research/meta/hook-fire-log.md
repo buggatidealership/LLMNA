@@ -823,3 +823,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-20 16:25:15Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-20 16:29:11Z anti-fabrication-hook FIRE (n=1 '2028 chip' forms=[("'2028 chip'", 1, None), ("'2028chip'", 1, None)] verdict:TRUE-FIRE [adjudicated same-turn: needle genuinely absent from repo (both forms rc=1, computed by the hook itself); claim was SOURCED-UNCOMMITTED (~2028 deployment per The Information via CNBC 2026-07-20, agent-1 report) — remedy = inline citation; enters repo with the Frozen-v2 INGEST artifact. FIRST production FIRE of the 2026-07-20 rebuilt hook])
 - 2026-07-20 16:46:58Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-20 17:47:07Z session-prime-hook event=resume injected=False (skipped non-startup)
