@@ -218,6 +218,7 @@ Always announce the workflow name in your response so the user knows the mode.
    - Append dated event to `companies/{TICKER}/timeline.md`
    - Update `interpretations.md` with my reading (clearly tagged as interpretation, not fact)
 4. Test claim against existing falsifiers in each affected `thesis.md`. If a falsifier fires → flag thesis for revision.
+   **4b. EFFICIENCY-CLAIM TRIPWIRE (added 2026-07-20 after B47 N=2 — the Frozen-v2 miss):** if the input claims an X-times gain in efficiency / power / cost-per-unit (tokens-per-watt, perf/W, cost-per-token), the cascade is INCOMPLETE until it routes one line to the **U8/B47 falsifier-side ledger** — the demand-destruction/efficiency-compression read for the affected bottleneck row (`sector/bottlenecks.md`) — even if the verdict is "Jevons-dominated, fractional." Both B47 instances (2026-06-14, 2026-07-20) were externally caught; this step is the workflow-layer fix; the hook decision is the 07-24 audit's.
 5. If single-source/weak → log in `signals/cross-source-log.md`. If converges with prior signals on same theme → promote to `signals/triangulation.md`.
 6. If event has cross-domain implications → run **TRACE** (workflow 2).
 7. If event surfaces a new name not yet covered → add to `watchlist/candidates.md` with the causal chain that put it there.
