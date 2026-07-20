@@ -1987,3 +1987,9 @@ Frame: per `signals/cross-source-log/2026-07-19-sun-eve-weisenthal-mooncake-sund
 - TEST: Advantest (ATE lead >6mo on-file), Aehr (own entry exists), KYEC (register candidate 07-18).
 - CREATE input tie-back: WF6/tungsten gas = memory-cell wiring — links the 07-18 consumables sweep to the memory frame directly.
 Next step (gate): one verification pass per verb (share/backlog/B39/access) BEFORE any name-level thesis work; fold into the Aug-6 bottleneck re-rank alongside the "serving-substrate memory" row.
+
+## 2026-07-20 — Ondas (ONDS) — defense-AI candidate (retail-rotation surfaced, agent-verified)
+- **Origin:** WSJ/Vanda "everyday investors into new AI darlings" chart (07-17, Ondas #3 retail inflow) → good-morning 4-agent verification `signals/cross-source-log/2026-07-20-mon-good-morning-11wsj-4agent-triple-driver-selloff.md`.
+- **What it is:** small-cap drone/wireless pivoting to defense-AI via M&A. DZYNE $876M acquisition → "Ondas Sentinel" division (ISR, counter-UAS, autonomous strike/logistics); AI command system built WITH Palantir; FY26 revenue guide raised $390M→$525M+; $150M+ Q2-to-date bookings. (Breaking Defense/Yahoo 07-2026, T2.)
+- **Why tracked:** genuine defense-AI angle, no prior house coverage; ties to the N≥3 defense-electronics promotion cluster (GM-Lockheed + NATO $50B + Ankara) already queued for the framework build (todo, due Jul-24). Fold Ondas into that framework as a name-level candidate.
+- **Status:** WATCHLIST candidate, pre-thesis. Retail-flow signal is sentiment-tier (not fundamental) — verify bookings/backlog quality + Palantir-relationship durability before any thesis work. Falsifier: bookings guide is acquisition-accounting inflation, not organic.
