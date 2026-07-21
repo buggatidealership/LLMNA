@@ -117,8 +117,19 @@ def main() -> None:
 
     # ---- history / record-rewrite class (FORCE_PUSH token) ----
     if not force_ok:
-        if is_git and re.search(r"(commit|push)\b[^|;&]*--no-verify", s):
-            block("--no-verify would skip the verified pre-commit/pre-push guards", cmd)
+        # commit: --no-verify OR its short form -n (possibly bundled, e.g. -nm) skips
+        # pre-commit + commit-msg. push: only --no-verify (there -n means --dry-run,
+        # which must NOT block). K3-Swarm deep-dive fix 2026-07-21 (git commit -n bypass).
+        # The -n check is TEMPERED to the pre-message flag region — a tempered-greedy
+        # token that refuses to cross the -m/--message/-F/--file argument — so a commit
+        # MESSAGE that merely contains a "-n" token does not false-block (verified live).
+        if is_git and re.search(r"\bcommit\b[^|;&]*--no-verify", s):
+            block("--no-verify would skip the verified pre-commit/commit-msg guards", cmd)
+        if is_git and re.search(
+                r"\bcommit\b((?!\s-m\b|\s--message\b|\s-F\b|\s--file\b)[^|;&])*?\s-[a-z]*n[a-z]*\b", s):
+            block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
+        if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
+            block("--no-verify would skip the verified pre-push guard", cmd)
         if is_git and re.search(r"\bpush\b", s) and re.search(
                 r"\bpush\b[^|;&]*(--force(-with-lease)?\b|\s-f\b|--delete\b|\s-d\b|\s[:+]\S)", s):
             block("force-push / remote-ref deletion / +refspec (history-rewrite class)", cmd)
@@ -149,8 +160,13 @@ def main() -> None:
                      r"|--recursive\b[^|;&]*--force\b|--force\b[^|;&]*--recursive\b"
                      r"|--recursive\b[^|;&]*-[a-zA-Z]*f|-[a-zA-Z]*r[a-zA-Z]*\b[^|;&]*--force\b)", s):
             tail = s.split("rm", 1)[1]
+            # K3-Swarm deep-dive fix 2026-07-21: the rm branch had its own narrow tail
+            # regex and never consulted REPO_TOKENS, so `rm -rf $CLAUDE_PROJECT_DIR` and
+            # `rm -rf ~/LLMNA` slipped past the G-24 hardening. Now gate on the tail
+            # regex (extended with ~ / ~/LLMNA) OR the hardened REPO_TOKENS set.
             if re.search(rf"(\s|=|'|\"|^)({re.escape(REPO)}(/research|/\.git|/portfolio)?/?|"
-                         r"research/?|\.git/?|portfolio/?|\.|/)(\s|$|'|\")", tail):
+                         r"research/?|\.git/?|portfolio/?|~(/LLMNA)?|\.|/)(\s|$|'|\")", tail) \
+                    or REPO_TOKENS.search(tail):
                 block("recursive force-delete aimed at repo root / research / portfolio / .git", cmd)
         if has_repo and re.search(r"\bfind\b[^|;&]*(-delete\b|-exec\s+(rm|unlink)\b)", s):
             block("find -delete / -exec rm over a repo path (mass file deletion)", cmd)
