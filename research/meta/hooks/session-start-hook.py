@@ -488,7 +488,11 @@ def parse_stale_tier_entries(path: Path, threshold_days: int = 30) -> list:
     except Exception:
         return []
 
-    entry_re = re.compile(r"^###\s*\[(\d{4}-\d{2}-\d{2})\]\s*(.+?)$", re.MULTILINE)
+    # Deep-dive HIGH fix 2026-07-21: the strict `\]` matched only 7 of 83 headers
+    # (most carry extra bracket text like "[2026-06-25 PM ROUND 6 ...]"), so the
+    # stale-tier forcing function was blind to 76/83 entries. Use the corpus-tolerant
+    # `[^\]]*\]` idiom already used by the cost-yield parser 74 lines above.
+    entry_re = re.compile(r"^###\s*\[(\d{4}-\d{2}-\d{2})[^\]]*\]\s*(.+?)$", re.MULTILINE)
     matches = list(entry_re.finditer(text))
     if not matches:
         return []
