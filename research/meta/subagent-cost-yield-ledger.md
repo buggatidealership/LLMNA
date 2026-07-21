@@ -3440,3 +3440,20 @@
 **Audit-day classification:** POSITIVE-LITE
 **Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-kr-open-wake2-datagapped-h3-dashboard.md`
 **Commit:** (this commit)
+
+### [2026-07-21 AM] Tuesday good-morning 2-leg scan (Leg A JP/KR + Leg B discovery)
+
+**Trigger source:** user "good morning" + 14 WSJ screenshots
+**Subagents fired:** 2 (Opus: Leg A ~64k/48 tools; Leg B ~97k/20 tools)
+**Estimated token cost:** ~161k (actual subagent_tokens)
+**Items verified:** SUMCO +30.2% contradiction (KILLED via computed trajectory), SKH ADR −1.86% (T1 confirm), KR Tuesday flows, Nikkei reopen trajectory, HBM4E cadence, 10-item discovery sweep
+**Per-subagent yield:**
+- Leg A: HIGH — contradiction kill + portfolio divergence flag (SUMCO no-bounce) + H1 day-2 confirmation + HBM4E datum
+- Leg B: HIGH — PC-22 candidate (3-domain capital-opacity convergence) + TC-13 ratepayer sub-signal (PJM T1)
+**Brief-framing errors caught:** KOSDAQ Monday-close misdated as Tuesday by sedaily (B40); Samsung −3.53% print flagged unreliable-conflicting
+**Thesis cascade triggered:** SUMCO, MURATA, SKHY theses + PC-22 register entry
+**Position implication delta:** NONE (HOLD all; re-weight only)
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-good-morning-14wsj-2leg.md`
+**Commit:** (this commit)
