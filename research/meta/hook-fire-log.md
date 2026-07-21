@@ -951,3 +951,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-21 21:50:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-21 21:50:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-21 21:50:06Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards)
+- 2026-07-21 21:53:04Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-21 21:53:04Z structural-output-hook FIRE (structural-markers-missing)
+- 2026-07-21 21:53:29Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
+- 2026-07-21 21:54:18Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-21 21:54:18Z structural-output-hook FIRE (structural-markers-missing)

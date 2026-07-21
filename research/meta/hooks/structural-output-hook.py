@@ -272,16 +272,13 @@ def main():
     if not text:
         sys.exit(0)
 
-    # Size gate: only fire on substantial analytical outputs
-    if len(text) < 800:
-        sys.exit(0)
-
     # Position-implication tier enforcement (Principle #37, added 2026-06-15).
-    # Runs BEFORE the exemption + structural-markers gates (moved 2026-06-27):
-    # a real sizing recommendation MUST declare its confidence tier even if the
-    # message also contains a harness-meta/scan-design exemption token. The
-    # exemption only suppresses the general structural-markers gate, NOT the
-    # hard tier requirement on an actual Position implication line.
+    # Runs BEFORE the size gate AND the exemption/structural-markers gates
+    # (size gate moved below it 2026-07-21, G-27 deep-dive fix): the tier check
+    # is LINE-ANCHORED, so message size is irrelevant — a short thesis-update
+    # confirmation carrying an untiered Position implication must still declare
+    # its confidence tier. The exemption suppresses only the general
+    # structural-markers gate, NOT the hard tier requirement.
     for m in POSITION_IMPLICATION_RE.finditer(text):
         line = m.group(0)
         # Find the line directly above for the "above" tier-marker variant
@@ -294,6 +291,11 @@ def main():
         _log_fire("position-implication-tier-missing")
         _print_position_implication_feedback(line)
         sys.exit(2)
+
+    # Size gate: only fire the general structural-markers check on substantial
+    # analytical outputs (the tier check above is size-independent by design).
+    if len(text) < 800:
+        sys.exit(0)
 
     # Exemption: meta-discussion / file-narration / acknowledgment / scan-design
     if has_pattern(text, EXEMPTION_PATTERNS):
