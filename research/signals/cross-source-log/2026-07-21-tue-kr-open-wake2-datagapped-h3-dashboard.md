@@ -1,0 +1,20 @@
+# 2026-07-21 TUE — KR-open wake #2 (00:22Z Routine, escorted reading #2): Tuesday open DATA-GAPPED (403 wall on all KR live domains); H3 NO-TRIGGER (Brent $87.7-88.6 band, 6.4-7.3 pts below gate); JP reopens GAP-UP (Nikkei +0.63% cash / +1.62% futures); H-weights HELD 65/15/20 pending flow data
+**Workflow: W10 time-sensitive leg (Routine-escorted). 2 Opus agents (~101k tokens, 79 tool-uses combined). Data honesty: today's KOSPI open, investor-flow split, K200 futures basis, and SUMCO/Murata opens ALL UNRETRIEVED — Naver/KRX/Investing-KR/fnnews/kabutan bodies 403 across the board. This is the standing container-egress gap the user-side network-allowlist checklist item addresses. Booked = multi-source-converged anchors only.**
+
+## Anchors booked (T2 converged unless noted)
+- **Monday 07-20 KR FINALS:** KOSPI 6,516.27 (−4.46%; open 6,643.58 −2.60%, sell-sidecar 11:21 KST — 20th of 2026); KOSDAQ 749.64 (−5.33%); SK Hynix ₩1,764,000 (−4.24%); Samsung ₩244,000 (−4.31%). KOSPI turnover ₩33.21tn = **−35.9% vs the ₩51.81tn 07-01 panic print** (fnnews) — volume compression, not capitulation-volume, on a −4.46% day.
+- **Margin secondary (stale, 07-09 latest):** 반대매매 ₩1,422억/day (10.2% of 미수금 vs 1% Jan); 신용융자 ₩36.63tn, −₩2.0tn off the 06-24 peak ₩38.63tn. Policy-contaminated per instrument amendment — SECONDARY only.
+- **JP reopen (post-Marine-Day, TODAY, T2 3-source):** Nikkei cash open 64,544.05 (+0.63% vs Fri); OSE Sep futures opened +1,040 (+1.62%). Risk-on reopen after Monday's US chip bounce. SUMCO/Murata prints NOT retrieved (one candidate article exposed as 2026-05-29 stale by the agent — B40 catch, discarded); closes verify + the "+30.2% MTD" contradiction stay on today's docket.
+- **Overnight tape tension (headline-only T2, bodies 403):** fnnews 06:40 KST frames "SK Hynix ADR −1.86%, KOSPI hold 6,000?" (bearish frame ~8% below spot — headline drama, logged not adopted) vs Kiwoom morning note calling a rebound attempt on US semi recovery. Conflict registered, unresolved.
+
+## H3 two-path dashboard (agent 2)
+- **Brent:** settle band **$87.72–88.59** (two T2 feeds, ICE settle unresolved — same conflict as yesterday, now accepted as a band); Monday intraday high ~$91.4 faded. **Below 90; 6.4–7.3 pts below the 95 gate. NO TRIGGER.** (One $83 print discarded as T3 feed-artifact.)
+- **Rates (Path A, live arm):** 10Y **4.56–4.60%** band, at-or-above yesterday's 4.57% — rising bias intact.
+- **Stress board:** war-risk 3–10% hull (Jul-17 base, recycled); JKM $20.99 (+37% m/m, Jul-17 stale); gold ~$4,010 holding above 4,000 (haven bid elevated-not-spiking); USDJPY 162.53. Dubai EFS unresolved (no print reachable).
+- **Events:** 10th consecutive US strike night + expanded targets (Jul-20 base-day, recycled); Iran FM same-day contradiction (proposals received via Pakistan/Qatar AND "no plans for negotiations"); the "widest volley/6 states" item **T3-unconfirmable vs the Jul-17–19 cycle — flagged, NOT booked** (B40 discipline). No mediation breakthrough overnight.
+
+## Escorted reading (decomposed per instrument blocks; NO auto-act)
+Five-calls call #4 weights **HELD at H1 65 / H2 15 / H3 20 (my model, carried from the 07-20 EVE resolution)** — today's open is data-gapped, and headline-tier evidence (mild ADR give-back vs risk-on JP reopen) is not flow-attribution evidence; re-weight only on the actual 투자자별 split when published (~1-2h post-open) or user screenshots. The H1-kill signature to watch remains: foreigners flipping to net-sell in electricals on a green tape. Turnover compression (−35.9%) is weak-tape-thin-liquidity context, consistent with mechanical-not-informed Monday selling (H1-supportive, T2).
+**Data-gap register:** Tuesday open/flows/basis = OPEN ITEM for the user's "good morning" or the EOD routine; ADR −1.86% headline unverified (body 403).
+
+**Position implication: NO ACTION (escorted instrument reading; positions user-gated) — 🟡 all reads T2-band quality, today's KR open data-gapped; H3 gate untouched (research-verified 2026-07-21 per agent pulls above); MURATA/SUMCO first live JP tape since the selloff resolves at today's closes.**

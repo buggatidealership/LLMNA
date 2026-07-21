@@ -3423,3 +3423,20 @@
 **Audit-day classification:** POSITIVE
 **Cross-source-log:** `signals/cross-source-log/2026-07-20-mon-eve-fresh-session-goodmorning-9wsj-degraded-increment-3agent.md` §CLOSURE
 **Commit:** (this commit)
+
+### [2026-07-21 KR-WAKE] Tuesday KR open + H3 dashboard pull (Routine wake #2, 2 agents)
+
+**Trigger source:** autonomous KR-open Routine (00:22Z fire)
+**Subagents fired:** 2 (Opus research: KR discriminator ~63k/53 tools; H3 dashboard ~38k/26 tools)
+**Estimated token cost:** ~101k (actual subagent_tokens)
+**Items verified:** Monday KR finals (converged), margin/반대매매 prints, Nikkei reopen, Brent settle band, 10Y, stress board, overnight Iran temporal-check
+**Per-subagent yield:**
+- KR agent: MEDIUM — live Tuesday data unreachable (403 wall) but anchors converged + caught a 05-29 stale article masquerading as today (B40)
+- H3 agent: MEDIUM — gate-distance computed, T3 escalation print correctly flagged-not-booked
+**Brief-framing errors caught:** stale SUMCO/Murata article (May-29) discarded; "widest volley" recycled-cycle flag
+**Thesis cascade triggered:** NONE (data-gapped; weights held)
+**Position implication delta:** NONE
+**Material yield class:** MEDIUM
+**Audit-day classification:** POSITIVE-LITE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-kr-open-wake2-datagapped-h3-dashboard.md`
+**Commit:** (this commit)
