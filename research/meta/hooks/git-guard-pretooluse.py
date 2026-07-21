@@ -125,8 +125,11 @@ def main() -> None:
         # MESSAGE that merely contains a "-n" token does not false-block (verified live).
         if is_git and re.search(r"\bcommit\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-commit/commit-msg guards", cmd)
+        # Require `git commit` ADJACENCY (not bare "commit") so prose/heredoc text
+        # mentioning "commit -n" doesn't false-block — only an actual git-commit
+        # invocation does. Residual: `git -C <path> commit -n` is not caught (rare).
         if is_git and re.search(
-                r"\bcommit\b((?!\s-m\b|\s--message\b|\s-F\b|\s--file\b)[^|;&])*?\s-[a-z]*n[a-z]*\b", s):
+                r"\bgit\s+commit\b((?!\s-m\b|\s--message\b|\s-F\b|\s--file\b)[^|;&])*?\s-[a-z]*n[a-z]*\b", s):
             block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
         if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-push guard", cmd)
