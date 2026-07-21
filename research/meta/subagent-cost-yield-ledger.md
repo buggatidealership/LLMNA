@@ -3457,3 +3457,21 @@
 **Audit-day classification:** POSITIVE
 **Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-good-morning-14wsj-2leg.md`
 **Commit:** (this commit)
+
+### [2026-07-21 EVE] 3-input trading batch verification (SMCI 8-K / OpenRouter / Vera Rubin recycle-check)
+
+**Trigger source:** user-shared trading-session inputs (tweet screenshots + newsletter)
+**Subagents fired:** 3 (Opus: SMCI ~37k/20; OpenRouter ~101k/34; Vera Rubin ~139k/36)
+**Estimated token cost:** ~277k (actual subagent_tokens)
+**Items verified:** SMCI 8-K exact numbers + omitted caveats; OpenRouter claim set incl. token-figure reconciliation; Vera Rubin claim provenance/date/tier/Street-reaction
+**Per-subagent yield:**
+- SMCI: HIGH — T1 filing + the investigation caveat the tweet omitted (framing-error caught)
+- OpenRouter: HIGH — 60T token figure exposed as garbled; verified weekly series recovered (instrument datum); B40 on 2 of 4 claims
+- Vera Rubin: HIGH — recycled 06-04 event ID'd against our own repo; Bercovici double-inference separated from fact; wrong-direction cascade PREVENTED (step-4b first live adjudication)
+**Brief-framing errors caught:** 3 (SMCI omitted caveats; 60T garble; DRAM-bearish inversion)
+**Thesis cascade triggered:** SMCI folder created (watchlist stub); MU/SKHY/Samsung/SNDK explicit NO-CHANGE
+**Position implication delta:** NONE
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-eve-3input-batch-smci-openrouter-verarubin.md`
+**Commit:** (this commit)
