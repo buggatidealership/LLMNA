@@ -37,13 +37,26 @@ def main() -> None:
             if d >= EXPERIMENT_START:
                 fires[week_key(d)] += 1
 
+    # Ref resolution (deep-dive HIGH fix 2026-07-21): session-branch containers
+    # often have no local `main` ref, so `git log main ... check=True` exited 128
+    # and crashed the whole metric on 2026-08-06 decision day. Resolve the freshest
+    # available main-equivalent: local main, else origin/main, else HEAD — never crash.
+    ref = "HEAD"
+    for cand in ("main", "origin/main"):
+        chk = subprocess.run(
+            ["git", "-C", str(REPO), "rev-parse", "--verify", "--quiet", cand],
+            capture_output=True, text=True,
+        )
+        if chk.returncode == 0:
+            ref = cand
+            break
     out = subprocess.run(
         # NOT --first-parent: the 2026-07-06 migration grafted pre-migration
         # history onto a merge side-branch; first-parent would zero out all
         # pre-July weeks (caught 2026-07-07 on first computed run).
-        ["git", "-C", str(REPO), "log", "main",
+        ["git", "-C", str(REPO), "log", ref,
          f"--since={EXPERIMENT_START.isoformat()}", "--format=%as"],
-        capture_output=True, text=True, check=True,
+        capture_output=True, text=True, check=False,
     )
     commits = defaultdict(int)
     for line in out.stdout.splitlines():
