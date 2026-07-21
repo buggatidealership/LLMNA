@@ -14,6 +14,7 @@
 | trig_011yct3vV4NjPNMWtGfawKQT | send_later 2026-07-24T06:30Z | 2026-07-24 06:30Z (one-shot) | Monthly-audit build wake: receipts-hook Phase 1, log_fire house standard, B47 hook decision, B65 canary |
 | trig_01CtG2CzRc9J2EikoNd6QFpL | send_later 2026-08-03T06:30Z | 2026-08-03 06:30Z (one-shot) | 1c count-leg build wake (backtest must REPRODUCE the corpus-FP result) |
 | trig_01EZhuMZMzScUsNR6g4YTPkB | send_later 2026-07-21T05:30Z | 2026-07-21 05:30Z (one-shot) | User-side checklist morning reminder (user request 07-20 EVE: "remind me tomorrow") — logged SAME TURN per the census rule |
+| trig_01D2xiGNq6oKPDXYSrHeqXLT | send_later 2026-07-21T20:55Z | 2026-07-21 20:55Z (one-shot) | Workflow watchdog: harness-deep-dive resumed after 6h stall; salvage-from-journal path if it stalls again — logged SAME TURN |
 
 ## INERT (fired one-shots, self-disabled — audit trail, kept)
 11 send_later self-check-ins, 2026-07-06 → 2026-07-16 (E4-E7 test adjudications, NBIS/SKH/TSMC grade follow-ups). IDs in the 2026-07-19 list_triggers snapshots (session record + day-state SUN-EVE-#5/#6).
