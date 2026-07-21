@@ -857,3 +857,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-21 05:32:24Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-21 05:42:39Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-21 05:50:27Z anti-fabrication-hook FIRE (n=1 '€28B' forms=[("'€28B'", 1, None)] verdict:pending)
+- 2026-07-21 05:54:30Z session-prime-cascade-hook FIRE (new-codification-ids=PC-22)

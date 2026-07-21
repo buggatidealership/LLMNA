@@ -246,4 +246,4 @@ If a 30-day audit shows that having session-prime loaded produced ZERO measurabl
 
 **Extended falsifier (added 2026-06-24):** if monthly audit produces zero demotions + zero additions for 3 consecutive cycles, the curation rule is working but the file is not evolving — check whether the OS has stagnated or the curation rule is too aggressive.
 
-- **PC-20/PC-21 (2026-07-20, anomaly pass #1):** PC-20 export-control DESIGN-AROUND (need-elimination ≠ substitution; ~50%, re-eval 08-20) · PC-21 cross-sector listing/monetization wave (proceeds-use tell is load-bearing; ~45%, topic-risk flagged, re-test 08-13). Both CANDIDATES — track, don't cite as priors.
+- **PC-20/21/22 (07-20/21):** PC-20 export-control DESIGN-AROUND (~50%, re-eval 08-20) · PC-21 listing/monetization wave (proceeds-use tell; ~45%, re-test 08-13) · PC-22 AI-LEVERAGE OPACITY MIGRATION (credit+insurance+sovereign channels → private/opaque structures; BIS-complement; re-eval 08-21). All CANDIDATES — track, don't cite as priors.
