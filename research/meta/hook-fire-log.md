@@ -907,3 +907,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-21 16:39:56Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-21 16:53:43Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-21 18:08:07Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-21 18:22:15Z session-prime-hook event=resume injected=False (skipped non-startup)
