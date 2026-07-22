@@ -73,7 +73,7 @@
 
 ## Open
 
-- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST pending (UPDATED 07-19: routine re-bind item RETIRED — superseded by agent-side self-bind Routine trig_01WM2zxPAcrKzr8YCnpHkYHP; REMAINING user-side: loopframe posting-routines PAUSE + embedded API-key ROTATION [security, platform refuses agent-side disable], env network allowlist, stale-branch deletion). Full steps: `meta/user-browser-checklist.md`. RE-SURFACE each morning until empty.
+- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST (UPDATED 2026-07-22: **✅ DEFAULT BRANCH → main DONE + API-CONFIRMED** — the stale-clone/F1/K3 trap is CLOSED; routine re-bind RETIRED 07-19). REMAINING user-side: (a) **stale-branch DELETE** — now UNBLOCKED (first-test-new-repo-wxedu9 no longer default, deletable), + claude/w11-wakes etc.; (b) **branch protection** — Settings→Branches confirmed "Classic branch protections not configured" (add ruleset on main: no force-push, no delete); (c) env **network allowlist** (403-wall cause); (d) **API keys** as env vars (ECOS/EODHD/DART/EDINET/Finnhub/FRED). **DEPRIORITIZED per user 07-22: loopframe pause+key-rotation** — content-tool keys (Twitter/Recraft/Runway/Ideogram), low consequence, user judged posts harmless; do at leisure. Full steps: `meta/user-browser-checklist.md`. RE-SURFACE each morning until empty.
   - Origin: user 2026-07-08 "save everything I must do in a browser so I can recall it tomorrow."
   - Scope: user completes in browser; I verify (fetch test / transcript read / branch gone) and delete items.
   - Linked: `meta/user-browser-checklist.md`, `sector/market-state-function-spec.md` §6, E6 artifact.

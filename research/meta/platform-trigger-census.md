@@ -26,3 +26,6 @@ trig_01CnVFkk... (KR-JP morning wake, fresh-spawn, broken env-binding) · trig_0
 
 ## OUTSIDE AGENT VISIBILITY (user-side only)
 2 "loopframe" posting routines (April ARS project, created via http_api) — do NOT appear in agent list_triggers; still firing daily w/ plaintext keys in prompts; pause + key rotation = user browser task (checklist).
+
+## [2026-07-22] DEFAULT-BRANCH FIX (user browser, API-confirmed)
+GitHub `default_branch` changed `claude/first-test-new-repo-wxedu9` (07-06 stale) → `main`; verified via search_repositories same turn. Fresh sessions/clones/tools now boot on live state. The stale-default trap that caused the fresh-session F1 failure + K3's cross-branch clone fight is closed.
