@@ -3525,3 +3525,15 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md`
 **Commit:** (this commit)
+
+---
+### 2026-07-22 WED AM — GOOD-MORNING 4-agent verification batch (Rule #16 + GOOD-MORNING PROTOCOL Leg C)
+**Fires:** 4 parallel Opus 4.8. **Est. cost:** ~119k tokens (22k+35k+29k+33k actual subagent tokens reported).
+**Items verified:** (1) AMD-Anthropic deal + terms; (2) GOOGL/IBM/NOW/TSLA/TXN twin-print actuals; (3) SKHY WSJ LTA-durability bear; (4) H3/Iran Brent-$95 gate.
+**Per-agent yield:** AMD = HIGH (branch-a resolve + equity-direction reversal catch + 3 framing-error corrections); twin-print = HIGH (PENDING guard prevented a false-CONFIRM grade off recycled Q1 data — the load-bearing G-1 protection); SKHY = MEDIUM (steelman confirms back-end-only weight, no falsifier touched); H3 = MEDIUM (gate not triggered + 2 screenshot framing-errors scrubbed: gold −50% and Pickaxe-stale).
+**Framing errors caught:** 4 (gold "−50%" mislabel; Pickaxe centrifuges stale-as-fresh; GOOGL Q1-capex-as-Q2 recycle; AMD "OpenAI 1GW/Oracle" + "exceeds Meta/OpenAI").
+**Thesis cascade triggered:** AMD thesis+facts, competitive-map two-branch resolve, SKHY + HYNIX back-refs, twin-print grader-guard.
+**Position implication delta:** NONE (user-gated; two RECOMMEND-FIRST reads surfaced — AMD stays Watchlist, SKHY HOLD into Jul-29 with the conditional add gated on tonight's GOOGL capex).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-good-morning-4agent-verification-batch.md`
+**Commit:** (this commit)

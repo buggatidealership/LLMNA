@@ -1022,3 +1022,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 11:42:41Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
 - 2026-07-22 11:42:41Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
 - 2026-07-22 12:32:42Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 12:46:01Z anti-fabrication-hook INCONCLUSIVE (n=1 '15%' forms=[("'15%'", None, 'TimeoutExpired')] verdict:pending)
+- 2026-07-22 12:51:44Z session-prime-hook event=compact injected=False (skipped non-startup)
+- 2026-07-22 12:52:43Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)

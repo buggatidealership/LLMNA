@@ -49,3 +49,10 @@ Falsifier: guide merely REAFFIRMED $180-190B = FALSE (not a miss — the reaffir
 **Note on the K3 "pre-locked 6-item rubric":** day-state (07-18) says these registrations "face K3's pre-locked 6-item rubric," but the rubric text was never persisted into the repo (searched: redteam/, commissioning doc, program doc — absent). DEAD REFERENCE booked for the 07-24 audit (G-07 promise-not-receipt class). These registrations meet the Program-v2 requirements (frozen Ps, provenance lines, DECISION/DISCRIM tags, falsifiers); the rubric grade can be applied retroactively if the user re-pastes it.
 
 **Position implication: ⚪ NO ACTION — registrations are data-generation; all position questions (incl. any NOW re-entry) remain user-gated decision packages — 🟡 setup research-verified 2026-07-22 (T1 pre-announcement/guides, T2 tape); ties to macro: tonight adjudicates BOTH the casualty-leg (IBM/NOW budget-squeeze) and the demand-floor (GOOGL capex) sides of the memory-tightness regime in one session.**
+
+---
+
+## ⚠️ [2026-07-22 AM] GRADER GUARD (for the 23:30Z wake) — verified subagent pass, per `signals/cross-source-log/2026-07-22-wed-good-morning-4agent-verification-batch.md`
+- **As of this morning's search window, GOOGL/NOW/TSLA/TXN actuals are NOT yet indexed** (they report AMC Jul-22 ~4pm ET). Do NOT grade off the AM pass.
+- **STALE-RECYCLE TRAP (B40/B61) — the operative protection for G-1:** the "$180–190B FY26 capex / $462B cloud backlog / $20B cloud / +63%" figures circulating in "Q2" summaries are the **April-29 Q1 print**. G-1 asks whether Q2 pushes **above $190B** — grading any recycled Q1 figure as the Q2 event = a false CONFIRM. Require the actual Q2 8-K/call number.
+- **IBM leg is already resolvable** (T1 pre-announcement Jul-14): rev $17.2B/+1%, GAAP EPS $2.27, op-EPS $2.93; rev MISS vs Street ~$17.86B; ~25% de-rate was Jul-15 (pre-announcement), NOT a fresh 7/22 move. FY guide not formally reset in prelim — watch tonight's 5pm call for the reset (I-leg components).
