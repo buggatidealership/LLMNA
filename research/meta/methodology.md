@@ -2069,3 +2069,13 @@ The stack this resolves: **terminal metric** (€4.0-5.0M FI, the why — `portf
 5. Failure-study is the ENGINE, not the goal: the objective stays available-edge × capture (objective function v2). Guard: shrinkage currently outscores the system (0.1777 vs 0.1978) — calibration without capture is a tuned instrument measuring nothing.
 
 **Fluidity metadata:** codified 2026-07-19 (candidate; N=1 articulation event, but items 1-4 each carry prior empirical instances — promotion review at the next monthly codification audit). Falsifier: if 60 days of grading show verdict-relocation producing NO behavioral delta vs the prior lessons meta-posture (i.e., this duplicates the existing meta-posture without adding discipline), fold into that section and retire the number. Cross-refs: predictions/lessons.md meta-posture; Program v2; instrument-commissioning proposal (pending user approval).
+
+## Output preference — RECOMMEND-FIRST (user-corrected 2026-07-22)
+
+User verbatim-adjacent: *"speak in plain first principle terms. you rarely recommend any action."* Caught after a day of 10+ consecutive NO-ACTION/HOLD position-implication lines — exactly the decorative-streak failure mode Rule #11's own detectability clause warns about ("5+ consecutive identical HOLD with rote rationale → discipline became decorative noise").
+
+**Binding change:** market-facing summaries LEAD with concrete recommendations — direction, size, condition, and the falsifier — in plain language, then the process/verification notes. "NO ACTION" remains a legitimate verdict but must be argued as an active choice when used repeatedly, and standing user-gated decisions (open envelope, unapproved caps, pending packages) must be RE-SURFACED as explicit asks rather than left implicit. Positions stay user-gated (unchanged — recommendations, not executions).
+
+First application (same turn): 5-point recommendation set — SUMCO trim-into-strength ~18→15% pre-Aug-6 (cap-approval ask re-surfaced), SKHY post-print conditional add, no NOW/DDOG chase, no NAND re-entry, GOOGL-capex-tonight as the add trigger.
+
+Detectability: POSITIVE = recommendation-bearing summaries with varied verdicts + user engaging per-number; NEGATIVE = recommendations become rote or user overrides repeatedly → recalibrate assertiveness. Re-eval at next monthly audit.
