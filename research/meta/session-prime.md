@@ -91,11 +91,11 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 
 ## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
 
-- **L26** — Multi-decade trend-line break = structural-regime-confirmation framework (60-year DRAM ASP rupture origin; N=2 watch: MLCC / NAND / CoWoS).
 - **L27** — Beat-Consensus-As-Regime-Test: per-quarter beat-or-miss across the semi cohort = primary regime-validation mechanism (first empirical test = MU Q3 FY26 print 2026-06-24; N=2 watch: HYNIX Q2 + MURATA Q1 FY27 late-Jul).
 - **L28** — Jevons/efficiency-fear misread: "efficiency reduces demand" keeps losing to volume growth (N=3 flavors incl. enterprise rate-limiting).
 - **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
 - **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
+- **L40 CANDIDATE (N=1, NBIS T+30): event-study attribution/confound-exclusion rules must be EX-ANTE + specimen-suitability check.**
 
 _Correction note (2026-07-06): this section previously claimed "L24 removed; tail is L25" — WRONG on both counts: L24 exists in lessons.md as a real lesson (mid-cap structural-inflection ATH-break, TY case) and the tail is L30. Numbering gap: L17/L18 carry tombstones (no lesson text). Full list: `predictions/lessons.md` + `meta/tags.md`._
 
@@ -153,7 +153,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 
 - **SUMCO Q2 FY2026 pre-registration (print 2026-08-06):** canonical = `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (rev/OP/net bands + 5 guidance-language P's + three-outcome table).
 - **SKHY gate-vs-override grading LIVE:** premium template runs at every close from Jul-13 (`companies/SKHY/thesis.md` — anchors: WI +15.6% / entry +19.3-19.7% / gate ≤~5%); one-way fungibility + TSMC-ADR ~+21% precedent booked 2026-07-12.
-- **NBIS T+30 grade 2026-07-22** (primary adjudicator; T+15 graded CONFOUNDED 07-07).
+- **NBIS T+30 GRADED-FINAL 2026-07-22**: H3-exceeded price / CONFOUNDED mechanism → B48/R2 UNGRADEABLE (5 idiosyncratic catalysts incl. NVDA 9.3% 13G T1); B48 stays N=0; L40 CANDIDATE. Artifact in cross-source-log 07-22.
 - **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix Jul-29 (T1-pinned 07-13; GP-bridge first run + pre-registered miss-isn't-bearish ladder in SKHY thesis), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
 - **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
 - **GRADE debt: NONE** — the long-carried "MU 3-layer backfill owed" was PHANTOM (full grade existed since 07-06; row+prose synced 07-20). Samsung Q2 prelim GRADE completed Jul-7/8.

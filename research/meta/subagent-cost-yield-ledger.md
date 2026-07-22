@@ -3492,3 +3492,15 @@
 **Audit-day classification:** POSITIVE
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-kr-open-wake3-h3-brent-90-break-houthi-blockade.md`
 **Commit:** (this commit)
+
+## 2026-07-22 EARLY — overdue-market-items work block (NBIS T+30 + calendar + surveillance + AGENTIC-DAU + twin-print setup)
+**Fires:** 5 (Opus, parallel batches; Rule #16 auto-fire, no permission-asking). **Est. tokens:** ~276k (47.4k NBIS price-window + 19.0k earnings-calendar + 52.5k competitive-surveillance + 134.3k AGENTIC-DAU general basket + 22.5k IBM/NOW/GOOGL print-setup).
+**Items verified:** NBIS 07-08→07-22 price series + catalyst register (T+30 grade unblocked); GOOGL Jul-28→Jul-22 date REFUTATION (T1 IR) + full week calendar 9 tickers; held-cohort competitor moves 2-week window (3 names); agentic-DAU general basket 3 verticals ~30 series; IBM/NOW/GOOGL consensus + setup refresh for tonight's registrations.
+**Yield class:** HIGH (NBIS: window low $171.77 + NVDA 13G 9.3% T1 + B40 stale-recycle catch on "07-21 $1B deal" headlines) / HIGH (calendar: GOOGL date error killed before the print; tonight = 5-print AMC cluster not a "triple") / HIGH (surveillance: Samsung-still-no-HBM4-volume-order T2 + SK Siltron Gumi production-started datum; agent's "SUMCO falsifier fired" over-read adjudicated DOWN against the house 07-09/10/13 two-sided booking) / MEDIUM-HIGH (AGENTIC-DAU: 3-vertical basket built, N=3 disclosure-asymmetry pattern confirmed; Meta-AI 40M-DAU laundering catch; no position delta) / HIGH (twin-print: IBM "current consensus $18.04B" exposed as STALE-RECYCLE pre-warning number; NOW guide verbatim-confirmed; GOOGL capex $180-190B T1 baseline pinned).
+**Framing errors caught:** 2 (surveillance agent falsifier over-read; aggregator stale-consensus recycle).
+**Thesis cascade triggered:** NBIS (T+30 grade back-ref + NVDA-stake datum); SUMCO/HYNIX/MURATA (surveillance pass — separate commit); IBM/NOW (registrations — separate commit).
+**Position implication delta:** NONE (all grades/instruments; positions user-gated).
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-nbis-t30-final-adjudicator-grade.md` + surveillance/registration artifacts this date
+**Commit:** (this commit + following)
