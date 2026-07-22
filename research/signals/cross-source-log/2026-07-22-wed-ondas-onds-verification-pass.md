@@ -64,12 +64,43 @@ Sources: [Palantir IR (Mar-12-2026)](https://investors.palantir.com/news-details
 
 Sources: [Ondas IR detail/315 (DZYNE)](https://ir.ondas.com/press-releases/detail/315/) · [SEC 8-K EX-99.3](https://www.sec.gov/Archives/edgar/data/0001646188/000121390026075227/ea029670201ex99-3.htm) · [StockTitan Form D $675M/High Point UAS](https://www.stocktitan.net/sec-filings/ONDS/d-ondas-inc-sec-filing-01b92dbb0641.html) · [Calcalist $200M+$675M closed](https://www.calcalistech.com/ctechnews/article/zxtr0a36b) · [Aviation Week](https://aviationweek.com/defense/aircraft-propulsion/ondas-buys-dzyne-expand-endurance-isr) · [Ondas Jan-2026 $1B offering](https://ir.ondas.com/press-releases/detail/271/)
 
-## LEG 3 — Financials / FY26 guide / dilution + balance sheet (agent a9f38f — IN FLIGHT)
-[pending — resolves the ~1.2B-share dilution flag from Leg 1]
+## LEG 3 — Financials / FY26 guide / dilution + balance sheet (agent a9f38f — COMPLETE, research-verified 2026-07-22)
+
+**Verdict: LOW solvency risk / HIGH dilution risk. The "hollow shell / going-concern" bear is REFUTED; the "dilution + inorganic-guide + momentum-valuation" bear is CONFIRMED and is the real risk.**
+
+| Metric | Value | Tier |
+|---|---|---|
+| FY24 → FY25 → Q1-26 revenue | $7.19M → $50.7M (+605%) → $50.1M (Q1 = all of FY25; +66% QoQ; beat guide 25%) | T1 |
+| Organic core (OAS) | +840% in 2025 ($5.3M→$49.7M); Optimus on DCMA Blue UAS list | T1 |
+| FY26 guide raised | $390M (May-14) → **$525M (Jul-6)** — **majority INORGANIC** (co. attributes +$135M to DZYNE ~$191M + Omnisys; EXCLUDES Cyberhawk) | T1 |
+| Q2-to-date orders | $110M (thru May) → **$150M+ (Jun-22)** — firm ORDERS not LOIs; pro-forma backlog $457M | T1 |
+| Cash | **$1.03B ($1.48B incl. ST inv.), Mar-31** post Jan-2026 $1B raise; NO acquisition debt; NO going-concern | T1/T2 |
+| Short interest | **40.65% of float (Jun-30)** → ~33.6% late-Jul; down **~30% YTD** despite the roll-up | T2 (FactSet) |
+
+**Dilution (#43b computed):** 93.2M (Q4-24) → 469M (Q1-26) → ~530M (Jul-2) → **~616M pro-forma post-DZYNE = 6.61x in 18mo (+523M, +561%)**. Plus ~200M-share **warrant overhang** from the Jan raise → fully-diluted **~816M** (+32% more). Reconciled the "40M vs 85M" figure: 40M free-float resale + 45M locked 6mo = 85M total, lock-up not contradiction.
+
+**Valuation (#43b computed, ~616M pro-forma × $6.53-7.65):** market cap **~$4.0-4.7B** = **7.7-9.0x** the $525M (majority-acquired) guide, **20-24x** the ~$200M organic run-rate. Momentum-priced. Guide bridge: Q1 $50.1M ×4 = $200M organic vs $525M ⇒ ~$325M gap filled by acquisitions + steep sequential ramp.
+
+**Rule #18 steelman verdict:** SURVIVES — dilution real+severe (6.6x + overhang), guide inorganic, high-short/retail/down-30%-YTD momentum name. REFUTED — the shell/insolvency version: >$1B cash, debt-free deal, real accelerating organic drone business, $150M+ genuine defense orders. **Net: real cash-funded defense roll-up diluted ~6.6x — the risk is a shrinking per-share claim, not a fake business.**
+
+Sources: [Ondas Q1-26 / $390M guide](https://ir.ondas.com/press-releases/detail/306/) · [DZYNE / $525M guide](https://ir.ondas.com/press-releases/detail/315/) · [Q2 orders $150M+](https://ir.ondas.com/press-releases/detail/309/) · [FY25 OAS +840%](https://ir.ondas.com/press-releases/detail/296/) · [$1B offering](https://ir.ondas.com/press-releases/detail/271/) · [SI ~33-41%](https://finance.yahoo.com/markets/stocks/articles/onds-short-interest-stayed-above-175755909.html) · [price / YTD -30%](https://stockanalysis.com/stocks/onds/)
 
 ---
 
-## Verdict (partial — 1 of 3 legs in)
-Palantir leg: the primary "real vs name-drop" bear is REFUTED — the tie is genuinely two-sided and strategically material, but pre-deployment and NOT the revenue driver. Graduate-or-park decision held pending the DZYNE deal-reality leg and the dilution/balance-sheet leg (the ~1.2B-share plan is the deciding bear).
+## VERDICT — GRADUATE-OR-PARK: **PARK (upgraded profile), NOT a thesis** (all 3 legs in)
 
-**Position implication: ⚪ NO ACTION — watchlist-only, untradable-status-unchecked; this pass tests whether ONDS graduates to a real thesis or is logged-and-parked for the Jul-24 defense-AI framework. No sizing regardless (user-gated).**
+Three parallel hypotheses on "what is ONDS," post-verification:
+- **H1 — real, substantive defense-AI roll-up (P~70%):** every "is it fake" bear failed. Real DZYNE assets + $49M AFRL + Army testing; two-sided Palantir co-development; accelerating organic core (OAS +840%, Optimus on Blue UAS list); $150M+ firm orders; >$1B cash, debt-free. **This clears the "substantive business" bar decisively.**
+- **H2 — real business, but the EQUITY is a diluting momentum vehicle (P~65%; the dominant investment read):** 6.6x dilution in 18mo + ~200M warrant overhang, ~8-9x forward on a majority-*acquired* guide, 33-40% short interest, down 30% YTD. The market is already discounting the dilution. Business ≠ stock.
+- **H3 — promotional framing risk (P~mid):** "programs of record" (not yet), "$1.5B pipeline" (soft; hard backlog $111M/$457M pro-forma), "AI system built with Palantir" (pre-deployment Q4-26), "+1,065% organic" (BIRD consolidation). Real underneath, but every headline runs hot.
+
+**Disposition:** ONDS GRADUATES from "unverified retail-flow name" to a **verified-real-business watchlist candidate** — fold into the Jul-24 defense-AI framework as a name-level entry with the corrected (de-hyped) profile. It does NOT graduate to an investable thesis: momentum-priced equity + severe ongoing dilution + retail/short dynamics = a business to understand, not a stock to size. The retail-flow origin (Vanda #3) is now explained — it's a high-short, high-retail, high-volatility vehicle, exactly the composition the 07-20 batch flagged as sentiment-tier.
+
+**Position implication: ⚪ NO ACTION — watchlist-only, untradable-status-unchecked (US small-cap; DeGiro/N26 availability unverified). Verified real defense-AI business; explicitly NOT a buy — diluting momentum equity. Any future interest = a SHORT-side or event-driven study, not a structural long; re-evaluate only if the organic run-rate (not the acquired guide) inflects or the dilution cadence stops. Booked into the Jul-24 defense-AI framework.**
+
+## House-note corrections applied to `watchlist/candidates.md` (Rule #10 cascade)
+1. "$876M acquisition" → **CLOSED Jul-2-2026, $200M cash + ~85M shares, zero earnout, cash from Jan raise (not circular)** — upgraded T2→T1.
+2. "AI command system built with Palantir" → **co-developing (announced Mar-2026; integration Q4-2026; two-sided-confirmed; not yet fielded)**.
+3. "FY26 guide $390M→$525M+" → **majority INORGANIC (DZYNE+Omnisys consolidation), not an organic beat**.
+4. ADD the bear: **6.6x dilution in 18mo + ~200M warrant overhang + 33-40% short interest + down 30% YTD; ~8-9x forward on an acquired guide** — the deciding risk.
+5. Drop "programs of record" framing → **ULTRA transitioning-toward-PoR; IonStrike in Army test/eval**.

@@ -3549,3 +3549,15 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-earnings-sequence-readthrough-basket.md`
 **Commit:** (this commit)
+
+---
+### 2026-07-22 WED — ONDS verification pass (Rule #16, user-requested, 3 adversarial agents)
+**Fires:** 3 parallel Opus 4.8 (Palantir tie / DZYNE deal / financials+dilution). **Est. cost:** ~79k tokens (22k+25k+32k reported).
+**Items verified:** ONDS watchlist candidate — graduate-or-park.
+**Per-agent yield:** Palantir = HIGH (two-sided confirm kills name-drop bear; caught +1,065% = BIRD not Palantir); DZYNE = HIGH (deal real+closed, all skeptic hypotheses refuted, PoR-overstatement catch); financials = HIGH (6.6x dilution computed, inorganic-guide catch, shell/insolvency bear refuted).
+**Framing errors caught:** 4 (revenue-attribution halo; "programs of record" overstated; "built with Palantir" present-tense/pre-deployment; guide-raise framed organic when majority-acquired).
+**Thesis cascade triggered:** ONDS verification artifact + candidates.md profile correction (T2→T1, 5 corrections).
+**Position implication delta:** NONE (watchlist-only, NO ACTION) — verdict = graduates to verified-real-business, NOT to investable thesis (diluting momentum equity).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-ondas-onds-verification-pass.md`
+**Commit:** (this commit)
