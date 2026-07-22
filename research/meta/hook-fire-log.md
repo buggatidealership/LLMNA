@@ -1013,3 +1013,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 09:14:47Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-22 09:14:47Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-22 09:14:47Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 09:46:01Z session-prime-hook event=resume injected=False (skipped non-startup)
