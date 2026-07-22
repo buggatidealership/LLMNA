@@ -1006,3 +1006,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 07:41:28Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 07:56:52Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 08:14:19Z structural-output-hook FIRE (structural-markers-missing)
+- 2026-07-22 08:15:39Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
