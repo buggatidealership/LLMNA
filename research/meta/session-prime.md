@@ -162,17 +162,13 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 ## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
 
 - **MACRO STATE CHANGED:** Hormuz CLOSED (Iran), Brent ~$85 (was ~$79), 10Y 4.61%; June CPI COOL (−0.4% MoM, **core FLAT**, 3.5% YoY) → Sept hike odds ~63%; live tension = cool-backward-data vs hot-forward-oil. Per `cross-source-log/2026-07-14-tue-cpi-print-reaction.md` + `...-tue-morning-scan-3agent.md`.
-- **SKHY LIVE:** Mon US close **$152.35 (−9.32%; position −12.16% vs $173.45 entry)**; premium >+20% EXTREME branch sustained (catch-down targets in thesis). Seoul −15.37% record Jul-13 → **Tue forced-sale FLOW read CONFIRMED** (closed +3.69%). Jul-29 GP-bridge now a NAMED duel: KIS branch-a (₩60.4tn/mix-drag) vs SemiAnalysis branch-b (implied ₩67.6-72.2tn/commodity-torque).
+- **SKHY:** thesis.md canonical for marks/premium; Jul-29 GP-bridge = KIS branch-a (₩60.4tn/mix-drag) vs SemiAnalysis branch-b (₩67.6-72.2tn/commodity-torque). Conditional €3-5k add re-gated 2026-07-22 (Principle #48): demand-leg confirmed pre-print (Hanmi 15.3x QoQ + TSMC/ASML), so gate variable = GOOGL reaction-function tonight + SKH prepayment/duration disclosure Jul-29, NOT the demand number.
 - **ENTERPRISE MEMORY PULL-FORWARD** (IBM warning Jul-14, BROAD-corroborated TD Synnex/MS/Dell/HPE): SKHY near-term REINFORCE; MS "borrowed-2027-demand" now consensus-adjacent → tail-discount deepens. `...-tue-ibm-warning-enterprise-memory-pullforward.md`.
-- **Funding-node tell #11** (asset-level distribution) — 3 axes now (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
-- **NEW INSTRUMENTS:** `meta/education-ai-adoption-instrument.md` + `meta/lab-scaffolding-usage-instrument.md` (feed agentic-DAU; §6b demand-side verdict = general assistants win, scaffolds created-and-abandoned; **15% seat-activation haircut prior**).
-- **CYBER LIVING THESIS** `wiki/ai-cybersecurity-value-migration.md`: finder=fixer REFUTED as static; living arc H1-wins ~20 / H2-static ~55 / H3-partial ~25. **€50k IPO decision: cyber is NOT an independent Anthropic leg — size on frontier-inference-demand, not the cyber narrative.**
+- **Funding-node tell #11** (asset-level distribution) — 3 axes (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
 - **#45** event-anchored re-evals added; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
-- SpaceX = PUBLIC (SPCX, absorbed xAI); tracker fixed.
-- **Jul-22 = TRIPLE adjudication:** NOW print + IBM full Q2 report + NBIS T+30.
+- **#48 CANDIDATE (2026-07-22) EARNINGS-SEQUENCE READ-THROUGH:** don't act on a scheduled print (priced by arrival) — reconstruct from already-reported adjacent/upstream names (calendar = dependency graph). Caveat: illuminates only the leg whose upstream already printed; ask if that leg is the BINDING uncertainty. **#49 CANDIDATE OPERATOR-INTENT / MISSED-LOOP MANDATE:** extract directional intent not literal words; surface the higher-value loop the instruction skips (red-teams the QUESTION; #18 red-teams the conclusion).
 - **Jul-15/16 DONE:** ASML + TSMC Q2 GRADED (L32 N=2 upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients; facts-first wake order #43b/3e).
 - **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
-- **RESOLVED Jul-16:** the browser/API forcing item — keys live (Finnhub rotated ✓); residual asks: ECOS signup, EDINET (parked).
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 

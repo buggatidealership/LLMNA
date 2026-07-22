@@ -1031,3 +1031,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 15:10:02Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 16:12:28Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 17:29:32Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 17:41:00Z session-prime-cascade-hook FIRE (new-codification-ids=METH::## Principle #48 CANDIDATE — EARNINGS-SEQUENCE READ-THROUGH (the calendar is a dependency graph; earlier reporters leak into later ones) (user-articulated 2026-07-22),METH::## Principle #49 CAND)
+- 2026-07-22 17:41:03Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
