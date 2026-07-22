@@ -104,8 +104,12 @@ STRUCTURAL_MARKERS = [
     r"\bripple\b",
     r"\bcascade\b",
     r"\bdownstream\s+(?:beneficiary|effect|casualty)",
-    # Joint-state / cross-correlation table indicators
-    r"\bjoint\s+(?:state|matrix|distribution)",
+    # Joint-state / cross-correlation table indicators. Hyphen-tolerant
+    # (2026-07-22 rework, tier-gate fixture case-4 adjudication): the hook's own
+    # feedback text demands "Joint-state matrix" — HYPHENATED — but this regex
+    # only credited the space form, so output using the hook's own requested
+    # spelling was rejected (hook over-fired; the fixture's exp=0 was right).
+    r"\bjoint[\s-]+(?:state|matrix|distribution)",
     r"\bcross-?correlation",
     r"\bcross-?evaluat",
     r"\bmulti-?criteria",
@@ -168,7 +172,14 @@ EXEMPTION_PATTERNS = [
 # marker on the same line or the line directly above. The check runs
 # BEFORE the general STRUCTURAL_MARKERS pass-gate so other structural
 # markers do NOT excuse a missing tier on a sizing recommendation.
-POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$", re.MULTILINE)
+# Case-insensitive (2026-07-22 rework, K3 Q3-3 CONFIRMED HOLE): a lowercase
+# "position implication:" line escaped the tier check entirely — while still
+# counting as an ANALYTICAL marker via has_pattern's IGNORECASE — so an
+# untiered lowercase sizing recommendation reopened G-27. Rule #11's canonical
+# capitalization stays socially enforced; tier PRESENCE is enforced
+# deterministically in any casing.
+POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$",
+                                     re.MULTILINE | re.IGNORECASE)
 TIER_MARKER_RE = re.compile(r"[🟢🟡🔴]")
 
 

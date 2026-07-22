@@ -47,8 +47,17 @@ CANON_HOOKS = "research/meta/hooks/git"
 # 2026-07-20 K3-Swarm G-24 fix: dynamic repo root + $CLAUDE_PROJECT_DIR + bare `.`/`./`
 # (cwd inside the repo) — the old list hardcoded only the literal path, so
 # `find . -delete` and rmtree('.') passed the has_repo gate unexamined.
+# 2026-07-22 rework (K3 oracle payloads, adjudication routing #1): the tilde /
+# $HOME / trailing-slash spellings of the repo root are REPO_TOKENS themselves —
+# `rm -rf ~/LLMNA/`, `rm -rf ~/`, `rm -rf $HOME/LLMNA` all exited 0 because the
+# rm-branch tail regex end-anchored `~(/LLMNA)?` (a trailing slash defeated it)
+# and no HOME spelling existed anywhere. Bare `~` / `$HOME` (followed by
+# space/quote/end, optionally with one trailing slash) is the repo's ANCESTOR —
+# deleting it deletes the repo. `~/<other>` subpaths deliberately NOT matched.
 REPO_TOKENS = re.compile(
     r"(" + re.escape(REPO) + r"|/home/user/LLMNA|\$\{?CLAUDE_PROJECT_DIR\}?|"
+    r"(^|[\s'\"=(])~/LLMNA(/|\b)|\$\{?HOME\}?/LLMNA(/|\b)|"
+    r"(^|[\s'\"=(])(~|\$\{?HOME\}?)/?(?=[\s'\"]|$)|"
     r"(^|[\s'\"=(])\.(/|['\"]|\s|$)|"
     r"(^|[\s'\"=(/])research(/|\b)|\.git(/|\b)|\bmethodology|"
     r"\bsession-prime|\blessons\.md|\bgrading-log|calibration-ledger|CLAUDE\.md|"
@@ -120,16 +129,19 @@ def main() -> None:
         # commit: --no-verify OR its short form -n (possibly bundled, e.g. -nm) skips
         # pre-commit + commit-msg. push: only --no-verify (there -n means --dry-run,
         # which must NOT block). K3-Swarm deep-dive fix 2026-07-21 (git commit -n bypass).
-        # The -n check is TEMPERED to the pre-message flag region — a tempered-greedy
-        # token that refuses to cross the -m/--message/-F/--file argument — so a commit
-        # MESSAGE that merely contains a "-n" token does not false-block (verified live).
         if is_git and re.search(r"\bcommit\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-commit/commit-msg guards", cmd)
-        # Require `git commit` ADJACENCY (not bare "commit") so prose/heredoc text
-        # mentioning "commit -n" doesn't false-block — only an actual git-commit
-        # invocation does. Residual: `git -C <path> commit -n` is not caught (rare).
+        # -n ANYWHERE after `git commit` (2026-07-22 rework, K3 oracle payload
+        # `git commit -m "x" -n` → exit 0 regression from MY OWN 07-21
+        # adjacency-tightening: the tempered matcher refused to cross -m, but git
+        # honors -n in any position). Safe because the -m/--message QUOTED payload
+        # is already stripped to MSG above — a commit message that merely mentions
+        # "-n" never reaches this scan. `git commit` / `git -C <path> commit`
+        # adjacency still required so prose/heredoc "commit -n" doesn't false-block.
+        # Residual (documented, fixture-pinned): a LITERAL `git commit -n` inside
+        # unstripped prose (echo/heredoc) still blocks — cannot disambiguate.
         if is_git and re.search(
-                r"\bgit\s+commit\b((?!\s-m\b|\s--message\b|\s-F\b|\s--file\b)[^|;&])*?\s-[a-z]*n[a-z]*\b", s):
+                r"\bgit\s+(?:-C\s+\S+\s+)?commit\b[^|;&]*\s-[a-z]*n[a-z]*\b", s):
             block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
         if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-push guard", cmd)
