@@ -104,3 +104,15 @@ Three parallel hypotheses on "what is ONDS," post-verification:
 3. "FY26 guide $390M→$525M+" → **majority INORGANIC (DZYNE+Omnisys consolidation), not an organic beat**.
 4. ADD the bear: **6.6x dilution in 18mo + ~200M warrant overhang + 33-40% short interest + down 30% YTD; ~8-9x forward on an acquired guide** — the deciding risk.
 5. Drop "programs of record" framing → **ULTRA transitioning-toward-PoR; IonStrike in Army test/eval**.
+
+---
+
+## ADDENDUM — DECLINE ATTRIBUTION (user chart question: "~50% since early June"; verified subagent 2026-07-22)
+**User's ~50% CONFIRMED and computed (#43b): peak ~$14.0 (Jun-2 intraday) → ~$6.9 close = −51% (→$6.55 low = −53%).** Distinct from the "−57%" figure circulating, which measures from the **January** $15.28 high — different window, do not conflate.
+
+**It is a TWO-LEG STACK; the dominant cause ROTATES by leg. DZYNE did NOT start it.**
+- **JUNE leg (~$14 → mid-$8s ≈ −39%) = 74% of the whole drop, and it predates DZYNE by ~5 weeks.** Drivers: (1) blow-off-top exhaustion after a parabolic +55% run (May-22 $9 → Jun-2 $14) on "Drone Dominance" federal-program hype — Jun-3 fell −13% with NO fresh fundamental catalyst; (2) **CEO Brock sold 2.378M sh @ $13.43 (~$31.9M) on Jun-2, the exact top** (T1 Form 4; mechanically RSU-vest tax withholding, but the tape read it as insider-bails-the-peak); (3) drone/defense small-cap derisking — **RCAT −36% in June**, AVAV/KTOS weak, on easing geopolitics. So the June leg = idiosyncratic (blow-off + insider) PLUS sector.
+- **JULY leg (mid-$8s/$7.57 → ~$6.55 ≈ −23%) = 26% of the drop.** Drivers: DZYNE ~85M-share dilution (closed Jul-2) + serial resale-registration overhang (40M DZYNE shares Jul-6 + 3.4M Omnisys Jul-13/15, none cash to the company) + persistent ~33-35% short interest; partly offset by the Jul-20 +6.8% bounce on the raised $525M guide.
+- **Russell reconstitution (effective Jun-26) was SUPPORTIVE (an ADD), not a driver** — do not misattribute the drop to it.
+
+**Bottom line: not one cause — a stack whose dominant driver rotates. June = momentum blow-off + CEO top-tick sale + drone-sector rotation (74%, pre-DZYNE); July = DZYNE dilution + resale overhang on ~33% short interest (26%). Anyone attributing the full ~50% to the DZYNE deal is wrong on timing.** New signal for the harness: a CEO top-tick sale into a parabolic retail run is a clean insider-distribution tell — reinforces the H2 "diluting momentum vehicle" read, not a fundamental-break read. Sourcing: primary facts (Form 4, DZYNE 8-K/424B5, Russell add) T1; intraday decimals T2 (direct price fetches 403-blocked; peak ">$14" band).
