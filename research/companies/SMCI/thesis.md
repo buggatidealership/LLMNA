@@ -1,3 +1,6 @@
+**📌 [2026-07-22] VERIFICATION SHARPENED (Rule #10 back-ref).** Per `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`: prior-guide figure corrected (8.2-8.4%, not 8.4-8.7%), mix-only mechanism confirmed as the company's sole stated driver, one-8-K reconciliation done, unaudited caveat + Aug-11 call date pinned. The $60B Q4 bookings + 1.93x margin-mix shift stands as the strongest OEM-layer pricing-power datum this cycle, gated on the Aug-11 audit + open investigation.
+**Position implication: ⚪ NO ACTION — watchlist-tier holds (vehicle-quality gate); signal reads through to Jul-28/30 hyperscaler prints and the component chain, not to an SMCI entry.**
+
 # SMCI — Thesis (STUB, watchlist-tier)
 **Last updated:** 2026-07-21 · **Tier:** Watchlist · **Position target:** none
 ## TL;DR

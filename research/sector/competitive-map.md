@@ -1,6 +1,11 @@
 # Competitive Map — Who Competes With Whom
 
-**Last updated:** 2026-05-20
+**Last updated:** 2026-07-22
+
+## 📌 [2026-07-22] RACK-SCALE BATTLE UPDATE — first at-scale non-NVDA hyperscaler rack (per `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`)
+Microsoft deploys AMD Helios racks on Azure AT SCALE for its OWN frontier-model inference (T1, Jul-20-2026) — MSFT is the 4th Helios customer (OpenAI 1GW Oct-25, Oracle 50K MI450 Oct-25, Meta), but the FIRST hyperscaler running its own frontier models on non-NVDA rack architecture. NVDA held ~95% DC-GPU share per the relayed commentary (T3, unverified precision). The counter-datum keeping this a WATCH not a shift: NVDA's wafer allocation (>half of TSMC's ~85%+-locked '26-'27 leading edge, T2) and CPO commitment via the OCI consortium.
+**Two-branch pre-registration (Anthropic, B64-guarded — adjudicate at today's Advancing AI keynote):** (a) Anthropic named GW-level Helios customer today → NVDA-moat-erosion counter-thesis gains its 3rd independent leg (MSFT-at-scale + wafer-secured roadmap + frontier-lab second-sourcing) → open a named watch item; (b) NOT named → per press read, ROCm software-maturity concerns unresolved → the moat holds at the software layer, log and hold. Either branch books a datum; neither is a position trigger.
+
 
 ## TL;DR
 

@@ -3504,3 +3504,13 @@
 **Audit-day classification:** POSITIVE
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-nbis-t30-final-adjudicator-grade.md` + surveillance/registration artifacts this date
 **Commit:** (this commit + following)
+
+## 2026-07-22 MIDDAY — Tuesday catch-up 14-screenshot batch (user-shared trading-session queue)
+**Fires:** 4 (Opus, parallel; Rule #16 auto-fire). **Est. tokens:** ~133k (42.5k SMCI + 28.1k memory/packaging + 26.9k NVDA-stakes/OpenRouter/BTM + 35.6k AMD/China).
+**Items verified:** 10 items across 14 screenshots; all secondary/tertiary relays verified to T1/T2 before cascade.
+**Yield class:** HIGH ×4. **Framing errors caught: 8** — SMCI prior-guide figure (8.4-8.7 REFUTED → 8.2-8.4 T1), "NVDA stakes ×3" conflation (equity only NBIS), OpenRouter token garble (2nd day; canonical 25T/wk), "WAIC 2025" REVERSE-mislabel (fresh WAIC-2026 items tagged stale — first reverse-direction B40 instance on record), "first hyperscale rack commitment" overstatement (MSFT = 4th customer), SOCAMM-vs-HBM tier confusion (re-kill), CMX causal-chain attribution, broker attribution (GF Securities not Jefferies).
+**Thesis cascade triggered:** SMCI, HYNIX, NBIS back-refs; AMD folder CREATED (first ingest); competitive-map rack-battle entry + Anthropic two-branch pre-registration (B64); bottlenecks B47 falsifier-side routing; PC-20 N=5; TC-13 N=11; private-tracker ×3.
+**Position implication delta:** NONE (user-gated).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`
+**Commit:** (this commit)
