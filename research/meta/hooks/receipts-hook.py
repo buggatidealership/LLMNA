@@ -51,6 +51,33 @@ from pathlib import Path
 
 REPO = os.environ.get("CLAUDE_PROJECT_DIR") or str(Path(__file__).resolve().parents[3])
 LOG = os.path.join(REPO, "research", "meta", "hook-fire-log.md")
+STATE = os.path.join(REPO, "research", "meta", ".receipts-hook-state.json")  # gitignored
+
+
+def _content_hash(text: str) -> str:
+    import hashlib
+    return hashlib.sha256(text.encode("utf-8", "replace")).hexdigest()[:16]
+
+
+def _blocked_before(text: str) -> bool:
+    """True iff THIS exact message already produced a receipts block."""
+    try:
+        if not os.path.exists(STATE):
+            return False
+        return _content_hash(text) in json.load(open(STATE)).get("blocked", [])
+    except Exception:
+        return False
+
+
+def _remember_block(text: str) -> None:
+    try:
+        seen = json.load(open(STATE)).get("blocked", []) if os.path.exists(STATE) else []
+        h = _content_hash(text)
+        if h not in seen:
+            with open(STATE, "w") as f:
+                json.dump({"blocked": (seen + [h])[-8:]}, f)
+    except Exception:
+        pass
 
 # SHA action-claim: past-tense verb IMMEDIATELY adjacent to the hex token
 # ("Committed abc1234", "committed as abc1234", "commit: abc1234").
@@ -220,8 +247,6 @@ def main() -> None:
         data = json.loads(raw) if raw.strip() else {}
     except json.JSONDecodeError:
         sys.exit(0)
-    if data.get("stop_hook_active"):
-        sys.exit(0)
     if not os.getcwd().startswith(REPO):
         sys.exit(0)
 
@@ -229,10 +254,20 @@ def main() -> None:
     if not text:
         sys.exit(0)
 
+    # Content-scoped recursion guard (commission item 6, K3 theme 6 "guards take
+    # one nap after any alarm"). The harness sets stop_hook_active after ANY hook
+    # blocks; a BLANKET exit-0 here would nap through a FRESH false claim in the
+    # very next message — the enforcement-free post-block window. Nap ONLY if THIS
+    # exact message already blocked HERE (a real loop the agent can't satisfy); a
+    # changed message re-enforces. Loop-safety preserved: identical re-sends nap.
+    if data.get("stop_hook_active") and _blocked_before(text):
+        sys.exit(0)
+
     fails, _unver = extract_claims(text, REPO)
     if not fails:
         sys.exit(0)
 
+    _remember_block(text)
     log_line("FIRE (" + "; ".join(f"{k}:{d[:80]}" for k, d in fails) + ")")
     sys.stderr.write(
         "RECEIPTS HOOK (say–do gap, spec: meta/hooks/receipts-hook-spec.md): "
@@ -316,11 +351,26 @@ def _selftest() -> int:
         r = subprocess.run([sys.executable, __file__], input="{not json",
                            capture_output=True, text=True)
         check("garbage stdin exits 0", r.returncode == 0)
-        # 13. stop_hook_active → exit 0
+        # 13. stop_hook_active with empty/no transcript → exit 0 (no text to judge)
         r = subprocess.run([sys.executable, __file__],
                            input=json.dumps({"stop_hook_active": True}),
                            capture_output=True, text=True)
-        check("stop_hook_active exits 0", r.returncode == 0)
+        check("stop_hook_active + no transcript exits 0", r.returncode == 0)
+
+        # 14. content-scoped recursion guard (item 6 nap-window fix): the helpers
+        # read the module-global STATE; point it at a temp file for the test.
+        import tempfile as _tf
+        real_state = STATE
+        with _tf.TemporaryDirectory() as td2:
+            globals()["STATE"] = os.path.join(td2, "state.json")
+            msg_a = "Created `research/meta/ghost.md` for the ledger."
+            msg_b = "Created `research/meta/other-ghost.md` for the ledger."
+            check("fresh message not blocked-before", not _blocked_before(msg_a))
+            _remember_block(msg_a)
+            check("remembered message IS blocked-before (loop → nap)", _blocked_before(msg_a))
+            check("DIFFERENT message NOT blocked-before (fresh → re-enforce)",
+                  not _blocked_before(msg_b))
+        globals()["STATE"] = real_state
 
     print("ALL PASS" if fails == 0 else f"{fails} MISMATCH")
     return fails

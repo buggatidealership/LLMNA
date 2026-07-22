@@ -65,6 +65,13 @@ REPO_TOKENS = re.compile(
 )
 
 
+# protected substrings that must not be the TARGET of a truncating redirect
+PROTECTED_REDIRECT_TARGET = re.compile(
+    r"(\.git/|meta/hooks/|meta/tools/|settings\.json|methodology|"
+    r"session-prime|lessons\.md|CLAUDE\.md|biases-watchlist|"
+    r"grading-log|calibration-ledger|INDEX\.md|portfolio/)")
+
+
 def log_line(msg: str) -> None:
     try:
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
@@ -198,11 +205,18 @@ def main() -> None:
         # Protected list aligned with destructive-change-governance §1b (K3-Swarm G-26 fix):
         # CLAUDE.md, biases-watchlist, grading-log, calibration-ledger, INDEX.md,
         # portfolio/, meta/tools/ were named protected there but missing here.
-        if re.search(r"(^|[^>])>\s*[^>|;&]*"
-                     r"(\.git/|meta/hooks/|meta/tools/|settings\.json|methodology|"
-                     r"session-prime|lessons\.md|CLAUDE\.md|biases-watchlist|"
-                     r"grading-log|calibration-ledger|INDEX\.md|portfolio/)", s):
-            block("truncating redirect (>) onto an enforcement/protected file", cmd)
+        #
+        # 2026-07-22 FP FIX (commission item 6; reproduced LIVE 2× this session):
+        # the old pattern let `[^>|;&]*` run across newlines from a `>` all the
+        # way to a downstream protected-NAME MENTION, so a heredoc commit message
+        # that merely NAMED CLAUDE.md after a `cat > /tmp/msg.txt` false-blocked.
+        # A truncating redirect writes to exactly ONE target token; anchor the
+        # protected match to that immediate redirect TARGET (first token after >),
+        # never to prose downstream. `>>` (append) and `2>&1` naturally fail the
+        # target-token match. Two-step: find each redirect target, test IT.
+        for m in re.finditer(r"(?:^|[^>0-9])>\s*['\"]?([^\s>|;&'\"]+)", s):
+            if PROTECTED_REDIRECT_TARGET.search(m.group(1)):
+                block("truncating redirect (>) onto an enforcement/protected file", cmd)
 
     sys.exit(0)
 

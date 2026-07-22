@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# transient hook state (runtime; regenerated each session — must never be
+# tracked or the clean-tree Stop gate blocks on every hook-state write)
+research/meta/.*-state.json
