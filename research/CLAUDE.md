@@ -22,7 +22,7 @@ Predict → Grade (3-layer: INPUT / COMPUTATION / REASONING)
        → Retire OR refine OR codify-deeper based on real-catch vs false-positive metrics
 ```
 
-**Header maintenance:** I own this file. Count tails (L1-L25, B1-B44, etc.) and references to new canonical artifacts (`INDEX.md`, `meta/tags.md`, `meta/codification-rule.md`, `meta/signal-density-detection.md`, `meta/cross-domain-pattern-register.md`) must be kept current. Stale-header pollution of session context is itself a failure mode flagged by the 2026-06-11 harness audit.
+**Header maintenance:** I own this file. Count tails (L1-L25, B1-B44, etc.) and references to new canonical artifacts (`INDEX.md`, `meta/tags.md`, `meta/codification-rule.md`, `meta/signal-density-detection.md`, `meta/cross-domain-pattern-register.md`) must be kept current. Stale-header pollution of session context is itself a failure mode flagged by the 2026-06-11 harness audit. **CANONICAL tail counts are COMPUTED, not hand-maintained (added 2026-07-22, commission item 5 / K3 theme 5 "the map lags the territory"):** `research/meta/computed-counts.md` is regenerated from the source files by `meta/computed-counts.py --write`; `--check` is a pre-commit drift-warn. Any inline count in prose (here or elsewhere) is advisory — when it disagrees with `computed-counts.md`, the computed file wins.
 
 Every codification has FLUIDITY METADATA (codified date, last review, re-eval trigger, falsifier, status). N=1 insights are flagged as CANDIDATE; only N=2+ empirical validation justifies codification (principle #32 premortem). Codifications that go INERT for 30 days get retired or promoted to hooks.
 

@@ -25,6 +25,7 @@ not a receipt (K3-Swarm G-07).
 - [ ] DUE:2026-07-24 | WHAT: subagent-cost-yield-ledger append-discipline decision — backfill 07-10→07-22 gap or formally scope it | SOURCE: meta/subagent-cost-yield-ledger.md header caveat (c)
 - [ ] DUE:2026-07-24 | WHAT: PRUNING DISCIPLINE monthly pass (context-hygiene) | SOURCE: meta/todo.md P2 recurring
 - [ ] DUE:2026-08-03 | WHAT: Receipts-hook count-leg joins (1c recompute-and-compare; needs 2 weeks of anti-fab fire-log data) | SOURCE: meta/hooks/receipts-hook-spec.md check #2
+- [ ] DUE:2026-07-24 | WHAT: promote computed-counts.py --check from pre-commit WARN to BLOCK once the adversarial review validates the 7 extractors (currently non-blocking per B47 new-hook caution) | SOURCE: meta/hooks/git/pre-commit Function 5
 - [ ] DUE:2026-08-06 | WHAT: structural-output/priming-hook keep-vs-retire adjudication via structural-output-metric.py (normalized rate falling → keep; flat/rising → retire) | SOURCE: research/CLAUDE.md structural-output-hook entry + meta/structural-output-metric.py
 - [ ] DUE:2026-08-15 | WHAT: Critical Rule #16 verification-subagent cost-yield re-eval (the revived G-08 dead loop — 07-15 instance ran 5 days late only because an external audit caught the silent death) | SOURCE: meta/subagent-cost-yield-ledger.md header
 - [ ] DUE:2026-08-22 | WHAT: receipts-hook falsifier review — blocks declining month-over-month? zero-block avoidance audit? FP >2/week narrowing? | SOURCE: meta/hooks/receipts-hook-spec.md §Falsifiers

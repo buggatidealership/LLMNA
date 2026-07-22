@@ -97,5 +97,24 @@ if [ "$OPERATOR_APPROVED_DELETION" != "1" ]; then
   done < <(git -c core.quotePath=false diff --cached --name-only --no-renames --diff-filter=M | grep -E "$PROTECTED_RE")
 fi
 
+# Function 5 — COUNT-DRIFT WARN (added 2026-07-22, commission item 5, K3 theme 5
+#   "written map lags territory"). When a counted-source file is staged, check
+#   whether computed-counts.md is stale vs the territory. NON-BLOCKING (echo +
+#   exit 0) for now — B47 review-discipline: a brand-new count generator gets
+#   validated by the adversarial pass before it can brick commits. Promote to
+#   blocking (exit 1) after the review pass (registered promise, promises-registry).
+COUNT_SRCS='(\.claude/settings\.json|research/predictions/lessons\.md|research/meta/biases-watchlist\.md|research/meta/methodology\.md|research/CLAUDE\.md|research/meta/cross-domain-pattern-register\.md|research/signals/triangulation\.md)'
+if git diff --cached --name-only | grep -qE "$COUNT_SRCS"; then
+  if command -v python3 >/dev/null 2>&1 && [ -f research/meta/computed-counts.py ]; then
+    if ! python3 research/meta/computed-counts.py --check >/tmp/_ccdrift 2>&1; then
+      echo ""
+      echo "=== pre-commit: ⚠️ COUNT DRIFT (non-blocking warn) — a counted source changed but computed-counts.md is stale ==="
+      cat /tmp/_ccdrift | head -20
+      echo "Fix now: python3 research/meta/computed-counts.py --write && git add research/meta/computed-counts.md"
+    fi
+    rm -f /tmp/_ccdrift
+  fi
+fi
+
 echo "=== pre-commit: OK ==="
 exit 0
