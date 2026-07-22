@@ -56,3 +56,29 @@ Falsifier: guide merely REAFFIRMED $180-190B = FALSE (not a miss — the reaffir
 - **As of this morning's search window, GOOGL/NOW/TSLA/TXN actuals are NOT yet indexed** (they report AMC Jul-22 ~4pm ET). Do NOT grade off the AM pass.
 - **STALE-RECYCLE TRAP (B40/B61) — the operative protection for G-1:** the "$180–190B FY26 capex / $462B cloud backlog / $20B cloud / +63%" figures circulating in "Q2" summaries are the **April-29 Q1 print**. G-1 asks whether Q2 pushes **above $190B** — grading any recycled Q1 figure as the Q2 event = a false CONFIRM. Require the actual Q2 8-K/call number.
 - **IBM leg is already resolvable** (T1 pre-announcement Jul-14): rev $17.2B/+1%, GAAP EPS $2.27, op-EPS $2.93; rev MISS vs Street ~$17.86B; ~25% de-rate was Jul-15 (pre-announcement), NOT a fresh 7/22 move. FY guide not formally reset in prelim — watch tonight's 5pm call for the reset (I-leg components).
+
+
+---
+
+## ✅ GRADE — PRINT LEGS (2026-07-22 ~23:35 UTC; verified 7-agent workflow; T+24h legs I-5/N-5 pending 07-23 close)
+**Result: 9/9 directional; Brier 0.1018 (computed, coinflip=0.25). 8 TRUE + N-4 correct-FALSE-lean. Program v2 first live application = strongly POSITIVE calibration; zero INPUT/COMPUTATION failures.**
+
+| Comp | P | Outcome | Actual |
+|---|---|---|---|
+| I-1 | 0.92 | ✅ TRUE | rev $17,162M vs $17.2B = 0.22% delta |
+| I-2 | 0.70 | ✅ TRUE | FY26 rev-growth guide LOWERED to 4-5% cc from ">5%"; FCF held ~+$1B (partial reset, falsifier not met) |
+| I-3 | 0.65 | ✅ TRUE | consulting rev flat $5,327M/+1% cc while signings +6% (2nd qtr), GenAI ~50% signings = reallocation |
+| I-4 | 0.60 | ✅ TRUE | CFO named client capex→servers/storage/memory ("tens of large deals failed to close", +30% QoQ, IBM Z −42%); miss NOT execution/competition |
+| N-1 | 0.85 | ✅ TRUE | sub rev $3,877M (+23% cc) > $3.82B guide top |
+| N-2 | 0.75 | ✅ TRUE | cRPO $13.20B +21.5% cc ≥ 19.5% guided |
+| N-3 | 0.70 | ✅ TRUE | FY26 sub-rev guide RAISED $15.760-15.780B (2nd raise) |
+| N-4 | 0.40 | ✅ correct-lean (FALSE) | NO squeeze named; beat-and-raise (Now Assist >$1B ACV). P=0.40 leaned FALSE → outcome FALSE |
+| G-1 | 0.55 | ✅ TRUE | FY26 capex RAISED to **$195-205B** (from $180-190B); Q2 capex $44.9B +100%; Cloud $24.8B +82% |
+
+**L33 (N=2 test) — SPLIT, and the split IS the finding:** I-4 TRUE (IBM names the casualty mechanism) + N-4 FALSE (NOW does not) → the AI-hardware-capex-reallocation squeeze is a **HARDWARE-DISPLACEMENT event hitting hardware-adjacent incumbents (IBM Z −42%), NOT a broad enterprise-software-budget squeeze** (NOW beat-and-raised through it). L33 does NOT promote to clean N=2; it SHARPENS. → lessons.md.
+
+**G-1 = demand-floor confirmation + the reflexivity catch:** GOOGL's raise to $195-205B validates the Principle #48 read-through (TSMC capex +15% → predicted the GOOGL raise) AND the memory-demand floor for SKHY/SUMCO/MURATA. BUT GOOGL sold off ~5% AH on the raise (+ a Gemini 3.5 delay confound) = capex-flip reflexivity (Principle #49 TRACE) **instance #2 after TSMC**; TXN also beat-and-raised and sold ~−3.6% ("sell the news"). The reaction-function-flip I pre-registered is materializing cohort-wide.
+
+**Cohort context:** IBM −25% (worst day on record, guide cut); NOW +3.7% AH (beat-and-raise); GOOGL −5% AH (capex + Gemini delay); TSLA sold off (EPS $0.33 miss, op-margin 1.4%); TXN −3.6% AH (sell-the-news).
+
+**Position implication: ⬜ NO ACTION (user-gated). BUT the SKHY-add gate now has its demand half CONFIRMED (G-1 TRUE, capex floor rising) AND its reflexivity risk MATERIALIZING (raiser sold off) — exactly the two-part gate; the add stays gated on the Jul-29 contract-durability + whether memory names hold up through the capex-flip.** 🟡

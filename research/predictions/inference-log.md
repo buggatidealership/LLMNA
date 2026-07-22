@@ -357,3 +357,7 @@ User bought 37 SKHYV @ $173.45 Fri 18:44 (before Jul-13 tape; premium +19.7% vs 
 
 ## UPDATE 2026-07-11 SAT — Friday WI print verified: gate-vs-override grading now has real numbers
 WI close $168.01 (T2 multi) = **close premium +15.6%** vs Seoul ordinary (entry premium +19.3-19.7%; the "$158" figure REFUTED as T3 error — my 07-10 gate-math line "$158-equiv ≈ 9%" referenced a number that never traded; the gate itself is unaffected). First mark: entry −3.1%, ALL of it premium fade (Seoul −0.27%). Leg-(2) adjudication path formalized in `companies/SKHY/thesis.md` Monday-prep template: premium compresses ≤+5% → gate CONFIRMED (override cost ≈ −12-14% from premium alone); premium holds ≥+12% through week 1 → conversion-friction/closed-end dynamic → override defensible. Per `signals/cross-source-log/2026-07-11-sat-skhy-debut-verification.md`. 🟡
+
+
+## 2026-07-22 EVE — TWIN-PRINT GRADED (Program v2 first live application)
+9/9 directional, **Brier 0.1018** (computed; 8 TRUE + N-4 correct-FALSE-lean). Calibration by band: [0.8-1.0] n=2 rate 1.00; [0.6-0.79] n=5 rate 1.00; [0.4-0.59] n=2 rate 0.50 (exactly calibrated). The only sub-0.5 lean (N-4, P=0.40) resolved as leaned. Zero INPUT/COMPUTATION misses. The largest single-day formal registration since the program started resolved cleanly — addresses the quota-check-#2 BEHIND-pace verdict with a high-quality batch. T+24h reaction legs (I-5/N-5) pending 07-23 close. Full grade: `predictions/2026-07-22-IBM-NOW-GOOGL-twin-print-registrations.md` GRADE section. 🟢

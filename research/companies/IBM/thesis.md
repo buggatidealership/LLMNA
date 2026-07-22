@@ -1,6 +1,8 @@
 # IBM — Thesis
 
-**Last updated:** 2026-07-17
+**📌 [2026-07-22] Q2 PRINT GRADED — casualty mechanism CONFIRMED on the record (per `predictions/2026-07-22-IBM-NOW-GOOGL-twin-print-registrations.md` GRADE).** Final rev $17,162M (matched pre-warning); FY26 rev-growth guide RESET DOWN to 4-5% cc (from ">5%"), FCF held ~+$1B; consulting rev flat $5,327M while signings +6% (GenAI ~50% of signings) = reallocation/timing not displacement. **I-4 TRUE:** CFO named client capex→"servers, storage and memory purchases to secure supply-constrained infrastructure ahead of price increases — tens of large deals failed to close" (+30% QoQ), IBM Z −42%. Stock −25% (worst day on record). **This CONFIRMS the L33 casualty read (memory-inflation crowds fixed-budget hardware-adjacent incumbents) — but N-4 (NOW) REFUTED the software-squeeze generalization: the squeeze is HARDWARE-DISPLACEMENT (IBM Z/infra), not a broad enterprise-software-budget squeeze.** Position implication: ⬜ NO ACTION — stays Watchlist casualty-tracker; the mechanism is confirmed but the reversion thesis ("deferred deals close when memory normalizes") is unresolved and now dated by the guide cut. Anti-fragility unchanged 1/5.
+
+**Last updated:** 2026-07-22 (was 2026-07-17)
 **Tier:** Watchlist (casualty-tracker + reversion option — NOT an entry candidate pre-Jul-22)
 **Position target:** 0%
 **Anti-fragility:** 1/5 (recall-hedged first pass — wins only in the "memory normalizes + deferred deals close" scenario; loses or lags in AI-acceleration, sustained-squeeze, and displacement scenarios; quantum optionality unscored)

@@ -48,3 +48,11 @@ The reflexivity crack (2nd order) is the near-term face of the circular-financin
 - Ericsson NA sales decline = telco capex, NOT hyperscaler — do not read as a GOOGL-capex negative.
 - STX +11.9% / GLW +6.1% (Jul-21) were pre-earnings run-ups / deal news, NOT prints.
 - 2nd read-through pass due Jul-28/29 (the semi-cap + storage + DC-proxy wall) — concurrent with SKH.
+
+---
+
+## ✅ [2026-07-22 EVE] GRADED — Principle #48 first application resolved POSITIVE + capex-flip reflexivity confirmed
+Per the twin-print GRADE (`predictions/2026-07-22-IBM-NOW-GOOGL-twin-print-registrations.md`):
+- **#48 read-through VALIDATED:** the leading indicators (TSMC capex $52-56B→$60-64B, +15%; ASML memory sys-sales >75%; Hanmi 15.3x) pointed UP pre-print → **GOOGL raised FY26 capex to $195-205B** (G-1 TRUE), the exact demand-floor the basket reconstructed *before* the print. The earnings-sequence read-through delivered its first graded hit: the answer was knowable from adjacent already-reported names.
+- **§3 TRACE capex-flip reflexivity — instance #2 CONFIRMED:** the basket's non-consensus loop (the reaction-function may be flipping; TSMC −3-5% on its raise = instance #1) fired again — **GOOGL sold off ~5% AH on the raise** (+Gemini-3.5-delay confound), and **TXN beat-and-raised yet sold ~−3.6%** ("sell the news"). Good-capex-bad-price is now a cohort pattern, not a one-off. The higher-value loop #49 surfaced (is the market still paying up for the capex?) is answering NO at the margin.
+- **Net for the SKHY add:** demand-leg confirmed pre-print AND at-print; the gate correctly moved off demand onto reaction-function + Jul-29 contract-durability — and the reaction-function is now flashing the warning the reframe predicted. #48/#49 both earned their first graded keep.

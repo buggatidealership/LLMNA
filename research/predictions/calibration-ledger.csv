@@ -89,3 +89,12 @@ date_graded,prediction_id,ticker,component,claimed_p,outcome,magnitude_delta_pct
 2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,capex-raise,55,TRUE,,REASONING,"full raise 52-56 -> 60-64 (+14.8pct mid) exceeds registered raise-or-top-end-language class; falsifier capex-cut opposite"
 2026-07-22,2026-06-19-NBIS-nasdaq-100-inclusion,NBIS,event-window-h-bucket,35,UNGRADEABLE,,REASONING,"T+30 final: price-band H3-exceeded (window low -42.7pct vs ATH-proxy T2-) but 5 idiosyncratic catalysts dominate; pre-07-01 inclusion leg FLAT; attribution rules not ex-ante - L40 candidate origin"
 2026-07-22,2026-06-19-NBIS-nasdaq-100-inclusion,NBIS,h3-pullback-15-30,20,MIXED,,REASONING,"price fell BEYOND h3 band but mechanism not inclusion mean-reversion; naive TRUE blocked by drift-split; B48 stays N=0"
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,IBM,I-1-final-rev-within-0.5pct,92,TRUE,,NONE,"rev $17,162M vs pre-ann $17.2B = 0.22pct delta"
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,IBM,I-2-FY26-guide-reset-down,70,TRUE,,NONE,rev-growth guide lowered 4-5pct cc from >5pct; FCF held +$1B; partial reset in some form
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,IBM,I-3-consulting-reallocation-not-displacement,65,TRUE,,NONE,"consulting rev flat $5,327M/+1pct cc while signings +6pct 2nd qtr; GenAI ~50pct signings"
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,IBM,I-4-L33-casualty-mechanism-named,60,TRUE,,NONE,CFO named client capex->servers/storage/memory; tens of deals failed to close; IBM Z -42pct; +30pct QoQ; not execution/competition
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,NOW,N-1-sub-rev-beats-guide-top,85,TRUE,,NONE,"sub rev $3,877M +23pct cc > $3.82B guide top"
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,NOW,N-2-cRPO-ge-19.5cc,75,TRUE,,NONE,cRPO $13.20B +21.5pct cc >= 19.5pct guided
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,NOW,N-3-FY26-sub-guide-raised,70,TRUE,,NONE,"FY26 sub-rev guide raised $15.760-15.780B, 2nd raise"
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,NOW,N-4-L33-squeeze-named-at-software,40,FALSE,,REASONING,no budget-reallocation/memory-cost named; beat-and-raise; P=0.40 leaned FALSE => lean correct; L33 does NOT generalize to best-of-breed software
+2026-07-22,2026-07-22-IBM-NOW-GOOGL-twin-print,GOOGL,G-1-FY26-capex-raised-above-190B,55,TRUE,,NONE,FY26 capex raised to $195-205B from $180-190B; Q2 capex $44.9B +100pct; cloud $24.8B +82pct
