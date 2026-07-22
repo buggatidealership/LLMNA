@@ -649,7 +649,7 @@
   - On VERIFIED: flip fix-spec status, close this item, book verification artifact. On PARTIAL/REFUTED: book evidence + surface to user
   - History: v1 shipped 2026-07-12 dead-on-arrival (ID-dash-adjacency regex matched no real header, zero telemetry); diagnosed + rebuilt as ID-set-diff design 2026-07-14 per `meta/hooks/session-prime-cascade-hook-fix-spec.md`
 
-- [ ] **P2 / process / 2026-07-15** [INFRA, OPT] — Weekly competitive-product surveillance subagent (add to recurring schedule)
+- [ ] **P2 / process / 2026-07-29** [INFRA, OPT, recurring] — Weekly competitive-product surveillance — PASS #1 EXECUTED 2026-07-22 (artifact `signals/cross-source-log/2026-07-22-wed-competitive-surveillance-pass1.md`: SKH Δ LOWER / SUMCO watch-firmed / MURATA nil). **Cadence decision still USER-GATED: weekly (~200-320k tokens/mo) vs keep monthly-H2-only** — next pass provisionally 2026-07-29 (pairs with the SKH Q2 print; pushes the Samsung-HBM4-sample-only T2 datum to triangulation)
   - Origin: harness-optimization audit 2026-06-26 TIER 3; MRVL Trainium 3 loss + SNDK MU 245TB ION both surfaced POST-HOC via monthly H2 bear-case workflow (should surface earlier)
   - Scope: per held name, scan competitor-product announcements weekly (1-2 hops to direct substitutes); output per-name competitive displacement risk Δ vs prior week
   - Cost: ~50-80k tokens/week for 7-name cohort = ~200-320k/month vs current monthly H2 bear-case (~280k); 4× cost vs monthly catches displacement 3-4 weeks earlier
