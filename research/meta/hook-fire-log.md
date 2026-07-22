@@ -1039,3 +1039,7 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 18:09:50Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-22 18:11:44Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-22 18:14:26Z anti-fabrication-hook FIRE (n=4 '$50.1M' forms=[("'$50.1M'", 1, None)]; '$4.3M' forms=[("'$4.3M'", 1, None)]; '065%' forms=[("'065%'", 1, None)]; 'Q1-2026 revenue surge (~$50.1M vs $4' forms=[("'Q1-2026 revenue surge (~$50.1M vs $4'", 1, None), ("'Q1-2026revenuesurge(~$50.1Mvs$4'", 1, None)] verdict:pending)
+- 2026-07-22 18:25:40Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 18:31:57Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 18:50:11Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 18:52:09Z anti-fabrication-hook INCONCLUSIVE (n=1 '77%' forms=[("'77%'", None, 'TimeoutExpired')] verdict:pending)
