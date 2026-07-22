@@ -983,3 +983,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-21 21:59:48Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
 - 2026-07-21 22:48:17Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 00:23:28Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 00:31:15Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
