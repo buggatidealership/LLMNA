@@ -71,6 +71,17 @@ PROTECTED_REDIRECT_TARGET = re.compile(
     r"session-prime|lessons\.md|CLAUDE\.md|biases-watchlist|"
     r"grading-log|calibration-ledger|INDEX\.md|portfolio/)")
 
+# boundary-correct protected DESTINATION matcher for tee/cp/install/mv (rework-4):
+# a protected DIRECTORY prefix (any child) OR an EXACT protected filename at the
+# END of a path token — so "CLAUDE.md.bak" / "session-prime-hook.py" (a different
+# file) are NOT matched as the protected file itself (dir rule still covers real
+# children like meta/hooks/session-prime-hook.py).
+PROTECTED_DEST = re.compile(
+    r"(?:(?:^|/)(?:\.git|meta/hooks|meta/tools|portfolio)/)"
+    r"|(?:^|/)(?:CLAUDE\.md|INDEX\.md|settings\.json|lessons\.md|methodology(?:\.md)?|"
+    r"session-prime(?:\.md)?|biases-watchlist(?:\.md)?|grading-log(?:\.md)?|"
+    r"calibration-ledger(?:\.md)?)$")
+
 
 def log_line(msg: str) -> None:
     try:
@@ -147,8 +158,14 @@ def main() -> None:
         # adjacency still required so prose/heredoc "commit -n" doesn't false-block.
         # Residual (documented, fixture-pinned): a LITERAL `git commit -n` inside
         # unstripped prose (echo/heredoc) still blocks — cannot disambiguate.
+        # REWORK-4 (K3 finding 4): the old adjacency only tolerated an optional
+        # `-C <path>` between `git` and `commit`, so ANY other git GLOBAL OPTION
+        # — `git -c x=1 commit -n`, `git --no-pager commit -n` — walked straight
+        # past. Global options are the tokens between `git` and its subcommand;
+        # allow any run of them (bounded to one command by [^|;&], so a separate
+        # piped/`&&`-joined command can't be spanned).
         if is_git and re.search(
-                r"\bgit\s+(?:-C\s+\S+\s+)?commit\b[^|;&]*\s-[a-z]*n[a-z]*\b", s):
+                r"\bgit\b[^|;&]*?\bcommit\b[^|;&]*?\s-[a-z]*n[a-z]*\b", s):
             block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
         if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-push guard", cmd)
@@ -212,11 +229,37 @@ def main() -> None:
         # that merely NAMED CLAUDE.md after a `cat > /tmp/msg.txt` false-blocked.
         # A truncating redirect writes to exactly ONE target token; anchor the
         # protected match to that immediate redirect TARGET (first token after >),
-        # never to prose downstream. `>>` (append) and `2>&1` naturally fail the
-        # target-token match. Two-step: find each redirect target, test IT.
-        for m in re.finditer(r"(?:^|[^>0-9])>\s*['\"]?([^\s>|;&'\"]+)", s):
+        # never to prose downstream. `>>` (append) fails the target-token match
+        # (the second `>` blocks it). REWORK-4 (K3 finding 4): the item-6 pattern
+        # excluded a digit before `>` (`[^>0-9]`) to spare `2>&1`, but that also
+        # let `1> protected` / `2> protected` (fd redirects to a FILE) bypass.
+        # Dropping the digit-exclusion re-catches those AND keeps `2>&1` safe:
+        # the target token after `2>` is `&1`, and `&` is excluded from the token
+        # class, so the fd-dup form still matches nothing. `>>` still safe: the
+        # second `>` is excluded from the token, leaving it empty.
+        for m in re.finditer(r"(?:^|[^>])>\s*['\"]?([^\s>|;&'\"]+)", s):
             if PROTECTED_REDIRECT_TARGET.search(m.group(1)):
                 block("truncating redirect (>) onto an enforcement/protected file", cmd)
+        # tee / cp / install / mv onto a protected DESTINATION (content overwrite).
+        # REWORK-4 (K3 finding 4): these overwrite paths were entirely unguarded.
+        # PROTECTED_DEST is boundary-correct — an EXACT protected filename at the
+        # end of a path token, or any child of a protected DIRECTORY — so backing
+        # a protected file UP ("cp CLAUDE.md CLAUDE.md.bak", or a scratch dest) is
+        # NOT blocked (adversarial pass on this fix, discipline #3). Destination is
+        # the last token; tee writes all its file args unless -a/--append.
+        for seg in re.split(r"[|;&]+", s):
+            toks = seg.split()
+            if not toks:
+                continue
+            base = os.path.basename(toks[0])
+            if base == "sudo" and len(toks) > 1:
+                base = os.path.basename(toks[1])
+            if base == "tee" and "-a" not in toks and "--append" not in toks:
+                for t in toks[1:]:
+                    if not t.startswith("-") and PROTECTED_DEST.search(t):
+                        block("tee onto an enforcement/protected file (content overwrite)", cmd)
+            if base in ("cp", "install", "mv") and PROTECTED_DEST.search(toks[-1]):
+                block("cp/install/mv onto an enforcement/protected destination (overwrite)", cmd)
 
     sys.exit(0)
 
