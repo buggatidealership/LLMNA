@@ -43,6 +43,11 @@ STATE = REPO / "research" / "meta" / ".promise-heartbeat-state.json"
 
 REG_LINE = re.compile(
     r"^- \[( |x)\] DUE:(\d{4}-\d{2}-\d{2}) \| WHAT: (.*?) \| SOURCE: (.*?)(?:\s*\| DONE:.*)?$")
+# any line that PRESENTS as a registry promise (a checkbox bullet), so a
+# malformed one is caught instead of silently ignored (rework-3 b/c).
+CHECKBOX = re.compile(r"^- \[[ xX]\]")
+# a valid close carries a machine-checkable receipt: `RECEIPT:` + non-space value
+RECEIPT_RE = re.compile(r"RECEIPT:\s*\S")
 
 # prose promise-phrases: verb-ish promise token within 40 chars of a date
 PROSE_PROMISE = re.compile(
@@ -58,21 +63,55 @@ PROSE_SKIP = {"promises-registry.md", "hook-fire-log.md"}
 
 
 def parse_registry(text: str, today: date):
-    overdue, upcoming = [], []
-    for line in text.splitlines():
-        m = REG_LINE.match(line.strip())
+    """Return (overdue, upcoming, problems).
+
+    REWORK-3 (K3 finding 3): a promise leaves the loud list ONLY via a
+    machine-checkable RECEIPT — an `[x]` with no receipt does NOT close it.
+    Lines that present as promises but do not parse (malformed) or carry an
+    unparseable date (poison) are surfaced LOUD as `problems`, never silently
+    dropped, and one bad line never disables the whole lane.
+    """
+    overdue, upcoming, problems = [], [], []
+    in_fence = False
+    for raw in text.splitlines():
+        line = raw.strip()
+        # skip fenced code blocks — the registry header documents its own line
+        # FORMAT inside ``` fences (YYYY-MM-DD placeholders), which must NOT be
+        # parsed as promises (adversarial pass on the rework-3 malformed-detector).
+        if line.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if not CHECKBOX.match(line):
+            continue  # not a promise line at all
+        m = REG_LINE.match(line)
         if not m:
+            problems.append(("MALFORMED promise line (does not parse — a real "
+                             "promise may be hiding here, unwatched)", line[:120]))
             continue
         done, due_s, what, source = m.groups()
-        if done == "x":
+        try:
+            due = datetime.strptime(due_s, "%Y-%m-%d").date()
+        except ValueError:
+            problems.append((f"POISON date {due_s!r} (unparseable — promise cannot "
+                             "be tracked)", line[:120]))
             continue
-        due = datetime.strptime(due_s, "%Y-%m-%d").date()
+        if done.lower() == "x":
+            if not RECEIPT_RE.search(line):
+                # unreceipted close = a say-do gap INSIDE the registry
+                problems.append(("CLOSED [x] with NO machine-checkable RECEIPT — "
+                                 "does not count as done", line[:120]))
+                if due < today:
+                    overdue.append((due_s, what.strip() + "  [INVALID CLOSE: no receipt]",
+                                    source.strip()))
+            continue
         item = (due_s, what.strip(), source.strip())
         if due < today:
             overdue.append(item)
         elif (due - today).days <= 3:
             upcoming.append(item)
-    return overdue, upcoming
+    return overdue, upcoming, problems
 
 
 def prose_sweep(repo: Path, today: date, registry_text: str):
@@ -109,20 +148,30 @@ def prose_sweep(repo: Path, today: date, registry_text: str):
     return cands
 
 
-def log_fire(overdue) -> None:
+def log_fire(events, kind="OVERDUE") -> None:
+    """Append the loud event to the git-committed log, THEN update the state hash.
+
+    REWORK-3 (K3 finding 3, ordering): the prior version wrote STATE (the dedupe
+    hash) BEFORE the log append. If the append then failed, the hash was already
+    advanced, so the next run deduped it away and the event NEVER reached git
+    history — a silent death. Now the log line is written FIRST; STATE is updated
+    only after the append succeeds, so a failed append leaves STATE stale and the
+    event retries next run (it WILL reach history).
+    """
     try:
         prev = ""
         if STATE.exists():
             prev = json.loads(STATE.read_text()).get("hash", "")
         import hashlib
-        h = hashlib.sha256(json.dumps(sorted(overdue)).encode()).hexdigest()[:16]
+        h = hashlib.sha256(json.dumps([kind, sorted(map(str, events))]).encode()).hexdigest()[:16]
         if h == prev:
             return
-        STATE.write_text(json.dumps({"hash": h, "at": datetime.now(timezone.utc).isoformat()}))
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
         with open(LOG, "a", encoding="utf-8") as f:
-            f.write(f"- {ts} promise-heartbeat OVERDUE set changed: "
-                    + "; ".join(f"[{d}] {w[:60]}" for d, w, _ in overdue) + "\n")
+            f.write(f"- {ts} promise-heartbeat {kind} set changed: "
+                    + "; ".join(str(e)[:70] for e in events) + "\n")
+        # STATE advanced ONLY after the append is durable (log-before-state).
+        STATE.write_text(json.dumps({"hash": h, "at": datetime.now(timezone.utc).isoformat()}))
     except Exception:
         pass
 
@@ -134,8 +183,18 @@ def main() -> None:
               "— the promise-tracking layer is DOWN. Recreate it (git log has the last copy).")
         return
     reg_text = REGISTRY.read_text(encoding="utf-8", errors="replace")
-    overdue, upcoming = parse_registry(reg_text, today)
+    overdue, upcoming, problems = parse_registry(reg_text, today)
     cands = prose_sweep(REPO, today, reg_text)
+
+    if problems:
+        # a registry that cannot be trusted to be parsed is itself a failure of
+        # the promise-tracking layer — surface LOUD and log it (rework-3 b/c/a).
+        log_fire([f"{r} :: {ln}" for r, ln in problems], kind="REGISTRY-PROBLEM")
+        print("🚨🚨 PROMISE-HEARTBEAT: REGISTRY INTEGRITY PROBLEMS — lines that present "
+              "as promises but cannot be trusted (malformed / poison date / closed with "
+              "no receipt). A promise could be hiding in here, unwatched:")
+        for reason, ln in problems:
+            print(f"  🚨 {reason}\n       {ln}")
 
     if overdue:
         log_fire(overdue)
@@ -156,7 +215,7 @@ def main() -> None:
             print(f"  🟡 [{d}] {f}: {snip}")
         if len(cands) > 15:
             print(f"  ... +{len(cands) - 15} more (run promise-heartbeat.py directly for full list)")
-    if not (overdue or upcoming or cands):
+    if not (overdue or upcoming or cands or problems):
         print("PROMISE-HEARTBEAT: all dated promises current.")
 
 
@@ -175,10 +234,43 @@ def _selftest() -> int:
         "- [x] DUE:2026-07-10 | WHAT: done thing | SOURCE: b.md | DONE:2026-07-11 RECEIPT: abc\n"
         "- [ ] DUE:2026-07-23 | WHAT: tomorrow thing | SOURCE: c.md\n"
         "- [ ] DUE:2026-09-01 | WHAT: far thing | SOURCE: d.md\n")
-    o, u = parse_registry(reg, today)
+    o, u, pr = parse_registry(reg, today)
     check("overdue open line detected", len(o) == 1 and o[0][1] == "overdue thing")
-    check("done line not overdue", all(w != "done thing" for _, w, _ in o))
+    check("done line WITH receipt not overdue", all("done thing" not in w for _, w, _ in o))
+    check("valid registry has no problems", pr == [])
     check("due-soon window (3d)", len(u) == 1 and u[0][1] == "tomorrow thing")
+
+    # ---- REWORK-3 permanent fixtures (K3 finding 3) ----
+    # (a) [x] with NO receipt does NOT close a past-due promise -> overdue + problem
+    o, u, pr = parse_registry("- [x] DUE:2026-07-01 | WHAT: unreceipted | SOURCE: a.md\n", today)
+    check("REWORK-3a: unreceipted [x] stays OVERDUE",
+          any("unreceipted" in w for _, w, _ in o))
+    check("REWORK-3a: unreceipted [x] flagged as a problem",
+          any("RECEIPT" in r for r, _ in pr))
+    # (b) malformed line ("DUE: " trailing space) is surfaced LOUD, not invisible
+    o, u, pr = parse_registry("- [ ] DUE: 2026-07-01 | WHAT: malformed | SOURCE: a.md\n", today)
+    check("REWORK-3b: malformed line surfaced as a problem (not silent)",
+          any("MALFORMED" in r for r, _ in pr))
+    # (c) poison date does NOT disable the lane: the real overdue below still surfaces
+    o, u, pr = parse_registry(
+        "- [ ] DUE:2026-13-99 | WHAT: poison | SOURCE: a.md\n"
+        "- [ ] DUE:2026-07-01 | WHAT: real overdue after poison | SOURCE: b.md\n", today)
+    check("REWORK-3c: poison date flagged, lane survives (real overdue still seen)",
+          any("POISON" in r for r, _ in pr) and any("real overdue" in w for _, w, _ in o))
+    # (d) log_fire ordering: log BEFORE state (a failed append must not advance state)
+    import inspect as _insp
+    src = _insp.getsource(log_fire)
+    check("REWORK-3d: log append precedes STATE write (log-before-state)",
+          src.index("open(LOG") < src.index("STATE.write_text"))
+    # adversarial pass on the malformed-detector: fenced format-example lines
+    # (the registry's own ```-fenced docs) must NOT be flagged as problems
+    fenced = ("```\n"
+              "- [ ] DUE:YYYY-MM-DD | WHAT: <placeholder> | SOURCE: <x>\n"
+              "```\n"
+              "- [ ] DUE:2026-07-01 | WHAT: real | SOURCE: b.md\n")
+    o, u, pr = parse_registry(fenced, today)
+    check("REWORK-3 adversarial: fenced format-example not flagged malformed",
+          pr == [] and any("real" in w for _, w, _ in o))
 
     import tempfile
     with tempfile.TemporaryDirectory() as td:
