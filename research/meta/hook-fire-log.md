@@ -991,3 +991,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 05:38:32Z git-guard-pretooluse BLOCK (mv of .git / research / portfolio (record relocation))
 - 2026-07-22 05:39:35Z git-guard-pretooluse BLOCK (mv of .git / research / portfolio (record relocation))
 - 2026-07-22 06:00:31Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 06:14:00Z anti-fabrication-hook INCONCLUSIVE (n=3 '12%' forms=[("'12%'", None, 'TimeoutExpired')]; '12%' forms=[("'12%'", None, 'BudgetExceeded')]; '9.3%' forms=[("'9.3%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-07-22 06:17:17Z structural-output-hook FIRE (structural-markers-missing)
