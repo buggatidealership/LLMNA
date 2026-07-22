@@ -28,6 +28,10 @@
                     {
                         "type": "command",
                         "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/session-prime-hook.py"
+                    },
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/promise-heartbeat.py"
                     }
                 ]
             }
