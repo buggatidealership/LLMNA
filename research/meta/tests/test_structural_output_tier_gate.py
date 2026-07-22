@@ -31,8 +31,11 @@ def run(assistant_text):
                             "message": {"role": "assistant",
                                         "content": [{"type": "text", "text": assistant_text}]}}) + "\n")
     payload = json.dumps({"transcript_path": path, "stop_hook_active": False})
+    # LLMNA_HOOK_TEST=1 -> the hook tags any fire it logs with [probe] so
+    # structural-output-metric.py excludes it (channel-B probe-pollution guard).
+    env = dict(os.environ, LLMNA_HOOK_TEST="1")
     r = subprocess.run([sys.executable, HOOK], input=payload, capture_output=True,
-                       text=True, cwd=_REPO)
+                       text=True, cwd=_REPO, env=env)
     os.unlink(path)
     return r.returncode
 

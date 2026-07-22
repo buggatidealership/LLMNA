@@ -248,8 +248,13 @@ def _log_fire(reason: str) -> None:
         from datetime import datetime, timezone
         log_path = Path(ENFORCEMENT_PATHS[0]) / "research/meta/hook-fire-log.md"
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
+        # Probe tag (2026-07-22, metric-integrity rework channel B): a test
+        # battery that runs this hook appends real FIRE lines. When
+        # LLMNA_HOOK_TEST=1 the fire is tagged [probe] so structural-output-
+        # metric.py drops it — probe pollution can never move the scoreboard.
+        probe = " [probe]" if os.environ.get("LLMNA_HOOK_TEST") == "1" else ""
         with open(log_path, "a") as lf:
-            lf.write(f"- {ts} structural-output-hook FIRE ({reason})\n")
+            lf.write(f"- {ts} structural-output-hook FIRE ({reason}){probe}\n")
     except Exception:
         pass
 

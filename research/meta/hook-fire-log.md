@@ -1007,3 +1007,38 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 07:56:52Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 08:14:19Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-22 08:15:39Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
+- 2026-07-22 08:26:34Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion / +refspec (history-rewrite class))
+- 2026-07-22 08:29:12Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:12Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:12Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:12Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:12Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:13Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:29:50Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:50Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:51Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:51Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:51Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:51Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:29:51Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 08:30:10Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 08:40:26Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
+- 2026-07-22 08:44:46Z structural-output-hook FIRE (position-implication-tier-missing) [probe]
