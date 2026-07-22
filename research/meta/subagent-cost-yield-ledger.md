@@ -3537,3 +3537,15 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-good-morning-4agent-verification-batch.md`
 **Commit:** (this commit)
+
+---
+### 2026-07-22 WED — EARNINGS-SEQUENCE READ-THROUGH BASKET (operator method, Principle #48 first application)
+**Fires:** 3 parallel Opus 4.8 (TSMC read-through, ASML read-through, adjacency sweep). **Est. cost:** ~83k tokens (18k+21k+43k reported).
+**Items verified:** upstream/adjacent already-reported names as leading indicators for SKHY Jul-29 + GOOGL capex tonight.
+**Per-agent yield:** TSMC = HIGH (capex +15% / rev >40% / CoWoS sold-out = clean hyperscaler-capex + HBM-attach read); ASML = HIGH (memory sys sales >75%, names SKH expanding); sweep = HIGH (Hanmi 15.3x QoQ = SKH-specific HBM4-order-resumption tell, the single best pre-print signal + honest GOOGL-proxy gap + Jul-28/29 second-pass map).
+**Framing errors caught:** stale-recycle traps flagged (LRCX/Advantest "record" = prior-qtr; STX/GLW moves = run-ups not prints); Samsung aggregator magnitude flagged (kept under B45).
+**Thesis cascade triggered:** read-through basket artifact; Principles #48 + #49 codified (CANDIDATE); CLAUDE.md header count.
+**Position implication delta:** NONE (user-gated) — but re-gated the SKHY add: gate variable shifts from demand (answered) to reaction-function + contract-durability.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-earnings-sequence-readthrough-basket.md`
+**Commit:** (this commit)
