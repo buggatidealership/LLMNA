@@ -93,11 +93,32 @@ SHA_CLAIM = re.compile(
     r"(?i)\b(?:committed|commit(?:\s+hash)?:|sha:)\s*(?:as\s+|at\s+|in\s+)?"
     r"[`(\[]{0,2}((?=[0-9a-f]*\d)(?=[0-9a-f]*[a-f])[0-9a-f]{7,40})\b")
 
-# past-tense push claim; negative forms excluded in code below
+# past-tense push claim; a checkable current-state claim only if NOT skipped.
 PUSHED_CLAIM = re.compile(r"(?<![a-zA-Z])[Pp]ushed\b")
-PUSH_NEGATORS = re.compile(
-    r"(?i)\b(not|isn't|aren't|will be|to be|please|must be|should be|un)\s*pushed"
-    r"|\bunpushed\b|\bpushed\s+(?:back|for|out|to\s+(?:next|later|2\d{3}))")
+# REWORK-2 (K3 finding 2 — repo-ahead FP CLOSED): the old negator list omitted
+# contractions ("haven't/hasn't/hadn't") and historical time-displacement, so
+# true statements — "I haven't pushed yet", "Yesterday I pushed the changes" —
+# were blocked whenever HEAD was ahead of upstream. The push check should fire
+# ONLY on a claim that the CURRENT state is pushed (a same-turn deed). Skip a
+# line whose "push" is negated, historically time-displaced, or future/intent.
+PUSH_SKIP = re.compile(
+    r"(?i)("
+    # negations near "push" (contractions + long forms)
+    r"\b(?:not|never|no longer|un)\b[^.!?\n]{0,20}push"
+    r"|n['’]t\b[^.!?\n]{0,20}push"
+    r"|\b(?:have|has|had|do|does|did|will|would|should|could|can|ca|is|are|was|were)\s*n['’]?t\b[^.!?\n]{0,20}push"
+    # push failed/rejected/denied
+    r"|push(?:ed)?\b[^.!?\n]{0,12}\b(?:fail|error|reject|denied|blocked)"
+    # UNAMBIGUOUS historical time-displacement only (adversarial pass on this
+    # FP-fix, discipline #3: "already/earlier/previously" are present-perfect
+    # current-state claims — "I already pushed" must STILL be checkable if HEAD
+    # is ahead — so they are deliberately NOT skip markers).
+    r"|\b(?:yesterday|last\s+(?:week|night|month|session)|"
+    r"\d+\s+(?:days?|weeks?|hours?)\s+ago|this\s+morning|on\s+20\d\d-\d\d-\d\d)\b"
+    # future / intent
+    r"|\b(?:will|about to|going to|need to|have to|has to|had to|plan(?:ning)? to|"
+    r"want to|intend to|should|must|to be|please|ready to)\b[^.!?\n]{0,15}push"
+    r")")
 
 # file-claim line: action verb + backticked repo-relative path
 FILE_VERB = re.compile(r"(?i)\b(created|updated|wrote|rewrote|added|saved|appended)\b")
@@ -185,20 +206,25 @@ def extract_claims(text: str, repo: str):
                 seen_shas.add(tok)
                 r = git("cat-file", "-e", f"{tok}^{{commit}}", cwd=repo)
                 if r.returncode != 0:
-                    # Repo-grounding pass (Critical Rule #7d, same rule as the
-                    # anti-fabrication hook): a SHA that exists as an exact
-                    # string in the COMMITTED corpus is a restatement of logged
-                    # history (pre-rewrite SHAs, G-40 class) — UNVERIFIABLE,
-                    # not a fabrication. A fabricated SHA exists nowhere.
-                    g = git("grep", "-qF", tok, "HEAD", "--", "research/", cwd=repo)
-                    if g.returncode == 0:
-                        unver.append(("sha", f"`{tok}` not in object DB but grounded in committed corpus (historical restatement)"))
-                    else:
-                        fails.append(("sha", f"claimed commit `{tok}` does not exist in this repository"))
+                    # REWORK-2 (K3 finding 2 — SELF-LAUNDERING CLOSED): the prior
+                    # version grounded a non-resolving SHA against the committed
+                    # corpus (`git grep HEAD -- research/`) and downgraded it to
+                    # UNVERIFIABLE. That let a fabricated SHA launder itself: the
+                    # block wrote the SHA into hook-fire-log.md, the log got
+                    # committed (routine), and the identical claim then "grounded"
+                    # and passed. An integrity check must fail toward BLOCKING:
+                    # a SHA in a first-person action-claim that does not resolve
+                    # to a real git object is a FAIL, full stop. No corpus
+                    # grounding. (A genuine pre-rewrite historical SHA belongs in
+                    # citation form — "commit 4c049f48 (pre-rewrite)" — which
+                    # SHA_CLAIM does not treat as an action-claim.)
+                    fails.append(("sha", f"claimed commit `{tok}` does not resolve to a real git object "
+                                         f"(fabricated or pre-rewrite; corpus-grounding removed in rework-2 "
+                                         f"so a block cannot launder itself through the telemetry log)"))
 
         # ---- check 1-amended: push-sync claim ----
         if (not hedged and PUSHED_CLAIM.search(line)
-                and not PUSH_NEGATORS.search(line)):
+                and not PUSH_SKIP.search(line)):
             push_claimed = True
 
         # ---- check 3: file claims ----
@@ -347,6 +373,31 @@ def _selftest() -> int:
         # 11. negated push forms → no claim
         fl, _ = extract_claims("These are not pushed yet; please push later.", repo)
         check("negated push forms skipped", fl == [])
+
+        # ---- REWORK-2 permanent fixtures (K3 finding 2) ----
+        # 11a. LAUNDERING CLOSED: a fabricated SHA that has been written into the
+        # committed corpus (e.g. via the block-line in the fire-log) still FAILS.
+        laundered = os.path.join(repo, "research", "meta", "hook-fire-log.md")
+        open(laundered, "w").write("- 2026-07-22 receipts-hook FIRE (sha:claimed commit `feedface99` does not exist)\n")
+        subprocess.run(["git", "-C", repo, "add", "-A"], check=True)
+        subprocess.run(["git", "-C", repo, "commit", "-qm", "telemetry"], check=True)
+        fl, _ = extract_claims("Committed feedface99 with the fix.", repo)
+        check("REWORK-2: SHA present in committed corpus still FAILS (no self-laundering)",
+              any(k == "sha" for k, _ in fl))
+        # 11b. repo-ahead FP CLOSED: true statements pass while HEAD is ahead
+        for tstmt in ["I haven't pushed yet.", "Yesterday I pushed the changes.",
+                      "hasn't pushed to origin", "last week I pushed the branch"]:
+            fl, _ = extract_claims(tstmt, repo)
+            check(f"REWORK-2: true statement not push-blocked while ahead — {tstmt!r}",
+                  not any(k == "push" for k, _ in fl))
+        # 11c. adversarial pass (discipline #3): a GENUINE same-turn false claim
+        # while ahead must STILL FAIL — the FP-loosening did not open a hole
+        for fclaim in ["Committed and pushed the fix.", "I already pushed the fix.",
+                       "Pushed to origin/main."]:
+            fl, _ = extract_claims(fclaim, repo)
+            check(f"REWORK-2 adversarial: genuine false push-claim still FAILS — {fclaim!r}",
+                  any(k == "push" for k, _ in fl))
+
         # 12. hook process: garbage stdin → exit 0 (fail-open)
         r = subprocess.run([sys.executable, __file__], input="{not json",
                            capture_output=True, text=True)
@@ -376,15 +427,28 @@ def _selftest() -> int:
     return fails
 
 
+# Dated append-log / ledger / register files: they RECORD past events (incl.
+# historical pre-rewrite SHA citations in "committed <sha>" form) and are never
+# emitted as a live assistant turn. The hook judges only the assistant's live
+# message, so a match here is NOT a live-message false-positive. Classified
+# separately after rework-2 removed SHA corpus-grounding (integrity-first).
+_RECORD_FILE = re.compile(
+    r"(hook-fire-log|tier-cascade-log|-ledger|-register|grading-log|"
+    r"/cross-source-log/|/redteam/|/events/|day-state|environment-constraints|"
+    r"DURABLE-ACTIVATION|recurring-audit-log|principle-applications-log)")
+
+
 def _backtest() -> None:
     """Corpus FP sweep: every research/**/*.md treated as a candidate message.
 
-    Historical documents legitimately narrate created/updated files and cite
-    SHAs; any FAIL here is a false positive the live hook must not produce.
+    A FAIL in a PROSE file is a genuine live-message false-positive the hook must
+    not produce (target: 0). A FAIL in a dated RECORD file (append-log / ledger /
+    register / cross-source-log / redteam) is a historical citation, not a live
+    message — reported separately, not counted against the live-FP target.
     """
     root = Path(REPO) / "research"
     total_files = 0
-    fp_files = []
+    prose_fp, record_fp = [], []
     for p in sorted(root.rglob("*.md")):
         total_files += 1
         try:
@@ -393,11 +457,16 @@ def _backtest() -> None:
             continue
         fl, _ = extract_claims(text, REPO)
         if fl:
-            fp_files.append((str(p.relative_to(REPO)), fl))
-    print(f"backtest: {total_files} files scanned, {len(fp_files)} with FAIL verdicts")
-    for name, fl in fp_files:
+            rel = str(p.relative_to(REPO))
+            (record_fp if _RECORD_FILE.search(rel) else prose_fp).append((rel, fl))
+    print(f"backtest: {total_files} files scanned")
+    print(f"  LIVE-PROSE FAIL verdicts (must be 0): {len(prose_fp)}")
+    for name, fl in prose_fp:
         for k, d in fl:
-            print(f"  FP? {name}: [{k}] {d}")
+            print(f"    FP! {name}: [{k}] {d}")
+    print(f"  historical-RECORD citations (expected, not live FPs): {len(record_fp)} file(s)")
+    for name, fl in record_fp:
+        print(f"    (record) {name}: {len(fl)} historical-SHA citation(s)")
 
 
 if __name__ == "__main__":
