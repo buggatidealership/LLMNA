@@ -990,3 +990,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 05:23:40Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-07-22 05:38:32Z git-guard-pretooluse BLOCK (mv of .git / research / portfolio (record relocation))
 - 2026-07-22 05:39:35Z git-guard-pretooluse BLOCK (mv of .git / research / portfolio (record relocation))
+- 2026-07-22 06:00:31Z session-prime-hook event=resume injected=False (skipped non-startup)
