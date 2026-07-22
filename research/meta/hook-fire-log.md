@@ -1220,3 +1220,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 13:03:43Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
 - 2026-07-22 13:03:43Z git-guard-pretooluse BLOCK (tee onto an enforcement/protected file (content overwrite))
 - 2026-07-22 13:04:01Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards)
+- 2026-07-22 19:37:03Z session-prime-hook event=resume injected=False (skipped non-startup)
