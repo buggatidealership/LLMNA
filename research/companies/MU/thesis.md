@@ -1,3 +1,5 @@
+**📌 [2026-07-22] cHBM COMPETITIVE DATUM (Rule #10 back-ref).** Per `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md`: Micron's TSMC-fabbed custom logic base die for HBM4E ramping 2027 (T2) = the most CONCRETE custom-HBM program among the three makers — a genuine architecture-differentiation datum ahead of the cHBM/Feynman era (NVIDIA T1: Feynman features custom HBM; 2028 NVIDIA date vs 2029 memory-framing, drift flagged). HBM4 on microbumps confirmed (hybrid bonding industry-wide slips to HBM5-era). **Position implication: ⚪ NO ACTION — not held; datum feeds the memory-competitive map.**
+
 # Micron Technology (MU) — Thesis Stub
 
 **Last updated:** 2026-06-11 (initial — created post 3-subagent Hynix-vs-Micron deep verification; user's recollection re Micron NVDA qualification was correct and verified)

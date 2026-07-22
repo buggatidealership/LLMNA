@@ -3514,3 +3514,14 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`
 **Commit:** (this commit)
+
+## 2026-07-22 EVE — 3-input batch (TSMC 2027 hike / TrendForce NAND crossover / Samsung hybrid bonding)
+**Fires:** 2 (Opus, parallel; Chinese-native + Korean-native). **Est. tokens:** ~85k (22.3k TW pair + 62.7k KR hybrid-bonding).
+**Items verified:** 3 inputs, all pinned to primary: Nikkei origin + TrendForce release 20260721-13148 (both T1) + The Elec/ZDNet KR decomposition (fresh core vs recycled frame).
+**Yield class:** HIGH (TSMC canonical phrasing pinned — killed the "25%" headline ambiguity; NAND crossover = first dated end-date in the memory complex, feeds two print adjudicators) / HIGH (hybrid-bonding: BESI falsifier-not-fired adjudication + Feynman 2028-vs-2029 date-drift catch + fresh-core/recycled-frame split).
+**Framing errors caught:** 2 ("up to 25%" stacking ambiguity; Feynman date drift).
+**Thesis cascade triggered:** BESI, HYNIX, KIOXIA, SNDK, MU back-refs; bottlenecks foundry+NAND rows; TC-1 TV note #2.
+**Position implication delta:** NONE (user-gated).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md`
+**Commit:** (this commit)

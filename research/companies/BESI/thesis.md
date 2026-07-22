@@ -1,3 +1,6 @@
+**📌 [2026-07-22] HBM HYBRID-BONDING WATCH-LINE HARDENED (Rule #10 back-ref).** Per `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md` (Korean-native verification): Samsung IS building the 50-unit D2W hybrid-bonding line at Pyeongtaek with **BESI named top-priority supplier, carry-in from end-2026** (The Elec ~07-21, T2) — but large-scale production expectation stays ~2029-30 (ZDNet 07-06 REPORTED, single-outlet). Net: the HBM order wave = qualification-stage now, volume pushed right — **DELAY confirmed, reversal falsifier NOT fired** (no memory maker has committed hybrid-bonding insertion for HBM5 volume). TC-5/PLP/logic legs untouched. Date-drift guard: NVIDIA's Feynman = 2028 (T1 GTC); "2029" = memory-availability framing — keep the one-year gap explicit in any timing model.
+**Position implication: ⚪ NO ACTION — watchlist stance unchanged — HBM leg = optionality with slip-risk, exactly as pre-registered 07-06; the 50-unit line + named-supplier status is the strongest qualification-stage receipt yet.**
+
 # BESI (BE Semiconductor Industries — AMS:BESI / NASDAQ:BSEMY) — Thesis stub
 
 **Last updated:** 2026-07-06 (HBM hybrid-bonding-slip watch-line added; prior 2026-06-15 PM)

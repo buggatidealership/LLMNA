@@ -35,6 +35,8 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 ---
 
 ## TC-1 — Memory tightness multi-tier convergence [ACTIVE]
+
+**[2026-07-22 TV note #2 — second-derivative marker]:** TrendForce dated the FIRST supply crossover in the memory complex: NAND bit gap turns POSITIVE 2H2027 (T1 release Jul-21; shortage intact −4~5% through 2026; consumer demand-destruction doing half the rebalancing — smartphone production −15~20% 2026). NAND leg of TC-1 now carries an analyst end-date; DRAM/HBM leg carries NONE (asymmetry favors DRAM/HBM exposure). TV #1 (Jul-11: first moderation language, NAND Q3 +10-15% vs 1H ~95%) + this = the deceleration series is now 2 points. Grades against KIOXIA Jul-31 + SNDK Aug-5 guidance language. Per `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md`.
 **Segment:** memory-and-storage
 **Direction:** structural shortage, premium-tier pricing power
 
