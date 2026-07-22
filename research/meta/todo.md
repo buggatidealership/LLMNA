@@ -709,10 +709,9 @@
   - Scope: multi-agent enumeration of cost structures w/ cognition >~50% COGS + latent demand at lower price points ("only the rich could afford X") + impossible-at-any-price primitives; run the viability-flip screen (pre-2023 labor prices) on each candidate; rank into a Mode-B candidate register; apply toy-detector + Griffin attribution filter; condition design on the historical base-rate agent's H1/H2/H3 verdict (if H3, add graveyard denominator)
   - Linked: wiki/newly-viable-frontier.md, wiki/agent-native-organization.md, sector/end-demand-durability-model.md
 
-- [ ] **P1 / research / 2026-07-15** [INDP, AF, OPT, CAL] — AGENTIC-DAU runway instrument: build proxy basket + first reading (then monthly recurring) — **PARTIAL 2026-07-14: education vertical module BUILT ahead of schedule (user-commissioned 9-agent workflow) at `meta/education-ai-adoption-instrument.md` — 10 tracking series, 8 genuine actives anchors, 15pct-activation haircut prior. Remaining tomorrow: the GENERAL basket (coding/enterprise/consumer assistants) + wire in TWO completed modules: education vertical (`meta/education-ai-adoption-instrument.md`) + SCAFFOLD module (`meta/lab-scaffolding-usage-instrument.md`, built 07-14 EVE — user-corrected commission).**
-  - Origin: user-designed 2026-07-12 night (`wiki/newly-viable-frontier.md` §6b) — demand-runway metric for compute/memory vs agentic adoption curve
-  - Scope: define basket (Claude Code/Copilot/Cursor-class disclosed users; agent MAUs; API token volumes; enterprise seats); document per-component source+tier+date; compute first composite reading + honest uncertainty band; wire into end-demand-durability-model TVs; set monthly refresh
-  - Linked: wiki/newly-viable-frontier.md §6b, sector/end-demand-durability-model.md
+- [ ] **P2 / research / 2026-08-22** [INDP, AF, OPT, CAL, recurring] — AGENTIC-DAU monthly reading #2 (instrument COMPLETE 2026-07-22: general basket `meta/agentic-dau-general-basket.md` + education + scaffold modules, wired into `sector/end-demand-durability-model.md` head block; reading #1 = 🟡 DIRECTIONAL intensity-based support). Monthly scan per basket §E watch-series; highest-value pending disclosure: OpenAI ChatGPT WAU refresh
+  - Origin: user-designed 2026-07-12 night (`wiki/newly-viable-frontier.md` §6b); built 07-14 (2 modules) + 07-22 (general basket)
+  - Linked: meta/agentic-dau-general-basket.md, sector/end-demand-durability-model.md
 
 - [ ] **P2 / research / 2026-07-20** [INDP, AF] — Chokepoint-history study: ASML/TSMC precedent comparison
   - Origin: user question 2026-07-12 ("has there ever been that amount of chokepoint?")
