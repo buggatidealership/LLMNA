@@ -1045,3 +1045,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 18:52:09Z anti-fabrication-hook INCONCLUSIVE (n=1 '77%' forms=[("'77%'", None, 'TimeoutExpired')] verdict:pending)
 - 2026-07-22 19:34:29Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 19:37:00Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 20:18:27Z session-prime-hook event=resume injected=False (skipped non-startup)
