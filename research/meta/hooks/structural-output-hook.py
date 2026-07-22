@@ -248,13 +248,16 @@ def _log_fire(reason: str) -> None:
         from datetime import datetime, timezone
         log_path = Path(ENFORCEMENT_PATHS[0]) / "research/meta/hook-fire-log.md"
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
-        # Probe tag (2026-07-22, metric-integrity rework channel B): a test
-        # battery that runs this hook appends real FIRE lines. When
-        # LLMNA_HOOK_TEST=1 the fire is tagged [probe] so structural-output-
-        # metric.py drops it — probe pollution can never move the scoreboard.
-        probe = " [probe]" if os.environ.get("LLMNA_HOOK_TEST") == "1" else ""
+        # REWORK-5 (K3 finding 5a): the LLMNA_HOOK_TEST=[probe] tag was REMOVED —
+        # it was a scoreboard-zeroing lever (set the env var during the measured
+        # window and every REAL fire got tagged [probe] and dropped from the
+        # numerator). Test isolation is now done the ONLY tamper-evident way: a
+        # test points CLAUDE_PROJECT_DIR at a throwaway root so its fires land in
+        # a temp log, never the real one. The measured process can no longer
+        # suppress its own score via an env var. (The metric still drops any
+        # legacy [probe]/smoke lines already committed — harmless.)
         with open(log_path, "a") as lf:
-            lf.write(f"- {ts} structural-output-hook FIRE ({reason}){probe}\n")
+            lf.write(f"- {ts} structural-output-hook FIRE ({reason})\n")
     except Exception:
         pass
 

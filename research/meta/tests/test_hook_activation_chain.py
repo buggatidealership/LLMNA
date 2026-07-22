@@ -63,13 +63,23 @@ for event, rel in wired:
 
 
 # ---- (B) new hooks RUN by bare path (not 126) + behave ----
-env = dict(os.environ, CLAUDE_PROJECT_DIR=str(REPO), LLMNA_HOOK_TEST="1")
+# Fire the REAL hook files, but point CLAUDE_PROJECT_DIR at a SANDBOX root so any
+# FIRE they log lands in the sandbox — the activation test must not pollute the
+# real hook-fire-log (rework-5a "tests isolate via CLAUDE_PROJECT_DIR"). The
+# sandbox mirrors the files the hooks read (a copy of the promises registry).
+_SBOX = tempfile.mkdtemp(prefix="activation-")
+os.makedirs(os.path.join(_SBOX, "research", "meta"), exist_ok=True)
+_real_reg = REPO / "research" / "meta" / "promises-registry.md"
+if _real_reg.exists():
+    (Path(_SBOX) / "research" / "meta" / "promises-registry.md").write_text(_real_reg.read_text())
+env = dict(os.environ, CLAUDE_PROJECT_DIR=_SBOX)
 
 def fire_bare(rel, stdin, cwd=None):
-    """Invoke exactly as settings.json does: the bare path is the argv[0]."""
+    """Invoke exactly as settings.json does: the bare path is the argv[0]. The
+    hook FILE is the real one; its repo-root/log/scope resolve to the sandbox."""
     path = str(REPO / rel)
     return subprocess.run([path], input=stdin, capture_output=True, text=True,
-                          env=env, cwd=cwd or str(REPO))
+                          env=env, cwd=cwd or _SBOX)
 
 # receipts-hook: build a transcript with a fabricated file-claim -> must BLOCK (exit 2)
 with tempfile.TemporaryDirectory() as td:

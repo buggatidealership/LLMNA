@@ -74,7 +74,15 @@ def week_key(d: date) -> str:
 
 
 # (A)+(B) numerator classifier — the single machine-checkable rule.
-_FIRE = re.compile(r"- (\d{4}-\d{2}-\d{2}) .*structural-output-hook FIRE\b(.*)$")
+# REWORK-5 (K3 finding 5c — CROSS-HOOK INJECTION CLOSED): the old regex used
+# `- <date> .*structural-output-hook FIRE`, so the phrase could appear ANYWHERE
+# in the line — a promise-heartbeat log line echoing a registry WHAT-string that
+# CONTAINED "structural-output-hook FIRE (structural-markers-missing)" was
+# miscounted as a genuine fire. Anchor the hook-source name IMMEDIATELY after the
+# full `YYYY-MM-DD HH:MM:SSZ` timestamp (the log's `- <ts> <hook> <msg>` shape),
+# so only a line whose LOG SOURCE is the structural-output-hook counts. A phrase
+# embedded in another hook's message can no longer forge a fire.
+_FIRE = re.compile(r"- (\d{4}-\d{2}-\d{2}) \d{2}:\d{2}:\d{2}Z structural-output-hook FIRE\b(.*)$")
 _EXCLUDE_MARKERS = ("position-implication-tier-missing", "[probe]",
                     "smoke-test", "NOT a genuine fire", "do not count")
 
@@ -201,6 +209,17 @@ def _selftest() -> int:
           is_counted_fire("- 2026-05-20 06:42:10Z structural-output-hook FIRE (structural-markers-missing)") is None)
     check("non-fire line ignored",
           is_counted_fire("- 2026-07-01 10:00:00Z git-guard-pretooluse BLOCK (x)") is None)
+    # REWORK-5c: a cross-hook line that merely CONTAINS the fire phrase in another
+    # hook's message (e.g. a promise-heartbeat line echoing a registry WHAT-string)
+    # must NOT be counted — the hook-source name is anchored after the timestamp.
+    check("REWORK-5c: cross-hook injected fire phrase NOT counted",
+          is_counted_fire("- 2026-07-27 10:00:00Z promise-heartbeat OVERDUE set changed: "
+                          "[2026-07-01] structural-output-hook FIRE (structural-markers-missing)") is None)
+    check("REWORK-5c: genuine fire (hook-source anchored) still counted",
+          is_counted_fire("- 2026-07-27 10:00:00Z structural-output-hook FIRE (structural-markers-missing)") is not None)
+    # REWORK-5c: a registry-injected line without a real timestamp also rejected
+    check("REWORK-5c: no real timestamp -> not counted",
+          is_counted_fire("- 2026-07-27 structural-output-hook FIRE (structural-markers-missing)") is None)
 
     # (C)+(D) against a synthetic repo
     import tempfile

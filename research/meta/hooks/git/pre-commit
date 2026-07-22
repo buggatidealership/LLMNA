@@ -116,5 +116,22 @@ if git diff --cached --name-only | grep -qE "$COUNT_SRCS"; then
   fi
 fi
 
+# Function 6 — ALARM-LOG APPEND-ONLY (added 2026-07-22, rework-5b, K3 finding 5).
+#   hook-fire-log.md is the structural-output metric's NUMERATOR source. A mixed
+#   commit that REWRITES or DELETES existing fire lines (K3 rewrote 155 of them
+#   inside a clean-passing commit) can move the 2026-08-06 scoreboard. The log is
+#   append-only telemetry: block any staged change that REMOVES lines from it.
+#   Legitimate prune: re-commit with OPERATOR_APPROVED_DELETION=1.
+if git diff --cached --name-only | grep -qx "research/meta/hook-fire-log.md"; then
+  REMOVED=$(git diff --cached --numstat -- research/meta/hook-fire-log.md | awk '{print $2+0}')
+  if [ "${REMOVED:-0}" -gt 0 ] && [ "${OPERATOR_APPROVED_DELETION:-0}" != "1" ]; then
+    echo ""
+    echo "=== pre-commit: BLOCKED — hook-fire-log.md is APPEND-ONLY; this commit removes/rewrites ${REMOVED} existing line(s) ==="
+    echo "The fire-log is the structural-output metric's numerator source; rewriting it moves the 08-06 scoreboard."
+    echo "If this is a legitimate prune, re-commit with OPERATOR_APPROVED_DELETION=1."
+    exit 1
+  fi
+fi
+
 echo "=== pre-commit: OK ==="
 exit 0

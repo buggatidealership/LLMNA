@@ -22,6 +22,14 @@ from pathlib import Path
 _REPO = os.environ.get("CLAUDE_PROJECT_DIR") or str(Path(__file__).resolve().parents[3])
 HOOK = os.path.join(_REPO, "research", "meta", "hooks", "structural-output-hook.py")
 
+# REWORK-5 (K3 finding 5a): isolate this test's fires the tamper-evident way —
+# a throwaway CLAUDE_PROJECT_DIR so the hook writes any FIRE to a TEMP log, never
+# the real one. (Replaces the removed LLMNA_HOOK_TEST=[probe] env tag, which was
+# a scoreboard-zeroing lever.) The hook resolves its repo-root + log path + scope
+# from CLAUDE_PROJECT_DIR, so pointing it at a temp root fully isolates the fire.
+_SANDBOX = tempfile.mkdtemp(prefix="so-tiergate-")
+os.makedirs(os.path.join(_SANDBOX, "research", "meta"), exist_ok=True)
+
 
 def run(assistant_text):
     # build a minimal one-line JSONL transcript with a single assistant message
@@ -31,11 +39,9 @@ def run(assistant_text):
                             "message": {"role": "assistant",
                                         "content": [{"type": "text", "text": assistant_text}]}}) + "\n")
     payload = json.dumps({"transcript_path": path, "stop_hook_active": False})
-    # LLMNA_HOOK_TEST=1 -> the hook tags any fire it logs with [probe] so
-    # structural-output-metric.py excludes it (channel-B probe-pollution guard).
-    env = dict(os.environ, LLMNA_HOOK_TEST="1")
+    env = dict(os.environ, CLAUDE_PROJECT_DIR=_SANDBOX)
     r = subprocess.run([sys.executable, HOOK], input=payload, capture_output=True,
-                       text=True, cwd=_REPO, env=env)
+                       text=True, cwd=_SANDBOX, env=env)
     os.unlink(path)
     return r.returncode
 
