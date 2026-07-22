@@ -1,0 +1,27 @@
+# 2026-07-22 — K3 blind review of the accounting-layer branch: ADJUDICATION → NOT SAFE TO MERGE (independently reproduced)
+
+**Subject:** branch `claude/harness-accounting-audit-it2e0w` (+1715/-60). K3 (cross-family) ran the amended/taint-audited commission (`2026-07-22-K3-commission-INDEPENDENT-taint-audited-reference.md`) — 200 hook runs by 4 breakers + K3's own re-run of 21 flagship findings. K3 brief-integrity check: no leak from the brief (branch's own files name the rework; the brief did not). K3 verdict: **NOT SAFE TO MERGE TO MAIN**, 5 load-bearing findings + a 7-item rework list.
+
+**This-session independent reproduction (Opus; a claim is RUN, not believed):**
+| # | Finding | My reproduction | Verdict |
+|---|---|---|---|
+| 1 | Both flagship hooks (`receipts-hook.py`, `promise-heartbeat.py`) shipped mode **100644** (non-exec) while all working hooks are 100755; settings.json invokes them by bare `"$CLAUDE_PROJECT_DIR"/...path`, NOT `python3` → exit 126 Permission-denied → ZERO enforcement runs | `git ls-tree` confirmed the modes + the direct-invocation wiring | 🔴 CONFIRMED (fatal) |
+| 4 | git-guard rework closed the 4 oracle payloads but neighbor bypasses live one token away | Ran the branch guard: `git -c x=1 commit -n` → exit 0; `git --no-pager commit -n` → exit 0; plain `commit -n` still blocks (control) | 🔴 CONFIRMED (2 reproduced) |
+| 5 | 08-06 metric gameable: `LLMNA_HOOK_TEST=1` tags fires `[probe]` → excluded from numerator; measured process controls the var; +155-FIRE-line rewrite committable in a mixed commit; registry WHAT-string cross-hook injection | metric line 36 confirms the env-var `[probe]` tagging mechanism | 🔴 mechanism CONFIRMED |
+| 2 | receipts-hook launders its own blocks (block line → committed telemetry → grounding treats any corpus string as proof); true statements ("I haven't pushed yet") FP-blocked when repo ahead | NOT personally re-run; accepted on K3 execution + code plausibility | 🟡 PLAUSIBLE (K3-reproduced) |
+| 3 | heartbeat 4 mandate violations: `[x]` closes a promise with no receipt; malformed `DUE: ` line invisible → "all promises current"; poison date `2026-13-99` disables the lane; state-hash written before log append → overdue never reaches git on a failed append | NOT personally re-run; accepted on K3 execution + code plausibility | 🟡 PLAUSIBLE (K3-reproduced) |
+
+**What survives (K3 + confirmed good):** the metric reclassification matches hand-computation on all 8 weeks; counts generator reproduces ground truth on all 8 rows; the 4 oracle payloads are truly closed; all selftests green; the 3 reworked fixtures pass and exercise shipped paths. The mechanisms that WORK, work; the ones that were the CORE of the mandate (receipts + heartbeat) do not run.
+
+**VERDICT: MERGE GATE RED. The branch does NOT merge to `main`.** Independent reproduction upholds K3's NOT-SAFE call on the objective findings (#1, #4, #5).
+
+## Meta-lessons (booked)
+1. **Arc's law, 3rd demonstration:** the receipts-hook built to stop the logbook lying is itself a logbook entry that lies (claims enforcement it cannot execute). It passed self-review because the builder tested `python3 hook.py --selftest` (exec-bit-independent) but shipped the direct-invocation path. Same mind, same blind spot, one layer down.
+2. **The amended brief was load-bearing:** the single amendment (point K3 at NEW-machinery correctness, not just breaking the guards) is what surfaced #1. The builder's original brief would not have.
+3. **The branch convicts itself:** its own `computed-counts.py --audit` flags `[DRIFT] hooks: asserts 19, territory=21` on the branch — the account ran ahead of the mechanism.
+4. **NEW HARD RULE (candidate):** no enforcement hook ships without (a) an exec-bit assertion (100755) and (b) a test that invokes it EXACTLY as settings.json does (bare-path direct invocation), not merely `python3 hook.py --selftest`. The "test the shipped invocation path" gap is the root cause of #1.
+
+## Routing (07-24 harness session; the branch is the workspace, NOT main)
+7-item rework (full list in K3's `2026-07-22-blind-review-harness-accounting-branch.md`, held by operator): (1) chmod +x both hooks + add exec-bit test; (2) receipts-hook: stop grounding on own committed telemetry, fix the repo-ahead FP; (3) heartbeat: require receipt for closure, handle malformed/poison dates loud, log-before-state-hash; (4) git-guard: catch global-option-prefixed `commit -n` (`-c`, `--no-pager`, `-C`) + tee/redirect/cp onto protected paths; (5) metric: ignore `LLMNA_HOOK_TEST` for numerator, guard against self-authored FIRE-line rewrites + WHAT-string injection; (6) re-run K3 (or blind adversaries) on the reworked branch — same cross-family gate; (7) only then merge. **K3's exact payloads are the permanent-fixture oracle.**
+
+**Position implication: NO ACTION (harness-meta). 🔴 branch BLOCKED from main by independent reproduction of a fatal + 4 supporting findings; the cross-family gate did exactly its job — caught a dead-on-arrival core mechanism that solo probe-gating shipped green; rework routed with the oracle attached.**
