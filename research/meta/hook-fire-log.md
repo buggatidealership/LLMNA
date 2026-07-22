@@ -997,3 +997,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 06:32:56Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 06:42:07Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-22 07:00:35Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-22 07:20:41Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards)
+- 2026-07-22 07:21:05Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards)
+- 2026-07-22 07:21:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
+- 2026-07-22 07:21:50Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-22 07:21:50Z structural-output-hook FIRE (structural-markers-missing)
