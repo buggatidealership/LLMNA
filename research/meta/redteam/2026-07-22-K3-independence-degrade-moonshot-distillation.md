@@ -33,3 +33,20 @@ The exposure is NOT symmetric across K3's two review functions:
 - Lesson candidate (L42?): "a cross-family oracle's independence is a re-verifiable variable; the reproduce-don't-trust gate protects the finding side but not the clearance side — weight oracles by disagreement, discount agreement."
 
 **Position implication: ⚪ NO ACTION (harness-meta, not market). The market angle — US-China AI sanctions/export-control escalation (GB300-in-Thailand + Treasury sanction authority) — feeds the decoupling macro cluster + the China-foreign-fab-ban WATCH from the same brief; not a book input tonight.**
+
+---
+
+## ADDENDUM (2026-07-22 EVE) — the deeper input (Principle #49 application): clearance-by-coverage, not oracle-authority
+User invoked #49 ("find the input I'm trying to compute, don't take my words literally") on the request to write a K3 verification probe. The input being computed is NOT "is K3 clean?" but **`review_integrity_dependence_on_oracle_independence` — and whether it can be driven to zero.**
+
+**The computation (decomposition of where the dependency lives):**
+- K3 **FINDS a hole** (disagreement): ~0 dependence on K3's independence — every hole is reproduced by execution; a shared blind spot can't manufacture a false find. Integrity here = the reproduce-gate, not the oracle.
+- K3 **CLEARS it** ("SAFE" = agreement): this is the ENTIRE exposure — a "no more holes" claim is an ABSENCE, unreproducible, so you're forced to trust the sign-off's independence.
+
+**The move — delete the exposure architecturally:** stop certifying "safe because an independent mind signed off." Certify **"safe because these N enumerated attack classes were each EXECUTED and observed BLOCKED, and the attack set was adversarially expanded by ≥2 diverse minds until it went dry."** Consequences: (1) the oracle's only load-bearing job becomes EXPANDING the attack set (the finding function, already immunized by reproduction); (2) no oracle's SAFE verdict is ever load-bearing — "safe" becomes a coverage FACT, not an authority CLAIM; (3) the distillation accusation stops mattering to what we do — a compromised K3 just fails to expand coverage on shared-blind-spot classes (a gap detected by a second diverse mind or the known-blind-spot corpus, NOT a false clearance we swallow).
+
+**Reframe of "cross-family review":** the family boundary was never the mechanism — it was a proxy for "diverse minds expanding coverage." Coverage-until-dry across diverse minds is the real invariant; oracle lineage-purity is not. This SUPERSEDES the cross-family-review framing as the harness's answer to "who audits the auditor."
+
+**Demotion of the behavioral probe** (`2026-07-22-K3-distillation-behavioral-probe.md`): from THE deliverable → one attack-set-expander among several (it enumerates our known blind spots as reproducible test items = exactly the coverage the new criterion needs). It no longer carries the decision.
+
+**PENDING USER CONFIRM:** rebuild the accounting-layer merge-gate to certify on reproduced-coverage-until-dry (not K3's SAFE) + codify the coverage-not-authority principle (candidate #50). Flagged, not yet executed — awaiting the go (the user framed this as a hypothesis / "find the input," not yet a build order).
