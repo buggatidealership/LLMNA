@@ -1002,3 +1002,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-22 07:21:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git)
 - 2026-07-22 07:21:50Z structural-output-hook FIRE (position-implication-tier-missing)
 - 2026-07-22 07:21:50Z structural-output-hook FIRE (structural-markers-missing)
+- 2026-07-22 07:31:24Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-22 07:41:28Z session-prime-hook event=resume injected=False (skipped non-startup)
