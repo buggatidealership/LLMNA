@@ -13,9 +13,15 @@ _REPO = os.environ.get("CLAUDE_PROJECT_DIR") or str(Path(__file__).resolve().par
 HOOK = os.path.join(_REPO, "research", "meta", "hooks", "git-guard-pretooluse.py")
 
 
+import tempfile as _tf
+_SBOX = _tf.mkdtemp(prefix="gg-test-")
+os.makedirs(os.path.join(_SBOX, "research", "meta"), exist_ok=True)
+_ENV = dict(os.environ, CLAUDE_PROJECT_DIR=_SBOX)  # isolate BLOCK telemetry (rework-6)
+
 def run(cmd):
     p = json.dumps({"tool_name": "Bash", "tool_input": {"command": cmd}})
-    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True, text=True).returncode
+    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True,
+                          text=True, env=_ENV).returncode
 
 
 GT = ">"  # assembled so this test file's own text can't trip a scanner

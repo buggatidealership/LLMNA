@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Extra probe for the git-commit-adjacency tightening.
 FP reduced from 'any commit -n in text' to 'only literal git-commit-n adjacency'."""
-import json, subprocess, sys
-HOOK = "/home/user/LLMNA/research/meta/hooks/git-guard-pretooluse.py"
+import json, os, subprocess, sys, tempfile
+from pathlib import Path
+_REPO = os.environ.get("CLAUDE_PROJECT_DIR") or str(Path(__file__).resolve().parents[3])
+HOOK = os.path.join(_REPO, "research", "meta", "hooks", "git-guard-pretooluse.py")
+_SBOX = tempfile.mkdtemp(prefix="gg-test-")
+os.makedirs(os.path.join(_SBOX, "research", "meta"), exist_ok=True)
+_ENV = dict(os.environ, CLAUDE_PROJECT_DIR=_SBOX)  # isolate BLOCK telemetry (rework-6)
 def run(cmd):
     p = json.dumps({"tool_name": "Bash", "tool_input": {"command": cmd}})
-    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True, text=True).returncode
+    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True,
+                          text=True, env=_ENV).returncode
 C = "git " + "commit "
 cases = [
     # prose WITHOUT git-commit adjacency -> now PASS (the fix)

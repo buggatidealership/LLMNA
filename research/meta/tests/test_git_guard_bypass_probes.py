@@ -12,9 +12,19 @@ from pathlib import Path
 _REPO = os.environ.get("CLAUDE_PROJECT_DIR") or str(Path(__file__).resolve().parents[3])
 HOOK = os.path.join(_REPO, "research", "meta", "hooks", "git-guard-pretooluse.py")
 
+# isolate git-guard BLOCK telemetry into a temp root so this test never writes to
+# the real hook-fire-log (rework-6: no test pollutes the committed log). The
+# guard's block matchers are REPO-independent (relative research/ + CLAUDE.md
+# patterns and hardcoded tokens), so blocking behavior is unchanged.
+import tempfile as _tf
+_SBOX = _tf.mkdtemp(prefix="gg-test-")
+os.makedirs(os.path.join(_SBOX, "research", "meta"), exist_ok=True)
+_ENV = dict(os.environ, CLAUDE_PROJECT_DIR=_SBOX)
+
 def run(cmd):
     p = json.dumps({"tool_name": "Bash", "tool_input": {"command": cmd}})
-    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True, text=True).returncode
+    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True,
+                          text=True, env=_ENV).returncode
 
 RM = "rm " + "-rf "
 C = "git " + "commit "
