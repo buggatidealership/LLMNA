@@ -3475,3 +3475,20 @@
 **Audit-day classification:** POSITIVE
 **Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-eve-3input-batch-smci-openrouter-verarubin.md`
 **Commit:** (this commit)
+
+### [2026-07-22 KR-WAKE] Wed KR open + H3 dashboard (Routine wake #3, 2 agents)
+
+**Trigger source:** autonomous KR-open Routine (00:22Z fire, Wed)
+**Subagents fired:** 2 (Opus: KR discriminator ~99k/42 tools; H3 dashboard ~30k/16 tools)
+**Estimated token cost:** ~129k (actual subagent_tokens)
+**Items verified:** Brent $90-break + settle, 10Y, Houthi-blockade (4-outlet triangulation), KR Tue close correction, Wed-open gap, mislabeled-Tuesday-data catch
+**Per-subagent yield:**
+- KR agent: MEDIUM — Wed open data-gapped (403) but corrected the Tue close (+3.56% buy sidecar) + caught a mislabeled-Tuesday-as-Wednesday print (B40)
+- H3 agent: HIGH — Brent $90-break + gate-distance recompute (~$4) + NEW Houthi-blockade vector triangulated; VIX/gold-flat divergence flagged
+**Brief-framing errors caught:** mislabeled 07-22 print = actually Tuesday (B40); ADR-vs-KRX instrument mismatch flagged
+**Thesis cascade triggered:** NONE (escorted; five-calls held; H3 watch elevated not triggered)
+**Position implication delta:** NONE
+**Material yield class:** MEDIUM-HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-kr-open-wake3-h3-brent-90-break-houthi-blockade.md`
+**Commit:** (this commit)
