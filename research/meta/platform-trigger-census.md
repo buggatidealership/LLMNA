@@ -16,6 +16,7 @@
 | trig_01EZhuMZMzScUsNR6g4YTPkB | send_later 2026-07-21T05:30Z | 2026-07-21 05:30Z (one-shot) | User-side checklist morning reminder (user request 07-20 EVE: "remind me tomorrow") — logged SAME TURN per the census rule |
 | trig_01D2xiGNq6oKPDXYSrHeqXLT | send_later 2026-07-21T20:55Z | FIRED 20:56Z (workflow progressing 299/349, not stalled — re-armed) | Workflow watchdog #1 |
 | trig_01BygW8k4FbLG8AeysSkA7JW | send_later 2026-07-21T21:27Z | 2026-07-21 21:27Z (one-shot) | Workflow watchdog #2 (re-arm): deliver-if-complete / salvage-if-stalled — logged SAME TURN |
+| trig_01CgA384CLFUZ7rhKNdQEo4V | send_later 2026-07-22T23:30Z | 2026-07-22 23:30Z (one-shot) | Twin-print GRADE wake: grade the 11 frozen IBM/NOW/GOOGL print-leg components (T+24h legs resolve 07-23) — logged SAME TURN |
 
 ## INERT (fired one-shots, self-disabled — audit trail, kept)
 11 send_later self-check-ins, 2026-07-06 → 2026-07-16 (E4-E7 test adjudications, NBIS/SKH/TSMC grade follow-ups). IDs in the 2026-07-19 list_triggers snapshots (session record + day-state SUN-EVE-#5/#6).
