@@ -32,7 +32,7 @@
 - [ ] **P3 / harness / 2026-07-24** [OPT] — session-prime per-item relative-age tags ([added YYYY-MM-DD · N days ago], computed at inject)
   - Origin: K3 mechanism-3 (priming temporal decay) 2026-07-20; the TODAY header shipped same day — per-item tags need parseable per-item dates (mostly present in house headers), scoped to the audit. Companion candidate: European decimal-comma normalization for grounding (parked — over-grounding risk needs a design pass).
   - Linked: meta/hooks/session-prime-hook.py, meta/session-prime.md
-- [ ] **P1 / prediction / 2026-07-21** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check (Program v2 amendment #2: 150 provenance-tagged calls by Oct audit, ~2/day via formalizing implicit wake calls; weekly tally at Monday wakes; kill-metric per program doc)
+- [ ] **P1 / prediction / 2026-07-27** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check #3 (Program v2 amendment #2: 150 provenance-tagged calls by Oct audit, ~2/day; weekly tally at Monday wakes; kill-metric per program doc). Check #2 EXECUTED 2026-07-21 (recurring-audit-log: BEHIND pace 2nd consecutive week, ~5-8/wk vs ~14 target; process fix routed to 07-24 audit). From 07-27 this check also carries the folded weekly cost-yield reading (G-09).
   - Origin: K3 plan review Q4 — n is the binding constraint, not method
   - Linked: predictions/probability-resolution-program.md, meta/tools/brier_tally.py
 
