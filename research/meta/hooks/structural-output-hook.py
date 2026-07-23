@@ -89,6 +89,9 @@ STRUCTURAL_MARKERS = [
     # Parallel hypothesis enumeration
     r"\bH1\b.*\bH2\b.*\bH3\b",          # H1...H2...H3 (parallel hypothesis pattern)
     r"hypothes(?:is|es).{0,80}P\s*[≈~=]\s*\d+%",  # hypothesis with P weight
+    # H-label with inline parenthesized P weight — "H1 (P=60%)" is the dominant
+    # house form in artifacts; was uncredited (07-23 audit, case-4 born-red root cause)
+    r"\bH\d+\s*\(\s*P\s*[≈~=]\s*\d+%\s*\)",
     r"##\s*Parallel\s+hypothes",        # explicit Parallel hypotheses heading
     r"##\s*Parallel\s+\w",              # any "Parallel X" heading
     # N-th order cascade markers
@@ -104,8 +107,10 @@ STRUCTURAL_MARKERS = [
     r"\bripple\b",
     r"\bcascade\b",
     r"\bdownstream\s+(?:beneficiary|effect|casualty)",
-    # Joint-state / cross-correlation table indicators
-    r"\bjoint\s+(?:state|matrix|distribution)",
+    # Joint-state / cross-correlation table indicators. Hyphenated form credited
+    # 07-23 audit: "joint-state matrix" is the exact CLAUDE.md/priming spelling,
+    # yet only the space-separated form was credited (case-4 born-red root cause).
+    r"\bjoint[-\s]+(?:state|matrix|distribution)",
     r"\bcross-?correlation",
     r"\bcross-?evaluat",
     r"\bmulti-?criteria",
@@ -168,7 +173,11 @@ EXEMPTION_PATTERNS = [
 # marker on the same line or the line directly above. The check runs
 # BEFORE the general STRUCTURAL_MARKERS pass-gate so other structural
 # markers do NOT excuse a missing tier on a sizing recommendation.
-POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$", re.MULTILINE)
+# 07-23 audit fix (K3 G-27 reopen): IGNORECASE added — the matcher was
+# case-sensitive, so a lowercase "position implication:" line escaped the
+# tier gate entirely. Casing fixtures added to test_structural_output_tier_gate.
+POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$",
+                                     re.MULTILINE | re.IGNORECASE)
 TIER_MARKER_RE = re.compile(r"[🟢🟡🔴]")
 
 

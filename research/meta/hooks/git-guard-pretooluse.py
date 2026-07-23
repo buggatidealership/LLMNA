@@ -49,6 +49,11 @@ CANON_HOOKS = "research/meta/hooks/git"
 # `find . -delete` and rmtree('.') passed the has_repo gate unexamined.
 REPO_TOKENS = re.compile(
     r"(" + re.escape(REPO) + r"|/home/user/LLMNA|\$\{?CLAUDE_PROJECT_DIR\}?|"
+    # 07-23 audit: tilde/$HOME repo aliases (find/xargs/interpreter/truncate/dd
+    # branches gate on REPO_TOKENS; `find ~/LLMNA -delete` previously passed).
+    # Deliberately repo-scoped only — bare `~` here would arm the repo gates on
+    # every home-dir mention; the rm branch handles bare-tilde separately.
+    r"~/LLMNA(/|\b)|\$\{?HOME\}?/LLMNA(/|\b)|"
     r"(^|[\s'\"=(])\.(/|['\"]|\s|$)|"
     r"(^|[\s'\"=(/])research(/|\b)|\.git(/|\b)|\bmethodology|"
     r"\bsession-prime|\blessons\.md|\bgrading-log|calibration-ledger|CLAUDE\.md|"
@@ -125,11 +130,26 @@ def main() -> None:
         # MESSAGE that merely contains a "-n" token does not false-block (verified live).
         if is_git and re.search(r"\bcommit\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-commit/commit-msg guards", cmd)
-        # Require `git commit` ADJACENCY (not bare "commit") so prose/heredoc text
-        # mentioning "commit -n" doesn't false-block — only an actual git-commit
-        # invocation does. Residual: `git -C <path> commit -n` is not caught (rare).
-        if is_git and re.search(
-                r"\bgit\s+commit\b((?!\s-m\b|\s--message\b|\s-F\b|\s--file\b)[^|;&])*?\s-[a-z]*n[a-z]*\b", s):
+        # commit -n (short --no-verify). 07-23 audit fix: the 07-21 tempered-greedy
+        # token refused to cross -m/-F, so `git commit -m "x" -n` (flag AFTER the
+        # message) bypassed it — probe-verified. Correct structure: spans that
+        # provably cannot carry an EXECUTED command are DATA — strip them, then
+        # scan the whole git-commit segment for a short-flag bundle containing n.
+        #   stripped : heredoc bodies NOT piped into a shell; echo/printf args
+        #              (resolves the old documented-residual echo-prose FP)
+        #   kept     : bash/sh -c "..." payloads (executed — must stay scanned);
+        #              -m "..." payloads already neutralized to MSG at the top.
+        # Long flags (--amend) can't match: [a-zA-Z]* refuses the second hyphen.
+        # push -n stays allowed (there it means --dry-run; separate push checks).
+        # Residuals (documented, confused-agent threat model): quoted flag
+        # `git commit "-n"`; heredoc piped into an interpreter other than *sh;
+        # `git commit -uno` (rare legit bundle with n) over-blocks — rephrase long-form.
+        def _heredoc_sub(m, _s=s):
+            pre = _s[max(0, m.start() - 40):m.start()]
+            return m.group(0) if re.search(r"\b(ba|z|da)?sh\b[^|;&]*$", pre) else " HEREDOC "
+        s_noq = re.sub(r"<<-?\s*(['\"]?)(\w+)\1[\s\S]*?\n\2\b", _heredoc_sub, s)
+        s_noq = re.sub(r"\b(echo|printf)\b[^|;&\n]*", r"\1 ECHOARG", s_noq)
+        if is_git and re.search(r"\bgit\b[^|;&]*\bcommit\b[^|;&]*\s-[a-zA-Z]*n[a-zA-Z]*\b", s_noq):
             block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
         if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-push guard", cmd)
@@ -167,8 +187,13 @@ def main() -> None:
             # regex and never consulted REPO_TOKENS, so `rm -rf $CLAUDE_PROJECT_DIR` and
             # `rm -rf ~/LLMNA` slipped past the G-24 hardening. Now gate on the tail
             # regex (extended with ~ / ~/LLMNA) OR the hardened REPO_TOKENS set.
+            # 07-23 audit fix (probe-verified bypasses): trailing-slash tilde form
+            # (~/LLMNA/), home-wipe (~/), and $HOME/${HOME} forms all exited 0 —
+            # the old `~(/LLMNA)?` required a boundary immediately after, which a
+            # trailing slash broke, and $HOME had no pattern at all.
             if re.search(rf"(\s|=|'|\"|^)({re.escape(REPO)}(/research|/\.git|/portfolio)?/?|"
-                         r"research/?|\.git/?|portfolio/?|~(/LLMNA)?|\.|/)(\s|$|'|\")", tail) \
+                         r"research/?|\.git/?|portfolio/?|~(/LLMNA)?/?|"
+                         r"\$\{{?HOME\}}?(/LLMNA)?/?|\.|/)(\s|$|'|\")", tail) \
                     or REPO_TOKENS.search(tail):
                 block("recursive force-delete aimed at repo root / research / portfolio / .git", cmd)
         if has_repo and re.search(r"\bfind\b[^|;&]*(-delete\b|-exec\s+(rm|unlink)\b)", s):

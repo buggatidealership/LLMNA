@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """git-guard probe harness. Payloads assembled from fragments; run via
 `python3 gg_probe.py` only (never inline in a shell cmd — the live guard scans cmds)."""
-import json, subprocess, sys
-HOOK = "/home/user/LLMNA/research/meta/hooks/git-guard-pretooluse.py"
+import json, os, subprocess, sys
+HOOK = os.path.join(os.environ.get("CLAUDE_PROJECT_DIR") or "/home/user/LLMNA",
+                    "research", "meta", "hooks", "git-guard-pretooluse.py")
 
 def run(cmd):
     p = json.dumps({"tool_name": "Bash", "tool_input": {"command": cmd}})
