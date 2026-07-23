@@ -661,3 +661,6 @@ REINFORCE (near-term demand leg): TrendForce 3Q26 DRAM contract **+13-18% conv /
 ## 2026-07-20 — Samsung–Nvidia NAND/CMX alliance (KV-cache-SSD demand vector, 2-agent + primary-source verified)
 REINFORCE (enterprise/AI-eSSD demand leg — the mix moat this thesis already leans on): KV-cache→SSD offload confirmed REAL & multi-vendor (N=5, named Nvidia platform CMX). Adds to the demand-bifurcation read (AI tier pays, consumer tier resists). Magnitude single-source (Citi vs Kiwoom conflict) → direction not size. Per `signals/cross-source-log/2026-07-20-mon-samsung-nvidia-nand-cmx-alliance-2agent-INGEST.md`.
 **Position implication: NO POSITION — user-closed (watchlist-reference) — thesis-level REINFORCE on the enterprise-eSSD demand vector; re-entry stays fresh-envelope-gated. 🟡**
+
+## 2026-07-23 — Counterpoint NAND share back-ref (signals/cross-source-log/2026-07-23-thu-10input-batch-mlcc-lta-ymtc-wenfeng-corporate-4agent.md)
+SanDisk share flat 13→13% Q1'25→Q1'26 (verified Counterpoint; "YMTC surpassed SanDisk" viral framing = contradicted, three-way tie). Share stability while Kioxia/Samsung donate is thesis-neutral-to-mildly-supportive; HBF gates unchanged as the real adjudicators. **Position implication: HOLD — no size change — 🟡 datum neutral; Gate-2 FMS/Hot-Chips read (~Aug) unchanged.**
