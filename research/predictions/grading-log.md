@@ -136,3 +136,33 @@ When a resolution date hits:
 
 **Status: ✅ GRADED (T+0 fundamental + T+24h + T+72h stock-reaction)**
 
+
+---
+
+## [2026-07-23] CATCH-UP GRADES (W11 wake-audit-3 recovery; source detail in `signals/cross-source-log/2026-07-23-w11-wake-audit-3-17day-catchup.md`)
+
+### SAMSUNG-Q2-prelim (resolved 2026-07-07) — PARTIAL GRADE
+Predicted: OP pt ₩92tn vs FnGuide bar ₩85.59tn (band ₩87-97tn). Actual: OP ₩89.4tn / rev ₩171tn (T1 prelim release). Beat consensus +4.5%; below point; inside band. Stock −6.9% on the day (₩400tn capex plan + priced-in run — reaction consistent with L14/L21 family).
+- INPUT: consensus bar tracked correctly (₩84.98→85.59tn creep caught pre-print); bonus-provision swing factor named in advance — no failure.
+- COMPUTATION: point sat at top-of-whisper; actual landed mid-band — mild over-shoot of point, band correctly calibrated.
+- REASONING: sound; the DS bonus-provision drag played out as modeled.
+**Status: PARTIAL — DS-division detail + blended-ASP adjudication test (>63% vs 58-63% QoQ) open until FULL print 2026-07-30 (calendar corrected: full print is Jul-30, not Jul-23).**
+
+### ASML-Q2 (resolved 2026-07-15) — GRADED
+Predicted: rev pt €8.95B / EPS pt €8.20 (band €7.90-8.60) / bookings pt ~€12.5bn (flagged LOW-conf) / P~60% FY26 reaffirm-upper-half. Actual (T1 asml.com): rev €9.33B (BEAT above band); EPS €7.58 (MISS below band); GM 54.0%; **bookings NOT DISCLOSED — ASML discontinued quarterly bookings disclosure from Q1 2026 (T2 Bloomberg 2026-04-14) → component UNGRADABLE, logged N/A not error**; FY26 guide RAISED to €43-45B (exceeded bull case). Stock +~5%.
+- INPUT: **failure** — the bookings-disclosure discontinuation (public since Apr-14) was missed at pre-registration; the LOW-conf flag existed but the right call was "N/A — metric no longer published." Lesson: verify metric AVAILABILITY, not just its value, when pre-registering components.
+- COMPUTATION: rev/EPS split miss (rev beat, EPS miss at 54.0% GM) = margin/mix under-modeled, mild.
+- REASONING: directional guide call right, magnitude under-called (raise >> reaffirm) — B45-consistent under-shoot.
+**Status: ✅ GRADED (bookings component N/A).**
+
+### TSMC-Q2 (resolved 2026-07-16) — GRADED
+Predicted: rev v1 $40.1B / v2 ~$40.8B; EPS pt $3.90-4.05/ADR; Q3 guide pt ~$44B; P~55% capex raise. Actual (T1 pr.tsmc.com + 6-K): rev $40.20B top-of-guide (June monthly NT$442.68B +67.9% YoY validated the v2 monthly-math method); EPS $4.31 BEAT above band (GM 67.7%); Q3 guide $44.6-45.8B above point; **capex RAISED $52-56B → $60-64B — call TRUE**; FY26 growth guide raised to "slightly above 40%". Stock −4% ADR / −7% Taipei INTO the beat vs predicted +2-5%.
+- INPUT: no failure (monthly-math discipline worked — v2 self-correction from the Jul-2 program validated).
+- COMPUTATION: EPS band under-called (+6-10% above top) — B45 magnitude conservatism, N+1.
+- REASONING: **reaction-direction miss** — positioning-into-print (+50% YTD) + 2nm GM-dilution guide + FCF compression not modeled; same family as L14/L21 (fundamental grade ≠ stock-reaction grade). N+1 to the existing lesson set, no new code.
+**Status: ✅ GRADED.**
+
+### NBIS-Nasdaq-100-inclusion T+30 (resolved ~2026-07-22) — PARTIAL GRADE (information-only; position exited 2026-07-03)
+Pre-registered: −15% from $275.50 ($234.18) by Jul-22 = post-inclusion exhaustion CONFIRMED. Actual (T2/T3, T1 closes pending): ~$217 (Jul-21) / ~$225 (Jul-22) — **threshold BREACHED → exhaustion-read TRUE**, with confound stack: primary driver was Meta-Compute repricing + Jul-16/17 neocloud rout (not pure inclusion mechanics), and a +19-27% two-day rally driven by NVIDIA's 13G 9.3%-stake disclosure was underway on the deadline. Reference-price conflict ($275.50 vs $283.61) unreconciled.
+- B48-study read: the "post-inclusion exhaustion" marker fired directionally but is causally CONTAMINATED — grade the marker as WEAK-CONFIRMED, N=1, not promotable.
+**Status: PARTIAL pending T1 closes + reference reconcile.**

@@ -3121,3 +3121,4 @@
 **Thesis cascade triggered:** prediction addendum (bar) / envelope §5 (baseline) / SUMCO thesis+todo (date) / funding node (rates leg) / candidates (JP financials theme) / day-state.
 **Position implication delta:** NONE. **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-06-kr-jp-morning-scan-prelim-eve.md` **Commit:** (this commit)
+- 2026-07-23 | W11 wake-audit-3 catch-up fan-out | 4 fires (Samsung-GRADE 62.6k / ASML+TSMC-GRADE 84.5k / held-book-sweep 60.6k / memory-market+NBIS 125.6k ≈ 333k) | yields: 4× HIGH — 3 prediction GRADEs recovered + Samsung/ASMPT/Advantest calendar corrections + held-book Jul-16/17 systemic-rout adjudication (falsifier-none-fired) + SK-Siltron-watch realized + BOK-hike/KRW-1480 baseline refresh + NBIS T+30 breach w/ NVDA-13G confound | artifact: signals/cross-source-log/2026-07-23-w11-wake-audit-3-17day-catchup.md
