@@ -1066,3 +1066,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-23 08:21:05Z anti-fabrication-hook FIRE (n=4 '$750B' forms=[("'$750B'", 1, None)]; '$750B' forms=[("'$750B'", 1, None)]; '$750B' forms=[("'$750B'", 1, None)]; 'Q2 FCF turned negative −$5' forms=[("'Q2 FCF turned negative −$5'", 1, None), ("'Q2FCFturnednegative−$5'", 1, None)] verdict:pending)
 - 2026-07-23 08:22:59Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-07-23 08:40:19Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-23 08:47:48Z session-prime-hook event=resume injected=False (skipped non-startup)
