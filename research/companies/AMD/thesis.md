@@ -32,3 +32,7 @@ Per `signals/cross-source-log/2026-07-22-wed-good-morning-4agent-verification-ba
 
 ## Position implication (Critical Rule #11)
 **Position implication: ⚪ NO ACTION — 🟡 — stays Watchlist. Branch (a) firing is thesis-positive (frontier-lab second-sourcing confirmed + no AMD-share dilution given the equity-direction reversal), but B64 keeps the Anthropic-sourced scale claims corroborating-only until a 2nd wire confirms terms/binding; the datum strengthens the NVDA-moat-erosion WATCH, not an AMD buy case. Any entry = fresh envelope-gated decision package (DeGiro availability unchecked). Re-run in hours for Reuters/CNBC/AMD-IR + 8-K to close terms.**
+
+## 2026-07-23 — Brief-drift re-verification back-ref (signals/cross-source-log/2026-07-23-thu-ai-brief-intake-1p65T-debt-k3-attribution-amd-drift.md)
+Falsifier-1 residual ("terms materially below headline once 2nd wire prints") now FULLY CLOSED: terms re-confirmed at T1 against release text under adversarial drift-check (MI455X/2GW/up-to-$5B-equity-into-Anthropic all hold). One tier annotation: the ~$965B valuation figure is Series-H-derived, not release-disclosed. Circular vendor-financing datum unchanged as the load-bearing structural read.
+**Position implication: ⚪ NO ACTION — 🟡 — stays Watchlist; verification hardened the record without changing the case (frontier-lab second-sourcing confirmed; not an AMD buy signal; entry = fresh envelope-gated package).**
