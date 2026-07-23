@@ -64,8 +64,11 @@ REPO_TOKENS = re.compile(
 def log_line(msg: str) -> None:
     try:
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
+        # probe-tagging (07-23 audit): test harnesses set LLMNA_PROBE=1 so
+        # probe blocks are distinguishable from live blocks in audit counts.
+        probe = " probe=1" if os.environ.get("LLMNA_PROBE") == "1" else ""
         with open(LOG, "a", encoding="utf-8") as f:
-            f.write(f"- {ts} git-guard-pretooluse {msg}\n")
+            f.write(f"- {ts} git-guard-pretooluse {msg}{probe}\n")
     except Exception:
         pass
 
@@ -120,6 +123,26 @@ def main() -> None:
     has_repo = REPO_TOKENS.search(s) is not None
     is_git = re.search(r"\bgit\b", s) is not None
 
+    # --- shared data-span stripping (07-23 audit) ---
+    # Spans that provably cannot carry an EXECUTED command are DATA, not shell:
+    # heredoc bodies (unless piped into a shell) and quoted strings (unless a
+    # shell -c payload). Two views are derived for different checks:
+    #   s_flags : heredocs + echo/printf args stripped — for FLAG scans (commit -n)
+    #   s_redir : heredocs + non-`sh -c` quoted spans stripped — for the
+    #             truncating-redirect scan (kills the 07-19..22 FP class where a
+    #             heredoc-written commit message containing ">" plus a protected
+    #             filename blocked the write of the message file itself)
+    def _heredoc_sub(m, _s=s):
+        pre = _s[max(0, m.start() - 40):m.start()]
+        return m.group(0) if re.search(r"\b(ba|z|da)?sh\b[^|;&]*$", pre) else " HEREDOC "
+    s_nohd = re.sub(r"<<-?\s*(['\"]?)(\w+)\1[\s\S]*?\n\2\b", _heredoc_sub, s)
+    s_flags = re.sub(r"\b(echo|printf)\b[^|;&\n]*", r"\1 ECHOARG", s_nohd)
+
+    def _quote_sub(m, _s2=s_nohd):
+        pre = _s2[max(0, m.start() - 30):m.start()]
+        return m.group(0) if re.search(r"\b(ba|z|da)?sh\b[^|;&]*-c\s*$", pre) else " QSTR "
+    s_redir = re.sub(r"'[^']*'|\"[^\"]*\"", _quote_sub, s_nohd)
+
     # ---- history / record-rewrite class (FORCE_PUSH token) ----
     if not force_ok:
         # commit: --no-verify OR its short form -n (possibly bundled, e.g. -nm) skips
@@ -144,12 +167,7 @@ def main() -> None:
         # Residuals (documented, confused-agent threat model): quoted flag
         # `git commit "-n"`; heredoc piped into an interpreter other than *sh;
         # `git commit -uno` (rare legit bundle with n) over-blocks — rephrase long-form.
-        def _heredoc_sub(m, _s=s):
-            pre = _s[max(0, m.start() - 40):m.start()]
-            return m.group(0) if re.search(r"\b(ba|z|da)?sh\b[^|;&]*$", pre) else " HEREDOC "
-        s_noq = re.sub(r"<<-?\s*(['\"]?)(\w+)\1[\s\S]*?\n\2\b", _heredoc_sub, s)
-        s_noq = re.sub(r"\b(echo|printf)\b[^|;&\n]*", r"\1 ECHOARG", s_noq)
-        if is_git and re.search(r"\bgit\b[^|;&]*\bcommit\b[^|;&]*\s-[a-zA-Z]*n[a-zA-Z]*\b", s_noq):
+        if is_git and re.search(r"\bgit\b[^|;&]*\bcommit\b[^|;&]*\s-[a-zA-Z]*n[a-zA-Z]*\b", s_flags):
             block("commit -n (short --no-verify) would skip the pre-commit/commit-msg guards", cmd)
         if is_git and re.search(r"\bpush\b[^|;&]*--no-verify", s):
             block("--no-verify would skip the verified pre-push guard", cmd)
@@ -211,10 +229,15 @@ def main() -> None:
         # Protected list aligned with destructive-change-governance §1b (K3-Swarm G-26 fix):
         # CLAUDE.md, biases-watchlist, grading-log, calibration-ledger, INDEX.md,
         # portfolio/, meta/tools/ were named protected there but missing here.
+        # 07-23 audit: scans the DATA-STRIPPED view (s_redir) — heredoc bodies and
+        # quoted prose containing ">" + a protected filename are text, not redirects
+        # (the 07-19..22 FP class: writing a commit-message scratch file whose BODY
+        # mentions grading-log). A real `> protected` target sits outside quotes/
+        # heredoc bodies and still blocks; sh -c payloads remain scanned.
         if re.search(r"(^|[^>])>\s*[^>|;&]*"
                      r"(\.git/|meta/hooks/|meta/tools/|settings\.json|methodology|"
                      r"session-prime|lessons\.md|CLAUDE\.md|biases-watchlist|"
-                     r"grading-log|calibration-ledger|INDEX\.md|portfolio/)", s):
+                     r"grading-log|calibration-ledger|INDEX\.md|portfolio/)", s_redir):
             block("truncating redirect (>) onto an enforcement/protected file", cmd)
 
     sys.exit(0)

@@ -7,6 +7,7 @@ marker list, not this fixture — the expectation stood, the hook was widened).
 
 Path is CLAUDE_PROJECT_DIR-relative (07-23 audit fix: was hardcoded)."""
 import json, subprocess, sys, tempfile, os
+ENV = dict(os.environ, LLMNA_PROBE="1")  # probe-tag fires (07-23, G-28)
 
 REPO = os.environ.get("CLAUDE_PROJECT_DIR") or "/home/user/LLMNA"
 HOOK = os.path.join(REPO, "research", "meta", "hooks", "structural-output-hook.py")
@@ -19,7 +20,7 @@ def run(assistant_text):
                             "message": {"role": "assistant",
                                         "content": [{"type": "text", "text": assistant_text}]}}) + "\n")
     payload = json.dumps({"transcript_path": path, "stop_hook_active": False})
-    r = subprocess.run([sys.executable, HOOK], input=payload, capture_output=True, text=True)
+    r = subprocess.run([sys.executable, HOOK], input=payload, capture_output=True, text=True, env=ENV)
     os.unlink(path)
     return r.returncode
 

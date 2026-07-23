@@ -2,11 +2,12 @@
 """Extra probe for the git-commit-adjacency tightening.
 FP reduced from 'any commit -n in text' to 'only literal git-commit-n adjacency'."""
 import json, os, subprocess, sys
+ENV = dict(os.environ, LLMNA_PROBE="1")  # probe-tag fires (07-23, G-28)
 HOOK = os.path.join(os.environ.get("CLAUDE_PROJECT_DIR") or "/home/user/LLMNA",
                     "research", "meta", "hooks", "git-guard-pretooluse.py")
 def run(cmd):
     p = json.dumps({"tool_name": "Bash", "tool_input": {"command": cmd}})
-    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True, text=True).returncode
+    return subprocess.run([sys.executable, HOOK], input=p, capture_output=True, text=True, env=ENV).returncode
 C = "git " + "commit "
 cases = [
     # prose WITHOUT git-commit adjacency -> now PASS (the fix)

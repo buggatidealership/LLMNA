@@ -246,8 +246,12 @@ def _log_fire(reason: str) -> None:
         from datetime import datetime, timezone
         log_path = Path(ENFORCEMENT_PATHS[0]) / "research/meta/hook-fire-log.md"
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
+        # probe-tagging (07-23 audit, G-28 probe-pollution channel): test
+        # harnesses set LLMNA_PROBE=1 so their fires are excluded from the
+        # structural-output metric numerator and any audit fire counts.
+        probe = " probe=1" if os.environ.get("LLMNA_PROBE") == "1" else ""
         with open(log_path, "a") as lf:
-            lf.write(f"- {ts} structural-output-hook FIRE ({reason})\n")
+            lf.write(f"- {ts} structural-output-hook FIRE ({reason}){probe}\n")
     except Exception:
         pass
 

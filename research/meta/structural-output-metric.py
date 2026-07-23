@@ -28,21 +28,65 @@ def week_key(d: date) -> str:
     return f"{iso[0]}-W{iso[1]:02d}"
 
 
-def main() -> None:
-    fires = defaultdict(int)
-    for line in LOG.read_text().splitlines():
-        m = re.match(r"- (\d{4}-\d{2}-\d{2}) .*structural-output.*FIRE", line)
-        if m:
-            d = datetime.strptime(m.group(1), "%Y-%m-%d").date()
-            if d >= EXPERIMENT_START:
-                fires[week_key(d)] += 1
+# G-28 retro-exclusions: probe fires that landed BEFORE probe-tagging shipped
+# (2026-07-23) and cannot be distinguished by line format. Keyed
+# (date, class) -> count. Documented, deterministic, auditable.
+KNOWN_PROBE_FIRES = {
+    ("2026-07-23", "structural-markers-missing"): 1,   # tier-gate test suite, pre-tagging run
+    ("2026-07-23", "position-implication-tier-missing"): 11,  # same runs (report-only column)
+}
 
-    # Ref resolution (deep-dive HIGH fix 2026-07-21): session-branch containers
-    # often have no local `main` ref, so `git log main ... check=True` exited 128
-    # and crashed the whole metric on 2026-08-06 decision day. Resolve the freshest
-    # available main-equivalent: local main, else origin/main, else HEAD — never crash.
+
+def main() -> None:
+    # NUMERATOR reclassification (G-28, K3-re-graded BLOCKING; fixed 2026-07-23):
+    # the experiment adjudicates the PRIMING hook's effect on the revert-to-
+    # linear-prose failure mode, so the numerator is ONLY the
+    # `structural-markers-missing` fire class. Excluded, with rationale:
+    #   - position-implication-tier-missing: Principle #37 tier enforcement that
+    #     happens to live in the same hook file — a DIFFERENT discipline; the
+    #     b6ad6d6/G-27 reorder (tier check before size gate) inflates this class,
+    #     which is exactly why it must not contaminate the priming metric.
+    #   - probe=1 tagged lines + KNOWN_PROBE_FIRES: test-suite fires
+    #     (probe-pollution, the 2nd contamination channel).
+    #   - the 2026-06-15 smoke-test line (self-labeled "do not count") — the old
+    #     regex counted it anyway.
+    #   - legacy UNTYPED fires (6 lines, 2026-06-13..06-18, pre-typing era) are
+    #     COUNTED: they predate the tier check's fire path being logged and sit
+    #     outside the last-4-week decision window; continuity beats reclassifying
+    #     what can't be reclassified.
+    fires = defaultdict(int)
+    tier_fires = defaultdict(int)  # report-only visibility column
+    for line in LOG.read_text().splitlines():
+        m = re.match(r"- (\d{4}-\d{2}-\d{2}) .*structural-output-hook FIRE(?:\s*\(([^)]*)\))?", line)
+        if not m:
+            continue
+        d = datetime.strptime(m.group(1), "%Y-%m-%d").date()
+        if d < EXPERIMENT_START:
+            continue
+        cls = (m.group(2) or "").strip()
+        wk = week_key(d)
+        if "probe=1" in line:
+            continue
+        if cls == "position-implication-tier-missing":
+            tier_fires[wk] += 1
+            continue
+        if cls.startswith("smoke-test"):
+            continue
+        if cls in ("structural-markers-missing", ""):
+            fires[wk] += 1
+    for (dstr, cls), n in KNOWN_PROBE_FIRES.items():
+        wk = week_key(datetime.strptime(dstr, "%Y-%m-%d").date())
+        tgt = fires if cls == "structural-markers-missing" else tier_fires
+        tgt[wk] = max(0, tgt.get(wk, 0) - n)
+
+    # Ref order ADJUDICATED 2026-07-23 (e04eaef vs design-130): origin/main FIRST,
+    # per the original design intent. Rationale: origin/main is the canonical
+    # pushed history (house rule: every commit pushed); a container's LOCAL main
+    # can be stale (wake sessions on branches), shrinking the denominator and
+    # inflating the rate — the observed 0.196 vs 0.452 swing was exactly this.
+    # Fallback chain keeps the 07-21 never-crash property: origin/main -> main -> HEAD.
     ref = "HEAD"
-    for cand in ("main", "origin/main"):
+    for cand in ("origin/main", "main"):
         chk = subprocess.run(
             ["git", "-C", str(REPO), "rev-parse", "--verify", "--quiet", cand],
             capture_output=True, text=True,
@@ -63,14 +107,14 @@ def main() -> None:
         d = datetime.strptime(line.strip(), "%Y-%m-%d").date()
         commits[week_key(d)] += 1
 
-    weeks = sorted(set(fires) | set(commits))
-    print(f"{'week':<10} {'fires':>5} {'commits':>7} {'fires/commit':>12}")
+    weeks = sorted(set(fires) | set(commits) | set(tier_fires))
+    print(f"{'week':<10} {'fires':>5} {'commits':>7} {'fires/commit':>12} {'tier(ro)':>9}")
     rates = []
     for w in weeks:
         f, c = fires.get(w, 0), commits.get(w, 0)
         rate = f / c if c else float("nan")
         rates.append((w, rate))
-        print(f"{w:<10} {f:>5} {c:>7} {rate:>12.3f}")
+        print(f"{w:<10} {f:>5} {c:>7} {rate:>12.3f} {tier_fires.get(w, 0):>9}")
 
     tail = [r for _, r in rates[-4:] if r == r]  # drop NaN
     if len(tail) >= 2:
