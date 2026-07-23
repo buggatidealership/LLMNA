@@ -37,3 +37,7 @@ First REPORTED mega-cap casualty of the memory-supercycle budget squeeze: client
 - Quantum optionality (Anderon; $10B/5yr) — long-dated, capex-drag near-term.
 
 **Position implication: NO ACTION — 0% — not held; entry consideration gated on the Jul-22 print checklist (guide shape, consulting bookings, Z-closure commentary, memory-COGS language); post-crash entry before that data would be narrative-chasing against finite board patience.** 🟡
+
+## 2026-07-23 — Good-morning Leg-C back-ref: the same hyperscaler capex is now flipping bull→bear at the raiser level (signals/cross-source-log/2026-07-23-thu-good-morning-legC-wsj-13screenshot-h3-gatebreak-capexflip.md)
+CONTEXT (no thesis change): the AI-hardware-capex reallocation that displaced IBM Z (the twin-print I-4 casualty mechanism — "tens of large deals failed to close," IBM Z −42%) is the SAME hyperscaler spend now flipping bull→bear at the raiser level — **Alphabet Q2 FCF −$5.9B (first-ever) on $44.9B capex, FY26 capex $195-205B = "scary territory."** The capex that crowds out IBM's deferrable-IT budget is itself now under market scrutiny (capex-flip reflexivity instance #2). Note the twin-print SPLIT (I-4 TRUE / N-4 FALSE): the casualty is HARDWARE-DISPLACEMENT (IBM Z/infra), not a broad enterprise-software-budget squeeze (NOW grew through it) — this back-ref is consistent with that narrower casualty set.
+**Position implication: NO ACTION — 0% — not held; context back-ref only, entry gate unchanged (post-print checklist). 🟡**
