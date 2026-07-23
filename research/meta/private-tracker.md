@@ -75,6 +75,14 @@ Names that matter to public-market thinking but don't have tickers. Track their 
 - Status: Tooling for agentic builds
 - Public-market relevance: TAM creation for compute and observability
 
+## Semiconductor equipment startups
+
+### xLight
+- Status: Pat Gelsinger (ex-Intel CEO) startup; raised **$350M** (2026-07 round) to build the first American EUV lithography rival to ASML — 🟡 T3 Semi Doped newsletter relay of Startup Fortune, seen 2026-07-23; per `signals/cross-source-log/2026-07-23-semidoped-quicktakes-7item-newsletter-ingest.md`
+- Public-market relevance: nominal ASML competitive-map entry; realistic threat horizon 10+ years (my model — EUV took ASML ~2 decades with an exclusive Zeiss optics chain; $350M funds a research program, not a toolchain). Strategic-signal value is US litho-sovereignty ambition (PC-14 thread), not near-term ASML thesis impact.
+- Watch: national-security funding attach (CHIPS-II / DoD), optics-supplier partnerships, credible tool-architecture disclosure. No ASML thesis change unless government-scale capital commits.
+- Added: 2026-07-23
+
 ## How to use this file
 
 When a private co does something material (raises, partners, launches, gets acquired), it changes public-market dynamics:

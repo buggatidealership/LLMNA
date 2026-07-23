@@ -314,3 +314,9 @@ Per `signals/cross-source-log/2026-06-02-computex-2026-day1-synthesis.md`: STM i
 ## Cross-source synthesis — Morning Brief 2026-06-02 (added 2026-06-02, per Critical Rule #10)
 
 Per `signals/cross-source-log/2026-06-02-morning-brief-ingest.md`: positive — Alphabet $80B raise = 800V power infrastructure demand floor reinforced; NVDA 800V HVDC alliance design-in + AWS multi-year commitment durability strengthened.
+
+## Cross-source synthesis — 2026-07-23 newsletter ingest: AI-DC target PULLED FORWARD to >$1B in 2026 (per Critical Rule #10)
+
+Per `signals/cross-source-log/2026-07-23-semidoped-quicktakes-7item-newsletter-ingest.md`: 🟡 STM reported strong Q2 and **raised its AI data-center revenue target to >$1B in 2026** (T3 Semi Doped newsletter relay of STM IR T1 — VERIFY exact phrasing from Q2 release/call before any sizing use; B40.3 garble risk on "target" vs "run-rate"). If confirmed, this is a **one-year pull-forward** of the thesis's central ramp anchor (prior mgmt frame: >$500M in 2026, >$1B in 2027 — see thesis §catalyst 1). The watched bear tripwire ("Q3 2026 DC revenue tracking <$200M") is directionally mooted; the duty-cycle mechanism (sustained inference load) is delivering ahead of the thesis's own schedule. Same drop: Renesas trade-secret suit vs Navitas (TC-11 N=2) marginally raises the legal-moat value of incumbent power-semi IP holders incl. STM (3rd order, P~40%, my model).
+
+**Position implication:** 🟡 NO ACTION — NOT HELD per 2026-07-05 fresh-start baseline (MURATA + SUMCO only) — watchlist-reference thesis STRENGTHENED by guidance pull-forward; if T1 verification confirms >$1B-in-2026 phrasing, STM re-entry candidacy should be scored against the SiC-bypass caveat (Wolfspeed/onsemi/Infineon second-sourcing) before any entry package.

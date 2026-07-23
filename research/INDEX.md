@@ -39,10 +39,10 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - **TC-4 Anthropic enterprise-trust drift — N=12 + ACUTE-PHASE TRANSITION** (June 13 90-min Fable 5 + Mythos 5 global shutdown; Axios T1; PC-13 + PC-14 downstream)
 - **TC-5 CoPoS / glass-core packaging firming — N=8** (CCL substrate-base layer + Doosan-NVDA Physical AI partnership; Pharmicell-Doosan-NVDA CCL cascade; Camtek Golden Eagle 600-650mm T1 + BESI Q1 2026 orders doubled T1)
 - **TC-6 MLCC AI-server tier bifurcation — N=6** (Walsin AGM T1 "past 2027" + Murata CAGR 30% upgrade + 800V structural BOM uplift)
-- TC-7 InP geopolitical bottleneck + JP rent migration (N=4)
+- TC-7 InP geopolitical bottleneck + JP rent migration (N=5; 2026-07-23 Nokia in-house InP via NXP Arizona campus, VERIFY)
 - TC-8 Token consumption compounding (T1 theme)
 - **TC-10 Model-layer sovereignty + export control — N=9 + NBIS UK bypass-route proof case** (NY AG Letitia James 42-state OpenAI subpoena June 12 + Anthropic 90-min global shutdown + NBIS UK £1.7B June 8; H_d 40% / H_a 35% / H_b 35% / H_c 8%)
-- TC-11 Hardware-IP / patent enforcement (CANDIDATE N=1; ITC Section 337 UMC patents)
+- TC-11 Hardware-IP enforcement in AI semis (CANDIDATE N=2; ITC Section 337 UMC patents + 2026-07-23 Renesas trade-secret suit vs Navitas; implied Wolfspeed suit = potential N=3, VERIFY)
 - **NEW CANDIDATE cluster (N=1): EU AI search-engine deployment liability** — German Landgericht München I case 26 O 869/26 May 28 2026; preliminary injunction under appeal; NOT US precedent (Section 230 unaffected)
 
 ## Active themes

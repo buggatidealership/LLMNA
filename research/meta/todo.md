@@ -613,6 +613,7 @@
 - [ ] **P2 / verification / 2026-09-13** [INDP] — TC-11 ITC Section 337 petition watch (UMC vs TSMC patent enforcement)
   - Origin: 2026-06-13 AM brief item #15 — Republican congresspersons petition ITC to block TSMC chip imports via UMC patents (T2 Tom's Hardware). N=1 candidate cluster TC-11 (hardware-IP/patent enforcement at chip-import layer; distinct from TC-7 export-side).
   - Scope: 90-day watch for (a) ITC formal acceptance of Section 337 investigation (procedural milestone); (b) N=2 instance — any other hardware-IP enforcement action targeting AI chip flow; (c) hyperscaler/foundry public commentary
+  - **2026-07-23 UPDATE: condition (b) FIRED** — Renesas trade-secret suit vs Navitas (T3 newsletter relay of Reuters, VERIFY) = TC-11 N=2; newsletter editorial implies an unlogged Wolfspeed lawsuit (verify → potential N=3 promotion review). Per `signals/cross-source-log/2026-07-23-semidoped-quicktakes-7item-newsletter-ingest.md`. Remaining before promotion: verify Renesas filing at T1/T2 + condition (a) ITC procedural milestone OR Wolfspeed N=3.
   - Outcome decision tree: ITC accepts + N=2 emerges → promote TC-11 CANDIDATE → ACTIVE → cascade to MRVL/NVDA watchlist + held MRVL thesis update; ITC declines OR no N=2 → keep candidate; close at 2026-09-13 monthly review
   - Linked: TC-11 in `signals/triangulation.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
 
