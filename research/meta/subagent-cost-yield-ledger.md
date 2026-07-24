@@ -3579,3 +3579,12 @@
 **Material yield class:** 3× HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-skm-deep-dive-3agent.md`
 **Commit:** (this commit)
+
+## [2026-07-24] AI-brief intake (72-source morning ed.) — 3-agent fan-out (memory-auto CN / AMD-Etched / regulatory-Gemini)
+**Fires:** 3 Opus verifiers, parallel (~29.2k + ~35.4k + ~21.1k subagent tokens per reports).
+**Framing errors caught:** 6 — GM "primarily memory" CONTRADICTED-BY-T1 (1-of-3 buckets, tariffs bigger); BYD +21.2% = April STALE-RECYCLE packaged as current; Etched "any AI model" REFUTED (transformer-family only); Australia "more than consume"/"AI companies"/enacted → parity floor/large DCs/proposed-2027; Google "0.25%" → official 0.22% + Alibaba DSA/DMA category error; Venice "20% over Vera" = cherry-picked single-core (headline 2.2× throughput, both unreleased).
+**Thesis cascade triggered:** bottlenecks B47/U8 auto sub-leg + Etched reference increment; SKHY breadth+content back-ref (incl. SKH-in-Etched); AMD facts+thesis (Venice launch, MI455X Wave32); Gemini 950M clean MAU → AGENTIC-DAU input; Australia = TC-13 first national-legislative rung.
+**Position implication delta:** NONE (⚪ NO ACTION; Jul-29 unchanged).
+**Material yield class:** 3× HIGH (every leg killed ≥1 scary/shiny-direction framing). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-ai-brief-intake-gm-memory-auto-amd-venice-3agent.md`
+**Commit:** (this commit)

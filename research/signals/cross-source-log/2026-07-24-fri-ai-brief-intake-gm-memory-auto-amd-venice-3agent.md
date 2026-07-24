@@ -11,9 +11,44 @@
 - **Research items:** progressive seed pruning (diffusion inference scaling, Perona group) + expanding flow maps (variable-dimension generation) — inference-time-compute scaling research continues = token/compute-demand supportive color, ArXiv-tier, no name touched. AI hiring-bias study (MIT TR) + omnicide taxonomy (ArXiv) — out of thesis scope, logged for completeness.
 - **Geekbench 7 adds AI benchmarks + CUDA support:** benchmarking-infrastructure color; mild CUDA-ecosystem-entrenchment datum (T3). Log-only.
 
-## LEG A — MEMORY→AUTO TRANSMISSION (GM $1.5-2B warn / BYD ADAS +20%) — PENDING (agent in flight; the held-book item: two-sided pricing-power-vs-demand-destruction read, B47/U8 routing required per INGEST step 4b)
+## LEG A — MEMORY→AUTO TRANSMISSION ✅ (agent returned; research-verified 2026-07-24, EN + CN-native, tiers inline)
 
-## LEG B — AMD VENICE LAUNCH + ETCHED $10.3B — PENDING (agent in flight; vendor-claim separation + the 16-channel server-DRAM content angle + Etched any-model pivot check; efficiency-claim tripwire armed)
+| Claim | Verdict | Tier |
+|---|---|---|
+| GM $1.5-2B FY26 cost warning | **CONFIRMED-FRESH** — Q2 call Jul-21, CFO Paul Jacobson (investor.gm.com, T1); raised from $1-1.5B; first given Apr-28, reiterated; DRAM inflation **backloaded into H2-2026**; GM cites Micron + Samsung LTAs since 2022 | T1 |
+| "...primarily from memory shortages" | **CONTRADICTED-BY-T1 (framing kill):** DRAM = **one of THREE buckets** (commodity/logistics/DRAM), not dominant; GM's SEPARATE tariff line is $2.5-3.5B — bigger than the whole bucket. "Primarily" = journalist overreach | T1 |
+| BYD driver-assist +20% | **CONFIRMED but STALE-RECYCLE (~3 months):** announced Apr-28, effective May-1 (BYD official notice via 腾讯/新浪, T1-native); 天神之眼B option 9,900→12,000元 = **+21.2% (computed)**; BYD's OWN attribution = DRAM/NAND cost surge (consumer storage +60%+ QoQ Q1'26 per notice). Single option package, not "prices broadly"; CN coverage: buyers **"not sensitive" (不敏感)** | T1-native |
+| DC crowding out auto memory | CONFIRMED mechanism (bulk reporting May-Jun; GM-July = the fresh top-up): auto-grade **LPDDR4 +~70% YoY** (T2); TrendForce **1Q26 DRAM industry revenue +81% QoQ** (trendforce.com 20260601, T2); SK Hynix CEO Kwak "beyond 2030" (T1 named); Deutsche Bank **+$150-300/vehicle mass, $400-600 high-end AV** (T2); Hyundai urging domestic supply | T1/T2 |
+| "Auto squeeze tightens HBM/DC balance" | **REFUTED as needle-mover:** auto ≈ **~5% of DRAM bit demand** (widely-repeated secondary, medium conf; DC ≈~50%→~70% of output by end-2026, T2/T3) — auto is the SQUEEZED PARTY/price-taker, causation runs the other way. **Demand-BREADTH signal, not a supply-tightening signal** | T2/T3 |
+
+**Two-sided read (kept separate, not collapsed):** (a) **Pricing-power breadth SUPPORTED** — even the lowest-priority ~5% segment now pays up (BYD passes ~$290/car to consumers; GM absorbs into guidance and locks LTAs) = the shortage's reach extends to the bottom of the priority stack, supportive for the SKHY pricing leg. (b) **B47/U8 falsifier-side: cost datum REAL but realized demand destruction MUTED so far** — BYD buyers reported insensitive; **GM RAISED FY guidance twice despite the DRAM headwind** (8.6% EBIT-adj margin) = passthrough absorbed, volumes intact. Logged as a COST datum with a muted-realization counter-datum, NOT as confirmed auto-edge demand destruction. **Step-4b routing: one line appended to `sector/bottlenecks.md` B47/U8 falsifier-side ledger (auto sub-leg added to the consumer-edge cluster: smartphone cut / Framework LPCAMM2 / Ericsson — now + GM/BYD auto).**
+
+## LEG B — AMD VENICE LAUNCH + ETCHED $10.3B ✅ (agent returned; research-verified 2026-07-24; vendor-claims tagged; all fetches 403'd → multi-outlet triangulation)
+
+**B1. AMD EPYC 9996 "Venice" — REAL LAUNCH (Advancing AI 2026, San Francisco, Jul-22/23; ships Q4-2026; techpowerup.com/351000 + phoronix.com T2):** 256 Zen 6c cores/512 threads, **1,024MB L3** (8×128MB), 203B transistors, **TSMC N2**, SP7, 128× PCIe 6.0, up to 5.0 GHz (the 96C HF SKU — brief's "5GHz+" applies there, not the 256C part). Recycle nuance: specs trailed since CES Jan-2026; NEW Jul-22/23 = formal launch + SKU branding + benchmark slides + Q4 ship commitment. **"3.4× Intel" = VENDOR-CLAIM** ("up to," cherry-picked workloads: 3.3× sandbox/3.5× MongoDB/3.7× NGINX) vs **Xeon 6980P (128C Granite Rapids-AP)**; zero independent benchmarks (no shipping silicon). **"20% over Vera" = mis-framed vendor-claim:** CPU-vs-CPU (Vera = NVIDIA's Rubin-gen Arm CPU), ~20-27% SINGLE-CORE; AMD's actual headline = **2.2× throughput** (SPECrate, 256C/600W vs ~88C Vera) — projection-vs-projection, BOTH unreleased.
+
+**B2. THE HELD-BOOK ANGLE — server-DRAM content per socket (clean, quantified):** Turin 12-channel DDR5-6000 → **Venice 16-channel** RDIMM-8000/MRDIMM-12,800 = **+33% DIMM slots per socket** and bandwidth **~576 GB/s → ~1.6 TB/s ≈ 2.8×** (agent-computed: +33% channels × ~2.13× per-pin via MRDIMM; AMD-stated 1.6 TB/s, storagereview.com T2). Every next-gen server socket carries a third more DRAM channels — a same-segment (memory-and-storage, demand-up) increment to the booked server-DRAM content cluster, landing the same week Intel printed DCAI +59% and China server-CPU LTAs run. 2DPC max-DIMM config = OEM-dependent, unpinned (honest gap).
+
+**B3. Etched — CONFIRMED-FRESH round, one claim REFUTED, two to the falsifier ledger:** **$300M Series C @ $10.3B, led by Sequoia, w/ a16z + SK HYNIX + Jane Street + Diffusion Capital** (techcrunch.com 2026-07-23 + multi-T2); **doubled from $5B in ~7 months (2.06×, computed)**. **"Speed up ANY AI model" = REFUTED / framing error** — Sohu remains a TRANSFORMER-family ASIC (broadened to MoE + long-context transformer variants, NOT general-purpose); no architecture pivot occurred. **Efficiency-claim tripwire (step 4b): "20× inference speedup over H100" + "$1B booked orders" (stealth-exit Jun-30 disclosure, customers/revenue undisclosed) = VENDOR-CLAIMS, zero independent benchmarks → routed to the B47/U8/specialization-curve falsifier ledger** (joins the Frozen-v2/Etched category-proxy line in `sector/bottlenecks.md`). T3 "$20B dual-round talks" = speculative, not conflated. **Cross-read: SK Hynix investing in Etched** = the memory maker buying optionality in specialized inference silicon — consistent with the booked specialization-curve note that every custom-silicon point preserves HBM/DRAM serving-substrate demand.
+
+**B4. MI455X pin (Chips and Cheese, ~Jul-20 ±days, independent T2):** CDNA 5 **drops Wave64 for native Wave32** (RDNA-like) = programming-model simplification — decision-relevant because software/ROCm maturity is precisely the gap the booked AMD-Anthropic MI455X deal must close. Hardware: 432GB HBM4 / 12 stacks / 19.6 TB/s, TSMC 2N GAA XCDs, CoWoS-L. (12 HBM4 stacks per accelerator = the memory-content read-through, held-book supportive.)
+
+---
+
+## SYNTHESIS (all legs)
+
+**The brief scored: 3 confirmed-fresh load-bearing items, 2 stale-recycles packaged as fresh, and 6 framing errors caught** (GM "primarily memory" T1-contradicted; BYD Apr/May-as-current; Etched "any model"; Australia "more than consume"/"AI companies"/"enacted"; Google 0.25%/Alibaba-DMA; Venice "20% over Vera" cherry-pick). B60/B61 gauntlet earned its keep — every framing error ran in the SCARY-or-SHINY direction, none neutral.
+
+**The joint read for the book (my model, on the verified inputs above):** the day's brief is one coherent memory-demand story told from four angles — (1) demand BREADTH: even ~5%-tail automotive now pays up (GM absorbs, BYD passes through); (2) demand CONTENT: next-gen server sockets (+33% channels) and accelerators (12-stack HBM4) mechanically raise DRAM/HBM per unit; (3) demand SCALE: Gemini 950M MAU climbing toward the billion-user pair; (4) the COUNTER-vector stays live but MUTED (B47/U8: cost passthrough real, realized destruction absent — buyers insensitive, GM raised guidance). Constraint side: Australia's DC-renewables parity floor = TC-13's first national-legislative rung.
+
+## Cascade + position implication
+- `sector/bottlenecks.md` → B47/U8 ledger: auto sub-leg added (GM/BYD cost datum + muted-realization counter-datum) + Etched 20×-claim reference increment on the specialization-curve line.
+- `companies/SKHY/thesis.md` → back-ref (breadth + content + SKH-in-Etched color).
+- `companies/AMD/facts.md` + `thesis.md` → Venice launch facts + MI455X Wave32 note.
+- Ledger → 3 fires (2× HIGH, 1× HIGH: 6 framing kills across legs).
+- Day-state → intake line.
+
+**Position implication: ⚪ NO ACTION (user-gated; Rule #8) 🟡** — uniformly thesis-supportive verified data for the memory complex (breadth + per-socket content + MAU scale) against a muted falsifier-side reading; no falsifier touched, no sizing input generated; Jul-29 SKH print unchanged as the sole adjudicator. Strongest bear considered (Rule #18): the auto/consumer cost-passthrough eventually DOES destroy demand at scale (B47's telecom precedent) — it fails as a today-input because both verified realization checks (BYD buyer insensitivity, GM guidance raises) point the other way; it stays on the U8 ledger with the auto sub-leg now instrumented.
 
 ## LEG C — REGULATORY PAIR + GEMINI 1B PIN ✅ (agent returned; research-verified 2026-07-24, tiers inline)
 
