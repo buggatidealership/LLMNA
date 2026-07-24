@@ -1274,3 +1274,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-24 00:27:31Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-24 00:28:49Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-24 00:29:03Z anti-fabrication-hook INCONCLUSIVE (n=2 '7%' forms=[("'7%'", None, 'TimeoutExpired')]; '4.67%' forms=[("'4.67%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-07-24 00:34:34Z session-prime-hook event=compact injected=False (skipped non-startup)
