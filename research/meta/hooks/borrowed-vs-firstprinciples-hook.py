@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import os as _os
 from pathlib import Path as _Path
+try:  # shared fire-log helper (house standard, fail-open) — added 2026-07-24
+    import sys as _sys_hfl, os as _os_hfl
+    _sys_hfl.path.insert(0, _os_hfl.path.dirname(_os_hfl.path.abspath(__file__)))
+    from hook_fire_log import log_fire as _log_fire
+except Exception:
+    def _log_fire(*_a, **_k):
+        return ""
 _REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Borrowed-vs-First-Principles Stop hook for the AI Sector Research OS.
@@ -277,6 +284,7 @@ def main():
         "primary-source verification phrase, or principle/bias reference.",
     ]
     print("\n".join(msg), file=sys.stderr)
+    _log_fire("borrowed-vs-firstprinciples-hook", "FIRE", detail="borrowed-framing-unverified")
     sys.exit(2)
 
 

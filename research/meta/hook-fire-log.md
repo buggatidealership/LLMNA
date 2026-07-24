@@ -1275,3 +1275,55 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-24 00:28:49Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-24 00:29:03Z anti-fabrication-hook INCONCLUSIVE (n=2 '7%' forms=[("'7%'", None, 'TimeoutExpired')]; '4.67%' forms=[("'4.67%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-07-24 00:34:34Z session-prime-hook event=compact injected=False (skipped non-startup)
+- 2026-07-24 00:35:26Z structural-output-hook FIRE (position-implication-tier-missing)
+- 2026-07-24 06:32:23Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-24 06:39:24Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:39:24Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:39:24Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:39:25Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:39:25Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:39:25Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:39:26Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:39:26Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:39:26Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1
+- 2026-07-24 06:39:26Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1
+- 2026-07-24 06:39:48Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
+- 2026-07-24 06:40:05Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring) probe=1
+- 2026-07-24 06:40:05Z nth-order-cascade-hook FIRE (B21 first-order-anchoring) probe=1
+- 2026-07-24 06:40:05Z bypass-route-hook FIRE (B22 consensus-solution-anchoring) probe=1
+- 2026-07-24 06:40:05Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift) probe=1
+- 2026-07-24 06:40:05Z antifragility-mn-hook FIRE (B24 tier-without-M/N) probe=1
+- 2026-07-24 06:40:05Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:40:06Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:40:06Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:40:06Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:40:06Z structural-output-hook FIRE (position-implication-tier-missing) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (commit -n (short --no-verify) would skip the pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (recursive force-delete aimed at repo root / research / portfolio / .git) probe=1
+- 2026-07-24 06:40:06Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/commit-msg guards) probe=1
+- 2026-07-24 06:40:07Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1
+- 2026-07-24 06:40:07Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1

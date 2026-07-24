@@ -56,7 +56,18 @@ def main() -> None:
     #     what can't be reclassified.
     fires = defaultdict(int)
     tier_fires = defaultdict(int)  # report-only visibility column
-    for line in LOG.read_text().splitlines():
+    # Archive-aware read (2026-07-24): rotate_fire_log() may move >45-day entries
+    # to hook-fire-log.<date>.archive.md. Reading archives + live log keeps the
+    # experiment window intact regardless of rotation state. No archives present
+    # today -> byte-identical to the old LOG-only read.
+    _sources = sorted(LOG.parent.glob("hook-fire-log.*.archive.md")) + [LOG]
+    _all_lines = []
+    for _src in _sources:
+        try:
+            _all_lines.extend(_src.read_text().splitlines())
+        except OSError:
+            continue
+    for line in _all_lines:
         m = re.match(r"- (\d{4}-\d{2}-\d{2}) .*structural-output-hook FIRE(?:\s*\(([^)]*)\))?", line)
         if not m:
             continue

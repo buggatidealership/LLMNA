@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import os as _os
 from pathlib import Path as _Path
+try:  # shared fire-log helper (house standard, fail-open) — added 2026-07-24
+    import sys as _sys_hfl, os as _os_hfl
+    _sys_hfl.path.insert(0, _os_hfl.path.dirname(_os_hfl.path.abspath(__file__)))
+    from hook_fire_log import log_fire as _log_fire
+except Exception:
+    def _log_fire(*_a, **_k):
+        return ""
 _REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Signal-ingest-cascade Stop hook for the AI Sector Research OS.
@@ -312,6 +319,7 @@ See:
   - research/meta/hooks/signal-ingest-cascade-hook.py (source mirror)
 """
     print(feedback, file=sys.stderr)
+    _log_fire("signal-ingest-cascade-hook", "FIRE", detail="Rule#14 signal-density-skip")
     sys.exit(2)
 
 
