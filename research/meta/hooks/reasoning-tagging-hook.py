@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import os as _os
 from pathlib import Path as _Path
+try:  # shared fire-log helper (house standard, fail-open) — added 2026-07-24
+    import sys as _sys_hfl, os as _os_hfl
+    _sys_hfl.path.insert(0, _os_hfl.path.dirname(_os_hfl.path.abspath(__file__)))
+    from hook_fire_log import log_fire as _log_fire
+except Exception:
+    def _log_fire(*_a, **_k):
+        return ""
 _REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Reasoning-tagging Stop hook for the AI Sector Research OS.
@@ -131,6 +138,11 @@ def load_last_assistant_message() -> str:
     except Exception:
         return ""
 
+    # Recursion guard: never re-block a Stop that a hook already blocked
+    # (infinite-Stop-loop hazard). Added 2026-07-06 audit.
+    if data.get("stop_hook_active"):
+        sys.exit(0)
+
     transcript_path = data.get("transcript_path")
     if not transcript_path or not Path(transcript_path).exists():
         return ""
@@ -230,6 +242,7 @@ def main():
     )
 
     print(msg, file=sys.stderr)
+    _log_fire("reasoning-tagging-hook", "FIRE", detail="probability-without-source-tier")
     sys.exit(2)
 
 

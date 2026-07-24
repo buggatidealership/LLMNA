@@ -1,0 +1,29 @@
+file,event_date,first_commit,verdict,post_event_commits,post_event_edit_assessment
+2026-05-20-NVDA-Q1FY27-GRADE.md,2026-05-20,2026-05-21T05:51:16+00:00,OK (grade file — post-event by design),3,
+2026-05-20-NVDA-Q1FY27.md,2026-05-20,2026-05-20T15:59:35+00:00,OK,0,
+2026-05-26-MOD-Q4FY26-GRADE.md,2026-05-26,2026-05-27T15:56:04+00:00,OK (grade file — post-event by design),1,
+2026-05-26-MOD-Q4FY26.md,2026-05-26,2026-05-26T19:45:40+00:00,OK,0,
+2026-05-27-MRVL-Q1FY27-GRADE.md,2026-05-27,2026-05-28T18:57:50+00:00,OK (grade file — post-event by design),1,
+2026-05-27-MRVL-Q1FY27.md,2026-05-27,2026-05-27T12:52:53+00:00,OK,0,
+2026-05-27-SNOW-Q1FY27-GRADE.md,2026-05-27,2026-05-27T20:24:00+00:00,OK (grade file — post-event by design),1,
+2026-05-27-SNOW-Q1FY27.md,2026-05-27,2026-05-27T08:41:44+00:00,OK,0,
+2026-05-29-HPE-Q2FY26.md,2026-05-29,2026-05-29T10:55:46+00:00,OK,0,
+2026-06-01-HPE-Q2FY26-GRADE.md,2026-06-01,2026-06-01T06:48:16+00:00,OK (grade file — post-event by design),1,
+2026-06-03-AVGO-Q2FY26.md,2026-06-03,2026-06-03T14:54:51+00:00,OK,1,"addendum ~8h post-print, 11min pre-grade-commit; registered numbers UNCHANGED (P=70 kept)"
+2026-06-04-AVGO-Q2FY26-GRADE.md,2026-06-04,2026-06-04T09:06:39+00:00,OK (grade file — post-event by design),0,
+2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md,2026-06-12,2026-06-12T08:15:45+00:00,OK,1,Day3-4 monitoring append during multi-day event; registered numbers unchanged
+2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md,2026-06-19,2026-06-19T01:46:06+00:00,OK,0,
+2026-07-01-BE-Q2-FY26-guide-prediction.md,2026-07-01,2026-07-01T16:02:47+00:00,OK,0,
+2026-07-02-AI-supplychain-earnings-program.md,2026-07-02,2026-07-02T08:38:13+00:00,OK,1,ASMPT P2 slot added; umbrella file
+2026-07-02-ALAB-Q2-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,0,
+2026-07-02-ASML-Q2-earnings-prediction.md,2026-07-02,2026-07-02T08:44:48+00:00,OK,0,
+2026-07-02-KIOXIA-Q1FY27-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,1,TrendForce note appended pre-resolution (print Aug-7); numbers unchanged
+2026-07-02-MURATA-Q1FY27-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,0,
+2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md,2026-07-02,2026-07-02T08:44:48+00:00,OK,1,SUPERSEDED banner added eve of print; duplicate-registration disambiguation — PROCESS FLAG
+2026-07-02-SAMSUNG-Q2-prelim-prediction.md,2026-07-02,2026-07-02T13:01:43+00:00,OK,4,4 pre-print commits incl. consensus-vintage addenda; canonical file; numbers registered Jul-2
+2026-07-02-SKHYNIX-Q2-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,0,
+2026-07-02-SNDK-Q4FY26-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,1,TrendForce note appended pre-resolution (print Aug-5); numbers unchanged
+2026-07-02-SUMCO-Q2-earnings-prediction.md,2026-07-02,2026-07-02T08:49:24+00:00,OK,0,
+2026-07-02-TSMC-Q2-earnings-prediction.md,2026-07-02,2026-07-02T08:44:48+00:00,OK,0,
+2026-07-11-SUMCO-Q2-FY2026-preregistration.md,2026-07-11,2026-07-11T11:01:57+00:00,OK,0,
+2026-07-17-regime-read-preregistration-five-calls.md,2026-07-17,2026-07-17T15:10:05+00:00,OK,0,

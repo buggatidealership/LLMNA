@@ -1,6 +1,6 @@
 # Grading Log — Open + Resolved Predictions
 
-**Last updated:** 2026-06-02
+**Last updated:** 2026-07-06 (harness audit: duplicate Samsung/ASML/TSMC rows tagged NOT-CANONICAL; reconciliation note corrected — the duplicate Samsung file exists and is now marked SUPERSEDED)
 
 ## TL;DR
 
@@ -10,25 +10,28 @@ Index of every prediction made by the system. Each row resolves to "pending" or 
 
 | Date made | Resolution target | Ticker | Event | Prediction file |
 |---|---|---|---|---|
-| 2026-06-12 | T+24h ~2026-06-19 to 22 (paper-dependent); T+72h ~06-22 to 25 | KIOXIA | VLSI Symposium 2026 joint Kioxia/SanDisk MSA-CBA paper (L14/L14-v2 forward-application test, L17 candidate N=1) | `2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` |
-| **2026-06-19** | **T+5 ~2026-06-27 / T+15 ~2026-07-07 / T+30 ~2026-07-22 (primary adjudicator)** | **NBIS** | **Nasdaq-100 inclusion effective 2026-06-22 — B48 candidate "event-marker historical-pullback bias" adjudicator test + user R2 hypothesis empirical-verification** | `2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md` |
-| 2026-07-02 | 2026-07-07 prelim (+ full ~Jul-23) | Samsung 005930 | Q2 prelim: rev ₩175-182tn (pt ₩178tn) / OP ₩88-97tn (pt ₩92tn) vs cons ₩171.37tn/₩84.98tn; cohort-barometer reaction bands | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-15 | ASML | Q2: rev pt €8.95B / EPS pt €8.15 / BOOKINGS €11-14bn (pt €12.5bn) / FY26 reaffirm-upper-half P~60% | `2026-07-02-ASML-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-16 (checkpoint Jul-10) | TSMC | Q2: rev pt ~$40.8B (above guide high-end; monthly-math-anchored) / EPS pt ~$4.05/ADR / Q3 guide pt ~$44B | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
-| 2026-07-02 | ~2026-07-07 | Samsung (prelim; cohort keystone) | rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn (P beat ~70%); re-open amplifier bands | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
-| 2026-07-02 | 2026-07-15 | ASML | rev pt €8.95B / EPS pt €8.20 / bookings pt ~€12.5bn (LOW conf, INPUT gap flagged) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-16 | TSMC | rev pt $40.1B (guide-anchored; SELF-CORRECTION logged — monthly math not held; v2 at Jul-10 June monthly) / EPS pt $3.90 / capex-raise P~55% | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
+| 2026-07-22 | **PRINT LEGS GRADED 2026-07-22 (9/9 directional, Brier 0.1018); T+24h legs I-5/N-5 pending 2026-07-23 close** | IBM + NOW + GOOGL | Q2 twin-print + capex binary — 9 print-legs graded (8 TRUE + N-4 correct-FALSE-lean; G-1 capex RAISED $195-205B TRUE; L33 SPLIT = hardware-displacement not software-squeeze). See GRADE section in file | `2026-07-22-IBM-NOW-GOOGL-twin-print-registrations.md` |
+| ~~2026-06-12~~ | ~~KIOXIA VLSI~~ **✅ GRADED 2026-06-26 — row retained here in error until 2026-07-06 audit; see the [2026-06-26 GRADED] section below** | | | `2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` |
+| **2026-06-19** | **T+30 GRADED-FINAL 2026-07-22 (on time): price-band H3-EXCEEDED (window-low close $171.77 07-16 = −42.7% vs ATH-proxy / −37.6% vs T+1, computed; T+30 last-session ~$217-220 ≈ −27% vs ATH-proxy) BUT mechanism CONFOUNDED → B48/R2 UNGRADEABLE on this specimen — five idiosyncratic catalysts (Meta-Compute 07-01, Reflection+capex 07-14, insider sales 07-16, debt facility 07-17, NVDA 9.3% 13G 07-21 T1); pre-07-01 inclusion-attributable leg ≈ FLAT (mildly H1-consistent). B48 remains N=0; R2 unresolved-by-design; PM33 entry-timing retrospective booked for monthly audit; L40 CANDIDATE (ex-ante confound-exclusion rules). See `signals/cross-source-log/2026-07-22-wed-nbis-t30-final-adjudicator-grade.md`. Prior: T+15 GRADED-PROVISIONAL 07-07 ($209.47, CONFOUNDED); T+5 GRADED-PROVISIONAL 07-06 (9d late)** | **NBIS** | **Nasdaq-100 inclusion — B48/R2 test. RESOLVED: the natural experiment failed on specimen selection — high-idiosyncratic-newsflow small-cap cannot isolate index-flow effects; anchors were T2- throughout (T+0 open never captured, user-locked proxies). Position exited 07-03 pre-resolution; grades = data-generation only** | `2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md` |
+| 2026-07-02 | ~~2026-07-07~~ | ~~Samsung 005930~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev ₩175-182tn variant~~ — pre-correction duplicate; file marked SUPERSEDED; grade ONLY the canonical Samsung row below | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` (SUPERSEDED) |
+| 2026-07-02 | ~~2026-07-15~~ | ~~ASML~~ **⚠️ NOT CANONICAL — do not grade** | ~~EPS pt €8.15 variant~~ — pre-correction numbers; grade ONLY the canonical ASML row below (EPS pt €8.20) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
+| 2026-07-02 | ~~2026-07-16~~ | ~~TSMC~~ **⚠️ NOT CANONICAL — do not grade** | ~~rev pt $40.8B monthly-math variant~~ — self-corrected same-day; grade ONLY the canonical TSMC row below ($40.1B guide-anchored) | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
+| ~~2026-07-02~~ | ~~Samsung prelim~~ **✅ GRADED 2026-07-07 (fundamental leg; reaction T+24h finalizes 07-08) — see GRADED section below.** OP ₩89.4tn band-hit, +4.45% beat vs updated bar; rev ₩171tn small band-miss; reaction leg MISS (−5.35% vs +0-3% band); L27 N=2 fundamental POSITIVE + falsifier-watch counter opened. ASP-dispute adjudication → full print ~Jul-23 (new pending row below) | | | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
+| 2026-07-07 | ~2026-07-23 (full print) | Samsung 005930 | CARRY-OVER components from the prelim grade: (a) three-way Q2 blended-DRAM-ASP dispute adjudication (>~63% QoQ test — needs division split); (b) guidance-language component; (c) division-level OP vs the ex-provision >₩100tn wire claims. **PANEL PIN (07-07 user disclosure-card relay): second consensus panel rev ₩173.0tn / OP ₩84.6tn — vs our carried FnGuide ₩84.98tn (07-01) and updated bar ₩85.59tn (07-06); beat magnitude +4.45% to +5.7% depending on panel — state BOTH at full-print grade** | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` (carry-over section) |
+| 2026-07-02 | ~~2026-07-15~~ | ~~ASML~~ **✅ GRADED 2026-07-15 (rev/EPS/bookings) + T+24h reaction closed 2026-07-16 — see `signals/cross-source-log/2026-07-15-wed-asml-q2-print-grade.md` (✅ marker added by 2026-07-17 parser-fix housekeeping)** | ~~rev pt €8.95B / EPS pt €8.20 / bookings pt ~€12.5bn~~ **GRADED 2026-07-15: rev MISS-LOW +3.91% above-band / EPS MISS-HIGH −7.44% below-band / bookings UNGRADEABLE (metric dead at registration → L31) / FY-guide branches under-called (raised €43–45B). T+24h reaction grade 07-16 pending.** Per `signals/cross-source-log/2026-07-15-wed-asml-q2-print-grade.md` | `2026-07-02-ASML-Q2-earnings-prediction.md` |
+| 2026-07-02 | ~~2026-07-16~~ | ~~TSMC~~ **✅ GRADED 2026-07-16 + filing-grade EPS completed 07-17 — see `signals/cross-source-log/2026-07-16-thu-tsmc-q2-print-grade.md` (row moved by 2026-07-17 parser-audit housekeeping)** | rev pt $40.1B (guide-anchored; SELF-CORRECTION logged — monthly math not held; v2 at Jul-10 June monthly) / EPS pt $3.90 / capex-raise P~55% | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
 | 2026-07-02 | ~2026-07-29 | SK Hynix (HELD #1) | Q2: rev pt ₩88tn / OP pt ₩68tn (vs cons ₩63.0tn; P(beat)~75%) / NI pt ~₩51tn; 2027-HBM-language pre-registered; v2 ensemble T-5d | `2026-07-02-SKHYNIX-Q2-earnings-prediction.md` |
 | 2026-07-02 | 2026-07-31 | Murata (HELD) | Q1 FY27: rev pt ¥505bn / OP pt ¥105bn (price-hike quarter front-load) / P(FY-raise)~25%; v2 T-5d | `2026-07-02-MURATA-Q1FY27-earnings-prediction.md` |
 | 2026-07-02 | late-Jul→Aug-13 (date TBC) | SanDisk (HELD) | Q4 FY26: rev pt $8.4B (above guide high) / NG EPS pt $33.5 / Q1-FY27 guide pt ~$9.2B; v2 T-5d + L17 leg | `2026-07-02-SNDK-Q4FY26-earnings-prediction.md` |
 | 2026-07-02 | 2026-08-07 | Kioxia (HELD) | Q1 FY27: rev pt ¥1.25tn / OP pt ¥600bn / NI pt ~¥460bn; initial-FY-guide-conservative P~70% pre-registered; consensus re-pull at v2 | `2026-07-02-KIOXIA-Q1FY27-earnings-prediction.md` |
 | 2026-07-02 | 2026-08-11 | ALAB (initiating) | Q2: rev pt $375M / NG EPS pt $0.75 / Q3 guide pt ~$405M; post-print-dip = staged-entry window note; v2 T-5d | `2026-07-02-ALAB-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-08-12 | Sumco (HELD) | Q2: rev pt ¥114bn / op result pt −¥1.5bn (better than guided −¥2.5bn loss; P~60%) / H2-profit-language P~55% | `2026-07-02-SUMCO-Q2-earnings-prediction.md` |
+| 2026-07-02, **UPGRADED 2026-07-11** | **2026-08-06** (date corrected from 08-12 per 07-06 addendum) | Sumco (HELD) | **CANONICAL = the 07-11 full component-level pre-registration:** rev ¥113bn (¥110-116) / OP −¥1.5bn (−¥3.0 to +¥0.5; P(beat guide)~60) / net −¥5.5bn (−¥8 to −¥3) / OP surprise 35-45-20 / 5 guidance-language P's / three-outcome reaction table (B42-aware post-limit-up). Convergence note: fresh bottoms-up re-derived the SAME central OP/rev as the 07-02 directional entry WITHOUT re-reading it (same model, same data class — consistency, not independent confirmation). 07-02 file retained as the registration-of-record for the directional legs | `2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (canonical) + `2026-07-02-SUMCO-Q2-earnings-prediction.md` |
 | **2026-07-01** | **T+0 ~2026-07-30 (Q2 print) + T+24h reaction** | **BE** | **FY2026 guidance revision at Q2 print — ensemble (N=5) modal RAISE (floor-lift) rev $3.6-3.9B / EPS $2.05-2.35 / GM ~34-35% / Q2 ~$800M; L22 read = raise ≈ MEET vs consensus. Tests Rule #17 ensemble spread-vs-outcome + L22 + L13 vintage + L19 reaction** | `2026-07-01-BE-Q2-FY26-guide-prediction.md` |
+| 2026-06-23 (retro-registered 2026-07-06) | **✅ GRADED 2026-07-06 (3-layer entry below in this file — row text was STALE 14 days: the 07-06 backfill commit 7806534 added the prose grade but never updated this row; the phantom debt propagated through the 07-17 audit + daily briefings until the 07-20 prose-deadline sweep computed the git history)** | MU | Q3 FY26 print — L27 FIRST empirical regime-test. ⚠️ Never ledgered at registration time (audit catch): pre-registration lives in `signals/cross-source-log/2026-06-23-am-subagent-mu-beat-probability-data-pack-tomorrow-print.md`; outcome informally adjudicated (H1 FIRED, rev $41.46B vs $34.5B cons) in `signals/cross-source-log/2026-06-24-pm-subagent-mu-q3-fy26-earnings-print-l27-first-regime-test.md`. Backfill the 3-layer GRADE + L27 N=1 entry, then move to Graded | (no standalone prediction file — chat/cross-source-log registration) |
 
-**⚠️ DUPLICATE-ROW RECONCILIATION (2026-07-02 PM):** the table contains TWO row-sets for Samsung/ASML/TSMC. **CANONICAL for grading = the rows referencing `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` / `2026-07-02-ASML-Q2-earnings-prediction.md` (EPS pt €8.20) / `2026-07-02-TSMC-Q2-earnings-prediction.md` (rev pt $40.1B, guide-anchored + Rule #11 self-correction).** The other three rows (rev ₩175-182tn variant / EPS €8.15 / TSMC "$40.8B monthly-math-anchored", filename variant `...-prelim-earnings-prediction.md`) carry the PRE-correction chat-board numbers and reference non-existent files — retained un-edited for audit transparency, NOT graded. The TSMC "$40.8B monthly-math-anchored" claim was explicitly self-corrected same-day (the monthly data was never received — see the TSMC file's Rule #11 section). One prediction, one canonical registration.
+**⚠️ DUPLICATE-ROW RECONCILIATION (2026-07-02 PM; CORRECTED 2026-07-06 harness audit):** the table contains TWO row-sets for Samsung/ASML/TSMC. **CANONICAL for grading = the rows referencing `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` / `2026-07-02-ASML-Q2-earnings-prediction.md` (EPS pt €8.20) / `2026-07-02-TSMC-Q2-earnings-prediction.md` (rev pt $40.1B, guide-anchored + Rule #11 self-correction).** The other three rows carry PRE-correction numbers, are marked NOT-CANONICAL in the table, and are NOT graded. **Correction of the original note's false claim:** the duplicate Samsung file `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` DOES exist on disk (it now carries a SUPERSEDED header); the ASML/TSMC variant rows point at the SAME canonical filenames but with divergent point numbers. The TSMC "$40.8B monthly-math-anchored" claim was explicitly self-corrected same-day (the monthly data was never received — see the TSMC file's Rule #11 section). One prediction, one canonical registration.
 
-**KIOXIA T+24h grade WINDOW OPEN as of 2026-06-19 (today):** VLSI Symposium Day 5 (June 18) likely contains MSA-CBA paper presentation; T+24h stock-reaction grade actionable today through 2026-06-22. **GRADE PREP CHECKLIST:**
+**~~KIOXIA T+24h grade WINDOW~~ — CHECKLIST COMPLETED; grade executed 2026-06-26 (see GRADED section below). Retained for audit only (marked 2026-07-06):**
 1. Verify MSA-CBA paper actually presented June 14-18 (subagent + VLSI on-demand June 24+ access OR Kioxia/SanDisk co-press release)
 2. Pull 285A.T price action June 16-19 (Monday-Thursday JST close) — joint with US semi cohort macro overlay
 3. Pull SNDK + HYNIX + MU price action same window (Yokkaichi JV mirror + memory-cluster macro overlay)
@@ -90,6 +93,57 @@ When a resolution date hits:
 
 ---
 
+## [2026-07-07 GRADED — fundamental leg; reaction T+24h GRADED-PROVISIONAL 2026-07-08] SAMSUNG Q2 2026 PRELIM (the keystone; registered 2026-07-02, resolved 2026-07-07 ~08:40 KST)
+
+**T+24h REACTION FINALIZATION (2026-07-08, provisional on official settle — T1 tape 403-blocked, same treatment as NBIS T+15; direction corroborated ≥3 independent T2 incl. Korean-native etoday/fnnews, per 1 Opus verification agent):** 07-08 session = **STABILIZATION, not recovery**: Samsung gapped −3.55% (low ₩283,000), reversed to ₩298,500 **+0.84% intraday ~09:55 KST**; SK Hynix **+5.20%** to ₩2,315,500; KOSPI +0.90% after opening −2.66%. Computed cumulative from implied pre-print close (python, both prev-close bases 296,000/297,000): **−6.21% to −6.53% below pre-print** — the print-day loss was RETAINED. Press attribution: bargain-hunting into memory ~60% / AI-capex-doubt backdrop ~25% / HYNIX-specific ADR-oversubscription tailwind ~15% (press-supported weights). Cohort-decoupling (#41) COMPLETED: reporter (Samsung +0.8%) lagged cohort (HYNIX +5.2%) on the bounce — HYNIX pure-play HBM + ADR demand vs Samsung ₩400tn fab-hub capex overhang. **VERDICT: beat-and-no-rally CONFIRMED at T+24h — L27 falsifier counter tick #1 STANDS (1 of 2). No second leg down (base-built), so this is bimodal-print whisper-regime behavior (B42), not capitulation.** Settle-confirm folds into the next KR/JP artifact; basis discrepancy (296,000 vs 297,000 prev close) computed as immaterial to the verdict.
+
+**Executed by the main session as wake catch-up** (both routine-spawned sessions produced no output — see `signals/cross-source-log/2026-07-06-routine-creation-preregistration-and-test.md`). Verification: 1 Opus agent, ≥5 T2 wires corroborating the T1 공시; register in `signals/cross-source-log/2026-07-07-samsung-prelim-grade-wake-catchup.md`.
+
+**Predicted (canonical file):** rev ₩172-183tn pt ₩178tn; OP ₩87-97tn pt ₩92tn; P(OP>consensus)~70%; reaction bands: OP ≥₩90tn → +3-8%, ₩85-90tn → +0-3%, <₩85tn → −5-10%. Graded vs the 07-06 UPDATED bar (FnGuide OP ₩85.59tn) per the prelim-eve addendum.
+
+**Actual (T1 공시 via ≥5 T2 wires):** revenue **₩171tn** (+129% YoY); OP **₩89.4tn** (+1810% YoY, record; single-quarter OP > NVIDIA's latest quarter, T2 framing). Bonus provision ~₩20tn — ex-provision OP >₩100tn per multiple wires. First-hour reaction: 005930 **−5.35%** to ₩301,000; KOSPI −0.46%; SKH sympathy unquantified (flagged).
+
+**Component adjudication:**
+- OP: **BAND HIT** (89.4 ∈ 87-97); point −2.8%; **consensus BEAT +4.45%** vs updated ₩85.59tn bar (+5.2% vs original ₩84.98tn) — P(beat)~70% resolved TRUE. Whisper (~₩90tn): whisper-INLINE, exactly the pre-documented scenario.
+- Revenue: **BAND MISS (small)** — ₩171tn vs band floor ₩172tn; in-line with consensus. Falsifier 2 (<₩170tn) did NOT fire.
+- Provision: ~₩20tn actual = top of the 07-04 preview range (₩10-20tn) — per the pre-registered carve-out, the miss-vs-point is a COMPUTATION one-off (provision), NOT an ASP-model failure; ex-provision >₩100tn implies the ASP flow-through model was right-to-conservative.
+- ASP three-way dispute: **NOT ADJUDICABLE at prelim** (consolidated-only, no division split — pre-documented) → transfers to the full print ~Jul-23.
+- Reaction (T+0 close CONFIRMED; formal T+24h = 07-08 close): first hour −5.35% → intraday −9.75% (13:51 KST circuit-breaker window) → close **−6.92%** vs the predicted +0-3% band → **REACTION LEG MISS confirmed at the close**; cohort context: SKH −8.45%, KOSPI ~−5% w/ circuit breaker (see 09:15Z update in the wake artifact). Mechanism: whisper-anchoring — the market graded vs the ~₩90tn whisper + brokers-raised bars (News1: bars raised toward ₩90tn into the print), not the official consensus. Cohort-decoupling (#41): 005930 −5.35% vs KOSPI −0.46% = idiosyncratic-leaning, diagnostic incomplete (SKH move unverified).
+
+**3-layer GRADE:**
+- INPUT — revenue leg: the pre-flagged gap fired as flagged (Q1 base never independently pulled; QoQ inference leaned on pricing math) → small band-miss. Bar-creep was correctly pre-managed.
+- COMPUTATION — sound: OP band hit; point-gap = provision one-off per the pre-registered carve-out.
+- REASONING — fundamental leg strong (whisper risk, carve-out, and conditional reaction bands all pre-identified). Reaction leg: the file SAW the whisper-inline risk but kept official-consensus-anchored reaction bands → **generalizable: in whisper-elevated setups, band the reaction vs the WHISPER, not the official bar** (B42/L14-v2 family — logged as B42 N+1, not a new lesson number).
+
+**L27 verdict: N=2 fundamental POSITIVE — beat-pattern intact, regime-test GREEN on the operational leg.** BUT: first clean beat-with-negative-reaction datapoint → **L27 falsifier-watch counter 1 of 2 OPENED (provisional pending T+24h close)** — if HYNIX (Jul-29) or MURATA (Jul-31) also beats operationally with negative cohort response, the "fundamentals diverge from price" reframe question fires per the pre-registered L27 falsifier.
+
+---
+
+## [2026-07-06 GRADED — backfill] MU Q3 FY26 print (registered 2026-06-23 in cross-source-log only; resolved 2026-06-24)
+
+**Status:** GRADED 12 days late (audit-surfaced: prediction was never ledgered at registration time; retro-registered + graded 2026-07-06)
+**Pre-registration:** `signals/cross-source-log/2026-06-23-am-subagent-mu-beat-probability-data-pack-tomorrow-print.md`
+**Outcome artifact:** `signals/cross-source-log/2026-06-24-pm-subagent-mu-q3-fy26-earnings-print-l27-first-regime-test.md`
+
+**Predicted (5 hypotheses, 2026-06-23):** modal H1 (P~50%, my model): beat consensus ($34.5-35.6B rev / $19.72-20.49 EPS) + Q4 guide ≥$38B → +10-20% continuation; P(operational beat)=85%; Q4 analyst-modeled range $38-42B; H5 (P~10%): beat + structural disclosure → +15-25%.
+
+**Actual (T1 SEC 8-K):** revenue **$41.46B** (+16.5-20.2% vs consensus), non-GAAP EPS **$25.11** (+22-27%), Q4 FY26 guide **$50.0B ±$1.0B** — +131% of the $38B binary gate and +16.6% above the buy-side high ($42.9B); largest forward guide in Micron history. **H1 FIRED (modal) + H5 PARTIAL** (HBM4 volume-ramp-ahead-of-yield-curve disclosure). 6/6 pre-print directional theses validated. AH reaction ~+2.5% muted — classified in the 06-24 artifact as a distortion artifact of the −13.18% pre-print KOSPI-contagion selloff, not disappointment.
+
+**3-layer GRADE:**
+- **INPUT — the failed layer (partially):** every modeled magnitude band was demolished — the Q4 scenario range topped at $42B vs actual $50B, and the H1 reaction band (+10-20%) never contemplated a +131%-of-gate guide. The optimistic tail was under-sampled EVEN AFTER B45 correction — B45's recursive-persistence pattern (pre-training magnitude conservatism survives its own codification). Second INPUT defect: process — no grading-log stub was registered at prediction time (Critical Rule: PREDICT workflow step skipped), which is why this grade is 12 days late.
+- **COMPUTATION — sound:** 5-hypothesis joint distribution well-formed; P-weights reasonable (modal fired); P(operational beat)=85% resolved TRUE; decoupling of P(beat) from P(positive reaction) was structurally correct.
+- **REASONING — sound:** correctly pre-identified the Q4 guide (not the Q3 beat) as the true binary; correctly applied L21 to classify the muted AH reaction as macro-confounded rather than thesis-negative.
+
+**Diagnostic:** direction right, magnitude wrong by tail-underestimate → INPUT layer (B45-class).
+
+**Reaction leg (Two-Part GRADE protocol):** T+24h close was never formally captured (same process gap); AH +2.5% recorded as CONFOUNDED/NON-SCORING for the bimodal-print framework — does not count for or against L27's reaction predictions.
+
+**L27 verdict:** **N=1 POSITIVE — beat-pattern intact, regime-test GREEN.** Next tests: HYNIX Q2 (~Jul-29) = N=2, MURATA Q1 FY27 (Jul-31) = N=3.
+
+**Calibration adjustment:** for the late-July v2 ensembles (HYNIX/MURATA/SNDK, T-5d re-runs per the earnings program), add an explicit above-buy-side-high tail scenario with non-trivial P — regime-confirmation events keep landing in the unmodeled optimistic tail (consistent with L26/L30).
+
+---
+
 ## [2026-06-26 GRADED] KIOXIA-VLSI-symposium-pre-registration (2026-06-12)
 
 **Status:** GRADED (4-7 days late vs T+24h/T+72h windows)
@@ -136,3 +190,7 @@ When a resolution date hits:
 
 **Status: ✅ GRADED (T+0 fundamental + T+24h + T+72h stock-reaction)**
 
+
+- **2026-07-16 ASML T+24h reaction grade (closes 07-15 pending row): POSITIVE-SUSTAINED** — ADR +2.87% regular close $1,775.64, AH +3.51% toward $1,838 near 52-wk high (T1). Guide-raise frame (3rd consecutive FY raise €43-45B) dominated; no fade. Original bookings-keyed reaction frame remained void (metric dead, L31). Per `signals/cross-source-log/2026-07-16-thu-morning-wake-3leg.md`.
+- **2026-07-16 TSMC Q2 pre-registration — PARTIAL: rev component only.** Predicted pt $40.1B; actual $39.62B (NT$1.27T, +36% YoY, ABOVE guide, T1 pre-release Jul-13) = point −1.2% too high, direction right. EPS pt $3.90 + capex-raise P~55% + Q3 guide = PENDING post-call re-scan (armed same day). Status: pending-completion.
+- **2026-07-16 TSMC Q2 GRADED (completes the same-day partial):** rev HIT (in-band, pt +1.21% high); EPS MISS-LOW (actual ~$4.25/ADR computed vs band top $4.05; 6-K pending); Q3-up P~80% HIT (+14.1% QoQ mid); **capex-raise P~55% HIT — full raise $52-56B→$60-64B (+14.8% mid)**; FY growth 30%→">40%" outside branch set; falsifiers not fired. Edge-vs-consensus 2-for-2 (rev +1.21 vs street −3.84; EPS −8.2 vs street −10.3). T+24h reaction grade pending tomorrow. Per `signals/cross-source-log/2026-07-16-thu-tsmc-q2-print-grade.md`.

@@ -4,6 +4,8 @@
 
 **Purpose:** every Critical Rule #16 verification-subagent fire (Opus 4.8 per user mandate) gets logged here with token-cost estimate + yield class + brief-framing-errors caught + thesis-cascade triggered + position-implication delta. The 2026-07-15 monthly audit reads this file as the **single source of truth** for the Critical Rule #16 detectability/falsifier re-eval.
 
+**⚠️ RE-EVAL EXECUTED 2026-07-20 EVE — 5 DAYS LATE, AND ONLY BECAUSE AN EXTERNAL AUDIT (K3-Swarm G-08, BLOCKING) CAUGHT THE SILENT DEATH.** The 07-15-due audit appeared on the 07-15/07-16 dockets and then vanished from every surface with no log entry, no commit, no retirement — the meter ran unadjudicated. Computed verdict (python over this ledger, 2026-07-20): **160 entries 2026-06-15→2026-07-10, ~8,952k estimated tokens; yield distribution 107 HIGH / 22 MEDIUM / 4 MEDIUM-HIGH / 5 FRAMING-ERROR-CAUGHT / 2 LOW / 1 LOW-MEDIUM / 18 UNPARSED-format-drift / 0 ZERO. Pre-registered falsifier (≥3 ZERO-yield in 30d) NOT FIRED → Rule #16 verdict: POSITIVE, KEEP.** Honest caveats: (a) yield classes are self-graded (external-verification of one monthly audit per quarter adopted per G-39); (b) 18 entries have unparseable class lines — format drift, normalize at next append; (c) **this ledger's own append discipline died 2026-07-10** — zero entries in the last 10 days despite heavy verification activity (the K3-Swarm window alone); backfill-or-formally-scope decision at the 07-24 audit. Next re-eval: 2026-08-15.
+
 **Why this exists:** ~17 fires in the 2026-06-12 → 2026-06-19 cycle consumed an estimated 425-850k tokens with zero instrumentation tracking which fires were material vs decorative. Today's AM10 cascade caught 3 distinct brief-framing errors (GLM-5.2 Unsloth-vs-Zhipu, ASML leak-vs-event, PEFT cluster-vs-bombshell) that would have propagated — but the only record was buried in a commit message. Future audit cannot grep cost-vs-yield from prose. This ledger fixes that.
 
 **Linked:**
@@ -3121,3 +3123,468 @@
 **Thesis cascade triggered:** prediction addendum (bar) / envelope §5 (baseline) / SUMCO thesis+todo (date) / funding node (rates leg) / candidates (JP financials theme) / day-state.
 **Position implication delta:** NONE. **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-06-kr-jp-morning-scan-prelim-eve.md` **Commit:** (this commit)
+
+## 2026-07-06 EVE — user-shared 2-input ingest (UBS SKH/Samsung note + Jukan JEDEC-HBM5 relay)
+**Fires:** 2 (Opus, parallel; Tier-2 auto-fire post-gate-lift). **Est. tokens:** ~48k (25.0k UBS-provenance + 22.9k JEDEC-verification).
+**Items verified:** UBS note freshness/provenance + consensus vintage (KR-native) + 2029-rollover context; JEDEC HBM5 thickness story origin/freshness + HBM4 precedent + demand claims + equipment cascade.
+**Yield class:** HIGH (agent A: B40-clean fresh-verdict + bar arbitration for TONIGHT'S print + refuted my "2029 convergence" hypothesis) / HIGH (agent B: B40.1 partial catch — substance 4mo old — + B40.3 extrapolation flag + TC-12 N=6 demand-side corroboration + correctly bounded the BESI cascade).
+**Brief-framing errors caught:** "hybrid bonding not even in HBM5" = extrapolation-not-decision (B40.3); story-freshness illusion (Mar/Apr substance, 07-06 packaging); Visible-Alpha-vs-FnGuide consensus-panel conflation risk neutralized pre-print.
+**Thesis cascade triggered:** HYNIX back-ref / Samsung prediction consensus addendum / TC-12 N=6 (index+body+tags) / BESI watch-line / deep-dig queue #2 premise note.
+**Position implication delta:** NONE. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md` **Commit:** (this commit)
+
+### [2026-07-07 — "good morning Korea and Japan" (Workflow #10, post-rout catch-up)] 2 Opus; HIGH both — Leg A verified all 5 user-provided closes (4/5 exact) + caught the MURATA idiosyncratic overhang (BlackRock stake cut) + arbitrated the SKH close conflict; Leg B surfaced the JP grid/transformer non-bypassable pinch (TC-13 N+1) + SIer-disruption candidate + Hanwha-TKMS contradiction
+**Trigger source:** User "let's do a good morning Korea and Japan run". **Subagents fired:** 2 (Opus, parallel — Leg A portfolio-anchored / Leg B unanchored discovery per `meta/morning-feed-prompts.md`). **Estimated token cost:** ~86k (Leg A ~49k + Leg B ~37k).
+**Items verified (Leg A):** all 5 user voice closes (Samsung −6.92% exact / SKH arbitrated: −6.06% = close ₩2,201,000, −8.45% = intraday low / Kioxia ¥72,500 −11.26% vs Nikkei ≈−11% magnitude / MURATA ¥9,212 −10.13% T1 exact / SUMCO ≈¥4,569 −11.62% T2-derived); MURATA 07-06 −7.49% VERIFIED (was T3-flagged) → two-session ≈−16.9% + BlackRock 8.18%→7.10% filing = idiosyncratic overhang decomposition REVISED; TrendForce 3Q26 moderation; SKH ADR possible downsize to ~₩43tn.
+**Per-subagent yield:** Leg A HIGH (R1 convergence 5/5 user datapoints, 4/5 exact; the BlackRock catch changes the MURATA decomposition from pure-cohort to cohort+idiosyncratic — decision-relevant on the #1 held name); Leg B HIGH (transformer non-bypassable-pinch mechanism — on-site generation bypasses the interconnect queue but NOT the step-up transformer → TC-13 N+1; SIer-disruption new-thesis candidate NEC/Fujitsu/SHIFT; Hanwha-TKMS narrative-correction; application-layer blind-spot absence-question → new P1 framework item).
+**Brief-framing errors caught:** SKH −8.45%-as-close (agent-side, from 07-07 09:15Z update) corrected to intraday-low; Kioxia magnitude chain −12%→≈−11%→−11.26% settled.
+**Thesis cascade triggered:** MURATA/SUMCO/HYNIX thesis banners; `watchlist/candidates.md` (JP grid/transformer cluster + SIer cluster + Hanwha note); `triangulation.md` TC-13 N+1; `meta/todo.md` new P1 (application/software-services-layer framework).
+**Position implication delta:** NONE — 🟡 HOLD both held names (Rule #8; cohort-systemic decomposition + one idiosyncratic overhang flagged, no falsifier fired).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-feed-kr-jp-legA-postrout.md` + `2026-07-07-morning-feed-kr-jp-legB-DISCOVERY.md`
+**Commit:** (this commit)
+
+### [2026-07-07 MIDDAY — AI Intelligence Brief gauntlet (B61 class)] 3 Opus; HIGH ×3 — promoted the ONE fresh item (Kyber delay, market-moving) + killed 6 recycles incl. a funding-node double-count; ADR downsize adjudicated pre-rout-mechanical with cornerstones holding
+**Trigger source:** user-shared daily LLM-generated digest (own agent, B61 benign-aggregation sub-type). **Subagents fired:** 3 (Opus, parallel). **Estimated token cost:** ~65k (actual 19.0 + 24.4 + 21.8).
+**Items verified:** Kyber/Rubin-Ultra delay; Rubin CPX; H100-vs-GB200 TCO; SKH ADR live state + Huawei-Korea; Colossus 2 + xAI raise; Trainium 5GW; Railway/Cowork/Slackbot/GLM-5.2 app-layer rows.
+**Per-subagent yield:** A HIGH (Kyber FRESH-CONFIRMED 07-06 w/ NVIDIA denial + PCB/CCL cascade table + the held-name kill-line: rack slip ≠ component/wafer volume cut; also refuted my own NVL144-garble suspicion — visible self-correction); B HIGH (downsize ₩45.45tn→₩43.14tn adjudicated as PRE-rout mechanical reset; cornerstone tell INTACT; NEW negative-basis watch ~9.2%; Huawei-Korea split verdict; SKH Q2 Street ₩61-66tn bar datapoint); C HIGH (6-item recycle sweep incl. Colossus-1-specs-on-Colossus-2 garble + xAI Jan-raise double-count block; app-layer rows back-dated for the P1 framework).
+**Brief-framing errors caught:** Colossus 2 spec cross-contamination; xAI raise presented as simultaneous-new; CPX/TCO/Trainium/Railway/Cowork/Slackbot staleness-as-fresh; "Blackwell packaging offshore 2028" attribution smear; "3x H20" rounding (2.87×).
+**Thesis cascade triggered:** HYNIX (ADR midday banner), MURATA + SUMCO (Kyber second-driver banners; 2027 assumptions stand), day-state, B61 N+1 note, todo P1 evidence rows.
+**Position implication delta:** NONE — 🟡 HOLD both held names; no falsifier touched.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-brief-b61-gauntlet-kyber-skh-adr-applayer.md`
+**Commit:** (this commit)
+
+### [2026-07-07 PM — Twitter batch (Jukan frames + foundry + CXL + CXMT)] 2 Opus; HIGH both — Samsung foundry-coupled HBM4 threat = sharpest named bear-leg variable yet for the SKH re-entry framework; CXMT adoption adjudicated scarcity-driven (pricing-power confirmation) with 2 pre-registered share-taker triggers
+**Trigger source:** user-shared Twitter batch (2 screenshots + 4 text relays). **Subagents fired:** 2 (Opus, parallel — KR foundry/CXL + TW/CN CXMT). **Estimated token cost:** ~47k (actual 24.4 + 22.5).
+**Items verified:** Samsung Foundry June monthly profit + HBM4-base-die-on-4nm + ~80% yield; CXL 3.1 delay + Intel Diamond Rapids slip; CXMT Taiwan-PC adoption + MSI DDR5-8200 validation + scarcity-vs-cost adjudication.
+**Per-subagent yield:** KR HIGH (foundry FRESH-CONFIRMED w/ tier discipline — T2 single-origin Bloter, internal-transfer-volume nuance vs open-market wins; the SKH-pays-TSMC-toll coupling read; Diamond Rapids 2027 T1-confirmed; Oct invalidation watch pre-registered); TW HIGH (MSI milestone T1-confirmed fresh; ROG-Certified "licensing" garble caught B40.2; scarcity-vs-cost adjudicated with the ~7%-discount kill-fact; relief-valve→share-taker 3rd-order frame + 2 concrete triggers).
+**Brief-framing errors caught:** ASUS ROG-Certified overstated as China-die licensing; "3x H20" rounding (prior batch); CXL granular dates flagged unverifiable-at-source.
+**Thesis cascade triggered:** HYNIX 🔴 foundry-threat banner; candidates CXMT escalation watch; grading-log panel pin; lessons L27 narrative-corroboration note; day-state.
+**Position implication delta:** NONE — ⚪/🟡 — competitive variable pre-registered with dated adjudicator, no falsifier fired, no held-name touch.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-twitter-batch-jukan-reaction-regime-cxmt-taiwan-foundry.md`
+**Commit:** (this commit)
+
+### [2026-07-07 PM-2 — APPLICATION-LAYER FRAMEWORK build (Workflow #9 step-0, user "go")] 4 Opus; HIGH ×4 — the named blind spot closed: framework v1 shipped with unit-of-disruption re-specification + new earliest 2027 demand tripwire + 2 JP names elevated
+**Trigger source:** user "go" on the queued framework build. **Subagents fired:** 4 (Opus, parallel — JP SIer ground truth / SaaS-seat economics / winners map / adversarial Rule #18). **Estimated token cost:** ~114k (actual 41.4 + 24.8 + 23.3 + 24.5).
+**Per-subagent yield:** L1 HIGH (press-vs-order-books gap = the framework's central finding; NEC-30k + Fujitsu dual-source confirmed w/ scope corrections; SCSK/TIS/NTT-Data record books T1; SHIFT test-case anatomy); L2 HIGH (ServiceNow ~50% non-seat new ACV; ETR 59%-cut-subs-first; Fin outcome-pricing proof; TAM-redefinition headcount-budget finding); L3 HIGH (capture stack ranked; ~65-75% Tier-A ROI-paid demand; coding-deceleration tripwire — decision-grade for the 2027 duration question); L4 HIGH (76% buy-vs-build reversal kills the insourcing mechanism; exit-cohort NRR prints; per-seat + 人月 identified as the two genuinely impaired units).
+**Brief-framing errors caught:** "death of SIer" reclassified opinion-serial-not-order-data; Accenture record-vs-decelerating arbitrated (Q2 record → Q3 −2% YoY, both T1); JP ¥-figure garbles corrected from search snippets to IR originals.
+**Thesis cascade triggered:** `sector/application-layer-framework.md` CREATED; candidates SIer-cluster tiered; todo P1 build-item closed → P2 standing items; end-demand P1 gains app-layer half; themes T5 back-ref; day-state.
+**Position implication delta:** NONE — ⚪/🟡 — two names elevated to thesis-build (no sizing); exit-cohort re-underwrite user-gated.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-applayer-framework-4agent-step0.md`
+**Commit:** (this commit)
+
+### [2026-07-07 PM-3 — Re-entry mandate execution (NOW/DDOG/NEC/Fujitsu)] 4 Opus; HIGH ×4 — rotation hypothesis TAPE-CONFIRMED (H1 P~70); NOW print-date correction (Jul-22); DDOG regret-chase flag; 2 new thesis files; Horizon ¥0-provision binary surfaced
+**Trigger source:** user mandate (add-willingness + full autonomy). **Subagents fired:** 4 (Opus, parallel). **Estimated token cost:** ~130k (27.1 + 40.9 + 31.3 + 31.1).
+**Per-subagent yield:** NOW HIGH (Jul-22 date catch — a decision-relevant correction; beat→down ×2 pattern; EV/NTM 5.6× vs 13×; Guggenheim-concedes-AI-leg nuance; rotation tape); DDOG HIGH (+7-8%-above-exit round-trip = the B9 regret-chase catch; spot>consensus-PT; Bernstein decel; fragile-tier concentration framing; rotation tape ×2); NEC HIGH (Anthropic-Shock INVERSION divergence fact; commoditization-in-34-days bear; conviction anchors + 4 named data gaps); FUJITSU HIGH (segment-vs-group masking decomposition; Horizon £2bn/¥0-provision binary; deal-structure asymmetry catch).
+**Brief-framing errors caught:** my own carried "NOW prints Jul-29" corrected to Jul-22; EN-Yahoo stale NEC price flagged vs JP-native.
+**Thesis cascade triggered:** `companies/NEC/thesis.md` + `companies/FUJITSU/thesis.md` CREATED (Conviction Format, Watchlist); decision package in the mandate artifact; day-state.
+**Position implication delta:** NONE executed — package delivered user-gated (staged-deployment modal recommendation; DDOG wait; FUJITSU blocked).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md`
+**Commit:** (this commit)
+
+### [2026-07-07 PM-4 — NOW Jul-22 beat anatomy + signal dashboard] 2 Opus; HIGH both — 8/8 beat-and-raise base rate isolates the AI-ACV line as THE binding variable; joint P(clean stock-up event) ~0.30 converges independently with the pre-registered H1 P~35; FX agent-conflict caught and quarantined
+**Trigger source:** user directive ("what must be true for a beat-all-and-raise + map the directional data sources"). **Subagents fired:** 2 (Opus, parallel). **Estimated token cost:** ~114k (actual 34.5 + 79.1).
+**Per-subagent yield:** beat-anatomy HIGH (8-quarter T1 base-rate table; compressing-magnitude catch; raise-size nuance; AI-ACV ramp math $900M-1.0bn Q2 gate; "technical vs stock-up beat are two different events"); signal-map HIGH (the SAP/Infosys-print-Jul-23 structural gap — no peer read before NOW; Accenture-mixed decomposition; Gartner 3rd up-revision; crowd-out-vs-attach fulcrum mapped to the framework spine).
+**Brief-framing errors caught:** FX DIRECTION CONFLICT between the two agents (DXY-headwind vs weak-USD-tailwind) — flagged NOT propagated, arbitration armed ~Jul-20; NOW thesis stale Jul-29 date corrected to Jul-22 (banner).
+**Thesis cascade triggered:** NOW thesis pre-registration banner + date fix; mandate artifact PM-5/PM-6 sections.
+**Position implication delta:** NONE — staged-entry decision remains user-gated with the ~Jul-20 re-pull armed.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-reentry-mandate-now-ddog-nec-fujitsu-4agent.md` (PM-5/PM-6)
+**Commit:** (this commit)
+
+### [2026-07-07 PM-7 — US morning-feed 2-leg + 2 verification fires] 4 Opus; HIGH 3 / MEDIUM 1 — Leg A single-cause attribution error CAUGHT by verification (Samsung-led ~55%, not DeepSeek); Anthropic S-1 tracker GAP found + backfilled; 07-07 graded CONFOUNDED rotation test (H1 70→65)
+**Trigger source:** "good morning US" (Workflow #10) + Rule #16 auto-fires on the two load-bearing Leg B items. **Subagents fired:** 4 (2 scan legs + 2 verification; Opus, parallel pairs). **Estimated token cost:** ~181k (actual 57.5 + 86.9 + 12.8 + 23.6).
+**Per-subagent yield:** Leg A MEDIUM (rotation table + NBIS/NOW tape capture + Samsung/Kyber items, but WRONG single-cause attribution + missed equipment-layer >5% breaches — both corrected downstream); Leg B HIGH (Iran/Hormuz + NATO counter-drone + utility-capex + Anthropic S-1 re-surface — four structurally-invisible-to-Leg-A items, validates two-leg design); verify-1 HIGH (S-1 = STALE-RECYCLE, 06-01 T1 company-confirmed; exposed the tracker never logged it; B63 adversarial pass survived); verify-2 HIGH (PARTIAL-FRESH DeepSeek verdict; Samsung-led attribution split; L27/B42 same-day beat→−7% timing correction; GEV/Barclays-Siemens-Energy decomposition; CONFOUNDED-test grade with pre-registered clean-test criteria).
+**Brief-framing errors caught:** 3 (Leg A DeepSeek attribution; Leg A "no >5% trigger"; main-session "pre-print" Samsung timing tag).
+**Thesis cascade triggered:** NOW banner (tape input + H1 65); watchlist (counter-drone/NOC + Joulent + Siemens-Energy correction); private-tracker Anthropic backfill; both scan artifacts.
+**Position implication delta:** NONE — cash-patience read reinforced (Iran gate HOT); NOW staged-entry unchanged, user-gated.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×3). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-07-morning-feed-pre-us-scan.md` + `2026-07-07-morning-feed-us-DISCOVERY.md` (§6 synthesis)
+**Commit:** (this commit)
+
+### [2026-07-08 AM-1 — Samsung T+24h reaction grade inputs] 1 Opus; HIGH — beat-and-no-rally tick #1 CONFIRMED at T+24h (stabilization −6.2/−6.5% below pre-print, computed); HYNIX ADR oversubscription (~1,000 institutions) surfaced on pricing eve; two hallucinated/recycled tape clusters self-caught and discarded by the agent
+**Trigger source:** pre-registered T+24h adjudicator (07-08 KRX close), scheduled work. **Subagents fired:** 1 (Opus; KR-native parallel per #36). **Estimated token cost:** ~37k (actual 37.4k).
+**Per-subagent yield:** HIGH — direction ≥3-source corroborated; agent flagged its own data limits honestly (intraday ~09:55 KST only, no official settle; Japan 07-08 cohort UNVERIFIED; discarded two internally-impossible "close" clusters as hallucinated/recycled — B61-class self-catch).
+**Brief-framing errors caught:** prev-close basis discrepancy (296,000 vs 297,000) surfaced and COMPUTED as immaterial (#43b).
+**Thesis cascade triggered:** grading-log T+24h finalization; lessons.md L27 tick #1 confirmed; HYNIX thesis 07-08 banner (rebound decoupling + ADR oversubscription).
+**Position implication delta:** NONE — watchlist-reference names; Jul-9/10 ADR tells + Jul-29/31 L27 adjudicators unchanged.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** grading-log.md T+24h section (grade artifact; no separate log file — grade lives in the ledger of record)
+**Commit:** (this commit)
+
+### [2026-07-08 AM-2 — Twitter batch: SpaceXAI+Cursor / Zhipu chip / China model curbs] 3 Opus; HIGH 3/3 — TC-15 promoted (labs internalizing inference silicon N=4); SUMCO framing-error CAUGHT on own 07-07 cascade (China wafer localization); $60bn Cursor deal caught as B40.1 stale-recycle (2nd time); launch claim correctly parked single-source
+**Trigger source:** user Twitter shares (3 screenshots + 1 text digest), Rule #16 auto-fire. **Subagents fired:** 3 (Opus, parallel; CN-native per #36). **Estimated token cost:** ~59k (actual 17.3 + 23.6 + 17.8).
+**Per-subagent yield:** xAI/Cursor HIGH (fact/memo/speculation split; $60bn = STALE Jun-16 already in corpus; Wednesday-launch = single-source memo, Reuters-unverified → PARKED; Cursor ~40-50%-of-Anthropic-revenue concentration fact extracted); Zhipu HIGH (exploratory-tier substance correctly de-weighted; the CLUSTER enumeration = the real yield: core-lab N=4 → TC-15 promotion; SMIC >93% utilization + HBM gap = the bypass-route insight; SUMCO China-localization correction); China-curbs HIGH (CONFIRMED-FRESH proposal-stage w/ SPC-journal anchor; fact-vs-discussion split; OpenRouter 61% Chinese-weights stat; distribution-surrender counter-tension = the B63 adversarial pass).
+**Brief-framing errors caught:** 3 (my own 07-07 "fragmentation adds SUMCO sockets" incomplete-geography read; $60bn presented-as-new; model-launch memo-tier presented as fact).
+**Thesis cascade triggered:** TC-15 → triangulation.md; SUMCO correction banner; MURATA TC-15 back-ref; private-tracker xAI→SpaceXAI rewrite + Anthropic Cursor-concentration + B63 both-directions note; application-layer framework §capture-stack N+1 + §cost-floor variable; watchlist +Zhipu radar.
+**Position implication delta:** NONE — MURATA/SUMCO HOLD unchanged (SUMCO demand-map refined, spine untouched); no watch-name action.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×3, incl. one on our own prior cascade — the highest-value class).
+**Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-twitter-batch-spacexai-cursor-zhipu-chip-china-model-curbs-3agent.md`
+**Commit:** (this commit)
+
+### [2026-07-08 AM-3 — Morning brief B61 gauntlet: GPT-5.6/Fable-5 cluster + SambaNova bundle + NAND contradiction check] 3 Opus; HIGH 3/3 — parked Fable-5 flag RESOLVED (export-control suspension); NAND false-contradiction KILLED by T1 before cascade; SambaNova apples-to-oranges framing caught; non-default read #11 codified
+**Trigger source:** user's AI Intelligence Brief (B61-class digest, 68 sources). **Subagents fired:** 3 (2 bundles + 1 contradiction-class check; Opus, KR/JP-native on the NAND check per #36). **Estimated token cost:** ~55k (actual 17.1 + 16.4 + 21.3).
+**Per-subagent yield:** lab-cluster HIGH (Fable-5 timeline reconstructed T1/T2 — Jun-12→Jul-1 export-control suspension resolves the parked 07-07 T3 flag; GPT-5.6 tier pricing T1; Commerce-clearance datapoint; two-tier pricing upgraded from my "narrative" triage with hard numbers — a main-loop TRIAGE MISS caught by the agent); bundle-2 HIGH (SambaNova acquisition-price-vs-valuation framing error + "more than doubling" understatement caught; storage piece correctly classed RESTATEMENT; UK NSIP dated to Nov-2025 legislation vs "new" framing); NAND-check HIGH (SupplyICs "flat to -5% Q3" CONTRADICTED-BY-T1 — TrendForce 07-03: NAND +10-15% Q3, DRAM +13-18%, Samsung +20% ask; the false contradiction was stopped BEFORE touching TC-1/KIOXIA/SNDK — the double-verification save; keeper = NAND momentum-deceleration second-derivative datapoint).
+**Brief-framing errors caught:** 5 (digest "no pricing details" stale; "Lab Watch: nothing notable" misclassification; SambaNova framing ×2; storage vendor-narrative) + 1 main-loop triage miss (two-tier item) + 1 false-sign kill (NAND).
+**Thesis cascade triggered:** where-we-are non-default read #11 (model weights as export-controlled goods, both sides); private-tracker Anthropic (suspension timeline + H2 P~45→55) + OpenAI (GPT-5.6 entry); application-layer framework cost-floor hard numbers; KIOXIA + SNDK NAND-deceleration banners; watchlist +SambaNova.
+**Position implication delta:** NONE — held names untouched (DRAM/HBM leg re-confirmed); NAND reaction-regime bar noted for the watchlist-reference cohort into late-July prints.
+**Material yield class:** HIGH (FRAMING-ERROR-CAUGHT ×6 + false-contradiction kill).
+**Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-morning-brief-b61-gauntlet-gpt56-fable5-sambanova-nand-check.md`
+**Commit:** (this commit)
+
+### [2026-07-08 PM-1 — Cloudflare deep-dive: announcement verification + agentic-payments layer pass] 2 Opus; HIGH both — NET +8.6% MISATTRIBUTION caught (Scotiabank upgrade, not the Gateway); demand-side truth-serum surfaced (x402 ~$28k/day, half synthetic, vs ~$3B lump-sum licensing); new framework stub + NET Watchlist thesis
+**Trigger source:** user deep-dive order (Rule #16 + Workflow #9). **Subagents fired:** 2 (Opus, parallel). **Estimated token cost:** ~49k (actual 18.5 + 30.2).
+**Per-subagent yield:** announcement-verifier HIGH (waitlist-not-GA; tape misattribution; x402-under-Linux-Foundation w/ Anthropic membership; CF-doesn't-own-the-standard structural catch); layer-pass HIGH (bot-majority 57.5% T1; crawl-to-referral 11,122:1 Anthropic; realized-vs-narrative gap 2-3 orders of magnitude; CF's own per-crawl->Pay-Per-Use pivot as the demand tell; toll-position map w/ listed tickers; hedged pot math; CCL side-check honest UNRESOLVED).
+**Brief-framing errors caught:** 2 (user tape attribution; "past 72h" freshness).
+**Thesis cascade triggered:** NEW `sector/agentic-commerce-framework.md` v0.1 CANDIDATE + NEW `companies/NET/thesis.md` (Watchlist, AF 3/5) + watchlist entries + application-layer sibling back-ref.
+**Position implication delta:** NONE — NO ACTION on NET (option-not-cashflow at ~32x P/S); activation tell pre-registered gates entry-package work.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-cloudflare-agentic-payments-2agent-workflow9.md`
+**Commit:** (this commit)
+
+### [2026-07-08 PM-2 — CCL trio divergence deep-dive] 2 Opus; HIGH both — TC-16 PROMOTED (glass-cloth/laminate scarcity N=4); binding node relocated UPSTREAM (Nittobo ~90% T-glass / Mitsui HVLP4) per bypass-route discipline; June-revenue trigger hypothesis KILLED on timing; Kyber adjudicated EXTENDS-not-cuts
+**Trigger source:** user observation (CCL trio green on red tape) + explicit research order. **Subagents fired:** 2 (Opus, TW/JP-native per #36). **Estimated token cost:** ~81k (actual 29.8 + 51.7).
+**Per-subagent yield:** tape/catalyst agent HIGH (June revenues pinned w/ dates — killed my monthly-revenue trigger hypothesis honestly; Kyber-immunity ranked primary; refused false-precision closes; TAIEX conflict flagged); layer agent HIGH (two-layer binding verdict; MS $/rack BOM 233pct; Goldman TAM; hike chronology; TRACE on Kyber w/ P-weights; ranked expressions incl. the non-consensus Nittobo leg; falsifier set).
+**Brief-framing errors caught:** 1 (my own H1 monthly-revenue trigger — killed on print-date evidence).
+**Thesis cascade triggered:** TC-16 -> triangulation.md; bottlenecks.md interim register addendum (T-glass->HVLP4 rotation); watchlist CCL-scarcity cluster (4 names ranked); artifact PARTs 1-2.
+**Position implication delta:** NONE executed — theme candidacy only; any entry = fresh decision package, user-gated.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md`
+**Commit:** (this commit)
+
+### [2026-07-08 PM-3 — Nittobo/Mitsui JP-native tie-in] 1 Opus; HIGH — B39 adjudicated per name (Nittobo PARTLY PRICED / Mitsui PARTLY REMAINS = the multi-vector distortion); 1:5 Nittobo split caught (data-hygiene save); TC-16 gap numbers SHARPENED (HVLP4-equiv ~320t/mo vs ~1,200t/mo demand); T-glass share-denominator reconciliation flag opened
+**Trigger source:** user accessibility confirmation + "continue" (Workflow #9 step 4). **Subagents fired:** 1 (Opus, JP-primary per #36). **Estimated token cost:** ~37k (actual 36.9k).
+**Per-subagent yield:** HIGH — verified user tape both names; segment-level two-leg decomposition (Mitsui foil flat-guided inside metals rolloff = the mispricing); JP-T1 capex corroboration (Fukushima 3x, foil 580->1,200t/mo roadmap); Rule #18 bear cases named w/ live second-source threats (Taiwan Glass, Co-Tech); honest data gaps (segment %, print dates inferred).
+**Brief-framing errors caught:** 1 (split-adjusted pricing — raw YTD/ATH reads would mislead any sizing math).
+**Thesis cascade triggered:** 2 new Watchlist theses; watchlist cluster B39 update; artifact PART 3; TC-16 refinement noted.
+**Position implication delta:** NONE — both NO ACTION, user-gated; pre-entry checkpoints = ~Aug-1/08 Q1 prints + share-denominator reconciliation.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-08-ccl-trio-divergence-2agent-workflow9.md` (PART 3)
+**Commit:** (this commit)
+
+### [2026-07-09 midday — W10 KR/JP post-close 2-leg MANUAL WAKE + 1 Tier-2 verifier] 3 Opus; Legs A+B HIGH, verifier IN FLIGHT
+**Trigger source:** user "good morning Korea and Japan" (routines disabled pending user-side repo fix — manual wake). **Subagents fired:** 3 (Leg A anchored 74.8k; Leg B discovery 58.6k; Tier-2 verifier on the 2 MURATA claims — tokens TBD on return). **Estimated token cost:** ~133k booked + verifier TBD.
+**Per-subagent yield:** Leg A HIGH (full rebound tape + SKH ADR pending-state w/ widened-gap math + Bain/Kioxia overhang-clear + MS MLCC/rack candidate + honest data-gap flags on exact held closes); Leg B HIGH (JGB 2.900% regime thread = framework gap now flagged in both held theses; memory→handset demand-destruction CONTRADICTING signal vs MURATA consumer leg; SKH ADR access-gate removal → HYNIX reopen candidate; KR defense/power rotation absence-answer).
+**Brief-framing errors caught:** none (no brief — direct scan).
+**Thesis cascade triggered:** MURATA + SUMCO thesis entries (same commit); TC-6 pending-candidate note; day-state catalyst clock (SKH ADR grade deferred to Jul-10 KST — correctly NOT closed); watchlist candidates ×3.
+**Position implication delta:** NONE — both held names HOLD; all new signals verification-gated.
+**Material yield class:** HIGH (pending verifier). **Audit-day classification:** POSITIVE.
+**Escalation note (budget):** 3rd agent justified as prediction-resolution-day (SKH ADR divergence-ledger #1) + thesis-CONTRADICTING signal (protocol: contradiction earns the verification cost).
+**Cross-source-log:** `2026-07-09-morning-feed-kr-jp-legA.md` + `2026-07-09-morning-feed-kr-jp-DISCOVERY.md`
+**Commit:** (this commit)
+
+### [2026-07-09 PM — Tier-2 verifier RETURN (closes the midday in-flight entry)] 1 Opus 33.7k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** Claim 1 CONFIRMED (TC-6 N+1 booked 6→7); Claim 2 numbers CONFIRMED but inference REFRAMED to immaterial via Murata IR sensitivity math (JP −7% ≈ −¥0.9bn ≈ 0.05% of rev). **Framing errors caught: 2** — (a) "90% of BOM" was actually 90% of retail price (denominator swap in the Leg-B carry); (b) low-end demand destruction hits the lowest-MLCC-content tail (magnitude overstatement). Day total: 3 fires ≈ 167k, all HIGH, zero ZERO.
+**Cross-source-log:** `2026-07-09-murata-2claim-tier2-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 midday-2 — Samsung GAIA verification (user Twitter share)] 1 Opus 25.6k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** origin pinned (Hankyung 단독 Jul-9, genuinely fresh, single-source unnamed); PIM claim REFUTED-as-attached (relay conflated GAIA with the separate HBM-PIM roadmap — the embellishment would have created a false DRAM read-through); Mach-1-rebrand hypothesis killed; captive-4nm self-loading read feeds the Jul-7 Samsung-foundry watch. **Artifact:** `2026-07-09-samsung-gaia-ai-pc-accelerator-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 midday-3 — China H200 permission verification (user share)] 1 Opus 22.5k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** tweet REFUTED (3-axis headline inflation); MY OWN two-gate framing INVERTED and corrected (US gate open since Feb-26, ~10 firms cleared May-14 — China's own reluctance was the binding gate; self-correction logged per Rule #11); HBM read-through capped by the Hopper-inventory nuance (upper bound 27.5 PB computed but NOT bookable); MURATA/SUMCO non-linkage. Day total now 5 fires ≈ 215k, all HIGH, 4 framing errors caught, zero ZERO.
+**Artifact:** `2026-07-09-china-h200-permission-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 PM — Apple/CXMT + DeepSeek verification (user batch)] 1 Opus 30.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** CXMT boundary adjudicated legacy→AMBER (the load-bearing call); Jul-9-SKH-rally-on-CXMT attribution REFUTED (technical rebound; CXMT is bearish-KR — catch prevents a false "substitution-shrugged-off" booking); Leg A date-shift RESOLVED (KR rows = Jul-8); ADR gap corrected 17-23%→~12.8%; two-stack N=2 coherence booked; Tier-2 queue item closed. Day: 6 fires ≈ 246k, all HIGH, 6 framing catches.
+**Artifact:** `2026-07-09-apple-cxmt-deepseek-two-stack-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 PM-2 — MS CoPoS/Feynman/SiC + TSMC preview verification (user batch)] 1 Opus 33.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** relay's "CoPoS 2028" decompressed (Feynman Ultra 2029 = CoPoS proper; pull-in ~6-12mo); SiC carrier held at speculation-tier (no primary); broker attribution pinned (GF/Pu — prevents sell-side numbers booking as consensus); EUV-cap refined to Low-NA story w/ independent Barclays corroboration = next-bottleneck candidate; SUMCO interposer-substitution headwind honestly logged against the packaging-tailwind temptation. Day: 7 fires ≈ 280k, all HIGH, 7 catches, zero ZERO.
+**Artifact:** `2026-07-09-ms-copos-feynman-sic-tsmc-preview-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 EVE — CN movers verification (user tape share)] 1 Opus 55.9k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** name-identity decode (Knowledge Atlas=Zhipu confirmed); MY H1 driver-attribution corrected (Apple-CXMT backdrop vs 业绩预告+CXMT-IPO proximate — the pre-listed alt won); Jul-8 "Zhipu plunge 17%" headline-contamination catch; GigaDevice still-below-Jun-28-mark framing catch (+21.75% = rebound not breakout); CXMT IPO Jul-16 calendar add; 3 locked-P claims resolved same-day → calibration ledger. Day: 8 fires ≈ 336k, all HIGH.
+**Artifact:** `2026-07-09-cn-movers-gigadevice-zhipu-minimax-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT — d-Matrix/Parasail + APS/UPI verification (user newsletter shares)] 1 Opus 63.4k; HIGH + FRAMING-ERROR-CAUGHT ×1
+**Yield:** "NVIDIA+d-Matrix joint system" DEFLATED to third-party Parasail deployment (8th framing catch today — do-not-propagate flag set); HBM-displacement bear-vector adjudicated immaterial + flipped to LPDDR5-demand mild-reinforce; TC-13 #9 promoted (new upstream-equipment sub-segment); APS 054620 named into the absence register; 6 locked-P hypothesis resolutions → calibration ledger (+3 rows entered, 3 redundant-FALSE omitted). Day total: 9 fires ≈ 455k, all HIGH, 8 framing catches, zero ZERO.
+**Artifact:** `2026-07-09-dmatrix-parasail-aps-upi-verification.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT-2 — Bloomberg 3-item verification] 1 Opus 29.2k; HIGH + FRAMING-ERROR-CAUGHT ×3
+**Yield:** "Codex 5.5" decoded (=GPT-5.5); Meta TWO-stories-merged untangled (pay-per-use API REAL+fresh vs vendor-benchmark claims B63-flagged); Apple item = STALE-RECYCLE of Jun-26 FT lobbying (prevented false fresh-catalyst booking); Micron $250B T1 + GlobalWafers nugget → SUMCO F1 cross-ref; inference-price-war table assembled (end-demand capture leg). H1 nexus TRUE at P~55. Day final: 10 fires ≈ 484k, all HIGH, 11 framing catches.
+**Artifact:** verdicts appended to `2026-07-09-bloomberg-3item-meta-micron-apple-intake.md` **Commit:** (this commit)
+
+### [2026-07-09 NIGHT-3 — evening-brief 3-item verification] 1 Opus 23.3k; HIGH + FRAMING-ERROR-CAUGHT ×2
+**Yield:** "regulatory approval" DEFLATED to voluntary EO early-access review with T1 WH denial (prevents booking a licensing-regime that does not exist — regime node correctly labeled instead); Meta RAM = stale-recycle + read INVERTED to DRAM-tightness corroboration; Arora buyer-side arithmetic (98% deflation × 3x bills) = end-demand P1's best buyer-side datapoint; watch-item correctly held OPEN; Anthropic same-regime facts → private-tracker (B63-flagged). Day FINAL: 11 fires ≈ 507k, all HIGH, 13 framing catches, zero ZERO.
+**Artifact:** verdicts appended to `2026-07-09-evening-brief-b61-gauntlet-gpt56-panw-ramreuse.md` **Commit:** (this commit)
+
+### [2026-07-10 — GOOD-MORNING WAKE #1 (protocol v1.2 first run)] 4 Opus scanners ≈307.9k + Leg C main-loop; ALL HIGH
+**Yield:** SUMCO limit-up cascaded same-hour (Micron wafer-LTA driver pinned); Jul-8/9 closes conflict RESOLVED w/ receipts; SKH ADR grade upgraded to CONFIRMED-FINAL $26.51bn; TSMC delay caught (typhoon → Jul-13); GPT-5.6 software rip mapped (NOW +9.9% → regret-chase binding); yen/GPIF live-flip = module priority escalation; enterprise-AI pullback layer-mapped (app-first, TC-1 intact — contradicting-signal of the day); TC-13 validated w/ real orders (HD Hyundai ₩1.12tn NA data-center); TC-16 TOPPAN pilot on-schedule; CXMT supply-valve watch opened; 2 EU-laggard hits (SAP/Siemens); PC-16 candidate (backlog-trophy exhaustion). 6 data gaps honestly flagged for next wake.
+**Commit:** (this commit)
+
+### [2026-07-10 — ARTICLE-PULL VERIFICATION PAIR (Oracle downgrade + GPIF/JGB)] 2 Opus verifiers ≈54.7k; both HIGH
+**Yield:** 3 framing catches on 2 T1 article bodies — (1) Oracle outlook = STABLE (BBB/neg resolved INTO the cut; "inching to junk" frame capped; one-agency event, Moody's Baa2/neg = next domino); (2) GPIF = JAWBONING not mechanism (MHLW gate, no instrument/date; market skeptical per Bloomberg JP); (3) Friday JGB/yen rally = partly RETRACEMENT of 骨太-blueprint selloff (WSJ omitted). Hard T1 adds: Oracle $160B debt / FY27 capex $90-95B / FOCF −$42B / OpenAI ≈ half RPO / $20B equity plan; GPIF allocation splits; intervention zone 163→165. JGB module v1 BUILT + corrected same commit.
+**Artifact:** `2026-07-10-article-pulls-oracle-downgrade-gpif-jgb.md` **Commit:** (this commit)
+
+### [2026-07-10 — CXMT IPO 2-AGENT VERIFICATION (user momentum-buy question)] 2 Opus ≈59.5k; both HIGH
+**Yield:** trade adjudicated BEFORE any capital question reached sizing: (1) access = UNEXECUTABLE for Euro retail (T1 SSE Connect rules; DeGiro/IBKR checked; no ADR/HK line); (2) momentum base rate INVERTED the frame — cohort 5.5-6.6x multiples are allocation-only, debut-close buyers got +4.6%/−16.3%; (3) Entity-List correction to candidates.md (CXMT NOT BIS-listed; DoD 1260H instead); (4) ¥4.41/share debunked as arithmetic artifact; (5) prospectus financials booked (first profit 2025 → H1'26 ¥50-57bn guide). Pre-reg: day-1 pop >+300% P~60% (my model).
+**Artifact:** `2026-07-10-cxmt-ipo-verification-2agent.md` **Commit:** (this commit)
+
+### [2026-07-10 — MORNING-BRIEF B61 GAUNTLET (Simo/Copilot/Lyzr + MSFT-emissions/Bernanke)] 2 Opus ≈49.8k; both HIGH
+**Yield:** 3 framing catches — Copilot "preferred model" spin INVERTED (defensive vs Claude-default-Excel/PPT + MAI rise); Lyzr "entire fundraise via agent" CONTRADICTED + round NOT closed (blocked a fake end-demand datapoint); MSFT "threatening commitments" corrected to straining-not-breaking (pledge reaffirmed). Hard adds: OpenAI confidential IPO filing ~Jun-2026 (week after Anthropic, ≥2027); Simo title correction (my staleness — visible self-correction); MSFT gross 34M/net 20M both +25.0% YoY computed; electricity +24% YoY; Bernanke LTBT T1. 2 dedups caught main-loop free (GPT-5.6 launch, Atlas).
+**Artifact:** `2026-07-10-morning-brief-b61-gauntlet-simo-msft-emissions-lyzr.md` **Commit:** (this commit)
+
+### [2026-07-10 — MIDDAY BATCH 3-AGENT VERIFICATION (NDR/memory + helium + Anthropic/Meta)] 3 Opus ≈86.3k; all HIGH
+**Yield:** 9 catches across the batch — FCF-positive CONTRADICTED-BY-T1 (op-profit-ex-SBC; FCF 2028); ARR claim conservative ($60-69B carried); GM 65% blended not >70%; Meta Mythos-5 rumor REFUTED as framed (Watermelon @ GPT-5.5 still training); LPDDR5 halving = Jun-9 stale-recycle; NDR-event-this-week unverified (substance yes); Intel 5.2x vs ARM 2x asymmetry computed; helium "restriction" understated (full BAN T1 today) while "+1-3%" invented (net-importer, <0.5%); SUMCO helium exposure NEGLIGIBLE (argon). Builds: TC-1 GM-ceiling tracking variable (cycle-top mechanical marker); both theses cross-refed.
+**Artifact:** `2026-07-10-nvda-ndr-memory-jukan-cycle-anthropic-helium-3agent.md` **Commit:** (this commit)
+
+### [2026-07-10 — GITLAB DEEP DIVE + SNDK PRE-TASK] 3 Opus ≈86.6k; all HIGH
+**Yield:** SNDK = NAND converged to GM ceiling (78.4%→79-81% guide, QoQ delta collapse) → user's memory-late read data-confirmed, TC-1 TV extended, exit-miss GRADE flagged; GTLB full state (EV/S fwd 3.8x, CRR >$20M usage-repricing live, DBNRR bleed 122→117) → WATCHLIST-ADD with pre-registered Sep adjudicators; 3 corrections — "GitHub commits severalfold" → +25.1% YoY (Octoverse T1), user's "−62% from ATH" → −75% (−62% = 52wk-high distance), NOW+9.9% date-attribution flag OPENED (Jun-26 vs Jul-10, reconcile next wake); review-bottleneck thesis T1-corroborated (DORA/Veracode).
+**Artifact:** `2026-07-10-gitlab-deepdive-3agent-sndk-pretask.md` **Commit:** (this commit)
+
+### [2026-07-10 — SKHY ADR CHECK-IN] 1 Opus ≈32.2k; HIGH
+**Yield:** 3 corrections to carried state — WI timing (began Fri, "$158 Thu" premature/not-tape), ADS ratio pinned 10:1 T1 (parity math rebuilt: pricing +2.5-2.9% vs ordinary; $158-if-real = +9% vs ordinary, denominator trap disarmed), Seoul Jul-10 close corrected to −0.27%/₩2,180,000 (intraday +4% fully retraced). Greenshoe 15% hypothesis downgraded (~5% favored). Cornerstone scale-back $7bn→$5bn booked. Grade unaffected.
+**Artifact:** appended to `2026-07-09-skh-adr-final-pricing-divergence-grade-1.md` **Commit:** (this commit)
+
+### [2026-07-10 EVE — FLOWS + DAILY-UPDATE BATCH] 2 Opus ≈54.7k; both HIGH
+**Yield:** SOXX $5.4bn record CONFIRMED and PINNED TO THE SELLOFF DAY Jul-7 (buy-the-dip at 13.3% of pre-flow AUM computed; 11.73% source figure = denominator mislabel caught; "300%" belongs to complex not SOXX; echo-lineage collapse 8 outlets → 2); Apollo $35B borrower MIS-ATTRIBUTION killed (= ANTHROPIC TPU-lease SPV; no price print — tell #8 armed, not fired); Rapidus = RANGE + DISCOUNT (27-38% under TSMC N2, computed); Meta Iris = inference-weighted margin-relief not NVDA-destruction; HBF bypass route CONFIRMED (SNDK/Kioxia/SKH MoU); 2 garbles killed (DeepSeek 87x/China-only; NVLink 128-vs-32 lanes).
+**Artifact:** `2026-07-10-eve-soxx-flows-weka-memory-hierarchy-daily-update-2agent.md` **Commit:** (this commit)
+
+### [2026-07-10/11 NIGHT — CONSUMER-ADOPTION WORLDVIEW BUILD] 5 Opus ≈252k (4 legs ~200k + adversary ~52k); all HIGH
+**Yield:** the commissioned build delivered end-to-end in one session — PCPL-T method (retrodiction-fitted, then adversarially FIXED: friction-delta gate added after the adversary proved the method would have endorsed metaverse+Alexa); S4 unnameable-winner residual forced to P~40 (0/2 base rate); incumbent-sweep overlay P~45 rewrote the venue conclusion; 4 waypoints operationalized + Brier-weighted grading; embryo inventory + primitives scorecard as durable reference layers. Adversary = the single highest-yield fire of the day (2 KILLs both accepted).
+**Artifacts:** `sector/consumer-adoption-worldview-2031.md` (v2) + `signals/cross-source-log/2026-07-10-consumer-worldview-build-wave1-legs.md` **Commit:** (this commit)
+
+**2026-07-11 SAT wake (4 fires ≈ 212k):** (1) SKHY-debut verifier ~28.2k — HIGH ("$158" T3 kill before cascade + close/premium/OHLC recovered + regular-way dates; position mark grounded); (2) Apple-v-OpenAI verifier ~17.3k — HIGH (2 framing catches: Siri-already-Gemini kills the "threatens live deal" frame; xAI-dismissal precedent tempers Apple-win priors); (3) turbines+jitters verifier ~35.2k — HIGH (TC-13 N+1 castings sub-layer; TC-17 instance #5 w/ measure-dependent-superlative discipline; MHI defense-pop trap avoided); (4) Asia weekend scanner ~131.1k — HIGH (CXMT greenshoe 15% T2; TrendForce FIRST moderation language → TC-1 TV; KR leveraged-ETF fragility → TC-17 adjacent; Samsung full-print date recheck flag). Cost note vs 30-day budget warning: consolidated 6→4 fires at intake; the 2 inline web checks (NOW date-attribution B40 catch + JGB-30Y closure) resolved P2-class flags at ~zero agent cost — the cheap-first routing worked.
+**2026-07-11 SAT PM (2 fires ≈ 41.3k):** (1) Apollo-secondary verifier ~19.1k — FRAMING-ERROR-CAUGHT + HIGH (T3 "has begun trading" tense-upgrade refuted = false-positive tell #8 fire prevented; tranche structure recovered; tell instrument refined to Class B unbacked junior); (2) Meta MTIA/Alberta verifier ~22.2k — HIGH (Alberta T1-fresh 1GW gas-powered; roadmap table exposed as Mar-11 stale-recycle; 3 garbles killed: 4-month testing, Iris-=-all-chips, $10B-as-hard-number; MTIA-HBM supplier read correctly capped as UNVERIFIED).
+**2026-07-11 SAT PM-2 (1 fire ≈ 19.4k):** GigaDevice H1 prelim T1 verifier (CN-native) — HIGH + FRAMING-ERROR-CAUGHT ×2 (aggregator "no revenue disclosed" refuted — revenue 115亿/+177% was in the filing; headline +1,099% carries ~30% non-operating securities gains, operating comp = 扣非 +791%; Q2 standalone computed + independently corroborated).
+**2026-07-11 SAT PM-3 (1 fire ≈ 34.3k):** GigaDevice quarterly-series + caps verifier (CN-native) — HIGH (8-quarter 归母 series built w/ reconciliation checks; FY24 anchor corrected 10.9→11.03亿; caught the Jul-10 H-share −21% crash our marks had missed — the day-after-print divergence datum that empirically settles the user's diversification question; H-vs-A reverse premium ~10% flagged).
+**2026-07-11 SAT EVE (2 fires ≈ 43.2k):** (1) Tencent-Manus/Heidecke verifier ~23.0k — HIGH + FRAMING-ERROR-CAUGHT ×4 (Beijing unwind order CONFIRMED multi-source = TC-10 regime-tier N+1; "has completed buyback" overstatement killed — in talks, FT-primary; BOTH stories' "Bloomberg" attributions exposed as relays; "Sebastian"→Johannes Heidecke B61 garble; $4-5bn-ARR order-of-magnitude garble killed, real ~$500M); (2) Nanya verifier ~20.2k — HIGH (Q2 GM 79.5%/OM 73.7%/net +1,324% confirmed to Jul-10 T1 conf; capex 3.85x Taishan non-HBM output-2028; supply-UNDERSHOOT correction 7.5% vs 12% needed = carry-forward framing; ceiling TV print booked climbing-not-rolling).
+**2026-07-11 SAT EVE-2 (3 fires ≈ 379k, user-directed Nanya deep dive):** (1) valuation/access ~90.6k — HIGH (user's P/E 36.5 reconciled to stale TTM basis, true 16.04x/7.43x computed; Apr-26 industry placement surfaced = the B46 institutional signal; Formosa 51→37% counter-signal; access identifiers); (2) business/CXMT ~133k — HIGH (price-taker cost position; CXMT-DDR4-retreat evidence = honest weakening of my own pre-registered H2 leg; 3-yr contract duration); (3) bear/cycle-history ~155.3k — HIGH (3-for-3 peak-margin base rate; ATH artifact resolved w/ 2012 NT$1.7/sh recap receipt; majors-extending-DDR4 reversal evidence; agent-conflict on CXMT capacity mix FLAGGED not smoothed). Verdict: WATCHLIST w/ pre-registered entry triggers, no entry — the deep dive's value was preventing a record-margin-week buy, not enabling one.
+**2026-07-11 SAT NIGHT (1 fire ≈ 46.9k):** Patel latest-appearance scout — MEDIUM-HIGH (established the Jun-30 Sequoia episode IS the latest = prevented a phantom-new-appearance hunt; unmined 70-min episode legs extracted at T3 w/ honest no-transcript disclosure; caught the "storage room to double" vs carried "2-3x more" ambiguity BEFORE it could blend into the TC-1 price path — flagged unreconciled rather than smoothed).
+**2026-07-11 SAT NIGHT-2 (1 fire ≈ 106.7k):** Patel WisdomTree scout (user-tip seed) — HIGH, and retro-grades the earlier scout DOWN to MEDIUM (its "nothing newer than Jun-30" = MISS; user caught it). Yield: episode pinned (show-name garble corrected); open storage-flag RESOLVED directionally (2-3x scope-extension, not downgrade — removed a live price-path risk); CPO 2028-29 delay w/ real optical-selloff triangulation + Shainer counter; DC 20→50GW; 3rd recent appearance (Latent Space, financing content) surfaced = queued. Lesson candidate: for multi-appearance voices (Patel-class), scout sweeps need appearance-ENUMERATION not latest-finding — single-terminal searches miss parallel drops.
+| 2026-07-12 | Sun good-morning scan (6 WSJ screenshots) | 3 (Leg A portfolio / Leg B discovery / Rule#16 verifier) | ~94k actual (32.1+36.9+25.5) | SKHY Monday mechanics + date pins; weekend discovery; Apple-OpenAI + turbines + Hormuz | Leg A HIGH (2 date conflicts killed T1; one-way fungibility + TSMC +21% precedent; CXMT prospectus mix) / Leg B MEDIUM-HIGH (private-credit candidate tell + Korea sell-side capitulation; 1 stale read — Hormuz "de-escalated" — caught by verifier) / verifier HIGH (OpenAI entities = named defendants correction; castings consensus-arrival adjudication; Hormuz re-escalation confirmed + agent-conflict resolved) | 1 (Leg B Hormuz staleness) | yes (TC-13 N+1, SKHY/SUMCO/MURATA back-refs, tracker correction, funding-node candidate) | none (HOLD ×3) | — |
+| 2026-07-12 | Compression pilot (3 probe-readers, experiment not Rule#16) | 3 | ~108k actual (62.6+23.1+22.3) | fidelity-per-token of V0/V1/V2 briefing formats | HIGH (H1 confirmed: 3.6x lossless compression; V2 ambiguity tax found; fixed-overhead dominance found) | 0 | n/a (harness experiment) | none | decision rule → 07-24 replication |
+| 2026-07-12 | AI brief Jul-12 (Rule #16) | 2 | ~45k actual (25.2+19.8) | SKH-CEO shortage claim; MSFT emissions; Colibri | HIGH / HIGH (3 framing corrections pre-propagation: beyond-vs-through-2030, 1.5TB-notional-vs-370GB-SSD-unusable, MSFT at-risk editorializing; 1 recycle trap cleared; Yongin fragment parked) | 3 | yes (SKHY H3 nudge, SUMCO 2nd-order, TC-1 N+1) | none (HOLD) | — |
+| 2026-07-12 | Block F first run (Kwak substance) | 1 | ~66.5k actual | proxy-consistency of 2027-shortage claim | HIGH (core-vs-tail discrimination; TC-18 born; 5 pre-registered observables; 1 house-data miss corrected at review) | 0 | yes (TC-18, SKHY, SUMCO, TC-1 TVs, block F v1.1) | none (HOLD) | — |
+| 2026-07-12 | Griffin APEX relay (Rule #16) | 1 | ~29.5k actual | interview existence/date, oil path, quotes | HIGH (recorded-Jun-2-vs-published-Jul-9 pin; Brent -22pct vs recording day = stale-macro catch; "zero headcount" exposed as gloss; agentic story flagged as recycled talking point) | 2 | yes (end-demand attribution-inflation, risk-envelope convergence note) | none (NO ACTION) | — |
+| 2026-07-12 | Mode A/B historical base rate (newly-viable frontier) | 1 | ~28.4k actual | user claim: giants come from newly-viable not optimization | HIGH (claim confirmed H1+H2~85pct; stack-depth insight; mobile cohort 100pct born-B; LLM cycle = Mode-A copilot phase, B-giant unborn; toy-tell = necessary-not-sufficient; graveyard binding on sizing) | 0 | yes (wiki §5 + phase-2 design conditions) | none (framework) | — |
+| 2026-07-13 | Mon W10 two-leg + TSMC pull | 3 | ~67k landed +TSMC in flight | Monday Asia tape, CXMT inquiry, discovery, private-credit corroboration | Leg B HIGH (tell #9 CONFIRMED -> scenario reweight 40/40/20; Meituan TC-10; PJM TC-13; Oracle-PIMCO) / Leg A HIGH-with-flags (2 stale caches self-flagged, adjudicated by house data via freshness-parity; SKHY premium ~15-17% + leveraged ETF launches T1) | 2 (stale caches caught) | yes (funding node, end-demand weights, 3 theses, TC notes) | none (HOLD x3) | — |
+| 2026-07-13 | TSMC June print retrieval x2 (index-lag + re-poll) | 2 | ~47.4k actual (31.8+15.6) | June number + grade | HIGH (H1 graded same-day vs pre-registered bands; YoY-base trap + 2025 stale trap disarmed pre-print; Q2 top-of-guidance computed) | 2 traps | yes (artifact + 3 back-refs) | none (HOLD x3) | — |
+| 2026-07-13 | KIS SKH preview (Rule #16) | 1 | ~27.6k actual | broker note authenticity + mechanics + consensus + print date | HIGH (arithmetic exact vs T1 actuals; TC-12->7 + TC-18->5 independent corroborations; print date pinned 07-29; broker band 60-70tn pre-registered; T3 embellishment layer isolated: FY cascade/SEC trims/top-pick/pair-trade-rec = unverified) | 1 (T3 precision-inflation class) | yes (TC-12, TC-18, SKHY pre-reg, session-prime pin) | none (HOLD) | — |
+| 2026-07-13 | Korea crash attribution (Rule #16, urgent) | 1 | ~34k actual | closes, drivers, premium, flows | HIGH (record-fall confirmed multi-source; driver ranking; TAIWAN-DIVERGENCE falsifying datum vs cycle-broke; premium >20pct Bloomberg; TC-17 validation; CB/flow data) | 0 | yes (event artifact, 3 theses, TC-17) | none (HOLD x3, Rule 8 applied live) | — |
+| 2026-07-13 | AI-bonds piece (Rule #16) | 1 | ~24.7k actual | quarter-trillion coverage + tell-class extraction | HIGH (attribution correction PitchBook-not-WSJ; tell #10 issuance-axis born: Amazon 1.6x cover, CoreWeave 96.50, Oracle CDS/S&P; bifurcation flag; consensus-arrival cluster Bloomberg-led) | 1 (own-intake attribution) | yes (funding node tell #10, Leg C §5) | none (HOLD; weights unchanged, no double-count) | — |
+| 2026-07-13 | DRAM-3T infographic (Rule #16 + B61) | 1 | ~31.7k actual | market-size chart adjudication | HIGH (headline refuted-on-magnitude ~7x; my H1 unit-slip hypothesis graded WRONG - compound-quantity inflation, emergent-8x coincidence; wafer-vs-bit-share mislabel identified; 6 new T1/T2 layer anchors booked) | 1 (compound-error class) | yes (Leg C §6 verdicts + anchors) | none (HOLD) | — |
+| 2026-07-13 | Korea margin-call claim (Rule #16 + B61) | 1 | ~21.2k actual | viral account-count claim | HIGH (FABRICATED-LIKELY: 60-70x base-rate kill shot computed both directions; T+1 mechanics refutation; real FSS stats recovered incl. 10x 억-unit aggregator error; KOSPI close pinned 6806.93; Tuesday-open forced-sale wave pre-registered) | 2 | yes (event addendum, TC-17 texture) | none (HOLD x3) | — |
+| 2026-07-13 | Newsletter claims (Rule #16) | 1 | ~21.6k actual | Yongin pull-forward, HBM4 path, drawdown, Chey | HIGH (4/4 adjudicated; HBM4 $2->4-5/Gb quantifies bull leg; SKH-Yongin 2045->2033 bonus datum; Citrini ASP provenance resolved = forward-for-spot; -38.2pct drawdown corrects stale 25pct) | 2 (stale drawdown; forward-for-spot provenance) | yes (SKHY, Kwak observables, artifacts) | none (HOLD) | — |
+| 2026-07-13 | Q2 smartphone shipments (Rule #16) | 1 | ~21.2k actual | 13-yr-low relay: firm, freshness, attribution, second-order | HIGH (both firms pub same-day = genuinely fresh; -11pct Counterpoint vs -4pct Omdia magnitude split caught before it could enter as consensus; memory-attribution confirmed firm-native; GB-per-device compression + China OEM order cuts recovered = the legacy feedback mechanism; T3 LPDDR5X QoQ figures quarantined) | 1 (relay single-firm dramatic-number framing) | yes (MURATA Jul-31 pre-reg, SKHY tail marker, end-demand 2b-ter, candidates, anomaly register) | none (HOLD x3) | — |
+| 2026-07-13 | Evening AI brief - news cluster (Rule #16) | 1 | ~37.2k actual | Apple-OpenAI suit, Nadella essay, Anthropic India/valuation | HIGH (suit = RECYCLED same 5:26-cv-07078, B40 catch prevented double-log; Nadella REFRAMED - real Jul-12 essay, "against models" was aggregator dramatization, veiled-swipe-at-Anthropic layer recovered; India pricing fresh T2; $965B provenance re-pinned to Series H May-28; own-prompt stale-recall caught - house tracker was current) | 2 (recycle + dramatization) | yes (private-tracker x3) | none | — |
+| 2026-07-13 | Evening AI brief - hardware cluster (Rule #16) | 1 | ~40.6k actual | Micron $250B/GlobalWafers, Tesla AI5 Samsung, M7 Ultra, RTX 5060 | HIGH (Micron $250B = increment not de-novo, 40pct target RECYCLED from Jun-2025 8-K; $500M GlobalWafers + 10-yr LTA fresh T1 = TC-18 N->6 first wafer-layer instance; Tesla AI5 SF2 = deleted-LinkedIn leak-grade caveat recovered; M7 Ultra Gurman-single-source + shortage-contingent; RTX 5060 REFRAMED - 8GB-only cheapness confirms shortage) | 3 (increment-as-new; leak sourcing; MSRP framing) | yes (TC-18, SUMCO) | none (HOLD) | — |
+| 2026-07-14 | W10 Leg A KR/JP/TW/macro (Rule #16) | 1 | ~103.7k actual | pre-registered grades: SKHY close, Seoul flow read, Tokyo/Taiwan, oil/Iran, CXMT | HIGH (flow-read receipts: open gap -0.56pct, flows retail-out/inst-in, close +0.73pct = pre-registration CONFIRMED; SKHY $152.35 pinned; premium >20pct multi-source; Brent state-break $83.30->$85 with blockade/20pct-fee detail; Yongin Y1 pull-forward Feb-27 NEW; CXMT Jul-15 pricing confirmed; honest finals-pending flags) | 0 | yes (event addendum, SKHY, artifact) | none (HOLD x3) | — |
+| 2026-07-14 | W10 Leg B discovery (Rule #16) | 1 | ~45.1k actual | unbiased 18h sweep EN/KR/JP/CN | HIGH (caught Tuesday intraday crash-and-reverse EARLY albeit as morning-wire snapshot - intraday-vs-close lesson booked; Japan PPI +7.1pct; triple-collision calendar; Hormuz insurance quantity-rationing oddity; LG-NVIDIA racks; listing-wave adds; JPM crowded-unwind frame) | 1 (intraday-as-close in own relay - caught via user T2) | yes (artifact, anomaly register) | none | — |
+| 2026-07-14 | WSJ front verification (Rule #16) | 1 | ~62.4k actual | DC-offload sign, DFSX identity, SpaceX oddity, SKHY headlines | HIGH (funding-node tell #11 third axis born with deal receipts + FCF->0 frame; DFSX=Dongfang Suanxin DF1000 HBM-design-around identified w/ CN primaries; SPCX PUBLIC since Jun-12 = house-record repair T1 SEC; SKHY headlines = recycled Friday wrap, real Monday story extracted) | 3 (WSJ dek spin; DFSX name garble resolved; house SpaceX staleness) | yes (funding node, private-tracker, anomaly register, candidates-adjacent) | none (HOLD x3) | — |
+| 2026-07-14 | Y1 equipment piece verification (Rule #16) | 1 | ~45.1k actual | ZDNet full-text claims | HIGH (pull-forward = RECYCLED official Feb-25-2026 - killed my own same-morning booking, house anchor corrected; orders-now = single-source quarantined; 20k wpm scaled to ~7pct of 2027 adds; HBM4E 1c-die T1 anchor confirmed) | 2 (ZDNet news-framing; own morning B40 miss) | yes (SKHY correction, scan-artifact appendix) | none (HOLD) | — |
+| 2026-07-14 | Y1 beneficiary-chain map | 1 | ~90.9k actual | equipment chain w/ disclosure status + accessibility | HIGH (no-names-in-piece established; disclosed-order set assembled: Hanmi/TES/TechWing/ASMPT/Onto/Camtek; Korean chain pre-rated +533/+773pct = chase rejected; Onto = genuinely new accessible name; ASML 5+ EUV layers at 1c intensity hook; capex-per-10k-wpm model ~$1bn WFE) | 0 | yes (candidates, 5 thesis back-refs) | none (NO ACTION - no entry packages, user-gated) | — |
+| 2026-07-14 | EUV-layers workflow (user-commissioned research team) | 10 (workflow: 5 find + 1 extract + 3 adversarial + 1 synth) | ~610.5k actual | investment-grade adjudication of the 1a/1b/1c EUV ladder + ASML inference | HIGH (T1 floor established: 1c >=5 named-engineer + teardown; "exactly 6" KILLED as translation cascade; verified NEGATIVE: no SKH primary states any count; Samsung -30pct cut + Micron 1-layer = elasticity risk factor; edge test FAILED: public since Aug-25, in guidance = consensus; 8-item pre-sizing checklist incl. 5 proxy-blocked items) | 2 (own "1 at 1a" integer downgraded; "toward 6" relay killed) | yes (artifact, candidates downgrade, todo) | none (NO ACTION - no ASML entry on this thesis standalone) | LARGEST single-item spend in ledger; justified by explicit user commission + no-margin-of-error standard; do NOT default to workflow-scale for routine verification |
+| 2026-07-14 | Samsung-Anthropic relay (Rule #16 + B63) | 1 | ~45.0k actual | foundry-customer claim | HIGH (REFRAMED-STALE: root = The Information Jul-2 TALKS; relay "agreed" quote matches NO article; escalation chain documented Jul-2->3->4->relay; NEW corrected-tense datum: Anthropic first in-house silicon program at talks stage; B63 held - downgrade direction) | 2 (tense escalation; staleness-as-fresh) | yes (private-tracker, artifact) | none (HOLD; no TC-15 increment on talks) | — |
+| 2026-07-14 | SemiAnalysis note (Rule #16) | 1 | ~81.9k actual | note authenticity + KIS bridge | HIGH (note real Jul-13, authors pinned incl. Ray Wang disambiguation; 4/4 figures faithful, title misquote caught; BRIDGE COMPUTED: implied total 67.6-72.2tn = above band top = named branch-(b) sponsor; Kiwoom split anchor recovered; house +90-95pct contract datum re-tagged SCOPE-MISMATCHED vs TrendForce +58-63pct; spec-sales = specialist sales, KIS kept Overweight) | 3 (title; scope-mismatch; spec-sales misread risk) | yes (SKHY pre-reg upgrade, artifact) | none (HOLD) | — |
+| 2026-07-14 | June CPI print + reaction (Rule #16 macro) | 1 | ~37.1k actual | print, reaction, branch grade inputs | HIGH (T1 BLS internals incl. shelter +0.1pct core-flat; hike-odds repricing 75->63; the oil-not-confirming split captured in one sweep; Dimon 40pct-AI-jobs datum surfaced; pre-registered branches graded same-hour) | 0 | yes (CPI artifact) | none (HOLD x3) | — |
+| 2026-07-14 | Claude for Teachers pull (Rule #16 light + B63) | 1 | ~65.9k actual | product details + competitive frame | HIGH (decisive frame: Anthropic FOLLOWER ~8mo behind OpenAI 200k+; all-four-majors category evidence; CZI Learning Commons identified; AFT $500k-vs-$12.5M asymmetry; Detroit study; 5 UNVERIFIED items honestly flagged incl. offer duration; first-party pages proxy-blocked AGAIN) | 1 (own H-table reweighted: category-creation assumption killed) | yes (wiki §6b addendum, private-tracker, artifact) | none (NO ACTION - worldview layer) | — |
+| 2026-07-14 | Education-AI adoption workflow (user-commissioned team) | 9 (workflow: 5 lenses + extract + 2 audits + synth) | ~533k actual | usage/DAU/MAU truth across edu-AI | HIGH (instrument BUILT: 8 genuine actives series identified worldwide vs cumulative-counter noise; 15pct Khanmigo activation haircut = working prior; 3 laundering patterns confirmed (installs->active, downloads->learners, goal->achievement); Doubao-absorbs-Aixue + Chegg inverse = demand-side verdict; CSU renewal binary surfaced live; 10-series monthly design w/ falsifiers; feeds P1 agentic-DAU due tomorrow) | many (5yr-stale Classroom, 27mo Gauth, 8mo teachers count, Photomath laundering, Brisk installs-as-active) | yes (instrument file, wiki 6b addendum 2, private-tracker) | none (NO ACTION - instrument layer) | 2nd workflow-scale spend today; both user-commissioned |
+| 2026-07-14 | Lab scaffolding-usage workflow (user-commissioned, corrected target) | 9 (workflow) | ~513.4k actual | scaffold-feature usage truth + nonexistence map + proxy computation | HIGH (the ONE real attach rate isolated: 20pct Enterprise messages T1; created-vs-used audit killed 6 headline counters incl. GPT-26M-users reclassified cumulative; nonexistence map per lab per feature; proxy chains -> 3-8pct users / 30-55pct tokens with falsifiers; SEO-farm fabricated Skills stats flagged; S-1 pre-registered as truth catalyst; 8-series tracking design) | many (created-counter class x6; fabricated stats caught) | yes (instrument file, wiki 6b addendum 3, private-tracker) | none (NO ACTION - instrument layer) | 3rd workflow today, all user-commissioned; scaffold module completes the day's agentic-DAU groundwork |
+| 2026-07-14 | IBM warning verification (Rule #16) | 1 | ~53.4k actual | print detail, quote, cyber referent, adjudication | HIGH (preliminary-not-full-print correction caught; quote verbatim T1; MYTHOS pinned as the cyber referent w/ Krishna follow-up quote; z17 lap reconciled; analyst split mapped w/ pre-warning-PT trap flagged; Jul-22 = triple adjudication date discovered) | 2 (print-vs-warning; pre-warning PTs circulating as fresh) | yes (artifact 6-7, private-tracker, NOW, SKHY) | none (HOLD/WAIT) | — |
+| 2026-07-14 | Enterprise pull-forward corroboration sweep (Rule #16) | 1 | ~50.2k actual | broad-vs-idiosyncratic adjudication | HIGH (BROAD verdict on 3 independent T1/T2 legs: TD Synnex call, MS caveat, Dell/HPE pricing actions + ADATA record June; cannibalization = thin/one-print with Jul-22 test; hyperscalers-70pct-of-memory residual-claimant frame; JP 'bulk pull-forward' procurement norm surfaced) | 1 (own framing: enterprise not the price-setter) | yes (artifact, end-demand TV7, anomaly register) | none (HOLD x3) | — |
+| 2026-07-14 | Mythos cyber value-migration workflow (user-commissioned, Anthropic-IPO-relevant) | 9 (workflow: 5 lenses + extract + 2 adversarial + synth) | ~428.5k actual | finder=fixer thesis + incumbent audit + IPO linkage | HIGH (user's core thesis REFUTED with evidence not assertion: AIxCC 86pct-found-vs-68pct-patched asymmetry, 3.6B open-model discovery repro, pass-through token pricing = no lab moat; incumbents-absorb ~62pct + hybrid ~30pct; B63 catch = compelling-narrative-not-edge, €50k sized on frontier-demand not cyber; incumbent scorecard w/ accessible names; 7 tracking series + falsifiers) | 1 (user-thesis symmetry refuted - the highest-value catch class) | yes (wiki artifact, principal-questions/IPO package, private-tracker, candidates) | none (NO ACTION - IPO-package feed, user-gated) | 4th & final workflow today; directly de-risks a €50k capital-deployment decision by killing a seductive bull leg |
+| 2026-07-14 | Earnings-calendar build: book+watchlist date verification, 3 regional agents (Rule #16) | 3 (JP native / KR-TW-HK-CN native / US-EU) | ~94k actual (27.6k+30.4k+36.0k) | next-print dates for 3 held + 20 watchlist names | HIGH (5 house-record corrections: SNDK Aug-5-not-Jul-31 w/ wrong fiscal label, stale Kioxia Aug-7 discarded for Jul-31, Nanya Q2 already-printed Jul-10, Investing.com SKHY Jul-22 discarded vs 3 KR sources Jul-29, GigaDevice H1 Aug-19 SSE-prescheduled + 3986.HK-line contradiction flagged) | 5 (stale-aggregator dates; B40-class) | yes (predictions/earnings-calendar-2026-h2.md + INDEX calendar corrections) | none (calendar infrastructure) | Book prints cluster Jul-29→Aug-6; CCL cluster reports sequentially — pre-registrations must lock before Jul-29 |
+| 2026-07-15 | GOOD-MORNING 3-leg wake: Leg A anchored + Leg B discovery (W10 baseline) | 2 | ~58k actual (39.0k+18.9k) | Wed tape + 반대매매 + ASML reaction + CXMT pricing + discovery | HIGH x2 (Leg A: WARSH FALSE-PREMISE caught vs day-state + stale-quote catches + CXMT raise reconciled-by-compute; Leg B: KR narrative-frame surfaced + PBOC record op + GDP split; 1 agent-frame error caught in-loop: cut-path grading in a hike regime) | 2 (false premise; stale frame) | yes (wake artifact + day-state + calendar fix) | HOLD x3 (artifact) | Leg C = 16 WSJ screenshots main-loop, no agent cost |
+| 2026-07-15 | The Information DeepSeek relay verification (Rule #16, EVE) | 1 | ~66.8k actual | 5 relayed claims + origin map + omissions | HIGH (B40 recycled catch on $7.4B; 4-article conflation mapped w/ The Information as origin + WSJ downstream; 3 load-bearing omissions surfaced: ~$1.5B/$71B round size, 2pct overseas monetization, Liang-LP no-voting governance; relay overstatement caught on banks-hired) | 2 (recycled + overstated) | yes (artifact addendum + private-tracker + funding-node tell #11 feed) | none (NO ACTION - private-name intelligence) | multiples computed: 142-178x at ask vs Anthropic 20.5x |
+| 2026-07-15 | Samsung TPU I/O-die + DSP article verification (Rule #16, EVE; KR-native + adversarial) | 2 | ~52.4k actual (29.1k+23.3k) | 6 claims + Anthropic-secured adversarial pass + DSP layer map | HIGH x2 (drift-kill upheld w/ named 13-day verb chain; piece graded 70pct recycled; Tesla AI5 tape-out 07-13 = only A-tier new fact; TSMC-1.4nm allocation held at Tier C first-in-records; DeepX 'recently'=Aug-2025 stale catch; Alphachips identity/suspension flag; K-On-Device consortium-not-award correction; NEW: Anthropic AVGO chip = TSMC N3/N2 fab) | 4 (drift, stale, overstatement, framing) | yes (artifact + tracker + candidates DSP entry) | NO ACTION (radar adds only) | TSMC call Jul-16 grades the 1.4nm claim within 24h |
+| 2026-07-15 | GFHK memory-call verification (Rule #16 + B61 authenticity, EVE) | 1 | ~28.4k actual | source ID + 3 claims + garble reconciliation | HIGH (source UNIDENTIFIABLE -> B61 quarantine executed; pushback T1-corroborated independent of source; KV-offload T2 w/ tiering caveat + Gartner +243.8% NAND ASP surfaced; GM-63% decoded as mislabeled OPM = disguised bear call; house 74.6% OPM anchor validated via Bernstein 90.9% DRAM GM; discarded Jul-22 date caught resurfacing) | 3 (unidentifiable source, mislabeled metric, zombie date) | yes (trace artifact addendum) | HOLD x3 unchanged | claims survived, source did not - the useful separation |
+| 2026-07-15 | Micron/Samsung HBF roadmap research (user question, EVE) | 1 | ~33.9k actual | 2-company posture + standards + adjacents | HIGH (two-camp model extended to FOUR postures: Samsung own-HBF KR-primary + Hanmi tooling corroboration; Micron abstainer w/ CXL+QLC bet; single-source 'Micron proprietary track' graded LOW; SNDK moat premium re-marked w/ named third-camp risk, keep-verdict intact) | 1 (lazy-grouping line caught) | yes (artifact + monitor gate-1 + SNDK thesis) | NO ACTION | FMS Aug-26 = next posture reveal |
+| 2026-07-15 | AEHR print extraction + peer-proximity map (user-flagged, EVE) | 1 | ~24.0k actual | identity + print + intensity quotes + cross-reads | HIGH (identity confirmed from voice-garble; FY27 guide +53-76% above cons extracted w/ consensus-tier caveat; 4 quoted intensity claims harvested incl. SLT-elimination + KGD/MCP + HBM-BIST; TC-15 N+1 at test layer; ONTO watch priority raised; B45 guidance instance logged) | 0 | yes (sensor artifact + candidates radar entry) | HOLD x3 (sensor reinforces SKHY duration leg) | 2nd sensor-class ingest today (Nanya-tell pattern) |
+| 2026-07-16 | GOOD-MORNING wake Legs A+B (W10) | 2 | ~65.3k actual (46.4k+18.9k) | KR/JP/US/CN tape + BOK + TSMC partial + discovery 10-item | HIGH (Leg A: BOK hike +25bp 7-0 T1 + KOFIA official print closes gap + TSMC rev pre-release + SKH Jul-29 corridor; Leg B: F4 emergency ETF meeting + helium export ban net-new + CXMT cluster) + 1 FRAMING-ERROR-CAUGHT (Leg B "Nikkei -2,200 breaking 67k" = recycled Jul-13 tape contradicted by Leg A T1 close 69,404.50 +87; also Leg A ¥29.5B CXMT re-adjudicated to house ¥57.9B via STCN largest-in-19yr coherence) | 2 | yes (wake artifact + HYNIX + funding node + calendar + grading-log + day-state) | HOLD x3 (Rule #8 on BOK shock) | KR/JP divergence = the localizing datum |
+| 2026-07-16 | HBM4-delay rumor verification (Rule #16, Tier-2 auto-fire) | 1 | ~22.9k actual | 4 claim variants + mutation map + selloff attribution | HIGH (CONFIRMED-STALE-RECYCLE: Apr seed -> Jun DDR5-mix story -> Jul-13 KIS crystallization -> Jul-16 blog re-skin; variant (b) DDR5-mix confirmed = TC-12 already on file, margin-accretive; NEW bar datum KIS Q2 OP ~8% below consensus; SKH call Jul-29 T1 SEC 6-K; CNBC T1 attributes Jul-16 to US-rout spillover not HBM news) | 1 (blog recycle killed) | yes (wake addendum + HYNIX thesis + calendar T1 upgrade) | HOLD (thesis intact, bar lowered) | Jul-13 vs Jul-16 = two distinct events, carried separately |
+| 2026-07-16 | TSMC post-call finals verification (armed re-scan, GRADE) | 1 | ~26.7k actual | Q2 finals + Q3 guide + capex verdict + 2 Tier-C claims | HIGH (capex $60-64B raise 6-source confirmed = P55 HIT; GM 67.7 above guide top; stale-English-cluster guard caught pre-call recycled framing; A14/Google Tier-C kept honestly UNRESOLVED; per-ADR EPS flagged computed-not-sourced pending 6-K) | 1 (stale-cluster guard) | yes (grade artifact + grading-log + calibration x5 + L32 + SUMCO thesis + day-state) | HOLD x3 (capex raise reinforces wafer/memory legs) | first 2-for-2 edge-vs-consensus day |
+| 2026-07-16 | EODHD deterministic tape pull (facts-first first live run) | 1 | ~32.1k actual | 9 API calls attempted | FAILED-INFRA (all 401 Unauthenticated — frozen-rig token copy stale vs user's current save, my model; script ready at scratchpad/eodhd_pull.py; SECURITY NOTE: classifier flagged agent's post-failure diagnostic probes, both DENIED, relayed to user) | 0 | no (no data) | none | closes reconciliation queued to fresh container |
+| 2026-07-16 | KOFIA margin-loan series verification (user Twitter chart, Rule #16 EVE) | 1 | ~39.2k actual | scope + peak + current + 반대매매 + BOK context | HIGH (scope adjudicated: JPM 38T = margin-only vs total 62.76T incl 25T collateral book; peak pinned Jun-24 38.6328T; LIVE B40 recycle killed — May-15 36.57T circulating as July; second-wave print honestly reported UNPRINTED; my own verifier-prompt KOSPI-peak framing error corrected by agent) | 2 (recycle + caller framing) | yes (artifact + HYNIX + funding-node KR leg + day-state) | HOLD x3 (variance amplifier, not signal; Rule #8) | forced sales = 11.8pct of de-lever — purge was the tip, not the iceberg |
+| 2026-07-16 | Wei packaging call-quote verification (user relay, Rule #16 EVE) | 1 | ~24.9k actual | 4 claims + quote provenance | HIGH (date-pinned to today's call; two-gaps conflation unpicked; "the competitor" vs "Intel" drift caught; analyst-model numbers firewalled from call quotes; TC-5 N+1 with T1 verbatim) | 2 (conflation + drift) | yes (artifact + TC-5 bump + day-state) | NO ACTION | leader-invites-rival = strongest demand>supply admission class |
+| 2026-07-16 | Samsung High-NA/capex relay verification (user relay, Rule #16 EVE, KR-native) | 1 | ~33.2k actual | 4 claims + yield reconciliation | HIGH (STALE-RECYCLE caught: Oct-2025 purchase plan relayed as July install; breakeven timing corrected FORWARD to 3Q26 vs relay 4Q26; softened-framing caught on Busan 55%/40% bearish primary; yield CONTRADICTION carried as tagged pair not averaged; depreciation causal link demoted to speculation) | 3 (recycle, softening, stale timing) | yes (artifact + day-state pair + Jul-30 watch) | NO ACTION | echo≠corroboration discipline held on both 단독s |
+| 2026-07-16 | Healthcare-rotation hypothesis research (user brain-dump, Rule #16 EVE) | 1 | ~58.5k actual | rotation evidence + LLY driver + HTFL catalysts + cohort tape + counter-case | HIGH (BofA FMS 07-14 T2 = the rotation datapoint; Pills-vs-Providers decomposition kills the naive read; LLY = idiosyncratic GLP-1 T1 8-K; medical-AI cohort COUNTER-tape (Lunit -34pct/1m); CMS SaMS catch = decision-relevant vs Jun-10 HTFL thesis — entry condition 1 reopened) | 1 (user destination mis-specification surfaced honestly) | yes (artifact addendum + HTFL thesis + day-state + tripwire spec) | NO ACTION / HTFL gate = document-read | tripwire = the "before the falsifier" instrument the user asked for |
+| 2026-07-16 | Truth API latency-product verification (user relay, Rule #16 LATE) | 1 | ~24.5k actual | 11 claims + origin chain + comps | HIGH (T1 8-K anchor found; fresh-not-recycle confirmed; "fastest" tiered as Reuters paraphrase not SLA; price gap held honest; Canter ethics quote T2-named; LLM-training-licensing lead surfaced separate) | 1 (superlative-vs-SLA separation) | yes (artifact + attention-thread adjacency) | NO ACTION | latency-tiering of facts = same-day validation of the two-track directive |
+| 2026-07-20 | FRESH-SESSION good-morning degraded increment: WSJ-LTA verify + Iran/US-close capture + KRX full-day flows (Rule #16, 3 parallel) | 3 | ~164.7k actual (67.7k+56.1k+40.9k, computed) | LTA-piece FACT/FRAME split + H3 dashboard + H1/H2 discriminator | HIGH ×3 (agent-1: FRAME-ONLY verdict w/ Fitch/news-desk ID + category-error flag + CoreWeave-puts-inverts-the-thesis 2nd-order + Micron auto-LTA expansion found; agent-2: Jordan strike = Jul-17 DETAIL dedup catch prevents escalation double-count + Brent settle conflict flagged + chips-bounced close; agent-3: discriminator RESOLVED H1 w/ stock-level foreign buys in SKH/Samsung + units kept in printed 억/조) | 3 (frame-as-fact risk killed; escalation double-count avoided; morning-partial-flows extrapolation corrected) | yes (eve artifact + five-calls addendum #5 + day-state + morning-artifact addendum) | NO ACTION (user-gated; book dark, JP closed) | run by the pre-registered fresh-session experiment; grade pending by adjudicating session |
+
+### [2026-07-20 NIGHT] WSJ LTA article body verification (MCHP precedent + BIS report + renegotiation sweep)
+
+**Trigger source:** user-shared article body (7 screenshots, WSJ Fitch LTA piece — Leg C follow-up closure)
+**Subagents fired:** 1 (Opus verifier, 17 tool-uses, ~27k tokens actual)
+**Estimated token cost:** ~27k (actual subagent_tokens)
+**Items verified:** MCHP PSP existence/terms/unwind; Sanghi quote provenance; BIS AER 2026 existence/quote/date; July-2026 memory-LTA renegotiation sweep
+**Per-subagent yield:**
+- Verifier: HIGH — T1-confirmed both load-bearing claims, caught the BIS late-June date (B40 freshness class: WSJ repackaging), demoted the Sanghi quote to single-source, re-confirmed zero LTA cancellations
+**Brief-framing errors caught:** WSJ implied-freshness on the BIS citation (late-June report framed as current); "exemptions" wording traced to WSJ-only sourcing
+**Thesis cascade triggered:** companies/SKHY/thesis.md (falsifier-watch enrichment)
+**Position implication delta:** NONE (HOLD unchanged)
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-20-mon-eve-fresh-session-goodmorning-9wsj-degraded-increment-3agent.md` §CLOSURE
+**Commit:** (this commit)
+
+### [2026-07-21 KR-WAKE] Tuesday KR open + H3 dashboard pull (Routine wake #2, 2 agents)
+
+**Trigger source:** autonomous KR-open Routine (00:22Z fire)
+**Subagents fired:** 2 (Opus research: KR discriminator ~63k/53 tools; H3 dashboard ~38k/26 tools)
+**Estimated token cost:** ~101k (actual subagent_tokens)
+**Items verified:** Monday KR finals (converged), margin/반대매매 prints, Nikkei reopen, Brent settle band, 10Y, stress board, overnight Iran temporal-check
+**Per-subagent yield:**
+- KR agent: MEDIUM — live Tuesday data unreachable (403 wall) but anchors converged + caught a 05-29 stale article masquerading as today (B40)
+- H3 agent: MEDIUM — gate-distance computed, T3 escalation print correctly flagged-not-booked
+**Brief-framing errors caught:** stale SUMCO/Murata article (May-29) discarded; "widest volley" recycled-cycle flag
+**Thesis cascade triggered:** NONE (data-gapped; weights held)
+**Position implication delta:** NONE
+**Material yield class:** MEDIUM
+**Audit-day classification:** POSITIVE-LITE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-kr-open-wake2-datagapped-h3-dashboard.md`
+**Commit:** (this commit)
+
+### [2026-07-21 AM] Tuesday good-morning 2-leg scan (Leg A JP/KR + Leg B discovery)
+
+**Trigger source:** user "good morning" + 14 WSJ screenshots
+**Subagents fired:** 2 (Opus: Leg A ~64k/48 tools; Leg B ~97k/20 tools)
+**Estimated token cost:** ~161k (actual subagent_tokens)
+**Items verified:** SUMCO +30.2% contradiction (KILLED via computed trajectory), SKH ADR −1.86% (T1 confirm), KR Tuesday flows, Nikkei reopen trajectory, HBM4E cadence, 10-item discovery sweep
+**Per-subagent yield:**
+- Leg A: HIGH — contradiction kill + portfolio divergence flag (SUMCO no-bounce) + H1 day-2 confirmation + HBM4E datum
+- Leg B: HIGH — PC-22 candidate (3-domain capital-opacity convergence) + TC-13 ratepayer sub-signal (PJM T1)
+**Brief-framing errors caught:** KOSDAQ Monday-close misdated as Tuesday by sedaily (B40); Samsung −3.53% print flagged unreliable-conflicting
+**Thesis cascade triggered:** SUMCO, MURATA, SKHY theses + PC-22 register entry
+**Position implication delta:** NONE (HOLD all; re-weight only)
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-good-morning-14wsj-2leg.md`
+**Commit:** (this commit)
+
+### [2026-07-21 EVE] 3-input trading batch verification (SMCI 8-K / OpenRouter / Vera Rubin recycle-check)
+
+**Trigger source:** user-shared trading-session inputs (tweet screenshots + newsletter)
+**Subagents fired:** 3 (Opus: SMCI ~37k/20; OpenRouter ~101k/34; Vera Rubin ~139k/36)
+**Estimated token cost:** ~277k (actual subagent_tokens)
+**Items verified:** SMCI 8-K exact numbers + omitted caveats; OpenRouter claim set incl. token-figure reconciliation; Vera Rubin claim provenance/date/tier/Street-reaction
+**Per-subagent yield:**
+- SMCI: HIGH — T1 filing + the investigation caveat the tweet omitted (framing-error caught)
+- OpenRouter: HIGH — 60T token figure exposed as garbled; verified weekly series recovered (instrument datum); B40 on 2 of 4 claims
+- Vera Rubin: HIGH — recycled 06-04 event ID'd against our own repo; Bercovici double-inference separated from fact; wrong-direction cascade PREVENTED (step-4b first live adjudication)
+**Brief-framing errors caught:** 3 (SMCI omitted caveats; 60T garble; DRAM-bearish inversion)
+**Thesis cascade triggered:** SMCI folder created (watchlist stub); MU/SKHY/Samsung/SNDK explicit NO-CHANGE
+**Position implication delta:** NONE
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-21-tue-eve-3input-batch-smci-openrouter-verarubin.md`
+**Commit:** (this commit)
+
+### [2026-07-22 KR-WAKE] Wed KR open + H3 dashboard (Routine wake #3, 2 agents)
+
+**Trigger source:** autonomous KR-open Routine (00:22Z fire, Wed)
+**Subagents fired:** 2 (Opus: KR discriminator ~99k/42 tools; H3 dashboard ~30k/16 tools)
+**Estimated token cost:** ~129k (actual subagent_tokens)
+**Items verified:** Brent $90-break + settle, 10Y, Houthi-blockade (4-outlet triangulation), KR Tue close correction, Wed-open gap, mislabeled-Tuesday-data catch
+**Per-subagent yield:**
+- KR agent: MEDIUM — Wed open data-gapped (403) but corrected the Tue close (+3.56% buy sidecar) + caught a mislabeled-Tuesday-as-Wednesday print (B40)
+- H3 agent: HIGH — Brent $90-break + gate-distance recompute (~$4) + NEW Houthi-blockade vector triangulated; VIX/gold-flat divergence flagged
+**Brief-framing errors caught:** mislabeled 07-22 print = actually Tuesday (B40); ADR-vs-KRX instrument mismatch flagged
+**Thesis cascade triggered:** NONE (escorted; five-calls held; H3 watch elevated not triggered)
+**Position implication delta:** NONE
+**Material yield class:** MEDIUM-HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-kr-open-wake3-h3-brent-90-break-houthi-blockade.md`
+**Commit:** (this commit)
+
+## 2026-07-22 EARLY — overdue-market-items work block (NBIS T+30 + calendar + surveillance + AGENTIC-DAU + twin-print setup)
+**Fires:** 5 (Opus, parallel batches; Rule #16 auto-fire, no permission-asking). **Est. tokens:** ~276k (47.4k NBIS price-window + 19.0k earnings-calendar + 52.5k competitive-surveillance + 134.3k AGENTIC-DAU general basket + 22.5k IBM/NOW/GOOGL print-setup).
+**Items verified:** NBIS 07-08→07-22 price series + catalyst register (T+30 grade unblocked); GOOGL Jul-28→Jul-22 date REFUTATION (T1 IR) + full week calendar 9 tickers; held-cohort competitor moves 2-week window (3 names); agentic-DAU general basket 3 verticals ~30 series; IBM/NOW/GOOGL consensus + setup refresh for tonight's registrations.
+**Yield class:** HIGH (NBIS: window low $171.77 + NVDA 13G 9.3% T1 + B40 stale-recycle catch on "07-21 $1B deal" headlines) / HIGH (calendar: GOOGL date error killed before the print; tonight = 5-print AMC cluster not a "triple") / HIGH (surveillance: Samsung-still-no-HBM4-volume-order T2 + SK Siltron Gumi production-started datum; agent's "SUMCO falsifier fired" over-read adjudicated DOWN against the house 07-09/10/13 two-sided booking) / MEDIUM-HIGH (AGENTIC-DAU: 3-vertical basket built, N=3 disclosure-asymmetry pattern confirmed; Meta-AI 40M-DAU laundering catch; no position delta) / HIGH (twin-print: IBM "current consensus $18.04B" exposed as STALE-RECYCLE pre-warning number; NOW guide verbatim-confirmed; GOOGL capex $180-190B T1 baseline pinned).
+**Framing errors caught:** 2 (surveillance agent falsifier over-read; aggregator stale-consensus recycle).
+**Thesis cascade triggered:** NBIS (T+30 grade back-ref + NVDA-stake datum); SUMCO/HYNIX/MURATA (surveillance pass — separate commit); IBM/NOW (registrations — separate commit).
+**Position implication delta:** NONE (all grades/instruments; positions user-gated).
+**Material yield class:** HIGH
+**Audit-day classification:** POSITIVE
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-nbis-t30-final-adjudicator-grade.md` + surveillance/registration artifacts this date
+**Commit:** (this commit + following)
+
+## 2026-07-22 MIDDAY — Tuesday catch-up 14-screenshot batch (user-shared trading-session queue)
+**Fires:** 4 (Opus, parallel; Rule #16 auto-fire). **Est. tokens:** ~133k (42.5k SMCI + 28.1k memory/packaging + 26.9k NVDA-stakes/OpenRouter/BTM + 35.6k AMD/China).
+**Items verified:** 10 items across 14 screenshots; all secondary/tertiary relays verified to T1/T2 before cascade.
+**Yield class:** HIGH ×4. **Framing errors caught: 8** — SMCI prior-guide figure (8.4-8.7 REFUTED → 8.2-8.4 T1), "NVDA stakes ×3" conflation (equity only NBIS), OpenRouter token garble (2nd day; canonical 25T/wk), "WAIC 2025" REVERSE-mislabel (fresh WAIC-2026 items tagged stale — first reverse-direction B40 instance on record), "first hyperscale rack commitment" overstatement (MSFT = 4th customer), SOCAMM-vs-HBM tier confusion (re-kill), CMX causal-chain attribution, broker attribution (GF Securities not Jefferies).
+**Thesis cascade triggered:** SMCI, HYNIX, NBIS back-refs; AMD folder CREATED (first ingest); competitive-map rack-battle entry + Anthropic two-branch pre-registration (B64); bottlenecks B47 falsifier-side routing; PC-20 N=5; TC-13 N=11; private-tracker ×3.
+**Position implication delta:** NONE (user-gated).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`
+**Commit:** (this commit)
+
+## 2026-07-22 EVE — 3-input batch (TSMC 2027 hike / TrendForce NAND crossover / Samsung hybrid bonding)
+**Fires:** 2 (Opus, parallel; Chinese-native + Korean-native). **Est. tokens:** ~85k (22.3k TW pair + 62.7k KR hybrid-bonding).
+**Items verified:** 3 inputs, all pinned to primary: Nikkei origin + TrendForce release 20260721-13148 (both T1) + The Elec/ZDNet KR decomposition (fresh core vs recycled frame).
+**Yield class:** HIGH (TSMC canonical phrasing pinned — killed the "25%" headline ambiguity; NAND crossover = first dated end-date in the memory complex, feeds two print adjudicators) / HIGH (hybrid-bonding: BESI falsifier-not-fired adjudication + Feynman 2028-vs-2029 date-drift catch + fresh-core/recycled-frame split).
+**Framing errors caught:** 2 ("up to 25%" stacking ambiguity; Feynman date drift).
+**Thesis cascade triggered:** BESI, HYNIX, KIOXIA, SNDK, MU back-refs; bottlenecks foundry+NAND rows; TC-1 TV note #2.
+**Position implication delta:** NONE (user-gated).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md`
+**Commit:** (this commit)
+
+---
+### 2026-07-22 WED AM — GOOD-MORNING 4-agent verification batch (Rule #16 + GOOD-MORNING PROTOCOL Leg C)
+**Fires:** 4 parallel Opus 4.8. **Est. cost:** ~119k tokens (22k+35k+29k+33k actual subagent tokens reported).
+**Items verified:** (1) AMD-Anthropic deal + terms; (2) GOOGL/IBM/NOW/TSLA/TXN twin-print actuals; (3) SKHY WSJ LTA-durability bear; (4) H3/Iran Brent-$95 gate.
+**Per-agent yield:** AMD = HIGH (branch-a resolve + equity-direction reversal catch + 3 framing-error corrections); twin-print = HIGH (PENDING guard prevented a false-CONFIRM grade off recycled Q1 data — the load-bearing G-1 protection); SKHY = MEDIUM (steelman confirms back-end-only weight, no falsifier touched); H3 = MEDIUM (gate not triggered + 2 screenshot framing-errors scrubbed: gold −50% and Pickaxe-stale).
+**Framing errors caught:** 4 (gold "−50%" mislabel; Pickaxe centrifuges stale-as-fresh; GOOGL Q1-capex-as-Q2 recycle; AMD "OpenAI 1GW/Oracle" + "exceeds Meta/OpenAI").
+**Thesis cascade triggered:** AMD thesis+facts, competitive-map two-branch resolve, SKHY + HYNIX back-refs, twin-print grader-guard.
+**Position implication delta:** NONE (user-gated; two RECOMMEND-FIRST reads surfaced — AMD stays Watchlist, SKHY HOLD into Jul-29 with the conditional add gated on tonight's GOOGL capex).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-good-morning-4agent-verification-batch.md`
+**Commit:** (this commit)
+
+---
+### 2026-07-22 WED — EARNINGS-SEQUENCE READ-THROUGH BASKET (operator method, Principle #48 first application)
+**Fires:** 3 parallel Opus 4.8 (TSMC read-through, ASML read-through, adjacency sweep). **Est. cost:** ~83k tokens (18k+21k+43k reported).
+**Items verified:** upstream/adjacent already-reported names as leading indicators for SKHY Jul-29 + GOOGL capex tonight.
+**Per-agent yield:** TSMC = HIGH (capex +15% / rev >40% / CoWoS sold-out = clean hyperscaler-capex + HBM-attach read); ASML = HIGH (memory sys sales >75%, names SKH expanding); sweep = HIGH (Hanmi 15.3x QoQ = SKH-specific HBM4-order-resumption tell, the single best pre-print signal + honest GOOGL-proxy gap + Jul-28/29 second-pass map).
+**Framing errors caught:** stale-recycle traps flagged (LRCX/Advantest "record" = prior-qtr; STX/GLW moves = run-ups not prints); Samsung aggregator magnitude flagged (kept under B45).
+**Thesis cascade triggered:** read-through basket artifact; Principles #48 + #49 codified (CANDIDATE); CLAUDE.md header count.
+**Position implication delta:** NONE (user-gated) — but re-gated the SKHY add: gate variable shifts from demand (answered) to reaction-function + contract-durability.
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-earnings-sequence-readthrough-basket.md`
+**Commit:** (this commit)
+
+---
+### 2026-07-22 WED — ONDS verification pass (Rule #16, user-requested, 3 adversarial agents)
+**Fires:** 3 parallel Opus 4.8 (Palantir tie / DZYNE deal / financials+dilution). **Est. cost:** ~79k tokens (22k+25k+32k reported).
+**Items verified:** ONDS watchlist candidate — graduate-or-park.
+**Per-agent yield:** Palantir = HIGH (two-sided confirm kills name-drop bear; caught +1,065% = BIRD not Palantir); DZYNE = HIGH (deal real+closed, all skeptic hypotheses refuted, PoR-overstatement catch); financials = HIGH (6.6x dilution computed, inorganic-guide catch, shell/insolvency bear refuted).
+**Framing errors caught:** 4 (revenue-attribution halo; "programs of record" overstated; "built with Palantir" present-tense/pre-deployment; guide-raise framed organic when majority-acquired).
+**Thesis cascade triggered:** ONDS verification artifact + candidates.md profile correction (T2→T1, 5 corrections).
+**Position implication delta:** NONE (watchlist-only, NO ACTION) — verdict = graduates to verified-real-business, NOT to investable thesis (diluting momentum equity).
+**Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-ondas-onds-verification-pass.md`
+**Commit:** (this commit)
+
+## [2026-07-24] Good-morning wake — 5-agent fan-out (US tape / KR close / H3 / AI-reg / Leg-B)
+**Fires:** 5 Opus verifiers, single parallel dispatch (~55-75k est. subagent tokens each side of median; heaviest Leg-B ~102k reported).
+**Framing errors caught:** 8+ across the batch — $890B Mag-7 CORRECTED ~$797B (conflation w/ 2027-capex projection); "Black Monday" headline = IBM's own Jul-14 −25.2% (9d stale, single-name); MU−13%/SKH−12% memory-panic = June-24 recycle; "first >$100 since 2022" = stale-recycle (correct: since May); VIX 16.64 = prior-close error (18.70 close); 10Y 4.63-4.67 stale-low (4.707% settle); KR "외국인 나흘 5.6조" retrospective≠Friday flows; de-escalation hopes = stale+rejected.
+**Thesis cascade triggered:** five-calls addendum #8 (H1 60/H2 12/H3 28 my model) + SKHY/MURATA/SUMCO back-refs + day-state.
+**Position implication delta:** NONE (⚪ NO ACTION, Rule #8 — macro-transmission day, zero demand falsifiers).
+**Material yield class:** 5× HIGH (KR flow-flip discriminator resolved; semis-vs-software split inverted the headline fear; Intel counter-datum; kill-switch T1 pinned; Leg-B 3 new cross-links). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-good-morning-14wsj-5agent.md`
+**Commit:** (this commit)
+
+## [2026-07-24] SKM deep dive — 3-agent fan-out (KR current-state / structure-financials / adversarial)
+**Fires:** 3 Opus agents, parallel (~113.6k + ~34.9k + ~39k subagent tokens per reports).
+**Framing errors caught:** 6+ — booked down-select path "5→4→2" corrected (5→3→backfill-4); "dividend payer" frame refuted by events (Q3-25 first-ever suspension); "AI revenue" = ~72% colocation (landlord≠platform); SKM-as-Hynix-proxy refuted (T1 20-F, SK Square 20.5%); ADR ratio 1/9 stale (5/9); 519B-params vs ₩519.9B AIDC number-trap pre-flagged; SKT Friday close 4-way data conflict honestly UNVERIFIED (no fabrication).
+**Thesis cascade triggered:** candidates.md SKM frame-reset + deep-dig-queue #4 closed + SKHY vehicle-distinction back-ref. New fact booked: SKT holds ~0.3% Anthropic (B63/B64 discipline flagged).
+**Position implication delta:** NONE (watchlist P3 retained, no sizing pending).
+**Material yield class:** 3× HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-skm-deep-dive-3agent.md`
+**Commit:** (this commit)
+
+## [2026-07-24] AI-brief intake (72-source morning ed.) — 3-agent fan-out (memory-auto CN / AMD-Etched / regulatory-Gemini)
+**Fires:** 3 Opus verifiers, parallel (~29.2k + ~35.4k + ~21.1k subagent tokens per reports).
+**Framing errors caught:** 6 — GM "primarily memory" CONTRADICTED-BY-T1 (1-of-3 buckets, tariffs bigger); BYD +21.2% = April STALE-RECYCLE packaged as current; Etched "any AI model" REFUTED (transformer-family only); Australia "more than consume"/"AI companies"/enacted → parity floor/large DCs/proposed-2027; Google "0.25%" → official 0.22% + Alibaba DSA/DMA category error; Venice "20% over Vera" = cherry-picked single-core (headline 2.2× throughput, both unreleased).
+**Thesis cascade triggered:** bottlenecks B47/U8 auto sub-leg + Etched reference increment; SKHY breadth+content back-ref (incl. SKH-in-Etched); AMD facts+thesis (Venice launch, MI455X Wave32); Gemini 950M clean MAU → AGENTIC-DAU input; Australia = TC-13 first national-legislative rung.
+**Position implication delta:** NONE (⚪ NO ACTION; Jul-29 unchanged).
+**Material yield class:** 3× HIGH (every leg killed ≥1 scary/shiny-direction framing). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-ai-brief-intake-gm-memory-auto-amd-venice-3agent.md`
+**Commit:** (this commit)

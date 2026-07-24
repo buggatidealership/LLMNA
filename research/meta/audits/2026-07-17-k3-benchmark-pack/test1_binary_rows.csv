@@ -1,0 +1,52 @@
+include,exclude_reason,date_graded,prediction_id,ticker,component,claimed_p,outcome,layer_failed,parrot_row,notes
+YES,,2026-07-09,cn-movers-h2-zhipu-fundraising,2513.HK,move-driver-attribution,50,TRUE,,,$4bn placement absorbed + JPM TP raise
+YES,,2026-07-09,cn-movers-h3-minimax-differentiation,100.HK,move-driver-attribution,40,TRUE,,,lockup expiry (listed suspect) + JPM downgrade; differentiation-not-rotation confirmed
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-rev-beat-consensus,92,TRUE,,YES,beat ($81.6B vs $78.8B) — calibrated
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-rev-ge-80b-whisper,65,TRUE,,YES,hit — calibrated
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-rev-ge-82b-point,40,FALSE,,,borderline miss ($81.6B); consistent
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-gm-ge-75pct,72,FALSE,,,just under (74.9%) — slight overcall
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-eps-beat-consensus,85,TRUE,,YES,beat — calibrated
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-q2-guide-ge-87b,82,TRUE,,YES,hit ($91B) — calibrated
+YES,,2026-05-20,2026-05-20-NVDA-Q1FY27,NVDA,p-q2-guide-ge-90b-whisper,30,TRUE,REASONING,YES,UNDERWEIGHTED upside — guide $91B hit
+YES,,2026-05-27,2026-05-26-MOD-Q4FY26,MOD,revenue-beat-direction,80,TRUE,,YES,BEAT +3.66% vs consensus $920.7M
+YES,,2026-05-27,2026-05-26-MOD-Q4FY26,MOD,eps-beat-direction,67.5,TRUE,,YES,BEAT $1.71 vs $1.57 consensus (pre-registered 65-70%)
+YES,,2026-05-27,2026-05-26-MOD-Q4FY26,MOD,fy27-guide-above-consensus,87.5,TRUE,,YES,guide WELL ABOVE pre-deal consensus — cleanest hit (pre-registered 85-90%)
+YES,,2026-05-27,2026-05-26-MOD-Q4FY26,MOD,cs-margin-direction,80,TRUE,,,EXPANDING +80bps (17.9% to 18.7%)
+YES,,2026-05-27,2026-05-26-MOD-Q4FY26,MOD,blended-margin-direction,60,TRUE,,,15.3% vs 13.8% mid-estimate; above 14.9% threshold
+YES,,2026-05-27,2026-05-27-SNOW-Q1FY27,SNOW,product-revenue-beat-guide,75,TRUE,,YES,beat — $1.330B vs $1.2645B guide midpoint
+YES,,2026-05-27,2026-05-27-SNOW-Q1FY27,SNOW,nrr-direction,55,FALSE,REASONING,,WRONG DIRECTION — 126% up vs 124% dip predicted (L9)
+YES,,2026-05-27,2026-05-27-SNOW-Q1FY27,SNOW,cortex-runrate-requantification,45,FALSE,,,no $ re-quantified; mgmt reframed to volume metrics (L10)
+YES,,2026-05-27,2026-05-27-SNOW-Q1FY27,SNOW,fy27-guide-raise,65,TRUE,,YES,raised to $5.84B — within $5.75-5.85B band; CLEAN HIT
+YES,,2026-05-28,2026-05-27-MRVL-Q1FY27,MRVL,revenue-beat-consensus,72.5,TRUE,,YES,beat consensus by $8M (pre-registered 70-75%)
+YES,,2026-05-28,2026-05-27-MRVL-Q1FY27,MRVL,eps-beat-consensus,67.5,FALSE,,YES,$0.80 at consensus high end — no beat (pre-registered 65-70%)
+YES,,2026-05-28,2026-05-27-MRVL-Q1FY27,MRVL,datacenter-yoy-growth,65,FALSE,REASONING,,+27% vs +42-47% — sequential conflated with YoY (L12)
+YES,,2026-05-28,2026-05-27-MRVL-Q1FY27,MRVL,q2-guide-raise,67.5,TRUE,,YES,$2.700B vs $2.65B+ floor — L4 validated 2nd time (pre-registered 65-70%)
+YES,,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,revenue-beat-consensus,67.5,TRUE,,YES,MASSIVE BEAT +9.3% ($10.7B vs $9.77B; pre-registered 65-70%)
+YES,,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,eps-beat-consensus,72.5,TRUE,,YES,MASSIVE BEAT +49% ($0.79 vs $0.53; pre-registered 70-75%)
+YES,,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,ai-backlog-grows-seq,75,TRUE,,,grew $5B to $5.9B (+18%)
+YES,,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,fy27-commentary-positive,50,TRUE,,,EXCEEDED — FY27 framework introduced with specific targets
+YES,,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,fy27-specific-raise,10,TRUE,REASONING,,fired at maximum concreteness — probability under-assigned
+YES,,2026-06-04,2026-06-03-AVGO-Q2FY26,AVGO,fy26-ai-raise,70,FALSE,REASONING,,NOT raised — multi-year FY27 >$100B framing instead (L19)
+YES,,2026-06-26,2026-06-12-KIOXIA-VLSI-symposium,285A.T,h1-material-validation,45,TRUE,,,H1 FIRED — direction RIGHT; gates 2.5/4 met
+YES,,2026-07-06,2026-06-23-MU-Q3FY26-crosslog,MU,h1-modal-beat-continuation,50,TRUE,,YES,H1 FIRED (modal); 6/6 directional theses validated
+YES,,2026-07-06,2026-06-23-MU-Q3FY26-crosslog,MU,p-operational-beat,85,TRUE,,YES,rev $41.46B beat consensus +16.5-20.2% — resolved TRUE
+YES,,2026-07-07,2026-07-02-SAMSUNG-Q2-prelim,005930,p-op-beat-consensus,70,TRUE,,YES,consensus BEAT +4.45% vs updated ₩85.59tn bar
+YES,,2026-07-09,dmatrix-item-h2-acquihire,NVDA/d-Matrix,event-type,30,FALSE,,,no investment/acquihire — vendor relationship only
+YES,,2026-07-09,aps-upi-h1-upstream-consolidation,054620.KQ,event-type,55,TRUE,,,real filing; TC-13 #9 new sub-segment
+YES,,2026-07-09,bloomberg-3item-h1-nexus,MACRO,pattern-attribution,55,TRUE,,,verifier joint read: coherent not coincidental
+YES,,2026-07-09,evening-brief-h1-pricing-front,MACRO,pattern-attribution,50,TRUE,,,3 of 4 layers fresh-verified; state-gate softened to voluntary; infra leg inverts to tightness confirmation
+YES,,2026-07-09,evening-brief-h3-independent,MACRO,pattern-attribution,20,FALSE,,,pattern held; items not independent
+YES,,2026-07-15,2026-07-02-ASML-Q2-earnings-prediction,ASML,fy-guide-reiterate,70,FALSE,REASONING,YES,guide RAISED 43-45 vs prior 36-40 (+15.8pct mid); both modeled branches (reiterate P70 / upper-half P40) under-called; outcome outside branch set
+YES,,2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,rev-ge-guidemid,75,TRUE,REASONING,YES,actual 39.62 vs threshold 39.6 - resolved TRUE by 0.02B
+YES,,2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,q3-up-sequential,80,TRUE,REASONING,,Q3 guide 44.6-45.8 mid +14.1pct QoQ computed
+YES,,2026-07-16,2026-07-02-TSMC-Q2-earnings-prediction,TSMC,capex-raise,55,TRUE,REASONING,,full raise 52-56 -> 60-64 (+14.8pct mid) exceeds registered raise-or-top-end-language class; falsifier capex-cut opposite
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-09,cn-movers-h1-gigadevice-apple-cxmt-driver,3986.HK,proximate-driver-attribution,65,MIXED,REASONING,,Apple-CXMT was backdrop not proximate; own flagged alt (业绩预告 +1099% + CXMT IPO filing) was the driver — adversarial alt-listing worked
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-05-28,2026-05-27-MRVL-Q1FY27,MRVL,custom-si-fy27-floor-raise,60,MIXED,REASONING,,direction HIT at FY28 vintage; FY27 maintained — vintage wrong (L13)
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,greenlake-arr-gt50-yoy,75,MIXED,,,on track for $3.5B target; exact Q2 ARR undisclosed — unverifiable
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-06-02,2026-05-29-HPE-Q2FY26,HPE,fy26-raise-modest-band,45,MIXED,,,raise materialized but MUCH larger than $0.5-1.0B modal band
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-06-04,2026-06-03-AVGO-Q2FY26,AVGO,h1-beat-plus-category-event,70,MIXED,,,PARTIAL HIT (fundamental) + WRONG DIRECTION (stock-reaction)
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-06,2026-06-23-MU-Q3FY26-crosslog,MU,h5-structural-disclosure,10,MIXED,,,H5 PARTIAL — HBM4 volume-ramp disclosure
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-09,dmatrix-item-h1-partnership-frame,NVDA/d-Matrix,driver-frame-attribution,50,MIXED,REASONING,,technical prefill/decode split TRUE; partnership frame FALSE — Parasail third-party deployment
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-09,bloomberg-3item-h2-editor-artifact,MACRO,pattern-attribution,25,MIXED,,,1 of 3 items (Apple) was radio recompression
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-09,bloomberg-3item-h3-costpush,MACRO,pattern-attribution,20,MIXED,,,consistent elements; unadjudicated; GM falsifier-watch set
+NO,MIXED outcome — excluded from primary (binary-only) run; scored as 0.5 in sensitivity run,2026-07-09,evening-brief-h2-collage,MACRO,pattern-attribution,30,MIXED,,,1 of 4 items stale-recycle (Meta RAM)

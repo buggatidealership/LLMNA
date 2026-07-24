@@ -1,5 +1,7 @@
 # Environment Constraints — Claude Code on Web (Remote-Execution)
 
+**⚠️ PARTIALLY SUPERSEDED 2026-07-17:** the WebFetch-403 finding below concerns the WebFetch TOOL only. Shell-level HTTPS (curl/python via the agent proxy) + the keyed/keyless API layer WORK — canonical data routes now live in `meta/data-access.md` (read that FIRST). A 2026-07-17 fresh-session audit correctly flagged that this file's "WebSearch ONLY" framing was overbroad and left a price-verification flag unresolved over a number obtainable in one keyless call.
+
 **Created:** 2026-06-20 (post WebFetch-blocking experiment finding)
 **Purpose:** Capture environment-specific behaviors that affect tool usage so future sessions don't waste calls discovering known-blocked patterns. Lives in the repo so it persists across container restarts.
 
@@ -64,7 +66,7 @@ Container resets `~/.claude/` to system-managed base at every session start. Hoo
 
 - git push retries handle transient network failures up to 4× with exponential backoff per `CLAUDE.md` Critical Rule # / harness convention
 - gh CLI NOT available; use mcp__github__* tools instead
-- Repo scope restricted to `buggatidealership/health-calculators` (other repos denied)
+- Repo scope restricted to `buggatidealership/LLMNA` (other repos denied; updated 2026-07-06 post-migration — was `buggatidealership/health-calculators`, now a frozen safety-net copy)
 
 ---
 

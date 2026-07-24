@@ -84,16 +84,20 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **B40** (CONFIRMED VERIFIED-HIGH-CONFIDENCE) — Secondary-source garble taxonomy (3 sub-types). B40.1 stale-recycle (N=9+), B40.2 magnitude-inflation (CONFIRMED N=3), B40.3 attribution-garbling (CONFIRMED N=2). Verify temporal freshness + magnitude + attribution before propagating any T2/T3 signal. Stays here because hook enforcement not yet built; manual discipline required.
 - **B44** (CANDIDATE N=3, origin 2026-06-11) — Chat-summary discipline drift from file-level discipline. File-level work applies T1/T2/T3 tagging / N-th order / native-language / hedge labels correctly; chat summary collapses to prose. Mirror file-level discipline in chat summaries.
 - **B45** (CANDIDATE N=1, origin 2026-06-12) — Pre-training magnitude conservatism in structural-demand regimes. Tail under-modeled by ~5-8×. See §1 above for active priors. Companion to B26 + B28: B45 is the MAGNITUDE-layer error in the structural-anchoring family.
-- **B47** (CANDIDATE N=1, origin 2026-06-15) — Pre-training lead-time conservatism: estimates of gov/regulatory lead-times are wrong by 2-10×. Overstates fast-track gov action; understates regulated EU processes. Every gate-timing estimate gets retroactively case-calibrated. See §9b.
+- **B62** (CANDIDATE N=1, origin 2026-06-15; RENUMBERED from B47 on 2026-07-06 — B47 was already taken by efficiency-driven demand destruction in `biases-watchlist.md`) — Pre-training lead-time conservatism: estimates of gov/regulatory lead-times are wrong by 2-10×. Overstates fast-track gov action; understates regulated EU processes. Every gate-timing estimate gets retroactively case-calibrated. See §9b.
+- **B60** (CANDIDATE N=1, origin 2026-07-01) — Portfolio-anchored ingest bias: discovery legs must stay unanchored to held names.
+- **B61** (CANDIDATE N=1, origin 2026-07-03) — LLM-generated bottleneck fiction as an input class: unsourced single-company monopoly-bottleneck theses from social sources get the full mechanism gauntlet regardless of sharer track record.
+- **B64** (CANDIDATE N=1, origin 2026-07-13, user-flagged) — Model-affinity contamination: Claude-family models reportedly favor NOW in pick-a-stock settings; house NOW thesis cites Anthropic T1 material = closed-loop risk. Any NOW decision package: adversarial pass mandatory, Anthropic-sourced validation corroborating-only, case must survive with Anthropic evidence removed.
 
-## §3. RECENT LESSONS (rolling 5 — verified only, no placeholders)
+## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
 
-- **L21** — Sector regime modifier risk-off: at maximum macro risk-off (Iran war + oil + rates), even bullish fundamentals get sold T+24h. Discount stock-reaction grades 50% in such windows.
-- **L22** — Holistic conviction sometimes BEATS individual confirmation: if multiple held names point the same direction and macro fits, that's stronger than each individual thesis would suggest standalone.
-- **L23** — Market-cap-inverse reaction asymmetry: smaller-cap names move +/-10% on news that moves mega-caps +/-2%. Position-sizing implication: equivalent thesis confirmation → smaller % moves in big caps.
-- **L25** — Explicit Bayesian P-update on new evidence is the CORRECT process, NOT a failure mode. User directive 2026-06-11 verbatim: *"do not call it a failure mode."* Probabilities are statistical calculated vectors; reweighting on new evidence is the L25 pattern functioning as designed.
+- **L27** — Beat-Consensus-As-Regime-Test: per-quarter beat-or-miss across the semi cohort = primary regime-validation mechanism (first empirical test = MU Q3 FY26 print 2026-06-24; N=2 watch: HYNIX Q2 + MURATA Q1 FY27 late-Jul).
+- **L28** — Jevons/efficiency-fear misread: "efficiency reduces demand" keeps losing to volume growth (N=3 flavors incl. enterprise rate-limiting).
+- **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
+- **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
+- **L40 CANDIDATE (N=1, NBIS T+30): event-study attribution/confound-exclusion rules must be EX-ANTE + specimen-suitability check.**
 
-_Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Next lesson = L26._
+_Correction note (2026-07-06): this section previously claimed "L24 removed; tail is L25" — WRONG on both counts: L24 exists in lessons.md as a real lesson (mid-cap structural-inflection ATH-break, TY case) and the tail is L30. Numbering gap: L17/L18 carry tombstones (no lesson text). Full list: `predictions/lessons.md` + `meta/tags.md`._
 
 ## §4. CRITICAL RULES (full text in `CLAUDE.md` — numbered list here for orientation)
 
@@ -111,26 +115,33 @@ _Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Ne
 12. Always verify temporal freshness before cascading T2/T3 signals (B40)
 13. Codification trigger — chat-only output MUST be persisted to file when contradicting / position-relevant / methodological / user-corrected / N≥2 recurring
 14. Signal density detection — every cross-source-log file MUST run same-segment same-direction lookup; promote to triangulation at N≥3
-15. Macro-first, research-anchored discipline — before position-relevant output: articulate layer first-principles with date anchor; tag claims research-verified vs recall-based; tie micro details to macro thesis; surface macro-vs-micro contradictions before concluding (B46 origin 2026-06-12)
-16. Always run verification subagents immediately on any external data with thesis/sizing implications — model = Opus 4.8, parallel firing, N=2-4, never ask permission; log to `meta/subagent-cost-yield-ledger.md` (instrumentation added 2026-06-19)
-17. Ensemble high-stakes calls — for any binary/numeric decision with sizing consequence (prediction GRADEs, binary-catalyst outcomes, TRIM/EXIT/ENTER on a Core position, tier-gating P-weights), run N=3-5 independent Opus 4.8 samples and report MODE + SPREAD; spread is the signal (5/5 = high-conviction; 3/5 = state uncertainty, don't collapse to false-confident point). Scope: sizing-consequential only, NOT routine. (added 2026-06-27)
-18. Standing dissent mandate — on any thesis conclusion, sizing decision, or user framing, generate the strongest FALSIFYING case BEFORE concluding; if none exists, say so explicitly. Non-optional; suppresses confirmation-of-harness-state + sycophancy. Per-conclusion obligation (distinct from Rule #8 periodic + Leg B search-layer). (added 2026-06-27)
+15. Macro-first, research-anchored — articulate layer first-principles with date anchor; tag claims research-verified vs recall-based; tie micro to macro; surface contradictions before concluding (B46)
+16. Always run verification subagents immediately on external data with thesis/sizing implications — Opus 4.8, parallel, N=2-4, never ask; log to `meta/subagent-cost-yield-ledger.md`
+17. Ensemble high-stakes calls — sizing-consequential binary/numeric decisions get N=3-5 independent samples; report MODE + SPREAD (spread IS the signal; 3/5 = state the uncertainty). Not routine work.
+18. Standing dissent mandate — on any thesis conclusion, sizing decision, or user framing, generate the strongest FALSIFYING case BEFORE concluding; if none exists, say so explicitly. Non-optional; suppresses confirmation-of-harness-state + sycophancy. Per-conclusion obligation (distinct from Rule #8 periodic + Leg B search-layer).
+19. Destructive-change governance (`meta/destructive-change-governance.md`) — HIGH tier (delete LIVE enforcement/active Routine/protected path; >3-file delete) = operator pre-approval FIRST; CATASTROPHIC (history rewrite/force-push, repo wipe) = explicit VERBATIM operator instruction only; inferred/relayed never qualifies. Enforced: pre-commit F4 + pre-push hook (verified 07-19); tokens only after approval.
 
-## §5. ACTIVE TRIANGULATION CLUSTERS (one-line each; PARKED clusters excluded)
+## §5. ACTIVE TRIANGULATION CLUSTERS (refreshed 2026-07-06 harness audit; quick-index in `signals/triangulation.md` is CANONICAL for N — this list is orientation only)
 
-- **TC-1** Memory tightness multi-tier (memory-and-storage) [ACTIVE N=11] — consumer-GPU OEM behavioral tier-8 confirmation
-- **TC-2** AI capex on credit + state budgets (infrastructure-IaaS) [ACTIVE N=6]
-- **TC-3** DC-ceiling + EM-migration (power-and-cooling) [ACTIVE N=6]
-- **TC-4** Anthropic enterprise-trust drift (model-and-foundation-lab) [ACTIVE N=3]
-- **TC-5** CoPoS / glass-core packaging firming (advanced-packaging) [ACTIVE N=5]
-- **TC-6, TC-7, TC-8** — see `signals/triangulation.md` for current status and N counts
+- **TC-1** Memory tightness multi-tier (memory-and-storage) [ACTIVE N=22+; 60-yr WSTS trend-break + Jun-22 cohort-wide ATH cluster-state event]
+- **TC-2** AI capex on credit + state budgets (infrastructure-IaaS) [ACTIVE N=7]
+- **TC-3** DC-ceiling + EM-migration (power-and-cooling) [ACTIVE N=9; $130B/75+ projects blocked Q1'26]
+- **TC-4** Anthropic enterprise-trust drift (model-and-foundation-lab) [ACTIVE N=12 + acute-phase transition (Jun-13 90-min shutdown)]
+- **TC-5** CoPoS / glass-core packaging firming (advanced-packaging) [ACTIVE N=8]
+- **TC-6** MLCC AI-server tier bifurcation [ACTIVE N=6] · **TC-7** InP geopolitical bottleneck [N=4] · **TC-8** token consumption [maintained]
+- **TC-10** Model-layer sovereignty + export control [ACTIVE N=9 + NBIS UK proof case] · **TC-11** chip-import patent enforcement [CANDIDATE N=1]
+- **TC-12** DRAM>HBM margin inversion [ACTIVE N=5] · **TC-13** AI power-infrastructure bottleneck cascade [ACTIVE N=7+] · **TC-14** YMTC westward NAND qualification [ACTIVE N=3, promoted 2026-07-05 — bear-vector watch on KIOXIA/SNDK consumer mix]
 
-## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-05 EVE screenshots; FRESH-START baseline; DeGiro €95.406,73 = the whole book, N26 = bank only)
 
-**2 held names (both DeGiro); re-verify at session start against holdings.md:**
-1. MURATA 336sh (MUR1) — €19.656,00 — **20,6%** (BEP €53,67; Q1 FY27 print ~late July, L22 test)
-2. SUMCO 626sh (S3X) — €17.058,50 — **17,9%** (BEP €22,31; wafer-hike thesis materializing)
-+ Cash €58.692,23 — **61,5%** — LOCKED until `portfolio/risk-envelope.md` exists; ALAB/BE intents SUPERSEDED.
+## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-12 session-prime audit; SKHY entry 2026-07-10 added; re-verify against holdings.md on every screenshot)
+
+**3 held names (all DeGiro):**
+1. MURATA 336sh (MUR1) — ~20,6% at the 07-05 baseline (BEP €53,67; Q1 FY27 print 2026-07-31, L22/L27 test)
+2. SUMCO 626sh (S3X) — ~17,9% at the 07-05 baseline (BEP €22,31; Q2 pre-registered `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md`, print 2026-08-06)
+3. SKHY 37 ADS @ $173.45 (2026-07-10, ~6.0% at entry, computed) — bought at +19.7% ADR premium over Seoul ordinary (ABOVE the pre-stated ≤~5% gate, user override, both being graded); regular-way tape opens 2026-07-13; premium template + read ladder in `companies/SKHY/thesis.md`
++ Cash ~€53.1k after SKHY entry (per thesis entry facts) — governed by `portfolio/risk-envelope.md` v4 (capital ladder: floor €160k inviolable at total-wealth level; rungs gated on graded evidence).
+
+**⚠️ PRINCIPAL CONTEXT (booked 2026-07-11/12 — read `meta/user-source-profile.md` before any sizing talk):** purpose/capital-ladder/fluidity-rule/PF-register (PF-1 ⚠️FALSIFIED-AS-DOCTRINE 07-17→override-ledger adjudicates; Rule #8 stands); NO position cap (Q7); inputs are an evolving function — do NOT ossify single utterances. Standing directive 2026-07-12: if user input is required, ASK (queue: `meta/principal-questions.md`).
 
 **⚠️ 2026-07-05 STATE CHANGE (read before ANY position talk):** SKH 16 GDR + SNDK 9sh + KIOXIA ~€10k(N26) FULL-EXITED ~Jul-1/2 by user — EMOTIONAL exits, NOT falsifier fires, disclosed 2026-07-05; NBIS exited Jul-3. All four theses intact → watchlist-reference. Conversion-layer lesson in `predictions/lessons.md` (2026-07-05): sizing must track REVEALED drawdown tolerance; re-entries only via fresh envelope-gated decision packages. Do NOT propose redeployment before the risk envelope exists.
 
@@ -138,23 +149,38 @@ _Note: L24 removed (placeholder, never verified). Current lesson tail is L25. Ne
 
 _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 when stale — keep it synced on every portfolio screenshot._
 
-## §7. PENDING PREDICTIONS (resolution window not yet passed)
+## §7. PENDING PREDICTIONS (refreshed 2026-07-12; canonical ledger = `predictions/grading-log.md` — read its NOT-CANONICAL row tags)
 
-_No active pending predictions as of 2026-06-24. KIOXIA VLSI Symposium 2026-06-12 (T+24h resolution window ~June 19-22) has passed — pending GRADE workflow. See `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md`._
+- **SUMCO Q2 FY2026 pre-registration (print 2026-08-06):** canonical = `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (rev/OP/net bands + 5 guidance-language P's + three-outcome table).
+- **SKHY gate-vs-override grading LIVE:** premium template runs at every close from Jul-13 (`companies/SKHY/thesis.md` — anchors: WI +15.6% / entry +19.3-19.7% / gate ≤~5%); one-way fungibility + TSMC-ADR ~+21% precedent booked 2026-07-12.
+- **NBIS T+30 GRADED-FINAL 2026-07-22**: H3-exceeded price / CONFOUNDED mechanism → B48/R2 UNGRADEABLE (5 idiosyncratic catalysts incl. NVDA 9.3% 13G T1); B48 stays N=0; L40 CANDIDATE. Artifact in cross-source-log 07-22.
+- **Earnings board (2026-07-02 program):** TSMC Q2 call Jul-16 (June monthly Jul-13), ASML Jul-15, NOW Jul-22 (IR-pinned 2026-07-12), SK Hynix Jul-29 (T1-pinned 07-13; GP-bridge first run + pre-registered miss-isn't-bearish ladder in SKHY thesis), MURATA Jul-31, Samsung full Jul-30 (IR-pinned 2026-07-12), SNDK Aug-5 + Investor Day Aug-13, KIOXIA Aug-07, SUMCO Aug-06.
+- **CXMT IPO:** price Jul-15 / subscription Jul-16 — adjudicates the Nanya-deep-dive capacity-mix conflict + Nanya trigger (b).
+- **GRADE debt: NONE** — the long-carried "MU 3-layer backfill owed" was PHANTOM (full grade existed since 07-06; row+prose synced 07-20). Samsung Q2 prelim GRADE completed Jul-7/8.
 
-## §8. UPCOMING RECALIBRATIONS / AUDITS (next 90 days from 2026-06-24)
 
-- **2026-06-25** — Supply chain graph reconstruction (H1 capability application, monthly recurring)
-- **2026-06-26** — Two-bracket LLM-native experiment week-3 check
-- **2026-06-27** — Adversarial bear-case stress-test on held cohort (use B45-corrected base rates)
-- **2026-07-01** — Two-bracket LLM-native experiment 30-day close
-- **2026-07-04** — BOTTLENECK-FORECAST monthly (Layer-3 power gap flagged per `sector/unbypassable-layers.md`)
-- **2026-07-11** — Codification rule + signal-density-detection 30-day net-positive check
-- **2026-07-12** — B45 priming-bracket effectiveness check (30-day audit) + session-prime maintenance discipline check
-- **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate)
-- **2026-07-24** — Monthly consolidated audit (next cycle)
-- **2026-07-31** — SNDK Q2 FY27 print + L17 candidate test
-- **2026-09-12** — B45 cohort base-rate quarterly recalibration
+## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
+
+- **MACRO STATE CHANGED:** Hormuz CLOSED (Iran), Brent ~$85 (was ~$79), 10Y 4.61%; June CPI COOL (−0.4% MoM, **core FLAT**, 3.5% YoY) → Sept hike odds ~63%; live tension = cool-backward-data vs hot-forward-oil. Per `cross-source-log/2026-07-14-tue-cpi-print-reaction.md` + `...-tue-morning-scan-3agent.md`.
+- **SKHY:** thesis.md canonical for marks/premium; Jul-29 GP-bridge = KIS branch-a (₩60.4tn/mix-drag) vs SemiAnalysis branch-b (₩67.6-72.2tn/commodity-torque). Conditional €3-5k add re-gated 2026-07-22 (Principle #48): demand-leg confirmed pre-print (Hanmi 15.3x QoQ + TSMC/ASML), so gate variable = GOOGL reaction-function tonight + SKH prepayment/duration disclosure Jul-29, NOT the demand number.
+- **ENTERPRISE MEMORY PULL-FORWARD** (IBM warning Jul-14, BROAD-corroborated TD Synnex/MS/Dell/HPE): SKHY near-term REINFORCE; MS "borrowed-2027-demand" now consensus-adjacent → tail-discount deepens. `...-tue-ibm-warning-enterprise-memory-pullforward.md`.
+- **Funding-node tell #11** (asset-level distribution) — 3 axes (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
+- **#45** event-anchored re-evals added; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
+- **#48 CANDIDATE (2026-07-22) EARNINGS-SEQUENCE READ-THROUGH:** don't act on a scheduled print (priced by arrival) — reconstruct from already-reported adjacent/upstream names (calendar = dependency graph). Caveat: illuminates only the leg whose upstream already printed; ask if that leg is the BINDING uncertainty. **#49 CANDIDATE OPERATOR-INTENT / MISSED-LOOP MANDATE:** extract directional intent not literal words; surface the higher-value loop the instruction skips (red-teams the QUESTION; #18 red-teams the conclusion).
+- **Jul-15/16 DONE:** ASML + TSMC Q2 GRADED (L32 N=2 upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients; facts-first wake order #43b/3e).
+- **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
+
+## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
+
+- **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate) + Rule #16 30-day re-eval
+- **2026-07-24** — Monthly consolidated audit: first who-caught-it ratio + gradeable-fraction spot-sample + macro-anchor FP sampling + INCONCLUSIVE-rate first reading + META-OVERHEAD ratio first computation + K3-Swarm disposition list (audit-log SHA backfill, dead re-evals run-or-retire, hook doc-sweep)
+- **2026-07-27** — Rules #17 (ensemble) + #18 (dissent) re-evals
+- **2026-08-06** — Structural-output normalized-metric decision (fires ÷ commits) + SUMCO print
+- **2026-08-11** — Prompt-library re-eval (`meta/prompt-library.md` falsifier: unused = decorative)
+- **2026-08-12** — session-prime-cascade-hook falsifier check (hook built 2026-07-12)
+- **2026-09-11/12** — Question-generation asymptote falsifier + constraint-differential quarterly sweep + B45 cohort quarterly recalibration
+- **2026-10-11** — Worldview quarterly revision + end-demand-durability model re-eval
+- Past-due carried: BOTTLENECK-FORECAST monthly (last_review 2026-06-04) — run at next substantive weekday wake. 2026-07-12 audits COMPLETED (see `meta/recurring-audit-log.md`).
 
 ## §9. TRUTH-TIER TAGGING + SCOPED-CASCADE RULE (Principle #37 CANDIDATE — ADDED 2026-06-15, load-bearing for every analytical output)
 
@@ -164,7 +190,7 @@ _No active pending predictions as of 2026-06-24. KIOXIA VLSI Symposium 2026-06-1
 - **🔴 SPECULATIVE / IN-FEAR** — Hypothesis, candidate, pre-registered H1-H4, single-source unverified.
 - **STALE** — Auto-flag on 🔴/🟡 entries no cascade-event >30 days.
 
-**Position implication enforcement:** every `Position implication:` line MUST carry a 🟢/🟡/🔴 marker on the same line or directly above. Hook-level enforcement: code shipped to `research/meta/hooks/structural-output-hook.py` mirror; LIVE-PENDING-USER-ACTIVATION via `cp research/meta/hooks/structural-output-hook.py ~/.claude/structural-output-hook.py`. Analyst-discipline enforcement until activated.
+**Position implication enforcement:** every `Position implication:` line MUST carry a 🟢/🟡/🔴 marker on the same line or directly above. Hook-level enforcement: `research/meta/hooks/structural-output-hook.py` is LIVE via project-level `.claude/settings.json` (Architecture A, since 2026-06-26) — the old "pending `cp` to `~/.claude/`" activation instruction is obsolete and must NOT be followed (`~/.claude/settings.json` is intentionally unused; copying would risk double-firing).
 
 **The scoped-cascade rule (load-bearing — when new data lands):**
 
@@ -187,9 +213,26 @@ For every gate / falsifier / monitoring variable: build BOTH lead-indicator stac
 
 **B47 candidate** listed in §2 above. First application: `companies/NBIS/tracking-variables.md`. Next application N=2: any TC cluster's tracking variables (TC-1 / TC-6 / TC-10 most likely given active cascade rate).
 
+### §9c — 2026-07-07 codification batch (Principles #43/#43b/#44 candidates + B63 — load-bearing operating changes)
+
+- **#43 Configuration Over Capability:** latent capability ≠ deployed behavior; sampling defaults anchor to training-distribution patterns (English sources, linear prose, human-time estimates). Operator-surfaced affordances = HIGH-VALUE codification triggers. Monthly-audit standing question: *"what capability exists but is not deployed by default?"*
+- **#43b — COMPUTE INSTEAD OF NARRATE (deployed behavior, not a suggestion):** for ANY quantitative task (envelope/band math, P/L decomposition, correlations, prediction bands, count metrics, calibration aggregation) EXECUTE the computation via Bash/python FIRST, then explain. Prose smooths errors; computation surfaces mismatches, and the mismatch is information. First run (2026-07-07): 2 tasks → 3 catches (impossible cross-position FX residuals; git history-graft trap in `--first-parent`; miscounted hook-fire series narrated as fact). Deterministic tool: `meta/structural-output-metric.py` (the 2026-08-06 hook-experiment adjudicator). Also in priming-hook item 10.
+- **#44 Detection Over Prediction:** revenue-model emergence is unforecastable ex-ante, detectable early — instrument for it (pricing-transition metrics); under model-uncertainty own the substrate every candidate model consumes; the Cisco warning: substrate pricing power is ERA-BOUND → buildout-maturation falsifiers (coding-deceleration tripwire, capex guides) outrank technology-substitution falsifiers in firing order.
+- **B63 model-provenance bias:** the analyst is an Anthropic model — ALL Anthropic/lab-favorable conclusions get mandatory adversarial treatment (never bank lab-sourced ARR; third-party evidence for rankings; explicit Rule #18 falsifier run).
+- Anthropomorphic-default bias (inside #43b): pre-training imports human constraints that don't bind the model; sweep at affordance review.
+- **AGENT-PRIMITIVES CAPABILITY MAP (docs-verified + executed-tested 2026-07-08; #43 N+1; CONDENSED 2026-07-20 for the 30k cap):** (1) completed subagents are RESUMABLE via SendMessage with context intact (executed-verified — use for follow-ups instead of re-firing); (2) parallel fan-out = single message, multiple Agent calls; (3) full capability detail lives in the 07-08 day-state entry + docs — this line is the pointer, not the manual.
+
+- **PC-18 CANDIDATE (07-17): open-layer commoditization re-concentrates margin at scarcest complement, never even-spread; infra busts on 2-4yr lag (N=5). ARMED: capex-vs-monetization tripwire, first reading late-Jul hyperscaler prints.**
+
+- **NO-DELAY (07-19): computable-net-positive upgrades execute NOW; queuing is a cost. Kill: >=2 user-caught errors/30d.**
+
+- **#46 CANDIDATE (07-18): FLUID OBJECTIVE — goal-definition versioned (v2 = calibration + available-edge×capture); noise floor is instrument-relative, re-audited each cycle; no asymptote assumed.**
+
+- **#47 CANDIDATE (07-19): VERDICTS ATTACH TO DISTRIBUTIONS, NOT POINTS — no verdict on single outcomes; the ledger convicts the PROCESS (Brier vs base, 2σ floor); only provenance-tagged points move dials; wins graded as rigorously as losses (L32/timidity/PF-1 receipts); failure-study = engine, capture = goal.**
+
 ## §10. ARCHITECTURE NOTE — how this file gets maintained
 
-Per Critical Rule #13 codification cascade discipline (updated 2026-06-12): every commit that adds a new bias / lesson / principle / critical rule / triangulation cluster MUST also update this file in the same commit. The `cascade-enforcement-hook.py` does not currently check for session-prime updates — manual enforcement until N≥2 skips trigger building `~/.claude/session-prime-cascade-hook.py`. Audit at 2026-07-12 + monthly thereafter: if codifications happened but session-prime wasn't updated, the maintenance discipline is broken and needs hook-enforcement.
+Per Critical Rule #13 cascade discipline: every commit adding a new bias/lesson/principle/rule/TC cluster MUST update this file in the same changeset — ENFORCED by `session-prime-cascade-hook.py` (v2 ID-set-diff rebuild 07-14; live catch 2026-07-19 on #47). Monthly audit continues.
 
 **Curation rule location:** §0 above (codified 2026-06-24). The curation rule is embedded in this file rather than a separate file because the rules that govern injection ARE themselves part of what the session needs to know cold.
 
@@ -198,3 +241,5 @@ Per Critical Rule #13 codification cascade discipline (updated 2026-06-12): ever
 If a 30-day audit shows that having session-prime loaded produced ZERO measurable reduction in the bias-recurrence rate (e.g., I still flag +7-10% single-day moves as "extreme" without referencing B45 baseline), then the file is decorative noise and should be retired (along with the hook). Detectability: grep transcripts 2026-06-12 → 2026-07-12 for magnitude-categorizing language WITHOUT B45 reference. POSITIVE = <2 instances; NEGATIVE = ≥3 instances → retire OR refine selection rules.
 
 **Extended falsifier (added 2026-06-24):** if monthly audit produces zero demotions + zero additions for 3 consecutive cycles, the curation rule is working but the file is not evolving — check whether the OS has stagnated or the curation rule is too aggressive.
+
+- **PC-20/21/22 (07-20/21):** PC-20 export-control DESIGN-AROUND (~50%, re-eval 08-20) · PC-21 listing/monetization wave (proceeds-use tell; ~45%, re-test 08-13) · PC-22 AI-LEVERAGE OPACITY MIGRATION (credit+insurance+sovereign channels → private/opaque structures; BIS-complement; re-eval 08-21). All CANDIDATES — track, don't cite as priors.

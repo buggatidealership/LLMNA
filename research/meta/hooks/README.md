@@ -2,131 +2,79 @@
 
 **Purpose:** Hooks ENFORCE behavior. Instructions in CLAUDE.md are choices the model can skip; hooks are deterministic shell-level code that runs regardless of model choice. Anything that matters operationally should be enforced via a hook, not just documented in a rule file.
 
-**Where they live:**
-- Production location: `~/.claude/*.py`, `~/.claude/*.sh`, `~/.claude/settings.json`
-- Mirror in repo (for backup/reference/version control): `research/meta/hooks/`
+*(Rewritten 2026-07-06 harness audit — the prior README described the pre-Architecture-A world: `~/.claude/` as production location, install.sh as the activation path, and only 4 of the wired hooks. All of that was stale; see git history for the old text.)*
 
-**Why mirror them:** The `~/.claude/` directory may not persist across container restarts in remote execution environments. Keeping a copy in the repo means hooks can be re-installed from version control if lost. Update the mirror whenever a hook is changed in `~/.claude/`.
+## Where they live (Architecture A, since 2026-06-26)
 
-## Activation (added 2026-06-19 per H1-CONTAINER-EPHEMERALITY-FIX)
+- **Source of truth + execution location:** `research/meta/hooks/*.py` — the scripts in THIS directory are what actually runs.
+- **Activation:** `<repo-root>/.claude/settings.json` (project-level, version-controlled) wires them with `$CLAUDE_PROJECT_DIR`-relative paths. Ships with `git clone`, so every fresh container has hooks live from turn 1 — no install step, no `~/.claude/` dependency.
+- **Dynamic root:** every script resolves the repo root as `os.environ.get("CLAUDE_PROJECT_DIR") or Path(__file__).resolve().parents[3]` — survived the 2026-07-06 Health-Calculators → LLMNA migration with zero path breakage.
+- `~/.claude/` is **intentionally unused** by the OS (the environment launcher keeps its own system-managed hooks there, e.g. `stop-hook-git-check.sh` — see below).
+- Full rationale + verification protocol: `DURABLE-ACTIVATION.md`.
 
-The remote-execution environment resets `~/.claude/` to a base system config at every session start. Hooks installed by the user in prior sessions don't persist. Two activation paths:
+**Legacy artifacts in this directory (do not follow blindly):**
+- `settings.json` (the mirror here, NOT the project one) — legacy `~/.claude/`-path wiring kept for the documented fallback only.
+- `install.sh` — **DEPRECATED**; copies hooks + mirror settings into `~/.claude/`, which under Architecture A would DOUBLE-FIRE every hook. It now hard-aborts if project settings exist (override: `FORCE_INSTALL=1`).
 
-### Manual per-session activation
+## Wired hooks (17 in `<repo>/.claude/settings.json` as of 2026-07-06)
+
+| Event | Hook | Enforces |
+|---|---|---|
+| SessionStart | `session-start-hook.py` | To-do briefing, P0s, pending grades, stale reviews, recurring DUE/OVERDUE markers, W11 container-swap sentinel check. Always exits 0 (informational). |
+| SessionStart | `session-prime-hook.py` | Cold-start injection of `meta/session-prime.md` (skips resume/clear/compact; missing `source` = cold start per 2026-07-06 fix). |
+| UserPromptSubmit | `llm-native-priming-hook.py` | Pre-generation LLM-native discipline checklist (priming bracket). |
+| Stop | `anti-fabrication-hook.py` | Critical Rule #7 — no uncited/ungrounded numbers (B11). |
+| Stop | `cascade-enforcement-hook.py` | Critical Rule #10 — synthesis artifacts cascade to per-ticker theses (B16). |
+| Stop | `segment-trajectory-hook.py` | Principle #22 — trajectory, not snapshot (B20). |
+| Stop | `nth-order-cascade-hook.py` | Principle #2 — N-th order markers on causal claims (B21). |
+| Stop | `bypass-route-hook.py` | Principle #9 / Rule #9 — bypass-route on binding constraints (B22). |
+| Stop | `bottoms-up-hook.py` | Principle #1 — bottoms-up before outside view (B23/L1). |
+| Stop | `antifragility-mn-hook.py` | Conviction format — M/N marker on full thesis blocks (B24). |
+| Stop | `analyst-pt-context-hook.py` | B28/B37 — analyst-PT framing needs structural context. |
+| Stop | `signal-ingest-cascade-hook.py` | Rule #10 at INGEST tier — brief/analyst-note shares must produce a cross-source-log file (B39). |
+| Stop | `reasoning-tagging-hook.py` | Source-tier labels on probability claims. |
+| Stop | `llm-native-reasoning-hook.py` | LLM-native reasoning-structure discipline. |
+| Stop | `structural-output-hook.py` | Multi-dimensional structure on large analytical outputs (pruning bracket). |
+| Stop | `macro-anchor-hook.py` | Rule #15 — macro-first, research-anchored discipline (B46). |
+| Stop | `borrowed-vs-firstprinciples-hook.py` | Consensus-as-anchor framing needs an integrity-gate marker (B38). **Wired 2026-07-06** — created 2026-05-28 but never activated until the harness audit found the gap; 30-day falsifier logged in `biases-watchlist.md`. |
+
+**Plus environment-level (system-managed, NOT in project settings):** `~/.claude/stop-hook-git-check.sh` — requires commit+push before Stop completes, plus commit-signature/committer-email verification. The copy of it in this directory is a dated SNAPSHOT for visibility; upstream is the system-managed file.
+
+**Hook conventions (all Stop hooks):**
+- Recursion guard: exit 0 immediately when stdin JSON has `stop_hook_active: true` (all 14 Stop hooks carry this as of the 2026-07-06 audit — five were missing it before).
+- Scope guard: only enforce when cwd is inside the repo (prefix match on the dynamic root).
+- Exit 0 = pass; exit 2 + stderr = block with actionable feedback.
+- Instrumentation: session-prime / structural-output / macro-anchor append to `meta/hook-fire-log.md` on fire (this dirties the tree and is why "log hook fires" commits exist).
+
+## Testing hooks manually
+
 ```bash
-bash research/meta/hooks/install.sh
-```
-Installs all 17 mirror hooks + the merged `settings.json` wiring into `~/.claude/`. Idempotent; creates dated backups before overwrite. Takes ~1 second.
+export CLAUDE_PROJECT_DIR=/path/to/repo   # or run from repo root
 
-### Durable activation (recommended)
-Configure `bash research/meta/hooks/install.sh` as the **environment setup script** in the Claude Code on Web environment config UI. The setup script runs automatically at every container start, so hooks are active from turn 1 of every session. One-time setup.
+# Any hook, empty payload — must exit 0 silently (except session-start's briefing):
+echo '{}' | python3 research/meta/hooks/<name>.py; echo $?
 
-Docs: https://code.claude.com/docs/en/claude-code-on-the-web
+# Recursion guard — must exit 0 with no block:
+echo '{"stop_hook_active": true}' | python3 research/meta/hooks/<name>.py; echo $?
 
-**Diagnosis history:** 2026-06-18 hooks were active (last fire `16:33:37Z structural-output-hook FIRE`). 2026-06-19 H1-ACTIVATION-RESOLVED commit `cecc13fc` re-installed via manual cp at 02:02 UTC. 2026-06-19 12:00 UTC fresh container had base config only — neither H1 nor H2 hooks invokable until `install.sh` runs. This is the structural environment behavior, NOT a one-off.
-
----
-
-## Active hooks (registered in `~/.claude/settings.json`)
-
-### `session-start-hook.py` — SessionStart
-Auto-surfaces a briefing at session start:
-- Top 5 open to-do items from `research/meta/todo.md`
-- All P0 items
-- Pending prediction grades (past resolution date)
-- Stale bottleneck reviews (>30 days)
-- **(Added 2026-05-21):** Recurring items DUE/OVERDUE — items whose title contains "monthly", "weekly", "audit cycle", "recurring", or "next cycle" are treated as having the date field be a DUE date (not create date) and surfaced prominently with markers:
-  - 🚨 **OVERDUE** — date has passed
-  - ⏰ **DUE TODAY** — date == today
-  - 📅 **DUE SOON** — within 7 days
-  - FUTURE — more than 7 days out (not surfaced as urgent)
-
-This is the time-reminder mechanism. Pairs with `research/meta/recurring-audit-log.md` for autonomous-completion trail.
-
-**Always exits 0** (informational, never blocking).
-
-### `stop-hook-git-check.sh` — Stop
-Requires uncommitted changes to be committed + pushed before each turn completes. Forces every meaningful change into version control.
-
-**Exits 2** if uncommitted changes exist; **0** otherwise.
-
-### `anti-fabrication-hook.py` — Stop
-Scans the most recent assistant message for numerical claims ($X, X%, X GW, X wafers, etc.) and verifies each one is grounded — either:
-1. Cited inline (URL, file path, "per [source]", etc.)
-2. Explicitly hedged ((estimate), (my inference), ~, ≈, etc.)
-3. **(Added 2026-05-21 per user calibration):** Grounded by exact-string match in any `research/*.md` file. Rationale: if I've already written a properly-cited file containing this number, the chat summary re-stating it doesn't need to re-cite — the file IS the source of truth.
-
-This means: the hook catches **fabrication** (number nowhere in repo) but **passes legitimate restatement** of previously-committed properly-cited work. Eliminates the B11.a recurrence loop where every chat summary triggered hook violations.
-
-**Exits 2** with stderr feedback if uncited+ungrounded numerical claims found; **0** otherwise.
-
-**Bias addressed:** B11 in `research/meta/biases-watchlist.md` (numerical claims without citation). The 2026-05-21 calibration explicitly addresses the B11.a sub-pattern (re-stated numbers without re-citation) by checking repo grounding.
-
-**Test the hook manually:**
-```bash
-# Test grounding function directly:
-python3 -c "
-exec(open('/root/.claude/anti-fabrication-hook.py').read().replace('if __name__ == \"__main__\":', 'if False:'))
-print('Grounded \$163B:', is_grounded_in_repo('\$163B'))      # True (in GEV thesis)
-print('Fabricated \$999B:', is_grounded_in_repo('\$999B'))    # False
-"
-
-# Test end-to-end with fake transcript:
+# End-to-end with a fake transcript (anti-fabrication example):
 cat > /tmp/test_transcript.jsonl << 'EOF2'
-{"role":"assistant","content":[{"type":"text","text":"GEV backlog \$163B; fabricated \$999B"}]}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"GEV backlog $163B; fabricated $999B"}]}}
 EOF2
-echo '{"transcript_path":"/tmp/test_transcript.jsonl","stop_hook_active":false}' | python3 ~/.claude/anti-fabrication-hook.py
-# Expected: exit 2, only complains about \$999B (not \$163B)
+echo '{"transcript_path":"/tmp/test_transcript.jsonl","stop_hook_active":false}' | \
+  python3 research/meta/hooks/anti-fabrication-hook.py
+# Expected: exit 2, complains only about $999B (the $163B is repo-grounded)
 ```
-
-### `cascade-enforcement-hook.py` — Stop (added 2026-05-21)
-Enforces **CLAUDE.md Critical Rule #10**: cross-source synthesis artifacts must cascade to each named ticker's thesis file.
-
-**What it checks:**
-1. Is there a synthesis artifact in the current changeset (working tree + staged + most-recent-commit)?
-   - Patterns: `research/meta/*-comparison.md`, `research/meta/*-thesis-comparison.md`, `research/signals/events/*.md`, `research/signals/triangulation.md`, `research/sector/*-comparison.md`
-2. For each artifact, extract named tickers (via `companies/{TICKER}/` references AND bold `**TICKER**` patterns, filtered to actual ticker directories).
-3. For each named ticker, verify `research/companies/{TICKER}/thesis.md` contains a reference to the artifact path or its basename.
-4. If any ticker is missing the back-reference, exit 2 with feedback listing the missing cascades.
-
-**Exits 2** with stderr feedback if cascade incomplete; **0** otherwise.
-
-**Bias addressed:** B16 in `research/meta/biases-watchlist.md` (synthesis-without-cascade / artifact-isolation bias).
-
-**Test the hook manually:**
-```bash
-# Pass case (current state, cascade complete):
-python3 ~/.claude/cascade-enforcement-hook.py < /dev/null
-# Expected: exit 0, no output
-
-# Fail case (deliberately strip a back-reference):
-cp research/companies/HYNIX/thesis.md /tmp/backup.md
-grep -v "patel-vs-aschenbrenner-thesis-comparison" research/companies/HYNIX/thesis.md > /tmp/stripped.md
-cp /tmp/stripped.md research/companies/HYNIX/thesis.md
-python3 ~/.claude/cascade-enforcement-hook.py < /dev/null
-# Expected: exit 2, stderr lists HYNIX as missing back-reference
-cp /tmp/backup.md research/companies/HYNIX/thesis.md  # restore
-```
-
----
 
 ## How to add a new hook
 
-1. Write the hook script in `~/.claude/<name>.py` (or `.sh`). Follow the patterns:
-   - Check scope first (only enforce inside Health-Calculators repo)
-   - Read `stop_hook_active` from stdin JSON to avoid recursion
-   - Exit 0 to pass, exit 2 with stderr to block
-2. Make executable: `chmod +x ~/.claude/<name>.py`
-3. Test manually with `python3 ~/.claude/<name>.py < /dev/null` — verify both pass and fail cases
-4. Register in `~/.claude/settings.json` under the appropriate event (Stop, SessionStart, UserPromptSubmit, PreToolUse, PostToolUse)
-5. Mirror to `research/meta/hooks/`
-6. Document here (this README) + update CLAUDE.md §"Enforcement hooks (live)"
-7. Add a bias entry in `research/meta/biases-watchlist.md` if the hook corrects a documented model failure
+1. Write the script in `research/meta/hooks/<name>.py`. Follow the conventions above (dynamic-root preamble on line 2-4, scope guard, recursion guard, exit 0/2).
+2. `chmod +x research/meta/hooks/<name>.py`.
+3. Test manually (pass case, fail case, recursion-guard case, empty-stdin case).
+4. Register in `<repo>/.claude/settings.json` under the right event, using the `"$CLAUDE_PROJECT_DIR"/research/meta/hooks/<name>.py` form. (Optionally add the `~/.claude/` line to the legacy mirror `settings.json` for fallback parity.)
+5. Document: this README's table + `research/CLAUDE.md` §"Enforcement hooks (live)".
+6. Add/READ the bias entry in `research/meta/biases-watchlist.md` the hook enforces, with fluidity metadata (codified date, falsifier, re-eval trigger).
 
-## Hooks I would add next (deferred)
+## Retirement discipline
 
-- **UserPromptSubmit hook**: when user submits a message containing a URL, image attachment, or named-source pattern (e.g., "X said Y", "per the article"), inject context: "INGEST workflow required. Extract facts, source-tier, named tickers. Cascade-enforcement will run on Stop." This auto-orients me to the right workflow on every input.
-- **Stop hook — workflow-detection**: when the artifact pattern indicates a deep-dig run, verify the deep-dig-queue.md was updated to mark the item complete. Same logic as cascade enforcement, applied to a different artifact type.
-- **Stop hook — decision-prompt**: at end of any meaningful research turn, prompt the user with options: "Continue researching / Debate this read / Cascade to additional companies / Move on." Surfaces decision points the user can accept or redirect.
-
-These get built when needed; cascade-enforcement was the highest-leverage one because B16 had just fired.
+Hooks are not permanent. Per the fluid-loop rules in `research/CLAUDE.md`: a hook that fires <5×/month for 3 consecutive months is INERT (retire), and every hook codification carries a falsifier. Current open decision: the two-bracket experiment (llm-native-priming + structural-output) 30-day close was due 2026-07-01 and is pending — see `meta/todo.md`.

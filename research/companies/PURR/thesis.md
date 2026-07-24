@@ -1,7 +1,9 @@
 # Hyperliquid Strategies Inc (PURR) — Thesis
 
+**⚠️ POSITION STATUS: EXITED (date unrecorded, pre-2026-07-05; user-confirmed 2026-07-06).** The 2026-07-06 harness audit found this thesis still claiming a held position (~5.7%) while PURR was absent from both the held list and exit roster of the 2026-07-05 fresh-start baseline (file untouched since 2026-05-21). User confirmed 2026-07-06: sold earlier, exit simply never documented. **Do NOT treat this file as position guidance.** Retained as reference only (off-thesis crypto proxy). Logged in `portfolio/changes.md` 2026-07-06 entry.
+
 **Last updated:** 2026-05-21
-**Tier:** Special-case / off-AI-thesis (held position; speculative)
+**Tier:** Special-case / off-AI-thesis (held position; speculative — see UNRESOLVED banner above)
 **Position target:** 4–6% (user holds ~5.7% per `research/portfolio/holdings.md` — at target)
 **Anti-fragility:** Not applicable to S1-S5 scenarios (separate framework)
 **Foundation:** None in current OS — this is a CRYPTO PROXY with AI/tokenization narrative overlay

@@ -1,3 +1,7 @@
+# ⚠️ SUPERSEDED — DO NOT GRADE AGAINST THIS FILE
+
+**This is a same-day duplicate registration (2026-07-02). The CANONICAL Samsung Q2 prelim prediction is `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` (rev ₩172-183tn pt ₩178tn / OP ₩88-97tn pt ₩92tn) per the reconciliation note in `grading-log.md`. This file's divergent rev band (₩175-182tn) is NOT the graded number. Retained un-deleted for audit transparency only.** *(Header added 2026-07-06 harness audit, the day before resolution — the grading-log note previously mis-stated that this file did not exist.)*
+
 # PREDICTION — Samsung Electronics 005930 Q2 2026 PRELIMINARY (2026-07-07)
 
 **Registered:** 2026-07-02 · **Resolves:** 2026-07-07 (prelim: consolidated rev + OP only; full print ~Jul-23) · **Program:** `2026-07-02-AI-supplychain-earnings-program.md` · **Data:** `signals/cross-source-log/2026-07-02-earnings-program-wave1-calendar-consensus-harddata-4agent.md`

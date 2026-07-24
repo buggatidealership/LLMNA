@@ -1,0 +1,31 @@
+# 2026-07-08 USER HYPOTHESIS (voice, midday) — expectations treadmill → sell-all → buy Anthropic IPO
+
+**User articulation (paraphrase-faithful):** (1) Semis must now beat consensus AND raise guidance above consensus; after 5-8 consecutive beat-quarters the expectations ratchet makes upside surprise structurally harder each time. (2) Proposed action: sell ALL positions (MURATA+SUMCO), sit 100% cash. (3) Iran-US ceasefire broken → oil/escalation risk supports de-risking. (4) Then buy the Anthropic IPO "big stack" — own the labs/models layer, "the company whose product I use every day." User explicitly asked: "why might I be wrong?"
+
+## Assessment delivered (chat, same session) — summary of record
+
+**Part 1 — the treadmill hypothesis is ALREADY CODIFIED and 1/2 confirmed:** this is L27's falsifier-watch (beat-and-no-rally) + B42 signed-whisper, opened 07-07 on Samsung (+4.45% OP beat vs bar → −6.92% close, T+24h stabilization only, tick #1 CONFIRMED). User's hypothesis = the pre-registered "fundamentals diverge from price" regime-reframe question. Adjudicators already scheduled: HYNIX Jul-29 (N=3), MURATA Jul-31 (N=4). Counter: the treadmill compresses REACTIONS, not cash flows — fundamentals keep beating (MU $41.46B vs $34.5-35.6B cons + $50B guide; Samsung record OP; NOW 8/8) — on the stated 6-24mo horizon price follows earnings power, on days it follows whisper.
+
+**Part 2 — sell-all-now: DISSENT (Rule #8 + graded base rate).** No MURATA/SUMCO falsifier has fired; both drawdowns classified positioning/narrative with fundamentals intact. This would be the third macro/emotion-timed exit; the graded record of the prior two is negative (NOW $94.30 BEP → $112.85 post-exit; DDOG record high 07-06 above exit). Iran = Rule #8's literal example of a non-falsifier. Cash already 65.2% — the book is already defensive; selling the last ~35% at MURATA −9.6% underwater into a rout = B9 signature. DISCIPLINED version of the same instinct: let the pre-registered Jul-29/31 adjudicators decide — if L27 counter hits 2/2, gross-reduction then has framework support (pre-registered here: L27 2/2 → formal de-risk review including MURATA/SUMCO sizing, not just narrative).
+
+**Part 3 — buy-Anthropic-IPO "big stack": why user might be wrong (asked-for falsifiers; B63 disclosed in chat):**
+1. **No IPO exists to buy yet** — confidential S-1 (06-01, T1) = option not commitment; Oct-Nasdaq/$1T = T3 speculation; 100%-cash-waiting has unbounded duration.
+2. **Expectations-treadmill transfer:** escaping expectation-elevated semis into THE most expectation-elevated asset in the market — ~$965B Series H valuation on ~$47B RRR ≈ ~20x forward revenue (computed from tracker T1/T2 figures) with no public earnings history; the whisper regime he fears operates HARDER on a story IPO.
+3. **IPO-day is the most crowded price of the cycle** — "product I use every day" (Lynch logic) is a DISCOVERY edge, not a PRICE edge; everyone's daily usage is exactly what the $1T talk prices in.
+4. **Today's own verified negatives (B63-forced):** Fable 5 suspended ~19 days by US export controls (H2 trust-tax P~55, my model); Cursor (peak ~40-50% of revenue) being absorbed by SpaceXAI with in-house model imminent; model-export-control regime (non-default read #11) = labs sit at MAXIMUM policy surface.
+5. **Concentration + livelihood correlation:** income/workflow already Anthropic-dependent; "big stack" stacks portfolio on the same single point of failure. AF = 1/N by construction.
+6. Sell-semis-to-buy-labs is internally odd: the labs' spend IS the semi demand — if lab economics are strong enough to buy at $1T, the suppliers' falsifiers aren't firing.
+
+**Middle path proposed (no action executed; everything user-gated):** (a) HOLD MURATA/SUMCO to their adjudicators (Jul-31 print / Aug-6 print); (b) BUILD the Anthropic IPO decision package NOW — pre-registered valuation bands, entry rules (post-lockup/post-first-print options), allocation CAP at Active-tier (3-8%), ensemble per Rule #17 at execution — so the IPO decision is made by framework, not launch-day excitement; (c) Iran = cash-patience gate (already HOT since 07-07), not a sell trigger.
+
+**Codification note:** user hypothesis maps 1:1 onto L27/B42 — no new lesson number; this artifact is the record + the L27-2/2 → de-risk-review pre-registration. Anthropic-IPO package = new todo item (P1).
+
+---
+
+## ADDENDUM (2026-07-08 ~13:00Z) — USER RE-GRADE OF EXITS + my base-rate correction (Rule #11 visible self-correction)
+
+**User re-grade (T2-user tape numbers, unverified individually):** (1) the FIRST macro sell ("Venezuela war" episode) = MISTAKE — the sold names went on to gain on the order of +200-300% (user estimate); (2) the TWO RECENT sells (SKH/SNDK/NBIS/KIOXIA memory-cohort legs, ~07-01/03) = GOOD in hindsight — cohort since the Samsung print: SKH −5.68% today (ADR pricing day), Samsung −6.25% today, MU −4.71% yday / −4.5% premkt, SNDK −7.26% yday / −5.7% today, KIOXIA −7.45% yday / −3.5% premkt (all user-reported). Broader tape: NVDA −1.5% premkt, SpaceX −~7% yday, MURATA −2% today, Harmonic Drive −4.4%, Disco −5%, OVHcloud −8.87%, DT down; UP: energy (Cheniere/LNG), Taiwan CCL trio 2383/6274/6213, Cloudflare +8.6% yday, MiniMax/GigaDevice in Asia.
+
+**My correction:** yesterday's dissent cited "the graded exit record is negative" using the SOFTWARE exits only (NOW $94.30→$112.85; DDOG record high) — SELECTIVE. Full ledger: software exits currently look WRONG; memory exits currently look RIGHT (cohort down double-digit-ish since the print while user sat in cash). Both recorded. Discipline note: memory-exit grade is T+~1wk — "good exit" vs "drawdown that mean-reverts before Jul-29/31" not yet distinguishable; formal exit-grade at the L27 adjudicators. The DISSENT on selling MURATA/SUMCO stands (Rule #8, no falsifier fired) but its evidentiary base is now weaker than stated yesterday — flagged honestly.
+
+**L27 tape update:** Samsung −6.25% at T+48h (user T2) = the T+24h "stabilization" read FAILED — beat-and-no-rally is EXTENDING, not base-building. Strengthens (does not yet resolve) the user's treadmill hypothesis into the Jul-29/31 adjudicators. SKH −5.68% ON pricing day = negative-basis pressure live into tonight's ADR pricing; second-cut watch HOT.

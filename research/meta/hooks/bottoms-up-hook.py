@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import os as _os
 from pathlib import Path as _Path
+try:  # shared fire-log helper (house standard, fail-open) — added 2026-07-24
+    import sys as _sys_hfl, os as _os_hfl
+    _sys_hfl.path.insert(0, _os_hfl.path.dirname(_os_hfl.path.abspath(__file__)))
+    from hook_fire_log import log_fire as _log_fire
+except Exception:
+    def _log_fire(*_a, **_k):
+        return ""
 _REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Bottoms-up reasoning Stop hook for the AI Sector Research OS.
@@ -50,7 +57,7 @@ Exit codes:
   0 — pass (no predictive surface, or prediction + bottoms-up indicator)
   2 — block (forward projection without bottoms-up math)
 
-Scope: only enforces inside Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 """
 
 import json
@@ -219,6 +226,7 @@ def main():
         "count, units per X, * = math) or explicit hedge marker.",
     ]
     print("\n".join(msg), file=sys.stderr)
+    _log_fire("bottoms-up-hook", "FIRE", detail="B23 sell-side-aggregation-drift")
     sys.exit(2)
 
 

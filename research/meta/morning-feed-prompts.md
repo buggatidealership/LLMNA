@@ -312,6 +312,8 @@ For any item surfaced by any of the 4 scans that meets ANY of these criteria:
 → Cost: ~80-120k tokens per deep fire
 → Estimated frequency: 1-3 deep fires per week given current signal density
 
+**⚠️ GATE LIFTED (user decision 2026-07-06, first-week review):** Tier-2 deep-fires are AUTO-FIRE — do NOT pause to ask permission when a trigger criterion above is met (consistent with Critical Rule #16 never-ask posture). Binding guards remain: the per-wake budget envelope (Workflow #11) + the 2.5M-tokens/week falsifier ceiling + mandatory ledger entry per fire (review refinement R2) + the per-run convergence line (R1). Re-eval at the 2026-08-06 monthly review.
+
 ---
 
 ## Output template — daily scan artifact format
@@ -432,3 +434,26 @@ TRIGGER-DATE vs SYSTEM-DATE RECONCILIATION (per Principle #40 codified 2026-06-2
 ```
 
 **These three additions** (time window + direct primary fetch + date reconciliation) **should be applied at next scan iteration** — fix the 3 prompt-optimization gaps caught in today's first fire.
+
+## Leg B patch (2026-07-13, anomaly-register intake): every Leg B prompt now requests a SECOND output bucket — "ANOMALIES (2-3 max): uncommon/surprising items with NO thesis contact and NO obvious segment home; one line each with source+tier+why-uncommon." These route to `signals/anomaly-register.md`, not the cross-source log. The investable digest bucket is unchanged.
+
+## NUMBERS-NOT-NARRATIVE patch (2026-07-16, user-articulated after the Nikkei arbitration inversion; applies to EVERY W10 scan prompt, both legs, effective next fire)
+
+**User hypothesis (verbatim-adjacent):** *"we should not rely on media outlets' opinions. If it states wording that is opinionated ['led by X'], the agent should actually check the numbers themselves, or at least you have to verify the numbers whenever the agent comes back. That way we start steering more towards LLM-native reasoning instead of LLM-native aggregation of human opinions."*
+
+**Origin failure (same day):** Leg A relayed a recycled Jun-16 "Advantest/Kioxia led gains +87" ranking as the Jul-16 close; main-loop arbitration kept it on tier self-label + narrative coherence even though the arithmetic against the on-file prior close (652.99-pt mismatch, computed) had ALREADY falsified it. The correct agent (Leg B) was rejected. User caught it from real closes — 3rd tape-catch of the week.
+
+**Prompt-level additions (both legs, mandatory):**
+1. **Every market-move claim ships as NUMBERS: prior close → close → computed delta → dated primary URL.** A leadership/causal attribution ("led by", "dragged by", "on X fears") WITHOUT the underlying per-name numbers is labeled `NARRATIVE-UNGRADED` — it may be reported, never used as tape.
+2. **Date-pin mandatory:** every tape figure carries the article/print date extracted from URL or byline; figure without a pinnable date = `UNPINNED`, excluded from tape.
+3. **Self-check arithmetic:** agent must verify its own close-vs-prior-close delta arithmetic in the output; a mismatch is reported as a mismatch, not smoothed.
+
+**Main-loop arbitration rule (binding on me):**
+- **An arithmetic contradiction KILLS a figure — it does not "queue" it.** If claimed delta ≠ computed delta off the on-file prior, the figure is dead until a date-pinned exchange print resolves it. (Today's failure: the mismatch was computed and then routed to a reconcile-queue while the dead figure kept steering the verdict.)
+- Conflicting agents on same-day tape = a DATE question; the only resolver is a date-pinned primary. Tier self-labels and narrative coherence do not vote.
+- Media CAUSAL wording is opinion-layer data (narrative field) — mechanism claims in verdicts must be either computed from numbers (what moved, how much, in what sequence) or explicitly tagged my-model hypothesis with P.
+
+**Falsifier for this patch (re-eval at monthly audit):** if the next 10 wake scans produce ≥2 further tape inversions of this class despite the patch, the fix is prompt-cosmetic and the tape layer needs a deterministic data source (API layer) instead of agent search — escalate priority of the API-ingestion route.
+
+## FACTS-FIRST WAKE ORDER (2026-07-16, user brain-dump on API go-live; extends the NUMBERS-NOT-NARRATIVE patch — binding from next fresh container)
+W10 step-order inversion now that the tape is API-served: (0) TAPE FETCH FIRST — EODHD closes for held/watch names + indices (KRX live; TSE pending suffix fix), computed deltas + arithmetic cross-checks vs on-file priors, BEFORE any agent fires; (1) form my own move-hypotheses from the computed tape; (2) THEN Legs A/B run — their press reads now serve to (a) surface non-API facts (capacity/roadmap/design-win class) and (b) measure the narrative field against the computed reality; any agent tape claim that contradicts the API print is dead on arrival (no arbitration needed — the print wins). Budget note: EODHD 20 calls/day → tape fetch ≈ 6-8 calls (held names + KOSPI/Nikkei proxies), leaves headroom for event-driven pulls. Falsifier: co-located with methodology.md #43b/3e.

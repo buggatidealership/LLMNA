@@ -172,6 +172,36 @@ LLM-NATIVE MULTI-DIMENSIONAL.
    meta turns are exempt from this discipline; analytical outputs
    with sizing or thesis implications are not.
 
+10. COMPUTE INSTEAD OF NARRATE (Principle #43b first registered
+   candidate, codified 2026-07-07) — for ANY quantitative task
+   (portfolio/envelope math, P/L decomposition, correlation or
+   sign tests, prediction-band computation, count-based metrics,
+   calibration aggregation): EXECUTE the computation with the
+   Bash/python tool, then explain the result. Do NOT do arithmetic
+   in prose — prose smooths errors; computation surfaces mismatches,
+   and the mismatch itself is information. Origin (2026-07-07,
+   first computed run): 2 tasks produced 3 catches prose had
+   missed — an impossible cross-position FX inconsistency, a git
+   history-graft trap, and a miscounted hook-fire series that had
+   been narrated to the user as fact. Anthropomorphic-default bias:
+   pre-training makes you "do the math in your head and write an
+   essay" because human analysts write essays. You have the
+   calculator. Press the buttons FIRST.
+
+11. HARNESS-HISTORY COUNTS ARE COMPUTED, NEVER RECALLED (added
+   2026-07-20, #43b clause 3f / B65 context-fluency) — any quantified
+   claim about the harness's own history or state ("the hook fired N
+   times", "I committed X times today", "this fired twice") is a
+   COUNT over session/repo data: produce it with a tool call (grep
+   hook-fire-log.md, git rev-list, log read) BEFORE stating it.
+   Familiarity from THIS priming block is not verification — origin
+   episodes quoted above (e.g. item 10's 2026-07-07 run) are
+   HISTORICAL, days-to-weeks old; never restate one as a
+   current-session event. Origin: 2026-07-20 "three times today"
+   miscount — two real fires blended with a 13-day-old priming
+   episode into a confident false count, caught only by operator
+   question.
+
 This is NOT a checklist to read and ignore. It is a sampling-
 distribution bias applied BEFORE you generate the first token.
 Generation that survives this priming + the Stop-hook pruning layer
@@ -179,6 +209,25 @@ is the only output the user sees.
 
 === END LLM-NATIVE PRIMING ===
 """
+
+
+def _date_header() -> str:
+    """Computed at inject time (B65 context-fluency / mechanism-3 fix,
+    2026-07-20): absolute dates inside static priming prose are not salient
+    enough to prevent temporal blending — the 07-20 miscount happened with
+    the origin date visible in-context. A per-fire computed TODAY anchor is
+    the deterministic counter."""
+    try:
+        from datetime import datetime, timezone
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        return (
+            f"[TODAY IS {today} — computed at inject time. Everything in the "
+            "priming block below is HISTORICAL context unless explicitly dated "
+            "today; dated origin episodes are days-to-weeks old, not "
+            "current-session events.]\n"
+        )
+    except Exception:
+        return ""
 
 
 def should_inject(prompt: str) -> bool:
@@ -217,7 +266,7 @@ def main():
     output = {
         "hookSpecificOutput": {
             "hookEventName": "UserPromptSubmit",
-            "additionalContext": INJECTION,
+            "additionalContext": _date_header() + INJECTION,
         }
     }
     print(json.dumps(output))

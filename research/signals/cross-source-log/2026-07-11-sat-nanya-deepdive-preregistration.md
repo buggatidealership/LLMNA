@@ -1,0 +1,14 @@
+# 2026-07-11 SAT — NANYA (2408.TW) DEEP DIVE: pre-registered hypotheses (BEFORE agent data)
+
+**Trigger:** user-directed ("warrants a bigger deep dive"; his observations: trailing P/E ~36.5 per his chart app — UNVERIFIED, agent to pin; "hasn't reached all-time high yet"; DeGiro availability he checks himself). Layer context = fresh (memory layer #9-verified continuously this week; Nanya Q2 verified TODAY per `2026-07-11-sat-eve-ai-brief-routing.md`). 3 Opus agents fired: (1) valuation/ownership/access, (2) business/technology/CXMT-overlap, (3) cycle-history/ATH-decomposition + bear case.
+
+## Pre-registered hypotheses (my model, locked before agent returns)
+- **H1 (P~40): legitimate late-discovery cyclical torque** — market hasn't repriced the Q2 explosion (print was Jul-10); forward multiple on annualized Q2 EPS is low single digits; the LTA ≈50% base + 2-3 more quarters of rising prices deliver massive near-term earnings; stock re-rates.
+- **H2 (P~40): the classic peak-cycle value trap** — cheap-looking multiples at GM 79.5% ARE the top signal (cyclicals look cheapest at the peak); Nanya is the WORST-positioned major memory name structurally: pure commodity legacy DRAM, no HBM, no LTA-priced AI tier beyond 50%, and sits DIRECTLY in CXMT's lane (both legacy DDR4/DDR3) — when the GM-ceiling marker fires, Nanya's Lens-2 math (GP-bridge: 88→70% GM = GP/unit −67%) applies almost purely.
+- **H3 (P~20): dilution-distorted chart** — "hasn't reached ATH" is an artifact of Nanya's near-death 2008-2012 era (recall-based — agent 3 verifies): massive recapitalization/dilution means the per-share ATH is not a meaningful resistance/upside marker; the ATH-distance read is neither bull nor bear, it's noise (B39/ATH-distance discipline).
+
+## The joint-state problem (stated before any buy-appeal forms)
+Book is already SKHY 6.0% + SUMCO ~17.9% + MURATA (memory-cycle upstream) — adding the PUREST commodity-memory cyclical would concentrate the single factor further AND add the one name where the China-localization branch (state C, discussed today) is a DIRECT falsifier: CXMT capacity floods legacy DRAM first. For SKHY the CXMT threat is a relief-valve; for Nanya it is existential. Rule #18: this is the strongest standing bear regardless of what agents return.
+**User P/E observation, handled honestly:** trailing ~36.5 on a cyclical whose EPS just went vertical is a trap-metric in both directions — trailing includes loss quarters (overstates multiple); forward-at-peak understates risk (the cheap-at-the-top illusion). The decomposition (trailing vs Q2-annualized vs mid-cycle) is agent-1's first job.
+
+**Adjudicators pre-registered:** Q3 print (contract +20-30% channel read), GM-ceiling marker state, CXMT post-listing capacity disclosures, Taishan capex board approval. Position implication: NO ACTION until agents return + DeGiro check by user. 🟡

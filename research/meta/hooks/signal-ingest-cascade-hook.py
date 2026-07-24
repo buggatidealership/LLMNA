@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 import os as _os
 from pathlib import Path as _Path
+try:  # shared fire-log helper (house standard, fail-open) — added 2026-07-24
+    import sys as _sys_hfl, os as _os_hfl
+    _sys_hfl.path.insert(0, _os_hfl.path.dirname(_os_hfl.path.abspath(__file__)))
+    from hook_fire_log import log_fire as _log_fire
+except Exception:
+    def _log_fire(*_a, **_k):
+        return ""
 _REPO_ROOT = _os.environ.get("CLAUDE_PROJECT_DIR") or str(_Path(__file__).resolve().parents[3])
 """
 Signal-ingest-cascade Stop hook for the AI Sector Research OS.
@@ -38,7 +45,7 @@ Why this exists: user directive 2026-05-30 verbatim:
    never relies on outdated files. That has to be enforced and cannot just be
    instructed with the rule. This has to be either a hook or a script."
 
-Scope: only enforces inside the Health-Calculators repo.
+Scope: only enforces inside this research-OS repo (dynamic root: CLAUDE_PROJECT_DIR, fallback path-relative; migrated from Health-Calculators 2026-07-06).
 
 Origin pattern: same architecture as cascade-enforcement-hook.py +
 anti-fabrication-hook.py (transcript JSONL reading + git status check).
@@ -245,6 +252,10 @@ def main():
         sys.exit(0)
 
     stdin_data = read_stdin_json()
+    # Recursion guard: if a prior Stop-hook block already re-fired this Stop,
+    # do not block again (infinite-Stop-loop hazard). Added 2026-07-06 audit.
+    if stdin_data.get("stop_hook_active"):
+        sys.exit(0)
     transcript_path = get_transcript_path(stdin_data)
     if not transcript_path:
         sys.exit(0)
@@ -308,6 +319,7 @@ See:
   - research/meta/hooks/signal-ingest-cascade-hook.py (source mirror)
 """
     print(feedback, file=sys.stderr)
+    _log_fire("signal-ingest-cascade-hook", "FIRE", detail="Rule#14 signal-density-skip")
     sys.exit(2)
 
 

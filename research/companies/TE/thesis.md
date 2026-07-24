@@ -10,6 +10,8 @@ Per `research/signals/cross-source-log/2026-06-04-evening-brief-gemma4-12b-alpha
 
 ---
 
+**⚠️ POSITION STATUS: EXITED (date unrecorded, pre-2026-07-05; user-confirmed 2026-07-06).** The 2026-07-06 harness audit found this thesis still claiming a held position (~4.82-5.38% in entries below) while TE was absent from both the held list and exit roster of the 2026-07-05 fresh-start baseline. User confirmed 2026-07-06: sold earlier, exit simply never documented. **All "HOLD" language below is a HISTORICAL ARTIFACT — do NOT treat as position guidance.** Thesis retained as watchlist-reference. Logged in `portfolio/changes.md` 2026-07-06 entry.
+
 **Prior last updated:** 2026-05-26
 **Tier:** Active (held position; partial validation from Aschenbrenner; execution-heavy; **NEW 2026-05-26: AI-adjacent via Supply Chain Inheritance — per principle #28 + B29 reclassification, see Update 2026-05-26 below**)
 **Position target:** 4–7% (user holds ~4.82% per `research/portfolio/holdings.md`)

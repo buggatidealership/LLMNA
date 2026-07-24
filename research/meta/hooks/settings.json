@@ -86,6 +86,10 @@
                     {
                         "type": "command",
                         "command": "~/.claude/macro-anchor-hook.py"
+                    },
+                    {
+                        "type": "command",
+                        "command": "~/.claude/borrowed-vs-firstprinciples-hook.py"
                     }
                 ]
             }

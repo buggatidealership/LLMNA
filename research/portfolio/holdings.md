@@ -1,6 +1,47 @@
 # Current Holdings — CANONICAL PORTFOLIO REFERENCE
 
-**Last updated:** 2026-07-05 EVE (user DeGiro screenshots ×3 — the FRESH-START baseline). Prior canonical: 2026-07-01.
+**Last updated / CURRENT CANONICAL STATE: 2026-07-10 EVE** (user DeGiro screenshots — SKHY buy; see the "2026-07-10 EVE snapshot" section below: MURATA 336 sh + SUMCO 626 sh + **SKHY 37 ADS @ $173.45**, cash €53,063.88, balance €93,597.97). The 07-07 PM table below is the PRIOR mark, kept for history — header re-rolled 2026-07-20 (K3-Swarm G-54: cold sessions were reading a 2-position stale book).
+
+## 📸 2026-07-07 PM CANONICAL STATE (screenshots ×2)
+
+| Header line | Value |
+|---|---|
+| **Balance (account total)** | **€89.976,12** |
+| Portfolio (positions value) | €31.283,89 |
+| **Cash / Available to trade (EUR)** | **€58.692,23** |
+| Day P/L | **−€5.070,74 (−5,33%)** |
+| Total P/L | +€14.830,56 |
+| Orders | 0 outstanding, 0 executed |
+
+| # | Position | Qty | Price | Value | BEP | Unrealised vs BEP (computed) |
+|---|---|---|---|---|---|---|
+| 1 | Murata Mfg Co | 336 | €48,495 | €16.294,32 | 53,669443 | **−€1.738,61 (−9,6%) — UNDERWATER** |
+| 2 | Sumco Corp | 626 | €23,945 | €14.989,57 | 22,310191 | +€1.023,39 (+7,3%) |
+
+**Weights (computed vs €89.976,12):** MURATA **18,1%** / SUMCO **16,7%** / cash **65,2%**.
+
+### [17:13 refresh — screenshots ×3, expanded P/L columns] (supersedes the marks above by minutes; same positions)
+
+| Header | Value |
+|---|---|
+| Balance | **€89.937,11** / Portfolio €31.244,88 / Cash €58.692,23 |
+| Day P/L | **−€5.109,75 (−5,38%)** — per-name: MURATA −€2.355,36 (−12,62% EUR-terms) + SUMCO −€2.754,40 (−15,55% EUR-terms) = −€5.109,76 ✓ |
+| Total P/L | +€14.791,55 |
+
+| Name | Price | Value | Unrealised P/L | **Lifetime Total P/L (column)** |
+|---|---|---|---|---|
+| MURATA | €48,50 | €16.296,00 | −€1.736,93 (−9,63%) | **+€4.075,66** |
+| SUMCO | €23,88 | €14.948,88 | +€982,70 (+7,03%) | **+€306,92** |
+
+- **⚠️ EUR-terms day moves EXCEEDED the JPY closes** (MURATA −12,62% vs −10,13% JPY; SUMCO −15,55% vs −11,62% JPY, as displayed by DeGiro's day-P/L column) — FX translation amplified the rout for the EUR book; note for envelope math (JPY-close-based estimates UNDERSTATE EUR book damage).
+- **NEW: SUMCO dividend upcoming** — ¥10,0000 × 626 = ¥6.260,00 gross, tax −¥958,72 → net ¥5.301,28 (≈€29 order-of-magnitude (my estimate)); CA ID 919327.
+- Note: no closed-positions table visible in these screenshots (SKH/SNDK/NBIS realized fills remain UNKNOWN — the audit gap from 2026-07-05 stands; the lifetime Total-P/L column above partially fills it for the two OPEN names only).
+
+**Read vs prior canonical (2026-07-05, €95.406,73):** NO transactions occurred (0/0 orders) — the −€5.430,61 (−5,7%) two-session decline is PURE market move = the 07-06/07-07 cohort rout in EUR terms (both JPY closes + EUR/JPY). MURATA flipped from +9,0% to **−9,6% vs BEP** across the rout; SUMCO compressed +22,1% → +7,3% but stays green. **Sizing-relevant deltas:** MURATA 20,6% → 18,1% (the rout partially self-corrected the Core-band overage; residual overage vs the 15% ceiling ≈ €2,8k my-model); SUMCO 16,7% (inside no band breach... above Core 15% by 1,7pt — marginal); Active band (3-8%) on the fresh base = €2,7-7,2k; Core (8-15%) = €7,2-13,5k.
+
+---
+
+## [SUPERSEDED 2026-07-07] Prior canonical 2026-07-05 EVE below (retained for audit)
 
 ## ⚠️ CANONICAL REFERENCE RULE (set by user 2026-06-04 PM; reaffirmed 2026-06-14 AM)
 
@@ -73,3 +114,13 @@
 - `portfolio/changes.md` — 2026-07-05 screenshot truth-up entry
 - `predictions/lessons.md` — 2026-07-05 harness-level conversion-layer lesson
 - Risk envelope (`portfolio/risk-envelope.md`) — IN PROGRESS; scale + deployability answered by this screenshot + user statement; drawdown tolerance + tax regime pending
+
+
+## 2026-07-10 EVE snapshot (screenshots canonical — SKHYV buy)
+| Position | Qty | Entry/state | EUR value (at snapshot) |
+|---|---|---|---|
+| MURATA (MUR1/6981) | 336 sh | held | (within portfolio line) |
+| SUMCO (S3X/3436) | 626 sh | held | (within portfolio line) |
+| **SKHYV → SKHY (SK Hynix ADR)** | **37 ADS** | **@ $173.45, 2026-07-10, €5,628.35 incl fees** | ~€5,612 |
+| Cash (EUR) | — | — | €53,063.88 |
+**Balance €93,597.97 | Portfolio €40,534.09 | Day P/L +€1,112.32 (+1.20%) | Total P/L +€18,452.41** (DeGiro screenshots 2026-07-10 ~18:45)

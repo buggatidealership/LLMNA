@@ -97,10 +97,23 @@ def sort_key(item: dict) -> tuple:
 # not a create date. Surface aggressively when due/overdue.
 RECURRING_KEYWORDS = ["monthly", "weekly", "audit cycle", "recurring", "next cycle"]
 
+# DUE-tag convention (added 2026-07-20, user-audit-forced): a ONE-SHOT dated
+# build/deliverable can carry the tag "DUE" in its tag bracket ([INFRA, DUE])
+# to get the same date-as-due elevation as recurring items. Origin: the 1c
+# tripwire (due 2026-08-03) and the 07-24 hook-work items had dates but NO
+# elevation mechanism — deferral dates without deterministic wakes are
+# procrastination with a timestamp. Non-recurring, non-DUE items keep their
+# date as create-date (sort only) — this prevents flooding the briefing with
+# 70+ old items whose dates are creation dates.
+
 
 def is_recurring(item: dict) -> bool:
     title = item["title"].lower()
-    return any(kw in title for kw in RECURRING_KEYWORDS)
+    if any(kw in title for kw in RECURRING_KEYWORDS):
+        return True
+    # DUE tag (in the parsed tag list, e.g. [INFRA, CAL, DUE]): one-shot
+    # dated builds get the same date-as-due elevation as recurring items.
+    return "DUE" in [t.upper() for t in item.get("tags", [])]
 
 
 def due_status(item: dict) -> tuple[str, int]:
@@ -149,6 +162,9 @@ def format_recurring_item(item: dict, status: str, days: int) -> str:
     return f"  {prefix} ({suffix}) — {item['priority']} / {item['category']} [{tags}] — {item['title']}"
 
 
+pending_parse_stats = {"total": 0, "matched": 0}
+
+
 def parse_pending_predictions(text: str) -> list[dict]:
     """
     Pending predictions: items in the `## Pending` section of grading-log.md
@@ -164,24 +180,47 @@ def parse_pending_predictions(text: str) -> list[dict]:
     if not m:
         return pending
     section = m.group(1)
-    # Table rows look like: | YYYY-MM-DD | YYYY-MM-DD | TICKER | EVENT | FILE | DIRECTION |
-    row_re = re.compile(
-        r"^\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(\d{4}-\d{2}-\d{2})[^|]*\|\s*([A-Z]+)\s*\|\s*([^|]+)\s*\|",
-        re.MULTILINE,
-    )
-    for row in row_re.finditer(section):
-        made, resolution, ticker, event = row.groups()
+    # Row parse WIDENED 2026-07-17 (fresh-session audit Finding 2: the strict
+    # regex matched 2 of 17 live data rows — bold/strikethrough markers, ~dates,
+    # and non-caps tickers like "SK Hynix (HELD #1)" were all invisible).
+    # Now: tolerate **/~~/~ decoration around dates, accept any non-pipe ticker
+    # text, and skip rows explicitly retired (GRADED / NOT CANONICAL strike-rows).
+    # Coverage is COUNTED and surfaced so silent parse-drift is visible per-session.
+    total_data_rows = 0
+    matched_rows = 0
+    date_re = re.compile(r"(\d{4}-\d{2}-\d{2})")
+    for raw in section.splitlines():
+        line = raw.strip()
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 4 or cells[0].lower().startswith(("date made", ":-", "-")):
+            continue
+        total_data_rows += 1
+        if "NOT CANONICAL" in line or "✅ GRADED" in line:
+            # Retired/struck rows retained in table for audit trail.
+            # MUST match the house marker "✅ GRADED" exactly — a bare "GRADED"
+            # substring falsely skipped a live held-name row containing
+            # "UPGRADED" (verifier catch, 2026-07-17).
+            continue
+        made_m = date_re.search(cells[0])
+        res_m = date_re.search(cells[1])
+        if not (made_m and res_m):
+            continue
+        matched_rows += 1
         try:
-            res_date = datetime.strptime(resolution, "%Y-%m-%d").date()
+            res_date = datetime.strptime(res_m.group(1), "%Y-%m-%d").date()
         except ValueError:
             continue
         if res_date <= today:
             pending.append({
-                "made": made,
-                "resolution": resolution,
-                "ticker": ticker.strip(),
-                "event": event.strip(),
+                "made": made_m.group(1),
+                "resolution": res_m.group(1),
+                "ticker": re.sub(r"[*~]", "", cells[2]).strip(),
+                "event": re.sub(r"[*~]", "", cells[3]).strip()[:120],
             })
+    pending_parse_stats["total"] = total_data_rows
+    pending_parse_stats["matched"] = matched_rows
     return pending
 
 
@@ -271,7 +310,12 @@ def build_briefing() -> str | None:
             lines.append("PENDING GRADES (predictions past resolution date):")
             for p in pending:
                 lines.append(f"  {p['ticker']} {p['event']} — predicted {p['made']}, resolved {p['resolution']}")
-            lines.append("")
+        lines.append(
+            f"  (pending-parser coverage: {pending_parse_stats['matched']} live rows parsed"
+            f" of {pending_parse_stats['total']} data rows — unmatched rows are retired/undated;"
+            f" if a LIVE row is missing here, the parser drifted: see 2026-07-17 audit)"
+        )
+        lines.append("")
 
     # Bottlenecks last review
     if BOTTLENECKS_PATH.exists():
@@ -444,7 +488,11 @@ def parse_stale_tier_entries(path: Path, threshold_days: int = 30) -> list:
     except Exception:
         return []
 
-    entry_re = re.compile(r"^###\s*\[(\d{4}-\d{2}-\d{2})\]\s*(.+?)$", re.MULTILINE)
+    # Deep-dive HIGH fix 2026-07-21: the strict `\]` matched only 7 of 83 headers
+    # (most carry extra bracket text like "[2026-06-25 PM ROUND 6 ...]"), so the
+    # stale-tier forcing function was blind to 76/83 entries. Use the corpus-tolerant
+    # `[^\]]*\]` idiom already used by the cost-yield parser 74 lines above.
+    entry_re = re.compile(r"^###\s*\[(\d{4}-\d{2}-\d{2})[^\]]*\]\s*(.+?)$", re.MULTILINE)
     matches = list(entry_re.finditer(text))
     if not matches:
         return []
@@ -505,7 +553,10 @@ def main():
     try:
         import os as _os
         _sentinel = _os.path.expanduser("~/.w11-armed-sentinel")
-        _dstate = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "day-state.md")
+        # 2026-07-06 audit fix: resolve via _REPO_ROOT (CLAUDE_PROJECT_DIR-aware)
+        # instead of __file__ — the old __file__-relative path silently broke if
+        # this hook ever ran from an out-of-repo copy (e.g. ~/.claude/ fallback).
+        _dstate = _os.path.join(_REPO_ROOT, "research", "meta", "day-state.md")
         if _os.path.exists(_dstate) and not _os.path.exists(_sentinel):
             print("\n🚨 W11 CONTAINER-SWAP DETECTED: cron wakes are DEAD (fresh container). Run the WAKE-AUDIT PROTOCOL (research/meta/workflow-11-autonomous-day-loop.md): fetch remote log, grade missed wakes, RE-ARM all 5 jobs, touch ~/.w11-armed-sentinel, catch-up closed market windows.")
     except Exception as _e:

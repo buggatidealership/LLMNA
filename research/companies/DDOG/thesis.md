@@ -110,7 +110,7 @@ CloudFlare Radar verified data: **bot/agentic traffic = 57.5% of HTML requests g
 **Position implication:** HOLD — current 6.2% holding **REMAINS UNDER-WEIGHTED** per OS framework (target 8-12%). Cloudflare crossover signal elevates conviction; consider ADD on macro pullback as cash deployment trigger candidate.
 
 **Prior last updated:** 2026-05-21
-**Tier:** Active — held position, structurally bid harder than software-typical
+**Tier:** SOLD 2026-06-22 — watchlist-reference (was Active; see EXIT banner + 3-layer GRADE at top of file; this line previously still read "Active — held position" — corrected 2026-07-06 harness audit)
 **Position target:** 8–12% (user holds ~6.8% per `research/portfolio/holdings.md` — **UNDER-WEIGHTED per OS framework**)
 **Anti-fragility:** 4/5 — wins in all scenarios except a complete AI capex pause
 **Foundation:** `research/wiki/agentic-workload-scaling.md`, `research/wiki/agentic-ai-enterprise.md`

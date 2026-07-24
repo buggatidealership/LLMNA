@@ -89,6 +89,9 @@ STRUCTURAL_MARKERS = [
     # Parallel hypothesis enumeration
     r"\bH1\b.*\bH2\b.*\bH3\b",          # H1...H2...H3 (parallel hypothesis pattern)
     r"hypothes(?:is|es).{0,80}P\s*[≈~=]\s*\d+%",  # hypothesis with P weight
+    # H-label with inline parenthesized P weight — "H1 (P=60%)" is the dominant
+    # house form in artifacts; was uncredited (07-23 audit, case-4 born-red root cause)
+    r"\bH\d+\s*\(\s*P\s*[≈~=]\s*\d+%\s*\)",
     r"##\s*Parallel\s+hypothes",        # explicit Parallel hypotheses heading
     r"##\s*Parallel\s+\w",              # any "Parallel X" heading
     # N-th order cascade markers
@@ -104,8 +107,10 @@ STRUCTURAL_MARKERS = [
     r"\bripple\b",
     r"\bcascade\b",
     r"\bdownstream\s+(?:beneficiary|effect|casualty)",
-    # Joint-state / cross-correlation table indicators
-    r"\bjoint\s+(?:state|matrix|distribution)",
+    # Joint-state / cross-correlation table indicators. Hyphenated form credited
+    # 07-23 audit: "joint-state matrix" is the exact CLAUDE.md/priming spelling,
+    # yet only the space-separated form was credited (case-4 born-red root cause).
+    r"\bjoint[-\s]+(?:state|matrix|distribution)",
     r"\bcross-?correlation",
     r"\bcross-?evaluat",
     r"\bmulti-?criteria",
@@ -168,7 +173,11 @@ EXEMPTION_PATTERNS = [
 # marker on the same line or the line directly above. The check runs
 # BEFORE the general STRUCTURAL_MARKERS pass-gate so other structural
 # markers do NOT excuse a missing tier on a sizing recommendation.
-POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$", re.MULTILINE)
+# 07-23 audit fix (K3 G-27 reopen): IGNORECASE added — the matcher was
+# case-sensitive, so a lowercase "position implication:" line escaped the
+# tier gate entirely. Casing fixtures added to test_structural_output_tier_gate.
+POSITION_IMPLICATION_RE = re.compile(r"^.*Position implication:.*$",
+                                     re.MULTILINE | re.IGNORECASE)
 TIER_MARKER_RE = re.compile(r"[🟢🟡🔴]")
 
 
@@ -177,6 +186,11 @@ def load_last_assistant_message() -> str:
         data = json.load(sys.stdin)
     except Exception:
         return ""
+
+    # Recursion guard: never re-block a Stop that a hook already blocked
+    # (infinite-Stop-loop hazard). Added 2026-07-06 audit.
+    if data.get("stop_hook_active"):
+        sys.exit(0)
 
     transcript_path = data.get("transcript_path")
     if not transcript_path or not Path(transcript_path).exists():
@@ -232,8 +246,12 @@ def _log_fire(reason: str) -> None:
         from datetime import datetime, timezone
         log_path = Path(ENFORCEMENT_PATHS[0]) / "research/meta/hook-fire-log.md"
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
+        # probe-tagging (07-23 audit, G-28 probe-pollution channel): test
+        # harnesses set LLMNA_PROBE=1 so their fires are excluded from the
+        # structural-output metric numerator and any audit fire counts.
+        probe = " probe=1" if os.environ.get("LLMNA_PROBE") == "1" else ""
         with open(log_path, "a") as lf:
-            lf.write(f"- {ts} structural-output-hook FIRE ({reason})\n")
+            lf.write(f"- {ts} structural-output-hook FIRE ({reason}){probe}\n")
     except Exception:
         pass
 
@@ -267,16 +285,13 @@ def main():
     if not text:
         sys.exit(0)
 
-    # Size gate: only fire on substantial analytical outputs
-    if len(text) < 800:
-        sys.exit(0)
-
     # Position-implication tier enforcement (Principle #37, added 2026-06-15).
-    # Runs BEFORE the exemption + structural-markers gates (moved 2026-06-27):
-    # a real sizing recommendation MUST declare its confidence tier even if the
-    # message also contains a harness-meta/scan-design exemption token. The
-    # exemption only suppresses the general structural-markers gate, NOT the
-    # hard tier requirement on an actual Position implication line.
+    # Runs BEFORE the size gate AND the exemption/structural-markers gates
+    # (size gate moved below it 2026-07-21, G-27 deep-dive fix): the tier check
+    # is LINE-ANCHORED, so message size is irrelevant — a short thesis-update
+    # confirmation carrying an untiered Position implication must still declare
+    # its confidence tier. The exemption suppresses only the general
+    # structural-markers gate, NOT the hard tier requirement.
     for m in POSITION_IMPLICATION_RE.finditer(text):
         line = m.group(0)
         # Find the line directly above for the "above" tier-marker variant
@@ -289,6 +304,11 @@ def main():
         _log_fire("position-implication-tier-missing")
         _print_position_implication_feedback(line)
         sys.exit(2)
+
+    # Size gate: only fire the general structural-markers check on substantial
+    # analytical outputs (the tier check above is size-independent by design).
+    if len(text) < 800:
+        sys.exit(0)
 
     # Exemption: meta-discussion / file-narration / acknowledgment / scan-design
     if has_pattern(text, EXEMPTION_PATTERNS):

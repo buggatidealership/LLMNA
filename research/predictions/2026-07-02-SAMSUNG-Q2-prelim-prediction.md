@@ -1,5 +1,7 @@
 # PREDICTION — Samsung Electronics 005930 Q2 2026 PRELIMINARY (print ~2026-07-07)
 
+**[2026-07-06 EVE consensus-vintage addendum — grade against the LOCAL bar]:** current FnGuide consensus OP = **₩84.58tn** (native-KR 이투데이/FN ~07-05, T2; dispersion ₩77-92tn, bonus-accrual/성과급 충당금 = swing factor) — effectively our carried ₩84.98tn bar; the richer ₩87.25tn figure circulating via UBS's Visible Alpha panel (note verified fresh 07-03) is a DIFFERENT panel, do NOT grade against it. UBS's own 2Q26E OP ₩90,956bn (screenshot cell, Samsung-side unverified T3) sits between the local bar and our ₩92tn point. Per `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md`. Prediction numbers UNCHANGED.
+
 **Registered:** 2026-07-02 (v1 native; file registration same-day correcting a chat-only gap — the call was stated in chat this morning and is registered here unchanged). **Data:** wave-1 agents + `signals/cross-source-log/2026-07-02-samsung-foundry-allocation-RECYCLED-may2-article-2agent.md`.
 
 ## Consensus (the bar)

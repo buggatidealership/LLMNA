@@ -161,18 +161,20 @@ Per Critical Rule #16 detectability built-in: monthly audit (2026-07-15 first fo
 
 ## Pre-audit batched grep commands (autonomous-eligible to run on audit day)
 
+*(Paths made repo-relative 2026-07-06 post-migration — the originals hardcoded `/home/user/Health-Calculators/` and would fail in LLMNA. Run from repo root. This is the template for monthly audit #2 on 2026-07-24.)*
+
 ```bash
 # Section 2 — Critical Rule #11 detectability
-grep -h "Position implication:" /home/user/Health-Calculators/research/companies/*/thesis.md | sort | uniq -c | sort -rn > /tmp/section2-position-implication-variety.txt
+grep -h "Position implication:" research/companies/*/thesis.md | sort | uniq -c | sort -rn > /tmp/section2-position-implication-variety.txt
 
 # Section 3 — self-correction detectability
-grep -rh "self-correction\|self-correct" /home/user/Health-Calculators/research/companies/*/thesis.md /home/user/Health-Calculators/research/meta/tier-cascade-log.md | wc -l > /tmp/section3-self-correction-count.txt
+grep -rh "self-correction\|self-correct" research/companies/*/thesis.md research/meta/tier-cascade-log.md | wc -l > /tmp/section3-self-correction-count.txt
 
 # Section 7 — pattern register tail
-grep -c "^### P-\|^### PC-" /home/user/Health-Calculators/research/meta/cross-domain-pattern-register.md > /tmp/section7-pattern-tail.txt
+grep -c "^### P-\|^### PC-" research/meta/cross-domain-pattern-register.md > /tmp/section7-pattern-tail.txt
 
 # Section 10 — Critical Rule #16 fire count
-grep -c "verification subagent" /home/user/Health-Calculators/research/signals/cross-source-log/*.md > /tmp/section10-verification-subagent-count.txt
+grep -c "verification subagent" research/signals/cross-source-log/*.md > /tmp/section10-verification-subagent-count.txt
 ```
 
 ---
