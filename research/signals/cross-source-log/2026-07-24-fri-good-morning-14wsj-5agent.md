@@ -1,0 +1,71 @@
+# 2026-07-24 FRI — GOOD-MORNING wake (14 WSJ screenshots + 5-agent verification): Thursday US AI-spending selloff + H3 gate still-breached + KR Friday close
+
+**Origin:** user good-morning wake ~07:20 UTC with 14 WSJ headline screenshots (T2 headline-layer per Leg-C discipline). 5 parallel Opus verifiers (Rule #16): US-tape forensics, KR Friday close, H3 refresh, AI-regulatory/micro cluster, Leg-B discovery. This artifact is booked INCREMENTALLY as agents return; sections marked PENDING until their agent lands. Escorted-instrument discipline; NO position action (Rule #8; all sizing user-gated).
+
+**Context carried in:** KR-open wake artifact `2026-07-24-fri-kr-open-wake-h3-settle-confirmed-breach-kr-datagapped.md` (H3 settle-confirmed $100.69 Path A; KR tick data-gapped; five-calls H1 75 / H2 10 / H3 ~20).
+
+---
+
+## LEG C — WSJ headline inventory (T2 headline-layer; 14 screenshots, ~09:20-09:22 user-local)
+
+**Markets/macro cluster:** "Investors Zero In on Runaway Tech Spending, Putting Dent in AI Trade" (subhead: AI-spending concerns "shaved roughly $890 billion in market value from the Magnificent Seven on Thursday" — T2 headline-layer, verification pending agent-1) · "U.S. Stocks Slide as Oil Hits $100, Tech Selloff Deepens" (Nasdaq −2% per live-blurb) · "Oil Prices Hit $100 a Barrel While Tech Selloff Deepens" (LIVE; Brent chart as of Jul-24 3:10am ET: spike ~$94→$100.7 on Jul-23, fading toward ~$99 early Jul-24) · "Oil Prices Roar Back, Threatening Economy and GOP's Midterm Hopes" · "10-Year Treasury Yield Rises to Highest Level Since Jan. 2025" · "What Surging Bond Yields Mean for Consumers and Markets" · "Eurozone Government Bonds Recover Slightly But Still Look Vulnerable" · "Why IBM's CEO Isn't Worried About the Biggest Stock Selloff Since Black Monday" (referent needs adjudication — agent-1) · "Gold Prices Have Tanked. Buying the Dip Makes Sense." (HOTS Jul-21, opinion-tier) · "Big Banks Are Wading Back Into Commercial Real-Estate Lending" · "The Massive Supply Deals Feeding the AI Frenzy Are No Sure Thing" (HOTS Jul-20 — stale-by-4d, dedup vs funding-node pending agent-4).
+
+**Tech/AI cluster:** "Google Has the Muscle to Overpower Spending Worries" (HOTS) vs "Google's AI Spending Spree Has Investors Nervous" (Jul-22) — the two-sided capex-flip framing pair · "Latest Tech Earnings Show 'AI Is Not Just Hype'" · "Inside China's All-Out Push to Catch Up With American AI Chips" (Xi-confidant-led; "anyone who resisted using local chips was a traitor") · "How the Futuristic Hack by Rogue OpenAI Models Unfolded" (= ExploitGym mainstreaming) · "House Lawmakers Introduce Bipartisan AI 'Kill Switch' Bill Following OpenAI Cyber Incident" · "White House to Shift Billions in Grants to AI, Away From Colleges" (Jul-21) · "Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter" · "Intel Shares Rise as Sales Surge 25% in Second Quarter" · "Google Study Says AI Is Helping Workers, Not Replacing Them" · "Dassault Systemes to Buy ArisGlobal for Up to $2 Billion" (Jul-23).
+
+**KR/market-structure:** "South Korea Fast-Tracks New Rule for Leveraged ETFs to Curb Market Swings" (primary pending agent-2).
+
+**Banking/other:** "Emirates NBD's Profit Holds Steady as U.A.E. Faces Iran War Disruptions" · "Digital Bank Revolut, Europe's Most Valuable Startup, Valued at $115 Billion" (Jul-22 — NOTE: closes the ungrounded-$115B item from the 07-24 verdict-flip sample; agent-4 pins) · "Robinhood Revamps $695 Platinum Card" (skip) · "Santander Sees Targets on Track" (skip) · "Four Takeaways From Our Report on the IRS Chief Who Spied on Colleagues at JPMorgan" (skip) · "Reality Bites Elon Musk and His Tesla, SpaceX Believers" · "Singapore's GIC Plans to Invest $30 Billion in Hedge Funds Over Next Three Years" · DOJ/NYT subpoenas withdrawn (skip) · non-market U.S. items (skip).
+
+**Unasked (macro):** if the market has started pricing hyperscaler capex as a LIABILITY (Thursday's -$890B read), does the transmission eventually price supplier BACKLOGS as liabilities too — i.e., when does "runaway spending" fear migrate from the spenders to the recipients of the spending? **Unasked (micro):** SKHY/SUMCO/MURATA are the recipients — the Jul-29 SKH print is the first post-repricing supplier print; watch the stock-reaction function, not just the numbers.
+
+---
+
+## LEG 1 — H3 EXOGENOUS REFRESH ✅ (agent returned; research-verified 2026-07-24, T1/T2 per line)
+
+**Verdict: gate STILL BREACHED; Path A STRENGTHENED; the "~$99 fade" was an intraday wick, NOT an un-breach.**
+
+| Marker | Reading (Fri ~07:00-07:20 UTC) | Source (tier) | Path read |
+|---|---|---|---|
+| Brent latest | **~$100.39-100.40** (band $100.3-100.5; intraday range $99.59-$101.16; +~13% wk) | investing.com/commodities/brent-oil via search reads (T2; direct fetch 403) | breach HOLDS |
+| Brent Jul-23 settle | $100.69 +7% re-confirmed | cnbc.com/2026/07/23/brent-crude-tops-100-a-barrel-how-the-next-stop-could-be-120.html + tradingeconomics.com/commodity/brent-crude-oil (T2 multi) | settle-confirmed (unchanged) |
+| WTI | $91.62 vs $92.19 prior settle; **WTI-Brent spread ~$8.8 abnormally wide** (war premium concentrated in waterborne barrels) | investing.com/commodities/crude-oil (T2) | Path A texture |
+| US 10Y | **4.707% Jul-23 settle — 2026 HIGH** (4th straight up-session; 30Y touched 5.19%); **CORRECTION: yesterday's carried 4.63-4.67% band was stale-low** | cnbc.com/2026/07/23/treasury-yields-oil-prices-jobless-claims.html + bloomberg.com/news/articles/2026-07-23/us-treasury-yields-rise-to-2026-highs-as-oil-gains-spark-fed-bet (T2) | **A ✅ strengthened** |
+| Fed odds | Sept hike ~78-80% (from ~52% a week ago); >33% next week; jobless claims 187k vs 212k exp | same CNBC/Bloomberg (T2) | A ✅ |
+| Gold | **$4,044.06 −0.14%**, falling DESPITE active war (from ~$4,127 Wed) | tradingeconomics.com/commodity/gold (T2) | A ✅ (haven bid absent) |
+| VIX | **Jul-23 CLOSE 18.70 (+12.38%) — CORRECTION: the 16.64 carried yesterday was the PRIOR close** | agent arithmetic check 16.64×1.1238=18.70 ✓ (T2) | A (sub-35, but the +12% jump is the amber tint) |
+| USDKRW | 1,474.30 −0.19% (KRW slightly firmer; wk range 1,465-1,491) | tradingeconomics.com/south-korea/currency (T2) | not risk-off |
+| Escalation | **FRESH: Houthis struck TWO Saudi tankers (Bab al-Mandeb, Jul-23) + CENTCOM 12th strike round + Trump "massive attack" threat**; de-escalation = STALE-RECYCLE + REJECTED (Jul-21 ceasefire proposal → Iran rejected Jul-23) | washingtonpost.com/business/2026/07/23/iran-us-hormuz-strait-war/ + cnn.com/2026/07/23/world/live-news/iran-war-trump + bloomberg.com/news/articles/2026-07-23/how-houthis-red-sea-attacks-worsen-oil-shock (T1/T2) | escalation live |
+| Supply cushion | SPR release ALREADY DEPLOYED (172M bbl authorized March, SPR ~311-316.5M bbl = lowest since 1983, ~44-56% capacity) — a cap-side explanation for the intraday fade; OPEC+ spare ~5M bpd is APRIL-dated AND largely stranded behind closed Hormuz = **bullish asymmetry** | eia.gov/todayinenergy/detail.php?id=67625 (T1-gov) + rigzone.com 2026-07-13 (T2) | fade ≠ demand destruction |
+| JKM LNG | $21.03/MMBtu (Jul-20 tick) +32.6% MoM | tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea (T2) | dashboard elevated |
+| Framing scrub | "first >$100 **since 2022**" headlines = STALE-RECYCLE (May-1-2026 Brent was $116.10 per fortune.com/article/price-of-oil-05-01-2026; correct frame = "first since May") | agent catch (T2) | B40 catch |
+
+**Coupling assessment (agent, adopted as house read):** the oil-gate and the AI-spending selloff are **partially coupled, one-directional** — oil → inflation expectations → 10Y at 2026 high → discount-rate/duration compression on long-duration tech equities. Catalyst layer independent (Thursday was Tesla/Alphabet-earnings-triggered per WSJ/WaPo accounts), macro layer coupled. Oil cannot be moved by tech-earnings fear; tech multiples CAN be compressed by oil-driven rates. Model as one-way amplifier, not two independent vectors and not one merged vector.
+
+**Honest gaps:** Brent-Dubai EFS unpinned; no fresh demand-destruction datapoint (the fade attributes to profit-taking + SPR/IEA flows + hike-fear, per agent); Friday VIX cash print not yet (US pre-open).
+
+---
+
+## LEG 2 — US THURSDAY TAPE FORENSICS — PENDING (agent-1 in flight)
+
+## LEG 3 — KR FRIDAY CLOSE DISCRIMINATOR — PENDING (agent-2 in flight)
+
+## LEG 4 — AI REGULATORY + MICRO CLUSTER — PENDING (agent-4 in flight)
+
+## LEG 5 — LEG-B DISCOVERY ✅ (agent returned; 6 items, ranked; research-verified 2026-07-24 per line)
+
+1. **US Section 122 tariff EXPIRES today 12:01am EDT → replaced by Section 301 duties (10-12.5%) on ~60 partners incl. Taiwan** (investinglive.com Asia wrap 2026-07-24 + digitimes.com 2026-07-21, T2; FRESH — effective today). Non-obvious: most desks track the semiconductor-specific Section 232 track (25% adv. logic, Taiwan carve-out); THIS is the broader goods tier hitting Taiwan passives/assembly (Yageo 2327.TW, Walsin 2492.TW, Hon Hai) — a cost-pass-through collision arriving exactly as those names push price hikes. MURATA (held): competitive-cohort pricing context, JP-domiciled so not directly tariffed by this tier.
+2. **Copper: Section 232 tariffs finalized Jun-30 (refined temporarily exempt, phased 2027); spot grinding toward ~$6.30/lb (~$13,900/ton), Goldman flags $14,000 post-tariff** (congress.gov CRS IN12614 T1 + tradingkey/yahoo T2; RECYCLED trend, NEW cross-link). Stealth BOM line for the 800V/HVDC power-equipment cohort (ETN, VRT, Schneider) — margin test of that thesis. MURATA unaffected (ceramics).
+3. **SAP Q2 (Jul-23 eve, T1 release): cloud backlog +27% to €22.9B, AI in >90% of top-50 deals — but stock near 52-wk LOW and FY26 op-profit guidance CUT (€11.2-11.8B, M&A dilution)** (prnewswire.com SAP Q2 2026 T1; FRESH). **The software-side mirror of the capex repricing: bookings prove AI drives deal flow; the market won't pay for it near-term.** Read-through to the DDOG/NOW/MDB/SNOW/PLTR layer: AI-monetization skepticism is going market-wide, not hardware-specific.
+4. **Yen ~163.8/USD 40-year low; US Treasury explicitly pressing BOJ to hike faster; Tokyo core-core CPI 1.9%** (en.sedaily.com 2026-07-22 + investinglive calendar 2026-07-24, T2; FRESH framing). Held-book relevance is TWO-SIDED — a faster BOJ hike is an exporter-earnings headwind (JPY strength) BUT an EUR-book FX tailwind (the 07-07 rout showed EUR-terms amplification of JPY weakness; reversal would run the other way). Do not cascade one-directionally.
+5. **YAGEO broadest capacitor hike in years: official list +~50% from Jul-1, spot on some high-end MLCCs reportedly up to ~10x since May (T3 on the multiple), now extended to direct/contract customers** (trendforce.com 2026-07-01 + digitimes 2026-06-18, T2; RECYCLED ~3wk — flagged because the MAGNITUDE may exceed what MURATA/MLCC files anchor). Routed: MURATA thesis re-check against the 10x-spot claim (verify before booking the multiple).
+6. **Hyundai completed Boston Dynamics stake buyout (~$325-338M, BD ~$3.3B) — same day 35,000 Ulsan workers struck demanding union consent before Atlas enters factory floors** (bloomberg.com 2026-07-16 T1/T2 + techtimes 2026-07-21 T2; RECYCLED 4d, NEW lens). Labor friction as the humanoid-deployment gate — demand-TIMING signal for the TC-19 embodied-AI supply chain, independent of the capital narrative.
+
+**Screened-out lines that still carry tape data (routed to agents 1-2 legs):** Nikkei −2.5% Friday close + Korea sidecar-curb mention (downstream of Mag-7 selloff per source attribution — KR leg pins); **SK Hynix reportedly scrapping HBM contract price CAPS + Samsung asking +20% Q3 DRAM** — flagged by the agent as "already-anchored territory" but the price-cap-scrapping datum is NOT yet in our files → follow-up verify with the Jul-29 print context. Figure-AI "1 robot/hour" = confirmed stale (April milestone recirculating).
+
+---
+
+## Cascade + position implication — INTERIM (finalize when all agents land)
+
+- **Five-calls #4:** H3 arm — settle-confirmed breach HOLDS (no un-breach; Path A strengthened by the 10Y 4.707% 2026-high + gold-falling signature). Weights UNCHANGED pending the US-tape + KR-close legs (H2 evidence arriving). Current: H1 75 / H2 10 / H3 ~20 (my model, carried).
+- **Corrections booked against yesterday's KR-open artifact:** VIX 16.64→18.70 (prior-close vs close confusion); 10Y band 4.63-4.67%→4.707% settle. Both push the SAME direction (Path A), so no verdict flip — but the input-hygiene catch is logged (B65-adjacent: carried figures felt verified because familiar).
+- **Position implication: ⚪ NO ACTION (user-gated; Rule #8) 🟡** — H3 still-breached is macro/rates-arm; no AI-demand falsifier touched; held-book adjudicator remains the Jul-29 SK Hynix print. Interim, pending 4 agents.

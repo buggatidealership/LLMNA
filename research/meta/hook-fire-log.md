@@ -1330,3 +1330,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-24 06:46:24Z anti-fabrication-hook FIRE (n=2 '914 wafers' forms=[("'914 wafers'", 1, None), ("'914wafers'", 1, None)]; 'Q2, booked $8' forms=[("'Q2, booked $8'", 1, None), ("'Q2,booked$8'", 1, None)] verdict:pending)
 - 2026-07-24 07:10:22Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-24 07:23:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-24 07:30:34Z anti-fabrication-hook INCONCLUSIVE (n=1 '$890B' forms=[("'$890B'", None, 'TimeoutExpired')] verdict:pending)
+- 2026-07-24 07:35:13Z anti-fabrication-hook FIRE (n=1 '4.707%' forms=[("'4.707%'", 1, None)] verdict:pending)
