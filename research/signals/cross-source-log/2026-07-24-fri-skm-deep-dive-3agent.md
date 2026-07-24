@@ -21,8 +21,57 @@
 
 **Leg-1 read (FACT/FRAME separation):** the infra leg (Haein/B200, AIDC ₩131.4B +89.3%, gov GPU-lease operator) is REAL and growing fast off a small base; the model leg (A.X) is pilot-stage narrative — no licensing revenue line exists; the "sovereign-AI cornerstone" frame from 06-17 survives on infra, not on models. USIM litigation + 39.02% share = live overhang, unresolved.
 
-## LEG 2 — STRUCTURE / FINANCIALS — PENDING (agent in flight; adjudicates SK Square-vs-SKT Hynix-stake question, ADR mechanics, dividend/valuation)
+## LEG 2 — STRUCTURE / FINANCIALS ✅ (agent returned; research-verified 2026-07-24, tiers inline)
 
-## LEG 3 — ADVERSARIAL SKEPTIC — PENDING (agent in flight; Rule #18 leg)
+**A. THE OWNERSHIP TRAP ADJUDICATED (T1):** **SK Telecom holds ZERO SK Hynix.** The 20.1% Hynix interest was spun into **SK Square (402340)** effective 2021-11-01 (T1 SKT FY2021 20-F, sec.gov/Archives/edgar/data/1015650/000119312522126714/d263873d20f.htm); SK Square holds **20.5%** today (T2 Korea Herald + KRX-filing aggregation Mar-2026). **SKM is NOT a Hynix proxy — refute any thesis treating it as one.** De-conflation guard: "nearly tripled" 2026 headlines = SK SQUARE (Hynix-leveraged), not SKT.
 
-## Synthesis + candidate-status decision — PENDING all legs
+**B. What SKT DIRECTLY holds (AI-relevant):** SK Broadband ~100% (wholly-owned; PARTIAL — not re-pulled from filing this pass) · SKHNPS **0.9% target via ₩738.4B capital-call COMMITMENT to 2030-06-25 — not deployed cash** (T1/T2) · **Anthropic ~0.3% (diluted from ~2%; $100M Aug-2023 + follow-on in the $65B Series H, May-2026, $965B post-money — NEW MATERIAL FACT not previously booked**; book ~₩1.3T, brokerage SOTP marks ₩1.95T-4T+ = OPINION-tier; upi.com 2026/04/14 + dealroom.co, T2; **B63/B64 discipline note: Anthropic is this desk's own model provenance — treat its valuation marks with standard skepticism, no affinity premium**) · Penguin Solutions $200M 6% convertible preferred @ $32.81 conv (T1 IR Dec-2024; per Leg-1, being SOLD into the SK US "AI Company" vehicle ~end-Jun-2026). Group-level "$654B AI DC / $1.36T" pledges = group aspiration (T2), NOT SKT balance sheet.
+
+**C. ADR mechanics (T1 Citibank depositary):** SKM = sponsored NYSE ADR, **each ADS = 5/9 ordinary share** (the circulating "1/9" is STALE — pre the 5:1 split of 2021-10-28). Parity ≈ ₩100,300 × 5/9 ÷ FX ≈ ~$42/ADS (agent-computed; confirm live). Korea telecom foreign-ownership cap 49% bounds arbitrage (known, not re-verified from primary this pass). ADR avg volume = honest gap.
+
+**D. Financials:** FY2025 (T1 IR ~Feb-05): revenue **₩17,099.2B −4.7%**, OP **₩1,073.2B −41.1%**, NI **₩375.1B −73.0%**, EBITDA ~₩4,663B; **operating margin 6.3% (computed 1,073.2/17,099.2), ~halved YoY — driver = the USIM breach (churn + SIM-replacement + fine), NOT AI capex.** Net debt/EBITDA ≈1.6× (derived, T2/T3 — flag). Q1-2026 rebound per Leg 1 (OP ₩537.6B first >₩500B since pre-breach). Honest gaps: FY2025 capex (T3-only ~₩1.75T, UNVERIFIED), AI-vs-telecom capex split (NOT disclosed), FCF (T3 garbled).
+
+**E. Dividend:** **₩830/share/quarter 2026** (annualized ₩3,320 → **~3.3% yield on ₩100,300**, agent-computed; the "0.8-0.9%" figure circulating = QUARTERLY, misread guard). Policy ≥50% adjusted net profit FY24-26. **2025 dividend was CUT — breach-driven, not AI-capex-driven** (framing distinction). ADR div ≈ ₩461/quarter/ADS pre-withholding. No large SKT-level buyback (the ~₩5T cancellation = parent SK Inc., do not conflate).
+
+**F. Valuation + tape — THE AI STORY IS ALREADY IN THE PRICE:** ~₩100,300 (Jul-24), cap ~₩21.5T. **017670 ~+80-82% YTD 2026 vs KT ~+1%** (T2 Aju Press) — discrete catalysts: the Anthropic-stake re-rating (+12% on one April day, T2 investing.com), the 15GW AIDC/gigawatt-cloud vision, Q1 beat. **EV/EBITDA ~6.4× vs KT ~3.6× (≈1.8× premium); trailing P/E ~50-57× (hack-distorted), forward ~14.8×** (T3 screens). The 06-17 "dividend payer + AI option" frame is HALF-STALE: the option has been substantially priced. SOTP targets diverge on DATE artifacts, not live disagreement (Samsung ₩87k = Feb-stale, below spot; KB ₩150k Buy = Jun-11, "twin-engine AI infra"; both OPINION). 52-wk-high ₩139,500 = UNVERIFIED-SINGLE-SOURCE (possible artifact).
+
+## LEG 3 — ADVERSARIAL SKEPTIC ✅ (agent returned; research-verified 2026-07-24; Rule #18 leg — instructed to attack, and to say plainly where bear arguments FAIL)
+
+**Bear arguments that SURVIVE scrutiny (evidence-backed):**
+1. **"Dividend downside protection" is EMPIRICALLY FALSE — it already broke (HIGH).** SKT suspended its Q3-2025 quarterly dividend outright — **first suspension since quarterly dividends began in 2021** — on the breach-quarter operating loss, and roughly halved the FY2025 total payout (vs FY2024 ~₩753.6B); resumed ₩830/quarter in 2026 on a **~158% payout ratio (T3-derived — paying more than hack-crushed earnings)**. The safety leg of the 06-17 "dividend + AI option" frame snapped at the exact moment of stress. (geconomy.co.kr/news/article.html?no=309315 + marketin.edaily Yuanta + Globe&Mail resumption, T2/T1.)
+2. **The "AI revenue" is ~72% datacenter COLOCATION by revenue, and AI = 4.2% of the company (HIGH).** FY2025: AIDC ₩519.9B (+34.9%, Gasan/Yangju utilization + Pangyo DC acquisition = landlord economics) vs AIX (the actual AI-software line) ₩198.6B growing just +6.4%; total AI ₩718.5B of ₩17.099T (T1 SKT Newsroom FY2025). The "+89% AI" headline is the LANDLORD line. **Mix math (agent-computed, #43b): core (~₩16.4T) at −4~4.7%/yr loses ~₩500-800B/yr; AI at +30% adds ~₩215B/yr → AI offsets only ~1/3 of core erosion → consolidated revenue net-negative for ~4-5 years before crossover.** Number-trap flagged: A.X K1 = 519B params AND AIDC = ₩519.9B — coincidence, never conflate.
+3. **Breach liabilities remain OPEN and unquantified (HIGH):** the record PIPC fine (₩134.5B per skeptic / ₩134.79B per Leg-1 — minor source variance) is under SKT's own cancellation suit; Korea Consumer Agency's ₩100k/user order extrapolates to a **~₩2.3T (~$1.5B) modeled exposure ceiling**; 9,100+ plaintiff class actions live (first hearing Mar-2026). Distinct from the already-booked FY2025 hit.
+4. **Wrong SK-group vehicle for supply-chain investors (MED-HIGH):** confirmed independently of Leg 2 — Hynix sits under SK Square; SKM's silicon exposure is the 0.9% SKHNPS sliver.
+5. **Telco→AI-platform base rate is POOR (MED-HIGH):** AT&T abandoned its cloud stack to Microsoft ("no match for hyperscalers," SDxCentral); Telefónica Tech divesting; NTT retreated into IT-services. Modal outcome = landlord economics or sale to a hyperscaler — and SKT's colo-heavy AI mix (leg 2) fits the landlord pattern precisely.
+6. Supporting (MED): regulator-is-also-customer margin ceiling (2026 통신비 인하 drive, ~₩321B modeled consumer savings, T2 Khan/Hankyung); the capex trilemma (guided ₩2.2-2.3T/yr vs 15GW aspiration → external capital: SK Hyper sub ₩750B + reported KKR talks → dilutes SKT's share of any value created); ADR frictions (~15% treaty withholding + KRW at ~1,470s) = second-order.
+
+**Bear arguments that FAIL on evidence (stated plainly — do not rely on):**
+- "SKT lost the sovereign contract" — **FALSE**: SKT advanced; Naver Cloud/NC were the ones cut (Round 1).
+- "SKT's model is uncompetitive domestically" — **FALSE**: A.X K1 tied **1st with LG AI Research at 9.2/10 on the government NIA benchmark** (economytalk.kr 416540, T2; vendor-adjacent, but external).
+- "Down-select obviously kills SKT" — **WEAK**: SKT is a current co-leader, not the marginal team; real but low-P tail (Aug-2026 = the next gate).
+- A.X K1 globally: absent from independent global leaderboards; vendor benches only vs DeepSeek-V3.1 — **domestic co-leader ≠ global frontier asset** (PARTIAL).
+
+---
+
+## SYNTHESIS — first-principles read as of 2026-07-24 (Workflow #9 tie-together)
+
+**Macro anchor:** Korea's sovereign-AI layer is real, funded, and legally binding (PC-14 N=3+ cluster, Korea AI Basic Act in force Jan-2026) — and SKT is a **verified co-leader inside it** (survived Round 1 co-1st on NIA; designated GPU-lease operator; largest domestic B200 GPUaaS cluster). The micro does NOT contradict the macro (B46 check passes). What the dive changes is the **investment framing**, on three joint axes:
+
+| Axis | 06-17 booked frame | Verified 07-24 state |
+|---|---|---|
+| AI substance | "sovereign AI cornerstone (519B model + GPU infra)" | REAL but **landlord-shaped**: AI = 4.2% of revenue, ~72% of it colocation; model leg = pilot-stage, domestic-tier |
+| Dividend safety | "dividend payer" | **EMPIRICALLY BROKE** Q3-2025 (first-ever suspension); resumed on ~158% payout (T3-derived) |
+| Price | (unpriced option implied) | **+80-82% YTD vs KT ~+1%; EV/EBITDA ~1.8× KT — the option is substantially priced** |
+
+**Joint verdict (my model):** SKM is the **right listed vehicle for exactly one thesis** — Korea sovereign-AI infrastructure execution — and the **wrong vehicle for the desk's core thesis** (AI-memory/supply-chain: that's SK Square/direct memory names, and the book already holds SKHY). The remaining SKM-specific case must clear three hurdles simultaneously: (a) survive the Aug-2026 down-select (binary), (b) convert landlord AIDC revenue into platform economics against a poor global telco base rate, (c) absorb an open ~₩2.3T-ceiling liability tail — all from a price that has already re-rated +80% YTD. Scenario shape (my model): wins narrowly (sovereign-execution scenarios only), loses in AI-capex-compression AND in telecom-regulatory scenarios = LOW anti-fragility for this book.
+
+**Candidate-status decision: REMAIN WATCHLIST P3 — do NOT promote; entry-frame RESET.** The 06-17 rationale is half-refuted (dividend leg) and half-priced (AI leg). Registered re-look triggers: (1) **Aug-2026 down-select result** (survive = narrative intact; cut = KILL the candidate); (2) **Q2 print 2026-08-11** (AIDC run-rate + any AIX/model-licensing breakout line — the platform-vs-landlord tell); (3) breach-litigation resolution (fine appeal + class actions) bounding the tail; (4) any AIX revenue acceleration >30%/yr (would genuinely challenge the landlord frame). No company folder created — watchlist-tier, research-only (folder on promotion only, pruning discipline).
+
+## Cascade + position implication
+- `watchlist/candidates.md` SKM entry → status update appended (frame reset, triggers registered).
+- `meta/deep-dig-queue.md` RANK #4 → marked DONE w/ artifact link.
+- `companies/SKHY/thesis.md` → back-ref: vehicle-distinction note (SK Square 20.5% holds Hynix; SKM ≠ memory proxy; SK-group US "AI Company" consolidation color).
+- Ledger → 3 fires, 3× HIGH (ownership adjudication T1; dividend-refutation; down-select correction 5→3→4 + NIA co-1st).
+- Day-state → dive line + Aug-11/Aug-2026 catalyst entries.
+
+**Position implication: ⚪ NO ACTION — remains WATCHLIST P3, no sizing decision was pending — 🟡** (my model, on research-verified 2026-07-24 T1/T2 inputs above). The honest one-liner for the operator: the dive REVERSED the attractive half of the original frame — what looked like "dividend safety + free AI option" is verified as "broken dividend history + mostly-priced landlord option," while the sovereign-AI execution itself is genuinely on track. Strongest surviving bull (Rule #18 symmetric duty): SKT is a co-leading, government-designated winner in a legally-mandated national program with the largest domestic B200 fleet — if AIX/model revenue ever breaks out, the landlord frame dies and the re-rate continues; the Aug-11 print is the first place that could show.

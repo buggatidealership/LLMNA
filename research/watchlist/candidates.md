@@ -1498,11 +1498,12 @@ Per `signals/cross-source-log/2026-06-18-am8-evening-brief-2subagent-anthropic-s
   - Investability: Euronext Paris listed; Degiro accessible
   - Status: WATCHLIST P3 — defensive sovereign-AI services play
 
-- **SK Telecom ADR (NYSE: SKM) — added 2026-06-17 AM7**
+- **SK Telecom ADR (NYSE: SKM) — added 2026-06-17 AM7; DEEP-DIVE EXECUTED 2026-07-24 (3-agent; frame RESET)**
   - Source signal: Subagent B — Korea sovereign AI cornerstone (A.X K1 519B-param hyperscale model Dec 2025 + government-designated GPU infra provider)
   - Why interesting: Korea $735B sovereign AI initiative execution play; dividend yield + AI growth angle; PC-14 N=3+ Asia mirror confirmed via Korea AI Basic Act Jan 2026 (BINDING)
-  - Investability: NYSE ADR; Degiro accessible
-  - Status: WATCHLIST P3 — dividend payer + sovereign AI option value
+  - Investability: NYSE ADR (sponsored, 1 ADS = 5/9 ordinary — the "1/9" in circulation is pre-Oct-2021-split stale); Degiro accessible
+  - **Status: WATCHLIST P3 — NOT promoted; 2026-07-24 dive (`signals/cross-source-log/2026-07-24-fri-skm-deep-dive-3agent.md`) HALF-REFUTED the original frame:** (a) "dividend payer" leg EMPIRICALLY BROKE — first-ever quarterly suspension Q3-2025 (breach quarter), FY2025 payout ~halved, resumed ₩830/qtr on ~158% payout ratio (T3-derived); (b) AI leg REAL but landlord-shaped — AI = 4.2% of FY2025 revenue, ~72% of it AIDC colocation (AIX software just +6.4%); (c) the option is PRICED — ~+80-82% YTD vs KT ~+1%, EV/EBITDA ~1.8× KT. Sovereign-execution itself ON TRACK (survived Round-1 down-select co-1st w/ LG on NIA 9.2/10; ₩150B GPU-lease Track-1 winner; >1,000-B200 Haein cluster). **NOT a Hynix proxy — SK Square (402340) holds the 20.5%** (T1 20-F adjudicated). Also holds Anthropic ~0.3% (newly booked; B63/B64 skepticism discipline applies). Open tail: PIPC fine under SKT's cancellation suit + ~₩2.3T modeled compensation ceiling + live class actions.
+  - **Re-look triggers (registered):** Aug-2026 down-select result (cut = KILL); Q2 print 2026-08-11 (AIX/model-licensing breakout = the platform-vs-landlord tell); breach-litigation bounding; AIX growth >30%/yr.
 
 - **🔴 NTT Inc. (TSE: 9432) — CORRECTED 2026-06-17 AM7c** (was NTT Data 9613.T which is now DELISTED per [JPX delisting notice T1 2025-08-29](https://www.jpx.co.jp/english/news/1023/20250829-12.html); NTT Corp took NTT Data private September 2025 for ¥2.37 trillion / ~$16.4 billion buyout; NTT Data Group now wholly-owned subsidiary of NTT Inc. 9432.T; user-flagged ticker disambiguation 2026-06-17 caught the stale-recall — 3850.T is NTT Data Intramart subsidiary, NOT right ticker either; L27 codification candidate ENRICHMENT for June 24 audit: extend verify-listed-status discipline to watchlist-add granularity not just sizing-decision)
   - Source signal: AM7 Subagent B Japan-government-IT framing + AM7c Subagent verification ticker correction

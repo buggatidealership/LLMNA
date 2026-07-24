@@ -159,11 +159,9 @@ Rank order per binding-constraint proximity + thesis-depth-gap + cross-correlati
    - Cross-correlation: NOW (US-domicile risk class), DDOG (governance observability complement)
    - Specific dig vectors: (a) gov + EU institutional services revenue breakdown; (b) AI services backlog vs total; (c) Mistral / Cohere-Aleph Alpha / Sakana integration partnership disclosures; (d) EU AI Act compliance consulting recurring-revenue trajectory
 
-4. **SK Telecom ADR (NYSE SKM) — RANK #4 — Korean sovereign AI cornerstone**
-   - Trigger: Korea AI Basic Act IN FORCE Jan 2026 (BINDING) + $735B sovereign AI initiative; SKT designated GPU infra provider + A.X K1 519B-param model owner
-   - Source seed: SKT Q1 2026 print + Korea Ministry of Science and ICT procurement announcements
-   - Cross-correlation: HYNIX (Korean HBM supply chain), MRVL (custom-Si)
-   - Specific dig vectors: (a) Korea gov GPU infra contract value; (b) A.X K1 commercial deployment scope; (c) sovereign AI initiative $735B SKT attribution; (d) "AI for Everyone" consortium status (5→4→2 by 2027); (e) dividend yield + AI growth combined return profile
+4. **✅ SK Telecom ADR (NYSE SKM) — RANK #4 — EXECUTED 2026-07-24** (user-triggered "dive into SK Telecom"; artifact `signals/cross-source-log/2026-07-24-fri-skm-deep-dive-3agent.md`, 3 agents: KR current-state / structure-financials / adversarial)
+   - All 5 dig vectors answered: (a) gov GPU contract = ₩150B lease program Track-1 (small vs the ₩2.08T 2026 GPU budget; the $735B = multi-year national total, conflation guarded); (b) A.X deployment = Defense-Ministry pilot only, commercial flagship is A.X 4.0 not K1; (c) attribution = infra-leg real (AIDC ₩131.4B Q1 +89.3% = ~3% of revenue), model-leg speculative; (d) consortium path CORRECTED 5→3→(backfilled 4)→3 Aug-26→2 Feb-27, SKT survived co-1st; (e) dividend leg REFUTED (Q3-2025 first-ever suspension) + option priced (+80-82% YTD, ~1.8× KT EV/EBITDA).
+   - VERDICT: remains WATCHLIST P3, frame reset; re-look triggers in candidates.md (Aug-11 print / Aug-26 down-select / litigation bounding / AIX >30%).
 
 5. **🔴 NTT Inc. (TSE: 9432) — RANK #5 — CORRECTED 2026-06-17 AM7c** (per `signals/cross-source-log/2026-06-17-am7c-...md` Subagent verification — was NTT Data 9613.T which DELISTED 2025-09-26; 3850.T = NTT Data Intramart BPM subsidiary, wrong instrument; user-flagged catch)
    - Trigger: Japan 2026 AI Basic Plan + ABCI 3.0 + Sakana AI ecosystem; NTT Data government IT contracts now wholly within NTT Inc. private subsidiary; 9432.T = listed proxy with Japanese gov 34.25% ownership

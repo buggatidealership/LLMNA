@@ -3570,3 +3570,12 @@
 **Material yield class:** 5× HIGH (KR flow-flip discriminator resolved; semis-vs-software split inverted the headline fear; Intel counter-datum; kill-switch T1 pinned; Leg-B 3 new cross-links). **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-good-morning-14wsj-5agent.md`
 **Commit:** (this commit)
+
+## [2026-07-24] SKM deep dive — 3-agent fan-out (KR current-state / structure-financials / adversarial)
+**Fires:** 3 Opus agents, parallel (~113.6k + ~34.9k + ~39k subagent tokens per reports).
+**Framing errors caught:** 6+ — booked down-select path "5→4→2" corrected (5→3→backfill-4); "dividend payer" frame refuted by events (Q3-25 first-ever suspension); "AI revenue" = ~72% colocation (landlord≠platform); SKM-as-Hynix-proxy refuted (T1 20-F, SK Square 20.5%); ADR ratio 1/9 stale (5/9); 519B-params vs ₩519.9B AIDC number-trap pre-flagged; SKT Friday close 4-way data conflict honestly UNVERIFIED (no fabrication).
+**Thesis cascade triggered:** candidates.md SKM frame-reset + deep-dig-queue #4 closed + SKHY vehicle-distinction back-ref. New fact booked: SKT holds ~0.3% Anthropic (B63/B64 discipline flagged).
+**Position implication delta:** NONE (watchlist P3 retained, no sizing pending).
+**Material yield class:** 3× HIGH. **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-skm-deep-dive-3agent.md`
+**Commit:** (this commit)
