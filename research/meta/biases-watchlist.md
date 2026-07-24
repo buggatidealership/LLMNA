@@ -1230,7 +1230,7 @@ Independent corroboration: Holy Stone Enterprise 1-1.5yr "high-end MLCC equipmen
 - `signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md` (origin artifact where bias manifested)
 - Companion bias family: B23 / B26 / B28 / B45
 
-### B47 — Efficiency-driven demand destruction blind spot in supply-constrained thesis (CANDIDATE — N=1 origin 2026-06-14 PM4)
+### B47 — Efficiency-driven demand destruction blind spot in supply-constrained thesis (CONFIRMED-SPLIT 2026-07-24 — blind-spot REAL at N=2; self-detection still EXTERNAL)
 
 **Pattern:** When modeling structural-supply-constraint regimes (memory shortage, MLCC supercycle, CoWoS binding), my naive prior assumes demand growth at the end-use layer dominates efficiency-gain compression at the component layer. The telecom historical record (Ericsson SEK 273B → 248B 2000-2024 flat while mobile data traffic +1500-2000×; Cisco $48-52B FLAT for 6 consecutive years FY2015-FY2021 while internet traffic +5-6×; RAN market -22% 2022-2024 while 5G subs grew) shows this assumption can be EMPIRICALLY WRONG even in clearly structural-demand environments. Component vendors get compressed when application-layer efficiency reduces per-unit hardware demand faster than aggregate demand expands.
 
@@ -1251,7 +1251,7 @@ Independent corroboration: Holy Stone Enterprise 1-1.5yr "high-end MLCC equipmen
 
 **Falsifier:** if held cohort thesis is correctly invalidated FUTURE by F1-F12 supply-side signals alone WITHOUT F13 (U8) firing, B47 was overstated. If F13 DOES fire before F1-F12 and held-cohort gets caught flat-footed, B47 is empirically validated.
 
-**Status:** CANDIDATE — N=1 origin 2026-06-14 PM4. Watch for N=2 in: NVDA HBM-content-per-AI-query, CoWoS pricing per AI inference dollar, MLCC pricing per AI server unit. If any of those show component-revenue-per-end-use ratio compression while end-use grows, B47 promotes to CONFIRMED.
+**Status:** CONFIRMED-SPLIT (promotion decision, 2026-07-24 monthly audit). Two distinct genuine misses (I1 2026-06-14 per-wafer-profitability elasticity; I2 2026-07-20 Frozen-v2 missing-ENERGY-leg) → **the blind spot is empirically real at N=2** — CANDIDATE→CONFIRMED on the *bias-exists* claim. **BUT the split, stated honestly (self-analysis item 5 anti-laundering):** both instances were caught EXTERNALLY (user, then K3) — the harness has NOT yet demonstrated self-detection. So CONFIRMED raises the bar for the mitigation to prove itself; it does NOT retire the watch. Mitigation stack: (a) INGEST **step 4b** tripwire — LIVE 2026-07-20; (b) B47/U8 falsifier-side ledger in `sector/bottlenecks.md` — LIVE; (c) efficiency-claim Stop hook — **SPEC ONLY, review-gated**, `meta/hooks/b47-efficiency-claim-hook-SPEC.md` (and §6 Q4 openly questions whether a text-scanning Stop hook can even catch a *missing-leg* failure — that adjudication precedes any ship). **Self-detection falsifier:** the NEXT B47 instance must be self-caught or step-4b/hook-caught, NOT external — if the next one is external again, the mitigation layer is theater and escalates to INGEST-orchestration enforcement. Original ratio-compression watch (NVDA HBM-content-per-AI-query, CoWoS pricing per inference dollar, MLCC per server unit) remains open as the empirical-validation surface for the *thesis-invalidation* falsifier (line above).
 
 **Companion biases (the demand-side family):**
 - B22 — Consensus-solution anchoring (supply-side substitution)
