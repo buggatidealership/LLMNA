@@ -1328,3 +1328,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-24 06:40:07Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1
 - 2026-07-24 06:40:07Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file) probe=1
 - 2026-07-24 06:46:24Z anti-fabrication-hook FIRE (n=2 '914 wafers' forms=[("'914 wafers'", 1, None), ("'914wafers'", 1, None)]; 'Q2, booked $8' forms=[("'Q2, booked $8'", 1, None), ("'Q2,booked$8'", 1, None)] verdict:pending)
+- 2026-07-24 07:10:22Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-24 07:23:46Z session-prime-hook event=resume injected=False (skipped non-startup)
