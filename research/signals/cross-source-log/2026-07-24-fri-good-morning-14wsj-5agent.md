@@ -63,7 +63,55 @@
 
 **Friday state (~07:00 UTC, UNVERIFIED-LIVE):** US futures mixed/modestly higher (~+0.2%-class readings); Asia followed through DOWN (Japan/Korea/Australia opened lower). 10Y 4.71% "could test 5%" flagged (cnbc.com 2026-07-23, T2). DXY ~101 firm (intraday, NY close unpinned).
 
-## LEG 3 — KR FRIDAY CLOSE DISCRIMINATOR — PENDING (agent-2 in flight)
+## LEG 3 — KR FRIDAY CLOSE DISCRIMINATOR ✅ (agent returned; research-verified 2026-07-24, T2 KR-native primaries, arithmetic-checked) — **THE FLOW REGIME FLIPPED**
+
+**"검은 금요일" (Black Friday). KOSPI −5.73% to 6,690.02** (−406.87; edaily 속보 edaily.co.kr/News/Read?newsId=04264006645517800 + hankyung.com/article/2026072445416, T2; minor 6,690.62 wire variant immaterial). KOSDAQ 748.22 −5.32%. The tape erased Thursday's entire +4.40% AND ~108pts more (agent-computed vs Wed ≈6,797.8). **Sell SIDECAR triggered 11:23:49** (KOSPI200 futures −5.04% to 1,070.80; fnnews.com/news/202607241147294825, T2) — sidecar, NOT circuit-breaker.
+
+| Discriminator | Thursday Jul-23 | **Friday Jul-24** | Verdict |
+|---|---|---|---|
+| Foreign flows (KOSPI) | **+2.14조 net-BUY** | **~−3.28조 net-SELL** (intraday peak ~−3.8조 @14:30) | **FLIPPED — ~5.4조 one-session swing** (edaily 마감 + newspim + ebn, T2) |
+| SK Hynix | ₩1,919,000, foreign net-buy #1 | **₩1,759,000 −8.34%, foreign net-SELL #1** (1,919,000×0.9166 ✓) | regime flip in the held-tracked name (getnews T2/T3) |
+| Samsung | ₩270,000, net-buy #2 | **₩249,500 −7.59%, net-SELL #2** (lost #1 market-cap spot intraday, MBC) | same |
+| Retail (개인) | net-SELLING into strength (healthy) | **+5.18조 net-BUY — knife-catch** | **config INVERTED to the FRAGILE shape** (foreign-sell/retail-buy) |
+| Institutions | — | −1.95조 net-sell | 쌍끌이 투매 (double-barreled dump) w/ foreigners |
+| USDKRW | 1,466.8 Thu close | opened 1,471.9-1,475.2, mid-1,470s toward 1,480; **exact 15:30 close UNPINNED**; only ~−0.5% despite −5.7% equities + ~3.3조 outflow = contained FX | PARTIAL (news1/newsis/businesskorea, T2) |
+
+**Attribution (KR press, framing-corrected):** the dominant KR narrative is **oil/geopolitics → rates → risk-off** ("US-Iran → 국제유가 급등 → 금리·인플레 우려") + US equity plunge — **NOT an AI-thesis breakdown**; Thursday's constructive Alphabet-훈풍 read is dead. The Brent "$100.69 +7.04%" in Friday KR FX briefs = Thursday's settle RECAPPED, not a fresh print (double-count guard). Trump "강제노동 관세" appears single-source (edaily) — unconfirmed add-on.
+
+**Leverage/froth watch (the WSJ leveraged-ETF item, primary pinned):** FSC package (Jul-16) for single-stock leveraged ETF/ETN (the "삼전닉스" 2× products): **기본예탁금 1,000만→3,000만원 (3×), 대용증권 recognition abolished → cash-only, training 2h→3h, min lot 1→20, LP tracking-error 3%→2%, new listings suspended — ACCELERATED to Jul-31** (from Aug-5; bloomberg.com 2026-07-23 + 한국일보/ngonews, T1-origin/T2). Adjacent to but distinct from the 신용융자 margin-loan channel. **반대매매 run-up context:** Jul-23 forced liquidations 596억 (largest since Jul-10); ratio 1.1%→5.7% in 5 sessions; 예탁금 <110조 (sedaily/tradersunion, T2/T3). **Friday's own forced-liquidation print lands T+2 (Mon/Tue) — elevated forced-selling overhang into next week, compounded by retail's +5.18조 Friday knife-catch.**
+
+**Contamination log (agent-caught, excluded):** "외국인 나흘 5.6조 매수/삼전닉스 1.6조" = Jul-20~23 retrospective published Friday AM (would flip the sign if booked as Friday); USDKRW 1,466.8=Thu / 1,541.8=June; a news1 "검은 월요일/SKH −15%/circuit-breaker" item = **other-session contamination, excluded — and note the agent's own "Monday Jul-27 follow-through" aside is temporally impossible (Jul-27 is NEXT Monday, hasn't occurred); no Monday data exists as of this booking.** Early-session flow snapshots (−0.86조 @09:53) ≠ close flows.
+
+**Open items (owed):** exact USDKRW Friday close; Friday 반대매매 print (Mon/Tue); spot-futures basis; KRX-settled final flow figures (±0.5조 band vs same-day press); JP closes for MURATA/SUMCO Friday (Nikkei −2.5% per Leg-B source attribution — per-name closes still owed).
+
+---
+
+## JOINT SYNTHESIS — the two-channel day, and what actually changed
+
+**The single most important structure in today's data (all research-verified above):**
+
+| Channel | Evidence | Held-book transmission |
+|---|---|---|
+| **DEMAND (intact, strong)** | Intel DCAI +59%/guide-up/+13% AH · GOOGL Cloud +82% & capex RAISED $195-205B · SAP cloud backlog +27%, AI in >90% top-50 deals · "AI Is Not Just Hype" earnings frame | supportive for memory/wafers/passives — the capex the market just punished IS the held book's revenue |
+| **PRICE/FLOW (broke, violently)** | Mag-7 −~$797B worst-since-Apr-2025 · SOX −0.54% (semis spared in US) · **BUT KR: foreign flip to −3.3조, SKH −8.34%, sidecar** · retail knife-catch + 반대매매 overhang | the flow leg of the accumulation thesis broke FIRST via the macro channel (oil→rates→risk-off), NOT via demand doubt |
+
+**Answer to yesterday's Unasked question** ("when does runaway-spending fear migrate from spenders to recipients?"): it migrated in ONE session — but through the **macro/flow channel** (oil→rates→foreign risk-off→KR chip dump), not the demand channel. US investors still discriminated (SOX −0.54% vs Nasdaq −2.15%); KR foreign flows did not.
+
+**Five-calls #4 re-weight (my model; addendum #8 cascaded):** H1 unwind-inside-intact-demand **75→60** (demand leg untouched — even reinforced by Intel/GOOGL-Cloud/SAP — but the foreign-accumulation flow evidence that supported it flipped hard); H2 AI-trade-top **10→12** (the spender-repricing reaction-function is a necessary precursor of a top, but NO AI-demand falsifier fired — GOOGL raised capex, Intel guided up); H3 exogenous oil/rates **15-20→28** (the arm actually TRANSMITTING: settle-confirmed gate + 10Y 2026-high + KR press attributing Friday's crash to oil/rates + the one-way oil→rates→duration coupling). Weights sum 100; the H3 rise is transmission-confirmed, not gate-level news.
+
+**Self-correction booked (wake-protocol calibration):** the KR-open wake 6h earlier read the backdrop as "cautiously constructive" from Thursday flows — explicitly caveated data-gapped on the tick, and the caveat did its job (no thesis cascade was made) — but the directional read inverted within hours. Lesson: **pre-open backdrop reads carry hours-scale half-lives during macro-shock windows**; wake artifacts must label them PERISHABLE, not "supportive."
+
+## Cascade + position implication (FINAL)
+
+- **Five-calls** → addendum #8 (H1 60 / H2 12 / H3 28 my model; KR flow-flip + US spender-repricing booked; Jul-29 SKH print unchanged as the demand-side adjudicator).
+- **SKHY thesis** → back-ref: foreign-flow flip + −8.34% macro-transmission day; NO falsifier fired (falsifiers are demand/pricing-side); forced-selling overhang note (Mon/Tue 반대매매); Jul-29 print = sole adjudicator of the conditional add, unchanged BY DESIGN.
+- **MURATA thesis** → back-ref: macro-transmission day (JP close owed); YAGEO +50%-list/spot-magnitude item routed for re-check vs file anchors; Section-301 Taiwan-passives tariff = competitive-cohort pricing context (JP-domiciled, not directly tariffed this tier); yen/BOJ two-sided FX note.
+- **SUMCO thesis** → back-ref: macro-transmission day (close owed); no falsifier.
+- **Day-state** → wake entry + Mon/Tue follow-ups (반대매매 print, USDKRW close, JP closes, HBM price-cap-scrapping verify).
+- **Funding-node/PC-21** → circular-deals skeptic corroboration (Bloomberg/NBC/Morningstar cluster, Leg-4F).
+- **Ledger** → 5 fires, all HIGH (US-tape: 3 framing kills; KR: flow-flip + 6 contamination catches; H3: 3 input corrections; AI-reg: 2 node-separations + kill-switch T1; Leg-B: 3 new cross-links).
+
+**Position implication: ⚪ NO ACTION (user-gated; Rule #8) 🟡** — a violent macro-transmission day (oil→rates→KR foreign dump) with ZERO AI-demand falsifiers fired (Intel DCAI +59%, GOOGL Cloud +82% + capex raised, SAP backlog +27% all point the other way); SKHY/MURATA/SUMCO theses unchanged; the Jul-29 SK Hynix print remains the sole load-bearing adjudicator of the conditional add — and the Mon/Tue forced-selling overhang is tactical color for the user, not an action trigger. Strongest bear case considered (Rule #18): the KR foreign flip IS the start of a durable outflow regime, not a one-session macro shock — it fails as an action-driver TODAY because it is N=1 session, macro-attributed by every KR primary, and contradicted by the demand-side evidence; it becomes live if foreign net-sell persists ≥3 sessions or the Jul-29 print misses.
 
 ## LEG 4 — AI REGULATORY + MICRO CLUSTER ✅ (agent returned; research-verified 2026-07-24 per line; all news-site direct fetches 403'd — triangulated T1 landing pages + multi-source T2)
 

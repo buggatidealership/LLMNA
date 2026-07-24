@@ -3561,3 +3561,12 @@
 **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-22-wed-ondas-onds-verification-pass.md`
 **Commit:** (this commit)
+
+## [2026-07-24] Good-morning wake — 5-agent fan-out (US tape / KR close / H3 / AI-reg / Leg-B)
+**Fires:** 5 Opus verifiers, single parallel dispatch (~55-75k est. subagent tokens each side of median; heaviest Leg-B ~102k reported).
+**Framing errors caught:** 8+ across the batch — $890B Mag-7 CORRECTED ~$797B (conflation w/ 2027-capex projection); "Black Monday" headline = IBM's own Jul-14 −25.2% (9d stale, single-name); MU−13%/SKH−12% memory-panic = June-24 recycle; "first >$100 since 2022" = stale-recycle (correct: since May); VIX 16.64 = prior-close error (18.70 close); 10Y 4.63-4.67 stale-low (4.707% settle); KR "외국인 나흘 5.6조" retrospective≠Friday flows; de-escalation hopes = stale+rejected.
+**Thesis cascade triggered:** five-calls addendum #8 (H1 60/H2 12/H3 28 my model) + SKHY/MURATA/SUMCO back-refs + day-state.
+**Position implication delta:** NONE (⚪ NO ACTION, Rule #8 — macro-transmission day, zero demand falsifiers).
+**Material yield class:** 5× HIGH (KR flow-flip discriminator resolved; semis-vs-software split inverted the headline fear; Intel counter-datum; kill-switch T1 pinned; Leg-B 3 new cross-links). **Audit-day classification:** POSITIVE.
+**Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-good-morning-14wsj-5agent.md`
+**Commit:** (this commit)
