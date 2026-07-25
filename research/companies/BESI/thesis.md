@@ -1,6 +1,11 @@
+**📌 [2026-07-22] HBM HYBRID-BONDING WATCH-LINE HARDENED (Rule #10 back-ref).** Per `signals/cross-source-log/2026-07-22-wed-eve-3input-tsmc-2027-hike-nand-crossover-hybrid-bonding.md` (Korean-native verification): Samsung IS building the 50-unit D2W hybrid-bonding line at Pyeongtaek with **BESI named top-priority supplier, carry-in from end-2026** (The Elec ~07-21, T2) — but large-scale production expectation stays ~2029-30 (ZDNet 07-06 REPORTED, single-outlet). Net: the HBM order wave = qualification-stage now, volume pushed right — **DELAY confirmed, reversal falsifier NOT fired** (no memory maker has committed hybrid-bonding insertion for HBM5 volume). TC-5/PLP/logic legs untouched. Date-drift guard: NVIDIA's Feynman = 2028 (T1 GTC); "2029" = memory-availability framing — keep the one-year gap explicit in any timing model.
+**Position implication: ⚪ NO ACTION — watchlist stance unchanged — HBM leg = optionality with slip-risk, exactly as pre-registered 07-06; the 50-unit line + named-supplier status is the strongest qualification-stage receipt yet.**
+
 # BESI (BE Semiconductor Industries — AMS:BESI / NASDAQ:BSEMY) — Thesis stub
 
-**Last updated:** 2026-06-15 PM (TSMC PLP / CoPoS ETNews 2-subagent verification — Q1 2026 orders doubled YoY T1; format-agnostic die-attach surfaces as TC-5 N+1 datapoint)
+**Last updated:** 2026-07-06 (HBM hybrid-bonding-slip watch-line added; prior 2026-06-15 PM)
+
+**📌 [2026-07-06] WATCH-LINE — HBM hybrid-bonding insertion may slip past HBM5 (bounded negative on the HBM optionality leg only).** Per `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md`: JEDEC reportedly discussing 20-Hi (HBM5) thickness relaxation to ~900-1,000μm (ZDNet KR 07-06 T2; same pattern as the HBM4 720→775μm relaxation that kept microbumps/TC bonding); Hanmi on record that TC bonders suffice through HBM4 AND HBM5; Nvidia high-stack demand pushback + 12-Hi-mainstay claims corroborated (TC-12 N=6). **Bounded read (do NOT over-cascade):** BESI's current order momentum (Q1-26 €269.7M +105% YoY, Q2 guide +30-40% QoQ, T2) is logic/2.5D/mobile-driven, NOT HBM — only 2 eval tools at a second memory customer. This is a future-optionality haircut on the HBM leg, not an order-flow reversal; the TC-5/PLP die-attach leg (the TIER-S rationale) is untouched. **Falsifier for the watch-line:** a memory maker publicly committing hybrid-bonding insertion for HBM5 (would REVERSE this) — or, in the bear direction, JEDEC formalizing the relaxed standard + a 3rd maker deferring hybrid-bonding capex → then re-tier the HBM optionality leg explicitly. **Position implication: ⚪ NO ACTION — 🟡 — active-candidate status unchanged (not held); entry-trigger framework unchanged; HBM-leg optionality now carries an explicit slip-risk marker.**
 
 ## 2026-06-15 PM back-reference — Q1 2026 orders doubled YoY + format-agnostic die-attach for PLP
 
@@ -156,3 +161,5 @@ Per Agent 1 research:
 - Duration remains Long (3-5 years) — the HBM5 (2028-2029) mandatory hybrid-bonding transition is the structural anchor; near-term competitive landscape is BESI + ASMPT duopoly
 
 **Falsifier reinforcement:** ASMPT achieves hybrid-bonding precision parity with BESI; Kulicke & Soffa or Applied Materials enters production-scale hybrid bonding; HBM5 timeline slips beyond 2029.
+
+**2026-07-14 back-ref (Rule #10):** Y1 beneficiary map (per `signals/cross-source-log/2026-07-14-tue-yongin-y1-equipment-verification-beneficiary-map.md`) — confirms the existing timing call: TCB (Hanmi/ASMPT/Hanwha) carries HBM through HBM4E 16-hi; hybrid bonding = 2027-28+ leg. No pull-forward of the BESI window. Position implication: NO ACTION — watchlist P2 unchanged. 🟡

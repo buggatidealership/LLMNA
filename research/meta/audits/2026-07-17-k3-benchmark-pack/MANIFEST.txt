@@ -1,0 +1,35 @@
+MANIFEST — llmna-audit-pack-20260717.zip
+frozen-baseline-commit: d816abf1664d23a50a1927b8a6f3365c8a6939e7 (main, 2026-07-17T22:05:42Z, 1230 commits)
+generated: 2026-07-18 by external auditor (Kimi K3)
+
+EXPECTED-OUTPUTS (reproduce.py headline lines):
+Brier: system 0.1978 | coin 0.2500 | base-rate 0.1844 | parrot 0.1000 (system-on-parrot-rows 0.1377)
+TEST2: REPO 12 / STREET 7 / TIE 1 of 20 sourced rows | mean delta +1.03pp
+TEST3: mean -3.63% | SOXX -1.25% | QQQ -2.26% | beats SOXX 3/11
+INTEGRITY: 28 artifacts checked | 0 late registrations
+
+SHA-256:
+1c356c427560b66ac7f8ce56f03d28ec07b5b1b3b0af89b65f3fd05fe27cfea7  README.md
+76c6dbab86e8406653fcbe3ae6682e20f683d9e6d841aba97d6ea6b397db2608  prices/000660_KS.csv
+3008d1dc6e7354e47e7d6ef5de1ecd4e32b5699b9fcc30bb9fa7e88f3779d9b4  prices/005930_KS.csv
+003a0000ea16711071d8c97d9bfda428fa662b66ed9227b2a86726c7fe09fa2b  prices/ASML.csv
+258d8797e91af32af221198263671d2972b1a12a0e44c19a02d4976ec0aee130  prices/AVGO.csv
+b60ba218c5cf3cbea12e25ed5c650b1d205c804f5551246eed31e903e1d151f2  prices/HPE.csv
+c18feafb3034d8a003003925dcd20c81890717be6a9101138b06a6045b65b975  prices/MOD.csv
+a849a4b0065cee6d26ad66e16f886d3020224fcf5a8019af8d94cdda0955d1e3  prices/MRVL.csv
+44f1e91ef7927c148c496c0aeabee3cb17430e85457f85a81dd3b4d18ec6c28f  prices/MU.csv
+cd6f8063ae4adfe816ec1d4bedbc632594f98039ad4e1c10ac34f149e788efb1  prices/NBIS.csv
+c64c555dde2d91ba9c8f0ecd3bad9f0a542c3ed5866ae102f263d5b2c87062c4  prices/NVDA.csv
+059ec19272810a4b35047581408f608b97cf3956c15aab0792f7e4261a7abc18  prices/QQQ.csv
+a8132b616f689250408ed30172c2bc78da63b5b7b6485d6f982a177148577983  prices/SKHY.csv
+5c4e796a2abf11f5d358d9fe0d827a2f1498761d947247370e7f24fc29aea673  prices/SNDK.csv
+5c7fb84202047d181a835ee0f8ae6e87adc0f5b2ff9ed168b17ee268ab34242e  prices/SNOW.csv
+f48092e8d19d0e12991bf15b3acb8c81bf37fddebd257493c0a45fa62c8d6786  prices/SOXX.csv
+18a366e83afbef4d867e0caeb0fd6f4e9230f4188ec3cc7a69e93d38faa4736e  prices/TSM.csv
+88486a725079967888356494e6f71d41884e0832fe12446e9fa0850a9ee667fe  registration_integrity.csv
+380735a2d32f6ac75b1d3dc942667e030fbd063c3608a6f21f30a543809b83d4  reproduce.py
+785040fa4c463b1e2f27d1186b4954b2d28a114d28edcc9de22e3ffe8ece2f8d  test1_binary_rows.csv
+46cbbdc2a6d348f3ad06133fb3531d46270ed917bd25519a362d370ee7a9b7b6  test2_point_estimates.csv
+70ab8863d962250bd2eb35216952b294472bb7be436ef2772d5be3784724a85b  test3_trade_windows.csv
+60ff6d0b20d63c6d1ec2d8c6be6940355c6deae3898ed386db3228472ab7eda5  test4_selection_integrity.md
+f29d77820f0a3f46edb0ac6406d825ecc49070373af8de16f16053c6a9da3970  test5_overrides.csv

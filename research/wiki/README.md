@@ -64,3 +64,4 @@ When a wiki entry is referenced in a thesis or causal-map, link directly. The wi
 - Entries should be ~1500–3000 words — substantial enough to be useful, not so long they become noise
 - Last-updated date at top
 - When a stat is older than 12 months and the topic is fast-moving, flag for refresh
+- [`llm-synaptic-consolidation.md`](llm-synaptic-consolidation.md) — why the harness is a memory system, not a memory file (episodic/semantic layers; the 7 consolidation conditions; added 2026-07-09)

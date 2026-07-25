@@ -197,3 +197,5 @@ These ADD upside above Goldman PT $141.
 - `predictions/lessons.md` L14, L19, L20, L21, L22
 - `meta/biases-watchlist.md` B28, B40, B42, B43
 - `portfolio/constraints.md` (FIRE math + €200K cash deployment cadence)
+
+**2026-07-14 back-ref (Rule #10):** Y1 beneficiary map (per `signals/cross-source-log/2026-07-14-tue-yongin-y1-equipment-verification-beneficiary-map.md`) — >$105M disclosed multi-system orders incl. "leading HBM player" (2027 delivery) sit exactly on the HBM4E inspection leg the Y1/1c ramp feeds. Position implication: NO ACTION — watchlist unchanged; next print = entry-condition checkpoint. 🟡

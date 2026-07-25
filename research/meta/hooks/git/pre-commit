@@ -1,0 +1,101 @@
+#!/bin/bash
+# LLMNA git pre-commit hook (built 2026-07-16, user directive: "make diff-before-commit binding").
+# Version-controlled at research/meta/hooks/git/pre-commit; activated per-container by
+# meta/tools/setup.sh via `git config core.hooksPath research/meta/hooks/git`.
+#
+# Function 1 — DIFF-BEFORE-COMMIT (deterministic): print the staged diff into the commit
+#   output so the committer (LLM or agent) has the exact content in-context at commit time.
+#   Origin: 2026-07-16 — two hook-fire-log telemetry commits were pushed unread; user made
+#   the review binding. A hook cannot force attention, but it CAN make the look automatic.
+# Function 2 — SECRETS SCAN (blocking): refuse commits whose ADDED lines contain key-shaped
+#   assignments (NEVER-ECHO enforcement at the last gate). Override for a false positive:
+#   append `# secretscan-ok` to the flagged line.
+
+echo "=== pre-commit: staged changes (diff-before-commit rule, 2026-07-16) ==="
+git diff --cached --stat
+
+ADDED_LINES=$(git diff --cached | grep -c "^+[^+]" 2>/dev/null)  # grep -c prints 0 itself on no match; the old `|| echo 0` produced "0\n0" (verifier catch)
+if [ "$ADDED_LINES" -le 400 ]; then
+  git diff --cached | grep "^+[^+]" | head -400
+else
+  echo "(large diff: $ADDED_LINES added lines — showing first 60; review the artifact files directly)"
+  git diff --cached | grep "^+[^+]" | head -60
+fi
+
+# Secrets scan on added lines only (values, not names — env-var NAMES are fine to commit)
+LEAK=$(git diff --cached | grep "^+[^+]" | grep -Ev "secretscan-ok" | \
+  grep -E "(API_KEY|API_TOKEN|APIKEY|_SECRET|PASSWORD|PRIVATE_KEY)[\"']?\s*[:=]\s*[\"']?[A-Za-z0-9._-]{12,}")
+if [ -n "$LEAK" ]; then
+  echo ""
+  echo "=== pre-commit: BLOCKED — key-shaped assignment in staged content (NEVER-ECHO) ==="
+  echo "$LEAK" | head -5 | sed -E 's/([A-Za-z0-9._-]{6})[A-Za-z0-9._-]+/\1***REDACTED***/g'
+  echo "If this is a false positive, append '# secretscan-ok' to the line and re-stage."
+  exit 1
+fi
+
+# Function 3 — SESSION-PRIME CAP GATE (added 2026-07-17 after THREE same-day
+#   count-then-commit failures: commit messages claimed "under 30k cap" while the
+#   staged file was over it. The instruction failed repeatedly; this is deterministic.
+#   Cap = MAX_INJECT_CHARS in session-prime-hook.py (over-cap content gets truncated
+#   at injection, silently breaking the cold-boot ledger).
+if git diff --cached --name-only | grep -qx "research/meta/session-prime.md"; then
+  # CHARS not bytes (verifier catch 2026-07-17: wc -c counts bytes; the cap it
+  # enforces is MAX_INJECT_CHARS = Python len() = characters; file was 30,339
+  # bytes / 29,977 chars — byte-counting would spuriously block). Boundary -gt
+  # mirrors the injection hook's truncation threshold (> 30000) exactly.
+  SP_CHARS=$(git show :research/meta/session-prime.md 2>/dev/null | python3 -c "import sys; print(len(sys.stdin.read()))")
+  if [ "$SP_CHARS" -gt 30000 ]; then
+    echo ""
+    echo "=== pre-commit: BLOCKED — session-prime.md staged at ${SP_CHARS} chars (cap 30000) ==="
+    echo "Prune before committing; the injection hook truncates over-cap content silently."
+    exit 1
+  fi
+  echo "(session-prime cap gate: ${SP_CHARS} chars — OK)"
+fi
+
+# Function 4 — DESTRUCTIVE-CHANGE GUARD (added 2026-07-19, user directive; matrix at
+#   research/meta/destructive-change-governance.md). Blocks HIGH-tier repo destruction:
+#   (a) staged DELETION of protected paths, (b) >3 files deleted in one commit,
+#   (c) >40% line-shrinkage of a protected file. Override ONLY with operator approval:
+#   OPERATOR_APPROVED_DELETION=1 git commit ... (token honesty is instruction-level;
+#   this stop is deterministic).
+PROTECTED_RE='^(research/CLAUDE\.md|\.claude/settings\.json|research/INDEX\.md|research/meta/hooks/|research/meta/tools/|research/meta/methodology\.md|research/meta/biases-watchlist\.md|research/meta/session-prime\.md|research/predictions/lessons\.md|research/predictions/grading-log\.md|research/predictions/calibration-ledger|research/portfolio/)'
+if [ "$OPERATOR_APPROVED_DELETION" != "1" ]; then
+  # --no-renames: a `git mv` of a protected file must surface as D(old)+A(new), not R
+  # (rename evasion, verifier catch #1 2026-07-19). core.quotePath=false: non-ASCII
+  # paths must not arrive shell-quoted, which defeats the ^-anchored regex (catch #2).
+  DELETED=$(git -c core.quotePath=false diff --cached --name-only --no-renames --diff-filter=D)
+  DEL_COUNT=$(printf '%s' "$DELETED" | grep -c . 2>/dev/null)
+  PROT_DEL=$(printf '%s\n' "$DELETED" | grep -E "$PROTECTED_RE")
+  if [ -n "$PROT_DEL" ]; then
+    echo ""
+    echo "=== pre-commit: BLOCKED — staged DELETION of protected harness path(s) (HIGH tier) ==="
+    echo "$PROT_DEL" | head -10
+    echo "Operator pre-approval required (destructive-change-governance.md). After approval: OPERATOR_APPROVED_DELETION=1 git commit ..."
+    exit 1
+  fi
+  if [ "$DEL_COUNT" -gt 3 ]; then
+    echo ""
+    echo "=== pre-commit: BLOCKED — mass deletion ($DEL_COUNT files staged for deletion; threshold 3) ==="
+    echo "$DELETED" | head -10
+    echo "Operator pre-approval required (destructive-change-governance.md)."
+    exit 1
+  fi
+  # while-read, not for-in: filenames with spaces must not word-split into tokens whose
+  # git-show failures silently skip the check (fail-open, verifier catch #3 2026-07-19).
+  # Process substitution keeps the loop in this shell so `exit 1` propagates.
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    HEAD_L=$(git show "HEAD:$f" 2>/dev/null | wc -l)
+    STAGED_L=$(git show ":$f" 2>/dev/null | wc -l)
+    if [ "$HEAD_L" -ge 20 ] && [ $((STAGED_L * 100)) -lt $((HEAD_L * 60)) ]; then
+      echo ""
+      echo "=== pre-commit: BLOCKED — protected file $f shrinking ${HEAD_L}->${STAGED_L} lines (>40% removal; HIGH tier) ==="
+      echo "Operator pre-approval required (destructive-change-governance.md)."
+      exit 1
+    fi
+  done < <(git -c core.quotePath=false diff --cached --name-only --no-renames --diff-filter=M | grep -E "$PROTECTED_RE")
+fi
+
+echo "=== pre-commit: OK ==="
+exit 0

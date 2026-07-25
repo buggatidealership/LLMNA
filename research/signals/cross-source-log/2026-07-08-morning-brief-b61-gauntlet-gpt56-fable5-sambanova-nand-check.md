@@ -1,0 +1,30 @@
+# 2026-07-08 Morning brief (B61 digest, 68 sources) — 3-agent gauntlet: GPT-5.6 launch / Fable-5 suspension resolved / SambaNova / NAND false-contradiction killed
+
+**Workflow:** #1 INGEST + Rule #16/B61 (3 Opus agents: lab-launch cluster, 3-item bundle, NAND contradiction-class check) | 2026-07-08 ~10:30-11:15Z
+
+## Verdict table
+
+| Item | Verdict | Key verified facts |
+|---|---|---|
+| GPT-5.6 Sol/Terra/Luna launch Thu Jul-9 | CONFIRMED-FRESH (digest partially STALE — pricing IS public) | Tiers not sizes: Sol flagship $5/$30 per Mtok, Terra $2.50/$15, Luna $1/$6 (T1 OpenAI); **launch cleared by US Dept of Commerce after government review** (T2); ambiguity flagged: full-public vs widened-gated Jul-9 (T2/T3 conflict) |
+| Anthropic Fable 5 extension → Jul-12 | CONFIRMED-FRESH + **parked T3 flag RESOLVED** | Timeline (T1/T2): launch Jun-9 → **SUSPENDED Jun-12 under US export controls** (Amazon researchers found safeguard bypass producing exploit code; no real-time nationality check → pulled for all) → lifted Jun-30 → restored Jul-1 (~18-19 days dark) → window extended to Jul-12 11:59PT after backlash (paid plans, 50%-of-weekly-limits cap) → then metered $10/$50 per Mtok. Corporate customers shifted per-seat → metered. B63: reported straight — negative for Anthropic |
+| Two-tier inference market (Register) | CONFIRMED-FRESH with hard numbers (upgraded from my "narrative" triage — a triage miss) | GPT-5.5 DOUBLED to $5/$30; Gemini Flash 3.5 arrived 3-6x pricier than predecessor; Sonnet 5 cheaper/tok but burns more tokens per result. Frontier prices RISING; commoditization = mid-tier only |
+| SambaNova $1B Series F @ $11B | CONFIRMED-FRESH (today, T1 TechCrunch/Bloomberg/CNBC) — **digest framing error ×2** | Lead General Atlantic; Intel Capital/BlackRock/QIA/Vista+; catalyst = **JPMorganChase on-prem inference win** (SN40L/SN50). Digest's "more than doubling from $1.6B": (a) compares acquisition PRICE to funding VALUATION; (b) understates — $11B ≈ **7x** the collapsed Intel bid (late-2025) and ≈5x the Feb-26 $2.2B Series E. Nvidia-challenger + sovereign capital re-rate |
+| Storage-as-bottleneck (Register) | STALE/RESTATEMENT — vendor-flavored thesis piece, ZERO hard numbers | Not additive; the additive thing (agentic persistent-state demand quantification) is absent. No thesis change |
+| **NAND "flat to −5% Q3"** (surfaced in bundle context, SupplyICs) | **CONTRADICTED-BY-T1 — false contradiction KILLED before cascade** | TrendForce 2026-07-03 (T1): Q3-26 NAND contract **+10-15% QoQ** (KR reads +5-13%, JP reads +10-15% — all citing TrendForce); Q2 anchor +70-75% CONFIRMED; conventional DRAM +13-18%, **Samsung asking up to +20% (LPDDR >20%)**; eSSD "8-14wk shortest" also uncorroborated (high-cap SSD 12-16wk to >1yr per TrendForce). Zero second-source for flat/negative. Mechanism: soft-landing of the price RAMP (consumer affordability ceiling + all-5-makers adds), NOT glut/rollover |
+| UK DC fast-track | PARTIAL — real (NSIP via Planning & Infrastructure Act) but activation of Nov-2025 legislation; July-2026 = pre-app consultation removal effective; "up to 12mo / up to £1bn over the Parliament" = MHCLG estimates, opt-in, 3 projects directed in | TC-13-adjacent policy tailwind, mild |
+| Meta Muse / RTX 50 Super leak / GitLost + HalluSquatting / ZML / post-quantum EO / 3 papers | Log-only | GitLost+HalluSquatting → agent-security friction lines (framework enterprise-friction context); rest off-thesis |
+
+## B61 freshness scorecard: 4 fresh / 1 fresh-but-stale-details / 2 partial-or-restatement / 1 false-sign claim killed. Digest quirks: "Lab Watch: nothing notable" while Breaking held two lab launches; "no pricing details" already stale at read time.
+
+## THE POLICY NODE (new, cross-item — logged here + where-we-are pointer)
+Within ONE WEEK, verified: (1) US export controls SUSPENDED a live commercial frontier model for ~19 days (Fable 5, Jun-12→Jul-1); (2) US Commerce review GATED a frontier launch (GPT-5.6, cleared for Jul-9); (3) Beijing drafting overseas-access curbs incl. open-weights (07-08 batch artifact). **Frontier model weights are becoming export-controlled goods on BOTH sides.** N-th order: 1st (P>80%): lab release cadences now carry government-review latency → launch-timing becomes strategically gamed (GPT-5.6 "preemptive strike" on Fable-5 metering, T3 framing). 2nd (P~60%, my model): compliance/screening infrastructure becomes a lab cost line + moat (favors scaled labs). 3rd (P~40%): bifurcated model ecosystems harden → regional inference buildouts duplicate compute/substrate demand (consistent with TC-15 + the China-curbs artifact 3rd-order). 4th (P~20%): model-access becomes a sanctions instrument class of its own.
+
+## Reaction-regime input for the Jul-29/31 prints (the position-relevant extract)
+NAND momentum PEAKED Q2 (+70-75%) → Q3 decelerating (+10-15%): NAND names (KIOXIA/SNDK cohort, watchlist-reference) face a HIGHER surprise bar — "still rising" is now consensus, deceleration is the tape's read. DRAM/HBM leg UNTOUCHED and re-confirmed (Samsung +20% ask): SKH Jul-29 prediction inputs unaffected. Second-derivative discipline: L27 adjudicators should band NAND-name reactions vs the DECELERATION narrative, not the price level.
+
+## Anthropic H2 trust-tax update (B63: negative direction, full weight)
+The export-control suspension = the most severe trust datapoint yet (customers lost a production model for ~19 days mid-contract, cause = safety-bypass). H2 enterprise-trust-tax P~45 → **P~55 (my model)**; the pre-registered "3rd named enterprise restriction → P~60+" threshold is NOT technically met (this is a government action, not an enterprise policy), so P stops short of the threshold value. Watch: enterprise procurement language citing the suspension; multi-model failover adoption in contracts.
+
+## Routing (Rule #10 same-commit)
+private-tracker (Anthropic timeline + H2 update; OpenAI GPT-5.6 entry) | application-layer-framework §cost-floor (two-tier hard numbers + lab metering shift) | KIOXIA + SNDK banners (NAND deceleration reaction-regime) | watchlist +SambaNova radar | where-we-are pointer (policy node) | ledger AM-3.

@@ -98,10 +98,20 @@ def main():
     # "resume" / "clear" / "compact". We inject only on truly fresh
     # cold starts. Resume sessions already have context; injecting
     # would pollute with redundancy.
+    #
+    # 2026-07-06 audit fix: a MISSING/empty source field is treated as a
+    # cold start, not as non-startup. Some platform launches deliver no
+    # source key at all (observed live in hook-fire-log.md 2026-07-06:
+    # "event= injected=False (skipped non-startup)"); the old strict
+    # equality made the prime silently NEVER inject on those cold starts
+    # — the worst failure mode for a calibration injection. Known resume
+    # variants stay excluded explicitly.
     source = data.get("source", "")
-    if source != "startup":
+    if source in ("resume", "clear", "compact"):
         log_fire(source, injected=False, reason="(skipped non-startup)")
         sys.exit(0)
+    # source == "startup" or missing/unknown → fall through and inject;
+    # the success-path log_fire below records which it was.
 
     if not SESSION_PRIME_PATH.exists():
         log_fire(source, injected=False, reason="(file missing)")

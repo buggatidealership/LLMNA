@@ -40,3 +40,5 @@ Growth delivers, multiple drifts lower against the HK discount + HCB narrative; 
 (a) live-quote confirmation (HK$176-238 dispersion); (b) SKH fluxless-order tension (TrendForce 12-12 vs 01-13); (c) the single-source ~50%-of-SKH-fleet claim; (d) exact print date; (e) ADV/liquidity pull.
 
 **Position implication: WATCHLIST-P1, NO ENTRY pre-registered — 🟡 — thesis is catalyst-gated (Samsung prelim tone Jul-7 → live-quote resolution → Q2 print ~Jul-22/24); any entry proposal arrives as a decision package with staged sizing, user-gated per Rule #11.**
+
+**2026-07-14 back-ref (Rule #10):** Y1 beneficiary map (per `signals/cross-source-log/2026-07-14-tue-yongin-y1-equipment-verification-beneficiary-map.md`) — disclosed 7 HBM4 TCB units from SKH (Oct-2025, The Elec) re-anchored; SKH two-track = TCB through HBM4E 16-hi (Hanmi duopoly pressure), hybrid bonding after. Y1-specific packaging tranche = late-2027 (packaging orders follow front-end). Position implication: NO ACTION — thesis build continues; Y1 adds a dated future order-window, not a present catalyst. 🟡

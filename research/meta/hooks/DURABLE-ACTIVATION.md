@@ -1,7 +1,7 @@
 # Durable Hook Activation — Claude Code on Web
 
 **Status:** ✅ RESOLVED 2026-06-26 via Architecture A (project-level `.claude/settings.json`)
-**Created:** 2026-06-19 (post H1-CONTAINER-EPHEMERALITY-FIX `ce008ea6`)
+**Created:** 2026-06-19 (post H1-CONTAINER-EPHEMERALITY-FIX `7be02c0`). ⚠️ SHA note (2026-07-20, K3-Swarm G-40): the four provenance SHAs originally cited here pre-dated a history rewrite and no longer exist in the object DB; remapped to their current-history equivalents by commit message.
 **Resolved:** 2026-06-26 via H1 PROJECT-LEVEL SETTINGS test confirming Claude Code on Web reads `<repo>/.claude/settings.json`
 **Last verified working:** 2026-06-26 14:52:32Z (diagnostic hook fired from project-level settings)
 
@@ -28,8 +28,8 @@ All three merge; hooks in each layer fire in sequence. The project-level layer i
 |---|---|---|---|
 | System | `~/.claude/launcher-settings.json` | system hooks (git-identity, git-check, reply-gate) | managed by platform; we don't touch |
 | User | `~/.claude/settings.json` | INTENTIONALLY EMPTY (just `{"hooks": {}}` + Skill permissions) | ephemeral; gets wiped on container reset; that's now fine |
-| Project | `<repo-root>/.claude/settings.json` | ALL 16 research-OS hooks (SessionStart × 2, UserPromptSubmit × 1, Stop × 13) | **version-controlled**; survives container resets |
-| Hook scripts | `<repo-root>/research/meta/hooks/*.py` + `.sh` | the hook executables themselves | version-controlled; referenced by absolute path from project settings.json |
+| Project | `<repo-root>/.claude/settings.json` | ALL 19 hook scripts (PreToolUse × 1, SessionStart × 2 + hooksPath one-liner, UserPromptSubmit × 1, Stop × 15 — recomputed 2026-07-20) | **version-controlled**; survives container resets |
+| Hook scripts | `<repo-root>/research/meta/hooks/*.py` + `.sh` | the hook executables themselves | version-controlled; referenced by `$CLAUDE_PROJECT_DIR`-relative path from project settings.json (corrected 2026-07-06 — this row previously said "absolute path", contradicting the portability commit) |
 
 ## Verification protocol
 
@@ -37,7 +37,7 @@ After any cold session start:
 
 ```bash
 ls -la $CLAUDE_PROJECT_DIR/.claude/settings.json
-ls -la $CLAUDE_PROJECT_DIR/research/meta/hooks/*.py | wc -l   # expect 17
+ls -la $CLAUDE_PROJECT_DIR/research/meta/hooks/*.py | wc -l   # expect 19 (as of 2026-07-20)
 cat $CLAUDE_PROJECT_DIR/research/meta/hook-fire-log.md | tail -5  # expect recent fires
 ```
 
@@ -53,13 +53,13 @@ bash $CLAUDE_PROJECT_DIR/research/meta/hooks/install.sh
 
 This copies all hook scripts and the LEGACY `research/meta/hooks/settings.json` (still kept as the install-target mirror) into `~/.claude/`. Subsequent sessions fall back to user-level enforcement until project-level is restored.
 
-**Note:** if you re-activate the install.sh fallback, you MUST also re-add hooks to `~/.claude/settings.json` (currently emptied for Architecture A). The install.sh handles this automatically because it copies the legacy mirror.
+**Note:** if you re-activate the install.sh fallback, you MUST also re-add hooks to `~/.claude/settings.json` (currently emptied for Architecture A). The install.sh handles this automatically because it copies the legacy mirror. **⚠️ DOUBLE-FIRE HAZARD (added 2026-07-06):** do this ONLY after removing `<repo>/.claude/settings.json` — Claude Code merges settings files, so both layers active = every hook fires twice per event. install.sh now hard-aborts in that state unless `FORCE_INSTALL=1`.
 
 ## Migration history
 
-- **2026-06-19** `ce008ea6` — H1-CONTAINER-EPHEMERALITY-FIX. Identified that `~/.claude/` resets per container; built install.sh + mirror in repo. This was Architecture 0 (ephemeral, requires laptop or per-session run).
-- **2026-06-19** `cecc13fc` — H1-ACTIVATION-RESOLVED. install.sh ran successfully → ~/.claude/ populated. True for ~12 hours, then container reset wiped it. Confirmed the "needs durable mechanism" finding.
-- **2026-06-26** `fd7cb19d` — Added session-prime-hook + macro-anchor-hook to mirror settings.json. Closed the wiring gap that made install.sh propagation silently drop both hooks.
+- **2026-06-19** `7be02c0` — H1-CONTAINER-EPHEMERALITY-FIX. Identified that `~/.claude/` resets per container; built install.sh + mirror in repo. This was Architecture 0 (ephemeral, requires laptop or per-session run).
+- **2026-06-19** `4d0560a` — H1-ACTIVATION-RESOLVED. install.sh ran successfully → ~/.claude/ populated. True for ~12 hours, then container reset wiped it. Confirmed the "needs durable mechanism" finding.
+- **2026-06-26** `956d4a7` — Added session-prime-hook + macro-anchor-hook to mirror settings.json. Closed the wiring gap that made install.sh propagation silently drop both hooks.
 - **2026-06-26** (this commit) — **Architecture A migration.** Created project-level `<repo>/.claude/settings.json` with all hooks at repo paths. Emptied `~/.claude/settings.json` to prevent merge duplication. install.sh deprecated as primary activation mechanism. **Result: zero laptop dependency for hook durability across all future sessions/containers.**
 
 ## Linked
@@ -70,8 +70,8 @@ This copies all hook scripts and the LEGACY `research/meta/hooks/settings.json` 
 - `research/meta/hooks/README.md` — hook docs
 - `research/meta/tier-cascade-log.md` — `[2026-06-19 H1-CONTAINER-EPHEMERALITY-FIX]` + `[2026-06-26 H1-ARCH-A-MIGRATION]` entries
 - `research/meta/subagent-cost-yield-ledger.md` — H2 instrumentation surfacing in session-start briefing
-- Commit `ce008ea6` — install.sh ship (Architecture 0)
-- Commit `34b436c6` — H2 ledger ship
-- Commit `cecc13fc` — H1-ACTIVATION-RESOLVED (12h-evaporation precedent)
-- Commit `fd7cb19d` — session-prime + macro-anchor wiring fix
+- Commit `7be02c0` — install.sh ship (Architecture 0)
+- Commit `d446ecd` — H2 ledger ship
+- Commit `4d0560a` — H1-ACTIVATION-RESOLVED (12h-evaporation precedent)
+- Commit `956d4a7` — session-prime + macro-anchor wiring fix
 - This commit — Architecture A migration

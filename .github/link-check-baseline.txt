@@ -1,15 +1,10 @@
 # Known-broken referral paths (pre-existing rot, 2026-07-06 migration audit).
 # Burn this list down over time; CI fails only on NEW breakage.
-research/INDEX.md:76: `signals/cross-source-log/2026-06-23-pm-cxmt-semianalysis-verification.md`
-research/INDEX.md:77: `signals/cross-source-log/2026-06-23-pm-jukan-cxmt-verification.md`
-research/INDEX.md:134: `signals/cross-source-log/2026-06-23-pm-cxmt-semianalysis-verification.md`
-research/INDEX.md:134: `signals/cross-source-log/2026-06-23-pm-jukan-cxmt-verification.md`
 research/companies/AIXTRON/thesis.md:69: `research/companies/LITE/thesis.md`
 research/companies/AIXTRON/thesis.md:70: `research/companies/COHR/thesis.md`
 research/companies/AMBA/thesis.md:161: `signals/cross-source-log/2026-06-01-amba-deep-dive-4-subagent-synthesis.md`
-research/companies/HYNIX/thesis.md:1225: `research/companies/HYNIX/facts.md`
+research/companies/HYNIX/thesis.md:1229: `research/companies/HYNIX/facts.md`
 research/meta/2026-05-26-ath-refresh-and-4092-prediction.md:148: `research/meta/2026-05-25-earnings-streak-stratification-2026-05-25.md`
-research/meta/day-state.md:31: `research/meta/w11-heartbeat-log.md`
 research/meta/signal-density-detection.md:55: `signals/triangulation-archive.md`
 research/meta/structural-winners-cohort.md:97: `signals/cross-source-log/2026-06-09-nidec-deep-dive-bypass-route-correction.md`
 research/meta/subagent-cost-yield-ledger.md:2857: `signals/cross-source-log/2026-06-15-pm20b-sk-hynix-adr-mid-july-verification-partially-verified-hold-gdr-core.md`
@@ -17,7 +12,6 @@ research/meta/tier-cascade-log.md:505: `companies/INNOLUX/thesis.md`
 research/meta/tier-cascade-log.md:505: `companies/AJINOMOTO/thesis.md`
 research/meta/todo.md:315: `signals/events/2026-05-26-china-ai-sovereignty-cluster.md`
 research/meta/todo.md:316: `signals/events/2026-05-26-china-ai-sovereignty-cluster.md`
-research/meta/workflow-11-autonomous-day-loop.md:52: `meta/w11-heartbeat-log.md`
 research/predictions/2026-05-29-HPE-Q2FY26.md:295: `companies/HPE/thesis.md`
 research/signals/cross-source-log/2026-06-05-portfolio-rotation-event-and-systems-thinking-meta-directive.md:46: `meta/daily-macro-pulse.md`
 research/signals/cross-source-log/2026-06-11-reuters-inp-export-controls-axt-lateral-confirmed.md:77: `companies/COHR/thesis.md`

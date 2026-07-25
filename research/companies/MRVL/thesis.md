@@ -183,7 +183,7 @@ Customer segmentation is structurally clean (HIGH confidence per Subagent absenc
 
 
 **Last updated:** 2026-06-12 PM (full refresh post 3-subagent deep-dive; supersedes 2026-06-02 stub which was pre-NVDA-$2B-investment-detail-and-pre-Trainium-demotion-disclosure)
-**Tier:** Active (HELD ~5.9% per portfolio rotation 2026-06-12; cost basis $286.26 ≈ spot $287)
+**Tier:** EXITED 2026-06-27 — watchlist-reference (was Active ~5.9%, cost basis $286.26; verified Trainium die-design-loss bear; re-entry trigger = die-design-minority disclosure OR Trainium-4 win; this line previously still read "Active (HELD ~5.9%)" — corrected 2026-07-06 harness audit, exit already documented in the 07-02 entries above)
 **Position target:** 5-7% if Q2 FY27 print (Aug-26) confirms thesis; 3-4% if Q2 disappoints. Current 5.9% is at the HIGH END of Active band given concentration + S&P inclusion catalyst + partial Trainium demotion
 **Anti-fragility:** 3/5 scenarios (wins S1 + partial S2; neutral S3 + S5; loses S4)
 **Foundation:** `signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`

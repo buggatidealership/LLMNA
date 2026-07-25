@@ -1,0 +1,51 @@
+#!/bin/bash
+# LLMNA git pre-push hook (built 2026-07-19, destructive-change governance CATASTROPHIC tier;
+# user prompt: "is confirmation before history-rewrite something the HARNESS ensures?" —
+# answer was NO until this hook; the CATASTROPHIC tier was instruction-level only).
+#
+# Blocks the two catastrophic push shapes at the last deterministic gate on this side:
+#   (a) REMOTE BRANCH DELETION  (git push origin :branch / --delete)
+#   (b) NON-FAST-FORWARD PUSH — the force-push / history-rewrite signature: the remote's
+#       current commit is NOT an ancestor of what is being pushed, i.e. the shared record
+#       would lose commits it currently has.
+# Override ONLY after explicit verbatim operator instruction naming the action:
+#   OPERATOR_APPROVED_FORCE_PUSH=1 git push ...
+# (token honesty is instruction-level; this stop is deterministic).
+#
+# Honest limits, stated per the instructions-vs-hooks doctrine:
+#   - `git push --no-verify` skips this hook entirely (as it does pre-commit). Not using
+#     --no-verify is instruction-level honesty.
+#   - The only stop that does NOT run on this machine is GitHub branch protection
+#     ("Do not allow force pushes" on main) — user-side setting, recommended as backstop.
+#   - If the remote commit is unknown locally (stale clone, never fetched), the ancestry
+#     test cannot pass and this hook BLOCKS (fail-closed). `git fetch origin <branch>`
+#     first resolves a false positive.
+
+if [ "$OPERATOR_APPROVED_FORCE_PUSH" = "1" ]; then
+  echo "=== pre-push: OPERATOR_APPROVED_FORCE_PUSH=1 — CATASTROPHIC-tier guard bypassed by operator token ==="
+  exit 0
+fi
+
+ZERO=0000000000000000000000000000000000000000
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ -n "$local_ref" ] || continue
+  if [ "$local_sha" = "$ZERO" ]; then
+    echo ""
+    echo "=== pre-push: BLOCKED — deletion of remote ref $remote_ref (CATASTROPHIC tier) ==="
+    echo "Explicit verbatim operator instruction required (destructive-change-governance.md)."
+    echo "After approval: OPERATOR_APPROVED_FORCE_PUSH=1 git push ..."
+    exit 1
+  fi
+  if [ "$remote_sha" != "$ZERO" ]; then
+    if ! git merge-base --is-ancestor "$remote_sha" "$local_sha" 2>/dev/null; then
+      echo ""
+      echo "=== pre-push: BLOCKED — non-fast-forward push to $remote_ref (history rewrite reaching the shared record; CATASTROPHIC tier) ==="
+      echo "Remote commit ${remote_sha:0:12} is not an ancestor of pushed ${local_sha:0:12} — the remote would LOSE commits."
+      echo "If this is a stale-clone false positive: git fetch origin first. Otherwise:"
+      echo "explicit verbatim operator instruction required (destructive-change-governance.md)."
+      echo "After approval: OPERATOR_APPROVED_FORCE_PUSH=1 git push ..."
+      exit 1
+    fi
+  fi
+done
+exit 0

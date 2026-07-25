@@ -1,0 +1,16 @@
+#!/bin/bash
+# LLMNA commit-msg hook (built 2026-07-18, N=2 mislabeled-commit class: 1294267, a4e2bdd).
+# CLAIMS GUARD: a commit whose staged content is ONLY the telemetry log but whose
+# message claims substantive work = the signature of silent write-failure (cwd reset).
+# Block unless the message admits it is telemetry. Message file = $1 (commit-msg stage
+# is the earliest hook with access to the message).
+MSG_FILE="$1"
+STAGED=$(git diff --cached --name-only)
+if [ "$STAGED" = "research/meta/hook-fire-log.md" ]; then
+  if ! grep -qiE "telemetry|hook-fire-log" "$MSG_FILE"; then
+    echo "=== commit-msg: BLOCKED — staged diff is ONLY hook-fire-log.md but the message claims other work ==="
+    echo "This is the mislabeled-commit signature (writes failed silently?). Fix the writes or say 'telemetry'."
+    exit 1
+  fi
+fi
+exit 0

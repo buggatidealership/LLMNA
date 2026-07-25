@@ -159,3 +159,5 @@ Per `signals/cross-source-log/2026-05-30-citrini-mlcc-tier-rotation.md` discussi
 **User-confirmed investability 2026-05-30:** DISCO 6146.T accessible on user's platform (alongside TEL 8035.T + Screen Holdings 7735.T also confirmed accessible).
 
 **Position implication:** ENTRY CANDIDATE now active per discussion 2026-05-30 — recommended 3-5% (€5-10K depending on remaining capital post-Monday MDB/DDOG/NOW execution). Cleaner bypass-route bet than Komatsu parent (diluted by 91% mining/construction). Inference log Entry #3 tracks Sumco-bypass-specific thesis resolution per `predictions/inference-log.md`.
+
+**2026-07-14 back-ref (Rule #10):** Y1 beneficiary map (per `signals/cross-source-log/2026-07-14-tue-yongin-y1-equipment-verification-beneficiary-map.md`) — grinder/dicer feed to the HBM4E chain noted; no fresh SKH-specific disclosure this pass. Position implication: NO ACTION. 🟡

@@ -1,6 +1,12 @@
 # Competitive Map — Who Competes With Whom
 
-**Last updated:** 2026-05-20
+**Last updated:** 2026-07-22
+
+## 📌 [2026-07-22] RACK-SCALE BATTLE UPDATE — first at-scale non-NVDA hyperscaler rack (per `signals/cross-source-log/2026-07-22-wed-tue-catchup-14screenshot-batch.md`)
+Microsoft deploys AMD Helios racks on Azure AT SCALE for its OWN frontier-model inference (T1, Jul-20-2026) — MSFT is the 4th Helios customer (OpenAI 1GW Oct-25, Oracle 50K MI450 Oct-25, Meta), but the FIRST hyperscaler running its own frontier models on non-NVDA rack architecture. NVDA held ~95% DC-GPU share per the relayed commentary (T3, unverified precision). The counter-datum keeping this a WATCH not a shift: NVDA's wafer allocation (>half of TSMC's ~85%+-locked '26-'27 leading edge, T2) and CPO commitment via the OCI consortium.
+**Two-branch pre-registration (Anthropic, B64-guarded) — RESOLVED 2026-07-22/23 → BRANCH (a) FIRED.** Anthropic reportedly signs as an AMD customer at Advancing AI (deal existence ~85%; WSJ terms 2GW/tens-of-billions/AMD-invests-up-to-$5B are UNVERIFIED-SINGLE-SOURCE pending a 2nd wire). **The NVDA-moat-erosion counter-thesis gains its 3rd independent leg** (MSFT-Helios-at-scale + wafer-secured roadmap + frontier-lab second-sourcing) — named WATCH item opened. **Not a position trigger.** Two catches that bound the read: (i) equity direction REVERSED vs OpenAI/Meta — AMD *buys* Anthropic equity (circular vendor-financing, NVDA template), not a warrant give-away → dilution-story improvement, but contradicts Jefferies' "no equity stakes" thesis; (ii) 2GW = ⅓ of each 6GW OpenAI/Meta deal → pre-event "exceeds Meta/OpenAI" rumor CONTRADICTED. B64: scale claims corroborating-only until 2nd wire. Full detail + framing-error corrections (OpenAI is 6GW not 1GW; prior tier = OpenAI+Meta not OpenAI+Oracle) in the batch artifact + `companies/AMD/thesis.md`.
+**[2026-07-22 EVE] 2nd wire IN — CORROBORATED (T1 AMD IR + CNBC + Reuters):** up to $5B AMD cash equity into Anthropic (~0.52% of ~$965B val), up to 2GW MI455X/Helios, first GW H1-2027, NO warrants (circular vendor-financing confirmed). **Reaction refutes moat-erosion urgency: NVDA +3% SAME DAY** — the market read it as a real AMD win, NOT Nvidia repricing. Moat-erosion counter-thesis = slow-share-gain story, not a repricing event. Per `signals/cross-source-log/2026-07-22-wed-eve-ai-brief-2day-ingest-jul21-22.md`.
+
 
 ## TL;DR
 

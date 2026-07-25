@@ -78,3 +78,7 @@ Update these weights at each checkpoint below.
 
 ## Update log
 - 2026-06-28 — file created; H1 45% / H2 35% / H3 20%; no checkpoint resolved yet. Next read: FMS/Hot Chips + SanDisk Q4 FY26 call (~Aug 2026).
+
+
+## 2026-07-15 EVE — Gate-1 (standard) watch items added (user question -> 1-agent research)
+Samsung = THIRD CAMP: own-HBF concept design since ~Oct-2025 (KR exclusive fnnews 2025-10-01, T2) + Hanmi TC-bonder for HBF (MTN 2026-05-26) + contradictory MOU-vs-proprietary standards signals; NOT confirmed OCP member. Micron = ABSTAINER (CXL+QLC bet, no product/membership; CEO capex all DRAM/HBM). Gate-1 'standard fragments' trigger now watches: (a) Samsung OCP membership resolution, (b) Samsung sample date, (c) FMS Aug-2026 posture reveals. Per `signals/cross-source-log/2026-07-15-wed-eve-hbf-micron-samsung-roadmap.md`.

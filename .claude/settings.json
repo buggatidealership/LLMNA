@@ -2,10 +2,25 @@
     "$schema": "https://json.schemastore.org/claude-code-settings.json",
     "_comment": "PROJECT-LEVEL hook config (Architecture A, codified 2026-06-26). All hooks point to in-repo paths so that container resets do NOT wipe hook activation. Survives across sessions and machines because it's version-controlled. See research/meta/hooks/DURABLE-ACTIVATION.md for full rationale. ~/.claude/settings.json is intentionally emptied to prevent merge-duplication of hook fires (Claude Code merges settings files per launcher-precedent).",
     "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/git-guard-pretooluse.py"
+                    }
+                ]
+            }
+        ],
         "SessionStart": [
             {
                 "matcher": "",
                 "hooks": [
+                    {
+                        "type": "command",
+                        "command": "git -C \"$CLAUDE_PROJECT_DIR\" config core.hooksPath research/meta/hooks/git"
+                    },
                     {
                         "type": "command",
                         "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/session-start-hook.py"
@@ -39,6 +54,10 @@
                     {
                         "type": "command",
                         "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/cascade-enforcement-hook.py"
+                    },
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/session-prime-cascade-hook.py"
                     },
                     {
                         "type": "command",
@@ -83,14 +102,38 @@
                     {
                         "type": "command",
                         "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/macro-anchor-hook.py"
+                    },
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/borrowed-vs-firstprinciples-hook.py"
                     }
                 ]
             }
         ]
     },
     "permissions": {
+        "_comment": "HEADLESS ALLOW-LIST (added 2026-07-08, E6 fix; user-approved same day). Web routines have NO approval prompts - tools not listed here are SILENTLY AUTO-DENIED (per code.claude.com/docs/en/routines.md + permission-modes.md: defaultMode bypass/dontAsk is ignored on web). 4/4 silent wake spawns traced to this: allow-list held only 'Skill', so spawned sessions could not push, search, or spawn verification agents. Scope kept deliberate: git ops + python3 (compute scripts) + web read tools + subagents + file tools. NOT allowed: broad Bash (injection blast-radius control - wake sessions read untrusted web content and push to main). Protected paths (.claude/, .git/) still always prompt on web by design - wakes can never widen their own permissions.",
         "allow": [
-            "Skill"
+            "Skill",
+            "Read",
+            "Write",
+            "Edit",
+            "Glob",
+            "Grep",
+            "WebSearch",
+            "WebFetch(domain:*)",
+            "Agent",
+            "Task",
+            "Bash(git add *)",
+            "Bash(git commit *)",
+            "Bash(git push *)",
+            "Bash(git pull *)",
+            "Bash(git fetch *)",
+            "Bash(git checkout *)",
+            "Bash(git status*)",
+            "Bash(git log *)",
+            "Bash(git diff *)",
+            "Bash(python3 *)"
         ]
     }
 }
