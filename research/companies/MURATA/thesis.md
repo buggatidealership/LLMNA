@@ -1131,3 +1131,13 @@ Back-reference: `signals/cross-source-log/2026-07-25-opus5-vs-fable5-model-layer
 **Falsifiers: unchanged and unfired.** MLCC hikes live; no model-layer event touches the thesis conditions directly.
 
 **Position implication:** HOLD — no size change — 🟡 the capex-doubt shock that drove the July drawdown now has a documented counter-mechanism and a 48-hour cohort reversal behind it, which strengthens (does not alter) the existing HOLD; Q1 FY3/27 print 2026-07-31 remains the adjudicator.
+
+## 2026-07-25 PM — Korea–US memory deals + hyperscaler capex check
+
+Back-reference: `signals/cross-source-log/2026-07-25-korea-us-memory-950bn-plus-cxmt-threat-assessment-2agent.md`
+
+No direct read-through — MLCC demand is levered to AI-server build volume, not to memory contracting specifically. The ~$950B Korea–US memory supply agreements (announced 2026-07-25) are supportive at **3rd order (P~40%, my model)** via total AI-server build-rate, not at 1st order.
+
+More directly relevant: the **capex-doubt thread that drove the Jul-16/17 drawdown has weakened materially ahead of the prints.** No hyperscaler has guided FY2026 capex down — Alphabet **raised to $195-205B** on 2026-07-22; Meta stands at **$125-145B** with consensus (~$139B) positioned *above* the guide midpoint into 2026-07-29; Microsoft ~$190B; Amazon ~$200B. TSMC **raised** 2026 capex to $60-64B on 2026-07-16. The only deceleration evidence found is out-year growth-RATE (UBS: +76% 2026, +25% 2027, +6% 2028) and a BIS risk warning — neither is a spending cut.
+
+**Position implication:** HOLD — no size change — 🟡 the bear narrative behind July's drawdown is weakening on evidence but is not yet adjudicated; MSFT/Meta 2026-07-29 and AMZN 2026-07-30 remain the dated tests, and the Q1 FY3/27 print on 2026-07-31 remains this name's own adjudicator.

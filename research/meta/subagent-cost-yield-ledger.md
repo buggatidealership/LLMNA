@@ -3142,3 +3142,13 @@
 - **Inter-agent contradiction caught and resolved: 1** (benchmark-efficiency vs deployed-cost) — the single most investment-relevant finding; would not have surfaced from a single-agent pass. **Direct evidence for Rule #17 ensembling value.**
 - Thesis cascade: MURATA + SUMCO back-references + Position implications; private-tracker Anthropic section rewritten.
 - Position implication delta: **none** — 🟡 HOLD both, zero falsifiers fired.
+
+### 2026-07-25 PM — Jul-25 morning-brief verification (Rule #16, 2 agents)
+- Subagents: 2 parallel (Korea/Samsung/SK Hynix + CXMT threat assessment; Meta Superintelligence + hyperscaler capex setup). ~251k tokens, 51 tool-uses.
+- Yield: **HIGH x2.**
+  - Agent A: aggregator said Samsung/SKH deals were "set to announce" — **Korean-language search found them ALREADY ANNOUNCED with figures**, ~$950B total (Samsung-Broadcom $200B 5yr MOU; SK-Nvidia $750B). English aggregator was ~24h stale. **Native-language parallel search was the decisive tool** (Principle #36 validated). Also corrected 8200 MT/s from "spec" to "overclock" (CXMT rates 8000), and confirmed the standing CXMT falsifier has NOT fired.
+  - Agent B: **B40 garble caught** — the "Meta struggling" item splices a 2025-07-11 SemiAnalysis piece's language onto a 2026-07-09 piece whose authors are explicitly "overall bullish." Scale AI 49%/$30B is **stale by ~13 months** (June 2025). Also resolved the capex-doubt open thread: no hyperscaler guiding down; TSMC raised on 2026-07-16.
+- **Framing errors caught: 3** (stale "set to announce"; 8200-as-spec; Meta two-piece splice + 13-month-stale Scale AI).
+- Aggregator-hygiene: **4th recycled/garbled item from this brief class in 8 days** — downweight extended to SemiAnalysis-attributed items in this class.
+- Thesis cascade: SUMCO (🟢 evidence-quality upgrade, no sizing change) + MURATA (🟡).
+- Position implication delta: **none** — HOLD both, zero falsifiers fired, sizing user-gated per Rule #11.
