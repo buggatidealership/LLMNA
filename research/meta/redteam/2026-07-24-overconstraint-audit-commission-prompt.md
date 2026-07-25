@@ -6,6 +6,14 @@
 
 **Delivery:** paste the block below into a fresh Claude Code session with this repo. Nothing else — no follow-up steering. Steering it would commit the exact sin under audit.
 
+> **⚠️ COMPANION ARTIFACT (added 2026-07-25):** a minimal-injection variant exists at
+> `meta/redteam/2026-07-25-overconstraint-audit-commission-prompt-v2-LIGHT.md` (~190 words vs ~700 here),
+> written after the operator's critique that this version injects too many of my own preconceived notions —
+> specifically that the STANDARD-vs-METHOD discriminator below is **my** theory (N=0) and pre-decides the
+> answer shape. **Neither version is established as better.** The companion file specifies a pre-registered
+> A/B (two fresh Opus-5 sessions, identical repo, no steering) with falsifiers written in advance.
+> Read that file before running either prompt.
+
 ---
 
 ## THE PROMPT (copy from here)
