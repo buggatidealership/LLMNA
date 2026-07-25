@@ -3597,3 +3597,5 @@
 **Material yield class:** 3× HIGH. **Audit-day classification:** POSITIVE.
 **Artifact:** `meta/redteam/2026-07-25-opus5-vs-fable5-model-selection-dive.md`
 **Commit:** (this commit)
+
+| 2026-07-25 EOD | 1 (Leg-B discovery, unanchored evening sweep) | ~123k tokens, 39 tool-uses | KR single-stock leveraged-ETF crackdown (NEW mechanism, dated Aug-5) + Tokyo AI-capex risk-off transmission + Gulf/Aramco refinery strikes + Section 301 permanent-tariff regime + scenarios.md Gulf-scenario gap (absence question) + 3 anomalies (Disco sell-the-beat, AMD-Cerebras coopetition, split-chamber war-powers) | **HIGH** — surfaced a previously-unmodelled dated flow risk to the largest held position that no portfolio-anchored leg could have found, independently corroborated the GOOGL −7.1% tape correction by a separate route, and correctly self-flagged one item as stale/out-of-window + penalized one as restatement | YES — SKHY/MURATA/SUMCO/KIOXIA/DISCO cascades | NO position delta (user-gated; no falsifier fired) | EOD-Routine full leg (evening quiet) |

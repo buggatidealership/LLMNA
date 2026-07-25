@@ -1,3 +1,5 @@
+**📌 [2026-07-25 EOD] G-1 CORRECTION — the capex-raise selloff was WORSE than recorded (Rule #10 back-ref).** Per `signals/cross-source-log/2026-07-25-fri-eod-reaction-leg-grade-legb-kr-etf-crackdown.md`. The corpus carried "GOOGL sold off ~5% AH" on the FY26 capex raise to $195-205B. Settled two-vendor tape: **07-22 close $342.09 → 07-23 close $317.69 = −7.13%** (computed; independently corroborated at −7.1% by the 07-25 Leg-B discovery sweep). G-1 itself remains TRUE (the raise happened, Q2 capex $44.9B, Cloud +82%). What changes is magnitude, and it cuts one way: **the market punished the capex raise harder than the harness recorded**, which STRENGTHENS the Principle #48/#49 capex-flip reflexivity read rather than weakening it. Alphabet is not held; the reason this matters is transmission — it is the demand-floor signal for the memory/wafer complex (SKHY/SUMCO/MURATA) and simultaneously the clearest instance of the reaction-function flip. **Position implication: ⚪ NO ACTION — 🟢 — not held; carried as the reference instance of good-capex-bad-price.**
+
 # Alphabet (GOOG / GOOGL) — Thesis (Compact)
 
 **Last updated:** 2026-05-21

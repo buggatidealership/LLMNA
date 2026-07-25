@@ -79,6 +79,39 @@ Falsifier: guide merely REAFFIRMED $180-190B = FALSE (not a miss — the reaffir
 
 **G-1 = demand-floor confirmation + the reflexivity catch:** GOOGL's raise to $195-205B validates the Principle #48 read-through (TSMC capex +15% → predicted the GOOGL raise) AND the memory-demand floor for SKHY/SUMCO/MURATA. BUT GOOGL sold off ~5% AH on the raise (+ a Gemini 3.5 delay confound) = capex-flip reflexivity (Principle #49 TRACE) **instance #2 after TSMC**; TXN also beat-and-raised and sold ~−3.6% ("sell the news"). The reaction-function-flip I pre-registered is materializing cohort-wide.
 
-**Cohort context:** IBM −25% (worst day on record, guide cut); NOW +3.7% AH (beat-and-raise); GOOGL −5% AH (capex + Gemini delay); TSLA sold off (EPS $0.33 miss, op-margin 1.4%); TXN −3.6% AH (sell-the-news).
+**Cohort context:** ~~IBM −25% (worst day on record, guide cut); NOW +3.7% AH (beat-and-raise); GOOGL −5% AH (capex + Gemini delay); TSLA sold off (EPS $0.33 miss, op-margin 1.4%); TXN −3.6% AH (sell-the-news).~~ **⚠️ SUPERSEDED 2026-07-25 — see the corrected settled-close table in the reaction-leg GRADE below. This line was written ~23:35 UTC on print night from AFTER-HOURS quotes; two of five entries do not survive the settled tape: (a) "IBM −25%" is the 2026-07-14 PRE-WARNING crash (−25.21%, close $217.07), 8 sessions BEFORE this print — temporally misattributed into the print-reaction frame; the actual print reaction was +0.43%; (b) "NOW +3.7% AH" reversed to −3.69% at the T+24h close. GOOGL/TXN were directionally right but understated.**
+
+---
+
+## ✅ GRADE — REACTION LEGS I-5 / N-5 (graded 2026-07-25 EOD; resolution close was 07-23 → **2 sessions late**, logged as a process miss)
+
+**Instrument (escorted, decomposed not acted on):** EODHD daily EOD + Finnhub `/quote` cross-check — two independent vendors agreeing to the cent on every close used below; Finnhub `/stock/profile2` confirmed instrument identity (`IBM` = International Business Machines Corp, `NOW` = ServiceNow Inc, both NYSE). `adjusted_close == close` across the window → no split/dividend adjustment in play. Print date pinned T1-adjacent via Finnhub earnings calendar: **all five cohort names AMC 2026-07-22** → the T+24h session is the **07-23 close**, exactly as pre-registered.
+
+| Leg | P | Outcome | 07-22 close → 07-23 close | Move |
+|---|---|---|---|---|
+| **I-5** (IBM T+24h reaction POSITIVE) | 0.55 | ✅ **TRUE** | $205.77 → $206.65 | **+0.43%** |
+| **N-5** (NOW T+24h reaction POSITIVE) | 0.60 | ❌ **FALSE** | $95.46 → $91.94 | **−3.69%** |
+
+**Corrected cohort tape (all 07-22 close → 07-23 close, computed):**
+
+| Name | Print content | T+24h reaction | Content→reaction sign |
+|---|---|---|---|
+| IBM | FY26 guide **CUT** to 4-5% cc | **+0.43%** | **INVERTED** |
+| NOW | beat-and-**RAISE** (2nd raise) | **−3.69%** | **INVERTED** |
+| GOOGL | capex **RAISED** $195-205B, beat | **−7.13%** | **INVERTED** |
+| TXN | beat-and-**RAISE** | **−3.13%** | **INVERTED** |
+| TSLA | EPS **MISS** ($0.33) | **−14.52%** | aligned |
+
+**Scores (computed):** reaction legs Brier **0.2812**, directional **1/2**. Full 11-leg slate: Brier **0.1344**, directional **10/11** (vs coinflip 0.25). The print legs' 0.1018 stands unchanged; the slate degraded because the reaction legs are the hard half — which the registration itself said in advance ("no house base rate… genuinely uncertain; spread stated, not collapsed").
+
+### 3-layer GRADE
+
+- **INPUT — the failure, and it is at the GRADING step, not the prediction step.** The registration's inputs were sound; I-5's P=0.55 explicitly reasoned from "bad news pre-released + −25% reset bar," correctly treating the −25% as the *prior* pre-warning crash. The defect entered at write-up time: the cohort line used ~3.5h-old AFTER-HOURS quotes as if they were settled outcomes, and re-used the −25% figure inside the print frame it did not belong to. AH ≠ close is not a nuance here — NOW's AH pop fully reversed, and IBM's misattribution inverted the sign of how the market received the print.
+- **COMPUTATION — clean.** The 9-leg Brier reproduces to 0.1018 exactly on recomputation. No arithmetic defect anywhere in the original grade.
+- **REASONING — N-5 failed for a *generalizable* reason, and the failure is itself the finding.** N-5's P=0.60 rested on "beat-and-raise ⇒ positive reaction." NOW **did** beat and raise (N-1/N-2/N-3 all TRUE) and still fell 3.69%. That is not idiosyncratic: **4 of 5 cohort names printed content whose sign the reaction inverted**, in a single session. The prior that a good print earns a good reaction is a PRE-regime-flip prior, applied to a POST-flip tape. I-5 TRUE is the mirror image — IBM cut guidance and closed green because its bar had already been reset by the 07-14 crash. **In this regime the print's CONTENT stopped predicting the reaction's SIGN; the BAR'S POSITION did.**
+
+**This is Principle #48/#49 capex-flip reflexivity at N=4-in-one-session** — previously logged at N=2 (TSMC, GOOGL) off AH quotes. It is now computed off settled closes, and GOOGL's true move (−7.13%) is **worse** than the −5% the corpus carried, so the reflexivity read is *strengthened* by the correction, not weakened.
+
+**Position implication: ⬜ NO ACTION (user-gated).** The correction does not touch a falsifier on any held name. It sharpens the SKHY add gate's second half: the reaction-function flip is now measured rather than inferred, and it is broader than recorded. 🟢 HARD (two-vendor settled closes).
 
 **Position implication: ⬜ NO ACTION (user-gated). BUT the SKHY-add gate now has its demand half CONFIRMED (G-1 TRUE, capex floor rising) AND its reflexivity risk MATERIALIZING (raiser sold off) — exactly the two-part gate; the add stays gated on the Jul-29 contract-durability + whether memory names hold up through the capex-flip.** 🟡
