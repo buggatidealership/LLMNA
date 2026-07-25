@@ -1116,3 +1116,18 @@ Per `signals/cross-source-log/2026-06-03-computex-multilingual-24h-deepdive.md`:
 ## 2026-07-23 — 17-day catch-up: Jul-16/17 systemic drawdown, fundamentals intact (back-ref: `signals/cross-source-log/2026-07-23-w11-wake-audit-3-17day-catchup.md`)
 Tape (T2 series, treat as directional): ¥11,080 (Jul-3) → ¥7,632 trough (Jul-17, "China AI shock" Kimi-K3 + Kioxia-verdict + leverage-unwind rout; Nikkei −4.0%, SOX −4.3%) → ¥8,538 (Jul-23, 2-source) = −23% vs Jul-3. Principle #41 verdict: SYSTEMIC (Ibiden ~−60% from high, Kioxia −52% from high — whole JP AI-semi complex). **Falsifier check: NONE FIRED** — 3rd MLCC hike wave effective Jul-1 (+10-40% AI-server/auto high-cap, T1/T2), lead times 4-6mo, AI/DC MLCC revenue guided +85-90% YoY FY3/27; Alphabet capex RAISED $195-205B (Jul-22 T1) = demand-side counter-evidence to the Kimi-K3 capex-doubt narrative. New 2nd-order watch: cheap open-weight models → hyperscaler capex doubt (adjudicators: MSFT/Meta Jul-29, AMZN Jul-30 guides). **Q1 FY3/27 print CONFIRMED Jul-31 14:00 JST; cons OP ~¥92.7bn (T2)** — grade vs `predictions/2026-07-02-MURATA-Q1FY27-earnings-prediction.md`.
 **Position implication: 🟡 HOLD 336sh — no size change — drawdown is systemic macro noise per Critical Rule #8 (no written falsifier fired; pricing/fundamental legs strengthened in-window); Jul-31 print = the dated adjudicator; sizing user-gated.**
+
+## 2026-07-25 — Model-layer deep dive cascade (Opus 5 vs Fable 5, 4-agent)
+
+Back-reference: `signals/cross-source-log/2026-07-25-opus5-vs-fable5-model-layer-deep-dive-4agent.md`
+
+**Why a model-layer artifact touches this name:** the Jul-16/17 systemic rout that marked the equity sleeve down (Murata −23% vs Jul-3, adjudicated SYSTEMIC 2026-07-23 with zero falsifiers fired) was driven by the Kimi-K3 capex-doubt narrative. This pass supplies the mechanism that was missing at the time — **and it inverts the bear read.**
+
+- **The Jul-18 reaction was real but resolved fast (T2):** Taiwan >−6%, Japan ~−4%, Nasdaq ~−1.5% on the "cheap AI means the capex won't pay back" narrative — then **reversal within ~24-48h**, memory names rebounding **>10%**, with Morgan Stanley, JPMorgan and UBS all recommending buying the dip.
+- **BofA's stated counter-mechanism:** *"every open-source model download means customers must deploy the model themselves, generating fresh demand for HBM, DRAM, NAND."* Open-weight proliferation is component-demand **positive** via self-deployment, not negative via capex-doubt. This mechanism was absent from the harness's Jul-17 framing.
+- **Demand-layer corroboration:** Micron confirmed on its Q3 FY2026 call (2026-06-24, T1) that *"inferencing workloads have crossed over training workloads"* — inference now ~60-70% of AI compute. Microsoft guided FQ4 capex >$40B *"reflecting elevated memory and component pricing."* Alphabet raised FY26 capex to $195-205B on 2026-07-22 (T1).
+- **Honest counterweight (Rule #18):** the harness's own U8/HU8b demand-destruction hypothesis stands at **45% weight** and is NOT revised down on this pass; Opus 5 is itself a live efficiency example (~1/7th the reasoning tokens of Opus 4.8 at matched capability per T2), and the Q1-2026 DDR5-over-HBM per-wafer-profitability crossover remains the cleanest crack in the bull case.
+
+**Falsifiers: unchanged and unfired.** MLCC hikes live; no model-layer event touches the thesis conditions directly.
+
+**Position implication:** HOLD — no size change — 🟡 the capex-doubt shock that drove the July drawdown now has a documented counter-mechanism and a 48-hour cohort reversal behind it, which strengthens (does not alter) the existing HOLD; Q1 FY3/27 print 2026-07-31 remains the adjudicator.

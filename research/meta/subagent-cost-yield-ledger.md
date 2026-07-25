@@ -3130,3 +3130,15 @@
 - Brief-framing errors caught: 4 (2 garbles + 1 recycle + 1 scope overreach) — plus 3 triage-stage dedup receipts adjudicated WITHOUT agent spend (Colossus-2, Rubin CPX, Railway)
 - Thesis cascade: none (zero held-book touches); artifact: `signals/cross-source-log/2026-07-25-evening-brief-jul24-ingest-2leg.md`
 - Position implication delta: none — 🟡 HOLD both held names unchanged
+
+### 2026-07-25 — Opus 5 vs Fable 5 model-layer deep dive (Rule #16, user-directed "don't assume, verify")
+- Subagents: **4 parallel** (specs/benchmarks; pricing economics; strategic/market reaction; adversarial compute-demand chain). ~557k subagent tokens, 215 tool-uses total.
+- Yield: **HIGH x4** — no low/zero fires.
+  - Agent 1 (benchmarks): downloaded + full-text-searched the **193-page primary system card**. Found Opus 5 LOSES to Fable 5 on 4 of 13 benchmarks; "within 0.5%" scoped to CursorBench 3.2 only (absent from the card); both models ASL-3 (85% cyber claim = operational, not RSP); **no data-retention requirement on Opus 5** = trust-tax resolution; Commerce Dept export-control review of Mythos 5.
+  - Agent 2 (pricing): **$5/$25 static since Nov-2025** — killed the "price cut" premise. SemiAnalysis margin model 38%->70% CONTRADICTED my 2026-07-24 margin-compression read.
+  - Agent 3 (strategic): Anthropic's announcement has ZERO competitor mentions — "price war" is press-generated. Cost-per-task $2.03 vs $2.75 = 26% not 50%. Kratsios->open-weight-letter causal sequence found.
+  - Agent 4 (adversarial demand chain): surfaced the **token-efficiency contradiction** with Agent 3 (resolved via thinking-on-by-default); Micron T1 inference-crossover quote; Jul-18 rout mechanism + 48h reversal + BofA counter-mechanism.
+- **Framing errors caught: 4** — (1) my own margin-compression read, (2) the "price cut" premise, (3) "half price" vs 26% realised, (4) "beats Fable 5" as a uniform claim.
+- **Inter-agent contradiction caught and resolved: 1** (benchmark-efficiency vs deployed-cost) — the single most investment-relevant finding; would not have surfaced from a single-agent pass. **Direct evidence for Rule #17 ensembling value.**
+- Thesis cascade: MURATA + SUMCO back-references + Position implications; private-tracker Anthropic section rewritten.
+- Position implication delta: **none** — 🟡 HOLD both, zero falsifiers fired.
