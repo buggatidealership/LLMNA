@@ -3122,3 +3122,11 @@
 **Position implication delta:** NONE. **Material yield class:** HIGH. **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-06-kr-jp-morning-scan-prelim-eve.md` **Commit:** (this commit)
 - 2026-07-23 | W11 wake-audit-3 catch-up fan-out | 4 fires (Samsung-GRADE 62.6k / ASML+TSMC-GRADE 84.5k / held-book-sweep 60.6k / memory-market+NBIS 125.6k ≈ 333k) | yields: 4× HIGH — 3 prediction GRADEs recovered + Samsung/ASMPT/Advantest calendar corrections + held-book Jul-16/17 systemic-rout adjudication (falsifier-none-fired) + SK-Siltron-watch realized + BOK-hike/KRW-1480 baseline refresh + NBIS T+30 breach w/ NVDA-13G confound | artifact: signals/cross-source-log/2026-07-23-w11-wake-audit-3-17day-catchup.md
+
+### 2026-07-25 — Jul-24 evening-brief fresh-cluster verification (Rule #16, INGEST)
+- Subagents: 1 (research agent, web-verified; ~124k tokens, 27 tool-uses, ~185s)
+- Items verified: 7 (Opus 5 release/pricing; OpenAI-HF breach; 25-co open-weight letter; Genesis $5B; Amazon-Anthropic Trainium recycle-check; Hetzner inference; Intel 14A/Q2)
+- Yield: **HIGH** — 4 NEW-AND-REAL confirmed with T1 anchors; 2 GARBLES caught (Genesis "first awards" false — DOE ~$320M Dec-25 precedent; Hetzner "service" = 1-model no-SLA experiment); 1 RECYCLE caught (Amazon-Anthropic = Apr-20 deal, B40.1 2nd catch); 1 framing overreach scoped ("less restrictive" = cyber-classifiers only); PD-4 adjudicated PARTIAL-ignition with bar clarified
+- Brief-framing errors caught: 4 (2 garbles + 1 recycle + 1 scope overreach) — plus 3 triage-stage dedup receipts adjudicated WITHOUT agent spend (Colossus-2, Rubin CPX, Railway)
+- Thesis cascade: none (zero held-book touches); artifact: `signals/cross-source-log/2026-07-25-evening-brief-jul24-ingest-2leg.md`
+- Position implication delta: none — 🟡 HOLD both held names unchanged

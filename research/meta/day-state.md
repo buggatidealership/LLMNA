@@ -1,6 +1,6 @@
 # DAY-STATE — the autonomous-loop working memory (Workflow #11)
 
-**ARMED SCHEDULE (re-armed 2026-07-23 ~22:25 UTC after WAKE-AUDIT-3 FAIL-infrastructure — 17-day dead window Jul-7→Jul-23, zero autonomous commits, CronList empty; see `signals/cross-source-log/2026-07-23-w11-wake-audit-3-17day-catchup.md`): MINIMAL TWO-SLOT SET, UTC-explicit: KR/JP 00:22 UTC daily + EOD 20:17 UTC daily (7-day expiry ~Jul-30). STANDING CONCLUSION (now demonstrated at 17-day scale): all in-session scheduling is best-effort; perpetuity requires the user-side platform Routine — `meta/platform-trigger-setup.md` (repo/branch references CORRECTED 2026-07-23 to LLMNA / claude/new-session-drppai after the Jul-6 migration left them stale). Routine setup PENDING user execution = the binding constraint.**
+**ARMED SCHEDULE (re-armed 2026-07-25 ~00:06 UTC after WAKE-AUDIT-4 — the Jul-23 re-arm died within ~26h: both Jul-24 slots produced ZERO commits, CronList EMPTY again; FOURTH consecutive FAIL-infrastructure, logged inline in `signals/cross-source-log/2026-07-25-evening-brief-jul24-ingest-2leg.md`): MINIMAL TWO-SLOT SET, UTC-explicit: KR/JP 00:22 UTC daily + EOD 20:17 UTC daily (7-day expiry ~Aug-1). STANDING CONCLUSION (4 instances, modes identical): all in-session scheduling is best-effort; perpetuity requires the user-side platform Routine — `meta/platform-trigger-setup.md` (repo/branch references CORRECTED 2026-07-23 to LLMNA / claude/new-session-drppai). Routine setup PENDING user execution = the binding constraint.**
 
 ## Catalyst clock (next 14 days)
 - **2026-07-24: Shin-Etsu Q1 FY3/27** — SUMCO peer read (wafer LTA language).
@@ -33,7 +33,13 @@ None. (NBIS package resolved/superseded Jul-3; book reset Jul-5.)
 - TrendForce: Q3 forecasts REAFFIRMED 2026-07-09 (server DRAM +13-18% w/ LTA-cap mechanism; T1 press 20260709-13140) — last-seen Jul-23 (catch-up agent). Next expected: Q3 revision ~Aug.
 - THE ELEC / ETNews / kabutan / DigiTimes / FnGuide / SemiAnalysis: last swept via catch-up agents 2026-07-23 (SK Siltron Gumi startup via DigiTimes Jul-15; Murata/SUMCO series via Yahoo-JP/Nikkei relays; FnGuide SKH cons via jbnews).
 
-## 2026-07-23 digest (this session)
+## 2026-07-25 digest (user-shared Jul-24 evening brief, 81-source T3 aggregator)
+1. **WAKE-AUDIT-4: FAIL-infrastructure #4** — Jul-23 re-arm died <26h; slots re-armed Jul-25 ~00:06 UTC. Platform Routine remains the binding constraint.
+2. Two-leg INGEST (`signals/cross-source-log/2026-07-25-evening-brief-jul24-ingest-2leg.md`): fresh-cluster scorecard **4 NEW-AND-REAL / 1 RECYCLED / 2 GARBLED** + 3 triage dedup receipts (Colossus-2 + Rubin CPX both at 3rd recurrence, Railway). Fresh & real: Claude Opus 5 (Jul-24, $5/$25 = half flagship price, "less restrictive" = cyber-classifier-scoped only); OpenAI/HF agent-executed breach (red-team sandbox context — **PD-4 PARTIAL ignition, bar clarified: production incident required for tick**); 25-co open-weight letter (OpenAI/Anthropic/Google absent; TC-10 policy thread); Intel Q2 $16.1B +25% YoY. Garbled: Genesis $5B (expansion, not first awards — DOE ~$320M Dec-25); Hetzner (1-model no-SLA experiment, not a service). Recycled: Amazon-Anthropic Trainium (Apr-20 deal, 2nd catch, B40.1).
+3. **Leg B thread:** model layer commoditizing from BOTH ends (open-weight Kimi K3 + half-price closed flagship) while state steps in as funder ($5B Genesis) + referee (open-weight letter). PD-1 N+1-lean, PD-2 reinforced, L28/Jevons feeder — register ticks deferred to next register touch (single-brief discipline). Kimi-K3 capex-doubt adjudicators unchanged: MSFT/Meta Jul-29, AMZN Jul-30.
+4. Zero direct held-book touches; no thesis cascade. Grading-log Pending-table hygiene done (8 stale rows → 2 annotated partial-grade rows: Samsung prelim + NBIS T+30).
+
+## 2026-07-23 digest (prior session)
 1. **Full-harness read COMPLETE: 587/587 files** (standing user directive satisfied; coverage verified by file-list diff).
 2. Semi Doped 7-item ingest committed (`80708ca`): TC-7 N=5, TC-10 N=10, TC-11 N=2, STM pull-forward, MURATA/Navitas 2nd-order note. Verification queue item #6 RESOLVED by catch-up: Kimi K3 CONFIRMED shipped (WAIC, Jul-17 market shock).
 3. **WAKE-AUDIT-3: FAIL-infrastructure (17 days, third instance)** → re-armed 2 slots + sentinel + platform-trigger-setup corrected (`901e6ab`).

@@ -10,14 +10,8 @@ Index of every prediction made by the system. Each row resolves to "pending" or 
 
 | Date made | Resolution target | Ticker | Event | Prediction file |
 |---|---|---|---|---|
-| 2026-06-12 | T+24h ~2026-06-19 to 22 (paper-dependent); T+72h ~06-22 to 25 | KIOXIA | VLSI Symposium 2026 joint Kioxia/SanDisk MSA-CBA paper (L14/L14-v2 forward-application test, L17 candidate N=1) | `2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md` |
-| **2026-06-19** | **T+5 ~2026-06-27 / T+15 ~2026-07-07 / T+30 ~2026-07-22 (primary adjudicator)** | **NBIS** | **Nasdaq-100 inclusion effective 2026-06-22 — B48 candidate "event-marker historical-pullback bias" adjudicator test + user R2 hypothesis empirical-verification** | `2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md` |
-| 2026-07-02 | 2026-07-07 prelim (+ full ~Jul-23) | Samsung 005930 | Q2 prelim: rev ₩175-182tn (pt ₩178tn) / OP ₩88-97tn (pt ₩92tn) vs cons ₩171.37tn/₩84.98tn; cohort-barometer reaction bands | `2026-07-02-SAMSUNG-Q2-prelim-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-15 | ASML | Q2: rev pt €8.95B / EPS pt €8.15 / BOOKINGS €11-14bn (pt €12.5bn) / FY26 reaffirm-upper-half P~60% | `2026-07-02-ASML-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-16 (checkpoint Jul-10) | TSMC | Q2: rev pt ~$40.8B (above guide high-end; monthly-math-anchored) / EPS pt ~$4.05/ADR / Q3 guide pt ~$44B | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
-| 2026-07-02 | ~2026-07-07 | Samsung (prelim; cohort keystone) | rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn (P beat ~70%); re-open amplifier bands | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
-| 2026-07-02 | 2026-07-15 | ASML | rev pt €8.95B / EPS pt €8.20 / bookings pt ~€12.5bn (LOW conf, INPUT gap flagged) | `2026-07-02-ASML-Q2-earnings-prediction.md` |
-| 2026-07-02 | 2026-07-16 | TSMC | rev pt $40.1B (guide-anchored; SELF-CORRECTION logged — monthly math not held; v2 at Jul-10 June monthly) / EPS pt $3.90 / capex-raise P~55% | `2026-07-02-TSMC-Q2-earnings-prediction.md` |
+| 2026-07-02 | ~2026-07-07 prelim GRADED (PARTIAL — full print 2026-07-30 completes DS/ASP legs) | Samsung (prelim; cohort keystone) | rev pt ₩178tn / OP pt ₩92tn vs cons ₩84.98tn — **prelim actual OP ₩89.4tn: beat bar, below pt, in band — see 2026-07-23 GRADE block** | `2026-07-02-SAMSUNG-Q2-prelim-prediction.md` |
+| **2026-06-19** | **T+30 2026-07-22 BREACHED — PARTIAL grade (T1 closes + $275.50-vs-$283.61 reference reconcile pending; see 2026-07-23 GRADE block)** | **NBIS** | **Nasdaq-100 inclusion — B48 adjudicator: threshold breached WITH Meta-Compute/NVDA-13G confound stack → marker WEAK-CONFIRMED N=1, not promotable** | `2026-06-19-NBIS-nasdaq-100-inclusion-pre-registration.md` |
 | 2026-07-02 | ~2026-07-29 | SK Hynix (HELD #1) | Q2: rev pt ₩88tn / OP pt ₩68tn (vs cons ₩63.0tn; P(beat)~75%) / NI pt ~₩51tn; 2027-HBM-language pre-registered; v2 ensemble T-5d | `2026-07-02-SKHYNIX-Q2-earnings-prediction.md` |
 | 2026-07-02 | 2026-07-31 | Murata (HELD) | Q1 FY27: rev pt ¥505bn / OP pt ¥105bn (price-hike quarter front-load) / P(FY-raise)~25%; v2 T-5d | `2026-07-02-MURATA-Q1FY27-earnings-prediction.md` |
 | 2026-07-02 | late-Jul→Aug-13 (date TBC) | SanDisk (HELD) | Q4 FY26: rev pt $8.4B (above guide high) / NG EPS pt $33.5 / Q1-FY27 guide pt ~$9.2B; v2 T-5d + L17 leg | `2026-07-02-SNDK-Q4FY26-earnings-prediction.md` |
