@@ -1401,3 +1401,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-25 13:06:12Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-07-25 22:28:40Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
 - 2026-07-25 22:31:17Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
+- 2026-07-25 22:39:05Z session-prime-hook event=compact injected=False (skipped non-startup)
+- 2026-07-25 22:43:11Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))
