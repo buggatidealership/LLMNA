@@ -94,7 +94,27 @@ Agent 4 downloaded and full-text-searched the **193-page Claude Opus 5 System Ca
 | AA-Briefcase (Elo) | **1720** | 1346 | 1574 | Opus 5 |
 | AutomationBench | **26.0** | 17.0 | 17.4 | Opus 5 |
 
-**Opus 5 loses to Fable 5 on four of thirteen head-to-head benchmarks.** The "beats Fable 5" headline is not uniformly true, and Anthropic's own system card does not claim it is.
+### 3b. USER-SUPPLIED PRIMARY ARTIFACT — Anthropic's official benchmark chart (2026-07-25)
+
+User supplied Anthropic's own published Opus 5 comparison chart. It **independently corroborates the agent's system-card extraction on 8 of 10 overlapping rows exactly** (GDPval-AA 1861/1747/1593/1736; ARC-AGI-3 30.2/—/1.5/7.8; BrowseComp 90.8/87.4/84.3/90.4; HLE 56.3/56.5/49.8 no-tools and 64.7/63.9/57.9 with-tools; OSWorld 70.6/66.1/55.7/62.6; DeepSWE 68.8/69.7/59.0/72.7; FrontierCode 53.4/53.5/46.5/47.5; AutomationBench 26.0/17.4/17.0/18.1). **Cross-source verification of the primary extraction: PASSED.**
+
+**Three rows the agent did not extract, from the chart:**
+
+| Benchmark | Opus 5 | Fable 5 | Opus 4.8 | GPT-5.6 Sol | Winner |
+|---|---|---|---|---|---|
+| **Legal Agent Benchmark (held-out)** | 11.7% | **13.3%** | 10.4% | 2.5% | **Fable 5 — a FIFTH loss** |
+| HealthBench Professional | 59.8% | **66.0% (labelled Mythos 5)** | 57.4% | 60.5% | Mythos 5 |
+| BioMysteryBench (hard / human-solved) | **49.4% / 90.1%** | 46.5% / 89.0% (Mythos) | 42.4% / 88.5% | — | Opus 5 |
+
+**Correction to the count: Opus 5 loses to Fable 5 on FIVE benchmarks, not four** — SWE-bench Pro, DeepSWE, FrontierCode, HLE-no-tools, and Legal. The chart also **visually confirms** the agent's footnote catch that the HealthBench and BioMysteryBench comparison columns are labelled **Mythos 5, not Fable 5** — Anthropic swaps the comparator by domain.
+
+**Two minor discrepancies between the chart and the system-card table** (both in FrontierBench comparison columns, not Opus 5's own score): chart shows Opus 4.8 at 21.1% where the card gave 18.7%, and GPT-5.6 Sol at 34.4% where the card gave 37.5% (annotated "Codex"). Most likely different harness/effort configurations. **Opus 5's own 43.3% is identical in both** — the headline is unaffected, but it is a reminder that Anthropic's marketing chart and system card are not the same measurement.
+
+**Sub-observation worth logging:** absolute scores on the Legal Agent Benchmark are low across every model (11.7 / 13.3 / 10.4 / 2.5). Agentic legal work is not close to solved by any frontier model — relevant to any future professional-services-automation thesis, not to the current book.
+
+---
+
+**Opus 5 loses to Fable 5 on five of fourteen head-to-head benchmarks** (four in the system card table + Legal from the official chart). The "beats Fable 5" headline is not uniformly true, and Anthropic's own system card does not claim it is.
 
 **The "within 0.5%" claim, scoped precisely (T1 raw HTML):** *"On **CursorBench 3.2**, at max effort, the model performs within 0.5% of Fable 5's peak score, but at half the cost per task."* **CursorBench does not appear anywhere in the 193-page system card** — it exists only in marketing copy, so its harness, trial count and effort levels are undisclosed. Treat the 0.5% figure as a single-benchmark marketing claim, not an aggregate intelligence statement.
 
