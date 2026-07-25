@@ -3588,3 +3588,12 @@
 **Material yield class:** 3× HIGH (every leg killed ≥1 scary/shiny-direction framing). **Audit-day classification:** POSITIVE.
 **Cross-source-log:** `signals/cross-source-log/2026-07-24-fri-ai-brief-intake-gm-memory-auto-amd-venice-3agent.md`
 **Commit:** (this commit)
+
+## [2026-07-25] Opus 5 vs Fable 5 model-selection dive — 3-agent fan-out (Opus5 specs / Fable5+export-status / head-to-head)
+**Fires:** 3 Opus verifiers, parallel (~85.3k + ~74.1k + ~112.2k subagent tokens per reports).
+**Framing errors caught:** 9+ — SWE-bench 97% for Opus 5 **DATE-IMPOSSIBLE** (page dated Jul-22 for a Jul-23/24 model) + falsely attributed to Anthropic (whose launch table omits SWE-bench); "90-min global shutdown" INVERTED (deadline≠duration, 19-day outage); AA "61 vs 60 = top model in world" = 1-pt composite framing error; "21%/80% more per task" = vs GPT-5.6 Sol NOT Fable (misattribution); Lovable "+22%" = design-partner quote vs Opus 4.7 NOT Fable (substitution); several circulating "Fable" benchmark rows are MYTHOS 5 figures; GDPval 1932-vs-1747 = different versions (splice trap); AA index 64.9-vs-59.9 unreconciled + AA was a **vendor-collaborated pre-release evaluator** (not arm's-length); "weight-forensics Jul-27" = conflation with K3 open-weights release. Also: Anthropic UNDERSTATED its own ARC-AGI-3 result (3.87× vs "three times") while OVERSTATING AutomationBench (7.9pp vs ">8", 1.44× vs "~1.5×").
+**Thesis cascade triggered:** 3 corpus corrections (NOW/DDOG/NBIS/candidates 90-min inversion; B64 weight-forensics conflation; generator-reviewer datum retired as stale+misattributed) + day-state + selection rule.
+**Position implication delta:** NONE (ops decision, not a market thesis). Carried read-through: BIS "is informed" precedent = live tail risk for frontier-model-availability theses (TC-10/NBIS/sovereign-AI).
+**Material yield class:** 3× HIGH. **Audit-day classification:** POSITIVE.
+**Artifact:** `meta/redteam/2026-07-25-opus5-vs-fable5-model-selection-dive.md`
+**Commit:** (this commit)
