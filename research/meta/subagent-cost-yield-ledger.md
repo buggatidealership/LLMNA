@@ -3152,3 +3152,12 @@
 - Aggregator-hygiene: **4th recycled/garbled item from this brief class in 8 days** — downweight extended to SemiAnalysis-attributed items in this class.
 - Thesis cascade: SUMCO (🟢 evidence-quality upgrade, no sizing change) + MURATA (🟡).
 - Position implication delta: **none** — HOLD both, zero falsifiers fired, sizing user-gated per Rule #11.
+
+### 2026-07-25 PM — SUMCO Q2 component-level pre-registration (Rule #16 + Workflow #4, 2 agents)
+- Subagents: 2 parallel (Q1 actuals/guidance/consensus/price; 300mm market + Shin-Etsu read-across + LTA state). ~352k tokens, 107 tool-uses. Japanese-language primary fired in parallel per Principle #36.
+- Yield: **HIGH x2.**
+  - Agent A: confirmed Q1 actuals + the **EBITDA ¥23.4bn / 23.1% margin** line that enabled the D&A ¥28.67bn derivation — the single most important input. Caught that v1's print date (Aug-12) was WRONG (Aug-6 confirmed x3). Found FY2026 guidance is NOT disclosed (H1 only). Surfaced **Yoshinogari pause** (not previously in harness). Corrected the drawdown record (−39% from the Jul-13 ¥5,939 peak, vs the harness's "−26% vs Jul-3").
+  - Agent B: **Shin-Etsu Q1 FY3/27 (printed 2026-07-24)** with Japanese verbatim on volume+price revisions; the decisive **Sept-Oct 2026 industry LTA-negotiation timeline** (after the print) which drove G3 down 35%→20%; Siltronic's ~70% LTA-coverage benchmark; SK Siltron Gumi capacity counterweight.
+- **Framing errors caught: 3** — wrong resolution date in v1; "consensus GAP" only partly true (IFIS FY consensus exists); the peer-profitability category error (Shin-Etsu's OP beat does NOT read across to SUMCO's OP line).
+- Prediction cascade: v2 pre-registration written, grading-log stub added, SUMCO thesis back-reference.
+- Position implication delta: **none** — HOLD, sizing user-gated.
