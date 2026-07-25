@@ -44,3 +44,25 @@ None. (NBIS package resolved/superseded Jul-3; book reset Jul-5.)
 2. Semi Doped 7-item ingest committed (`80708ca`): TC-7 N=5, TC-10 N=10, TC-11 N=2, STM pull-forward, MURATA/Navitas 2nd-order note. Verification queue item #6 RESOLVED by catch-up: Kimi K3 CONFIRMED shipped (WAIC, Jul-17 market shock).
 3. **WAKE-AUDIT-3: FAIL-infrastructure (17 days, third instance)** → re-armed 2 slots + sentinel + platform-trigger-setup corrected (`901e6ab`).
 4. Catch-up fan-out (4 agents, ~333k, all HIGH): Samsung prelim PARTIAL GRADE (₩89.4tn — beat bar, below pt); ASML GRADED (rev beat / EPS miss / bookings N-A structural / FY26 raised €43-45B); TSMC GRADED (top-of-guide + capex-raise TRUE + reaction-direction miss); NBIS T+30 threshold BREACHED w/ NVDA-13G confound (PARTIAL); BOK HIKED to 2.75%, KRW 1,480 (old 1,550 baseline STALE); SKHY ADR $149 / $26.5bn / +12.8%; held-book rout adjudicated SYSTEMIC, no falsifiers.
+
+---
+
+## ⛔ 2026-07-25 — CORRECTION: THE "17-DAY DEAD WINDOW" DIAGNOSIS WAS FALSE
+
+**Retracted:** every `FAIL-infrastructure` verdict recorded on this branch (WAKE-1, WAKE-2, WAKE-AUDIT-3, WAKE-AUDIT-4), including the header of this file and the artifacts `2026-07-23-w11-wake-audit-3-17day-catchup.md` and `2026-07-25-evening-brief-jul24-ingest-2leg.md`.
+
+**What actually happened.** This branch (`claude/new-session-drppai`) forked from `origin/main` at `344962f` on 2026-07-06 and is **668 commits behind**. During the window graded as a dead loop (2026-07-07 → 2026-07-23), `origin/main` received **576 commits across all 17 days**. Verified by `git rev-list --left-right --count origin/main...HEAD` and `git log origin/main --since=2026-07-07 --until=2026-07-23`.
+
+**The loop was never dead. The branch was stale.** The autonomous wake cycle was not failing; this working tree simply could not see the commits it was producing.
+
+**Cost of the misdiagnosis:** four cron re-arms against a non-problem; a platform-Routine dependency escalated as the "binding constraint" when it was not; one full catch-up fan-out (~333k tokens) premised on a gap that did not exist; and a 17-day "largest gap in harness history" claim written into the permanent record.
+
+**Root cause (already correctly identified on `origin/main`):** the repository default branch is not `main`, so a default clone lands weeks stale. Any session that diagnoses harness liveness from a default clone will reach the same false conclusion.
+
+**Standing instruction for future wake audits — do this BEFORE grading anything:**
+```
+git rev-list --left-right --count origin/main...HEAD
+```
+If the left number is non-zero, **you are not looking at the live system.** Establish branch position before concluding anything about harness state. Absence of commits in the working tree is not evidence of absence of work.
+
+**Self-correction note (Rule #11 auto-execute discipline):** I produced WAKE-AUDIT-4 earlier in this same session and graded it FAIL-infrastructure #4 without checking branch position. That is the fifth consecutive instance of the same error. It was caught only by an explicit harness audit, not by any control in the system.
