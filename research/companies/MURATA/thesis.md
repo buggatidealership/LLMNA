@@ -412,7 +412,7 @@ Per `research/signals/cross-source-log/2026-06-04-apple-blackwell-siri-rubin-lpd
 
 **Prior last updated:** 2026-05-21
 **Tier:** Core (held position, structural AI passive components winner)
-**Position target:** 10–13% (user holds ~12.4% per `research/portfolio/holdings.md` — at target)
+**Position target:** 10–13% (current weight per `research/portfolio/holdings.md` — **compute it, do not quote a figure from this file**; 18,1% at the 07-07 canonical was ABOVE this band, not "at target")
 **Anti-fragility:** 4/5 — wins in S1, S2, S3 cleanly
 **Foundation:** `research/wiki/power-for-ai-primer.md` (electrical components), `research/wiki/agentic-workload-scaling.md` (demand math)
 
@@ -424,7 +424,16 @@ Murata is the structural leader in MLCC (Multi-Layer Ceramic Capacitors) — the
 
 **A single NVIDIA GB300 server requires ~30,000 MLCCs** (per Trading Key) — meaning every chip cascade through the OS (HBM ramp, custom Si, NBIS capacity buildout) directly drives Murata demand. MLCC demand from AI servers projected at 30% CAGR; 3.3× growth 2025→2030 per [Investing.com](https://www.investing.com/news/company-news/murata-raises-mlcc-growth-forecast-for-ai-servers-to-30-cagr-93CH-4385436).
 
-**User's 12.4% position is appropriately sized; HOLD.** Anti-fragility 4/5 + structural moat (technical leadership + capacity advantage + customer relationships) + Token-Volume Filter clean pass = Core-tier name.
+**HOLD.** Anti-fragility 4/5 + structural moat (technical leadership + capacity advantage + customer relationships) + Token-Volume Filter clean pass = Core-tier name.
+
+> ⚠️ **Weight: read `research/portfolio/holdings.md`, do not read it here.** This file
+> previously asserted "12.4%, appropriately sized" and cited holdings.md as the source —
+> holdings.md never said that. 12.4% was a correct *May-2026* mark (a much larger book
+> that still held AXTI/STM/GLW) which then survived as a current-state claim for two
+> months. Last computed mark: **18,1% at the 2026-07-07 PM canonical** (336 sh, €16.294,32
+> of €89.976,12); the 07-10 canonical does not break MURATA out separately, so any figure
+> newer than 07-07 must be computed from holdings.md, not quoted from here.
+> Sizing decisions are the operator's; this file states a thesis, not a weight.
 
 **One under-modeled upside:** Murata announced April 1 2026 price hike (15-20% spot already, projected 30-40% full year per Trading Key). Pricing power is real and likely under-modeled in consensus.
 
@@ -630,7 +639,7 @@ Per user instruction 2026-05-21: "Whenever you finish research, think about what
 **Most important blind spot:** Recent stock performance + valuation multiple. The thesis says "structurally sound" but doesn't calibrate whether the current entry price is attractive. Worth a follow-up data pull.
 
 ## Position recommendation
-**HOLD at ~12.4% per `research/portfolio/holdings.md`.** Position appropriately sized given:
+**HOLD.** Weight per `research/portfolio/holdings.md` (compute; the "12.4%" this line carried was a stale May-2026 mark). Thesis-side support:
 - Anti-fragility 4/5 (among portfolio highest)
 - Execution Quality 4.4/5
 - Verified pricing power (April 2026 hike per [TrendForce](https://www.trendforce.com/news/2026/03/17/news-mlcc-giant-murata-reportedly-confirms-april-1-price-hike-on-key-components/))
@@ -790,7 +799,7 @@ Per the user-shared image 2026-05-21: "the next-generation Rubin architecture—
 
 ### Investable conclusion
 
-**Primary beneficiary: MURATA (held 12.4% per `research/portfolio/holdings.md`).** The BOM-count multiplier (~1.85x per Rubin board vs GB200) validates the position at current weight and supports the case for SLIGHTLY larger sizing if entry pricing is attractive. Per `research/portfolio/recommendations.md`: don't add for now pending current valuation pull.
+**Primary beneficiary: MURATA (held — weight per `research/portfolio/holdings.md`).** The BOM-count multiplier (~1.85x per Rubin board vs GB200) validates the position at current weight and supports the case for SLIGHTLY larger sizing if entry pricing is attractive. Per `research/portfolio/recommendations.md`: don't add for now pending current valuation pull.
 
 **Secondary beneficiaries (not in portfolio, candidates for consideration):**
 - Samsung Electro-Mechanics (009150.KS) — second of the AI server MLCC duopoly per [Trading Key](https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey)
@@ -822,7 +831,7 @@ Per the user-shared image 2026-05-21: "the next-generation Rubin architecture—
 - `research/wiki/power-for-ai-primer.md` — electrical components context
 - `research/wiki/agentic-workload-scaling.md` — workload-driven demand math
 - `research/wiki/custom-silicon-primer.md` — custom chips also use MLCCs
-- `research/portfolio/holdings.md` — user holds 12.4%
+- `research/portfolio/holdings.md` — canonical weight (do not cache the number here)
 - `research/meta/patel-vs-aschenbrenner-thesis-comparison.md` — cross-source synthesis below
 
 ## Cross-source synthesis — Patel + Aschenbrenner (added 2026-05-21)
