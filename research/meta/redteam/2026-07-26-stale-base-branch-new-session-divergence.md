@@ -116,7 +116,11 @@ Operator approved branch deletion in-conversation and supplied the token; the **
 Three independent routes are unavailable from a cloud session:
 1. `git push origin --delete <branch>` → proxy **403**
 2. `git push origin --tags` (the archival fallback) → proxy **403**
-3. GitHub MCP server → exposes `create_branch`, **no delete-branch tool**; `gh` CLI is not installed
+3. **Direct GitHub REST API** (`DELETE /repos/{owner}/{repo}/git/refs/heads/...`) → **403, and the body is from Anthropic's proxy, not GitHub**: `{"message":"GitHub access is not enabled for this session. An org admin must connect the Claude GitHub App for this organization."}`. `GH_TOKEN`/`GITHUB_TOKEN` exist in the environment but the direct API path is policy-gated regardless.
+4. GitHub **MCP server** → the sanctioned channel, and it *works* (`list_branches`, `list_commits`, `search_repositories` all succeed). Its surface exposes `create_branch` and `delete_file` but **no delete-branch / delete-ref tool**.
+5. `gh` CLI → not installed.
+
+**The asymmetry is deliberate, and worth stating plainly:** the operator's browser holds authenticated github.com access as themselves; an agent session holds a scoped, tool-mediated channel from which ref deletion is *specifically* excluded — while ref *creation* is allowed. That is a design choice about which actions are agent-safe, not a bug or a misconfiguration. "The operator can do it manually, therefore the agent can too" does not hold here, and testing all four routes is what establishes that rather than assuming either way.
 
 **Consequence:** branch hygiene is an operator-side action in the GitHub web UI (`github.com/<owner>/<repo>/branches`). Do not plan cleanup work that depends on an agent deleting refs, and do not plan archival that depends on pushing tags — both look available and fail at the wire.
 
