@@ -108,3 +108,16 @@ Recomputed; three figures across the two accounts were wrong, including one of m
 ## Generalisable lesson (candidate — goes to lessons.md at N=2)
 
 **Absence of data in a checkout is not evidence of absence in the world.** Both realised failures share one shape: the session read the *edge of its own clone* as a *fact about the repository* — no commits after 07-06 became "the harness died"; hook state at 07-06 became "these hooks are unnecessary." Same family as B65 (context-fluency) and L39 (*"unreachable ≠ fabricated"*): a retrieval boundary mistaken for a substantive finding. **Mechanical guard: any claim of the form "X stopped / nothing happened / this is inert" must first establish that the observer could have seen X had it occurred** — for repo claims that means printing the branch position before the conclusion, which is precisely what `da04101` implements.
+
+## 🔒 OPERATIONAL CONSTRAINT (discovered 2026-07-26 during cleanup): agents CANNOT delete remote branches here
+
+Operator approved branch deletion in-conversation and supplied the token; the **house** guards passed correctly (`pre-push: OPERATOR_APPROVED_FORCE_PUSH=1 — guard bypassed by operator token`). The deletion still failed — **the git proxy itself returns HTTP 403 on ref deletion**, exactly as it does on `refs/tags` pushes (`git ls-remote --tags` shows the remote carries no tags at all).
+
+Three independent routes are unavailable from a cloud session:
+1. `git push origin --delete <branch>` → proxy **403**
+2. `git push origin --tags` (the archival fallback) → proxy **403**
+3. GitHub MCP server → exposes `create_branch`, **no delete-branch tool**; `gh` CLI is not installed
+
+**Consequence:** branch hygiene is an operator-side action in the GitHub web UI (`github.com/<owner>/<repo>/branches`). Do not plan cleanup work that depends on an agent deleting refs, and do not plan archival that depends on pushing tags — both look available and fail at the wire.
+
+**Corollary for the token convention:** the guard's real token strings are `OPERATOR_APPROVED_FORCE_PUSH=1` (history/record class, which includes remote-ref deletion) and `OPERATOR_APPROVED_DELETION=1` (file-destruction class). A token name invented in conversation does not exist to the guard — **read `git-guard-pretooluse.py` for the literal string before asking the operator for one.** This session asked for a non-existent `OPERATOR_APPROVED_BRANCH_DELETE` and wasted a round-trip.
