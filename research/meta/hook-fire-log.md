@@ -1374,3 +1374,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-25 13:01:37Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-25 13:06:12Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-07-25 20:19:17Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-25 22:20:02Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:04:43Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:17:02Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:26:12Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:26:59Z anti-fabrication-hook FIRE (n=1 '$950B' forms=[("'$950B'", 1, None)] verdict:pending)
