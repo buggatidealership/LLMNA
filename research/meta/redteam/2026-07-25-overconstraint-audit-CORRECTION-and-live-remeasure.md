@@ -58,18 +58,34 @@ This session's branch, `claude/new-session-drppai`, was rooted at:
 > commit (52 before it)." That was wrong by ~15×, and the root cause is worse than a
 > slip: **this container's clone was SHALLOW** (`.git/shallow` present,
 > `git rev-parse --is-shallow-repository` = true). Shallowness silently truncates
-> every absolute history count — it hid ~774 commits and manufactured three false
-> "root" commits at the fetch boundary, one dated 2026-03-29. Nothing warns you.
+> every absolute history count — it hid ~774 commits. Nothing warns you.
 > After `git fetch --unshallow` the figure computes as **826 of 1497**, matching the
 > older session's independently-derived 826/1496 exactly.
 >
-> **The distinction that matters:** shallowness corrupts absolute POSITIONS but not
-> the behind/ahead GAP (truncated gap 671 vs full-history 670 — the ±1 a boundary
-> artifact). So the 668-behind diagnosis stands, and `branch_position()` is correct
-> on shallow clones *because* it uses `rev-list --left-right --count` rather than an
-> absolute position. Session containers get shallow clones by default; a
-> position-based check would have been silently wrong in exactly the environment it
-> was built to protect.
+> **Second correction (older session, 2026-07-26, confirmed here).** I also wrote that
+> shallowness "manufactured three false roots, one dated 2026-03-29." Wrong in the
+> other direction: full history has **exactly two roots**, both genuine — `877456b`
+> (scaffold, 07-06) and `b26f835` (imported Health-Calculators history, **03-29**) —
+> joined by migration merge `6878a4a`. Of the three roots seen while shallow, **two
+> were real and one was the artifact.** Having found the clone-boundary bug, I then
+> over-attributed real history to it. That is the mirror image of the original error,
+> committed while correcting it.
+>
+> **Third correction — and the result gets STRONGER, not weaker.** I hedged the gap as
+> "671 shallow vs 670 full, the ±1 a boundary artifact." There is no artifact. Full
+> history returns **671** for that same pair; the 670 came from a `main` one commit
+> younger — **temporal drift, not truncation**. Verified by walking the ref forward:
+> the last three commits move the gap 672 → 673 → 674, one per commit.
+> **Shallowness perturbs the gap by exactly ZERO.**
+>
+> **The reusable rule (do not regress).** On a shallow clone, absolute counts are
+> catastrophically wrong (~774 off) while `rev-list --left-right --count` is *exactly*
+> right. So the 668-behind diagnosis stands, and `branch_position()` is correct on
+> shallow clones **because** it measures a relative gap. Session containers clone
+> shallow by default; a position-based check would be silently wrong in precisely the
+> environment it exists to protect. Note the failure mode in my own hedge: an
+> unnecessary ± weakened a true, exact result. Hedging is not free — it can destroy
+> a finding's precision as surely as overclaiming destroys its truth.
 
 **Systemic, not a one-off.** Sibling branches at time of measurement:
 

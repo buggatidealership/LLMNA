@@ -264,10 +264,20 @@ def branch_position() -> list:
 
     WHY THIS USES A GAP, NOT A POSITION (verified 2026-07-26, load-bearing).
     Session containers clone SHALLOW by default (.git/shallow present). That
-    silently truncates every ABSOLUTE history count -- here it hid ~774 commits
-    and invented three false "root" commits at the fetch boundary, which is what
-    produced an earlier "main's 53rd commit" claim in this very docstring. The
-    behind/ahead GAP is unaffected (671 shallow vs 670 full, a boundary +/-1).
+    silently truncates every ABSOLUTE history count -- here it hid ~774 commits,
+    which is what produced an earlier "main's 53rd commit" claim in this very
+    docstring. It also fabricates a "root" commit at the fetch boundary: of the
+    three roots seen while shallow, exactly ONE was the artifact. The other two
+    are real and permanent -- full history has exactly 2 roots, 877456b (scaffold,
+    07-06) and b26f835 (imported Health-Calculators history, 03-29), joined by
+    migration merge 6878a4a. Do not "fix" the 03-29 root; it is the repo's
+    actual second root.
+
+    The behind/ahead GAP is EXACTLY shallow-invariant -- not approximately.
+    Measured 671 shallow; full history returns 671 for that same pair. An
+    earlier "+/-1 boundary artifact" hedge here was wrong: the 670 it was
+    reconciling against came from a main one commit younger, i.e. temporal
+    drift, not truncation. Shallowness perturbs the gap by ZERO.
     So `rev-list --left-right --count` is correct on a shallow clone and an
     absolute-position check would have been silently wrong in exactly the
     environment this hook exists to protect. Do not "improve" this to a
