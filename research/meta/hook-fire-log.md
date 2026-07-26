@@ -1403,3 +1403,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-25 22:31:17Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
 - 2026-07-25 22:39:05Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-07-25 22:43:11Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))
+- 2026-07-26 08:56:27Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:02:14Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 09:05:43Z signal-ingest-cascade-hook FIRE (Rule#14 signal-density-skip)
