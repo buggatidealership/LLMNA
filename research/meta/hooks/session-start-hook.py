@@ -253,8 +253,24 @@ def branch_position() -> list:
     (WAKE-AUDIT-4 graded FAIL-infrastructure; two harness-audit findings F1/F2
     published and withdrawn; three of four proposed hook fixes withdrawn) --
     every one of them caused by measuring a branch that sat 668 commits behind
-    origin/main. The default clone does NOT land on the default branch, so a
-    cold session reads a weeks-old corpus and cannot tell.
+    origin/main.
+
+    MECHANISM (verified 2026-07-26; an earlier write-up of this hook asserted
+    "the default clone does not land on the default branch" -- that was wrong,
+    stated without checking, and is corrected here). Session branches are cut
+    from a PINNED OLD BASE and never rebased. The clone is fine. The root just
+    never moves. `claude/new-session-drppai` was rooted at 344962f
+    (2026-07-06), a genuine origin/main ancestor -- main's 53rd commit, with 668
+    commits landing after it.
+
+    It is systemic, not a one-off. At the time of measurement SIX sibling
+    branches shared that identical 344962f root, all 668 behind; others rooted
+    2026-07-19 (191 behind), 07-20 (139), 07-22 (79). Note which ones: the
+    branches named for auditing the harness (git-enforcement-audit,
+    harness-accounting-audit, harness-optimization-goals) are among the stale.
+
+    This hook makes staleness VISIBLE. It does not stop branches being cut from
+    old bases -- that cause is upstream of the repo and still open.
 
     Everything below this check in the briefing -- todos, stale tiers, pending
     grades, cost-yield -- is only as live as the branch it was read from. That

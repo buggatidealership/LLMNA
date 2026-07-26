@@ -1406,3 +1406,7 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-26 08:56:27Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-26 09:02:14Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-26 09:05:43Z signal-ingest-cascade-hook FIRE (Rule#14 signal-density-skip)
+- 2026-07-26 09:12:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 10:09:33Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 10:21:35Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 10:51:44Z session-prime-hook event=resume injected=False (skipped non-startup)

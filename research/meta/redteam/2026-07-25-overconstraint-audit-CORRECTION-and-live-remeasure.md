@@ -33,6 +33,59 @@ records. Fixed durably: `session-start-hook.py` now reports branch position firs
 
 ---
 
+## 0a. The mechanism — verified 2026-07-26 (corrects my first explanation)
+
+I originally told the operator the cause was *"the repo default branch is not
+`main`, so default clones land weeks stale."* **That was wrong.** I asserted it
+without checking. Recorded here because the wrong mechanism points at a fix that
+would not have worked.
+
+**What actually happens: session branches are cut from a pinned old base and never
+rebased.** The clone is correct; the root simply never moves.
+
+This session's branch, `claude/new-session-drppai`, was rooted at:
+
+```
+344962f83ab9f485491fd15b665c24ae44518bce
+2026-07-06 16:06:57 +0000
+"Remove accidentally committed __pycache__ from compile check; add .gitignore"
+```
+
+`git merge-base --is-ancestor 344962f origin/main` → **true**. It is a genuine
+`main` commit — main's 53rd (52 before it, 668 after). Not an orphan, not a fork.
+Just old.
+
+**Systemic, not a one-off.** Sibling branches at time of measurement:
+
+| Branch | Root date | Root | Behind `main` |
+|---|---|---|---|
+| `claude/api-edgar-smoke-test-qad0n9` | 2026-07-06 | `344962f` | 668 |
+| `claude/api-edgar-smoke-test-yzvoo9` | 2026-07-06 | `344962f` | 668 |
+| `claude/api-key-smoke-test-lbzc7y` | 2026-07-06 | `344962f` | 668 |
+| `claude/file-deletion-git-rules-v7fi3q` | 2026-07-06 | `344962f` | 668 |
+| `claude/first-test-new-repo-wxedu9` | 2026-07-06 | `344962f` | 668 |
+| `claude/harness-optimization-goals-mqkcyx` | 2026-07-06 | `344962f` | 668 |
+| `claude/git-enforcement-audit-fui966` | 2026-07-19 | `fbac203` | 191 |
+| `claude/good-morning-rjaji6` | 2026-07-20 | `1123ff6` | 139 |
+| `claude/harness-accounting-audit-it2e0w` | 2026-07-22 | `10c7b10` | 79 |
+
+**Six branches share the identical 07-06 root.** Note which names appear:
+`git-enforcement-audit`, `harness-accounting-audit`, `harness-optimization-goals`
+— the branches most likely to *audit the harness* are among the stale ones. Any
+audit run from them inherits the same defect this document exists to correct.
+
+**The 17-day number was never evidence.** My branch root is 2026-07-06; this
+session's first work landed 2026-07-23. I graded that window a `FAIL-infrastructure`
+"17-day dead window." It was the **age of the branch root** — 576 commits landed on
+`main` in those days and the tree could not see one of them. The figure I cited as
+proof of failure was the branch's own age reflected back.
+
+**Scope limit of the fix.** `branch_position()` makes staleness visible at session
+start. It does **not** stop branches being cut from stale bases — that cause sits
+upstream of this repo and is still open. Six branches are sitting stale right now.
+
+---
+
 ## 1. Disposition of the four authorised fixes
 
 | # | Proposed fix | Disposition |
