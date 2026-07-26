@@ -131,7 +131,11 @@ That is enough to destroy the "dead window" finding without needing an exact cou
 
 Three layers, in order of durability:
 
-1. **Upstream (the real fix, operator-side, outside this repo):** whatever cuts session branches must cut them from current `main`. No in-repo change can fix this — both affected sessions confirmed it is upstream of the repository.
+1. **Upstream (the real fix, operator-side, outside this repo) — MECHANISM NOW IDENTIFIED (docs-verified 2026-07-26):**
+   Per `code.claude.com/docs/en/web-quickstart` § *Start a task* → *Select a repository and branch*, verbatim: *"click the repository selector below the input box and choose a repository for Claude to work in. **Each repository shows a branch selector. Change it to start Claude from a feature branch instead of the default.**"*
+   **So the stale base is a UI selection, not a platform defect.** The branch selector was set to `claude/first-test-new-repo-wxedu9` and has been reused since. Setting it back to `main` fixes Defect A at source. Repo default branch verified as `main` via the GitHub API (`default_branch: "main"`).
+   **Routines are NOT affected.** The routines doc states twice that each repository *"is cloned at the start of a run, starting from the default branch"* and *"Claude starts from the repository's default branch unless your prompt specifies otherwise."* Scheduled wakes therefore already begin on `main`. Only manually-started web sessions inherit the stale selector.
+   **Defect B (shallow clone) is NOT user-configurable.** No clone-depth setting exists anywhere in the web/environment/routines documentation. It is platform-side. The only available mitigation is detection (`git rev-parse --is-shallow-repository`) plus `git fetch --unshallow` at session start — which is why that check must live in the hook.
 2. **In-repo (merge `da04101` to `main`):** every session then learns its position at turn 1. Makes staleness *visible*; does not prevent it.
 3. **Behavioural (applies immediately, needs no infrastructure):** **any claim of the form "X stopped / nothing happened / this is inert / this can be retired" must first establish that the observer could have seen X had it occurred.** For repo claims that means printing branch position before stating the conclusion. This is the generalisation of L39 (*"unreachable ≠ fabricated"*) from the retrieval layer to the version-control layer.
 
