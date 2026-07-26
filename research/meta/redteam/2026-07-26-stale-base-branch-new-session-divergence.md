@@ -46,6 +46,24 @@ Includes material worth recovering: a MURATA stale-position-weight correction (`
 - **`meta/day-state.md` "Operating mode note (2026-07-06 EVE) — SINGLE-SESSION MODE" is STALE and now actively misleading.** It asserts *"this session is the ONLY live thread"* and that *"any main-branch commit NOT from this session = a platform Routine firing or an anomaly to investigate."* At least two sessions are concurrently live (the other committed `766d09d` at 2026-07-26 09:06 UTC). That note's provenance rule would misclassify a sibling session's commits as anomalies.
 - The 07-23 `W11 WAKE-AUDIT-3` "FAIL-infrastructure, 3rd instance / 17-day dead window" finding is **VOID** — it is measurement error from the stale checkout, already retracted at source (`4d18537`). It must not be counted as a wake-infrastructure failure instance if it reaches `main`.
 
+## ⚠️ NUMERIC CORRECTIONS (added 2026-07-26 09:35, after cross-checking against the sibling session's own write-up)
+
+Recomputed; three figures across the two accounts were wrong, including one of mine.
+
+| Claim | Source | Verified | Note |
+|---|---|---|---|
+| "`344962f` is the 53rd commit on main, 52 before it" | sibling session | **826th**; `main` = 1,496 total | Off by ~15×. 825 commits of imported pre-migration history sit beneath it. |
+| "668 commits behind" | sibling session | **correct at `a36a0d1`**; **670** vs `main` now | Not a constant — recompute, never quote. A quoted staleness figure is itself a staleness bug. |
+| "576 commits in the dead window" | sibling session | **false precision** — same window returns 583/613/616/629 depending on author-vs-commit date and bounds | Robust form: **all 17 days Jul-07→Jul-23 had commits.** |
+| "587 commits in that window" | **this artifact, originally** | same false-precision problem | **My own error, same class.** Replaced with the day-count form above. |
+| "fast-forward the stale branch" (as a general fix) | **this artifact, originally** | only **2 of 10** `claude/*` branches are pure ancestors | **My own over-generalisation.** Only `claude/first-test-new-repo-wxedu9` and `claude/good-morning-rjaji6` are FF-able; the other five 07-06-rooted branches each carry one own commit and need a merge. |
+
+**Both sessions independently produced false-precision commit counts about the harness's own history while diagnosing a bug about false beliefs regarding the harness's own history.** That is #43b clause 3f / B65 (context-fluency) firing on the diagnosis of a staleness bug — logged as a specimen, not a coincidence.
+
+## 🔴 The fix is stranded behind the bug
+
+`da04101` (*"session-start: surface branch position before anything else"*) is on `claude/new-session-drppai`, **not on `main`**. A new session cut from `344962f` does not get it. It must not be described as "live" until merged — it currently protects only the one branch that least needs it.
+
 ## Fix
 
 1. **Durable (operator-side, the actual fix):** point the session/environment config at `main` rather than `claude/first-test-new-repo-wxedu9`. Same repo-selector class as the pending Routines fix in the standing browser checklist.
