@@ -18,6 +18,28 @@ If the **behind** number is not 0, **stop and merge `origin/main` before forming
 
 ---
 
+## ⚠️ AMENDED 2026-07-26 — CHECK CLONE **DEPTH** TOO, NOT JUST BRANCH POSITION
+
+**There are two independent defects.** Step 0 above catches only the first.
+
+```bash
+git rev-parse --is-shallow-repository    # must print: false
+```
+
+If it prints `true`, run **`git fetch --unshallow`** before computing any count. A shallow clone silently truncates every absolute commit count (one container was short by ~774) and adds a fabricated root commit at the fetch boundary. Nothing in the working tree looks wrong.
+
+**Which measurements survive a shallow clone:**
+
+| Measure | Shallow-safe? |
+|---|---|
+| `git rev-list --left-right --count origin/main...HEAD` (**relative**) | ✅ **YES — perturbed by zero** |
+| `git rev-list --count <sha>` (**absolute position**) | ❌ NO — silently truncated |
+| `git rev-list --max-parents=0` (**root commits**) | ❌ NO — extra fabricated roots |
+
+**Prefer relative measures over absolute positions in any harness code.** The session-start branch-position check is correct on shallow clones *precisely because* it is relative. Do not "improve" it into a position-based form — that would fail silently in exactly the environment it exists to protect.
+
+**Note on this repo specifically: it genuinely has TWO root commits** — `877456b` (2026-07-06, scaffold) and `b26f835` (2026-03-29, imported Health-Calculators history), joined by the migration merge `6878a4a`. Seeing two roots is normal here. Seeing three means your clone is shallow.
+
 ## THE FACT
 
 Session branches are cut from a **pinned old base and never rebased**. Six branches share the identical root:
