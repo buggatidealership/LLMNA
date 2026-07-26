@@ -1425,3 +1425,20 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-26 19:02:32Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-26 11:23:12Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-26 18:54:13Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 19:14:18Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion / +refspec (history-rewrite class))
+
+<!-- RECOVERED 2026-07-26: 9 fire lines that existed only on branch tips scheduled for deletion
+     (api-edgar-smoke-test-qad0n9/-yzvoo9, api-key-smoke-test-lbzc7y, file-deletion-git-rules-v7fi3q,
+      git-enforcement-audit-fui966, harness-optimization-goals-mqkcyx). Appended out of chronological
+      order deliberately: each line carries its own UTC stamp, and this file is the substrate Rule #11
+      requires hook-fire COUNTS to be computed from, so preserving the count matters more than file order.
+      Duplicates preserved — repeated identical fires are legitimate (same hook, same second). -->
+- 2026-07-16 09:49:11Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-16 09:55:50Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-16 08:52:35Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-19 21:58:01Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-19 22:16:17Z git-guard-pretooluse ACTIVATED core.hooksPath (was unset/wrong — stale-session class)
+- 2026-07-19 22:15:42Z session-prime-hook event=startup injected=True (20453 chars)
+- 2026-07-19 22:17:16Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion (history-rewrite class))
+- 2026-07-19 22:17:20Z git-guard-pretooluse BLOCK (--no-verify would skip the verified pre-commit/pre-push guards)
+- 2026-07-12 20:35:16Z session-prime-hook event=startup injected=True (20453 chars)
