@@ -1445,3 +1445,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-26 19:19:56Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion / +refspec (history-rewrite class))
 - 2026-07-26 19:23:07Z git-guard-pretooluse BLOCK (force-push / remote-ref deletion / +refspec (history-rewrite class))
 - 2026-07-26 19:56:31Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-26 20:19:28Z session-prime-hook event=resume injected=False (skipped non-startup)
