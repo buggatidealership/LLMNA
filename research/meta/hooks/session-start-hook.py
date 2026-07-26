@@ -260,8 +260,18 @@ def branch_position() -> list:
     stated without checking, and is corrected here). Session branches are cut
     from a PINNED OLD BASE and never rebased. The clone is fine. The root just
     never moves. `claude/new-session-drppai` was rooted at 344962f
-    (2026-07-06), a genuine origin/main ancestor -- main's 53rd commit, with 668
-    commits landing after it.
+    (2026-07-06), a genuine origin/main ancestor -- main's 826th of 1497.
+
+    WHY THIS USES A GAP, NOT A POSITION (verified 2026-07-26, load-bearing).
+    Session containers clone SHALLOW by default (.git/shallow present). That
+    silently truncates every ABSOLUTE history count -- here it hid ~774 commits
+    and invented three false "root" commits at the fetch boundary, which is what
+    produced an earlier "main's 53rd commit" claim in this very docstring. The
+    behind/ahead GAP is unaffected (671 shallow vs 670 full, a boundary +/-1).
+    So `rev-list --left-right --count` is correct on a shallow clone and an
+    absolute-position check would have been silently wrong in exactly the
+    environment this hook exists to protect. Do not "improve" this to a
+    position-based check.
 
     It is systemic, not a one-off. At the time of measurement SIX sibling
     branches shared that identical 344962f root, all 668 behind; others rooted

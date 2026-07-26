@@ -19,7 +19,7 @@ This session produced **five** misdiagnoses from the one root cause:
 
 | # | Claim | Reality on live state |
 |---|---|---|
-| 1 | WAKE-AUDIT-4 = `FAIL-infrastructure` | 576 commits across the 17 "dead" days; harness fine |
+| 1 | WAKE-AUDIT-4 = `FAIL-infrastructure` | all 17 "dead" days had commits on main; harness fine |
 | 2 | F1: self-check layer stopped, 0 audits | 23 entries; 9 of 20 checks ran (format my grep missed) |
 | 3 | F2: Rule #11 falsifier fired, 38 HOLD : 1 ENTER | 753 lines, 25.0% genuine action; falsifier NOT met |
 | 4 | 5 Stop hooks lack recursion guards | all 15 have `stop_hook_active` |
@@ -52,8 +52,24 @@ This session's branch, `claude/new-session-drppai`, was rooted at:
 ```
 
 `git merge-base --is-ancestor 344962f origin/main` → **true**. It is a genuine
-`main` commit — main's 53rd (52 before it, 668 after). Not an orphan, not a fork.
-Just old.
+`main` commit — **main's 826th of 1497**. Not an orphan, not a fork. Just old.
+
+> **Correction (older session, confirmed).** I first published this as "main's 53rd
+> commit (52 before it)." That was wrong by ~15×, and the root cause is worse than a
+> slip: **this container's clone was SHALLOW** (`.git/shallow` present,
+> `git rev-parse --is-shallow-repository` = true). Shallowness silently truncates
+> every absolute history count — it hid ~774 commits and manufactured three false
+> "root" commits at the fetch boundary, one dated 2026-03-29. Nothing warns you.
+> After `git fetch --unshallow` the figure computes as **826 of 1497**, matching the
+> older session's independently-derived 826/1496 exactly.
+>
+> **The distinction that matters:** shallowness corrupts absolute POSITIONS but not
+> the behind/ahead GAP (truncated gap 671 vs full-history 670 — the ±1 a boundary
+> artifact). So the 668-behind diagnosis stands, and `branch_position()` is correct
+> on shallow clones *because* it uses `rev-list --left-right --count` rather than an
+> absolute position. Session containers get shallow clones by default; a
+> position-based check would have been silently wrong in exactly the environment it
+> was built to protect.
 
 **Systemic, not a one-off.** Sibling branches at time of measurement:
 
@@ -76,13 +92,41 @@ audit run from them inherits the same defect this document exists to correct.
 
 **The 17-day number was never evidence.** My branch root is 2026-07-06; this
 session's first work landed 2026-07-23. I graded that window a `FAIL-infrastructure`
-"17-day dead window." It was the **age of the branch root** — 576 commits landed on
-`main` in those days and the tree could not see one of them. The figure I cited as
-proof of failure was the branch's own age reflected back.
+"17-day dead window." It was the **age of the branch root**: **all 17 days from
+2026-07-07 to 2026-07-23 had commits on `main`** (17/17, none missing) and the tree
+could not see one of them. The figure I cited as proof of failure was the branch's
+own age reflected back.
 
-**Scope limit of the fix.** `branch_position()` makes staleness visible at session
-start. It does **not** stop branches being cut from stale bases — that cause sits
-upstream of this repo and is still open. Six branches are sitting stale right now.
+> **Second correction (older session, confirmed).** I first wrote "576 commits" here.
+> **Drop that number — it is false precision.** The same window returns 583 / 654 / 662
+> on my own recount depending on committer-vs-author date and bound inclusivity; the
+> older session got 583 / 613 / 616 / 629 and had itself published 587. There is no
+> single right value, so the count was never the evidence. The filter-independent
+> form above — *every one of the 17 days had commits* — kills the dead-window finding
+> without needing a count at all, and cannot drift with the flags.
+>
+> **Note what happened here.** Two sessions, diagnosing a bug about false beliefs
+> concerning the harness's own history, each published a false-precision count about
+> the harness's own history — three bad figures between us (587, 576, and my "53rd
+> commit"). The failure mode reproduced itself inside its own investigation. That is
+> the strongest available argument for the standing rule that harness-history counts
+> are computed at the moment of use and stated with their filter, or replaced by a
+> filter-independent form.
+
+**Scope limit of the fix — sharper than first stated.** `branch_position()` makes
+staleness visible at session start. It does **not** stop branches being cut from
+stale bases — that cause sits upstream of this repo and is still open. Six branches
+are sitting stale right now.
+
+> **Third correction (older session, confirmed).** *"Your fix is not live."*
+> `git merge-base --is-ancestor da04101 origin/main` **fails** — the check exists
+> only on `claude/new-session-drppai`. A session cut from `344962f` does not get it.
+> **Right now it protects exactly one branch: the one that least needs it.**
+>
+> And the branch does not stay clean: within roughly an hour of reporting "0 behind"
+> it was 3 behind again. **The 0-behind state was a moment, not a property.** That is
+> the argument for landing the check on `main` rather than holding it locally — a
+> branch-local guard against branch staleness is self-defeating by construction.
 
 ---
 
