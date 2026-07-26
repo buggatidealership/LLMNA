@@ -113,6 +113,15 @@
 
 ### HBF trajectory monitor — catalyst checkpoints (added 2026-06-28; the open hinge in the SNDK-keep / KIOXIA-trim verdict)
 
+- [ ] **P1 / research / 2026-07-28** [POS, AF, CAL, INDP] — BUILD the Gulf-conflict macro SCENARIO (scenarios.md gap surfaced by Leg-B absence question 2026-07-25)
+  - Origin: 2026-07-25 EOD Leg-B discovery. `sector/scenarios.md` has NO scenario for sustained US-Iran/Gulf conflict, despite the harness tracking H3 as a bare numeric gate (Brent >= $95) for weeks. Five months of war, Houthi strikes now hitting Saudi REFINING infrastructure (Jizan/Yanbu, 07-25), escalation decision pending, Congress unable to bind. We have a tripwire with no theory behind it.
+  - Scope: a weighted scenario with the transmission chain made explicit — Gulf energy-infra risk -> oil floor -> inflation pass-through -> Fed reaction (FOMC 07-28/29 is the first live test) -> risk appetite for high-multiple AI names -> memory/AI-capex cohort. Must state which held names win/lose in it and recompute their M/N anti-fragility. Must ALSO define what un-fires H3 (the 07-24 pullback to ~$90.47 already put Brent back below the gate — the current gate has no documented reversion rule).
+  - Why P1 not P2: FOMC lands 07-28/29, one day before the Jul-29 SKH print that gates the conditional add. The two interact and we currently have no framework for the interaction.
+  - Linked: `sector/scenarios.md`, `signals/cross-source-log/2026-07-25-fri-eod-reaction-leg-grade-legb-kr-etf-crackdown.md` §4.3, five-calls call #4 H3 leg
+- [ ] **P2 / process / 2026-07-27** [INFRA, OPT] — RECEIPTS HOOK Phase 1: add the "pending-resolution promise" extractor (L42 corollary, 2026-07-25)
+  - Origin: the 07-22 twin-print T+24h legs sat 2 sessions overdue behind a written promise ("T+24h legs I-5/N-5 pending 2026-07-23 close") that no mechanism checked. Surfaced only because the 07-25 EOD Routine happened to run the deadline parser. This is G-07's "a header/status line is a PROMISE, not a receipt" instantiated on the PREDICTIONS layer rather than the harness layer.
+  - Scope: extractor recognizes "pending {DATE}" / "pending {EVENT} close" inside predictions/*.md and grading-log rows, and surfaces any whose date has passed at session start alongside the existing pending-grade parser (which only reads grading-log resolution dates and MISSED these — the legs were inside a row already marked partially graded).
+  - Linked: `research/meta/hooks/`, `predictions/grading-log.md`, lessons L42
 - [ ] **P1 / research / 2026-08-10** [CAL, BOT, POS, AF] — HBF Gate-2 read #1: FMS + Hot Chips (~Aug 2026) silicon/sample signal + SanDisk Q4 FY26 call + SK Hynix Q2-26 call — confirm HBF samples ship ON SCHEDULE (H2-2026)
   - Origin: `watchlist/HBF-trajectory-monitor.md` — sample-on-schedule is the explicit reversal trigger for the trim-KIOXIA verdict (3/3 ensemble ~71%). Slip past H2-2026 → reconsider.
   - Scope: read FMS/Hot Chips HBF demos + SanDisk/SK Hynix call transcripts; update H1/H2/H3 weights in the monitor; cascade to SNDK + KIOXIA theses if material.
