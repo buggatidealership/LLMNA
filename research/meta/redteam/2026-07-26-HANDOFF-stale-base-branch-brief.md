@@ -18,6 +18,28 @@ If the **behind** number is not 0, **stop and merge `origin/main` before forming
 
 ---
 
+## ⚠️ AMENDED 2026-07-26 — CHECK CLONE **DEPTH** TOO, NOT JUST BRANCH POSITION
+
+**There are two independent defects.** Step 0 above catches only the first.
+
+```bash
+git rev-parse --is-shallow-repository    # must print: false
+```
+
+If it prints `true`, run **`git fetch --unshallow`** before computing any count. A shallow clone silently truncates every absolute commit count (one container was short by ~774) and adds a fabricated root commit at the fetch boundary. Nothing in the working tree looks wrong.
+
+**Which measurements survive a shallow clone:**
+
+| Measure | Shallow-safe? |
+|---|---|
+| `git rev-list --left-right --count origin/main...HEAD` (**relative**) | ✅ **YES — perturbed by zero** |
+| `git rev-list --count <sha>` (**absolute position**) | ❌ NO — silently truncated |
+| `git rev-list --max-parents=0` (**root commits**) | ❌ NO — extra fabricated roots |
+
+**Prefer relative measures over absolute positions in any harness code.** The session-start branch-position check is correct on shallow clones *precisely because* it is relative. Do not "improve" it into a position-based form — that would fail silently in exactly the environment it exists to protect.
+
+**Note on this repo specifically: it genuinely has TWO root commits** — `877456b` (2026-07-06, scaffold) and `b26f835` (2026-03-29, imported Health-Calculators history), joined by the migration merge `6878a4a`. Seeing two roots is normal here. Seeing three means your clone is shallow.
+
 ## THE FACT
 
 Session branches are cut from a **pinned old base and never rebased**. Six branches share the identical root:
@@ -109,7 +131,11 @@ That is enough to destroy the "dead window" finding without needing an exact cou
 
 Three layers, in order of durability:
 
-1. **Upstream (the real fix, operator-side, outside this repo):** whatever cuts session branches must cut them from current `main`. No in-repo change can fix this — both affected sessions confirmed it is upstream of the repository.
+1. **Upstream (the real fix, operator-side, outside this repo) — MECHANISM NOW IDENTIFIED (docs-verified 2026-07-26):**
+   Per `code.claude.com/docs/en/web-quickstart` § *Start a task* → *Select a repository and branch*, verbatim: *"click the repository selector below the input box and choose a repository for Claude to work in. **Each repository shows a branch selector. Change it to start Claude from a feature branch instead of the default.**"*
+   **So the stale base is a UI selection, not a platform defect.** The branch selector was set to `claude/first-test-new-repo-wxedu9` and has been reused since. Setting it back to `main` fixes Defect A at source. Repo default branch verified as `main` via the GitHub API (`default_branch: "main"`).
+   **Routines are NOT affected.** The routines doc states twice that each repository *"is cloned at the start of a run, starting from the default branch"* and *"Claude starts from the repository's default branch unless your prompt specifies otherwise."* Scheduled wakes therefore already begin on `main`. Only manually-started web sessions inherit the stale selector.
+   **Defect B (shallow clone) is NOT user-configurable.** No clone-depth setting exists anywhere in the web/environment/routines documentation. It is platform-side. The only available mitigation is detection (`git rev-parse --is-shallow-repository`) plus `git fetch --unshallow` at session start — which is why that check must live in the hook.
 2. **In-repo (merge `da04101` to `main`):** every session then learns its position at turn 1. Makes staleness *visible*; does not prevent it.
 3. **Behavioural (applies immediately, needs no infrastructure):** **any claim of the form "X stopped / nothing happened / this is inert / this can be retired" must first establish that the observer could have seen X had it occurred.** For repo claims that means printing branch position before stating the conclusion. This is the generalisation of L39 (*"unreachable ≠ fabricated"*) from the retrieval layer to the version-control layer.
 
