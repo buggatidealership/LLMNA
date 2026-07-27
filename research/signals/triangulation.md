@@ -77,6 +77,12 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 **Names affected:** all held compute+memory (HYNIX, SNDK, ARM, NVDA-adjacent watchlist); new monitorables = hyperscaler credit spreads, Chinese fiscal execution, AI-collateral lending health
 **Falsifier:** Mag7 returning to FCF-positive capex funding for ≥2 consecutive quarters; Chinese fiscal commitment formally walked back
 
+**🔺 NEW SUB-MECHANISM (2026-07-27) — RUNG 3: onto VENDOR balance sheets.** The cluster tracked capex moving off corporate P&Ls onto credit markets and state budgets. A third rung is now visible: **off credit markets and onto the chip/cloud vendor's own balance sheet.** N=2 independent instances in one quarter, both T2:
+1. **NVIDIA → OpenAI** — contingent credit guarantee of **up to $250bn** covering lease + construction debt (NOT the chips, a separate ~$350bn line) for a 10 GW Piketon, Ohio campus. **UNSIGNED, in negotiation.** WSJ 07-26 broke it; CNBC 07-27 independently confirmed (Reuters/Bloomberg day-one pieces are WSJ rewrites).
+2. **Google → Anthropic** — backstopping lease payments at **five data-centre locations, enabling roughly a $35bn loan** (Bloomberg).
+**Mechanism, and the reading matters:** the reporting states the OpenAI campus needs NVIDIA's credit *because OpenAI has no investment-grade rating*. **A guarantee of that size is what a market demands when it has REFUSED the underlying borrower — the instrument is the measurement of the refusal.** So this is **re-intermediation, not loosening**: availability is maintained, and the price is concentration. AI credit risk pools into two vendor balance sheets instead of dispersing across a lending market — a systemic-fragility increase even while near-term funding stays abundant. Note NVIDIA would hold a **doubled position**: guarantor of the tenant's lease AND supplier of the financed hardware, so a payment failure hits it twice with collateral impaired by the same demand shortfall that triggers the call.
+**Falsifier for this sub-mechanism:** the OpenAI guarantee is executed on materially narrower terms, OR a third vendor declines a comparable structure publicly, OR OpenAI obtains an investment-grade rating removing the need. Per `signals/cross-source-log/2026-07-27-mon-four-ai-brief-batch-cxmt-cluster-nvda-financing.md` §10.5.
+
 ## TC-3 — DC-ceiling + EM-migration pattern [ACTIVE]
 **Segment:** power-and-cooling
 **Direction:** US DC siting friction → EM absorption + existing-site densification
