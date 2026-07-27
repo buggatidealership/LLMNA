@@ -187,7 +187,7 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 **Convergent read (pending — candidate):** if granted, US-importing TSMC-designed chips face friction; benefits domestic foundry (Intel / TSMC Arizona / Samsung Texas); hurts NVDA/AVGO/AMD/MRVL (mild negative tail).
 **Falsifier / lapse:** no N+1 within 90 days of 2026-06-13 → retire candidate (~2026-09-11).
 
-## TC-12 — DRAM>HBM margin inversion in upcycle [ACTIVE N=6]
+## TC-12 — DRAM>HBM margin inversion in upcycle [ACTIVE N=7]
 *(Body section added 2026-07-06 harness audit from the index row + cited artifacts — index remains canonical.)*
 **Segment:** memory-and-storage
 **Direction:** commodity DRAM (incl. legacy DDR4) out-margins HBM in this upcycle; supplier-rational behavior = optimize DRAM, not maximize HBM
@@ -198,7 +198,9 @@ Signals confirmed by ≥3 independent same-segment same-direction sources within
 4. SK Securities June 15 framework "memory as scarcity-rent asset"
 5. Legacy extension (2026-06-27 REIA experiment): TrendForce May'26 "GM across ALL DRAM segments now top HBM" (T1) + Nanya 2408.TW Q1'26 GM 67.9% / rev +582.9% YoY per `signals/cross-source-log/2026-06-27-REIA-experiment-old-memory-legacy-DRAM-squeeze.md`
 6. Demand-side corroboration (2026-07-06): JEDEC 20-Hi thickness-relaxation story (ZDNet KR 07-06 T2; HBM4-precedented) with corroborated demand claims — Nvidia pushing back high-stack HBM, 16-Hi discussions inactive, 12-Hi mainstay even in HBM4E — the demand-side mirror of instance 2. Per `signals/cross-source-log/2026-07-06-evening-ubs-skh-samsung-estimates-jukan-jedec-hbm5-2agent-verification.md`
-**Convergent read:** HBM has higher capex intensity (3:1 wafer ratio per Micron) at ~70% margin while commodity DDR5 hits ~90% in upcycle; DDR4 squeeze driven by majors' supply-exit (capacity →20-25% of 2024 by end-2026).
+7. **PRICE inversion, not just margin inversion (2026-07-27, N=6→N=7 — strongest instance in kind):** DDR4 **spot ~$2.10/Gb now EXCEEDS HBM3e contract ~$1.70/Gb** — legacy above leading-edge **per bit**, described as without recent precedent. Every prior instance argued MARGIN; this one clears the bar on raw price. Corroborated by two independent pass-through channels the same week: MSI/Colorful raising RTX 50-series China prices up to 59% (75% markups over MSRP at the high end) and the "$1T buildout passed to customers" framing. 🟡 T2/T3, aggregator-tier, unverified. Per `signals/cross-source-log/2026-07-27-mon-eod-legb-unanchored-sweep-brent-gate-datagapped.md` + `signals/cross-source-log/2026-07-27-mon-four-ai-brief-batch-cxmt-cluster-nvda-financing.md`. **Note the basis distinction: the DDR4 figure is SPOT, the HBM3e figure is CONTRACT — they are not the same instrument, and a spot-vs-contract comparison overstates the gap in a tightening market. Flagged rather than resolved.**
+
+**Convergent read:** HBM has higher capex intensity (3:1 wafer ratio per Micron) at ~70% margin while commodity DDR5 hits ~90% in upcycle; DDR4 squeeze driven by majors' supply-exit (capacity →20-25% of 2024 by end-2026). **2026-07-27 extension:** the squeeze is landing on the LEGACY/CONSUMER bit rather than the AI bit — consistent with the HBM demand leg rather than contradicting it, while bounding how long consumer-device pricing can finance the cycle.
 **Names affected:** HYNIX (HBM moat narrative needs DDR5 cash-cow complement), KIOXIA / SNDK (NAND analog) — all three now watchlist-reference post-exits.
 **Falsifier:** Q3/Q4 FY26 prints show HBM margin overtaking DDR5, OR SK Hynix reverses the HBM4 ramp slowdown.
 **Source artifacts:** `signals/cross-source-log/2026-06-25-pm-integrated-synthesis-round5-sk-securities-chinese-continuation.md`
