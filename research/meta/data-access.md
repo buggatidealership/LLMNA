@@ -51,3 +51,11 @@ Rationale (user hypothesis, booked): human pattern-matching binds on ingestion; 
 
 ## Falsifier / re-eval
 Monthly audit: any registry row not exercised in 30 days gets flagged; any gotcha proven wrong gets corrected here (not in day-state). If this file drifts from reality (a session hits a documented-as-working endpoint that fails), fixing THIS FILE is part of the fix.
+
+
+## Route findings — 2026-07-27 KR-open wake (per `signals/cross-source-log/2026-07-27-mon-kr-open-wake-escorted-reading-live-tick.md` §4)
+- **✅ NEW: EODHD `/api/real-time` DOES serve KRX same-day live quotes during KR hours** — verified 00:06Z ≈ 09:06 KST, six minutes after the open, on `KS11.INDX` / `000660.KO` / `005930.KO`. Every KR-open wake 07-21→07-24 logged DATA-GAPPED at this hour; this removes that contamination ceiling. **Corrects the standing `.KO` note:** the feed lags to T-1 *outside* KR hours and is live *inside* them — state it that way.
+- **❌ EODHD `/api/intraday` → HTTP 403** (`KS11.INDX`, `000660.KO`). Opening-auction sell-concentration (an I-3 primary input) is NOT machine-reachable on this tier.
+- **❌ EODHD commodities → HTTP 403** on `BZ.COMM` / `BRN.COMM` / `CO.COMM` / `BZ=F.COMM`. **Brent has no deterministic route.** The single most consequential macro threshold the harness tracks depends entirely on agent-fetched T2 press — which is exactly how the L43 benchmark error entered. **Highest-value paid-data upgrade candidate after DRAM/NAND contract pricing.**
+- **⚠️ FRED publication lag is load-bearing:** `DGS10` had no 07-24 observation as of 07-27 00:30Z. When a gate turns on a rates *direction*, check FRED's latest observation date before concluding — the most recent session is routinely absent.
+- **KRX 투자자별 portal + KOSPI200 futures basis: unreachable** (JS-shell, not a clean 403). Naver Finance's polling API **was** reachable via curl + browser-UA and returned internally-consistent live quotes — currently the most reliable same-day KR channel.
