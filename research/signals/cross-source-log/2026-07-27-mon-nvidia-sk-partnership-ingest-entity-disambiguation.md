@@ -119,3 +119,51 @@ The operator asked about adding SK Telecom. **The materially more important fact
 **On SK Telecom as an addition:** the 07-24 dive's verdict survives this news intact. The dive judged the AI leg *already priced*; this announcement is an escalation of a relationship the dive already counted (the >1,000× B200 Haein cluster), it is non-binding, the company has walked back its own headline figure, and the market's first chance to price it produced a negative relative session. **None of the four pre-registered re-look triggers has fired.** 🟡
 
 **NO POSITION ACTION (user-gated, Rule #8). No falsifier fired on any held name.**
+
+## 7. VERIFICATION LEG 2 RETURNED — the operator's ATH premise is REFUTED, and the entity resolution is confirmed from a second direction
+
+Leg 2 was commissioned to answer three things the tape alone could not: which SK entity carries the 1999-2001 all-time-high lore, where it sits versus that high, and whether each candidate is reachable from a DeGiro/N26-class broker. Source base: Naver Finance daily-price tables fetched directly (T1-grade tape), 조선비즈 2026-04-03 (named-byline financial press, T2) for the split-adjustment, three Korean outlets for the 07-24 crash context.
+
+### 7.1 The four candidates, and how three of them are eliminated
+
+| Entity | KRX | 07-24 move | 1999-2001 ATH comparison | Verdict |
+|---|---|---|---|---|
+| **SK Telecom** | 017670 | **+0.50%** (only SK name that rose) | Raw ATH close **4,810,000 KRW, 2000-03-06** 🟢; split-adjusted **≈87,455 KRW** 🟡 | ✅ **the name** |
+| SK Hynix | 000660 | −8.34% | **Comparison INVALID by construction** — the entity was Hyundai Electronics until 2001, went through dilutive 1998 rights offerings + CB conversions that took the share to ~4,025 KRW by end-2000, was renamed Hynix in 2001 and acquired by SK in 2012. Capital-structure discontinuity, not a price history | ❌ eliminated |
+| SK Square | 402340 | −9.17% (hardest hit) | **Cannot have a 1999-2001 ATH** — spun off from SK Telecom (인적분할), listed **2021-11-29** 🟢 | ❌ eliminated by construction |
+| SK Inc | 034730 | −3.82% | Traces to Korea Oil Corp (1962) → 유공 → SK Corp (1998) → SK Inc via the 2007 energy carve-out. A specific 1999-2001 ATH figure could **not** be verified | ⚠️ DATA-GAPPED, not eliminated on price — eliminated on the tape (it fell) |
+
+**Entity resolution now holds from two independent directions.** §1 resolved it forward from the tape (only SKT rose on 07-24); leg 2 resolves it backward from the ATH lore (SKT is the canonical dot-com-era 황제주, and the only SK name Korean financial press has flagged as having regained its former high). Two different discriminants, same answer. The L43 hazard flagged at intake — resolving an ambiguous group name by plausibility — is now closed by evidence rather than by assumption.
+
+### 7.2 ⚠️ The operator's premise is refuted — and the refutation survives the arithmetic dispute
+
+The operator's framing was: *"it hasn't reached the all-time high that it put, I think, in nineteen ninety nine or two thousand or two thousand and one"* — i.e. **below ATH ⇒ room to run.** Split-adjusted, that is not where SK Telecom is trading.
+
+Leg 2 returned a quoted split-adjusted ATH of **87,475 KRW** but reconstructed the split chain as *10:1 (Apr 2000) × 5:1 (Nov 2021) = 50:1*. **Those two do not reconcile:** 4,810,000 ÷ 87,475 = **54.99**, not 50. I did not take either on trust — I adjudicated it against the article's own load-bearing claim, that SKT **briefly surpassed** the adjusted high when it hit 88,600 on 2026-02-13 (all figures below computed, not recalled):
+
+| Divisor | Implied adj. ATH | 2026-02-13 high (88,600) | 07-24 close (100,000) | 07-27 intraday (97,900) |
+|---|---|---|---|---|
+| **50:1** (leg-2 reconstruction) | 96,200 KRW | **−7.90% — i.e. NOT surpassed** ❌ contradicts the source | +3.95% | +1.77% |
+| **≈55:1** (implied by the quoted level) | **87,455 KRW** | **+1.31% — surpassed** ✅ consistent | **+14.35%** | **+11.94%** |
+
+The 50:1 reconstruction is **refuted by the source it came from**: under it, February's 88,600 would have been 7.9% *below* the high, and the article's central claim would be false. The ≈55:1 basis is the internally consistent one. The third adjustment event that takes 50 → 55 is **DATA-GAPPED** — I can locate the two par-splits but not the residual factor, and I am not inventing one.
+
+**The conclusion is robust to the dispute, which is what matters here: under BOTH divisors SK Telecom trades ABOVE its split-adjusted 2000 high.** Only the magnitude moves (+3.95% vs +14.35%). 🟢 on direction, 🟡 on magnitude.
+
+**What that does to the thesis input.** "Below its old high" was doing real work in the operator's framing — it is the room-to-run premise. It is false. What the tape actually shows is a name that reclaimed a 26-year-old high in February, gave it back into April, and has just run +17.5% in three sessions to make a new post-2000 high — **the opposite setup from the one described.** That does not make it un-investable; it removes one specific argument for it, and it removes the argument the operator was leaning on.
+
+### 7.3 Accessibility (courtesy tag, not a research gate — CLAUDE.md, superseded 2026-07-05)
+
+| Entity | Reachable line |
+|---|---|
+| SK Telecom | ✅ **SKM, NYSE** (ISIN US78440P3064) — the "can I add it fast" question resolves **yes** |
+| SK Hynix | ✅ **SKHY, NASDAQ** — already held (37 ADS). Avoid the unsponsored OTC line (HXSCL) — wider spreads |
+| SK Square / SK Inc | ⚠️ no ADR line located — DATA-GAPPED, likely KRX-direct only |
+
+### 7.4 One datum that cascades to the held name
+
+SK Hynix ATH **2,987,000 KRW on 2026-06-25** 🟡 (search-summary tier — not independently fetched, flagged as such). Against the 07-24 close of 1,759,000 that is **−41.1%**; against the 07-27 intraday 1,816,000, **−39.2%**. This is a drawdown datum on a **held Core position two days before its Q2 print** and therefore does not stay in a signals file — cascaded to `companies/SKHY/thesis.md`. It does **not** change the add gate: the gate is the 07-29 print, not the drawdown.
+
+### 7.5 Position
+
+**Unchanged. NO POSITION ACTION (user-gated, Rule #8).** Leg 2 removes an argument *for* adding SK Telecom rather than supplying one; the 07-24 dive's REMAIN-WATCHLIST-P3 verdict stands with none of its four re-look triggers fired. On SKHY, the LOI is mildly supportive and the drawdown datum is context — neither is the adjudicator. **The 2026-07-29 print remains the sole adjudicator of the conditional €3-5k add.**

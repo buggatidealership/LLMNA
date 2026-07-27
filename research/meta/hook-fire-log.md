@@ -1454,3 +1454,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-27 08:36:45Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-27 09:08:09Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-27 09:09:04Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-27 09:26:16Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-27 09:28:25Z session-prime-hook event=compact injected=False (skipped non-startup)
+  - **ADJUDICATION (operator-side annotation, appended 2026-07-27):** the three macro-anchor-hook FIREs above (09:09:04Z, 09:26:16Z, and the 07-27 harness-meta pair earlier in the day) are **FALSE POSITIVES under the Critical Rule #15 exemption clause** — the turns were harness-meta / INGEST-report / branch-governance narration, not position-relevant analytical outputs. The trigger matched on TICKER strings (SKHY, SKM, NVDA) appearing inside a *report about* an ingest rather than inside a thesis-level claim. No macro anchor was owed. Counted toward the Rule #15 FP-rate falsifier (>30% → tighten exemption list); re-eval carries with the 07-27 Rule #17/#18 re-eval batch.
