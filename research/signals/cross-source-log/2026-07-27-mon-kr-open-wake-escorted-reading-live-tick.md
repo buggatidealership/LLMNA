@@ -10,13 +10,37 @@
 
 **Method:** EODHD real-time + EOD endpoints (`meta/data-access.md` §Keyed APIs) and FRED `DGS10`. Every percentage below is **computed** from the two adjacent closes shown, not quoted from a source. Quote timestamp on the KR block = **2026-07-27 00:06Z = 09:06 KST**, i.e. six minutes after the 09:00 KST open — a genuine live tick.
 
-### 1.1 KR open vs Friday (EODHD real-time + EOD, T1-machine)
+### 1.1 KR open vs Friday (EODHD real-time + EOD, T1-machine) — ⚠️ **RETRACTED AND REPLACED 2026-07-27, see §1.1-R below. The original table is preserved verbatim for audit; DO NOT CITE IT.**
 
-| Instrument | Thu 07-23 close | Fri 07-24 close | Mon 07-27 open-tick | Fri move | Mon vs Fri | Friday retraced |
-|---|---|---|---|---|---|---|
-| KOSPI (`KS11.INDX`) | 7,096.8901 | 6,690.6201 | 6,730.9102 | **−5.72%** | **+0.60%** | **9.9%** |
-| SK Hynix (`000660.KO`) | ₩1,919,000 | ₩1,759,000 | ₩1,772,000 | **−8.34%** | **+0.74%** | **8.1%** |
-| Samsung Elec (`005930.KO`) | ₩270,000 | ₩249,500 | ₩254,500 | **−7.59%** | **+2.00%** | **24.4%** |
+> **SUPERSEDED — original text, retained only as the error record:**
+>
+> | Instrument | Thu 07-23 close | Fri 07-24 close | Mon 07-27 open-tick | Fri move | Mon vs Fri | Friday retraced |
+> |---|---|---|---|---|---|---|
+> | KOSPI (`KS11.INDX`) | 7,096.8901 | 6,690.6201 | 6,730.9102 | **−5.72%** | **+0.60%** | **9.9%** |
+> | SK Hynix (`000660.KO`) | ₩1,919,000 | ₩1,759,000 | ₩1,772,000 | **−8.34%** | **+0.74%** | **8.1%** |
+> | Samsung Elec (`005930.KO`) | ₩270,000 | ₩249,500 | ₩254,500 | **−7.59%** | **+2.00%** | **24.4%** |
+
+### 1.1-R CORRECTED — official opening auction + settled close (EODHD EOD OHLC, recomputed 2026-07-27 post-session)
+
+**How the error was found:** an independent fresh-session audit, commissioned on `main` with a binding no-circularity rule (`meta/redteam/2026-07-27-fresh-session-verification-commission.md`), refuted the KOSPI leg of claim 5. I re-fetched and confirmed it against the settled daily OHLC. **The audit is correct; the original table was wrong on all three names, in the same direction.**
+
+| Instrument | Fri 07-24 close | **Mon OPEN (auction)** | Mon vs Fri **at open** | **Friday retraced at open** | Mon LOW | Mon CLOSE | Mon vs Fri **on close** |
+|---|---|---|---|---|---|---|---|
+| KOSPI (`KS11.INDX`) | 6,690.6201 | **6,806.27** | **+1.73%** | **28.5%** | 6,557.39 (**−1.99%**) | 6,755.75 | **+0.97%** |
+| SK Hynix (`000660.KO`) | ₩1,759,000 | **₩1,814,000** | **+3.13%** | **34.4%** | ₩1,707,000 (**−2.96%**) | ₩1,816,000 | **+3.24%** |
+| Samsung Elec (`005930.KO`) | ₩249,500 | **₩257,000** | **+3.01%** | **36.6%** | ₩246,000 (**−1.40%**) | ₩254,000 | **+1.80%** |
+
+**Magnitude of the error:** published +0.60 / +0.74 / +2.00 against true +1.73 / +3.13 / +3.01 — understated by **2.87× / 4.23× / 1.50×**. Retracement understated by **2.9× / 4.2× / 1.5×**. All three in the same direction.
+
+**Root cause — the same failure class booked three times this week.** The figure was an **EODHD real-time snapshot taken at 00:06Z**, which I labelled `open-tick` and then fed into a metric that is defined on the **official opening auction** ("Friday retraced"). `meta/data-access.md` already carries the warning for this exact endpoint — *"`.KO` real-time feed can lag ... cross-check timestamp field ALWAYS"* — and I did check the timestamp, which is precisely why it passed: **the timestamp was live, the price basis was not.** A live timestamp is not proof of an auction print. This is **L44 instance 4** (a number without its basis), and the first of the four that **propagated** rather than being caught at intake.
+
+**Why nothing caught it:** every number was real, vendor-sourced, correctly cited, and internally consistent with its own `change_p` field — so anti-fabrication passed it, as it must. Citation-grounding cannot check a basis.
+
+**⚠️ Internal contradiction the file itself contained and never reconciled:** §6.4 below, written later the same session, carries **Samsung at 257,000 (+3.0%)** — the *correct* opening auction — and describes a "gap-up → fade" shape. §1.1 and §6.4 disagreed by a full percentage point on the same print, in the same file, and I did not notice. **§6.4's qualitative read was right and is now confirmed by the settled tape** (KOSPI opened at its high of 6,806.27 and faded); §1.1's quantitative table was wrong.
+
+**What the corrected tape actually says — and it is a different session than the one I described.** Not a "weak bounce". All three names **gapped up ~1.7–3.1%, sold through Friday's close to a NEW low** (KOSPI −1.99%, SKHY −2.96%, Samsung −1.40% vs Friday), then **closed green** (+0.97 / +3.24 / +1.80%). That is a violent two-way reversal, not a shallow bid. The "bounce is weak, retraces only 9.9%" read is **withdrawn**.
+
+**What does NOT change:** the H3 Path A/B discrimination (§1.2) is a rates computation, untouched. The SKHY add gate remains the 2026-07-29 print. No falsifier fires on any held name. No position action.
 
 Internal consistency checked: each vendor-reported `change_p` reproduces from its own `close`/`previousClose` pair to 3 d.p. Friday's KOSPI move computes to −5.7239%; the corpus carries **−5.73%** (`meta/day-state.md`, addendum #8) — agreement within rounding, so this is the same event, independently re-measured.
 
@@ -126,7 +150,7 @@ I booked "effective **Aug 5**" into `companies/SKHY/thesis.md` and day-state on 
 
 Index at 09:27 KST: **KOSPI 6,772.25 (+1.22%)**, **KOSDAQ 773.73 (+3.41%)** ([Naver Finance](https://finance.naver.com/sise/sise_index.naver?code=KOSPI), T2; arithmetic cross-checked against Friday closes, both reconcile exactly).
 
-**Both names gapped up ~3% and were sold into — SK Hynix round-tripped the entire gap and traded NEGATIVE before stabilising.** This is a **gap-up → fade → stabilise** pattern, not a bought open. It materially qualifies my 09:06 read in §2(a): the index level improved from +0.60% to +1.22% over the first half-hour, but the *shape* underneath is distribution into strength at the single-name level, in exactly the two names foreigners sold on Friday.
+**Both names gapped up ~3% and were sold into — SK Hynix round-tripped the entire gap and traded NEGATIVE before stabilising.** This is a **gap-up → fade → stabilise** pattern, not a bought open. It materially qualifies my 09:06 read in §2(a): the index level improved from the (⚠️ erroneous, see §1.1-R) +0.60% read to +1.22% over the first half-hour — **the true opening auction was +1.73%, so the index in fact FADED from the open rather than improving; §6.4's gap-up→fade shape was right and its stated direction of travel was wrong** — but the *shape* underneath is distribution into strength at the single-name level, in exactly the two names foreigners sold on Friday.
 
 ### 6.5 H3 two-path — rates leg now covered, verdict A-LEANING/MIXED
 

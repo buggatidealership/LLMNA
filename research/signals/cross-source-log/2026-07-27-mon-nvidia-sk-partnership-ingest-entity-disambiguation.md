@@ -17,7 +17,7 @@ Closes, and daily moves **computed** from adjacent closes. KOSPI reference from 
 | 2026-07-22 | +0.74% | **+10.58%** | **+9.8pp** | −1.84% | +4.70% |
 | 2026-07-23 | +4.40% | **+5.74%** | +1.3pp | −0.73% | +4.97% |
 | 2026-07-24 | **−5.72%** | **+0.50%** | **+6.2pp** | **−9.17%** | −3.82% |
-| 2026-07-27 (live) | +1.22% | **−2.10%** | **−3.3pp** | −1.17% | −1.11% |
+| 2026-07-27 (⚠️ row written intraday; SETTLED: KOSPI **+0.97%**, SKT **−2.10%**, relative **−3.07pp** — see §5) | +1.22% | **−2.10%** | **−3.3pp** | −1.17% | −1.11% |
 
 **Levels:** SK Telecom ₩85,100 (07-21) → **₩100,000 (07-24 close)** → ₩97,900 (07-27). ADR **SKM**: $31.95 (07-21) → **$35.67 (07-24)**, i.e. +6.23% / +3.71% / +1.34% across 07-22/23/24 — the move confirms in USD, so it is not an FX artifact.
 
@@ -29,7 +29,7 @@ Closes, and daily moves **computed** from adjacent closes. KOSPI reference from 
 
 **(b) The Friday signature is the strongest datum here.** On 2026-07-24 the KOSPI fell 5.72% — the "검은 금요일" rout in which foreigners net-sold ~₩3.28조 and SK Hynix fell 8.34% — and **SK Telecom closed UP 0.50%**, +6.2pp relative. A name holding green through a broad rout of that size is an **idiosyncratic-event signature**: something name-specific was being priced, independent of the market.
 
-**(c) ⚠️ But it is already fading.** Today SK Telecom is **−2.10% while the KOSPI is +1.22%** — **−3.3pp relative**, the first negative-relative session of the sequence, and it comes on the bounce. A durable re-rating on a major new partnership would not normally underperform a recovering tape the very next session. Two readings, neither confirmed: (i) event-driven pop beginning to fade / profit-taking; (ii) ordinary consolidation after +17.5% in three sessions. **Note also the 07-24 close of exactly ₩100,000** — a round number that may be acting as resistance. 🟡 DIRECTIONAL.
+**(c) ⚠️ But it is already fading.** Today SK Telecom is **−2.10% while the KOSPI is +1.22%** (intraday at time of writing; ⚠️ **settled closes: SKT −2.10% vs KOSPI +0.97% = −3.07pp**) — **−3.07pp relative**, the first negative-relative session of the sequence, and it comes on the bounce. A durable re-rating on a major new partnership would not normally underperform a recovering tape the very next session. Two readings, neither confirmed: (i) event-driven pop beginning to fade / profit-taking; (ii) ordinary consolidation after +17.5% in three sessions. **Note also the 07-24 close of exactly ₩100,000** — a round number that may be acting as resistance. 🟡 DIRECTIONAL.
 
 **(d) Group-level test FAILS.** If this were an *SK Group*–level deal, the holdco (SK Inc) should carry it. SK Inc rose 07-22/23 with the tape and then fell 3.82% on Friday — it did **not** hold green when SK Telecom did. **The evidence points to an SK TELECOM–specific catalyst, not a group transaction.** This directly qualifies the operator's "SK Group" framing. 🟡 DIRECTIONAL.
 
@@ -100,7 +100,10 @@ The book already holds **SKHY (37 ADS, SK Hynix ADR)**. SK Hynix is an SK Group 
 | Window | SK Telecom | KOSPI | Relative |
 |---|---|---|---|
 | **PRE-announcement** 07-21 → 07-24 | **+17.51%** | −0.85% | **+18.4pp** |
-| **POST-announcement** 07-24 → 07-27 (live) | **−2.10%** | +1.22% | **−3.3pp** |
+| **POST-announcement** 07-24 → 07-27 (live, intraday at time of writing) | **−2.10%** | +1.22% | **−3.3pp** |
+| **POST-announcement** 07-24 → 07-27 — ✅ **SETTLED CLOSES** (updated post-session) | **−2.10%** (₩100,000 → ₩97,900) | **+0.97%** | **−3.07pp** |
+
+**Upgraded from 🟡 to 🟢 on the reaction leg.** The intraday reading above was written mid-session against a KOSPI print of +1.22%; the index settled at +0.97% and SK Telecom settled at ₩97,900 — the intraday tick happened to be the close, so **−2.10% is the settled number, not a partial-session artefact**. Per L42 ("a reaction leg resolves on a settled close"), this leg is now gradeable and the buy-the-rumour-sell-the-fact signature stands on settled data: **SK Telecom underperformed a green tape by 3.07pp on the first session able to price the announcement.** That makes it a genuine fifth instance of the Principle #48/#49 reaction-function flip rather than a candidate — logged, and pending the desk's next pattern-register pass for formal promotion.
 
 **The whole +17.5% run happened before the news was public.** Friday's +0.50% against a −5.72% rout — the idiosyncratic signature flagged in §1(b) — was **anticipation, not reaction**: the Korean President's US trip and NVIDIA meeting were scheduled and public.
 
