@@ -1,3 +1,12 @@
+## 📌 [2026-07-27] NVIDIA–SK Hynix HBM LOI — demand corroboration 2 days before the print (Rule #10 back-ref)
+Per `signals/cross-source-log/2026-07-27-mon-nvidia-sk-partnership-ingest-entity-disambiguation.md`. NVIDIA announced a "$500B+" expanded partnership across the SK complex (Huang, 2026-07-24 San Francisco, after meeting Korean President Lee Jae-myung; PR 2026-07-25). **SK Hynix is a named counterparty for HBM3E/HBM4 supply and co-development** ([CNBC](https://www.cnbc.com/2026/07/25/nvidia-locks-down-memory-from-sk-hynix-as-part-of-500-billion-ai-deal.html), SK hynix newsroom, Korean 서울경제/이투데이; T1/T2).
+
+**Three qualifiers, and they bind:** (1) the instrument is a **signed LOI — NON-BINDING** (서울경제 uses 의향서 explicitly). The desk already discounts LOI-grade commitments — the 07-22 WSJ steelman turned on exactly that point re the 900k-wafer Stargate figure; consistency requires the same treatment here. (2) The "$500B" is a **rolled-up figure across at least two entities and two workstreams**, not a contract value. (3) It is an **escalation of a 2026-06-08 NVIDIA–SK Telecom announcement**, not a first reveal.
+
+**Read: mildly supportive on the demand leg, explicitly NOT a falsifier event, and NOT an adjudicator.** It is demand-side corroboration from the single most important HBM customer, arriving 2 days before the print — but LOI-grade, and into a tape that has punished four consecutive good-news prints this week (Principle #48/#49 reaction-function flip; a fifth instance may be forming in SK Telecom itself, which ran +17.51% PRE-announcement and is −2.10% on the first session able to price it, against a +1.22% KOSPI).
+
+**Position implication: 🟡 HOLD (37 ADS) — no size change — the conditional €3-5k add remains gated on the 2026-07-29 Q2 print (LTA prepayment/duration disclosure + GP-bridge sign test), which this does not pre-empt. A non-binding LOI does not move a sizing decision; the print does. No position action — user-gated.**
+
 # SKHY (SK Hynix ADR) — Thesis
 
 ## 📌 [2026-07-25 EOD, date-corrected 07-27] Reaction-function flip MEASURED (was inferred) + a NEW flow-risk mechanism into **Jul-31**
