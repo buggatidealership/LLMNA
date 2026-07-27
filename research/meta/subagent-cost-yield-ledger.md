@@ -2856,7 +2856,7 @@
 **Position implication delta:** NONE
 **Material yield class:** MEDIUM
 **Audit-day classification:** POSITIVE-LITE
-**Cross-source-log:** `signals/cross-source-log/2026-06-15-pm20b-sk-hynix-adr-mid-july-verification-partially-verified-hold-gdr-core.md`
+**Cross-source-log:** `signals/cross-source-log/2026-06-16-pm20b-sk-hynix-adr-mid-july-verification-partially-verified-hold-gdr-core.md`
 **Commit:** (PM20b cascade)
 
 ---
