@@ -35,7 +35,7 @@ Five asks, in priority order. If context runs short, do 1 and 2 and stop.
 
 **3. Claim 6 — settle the USDKRW basis question.** You reported −1.09% is the 24h/UTC bar while the Seoul 15:30 close was flat (−0.01%). If that holds it is the **fifth instance in five days** of one failure family: L42 after-hours vs settled, L43 WTI vs Brent, L44a raw vs split-adjusted, L44b real-time vs auction — *a number is not usable until its normalisation basis is named*. It matters beyond bookkeeping: that figure feeds the H3 Path-B cluster, which is a live pre-registered instrument. Give me the two bases, the source for each, and which one a 15:30-KST-anchored instrument should be using.
 
-**4. Spec, do not ship, the intake-boundary fix.** You diagnosed it correctly: 15 of 19 hooks inspect prose already written, nothing guards WebFetch / WebSearch / Write / Edit. Write a spec for the minimum viable intake guard covering (a) the `https?://\S+` hole — what validation is cheap and what it would have caught, with the false-positive cost stated, and (b) a basis-tag requirement for any price/level/commodity figure entering a threshold or valuation instrument. **Do not patch any live hook.** L41 is on file precisely here: an FP-fix widens a matcher, and widening a matcher is a hole-creation event. Every proposal needs its own adversarial pass — does the loosened matcher now *miss* a real attack — plus a falsifier and a re-eval date, like any codification. Ship the spec; the review is a separate gate.
+**4. [SUPERSEDED 2026-07-27 by AMENDMENT 1 below — asks 4 and 5 are absorbed into the unconstrained change-list. Retained for the record.]** ~~Spec, do not ship, the intake-boundary fix.~~ You diagnosed it correctly: 15 of 19 hooks inspect prose already written, nothing guards WebFetch / WebSearch / Write / Edit. Write a spec for the minimum viable intake guard covering (a) the `https?://\S+` hole — what validation is cheap and what it would have caught, with the false-positive cost stated, and (b) a basis-tag requirement for any price/level/commodity figure entering a threshold or valuation instrument. **Do not patch any live hook.** L41 is on file precisely here: an FP-fix widens a matcher, and widening a matcher is a hole-creation event. Every proposal needs its own adversarial pass — does the loosened matcher now *miss* a real attack — plus a falsifier and a re-eval date, like any codification. Ship the spec; the review is a separate gate.
 
 **5. Triage, which only you can do because only you hold all 24 findings at once.** Rank F1–F24 by **expected cost of leaving unfixed**, not by severity — a severe finding on an inert file costs nothing. Split the list two ways: findings that touch **position-relevant state** (a number, date, or claim that could reach a sizing decision) versus **harness hygiene**. I need to know which three to do first, and I need it from something that has read all of them.
 
@@ -59,3 +59,44 @@ And one question back, in the spirit of your own part two, which you should answ
 4. **Asks 2 and 3 are the ones that touch money.** If it only does 1 and 2, the exchange still pays for itself.
 5. **Ask 4 is deliberately spec-only.** The temptation to let it fix F19 is strong — it found the hole and understands it. But that is a live enforcement hook, L41 is on file, and the house rule is explicit. A wrong patch here is worse than the open hole, because the hole is at least *known*.
 6. **The closing question is the commission's own instrument turned on the auditor.** If the standing extraction is true — *specification inherits the specifier's blind spots* — then it applies to the audit's specification too, and the audit is the only party positioned to answer. Expecting a partial answer; a complete one would itself be evidence the question was not understood.
+
+---
+
+# AMENDMENT 1 (2026-07-27, operator-prompted) — asks 4+5 replaced by an unconstrained change-list
+
+**Operator question, verbatim:** *"as a thought experiment, why not ask it what changes it would do if permitted?"*
+
+**Why this is a correction and not an addition.** The five asks above are a **specification**. They bound the audit session's output to what I could imagine asking for — which is precisely the defect the commission was built to detect (`2026-07-27-fresh-session-verification-commission.md`, standing extraction: *"specification inherits the specifier's blind spots, and a system built to spec cannot see them"*). I reproduced it one layer up, in the reply to the instrument built to detect it, three days after writing the extraction. Old ask 4 ("spec the intake fix") and old ask 5 ("triage the findings") were both narrow instances of the general question, pre-shaped by my guess at the answer.
+
+**The substantive argument, independent of the meta-point:** a finding and its fix are different artifacts. The session can be right about F19 and wrong about how to close it, or hold a materially better fix than my spec-shaped one — and under the original framing I would never learn which. Separately, the highest-value class it will never volunteer is **removals**: it has just read the entire corpus with fresh eyes, making it the best-positioned reader this repo has had for "this earns nothing," and auditors add by training.
+
+**Two designed-around risks:** (a) unconstrained, "what would you change" returns a wish-list — fixed by pricing every item and requiring a falsifier per change; (b) it authored the findings, so it is the worst-calibrated party on their importance — fixed by mandating the counter-list (what it would NOT change, including its own findings not worth fixing).
+
+## REPLACEMENT ASK 3 (supersedes old 4 and 5; claim 6 becomes ask 4)
+
+> **3. What would you change, if you were permitted to change anything?**
+>
+> Not "what did you find" — that's done. **What would you do about it, unconstrained by what you assume you're allowed to touch?** Assume full permission over the repo: hooks, rules, workflows, file structure, conventions, the CLAUDE.md itself. I am not asking you to make the changes. I am asking what you'd make, because your findings and your fixes are different artifacts and I currently have only the first.
+>
+> Four things make this decision-grade rather than a wish-list:
+>
+> - **Price every item.** What it catches, what it costs to build, what breaks if it's wrong, and how you'd know it was wrong. An unfalsifiable change is a decoration and gets dropped.
+> - **Include what you'd DELETE.** You've read this whole corpus fresh, which makes you the best-positioned reader it has ever had for "this earns nothing." Rules, hooks, files, conventions, whole workflows. Auditors add by training; I'm explicitly asking for the subtraction list, and I'll weight it higher than the addition list.
+> - **Name what you'd change that is NOT downstream of any of your 24 findings.** That's where the genuinely new material is — a finding-driven fix is just remediation. If nothing is on this list, say so plainly; that's a real result about how much of the change-space your method reached.
+> - **Give me the counter-list: what you'd deliberately leave alone.** Including findings of your own that aren't worth fixing. A finding on an inert file costs nothing to leave open, and I'd rather you tell me than have me discover it after building something.
+>
+> Then: **the single change with the highest value-to-risk ratio**, and separately **the one you're least sure about** — I want to know where your own confidence is thin, not just where it's high.
+>
+> **One hard constraint, and it is the only one.** Do not patch a live enforcement hook, even if you're certain. L41 is on file exactly here: an FP-fix widens a matcher, and widening a matcher is a hole-creation event — the last round of guard-loosening opened bypasses one token away. Live-enforcement changes are spec-then-review in this house, no solo ship. Everything else you may propose freely; propose it as a change you would make, not as a change you are requesting permission for.
+
+## Ordering and handling
+
+- **Persist (ask 1) still goes first** — the only irreversible item.
+- **The change-list becomes ask 3, ahead of claim 6**, because it is pure synthesis from context the session already holds: it costs almost nothing now and becomes impossible once its context degrades.
+- **On receipt it is data about the change-space, NOT a queue.** The risk is not that it proposes bad changes; it is that a well-argued list from a session that just did strong work creates a felt obligation to build it. Rule #19 gating and the position/sizing gate do not move regardless of argument quality.
+
+## Booked observation (N=2, honest scope)
+
+**The operator's "why not ask X" meta-questions have now improved two finished instruments in three days:** (1) 2026-07-24/25 brain-dump → killed the 14-item checklist and produced the two-layer absence commission; (2) 2026-07-27 this amendment → replaced a pre-shaped remediation spec with an unconstrained change-list. Both times the instrument was **already written and considered complete by me**, and both times the correction was of the same type: *I had specified the answer's shape while believing I was asking an open question.*
+
+Scope honestly: N=2 is a candidate, not a verified pattern, and the sample is drawn from instrument-design turns only. **Operating consequence pending the next codification pass:** before sending any commission, prompt, or brief, state explicitly what shape of answer it forecloses — the check is not "is this question open?" but "what answers can this question not receive?" Nominated, not self-promoted, consistent with the standing extraction's own handling.
