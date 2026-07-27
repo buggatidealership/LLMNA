@@ -9,6 +9,22 @@ Per `signals/cross-source-log/2026-07-27-mon-nvidia-sk-partnership-ingest-entity
 
 **Position implication: 🟡 HOLD (37 ADS) — no size change — the conditional €3-5k add remains gated on the 2026-07-29 Q2 print (LTA prepayment/duration disclosure + GP-bridge sign test), which this does not pre-empt. A non-binding LOI does not move a sizing decision; the print does. The −41% drawdown does not move it either — "it has fallen a lot" is not the pre-registered gate and must not be allowed to substitute for it. No position action — user-gated.**
 
+## 📌 [2026-07-27 EOD] Leg-B sweep — an ASP-side input 48h before the print, and a falsifier that did NOT fire (Rule #10 back-ref)
+Per `signals/cross-source-log/2026-07-27-mon-eod-legb-unanchored-sweep-brent-gate-datagapped.md`.
+
+**(1) Memory contract-price escalation is decelerating hard.** Conventional DRAM contract prices projected **+13% to +18% QoQ in Q3 2026**, against **+58% to +63% QoQ actual in Q2** (TrendForce contract survey — negotiated quarterly contracts, NOT spot; 🟡 T2-DERIVED). Stated mechanism: consumer affordability limits. Separately, **DDR4 spot ~$2.10/Gb now exceeds HBM3e contract ~$1.70/Gb** — legacy costlier per bit than leading-edge AI memory.
+**This is an INPUT to Wednesday's test, not a substitute for it, and NOT a falsifier fire.** Falsifier #1 (GP-bridge sign test = CRACK) requires **GM↓ AND ASP↓ at a print**. This is decelerating *growth* — still strongly positive — projected rather than printed, vendor-surveyed rather than company-reported. **Deceleration is not a crack.** What it does is tell me which number to read first on 07-29: the **ASP leg** of the GP-bridge, against a contract path that just went ~+60% → ~+15% QoQ. Carry the consumer-affordability ceiling explicitly as a demand-side bound on the ASP leg.
+
+**(2) ⚠️ Falsifier #4 looked like it touched. It did not.** The sweep reported "S&P downgraded Oracle to BBB on AI-buildout FCF." Three checks kill it: **(a)** falsifier #4's tell #7 is **MOODY'S**-Oracle (`sector/end-demand-durability-model.md`), and no Moody's action appears; **(b)** the S&P action is already on file — `meta/day-state.md` 2026-07-09, **BBB→BBB−, outlook STABLE**, transmission muted (+9bp spread, equity +2.7%), adjudicated then as *"node does NOT fire"*; **(c)** the sweep's level (BBB) is the level Oracle held *before* that cut, so this is most likely a **stale re-report with the level mis-stated** (Rule #12 / B40). **NO falsifier fire, no new information.** If a genuine Moody's Baa2/NEGATIVE action exists it IS tell #7 — not in this sweep, not inferred. Checking it is carried to 07-28.
+
+**(3) Falsifier #3 (CXMT relief-valve) — watch item only.** China reportedly begins limited domestic immersion DUV production (5 units 2026, ~20 in 2027) with **CXMT a named recipient** — but T3-TRANSIENT, single-source, manufacturer unnamed, performance and reliability acknowledged to lag. Direction of travel is adverse; the tier is too weak to move a weight. **Registered, not cascaded.**
+
+**(4) Reaction-function flip → N=6.** Intel closed −7.9% on an EPS beat, revenue beat and raised profit forecast. The add gate's reaction-function half continues to deteriorate.
+
+**The frame that governs all four (adopted from the sweep's own counter-note):** the contradicting evidence this window is concentrated in **valuation, financing and cost — not volume**. June US core capital-goods orders ex-aircraft rose 1.4% above expectations; China's June chip/computer/power-equipment exports grew fastest since late 2021. Per Critical Rule #8, a margin/financing signal is not a thesis falsifier, and conflating the two is how a correct bearish observation produces a wrong sell.
+
+**Position implication: 🟡 HOLD (37 ADS) — no size change — nothing here fires a written falsifier, and the one that appeared to is a stale re-report of an event already adjudicated on 07-09 as node-does-not-fire. The conditional €3-5k add remains gated on the 2026-07-29 Q2 print, with the ASP leg of the GP-bridge sign test now the first number to read. No position action — user-gated.**
+
 # SKHY (SK Hynix ADR) — Thesis
 
 ## 📌 [2026-07-25 EOD, date-corrected 07-27] Reaction-function flip MEASURED (was inferred) + a NEW flow-risk mechanism into **Jul-31**
