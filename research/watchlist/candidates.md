@@ -2019,3 +2019,12 @@ Next step (gate): one verification pass per verb (share/backlog/B39/access) BEFO
 
 
 **🔴 CORRECTION 2026-07-25 (per `meta/redteam/2026-07-25-opus5-vs-fable5-model-selection-dive.md`, T1-verified):** the "90-minute global shutdown" framing carried in this file is **INVERTED**. The 90 minutes was the **COMPLIANCE DEADLINE** in the BIS "is informed" letter (ECRA, 2026-06-12); the actual outage ran **~19 days (12 Jun → 1 Jul 2026)**. Controls were **WITHDRAWN 2026-06-30**; Fable 5 redeployed globally 2026-07-01 and is **generally available worldwide with no export restriction as of 2026-07-25** (T1 docs). Mythos 5 remains invitation-only. The precedent-risk read (a US agency can zero a frontier model globally on ~90 minutes' notice; the authority was never disclaimed) is UNCHANGED and arguably strengthened by the 19-day duration.
+
+## 2026-07-28 EOD Leg-B additions (per signals/cross-source-log/2026-07-28-tue-eod-legb-discovery-kospi-cb8-cxmt-duv-credit.md §5)
+- **Shanghai Aishengna Electronic Technology Group** (state, unlisted) — the consortium mass-producing China's immersion DUV tools (absorbed SMEE + Yuliangsheng); surfacing chain: Reuters 07-27 DUV exclusive (T2). Untradable; tracked as supply-side regime variable.
+- **Yuliangsheng** (private, SiCarrier affiliate) — built the DUV prototype; the technical core of the effort (T2).
+- **SiCarrier** (Huawei-backed, private) — connective tissue Huawei ↔ litho push (T2).
+- **Hua Hong Semiconductor (1347.HK)** — named first-wave DUV recipient alongside SMIC/CXMT (T2); mature-node beneficiary of the "lithography sovereignty" theme.
+- **CXMT (STAR-listed 2026-07-27)** — STATUS CHANGE monitor-only → LISTED: files, discloses capacity (7.67% global DRAM share per prospectus, T1), has a market price (~$480bn cap). Primary instrument for the TC-1 duration-risk watch.
+- **Seagate (STX) / Western Digital (WDC)** — storage cohort trading as one book with SNDK (−7 to −12% 07-28, T2); candidates for cohort-decoupling reads.
+- **DUV-subsystem Japan cluster (unworked thread, HIGH value): Gigaphoton, Ushio, Canon/Nikon optics, Tokyo Seimitsu** — if China solves tool assembly, the choke point migrates to the subsystems it still imports; the load-bearing sentence in the Reuters piece (artifact §6.1).

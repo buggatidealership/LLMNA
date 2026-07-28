@@ -80,3 +80,8 @@ Monthly audit: any registry row not exercised in 30 days gets flagged; any gotch
 
 **⚠️ VENDOR DEFECT, dated and reproducible:** EODHD **real-time INDEX** feeds (`KS11.INDX`, `KQ11.INDX`) returned a **STALE `previousClose`** on 2026-07-28 00:05Z — carrying the 07-24 close rather than 07-27. Single-stock `.KO` feeds carried the correct prior close. **The vendor's own `change_p` was therefore wrong by −0.92pp on KOSPI and −2.14pp on KOSDAQ.** **Standing rule from this: NEVER read `change_p`; always compute from the tick against a close verified out of the EOD series.**
 
+
+## 2026-07-28 EOD route notes (per the EOD Leg-B verification run)
+- **EODHD Korean singles: use `.KO` suffix** — `000660.KO` / `005930.KO` returned clean EOD series tonight while `.KS` returned HTTPError (route drift vs earlier sessions; `.KRX` also errors). Indices unaffected (`KS11.INDX` fine). Verify suffix per session; compute deltas from the EOD series per the standing change_p ban.
+- **Brent still has NO machine route**: `BZ.COMM` HTTPError on EODHD; FRED `DCOILBRENTEU` spot-FOB ~6-day lag. Settle-defined gates (H3) adjudicate on press-named settles, basis-stamped, until a futures-settle route is registered.
+- **Credit/CDS gap (NEW, flagged by the 07-28 absence question):** no route for CDS levels or corporate bond spreads — TC-2 rung 3 now has traded-price marks (NVDA CDS, DC-bond yields) the harness cannot machine-read. Candidate sources to evaluate: FRED HY/IG OAS series (ICE BofA) as coarse proxy; issue-level data likely needs a paid route.

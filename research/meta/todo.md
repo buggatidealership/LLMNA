@@ -406,6 +406,11 @@
 
 ---
 
+- [ ] **P1 / harness / 2026-07-28** [INFRA, INDP] — CREDIT-INSTRUMENTATION LEG (the 07-28 absence-question finding: no CDS/spread route)
+  - Origin: EOD Leg-B 2026-07-28 — the market's dominant conversation (NVDA CDS record 82bp, DC bond 7.534% failing to tighten, $250bn backstop talks) has NO harness instrument; TC-2 rung 3 now shows traded-price marks the desk cannot machine-read; every equity position is a late-cycle derivative of an unmonitored financing condition.
+  - Scope: register a machine route for at least a coarse credit read (FRED ICE-BofA HY/IG OAS as first rung); map funding-cost → order-book → memory-demand lead-lag as a TC-2 monitorable; decide whether issue-level (CDS/bond) data justifies a paid route.
+  - Linked: meta/data-access.md, signals/triangulation.md TC-2, signals/cross-source-log/2026-07-28-tue-eod-legb-discovery-kospi-cb8-cxmt-duv-credit.md §7
+
 ## Archive (completed process items without permanent artifact)
 
 ### 2026-07-06 harness-audit pruning pass (7 items archived, 1 deleted)
