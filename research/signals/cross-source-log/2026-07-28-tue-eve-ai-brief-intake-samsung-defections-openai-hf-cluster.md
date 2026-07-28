@@ -33,3 +33,16 @@
 - Rule #14 density: item 9 (if RESTATEMENT) does not increment TC-1; items 2-4 have no existing cluster — if the operational leg verifies, candidate for a new demand-durability watch entry, else nothing opens.
 
 *§2 pending agent returns.*
+
+---
+
+## §2 VERIFICATION RESULTS
+
+### §2.1 Agent 1 — Samsung→SKH defections + RAM datum (returned 2026-07-28 ~22:50Z)
+
+**Claim 1 verdict: REFRAMED — the brief's framing is a category error (B40.2 magnitude/scope-inflation instance, booked).** The MIT TR piece is real and published today ([technologyreview.com](https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/), T2 aggregation of Korean press), but the defection pressure is in Samsung **FOUNDRY**, not memory: the 초기업노조 union survey (n=8,297, fielded 6/17-6/30, [Newspim 07-16](https://www.newspim.com/news/view/20260716000812) T2-native = the origin, 12 days before the English wave) shows 2-year defection intent **파운드리 81.5% / System LSI 75.4% / DS average 49.5% / 메모리 32.7%** — memory is the second-HEALTHIEST org in DS. Using this as an HBM-competitiveness tell is exactly the division-level→sector-level flattening the harness caught on 07-27 (Samsung MX≠DS prior). Hard count is thin: **200+ union members over ~4 months** (union-claimed Apr-23, ≈0.26% of DS ~78,000) — anecdote+intent tier, and two open-source attrition datasets conflict irreconcilably (flagged, neither load-bearing).
+**The two genuinely new data:**
+1. **🟢 Talent-mobility legal cap (missed by Western coverage):** Suwon District Court injunction 07-13 — two ex-Samsung NAND-design middle managers barred from SK Hynix until 2027-04-30 (18 months), **₩5M/day** penalty ([Khan](https://www.khan.co.kr/article/202607131320001) T2). The highest-value transfer channel is being throttled by courts, not accelerating.
+2. **🟡 Print-eve 2nd-order item (investable):** SK Hynix PS is contractually **10% of operating profit** (codified Sept 2025; FY2025 payout hit **2,964% of base**); at consensus Q2 OP ₩64.09T (Yonhap Infomax 14-broker, [fnnews 07-26](https://www.fnnews.com/news/202607260555359670) T2) the PS accrual is mechanically large and scales WITH any beat — a variable-opex claim that grows exactly when results surprise up. AND: SKH has floated paying PS in **treasury shares instead of cash** against a prior all-cash agreement ([Newsis 07-16](https://www.newsis.com/view/NISX20260716_0003711811), [Hankookilbo 07-20](https://www.hankookilbo.com/news/article/A2026072015390003728) T2) — **a cash-preservation tell ahead of capex. Added to tomorrow's print read: check the opex line + any PS-payment-form commentary.**
+
+**Claim 9 verdict: CONFIRMED-NEW at the retail-tape layer / RESTATEMENT at the mechanism layer.** Tom's Hardware (published today, T2) first-party retail checks: Crucial Pro 32GB DDR5-6000 $90 (Prime Day 2025) → **$459 = 5.1×**; G.Skill kit ~$100 → $599.99 ≈6×; 32GB DDR5 street floor $375-379; **Crucial brand wound down** as Micron pivoted to AI memory. Mechanism figures (HBM ~3× wafer-per-GB, constraints through 2030) are restatements — TC-1 NOT incremented (Rule #14, retail is a lagging derivative of contract). The consumer-tier price tape is corroborant color for the shortage's reach, not a leading indicator.
