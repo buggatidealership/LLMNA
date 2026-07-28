@@ -70,3 +70,15 @@ Verbatim core: *"My method was source-shaped… What I structurally could not se
 3. **The causal inversion (Korea LED; US followed, intraday-sequenced: flat open −0.34%, BofA call on Korean wires 10:53, sidecar 11:40, CB 14:33, Nasdaq futures following)** reclassifies the KR flow layer from *sympathetic* to *leading* for that episode — a Path-B interpretive upgrade, position-neutral, folded into addendum #10's notes. 🟡 T2 sequencing, no T1 halt log (KRX unreachable — flagged inferred by the auditor, carried as such).
 
 **NO POSITION ACTION (user-gated). Nothing here moves H1/H2/H3 weights or fires any falsifier. The 2026-07-29 SK Hynix Q2 print remains the sole adjudicator of the conditional add.**
+
+---
+
+## 8. CASCADE EXECUTED (2026-07-28, same day)
+
+**51 of 52 enumerated lines corrected on main; 1 enumeration false positive found and logged.** Method: thesis files (7) received in-place date fixes + a Rule #10 back-ref block each (held names MURATA/SUMCO with position-implication lines); signals and ledger files (10) received inline ⟦F1-CORR⟧ markers appended to each defective line — originals preserved as the record — plus a header banner on the 7 signals artifacts. The origin artifact (`2026-06-23-am-subagent-full-cohort-price-action-global-macro.md`) is banner-flagged as the intake-defect source.
+
+**Enumeration FP #3 (beyond the auditor's two):** `companies/HYNIX/thesis.md:1655` — the classifier's `06-24` match is the **SEC F-1 filing date** (2026-06-24 EDGAR registration for the ADR offering), a genuine event date, not the crash misdating. Left untouched. This confirms the classifier note in ADDENDUM 2 §5: first-match-wins cannot distinguish semantic role; any re-run needs a filing-date exclusion.
+
+**Dependency notes honoured:** SNDK's "Jun 23" kept (correct date, weekday label fixed Mon→Tue); KIOXIA's "Jun 24" fixed; HYNIX:412 received both Class A and Class C edits in the same sentence plus the Korea-led sequencing note; MRVL's +8.23% leg re-dated but explicitly retained 🔴 UNVERIFIED. The 06-23 (CB#4) / 06-26 (CB#5) conflation guard is written into every thesis back-ref.
+
+**NO POSITION ACTION. No falsifier touched — every correction is to historical context lines; no thesis mechanics, tiers, or falsifiers changed.**

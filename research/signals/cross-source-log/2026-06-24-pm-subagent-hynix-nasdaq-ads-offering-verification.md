@@ -1,5 +1,7 @@
 # 2026-06-24 PM — Subagent A — SK Hynix Nasdaq ADS Offering Verification (DART filing T0 + SEC F-1)
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Trigger source:** User-shared 2 primary-source images today 2026-06-24: (1) SK Hynix Preliminary Prospectus cover for Nasdaq ADS listing under ticker "SKHY"; (2) DART filing 증권예탁증권(DR) 발행 결정 dated 2026-06-24 (Korean regulatory T0).
 
 **Subagent:** 1 (Opus 4.8 per Critical Rule #16); MAXIMUM depth scope on largest held position (HYNIX 10.13% Core).
@@ -143,7 +145,7 @@ Confidence HIGH (T0 DART primary + multiple T1 Korean-language corroboration).
 | Date | Event |
 |---|---|
 | June 22 2026 | HYNIX KRX reaches ATH ₩2,945,000; SK Hynix dethrones Samsung as Korea's most valuable company (#1 for first time in 25 years) |
-| June 23 2026 | Semiconductor selloff: HYNIX -12% on KRX, KOSPI -9.99% (two circuit breakers) |
+| June 23 2026 | Semiconductor selloff: HYNIX -12% on KRX, KOSPI -9.99% (two circuit breakers) | ⟦⚠️F1-CORR 2026-07-28: ONE KOSPI stage-1 CB (14:33:43) + ONE KOSDAQ CB on 06-23; the 11:40:44 event was a futures sell SIDECAR, not a circuit breaker (T4-aggregator-inherited); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 | June 24 2026 | Board resolves ADS offering at ₩255,500/ADS (reference price = June 23 close, 13.3% below ATH); KOSPI +3.26% recovery; HYNIX +2.94%; Samsung 90T buyback rumor; Micron prints tomorrow |
 
 Offering reference price locked at POST-SELLOFF level, not ATH. Standard for large offerings (management moves fast after selloff creates urgency window).

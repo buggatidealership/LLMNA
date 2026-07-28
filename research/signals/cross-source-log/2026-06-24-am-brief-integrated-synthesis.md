@@ -1,5 +1,7 @@
 # 2026-06-24 AM — AI Intelligence Brief Morning Edition (FINAL integrated synthesis)
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Trigger source:** User-shared AI Intelligence Brief Morning Edition June 24 2026 (77 sources scanned). User explicit direction: "verify as usual" + "cascade" + "Haven't made any changes to my positions as per your direction" (HOLD discipline preserved).
 
 **MU date correction (user-provided):** MU print = TOMORROW 2026-06-25 after close, NOT today. Yesterday's "TONIGHT" framing was off by 24h.
@@ -68,12 +70,12 @@
 **Source:** Subagent A FULLY CORROBORATED + timeline-resolved.
 
 **Timeline (no contradiction with prior verified reads):**
-- Mon Jun 23 KST close: KOSPI 9,114.55 record high (per yesterday's verified read = correct at time of capture)
-- Mon Jun 23 US session: Nasdaq -2.2%, S&P -1.43%
-- **Tue Jun 24 Asia open: KOSPI -9.99% to 8,203.84; SK Hynix -12%; Samsung -12%; KIOXIA -15%+; TWO circuit breakers triggered**
-- Tue Jun 24 same-day recovery: KOSPI +4.14% intraday; closed ~+1%; Samsung +7%; SK Hynix +3.8%
+- Mon Jun 23 KST close: KOSPI 9,114.55 record high (per yesterday's verified read = correct at time of capture) ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- Mon Jun 23 US session: Nasdaq -2.2%, S&P -1.43% ⟦⚠️F1-CORR 2026-07-28: this US session was **Tue 2026-06-23** (after the 15:30 KST KR close), not Monday — on Mon 06-22 semis ROSE (SOXX +2.43%, MU +6.83%); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- **Tue Jun 24 Asia open: KOSPI -9.99% to 8,203.84; SK Hynix -12%; Samsung -12%; KIOXIA -15%+; TWO circuit breakers triggered** ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- Tue Jun 24 same-day recovery: KOSPI +4.14% intraday; closed ~+1%; Samsung +7%; SK Hynix +3.8% ⟦⚠️F1-CORR 2026-07-28: no index bounced +4.14% — KOSPI 06-24 closed **+3.26%**; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
-**Cohort actual moves Mon Jun 23 US close:**
+**Cohort actual moves Mon Jun 23 US close:** ⟦⚠️F1-CORR 2026-07-28: this US session was **Tue 2026-06-23** (after the 15:30 KST KR close), not Monday — on Mon 06-22 semis ROSE (SOXX +2.43%, MU +6.83%); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 | Ticker | Prior Close | Jun 23 Close | Move |
 |---|---|---|---|
@@ -82,12 +84,12 @@
 | AVGO | ~$392.13 | ~$374-391 range | **-3 to -5%** |
 | NBIS | ~$295 | ~$277.65 | **~-6%** |
 | SNDK | $2,273.73 ATH Jun 22 | ~$1,962 | **-13.7%** |
-| SK Hynix | 2,945,000 KRW ATH Jun 22 | held Mon; -12% Tue Jun 24 | Major Jun 24 |
-| KIOXIA 285A | 112,700 JPY ATH Jun 22 | -15%+ Tue Jun 24 | Major Jun 24 |
+| SK Hynix | 2,945,000 KRW ATH Jun 22 | held Mon; -12% Tue Jun 24 | Major Jun 24 | ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+| KIOXIA 285A | 112,700 JPY ATH Jun 22 | -15%+ Tue Jun 24 | Major Jun 24 | ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
-**🟡 SELF-CORRECTION on yesterday's MRVL framing:** Yesterday's HYNIX/MRVL thesis files referenced "MRVL +8.23% today to $313.55." Per Subagent A verified close Mon Jun 23 = **$279.04 -8.82%**. The +8.23% was likely the PRIOR day's gain (Friday session); actual Mon Jun 23 trading session = -8.82% drop. **B40.3 self-attribution timing garble.** Self-correcting in MRVL + HYNIX cascade entries this commit.
+**🟡 SELF-CORRECTION on yesterday's MRVL framing:** Yesterday's HYNIX/MRVL thesis files referenced "MRVL +8.23% today to $313.55." Per Subagent A verified close Mon Jun 23 = **$279.04 -8.82%**. The +8.23% was likely the PRIOR day's gain (Friday session); actual Mon Jun 23 trading session = -8.82% drop. **B40.3 self-attribution timing garble.** Self-correcting in MRVL + HYNIX cascade entries this commit. ⟦⚠️F1-CORR 2026-07-28: this US session was **Tue 2026-06-23** (after the 15:30 KST KR close), not Monday — on Mon 06-22 semis ROSE (SOXX +2.43%, MU +6.83%); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
-**B45 regime check binding:** -9.99% KOSPI + same-day +4% recovery + two circuit breakers = **leverage-amplified volatility at record valuations with high retail margin debt + mechanical unwind**, NOT a regime break. Single-day -10 to -15% moves on names that had record-high closes 1-2 sessions prior = WITHIN regime base rate per `signals/cross-source-log/2026-06-12-pre-training-magnitude-conservatism-calibration.md`. **MU print TOMORROW (Jun 25 after close) is the TRUE regime test for the cycle.**
+**B45 regime check binding:** -9.99% KOSPI + same-day +4% recovery + two circuit breakers = **leverage-amplified volatility at record valuations with high retail margin debt + mechanical unwind**, NOT a regime break. Single-day -10 to -15% moves on names that had record-high closes 1-2 sessions prior = WITHIN regime base rate per `signals/cross-source-log/2026-06-12-pre-training-magnitude-conservatism-calibration.md`. **MU print TOMORROW (Jun 25 after close) is the TRUE regime test for the cycle.** ⟦⚠️F1-CORR 2026-07-28: ONE KOSPI stage-1 CB (14:33:43) + ONE KOSDAQ CB on 06-23; the 11:40:44 event was a futures sell SIDECAR, not a circuit breaker (T4-aggregator-inherited); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 **B46 "bubble" framing caught:** "Bubble" originated from T3 sources (InformedClearly, GulfNews, Slashdot). Bloomberg + CNBC T1 framed as "valuation reassessment" + "AI rally reality check" — NOT institutional consensus. Brief amplifies T3 framing.
 
@@ -201,7 +203,7 @@
 |---|---|---|
 | HYNIX 10.13% Core | Pax Silica STRUCTURAL BULLISH + LineShine minor cassette + selloff = market-misread-as-opportunity per HBM4-throttle correctly-bullish interpretation | 🟢 HOLD no change |
 | MRVL 5.9% Active | Pax Silica STRUCTURAL BULLISH (US ASIC inside bloc) + selloff -8.82% Jun 23 to $279 = under-position-cost ($286.26 BEP) | 🟢 HOLD; falsifier watch on MU print |
-| KIOXIA ~€10K N26 | Pax Silica + storage NVMe BULLISH + selloff -15%+ Jun 24 = WITHIN regime base rate | 🟡 HOLD-until-falsifier no change |
+| KIOXIA ~€10K N26 | Pax Silica + storage NVMe BULLISH + selloff -15%+ Jun 24 = WITHIN regime base rate | 🟡 HOLD-until-falsifier no change | ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 | SNDK 6sh | Pax Silica + storage NVMe BULLISH + selloff -13.7% Jun 23 = WITHIN regime base rate | 🟢 HOLD no change |
 | MURATA 336sh | Pax Silica STRUCTURAL BULLISH (Japanese passives inside bloc) | 🟢 HOLD no change |
 | SUMCO 626sh | Pax Silica STRUCTURAL BULLISH (Japanese wafer inside bloc) | 🟡 HOLD no change |

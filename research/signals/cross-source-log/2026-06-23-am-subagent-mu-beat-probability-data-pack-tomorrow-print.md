@@ -1,5 +1,7 @@
 # MU (Micron Technology) — Beat-Probability Data Pack (Subagent AM-MU-BEAT-PROB)
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Date:** 2026-06-23
 **Subagent scope:** 6-axis verification; Critical Rule #16 (verification subagent fan-out); ~120-180k token DEEP run
 **Report date:** Tomorrow 2026-06-24 after close — Q3 FY26 print (period: March-May 2026)
@@ -131,7 +133,7 @@ Each of these three fires is more important than the numerical beat magnitude.
 | 2026-06-08 | KOSPI circuit-breaker (-8.44%); MU sympathy selloff (memory sector -10%+) | T2 Korea Herald / Bloomberg | SHORT-TERM NEGATIVE (absorbed) | Recovered fully; MU now +300% YTD |
 | 2026-06-05 | Post-AVGO earnings sector selloff (-13% for AVGO; SOX -10%) | Multiple T2 | SHORT-TERM NEGATIVE (absorbed) | Context: AVGO reported AI revenue $4.1B vs $4.8B expected; MU HBM dynamic is different (sold out vs demand question) |
 | ~2026-06 | MSFT 3-year DDR5 supply agreement with SK Hynix | T2/T3 | INDIRECT POSITIVE for MU | Validates LTA structure in commodity DRAM; peer read-through bullish |
-| 2026-06-23 | MRVL +8.23%; KOSPI record high +0.69%; Nikkei record +1.55% | T2 verified (harness AM-FULL-COHORT-PRICE-MACRO file) | **STRONG NET POSITIVE (macro backdrop)** | AI infrastructure recovery rally day before MU print — ideal sentiment setup |
+| 2026-06-23 | MRVL +8.23%; KOSPI record high +0.69%; Nikkei record +1.55% | T2 verified (harness AM-FULL-COHORT-PRICE-MACRO file) | **STRONG NET POSITIVE (macro backdrop)** | AI infrastructure recovery rally day before MU print — ideal sentiment setup | ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 | 2026-06-23 | MU stock at ~$1,230 (up ~+300% YTD per search results) | T2 | Pre-earnings positioning | IMPORTANT: already rallied 300% YTD = L21 regime modifier applies (see Axis 6) |
 
 **Net news flow read: STRONGLY NET POSITIVE** — 4 sell-side PT raises in 30 days; Jensen certification of all 3 suppliers; Anthropic LTA the day before print; commodity DRAM supercycle confirmation via HYNIX; macro backdrop (KOSPI/Nikkei at records today) is the ideal sail-at-your-back setup entering tomorrow.
@@ -297,7 +299,7 @@ These inputs collectively mean: the Q3 FY26 environment is the hottest memory ma
 Based on verified harness data (AM-HYNIX-THROTTLE-ARTICLE June 23):
 - Korean financial press sourcing (ETnews/Maeil Business/Chosun Biz pattern) is citing commodity DRAM at "theoretical maximum operating margin" (Daishin Securities — not independently verified)
 - KITA preliminary June 1-20 data: semiconductor exports +60.4% YoY (verified T1 Korea Customs Service / KITA)
-- SK Hynix KRX 000660: RECORD HIGH June 22 (2,945,000 KRW); June 23 +5.57% (verified in harness AM-FULL-COHORT-PRICE-MACRO)
+- SK Hynix KRX 000660: RECORD HIGH June 22 (2,945,000 KRW); June 23 +5.57% (verified in harness AM-FULL-COHORT-PRICE-MACRO) ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 This Korean-language cross-check SUPPORTS the bull case for MU: if Korean export data shows +60.4% YoY semiconductor exports and HYNIX hit record highs, the underlying market Micron participates in is confirmed at its strongest point ever.
 

@@ -1,5 +1,7 @@
 # 2026-06-26 Morning Feed Scan — Post-Korea-Close / Pre-Weekend
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Workflow:** #10 MORNING-FEED-SCAN (Pre-Korea variant, adapted)
 **Triggered:** 2026-06-26 11:57 UTC / 13:57 CET / 20:57 KST
 **Scan window:** POST-KOREA-CLOSE (Friday session ended 06:30 UTC / 15:30 KST / 08:30 CET)
@@ -11,7 +13,7 @@
 
 ## TL;DR — top 3 material items
 
-1. **L30 SUPERCYCLE-MAGNITUDE-FLOOR FIRED IN REVERSE (DOWNSIDE).** KOSPI -5.81% to 8,411.21 today (Fri 2026-06-26), TWO circuit breakers in three days (intraday low -8.19%, halted 20 min from 12:10 KST). HYNIX -8.36% to ₩2,673,000; Samsung -5.3% to ~₩328,000 (from ₩358,500 prev close). **Trigger: OpenAI IPO delay-to-2027 report → SoftBank -12-13% in Tokyo (worst since Aug 2024) → AI-infra capex-doubt cascade.** This is a category-event, magnitude-floor in -20-30% range cohort drawdown over 3 sessions per B45 supercycle priors applied symmetrically. T1-TRADE event (verified marks).
+1. **L30 SUPERCYCLE-MAGNITUDE-FLOOR FIRED IN REVERSE (DOWNSIDE).** KOSPI -5.81% to 8,411.21 today (Fri 2026-06-26), TWO circuit breakers in three days (intraday low -8.19%, halted 20 min from 12:10 KST). HYNIX -8.36% to ₩2,673,000; Samsung -5.3% to ~₩328,000 (from ₩358,500 prev close). **Trigger: OpenAI IPO delay-to-2027 report → SoftBank -12-13% in Tokyo (worst since Aug 2024) → AI-infra capex-doubt cascade.** This is a category-event, magnitude-floor in -20-30% range cohort drawdown over 3 sessions per B45 supercycle priors applied symmetrically. T1-TRADE event (verified marks). ⟦⚠️F1-CORR 2026-07-28: ONE KOSPI stage-1 CB (14:33:43) + ONE KOSDAQ CB on 06-23; the 11:40:44 event was a futures sell SIDECAR, not a circuit breaker (T4-aggregator-inherited); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 2. **COHORT-DECOUPLING DIAGNOSTIC = SYSTEMIC, NOT IDIOSYNCRATIC.** HYNIX -8.36% vs Samsung -5.3% vs SoftBank -12-13% vs Nikkei -4.2% vs KOSPI -5.81% — directional convergence across all AI-infra cohort peers, magnitude differential reflects beta/AI-exposure not name-specific news. HYNIX move is HIGHER beta within KOSPI but NOT decoupled — verdict: SYSTEMIC AI-capex-doubt cascade, NOT HYNIX-specific thesis-breakage. **No HYNIX falsifier fired** per Critical Rule #8 (sell only on falsification; macro headwind ≠ falsifier).
 3. **F-1/ADR PRE-REGISTERED CATALYST CALENDAR ACTIVE.** SK Hynix F-1 filed 2026-06-24 (board resolution date); 17.79M new shares @ ₩45.45T (~$29.4-29.65B) at 10:1 ADR ratio; bookbuilding July 6; trading starts July 10. **FUNGIBILITY DECISION STILL PENDING (Bloomberg 2026-06-25)** — binary catalyst as Round 7 flagged. Today's selloff PRECEDES the fungibility resolution; arbitrage trade still live.
 

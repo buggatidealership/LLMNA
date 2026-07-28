@@ -1,5 +1,7 @@
 # 2026-06-24 AM — Subagent A — Hardware/Infrastructure/Policy items verification (AI Brief June 24 Morning Edition)
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Trigger source:** Parent agent fan-out per Critical Rule #16 on user-shared AI Intelligence Brief Morning Edition June 24 2026.
 
 **Subagent:** 1 (Opus 4.8); scoped 6-item verification on hardware/infra/policy cluster; multilingual Chinese parallel mandatory for items #2 (LineShine) + #3 (Pax Silica).
@@ -15,10 +17,10 @@
 **Verdict:** No contradiction with prior session reads. TIMELINE RESOLVED.
 
 Sequence (two consecutive calendar days):
-- Monday June 23 KST close: KOSPI 9,114.55 (record high — yesterday's verified read = correct at time of capture)
+- Monday June 23 KST close: KOSPI 9,114.55 (record high — yesterday's verified read = correct at time of capture) ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 - Monday June 23 US session: US markets declining; Nasdaq -2.2%, S&P -1.43%
-- Tuesday June 24 Asia open: KOSPI plunged 9.99% to 8,203.84; SK Hynix -12%; Samsung -12%; KIOXIA -15%+; two circuit breakers triggered
-- Tuesday June 24 same-day recovery: KOSPI +4.14% intraday; closed ~+1%; Samsung +7%; SK Hynix +3.8%
+- Tuesday June 24 Asia open: KOSPI plunged 9.99% to 8,203.84; SK Hynix -12%; Samsung -12%; KIOXIA -15%+; two circuit breakers triggered ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- Tuesday June 24 same-day recovery: KOSPI +4.14% intraday; closed ~+1%; Samsung +7%; SK Hynix +3.8% ⟦⚠️F1-CORR 2026-07-28: no index bounced +4.14% — KOSPI 06-24 closed **+3.26%**; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 **Cohort actual price moves (June 23 US close):**
 
@@ -29,8 +31,8 @@ Sequence (two consecutive calendar days):
 | AVGO | ~$392.13 | ~$374-391 range | -3 to -5% |
 | NBIS | ~$295 | ~$277.65 | ~-6% |
 | SNDK | $2,273.73 (ATH Jun 22) | ~$1,962 | -13.7% |
-| SK HYNIX | 2,945,000 KRW (ATH Jun 22) | held Mon; -12% Tue Jun 24 | Major Jun 24 |
-| KIOXIA 285A | 112,700 JPY (ATH Jun 22) | -15%+ Tue Jun 24 | Major Jun 24 |
+| SK HYNIX | 2,945,000 KRW (ATH Jun 22) | held Mon; -12% Tue Jun 24 | Major Jun 24 | ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+| KIOXIA 285A | 112,700 JPY (ATH Jun 22) | -15%+ Tue Jun 24 | Major Jun 24 | ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 **MRVL clarification:** Context anchor "+8.23%" was MRVL's prior-day gain; MRVL actually FELL -8.82% on June 23 (from $307.86 to $279.04). Material correction from near-record close.
 

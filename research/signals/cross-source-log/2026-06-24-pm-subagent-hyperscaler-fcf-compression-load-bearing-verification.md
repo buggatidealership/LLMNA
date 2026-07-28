@@ -1,5 +1,7 @@
 # 2026-06-24 PM — Subagent C — Hyperscaler FCF Compression Load-Bearing Verification (follow-on to AM-BRIEF Subagent A flag)
 
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
+
 **Trigger source:** Parent agent fan-out per Critical Rule #16 on Subagent A's load-bearing flag: "Alphabet Q1 2026 FCF -47% YoY; Amazon FCF -95% trailing... THESE were the June 23 selloff catalysts." Subagent A explicitly flagged for separate INGEST/TRACE.
 
 **Subagent:** 1 (Opus 4.8); scoped 4-target verification + lateral falsification check.
@@ -55,7 +57,7 @@
 3. **June 19-20 2026:** Noam Shazeer (Google VP Engineering, Gemini co-lead) departs for OpenAI; John Jumper (Nobel laureate DeepMind) departs for Anthropic. GOOGL drops ~7% on talent exodus.
 4. **June 22 2026:** GOOGL drops another 6-6.7%. Contributing factors: AI talent departures amplifying FCF-sustainability doubt; legal setback (YouTube addiction ruling); Alphabet's SpaceX stake (-9.4%); 247wallst publishes "Alphabet Sinks 6%, Amazon Slides 4% Amid AI Capex Anxiety" — **explicit FCF framing. PROXIMATE CASCADE TRIGGER date.**
 5. **June 23 2026:** Full tech selloff deepens. Nasdaq -2.2%, S&P -1.44%, Philadelphia Semiconductor Index -7.9%. MRVL -8.82%, NVDA -3.71%, SNDK -12.49%, Alphabet cumulative -10%.
-6. **June 24 Asia:** KOSPI -9.99%, SK Hynix -12%, KIOXIA -15%+, circuit breakers. Same-day +4% recovery.
+6. **June 24 Asia:** KOSPI -9.99%, SK Hynix -12%, KIOXIA -15%+, circuit breakers. Same-day +4% recovery. ⟦⚠️F1-CORR 2026-07-28: the crash session was **Tue 2026-06-23**, not Jun 24 — 06-24 closed **+3.26%**, an UP day; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 **Was FCF the direct proximate trigger?** No — FCF data had been public for **55 days** without triggering a selloff. The proximate trigger was the talent exodus (June 19-22) which REACTIVATED latent FCF-vs-capex anxiety. **FCF is the UNDERLYING CONDITION (tinder); talent exodus + Oracle print + momentum unwind was the MATCH.**
 

@@ -1,4 +1,6 @@
 # 2026-06-23 — Full Cohort Price Action + Global Macro Context
+
+> ⚠️ **F1 DATE-SHIFT CORRECTION (2026-07-28).** This artifact carries the June +1-day misdating (T-1 vendor lag at the 06-23 intake): the −9.99% KOSPI crash was **Tue 2026-06-23**; the +0.69% record high 9,114.55 was **Mon 2026-06-22**; 06-24 closed **+3.26%**. Defective lines below carry inline ⟦F1-CORR⟧ markers — original wording preserved as the record. Verified tape (triple-vendor) + full enumeration: `meta/redteam/2026-07-27-independent-audit-part1-part2.md` ADDENDUM 2.
 # Critical Rule #16 — Verification Subagent Fan-Out
 
 **Workflow:** MACRO-FIRST RESEARCH (Workflow #9) + INGEST + TRACE
@@ -14,8 +16,8 @@
 ## CRITICAL TEMPORAL CORRECTION — MUST READ FIRST
 
 **The AM-JPY-COHORT-DROP-VERIFICATION file contained a temporal mis-classification:**
-- The KOSPI circuit-breaker crash (-8.11% to 8,375.31) DID occur — but on **June 8, 2026**, NOT June 23, 2026
-- On June 23, 2026, KOSPI is actually **UP +0.69% to 9,115** — a record high close — REVERSING prior session's MINOR pullback
+- The KOSPI circuit-breaker crash (-8.11% to 8,375.31) DID occur — but on **June 8, 2026**, NOT June 23, 2026 ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- On June 23, 2026, KOSPI is actually **UP +0.69% to 9,115** — a record high close — REVERSING prior session's MINOR pullback ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 - The prior subagent was using intraday data from June 22 through June 23 in a rolling 24h window and mis-dated the circuit-breaker event
 - **B40 Critical Rule #12 FIRES on the prior AM-subagent file** — temporal freshness error on KOSPI circuit-breaker attribution
 - SUMCO's -12.84% move at the time of the prior verification was REAL and is now confirmed to have closed at approximately -12.84% for that session; this needs further confirmation of WHICH session date is confirmed at close
@@ -42,7 +44,7 @@
 | **Nebius Group** | NBIS (NASDAQ) | 58sh | €257.02 | ~$283.42 (€255 approx at EURUSD 1.11) | **~-0.07% day** | Yahoo Finance / TradingKey | T2 | ~AT BEP |
 
 **Notes on uncertainty:**
-- HY9H Frankfurt: €1,700 is T2 inferred (one source said €1,700 on June 23, one said €1,665 on June 22). Prior circuit-breaker was June 8, NOT today. Today KRX 000660 is UP +5.57%. HY9H should track KRX strongly.
+- HY9H Frankfurt: €1,700 is T2 inferred (one source said €1,700 on June 23, one said €1,665 on June 22). Prior circuit-breaker was June 8, NOT today. Today KRX 000660 is UP +5.57%. HY9H should track KRX strongly. ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 - MRVL $313.55 is explicitly cited as June 23 real-time price with +8.23% intraday move. HIGH CONFIDENCE.
 - SNDK: June 22 all-time-high close $2,273.73; June 23 range $2,251.28-$2,354.39 per MacroTrends. Change from prior session NEGLIGIBLE to UP.
 - SUMCO: The -12.84% confirmed in prior-session verification (June 22 close or June 23 TSE AM session). TSE closed June 23 at 3,522 JPY per prior search. BELOW €22.31 BEP in EUR terms.
@@ -85,7 +87,7 @@
 |---|---|---|---|---|---|
 | S&P 500 (SPX) | Near record highs | ~Flat-to-up | Market "near all-time highs with no Iran resolution" per JPMorgan; S&P 500 earnings growth projected +25% FY26 | JPMorgan T2 / Yahoo Finance T2 | T2 |
 | Nasdaq 100 | Recovery mode | ~+1-2% | Software down BUT semiconductor/infrastructure UP | T2 estimated from MRVL +8.23% + Nikkei +1.55% context | T2 |
-| SOX (Philly Semi) | Recovery from prior week | ~+3-5% (estimated) | Post-AVGO June 5 crash (-13%) recovery ongoing; June 8 KOSPI circuit-breaker crash had SOX spillover; June 23 recovery led by MRVL +8% | T2 estimated | T2 |
+| SOX (Philly Semi) | Recovery from prior week | ~+3-5% (estimated) | Post-AVGO June 5 crash (-13%) recovery ongoing; June 8 KOSPI circuit-breaker crash had SOX spillover; June 23 recovery led by MRVL +8% | T2 estimated | T2 | ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 **Key US reference point:** S&P 500 fell 2.6% on June 5, 2026 (AVGO earnings miss; SOX -10%+). Recovery since then has been partial, with June 23 showing upward momentum in AI infrastructure names.
 
@@ -101,7 +103,7 @@
 | Hang Seng (HSI) | — | ~Flat-to-up | China-tech proxy | NOT FOUND specific | NOT-FOUND |
 | SSE Composite | — | — | NOT FOUND | NOT FOUND | NOT-FOUND |
 
-**NOTE:** The KOSPI circuit-breaker crash (-8.44%) occurred on **June 8, 2026** per Korea Times / Bloomberg, triggered by the AVGO earnings miss ripple and Broadcom's $1.3T chip sector wipe. KOSPI TODAY (June 23) is at RECORD HIGH on semiconductor recovery. The prior subagent's June 23 KOSPI data was temporally mis-attributed.
+**NOTE:** The KOSPI circuit-breaker crash (-8.44%) occurred on **June 8, 2026** per Korea Times / Bloomberg, triggered by the AVGO earnings miss ripple and Broadcom's $1.3T chip sector wipe. KOSPI TODAY (June 23) is at RECORD HIGH on semiconductor recovery. The prior subagent's June 23 KOSPI data was temporally mis-attributed. ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 
 ### 2C — European Indices
 
@@ -170,8 +172,8 @@
 ### Driver 3 — SEMICONDUCTOR / AI-INFRA RECOVERY AFTER JUNE 8 CRASH (BULLISH, T2)
 
 **Status:** KOSPI now at RECORD HIGH; Nikkei at RECORD HIGH; MRVL +8.23% today
-**Background:** June 5-8 2026 — AVGO earnings miss ($4.1B AI revenue vs $4.8B expected) + June 8 KOSPI circuit-breaker — wiped $1.3T+ in global chip value. Market has RECOVERED and SET NEW RECORDS.
-**Source:** Multiple T2 including Korea Herald / Bloomberg / Kalkine circuit-breaker references dated June 8
+**Background:** June 5-8 2026 — AVGO earnings miss ($4.1B AI revenue vs $4.8B expected) + June 8 KOSPI circuit-breaker — wiped $1.3T+ in global chip value. Market has RECOVERED and SET NEW RECORDS. ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+**Source:** Multiple T2 including Korea Herald / Bloomberg / Kalkine circuit-breaker references dated June 8 ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 **Impact:**
 - 1st order: AI-infra held names (HYNIX, MRVL, SNDK, MURATA, SUMCO) recover or extend gains
 - 2nd order: Software sector SEPARATELY selling off (see Driver 4) — bifurcation deepens
@@ -325,7 +327,7 @@
 ### Material Yield Class: **HIGH**
 
 This verification:
-1. Correctly identifies the TEMPORAL ERROR in the prior cascade (KOSPI circuit-breaker = June 8 not June 23)
+1. Correctly identifies the TEMPORAL ERROR in the prior cascade (KOSPI circuit-breaker = June 8 not June 23) ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 2. Provides full cohort price action with sourced data
 3. Validates user's DDOG + NOW sell on June 22 empirically (NOW -8.4% June 23)
 4. Classifies today as AI-infra-recovery + software-bifurcation + SUMCO-idiosyncratic, NOT macro risk-off
@@ -384,8 +386,8 @@ This verification:
 - BoJ June 16, 2026 rate decision 1.0%: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf (T1) — from prior cascade
 
 **T2 Sources:**
-- KOSPI circuit breaker crash June 8: Korea Times https://www.koreatimes.co.kr/economy/20260608/krx-issues-circuit-breaker-for-kospi-on-sharp-fall + Bloomberg https://www.bloomberg.com/news/articles/2026-06-08/korean-stocks-tumble-as-investors-rush-to-offload-tech-shares
-- KOSPI June 23 +0.69% record high: Trading Economics + CNBC Korea article (T2)
+- KOSPI circuit breaker crash June 8: Korea Times https://www.koreatimes.co.kr/economy/20260608/krx-issues-circuit-breaker-for-kospi-on-sharp-fall + Bloomberg https://www.bloomberg.com/news/articles/2026-06-08/korean-stocks-tumble-as-investors-rush-to-offload-tech-shares ⟦⚠️F1-CORR 2026-07-28: the −8.1%/8,375 print is the **06-23 INTRADAY CB trigger** vs Mon 06-22's 9,114.55 close, not a June-8 close — these numbers are 06-23's (an earlier June-8 event may exist separately: 06-23's CB was #4 of 2026); per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
+- KOSPI June 23 +0.69% record high: Trading Economics + CNBC Korea article (T2) ⟦⚠️F1-CORR 2026-07-28: the +0.69% record high 9,114.55 was **Mon 2026-06-22**'s close, misreported as same-day by a T-1 vendor lag; per ADDENDUM 2, `meta/redteam/2026-07-27-independent-audit-part1-part2.md`⟧
 - KOSPI record high led by SK Hynix +5.57%: SundayGuardianLive compilation + Korea Herald (T2)
 - SUMCO 3436.T -12.84% prior session + 3,522 JPY: Trading Economics + Yahoo Finance (T2)
 - MRVL $313.55 +8.23% June 23: Yahoo Finance / Kraken (T2 confirmed)
