@@ -1488,3 +1488,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-28 20:19:40Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-28 20:35:03Z anti-fabrication-hook INCONCLUSIVE (n=8 '10.84%' forms=[("'10.84%'", None, 'TimeoutExpired')]; '14.65%' forms=[("'14.65%'", None, 'BudgetExceeded')]; '10.84%' forms=[("'10.84%'", None, 'BudgetExceeded')]; '14.65%' forms=[("'14.65%'", None, 'BudgetExceeded')]; '13.39%' forms=[("'13.39%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-07-28 21:54:45Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-28 22:33:24Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-28 22:34:50Z signal-ingest-cascade-hook FIRE (Rule#14 signal-density-skip)
+- 2026-07-28 22:35:05Z anti-fabrication-hook INCONCLUSIVE (n=4 '$205B' forms=[("'$205B'", None, 'TimeoutExpired')]; '$30B' forms=[("'$30B'", None, 'BudgetExceeded')]; '$410M' forms=[("'$410M'", None, 'BudgetExceeded')]; '49%' forms=[("'49%'", None, 'BudgetExceeded')] verdict:pending)
