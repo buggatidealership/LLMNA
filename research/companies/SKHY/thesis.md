@@ -73,6 +73,30 @@ Per `signals/cross-source-log/2026-07-27-mon-four-ai-brief-batch-cxmt-cluster-nv
 
 **Position implication: 🟡 HOLD (37 ADS) — no size change — falsifier #4 explicitly does NOT fire: tell #7 (Moody's-Oracle) has not moved since July 2025, and the headline financing number that looked like escalation is 100% non-binding with two-thirds of it already on file here. The vendor-guarantee structure is a genuine TC-2 escalation and a fragility-concentration signal, but it is a financing-channel observation, not a memory-demand one — per Rule #8 that is not a falsifier. The conditional €3-5k add remains gated on the 2026-07-29 Q2 print. No position action — user-gated.**
 
+## 🔺 [2026-07-27 LATE — VERIFIED] INTEL OHIO: a US front-end memory fab is on the table, acquisition DENIED in a filing, partnership LIVE. And the Samsung "Chinese chips" story does NOT name CXMT
+Per `signals/cross-source-log/2026-07-27-mon-duv-headline-vs-body-cpo-bottleneck-micron-meta.md` §7 (agent A, Korean/Chinese native-language parallel).
+
+**🔺 THE POSITION-RELEVANT ITEM, and I nearly missed it.** A social post reading `$INTC X $SKHY ?` was logged by me as "speculation with zero asserted content" and NOT routed. **That was a bad call** — behind it sits multi-outlet July reporting and a **T1 regulatory filing**:
+
+| Claim | Source | Tier | Status |
+|---|---|---|---|
+| SK hynix in talks to **BUY** Intel's Ohio One campus (~1,000 acres, 8-fab capacity, ~$100bn full build-out) for **US front-end memory production within 5 years** | Korea JoongAng Daily "Exclusive", 07-22 | T2 anon | reported |
+| **SK hynix: *"has not pursued or decided to acquire Intel's Ohio site and fab"*** — while continuing to review opportunities generally. Shares −~4%, then pared | **Korea Exchange filing, 07-22** | **T1** | **acquisition form DEAD** |
+| Intel seeking a partner to **OPERATE** Ohio, not sell it; SK hynix among candidates *"rather than buy the operation outright."* **No formal negotiations. "Very early."** Intel declined comment; SKH silent | Semafor "Exclusive", 07-22 | T2 anon | **LIVE, embryonic** |
+| Lip-Bu Tan, Q2 call 07-23: memory a significant supply constraint and AI bottleneck; working with all three major memory vendors as a top priority; **volunteered the ex-SK hynix CEO (Lee Seok-hee) hire while discussing memory** — but did **NOT** confirm any SKH arrangement | Intel prepared remarks | **T1** | linkage is third-party **inference — do not rely** |
+
+Separate, more concrete workstream: **SK hynix testing HBM integration with Intel's EMIB 2.5D packaging** (T3). Intel precedent for external capital while retaining control: Brookfield SCIP, Arizona 2022, up to $30bn, 51/49.
+
+**Why this matters two days out:** a US front-end memory fab — by acquisition *or* operating partnership — is a **capex commitment of real scale on this name**, and Wednesday's Q2 call is where capex and capital-allocation guidance gets set. **This desk now has a specific thing to listen for that it did not have this morning.** It is not a falsifier — no written falsifier covers parent-level or greenfield-capex decisions — but it is a genuine addition to the print's decision surface.
+
+**The Samsung item: category is memory, but CXMT is NOT in the source.** 아시아타임즈 07-27 exclusive says Samsung **MX** is "strongly under review" (유력하게 검토 중) to adopt **Chinese-made low-cost mobile DRAM** for **Galaxy A** handsets sold **in China only**. String-verified in the Korean body: **D램 ×7, CXMT/长鑫/창신 ×0.** The CXMT attribution was **added downstream** — IT之家 added "LPDDR5X," 快科技 added 长쿤存储 outright, wccftech's own body concedes *"the report doesn't explicitly mention CXMT"* and self-rates it **35% "Questionable."**
+**Falsifier #3 verdict: NOT touched.** No qualification event (검토 중 = *considering*, no sample, no named counterparty); no supplier named; Samsung holds **0.1–0.6%** of China so full conversion is low-single-digit-million units — noise against a company that just raised $8.6bn; and the stated "저가/low-cost" rationale is **contradicted by my own earlier verification** that CXMT prices DDR5 *above* Samsung and refused Huawei a discount. Samsung's own response — 「확인이 되지 않는다」, *"cannot be confirmed"* — is a non-confirmation, not a denial. **Published on CXMT's IPO day; 快科技 itself flags possible PR colouring.**
+**And the better-evidenced version of this trade is Apple, not Samsung** — Digitimes 06-29 (seeking approval) and 9to5Mac 07-08 (**actually testing/qualifying**). Named parties, regulatory pathway, stage progression. If the CXMT Tier-1 question is tracked, **Apple is the instance.**
+
+**⛔ Correction to my own prior:** I briefed the agent that a Samsung purchase of rival DRAM would be "extraordinary." At division level that is **wrong** — this is Samsung **MX**, not **DS**, separate P&Ls, and MX already routinely buys SK Hynix and Micron DRAM for Galaxy. Second-sourcing is standard; only the *supplier identity* would be novel, and that is the fact the article withholds.
+
+**Position implication: 🟡 HOLD (37 ADS) — no size change — no falsifier fired. The Samsung item is client-tier, pre-decision, and does not name a supplier, so the tightened Tier-1 AI-customer leg of falsifier #3 is untouched. The Intel Ohio item fires nothing either, but it adds a concrete listen-for to Wednesday's call: any capex or capital-allocation commentary implying a US front-end fab commitment. The conditional €3-5k add remains gated on the 2026-07-29 Q2 print. No position action — user-gated.**
+
 # SKHY (SK Hynix ADR) — Thesis
 
 ## 📌 [2026-07-25 EOD, date-corrected 07-27] Reaction-function flip MEASURED (was inferred) + a NEW flow-risk mechanism into **Jul-31**

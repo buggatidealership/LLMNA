@@ -1466,3 +1466,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-27 23:36:22Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-27 23:36:30Z anti-fabrication-hook FIRE (n=1 '465.8%' forms=[("'465.8%'", 1, None)] verdict:pending)
 - 2026-07-27 23:45:02Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-27 23:53:55Z reasoning-tagging-hook FIRE (probability-without-source-tier)
