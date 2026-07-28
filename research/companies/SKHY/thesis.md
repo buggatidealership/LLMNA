@@ -97,6 +97,24 @@ Separate, more concrete workstream: **SK hynix testing HBM integration with Inte
 
 **Position implication: 🟡 HOLD (37 ADS) — no size change — no falsifier fired. The Samsung item is client-tier, pre-decision, and does not name a supplier, so the tightened Tier-1 AI-customer leg of falsifier #3 is untouched. The Intel Ohio item fires nothing either, but it adds a concrete listen-for to Wednesday's call: any capex or capital-allocation commentary implying a US front-end fab commitment. The conditional €3-5k add remains gated on the 2026-07-29 Q2 print. No position action — user-gated.**
 
+## 🚨 [2026-07-28 KR OPEN] The bounce FAILED — SKHY −8.54%, −3.13pp idiosyncratic, 48h before the print. NO falsifier fires (Rule #10 back-ref)
+Per `signals/cross-source-log/2026-07-28-tue-kr-open-wake-selloff-resumes-vendor-prevclose-defect.md`.
+
+**Tape (computed against verified prior closes, NOT vendor `change_p` — the index feeds carried a stale prevClose this morning):** SK Hynix **₩1,661,000 at the 00:05Z tick = −8.54%** vs Monday's ₩1,816,000 close. **Two-day from Thursday: −13.44%.** KOSPI −5.40%, Samsung −5.81%, SK Telecom −6.33%.
+**⚠️ BASIS: intraday tick at 09:05 KST — NOT the opening auction and NOT a close.** No open-based or retracement metric is computed from it (L44b). The settled read comes at the close.
+
+**Principle #41 cohort-decoupling: SK Hynix is the ONLY name with a material idiosyncratic component — −3.13pp vs the index.** Samsung (−0.40pp) and SKT (−0.93pp) are moving with the market. **B45 discipline: −8.54% is INSIDE the regime base rate (±5-12% single-day moves routine) — the magnitude is NOT flagged as extreme. What is notable is the direction after a failed bounce, the idiosyncratic gap, and the 48-hour proximity to the pre-registered gate.**
+
+**Monday re-reads again.** Yesterday I withdrew "weak bounce" and replaced it with "violent two-way reversal, closed green." Today's tape reframes it a second time: **a failed bounce inside a two-day decline.** The shape §6.4 described — gap up, sold into, distribution into strength at the single-name level — was the right read of the mechanism even when the level was wrong.
+
+**⚖️ FALSIFIER CHECK — NONE FIRE, and Rule #8 is doing exactly the work it was written for.** #1 (GP-bridge CRACK) **requires a print — Wednesday is the test**; #2 (AI-tier order cuts reaching HBM) no evidence; #3 (CXMT relief-valve) verified 07-27, capacity leg advanced but Tier-1 AI-qualification leg unmet; #4 (funding-shock tell #7) verified 07-27, no Moody's action on Oracle in July 2026. **A −13.44% two-day decline is NOT a falsifier and must not be permitted to act as one.** The written exit instrument is the GP-bridge sign test at the print, not the price.
+
+**Rule #18 — the strongest case AGAINST my own framing, stated not skipped:** a −3.13pp idiosyncratic decline 48 hours before a print can be *information* — informed positioning ahead of a bad number. If Wednesday's GP-bridge prints CRACK, today's tape will look like it front-ran it. **That is a real possibility and I am not dismissing it.** But it is unfalsifiable today; it is indistinguishable from mechanical pre-07-31 ETF deleveraging **without the KRX investor-type flow data, to which this harness has NO route**; and pre-empting a pre-registered gate on a price move is precisely the behaviour the pre-registration exists to prevent.
+
+**🚨 And the instrument that would discriminate is blind:** the pre-registered escalation trigger (**foreign net-sell ≥3 consecutive KR sessions**) is **UNREADABLE, not "not fired"** — 07-24 was session 1; whether 07-27 and 07-28 are sessions 2 and 3 is unknown. Logged as a named data-access gap.
+
+**Position implication: 🟡 HOLD (37 ADS) — no size change — no written falsifier fires, and Critical Rule #8 explicitly forbids treating a macro/price decline as one. The conditional €3-5k add remains gated on tomorrow's Q2 print. Read first: the ASP leg of the GP-bridge (against a contract path that decelerated ~+60% → ~+15% QoQ), the LTA prepayment/duration disclosure, and any capex commentary implying a US front-end fab commitment. NO POSITION ACTION — user-gated.**
+
 # SKHY (SK Hynix ADR) — Thesis
 
 ## 📌 [2026-07-25 EOD, date-corrected 07-27] Reaction-function flip MEASURED (was inferred) + a NEW flow-risk mechanism into **Jul-31**

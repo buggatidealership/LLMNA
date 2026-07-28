@@ -59,3 +59,24 @@ Monthly audit: any registry row not exercised in 30 days gets flagged; any gotch
 - **❌ EODHD commodities → HTTP 403** on `BZ.COMM` / `BRN.COMM` / `CO.COMM` / `BZ=F.COMM`. **Brent has no deterministic route.** The single most consequential macro threshold the harness tracks depends entirely on agent-fetched T2 press — which is exactly how the L43 benchmark error entered. **Highest-value paid-data upgrade candidate after DRAM/NAND contract pricing.**
 - **⚠️ FRED publication lag is load-bearing:** `DGS10` had no 07-24 observation as of 07-27 00:30Z. When a gate turns on a rates *direction*, check FRED's latest observation date before concluding — the most recent session is routinely absent.
 - **KRX 투자자별 portal + KOSPI200 futures basis: unreachable** (JS-shell, not a clean 403). Naver Finance's polling API **was** reachable via curl + browser-UA and returned internally-consistent live quotes — currently the most reliable same-day KR channel.
+
+## [2026-07-28] COMMODITIES GAP PARTIALLY CLOSED + KR FLOW GAP NAMED (per `signals/cross-source-log/2026-07-28-tue-kr-open-wake-selloff-resumes-vendor-prevclose-defect.md` §3.2, §4)
+
+**✅ Brent/WTI route FOUND (FRED, keyed, T1) — but bounded:** `DCOILBRENTEU` (Brent Europe) and `DCOILWTICO` (WTI Cushing) are served by the existing `FRED_API_KEY`. **Two hard limits, both basis/latency, both binding:**
+1. **BASIS: these are daily SPOT FOB series, NOT futures settles.** The H3 gate is defined on a Brent **settle**. Per L43 the two are different instruments and must not be substituted. Using FRED spot to adjudicate a settle-defined gate is the exact error class already booked twice.
+2. **LAG: ~6 business days.** On 2026-07-28 the latest observation was **2026-07-20**. Useless for a same-day gate.
+**⇒ Verdict: usable RETROSPECTIVELY for named-benchmark oil history; NEVER for a same-day threshold read.** EODHD remains 404/422 on every Brent symbol tried (`BZ.COMM`, `BRN.COMM`, `CO.COMM`, `BZ=F`, `BRENT.COMM`); `BZUSD.FOREX` resolves but returns `"NA"` on all fields.
+**Open tension recorded, not resolved:** FRED Brent spot ran $81.23 (07-16) → $86.99 (07-20) while the corpus carries Brent futures settle **$96.78 on 07-24** (T2 ×3). That implies ~+11% in four sessions — plausible on the reported run toward $100, but the series are not interchangeable and this is flagged for the next clean adjudication rather than reconciled by assumption.
+
+**❌ NAMED GAP — KR flow instruments have NO keyed route, and one of them gates a pre-registered trigger:**
+| Instrument | Purpose | Consequence of the gap |
+|---|---|---|
+| **KRX 투자자별 investor-type flows** | **Pre-registered escalation trigger: foreign net-sell ≥3 consecutive sessions** | **The trigger is UNREADABLE — not "not fired." Those are different states and must be logged differently** |
+| 반대매매 daily stats | Retail forced-liquidation read | H3-cluster input unavailable |
+| KOSPI200 futures basis + overnight CME/EUREX gap | Gapped-in vs sold-in-session discrimination | Cannot separate overnight from intraday supply |
+| KOFIA margin balance | Policy-contaminated SECONDARY only | — |
+| Dubai EFS / JKM / war-risk premia | Non-Brent 2-of-5 dashboard | Escalation review cannot run |
+**Fix candidate:** KRX OpenAPI and/or the queued `ECOS_API_KEY` (BOK, already listed as user-signup-pending). **Until then, any wake artifact must record the escalation trigger as UNREADABLE rather than silently omitting it.**
+
+**⚠️ VENDOR DEFECT, dated and reproducible:** EODHD **real-time INDEX** feeds (`KS11.INDX`, `KQ11.INDX`) returned a **STALE `previousClose`** on 2026-07-28 00:05Z — carrying the 07-24 close rather than 07-27. Single-stock `.KO` feeds carried the correct prior close. **The vendor's own `change_p` was therefore wrong by −0.92pp on KOSPI and −2.14pp on KOSDAQ.** **Standing rule from this: NEVER read `change_p`; always compute from the tick against a close verified out of the EOD series.**
+
