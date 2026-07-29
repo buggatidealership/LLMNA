@@ -89,3 +89,24 @@ Rev **79,318,746** (+50.9% QoQ / +256.8% YoY) · OP **60,542,608** (+61.0% QoQ /
 - **Two-part protocol: T+24h stock-reaction grade due 07-30** (reaction so far: local +3-4% ON a miss = expectations had already crashed −40% from the July peak into the print — the reaction-function read, FOMC confound stacking this afternoon).
 
 **NO POSITION ACTION — user-gated. The conditional €3-5k add adjudication: the pre-registered CRACK condition did NOT fire (sign test §2.3.1); the print MISSED consensus while confirming deceleration directionally; LTA quantitative half + call detail outstanding. Full adjudication package at good-morning with the call transcript.**
+
+## §2.5 CALL PRINTS + INTRADAY REVERSAL (agent A of the anon-post batch returned ~08:25Z; tape MACHINE-VERIFIED)
+
+### ⚠️ THE TAPE REVERSED VIOLENTLY — machine-verified vs yesterday's verified closes (T1-machine EODHD)
+| Instrument | Open | High | Low | Close | Close Δ |
+|---|---|---|---|---|---|
+| KOSPI | 6,089.11 (+1.09%) | 6,228.52 (+3.40%) | **5,262.77 (−12.63%)** | **5,663.24** | **−5.98%** |
+| KOSDAQ | 713.71 (+1.11%) | 719.39 | 630.99 (−10.61%) | 662.68 | −6.12% |
+| SK Hynix | 1,567,000 (+1.10%) | 1,619,000 (+4.45%) | **1,246,000 (−19.61%)** | **1,401,000** | **−9.61%** |
+| Samsung | 226,500 (+2.95%) | 234,000 | 189,200 (−14.00%) | 208,500 | −5.23% |
+Computed: KOSPI intraday high→low **−15.51%**; now **−37.87% from the 06-22 record**; SKHY high→low **−23.04%**, two-day **−22.85%**. Second consecutive CB day (T2 Korean press per agent; CB #9 — count not independently recomputed); "₩921T of KOSPI+KOSDAQ cap erased in two days" (T2). Korean brokers: "공포가 펀더멘털을 앞질렀다" (fear outran fundamentals); press attributes the day primarily to the **CXMT debut**, not the earnings miss — consistent with the operator's China-overreaction hypothesis, now booked with tape behind it. ⟦My §2.2 morning read "no sidecar/CB at the open" was correct AT THE OPEN and is superseded by the afternoon: the bounce fully reversed.⟧
+
+### Conference-call prints (T2 multi-outlet: 테크M/데일리안/뉴스웨이) — the fork RESOLVES
+- **DRAM 73% / NAND 27%** of revenue; DRAM bits high-single-digit % QoQ; **DRAM ASP ~+30% QoQ**; NAND bits mid-10s%, **NAND ASP mid-50s% QoQ**; eSSD 2×+ QoQ; Q3 guide DRAM bits ~+10%; **FY26 capex RAISED to "high ₩40T range"**; **LTA detail: ~10 customers, 5-YEAR base term, volume commitments + deposits** (the quantitative half of the LTA leg partially fills — ₩ amounts still undisclosed).
+- **Mix-vs-price fork: H2/H3 WIN — the company NAMED the drivers** (테크M verbatim): "HBM과 범용 D램의 구성" (HBM/conventional composition) + "고부가제품 매출 하반기 이월" (high-value shipments pushed to H2, strategic). **The drag is the standing HBM weight on ANNUAL fixed contracts while commodity repriced quarterly** — TrendForce 06-01 (T2): "SK hynix... saw overall ASP growth partially constrained by DECLINING HBM contract prices in 2026"; Samsung (lower HBM mix) +93.4% QoQ vs SKH +62.5% in 1Q26. HBM3E $17-20 → $13-17/GB; GS −28% YoY (T3 relay of T2). HBM 2027: "contract prices expected to surge multiples higher" (TrendForce 06-02).
+- ⟦Self-correction to §2.3: my derived blended-ASP estimate (+38.4% at the +9% bit anchor) overstated the DRAM print (~+30% disclosed) because NAND's mid-50s% ASP sat in my revenue-blend; direction (deceleration vs consensus-implied) was right, but the DOMINANT mechanism is the HBM annual-contract/mix drag, not the contract-path deceleration alone. The TrendForce 06-01 SKH-specific constraint was publicly available pre-print — INPUT-layer datum for the formal grade.⟧
+- **The ₩62.17T non-op gain: SOLVED = KIOXIA EXIT.** 데일리안 quoting the call: "투자자산 매각 및 평가이익 63조3000억원... 순영업외이익은 62조2000억원" — Bain fund exit June 2026 (SKH recovered ~₩6T cash vs ₩2.7T principal) + SPC2/CB stake valuation ≈ ₩53T + FX. Non-recurring, cash-and-mark; came in ~55% above the best-informed broker estimate (Meritz ~₩40T). Does NOT touch memory-operations quality. Original 2018 investment ₩3.9-4.0T.
+- **Company forward-guides the mix drag easing in H2 + HBM4 share rising** — in tension with TrendForce's 2027-repricing timeline; logged as a live disagreement, adjudicated by Q3 ASP prints.
+- B40.3 instance booked: BigGo (AI-generated) claimed results "obliterated consensus" — FALSE, ~5% miss on three independent Korean prints; BigGo usable for transcript quotes only.
+
+**Structural read for the theses (🟡 directional, agent+my model): the pricing-power locus TEMPORARILY INVERTED — commodity DRAM is the 2026 marginal profit driver; HBM re-prices 2027. SKH's HBM leadership = 2026 relative-ASP headwind, 2027 tailwind — near-inverse of consensus framing. No falsifier fires (this is timing, not thesis breakage).**

@@ -23,3 +23,17 @@
 **Timeline read (agent model, 🟡):** the bit-migration bind is a **2029-30 earliest** scenario (3rd order P~30%: accelerator units plateau while per-unit HBM compounds); 4th-order tail (P~15%): HBF pin-compatibility displaces an HBM *stack* → relieves the wafer crowd-out → DRAM prices FALL — the inverse of the post's conclusion. **Routing decision: do NOT carry the post's bit-migration framing into TC-1; the corpus already holds the correct wafer-crowd-out version.** The 2029-30 joint-state scenario goes to the falsifier-watch ledger as a dated far-watch item, next to the existing 2028 disaggregated-inference HBM-substitution watch (TC-1).
 
 *§2.1 (mix-vs-price, call prints) and §2.3 (LTA-mask/ADR-timing) pending agent returns.*
+
+## §2.1 Agent A — mix-vs-price decomposition (returned ~08:25Z; full data in the wake artifact §2.5)
+
+**The post's NEAR-TERM claims largely VERIFY — the company itself half-confirmed the mix story on the call:**
+| Post claim | Verdict | Decider |
+|---|---|---|
+| Miss = mix story | **PARTLY TRUE** — company named BOTH mix (HBM/범용 구성) AND H2 shipment carry-over | 테크M T2 call quote |
+| Mix-shift drags blended ASP | **PARTLY — mechanism right, direction sloppy**: HBM was UNDER-shipped in Q2 (pushed to H2); the drag is the STANDING HBM weight on annual contracts, not a Q2 HBM step-up | IR transcript T2 |
+| HBM flat vs DRAM vertical | **TRUE and UNDERSTATED** — HBM contract prices DECLINING 2026 ($17-20→$13-17/GB; GS −28% YoY) vs commodity +93-98% then +58-63% QoQ | TrendForce 06-01/06-02 T2 |
+| Earnings growth from DRAM not HBM | **TRUE at margin-per-wafer** — HBM profitability below DDR5 64GB RDIMM since 1Q26 (TrendForce); KB: DDR5 margin > HBM3E in 2026. Caveat: HBM still ≈40-55% of SKH DRAM revenue base (inferred band, my model — not disclosed) | TrendForce/KB T2 |
+| Bad for SKH specifically | **TRUE** — TrendForce singles out SKH (highest HBM bit mix → constrained ASP); Samsung +93.4% vs SKH +62.5% QoQ 1Q26 | TrendForce 06-01 T2 |
+
+**Joint verdict on the post (with §2.2):** near-term price/mix legs TRUE-to-understated; structural bit-migration leg MISLABELED (wafers not bits) and its factual scaffolding partly false/stale. The post's investable core survives as: **the 2026 pricing-power locus sits in commodity DRAM, and SKH's HBM mix is a relative-ASP headwind until HBM reprices in 2027** — which the corpus now carries with T2 backing. Its long-term conclusion (structural DRAM demand loss) does not survive.
+*§2.3 (LTA-mask / ADR-timing) pending agent C.*
