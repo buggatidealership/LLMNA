@@ -1504,3 +1504,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-29 08:01:24Z anti-fabrication-hook INCONCLUSIVE (n=2 '33%' forms=[("'33%'", None, 'TimeoutExpired')]; '1 wafer' forms=[("'1 wafer'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-07-29 08:05:19Z reasoning-tagging-hook FIRE (probability-without-source-tier)
 - 2026-07-29 08:09:47Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-29 08:11:30Z structural-output-hook FIRE (structural-markers-missing)
+- 2026-07-29 08:11:30Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-07-29 08:20:41Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-29 09:23:15Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-29 13:12:53Z session-prime-hook event=resume injected=False (skipped non-startup)
