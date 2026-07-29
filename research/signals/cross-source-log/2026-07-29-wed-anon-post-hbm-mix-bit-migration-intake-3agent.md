@@ -37,3 +37,33 @@
 
 **Joint verdict on the post (with §2.2):** near-term price/mix legs TRUE-to-understated; structural bit-migration leg MISLABELED (wafers not bits) and its factual scaffolding partly false/stale. The post's investable core survives as: **the 2026 pricing-power locus sits in commodity DRAM, and SKH's HBM mix is a relative-ASP headwind until HBM reprices in 2027** — which the corpus now carries with T2 backing. Its long-term conclusion (structural DRAM demand loss) does not survive.
 *§2.3 (LTA-mask / ADR-timing) pending agent C.*
+
+## §2.3 Agent C — LTA-mask + ADR-timing (returned ~09:25Z)
+
+**CLAIM 6 ("LTAs timed to mask falling spot") — FALSE on the premise, PARTLY on the mechanism.** DRAM spot is NOT falling: DDR4 8Gb 1Gx8 $35.90 (06-09) → **$42.041 (07-29, session −0.09%) = +17.1% over 7 weeks**; DDR5 16Gb flat at $50.933 ([TrendForce live spot](https://www.trendforce.com/price/dram/dram_spot) T1-vendor). The only falling tier is **512Gb TLC NAND wafer −8.3% over 6 weeks** ($20.638 → $18.931) — the Mirae PT cut is on prospective NAND *contract*, not observed DRAM weakness. 3Q contract guides still RISING (+13-18% DRAM / +10-15% NAND). LTA share ≈50% of revenue (Mirae 🟡 estimate). **The dominant sell-side read is the OPPOSITE of the post: brokers are cutting numbers BECAUSE of LTAs** (한투 −9%/−11% OP to realize LTA price assumptions; 삼성증권: "pre-pay the premium in the boom to collect the downturn insurance" — caps peak-cycle upside; JPM: non-LTA volume keeps repricing up). ⚠️ Unresolved contradiction flagged: 녹색경제 T2/T3 "SKH is the only maker with NO price ceiling in its LTA" (Micron took ceiling+floor) vs the caps-upside broker read — not resolvable open-source today; management language is floor-flavoured ("하방 안정성"). **New pre-registered spot falsifier watches: DDR4 8Gb <$40 (first genuine DRAM spot rollover) · 512Gb TLC <$17 · 4Q26 DRAM contract guide ≤0%. None fired.**
+
+**CLAIM 7 ("timed the top with the ADR issuance") — PARTLY TRUE, framing MATERIALLY MISLEADING (T1 F-1/A decides):**
+1. **Nobody monetized.** 100% PRIMARY issuance — "We are offering... our issuance and sale," net ~$28.0B ([F-1/A 07-06](https://www.sec.gov/Archives/edgar/data/2120882/000119312526295501/d32785df1a.htm) T1); **zero selling shareholders, SK Square sold nothing**.
+2. **Size had no degrees of freedom:** 17.79M shares = SK Square 20.50% → **exactly 20.00%**, the Monopoly Regulation and Fair Trade Act floor (T1; computed 146.1M/730,492,365).
+3. **Not priced at the top:** board resolution + F-1 06-24 (+2d from the 06-22 peak — an SEC-review-clock artifact of a process running since the Dec-2025 조회공시 and a March confidential F-1 🟡); **priced $149 on 07-09 = 17 days and −25.1% AFTER the peak**, at −5.8% vs the 07-03 reference.
+4. **The issuance arguably CAUSED part of the local decline it's credited with dodging** (2nd order, P~60%, agent's model — inferred): ADR premium ~16% → foreigners net-sold local SKH ₩1.718T (07-10) + ₩1.447T (07-13) rotating into the dollar line.
+5. **Defensible residue:** treasury banked $26.5B at ~₩2.08M-equivalent vs ₩1,401,000 today — value-ACCRETIVE to holders; "good luck plus a legal cap, not a market call."
+
+**Vendor-defect N+1 (logged to data-access):** EODHD's same-day EOD row for KS11 (5,538.15) disagreed with its own real-time print (5,663.24) and press — the EOD row was MID-UPDATE. Standing rule extension: never read a SAME-DAY EOD row; real-time (computed vs verified prior close) until T+1.
+
+## §3 INTAKE SYNTHESIS — the post fully adjudicated (9 claims, 3 agents, ~327k subagent tokens computed from usage 85,523+117,572+123,979)
+
+| Post claim | Final verdict |
+|---|---|
+| Miss = mix story | PARTLY TRUE (mix + H2 carry-over, company-named) |
+| HBM flat vs DRAM vertical | TRUE, understated (HBM DECLINING 2026) |
+| Earnings growth from commodity DRAM | TRUE at margin-per-wafer (since 1Q26) |
+| SKH-specific disadvantage | TRUE (TrendForce singles SKH out) |
+| 3:1 wafer trade | PARTLY (→~4:1 HBM4; base dies moving to TSMC logic wafers) |
+| Bits migrating off DRAM | **FALSE** (wafers, not bits; bit demand +mid-30s% vs +16% supply) |
+| Flash squeeze, Chinese-lab | FALSE ×2 (NVIDIA-standardized; additive) |
+| Hard past 8-Hi | STALE (16-Hi sampling) |
+| LTAs mask falling spot | FALSE premise (DRAM spot +17% 7wk); sell-side treats LTAs as upside caps |
+| ADR timed the top | MISLEADING (100% primary, law-capped size, priced −25% post-peak; nobody monetized) |
+
+**What the corpus keeps:** the 2026-headwind/2027-tailwind HBM repricing inversion (the post's true core, now T2-backed); three new pre-registered spot falsifier watches; the LTA ceiling-vs-floor unresolved contradiction (adjudication target: the quarterly report's contract disclosures); the ADR-issuance-as-flow-driver mechanism for the July KR decomposition; the far-watch 2029-30 bit-migration joint-state scenario. **What it discards:** bit-migration as a current mechanism, the flash-squeeze, the top-timing narrative. **NO POSITION ACTION — user-gated.**
