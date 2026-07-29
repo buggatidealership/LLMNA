@@ -1,0 +1,1 @@
+- 2026-07-29: Q2 provisional results (T1 DART): rev ₩79.32T / OP ₩60.54T / OPM 76% — all-time records but −5%ish miss vs consensus on both lines; conf call 09:00 KST; local line +3-4% on the print while ADR fell −8.98% overnight pre-print. Per signals/cross-source-log/2026-07-29-wed-kr-open-wake-print-day.md

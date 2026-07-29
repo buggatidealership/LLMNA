@@ -1,1 +1,8 @@
 - 2026-07-15 (6-K, T1 SEC filing d143606d6k.htm, pulled via edgar_client 2026-07-16): **FINAL ADR raise results — US$26,507,100,000 total offering; 17,790,000 new common shares (full planned count) issued to Citibank N.A. as depositary; actual ₩39,890,534,790,000 at FX 1,504.90 (Jul-14 closing date); pricing date Jul-9 (FX 1,509.90); board resolution Jun-24.** Implied $149.00/ADS (computed: $26.5071B ÷ 177.9M ADS at 1 ADS = 0.1 sh). RESOLVES the standing reconcile flag: WSJ "$26 billion-plus" ✓ exact; house pre-estimates $28.07B base / $29.4B greenshoe-max were +5.6%/+9.8% HIGH (computed) — raise came in below the max scenarios. Note KRW/USD ~1,505.
+
+## 2026-07-29 — Q2 2026 provisional results (T1 DART rcpNo 20260729800013; per signals/cross-source-log/2026-07-29-wed-kr-open-wake-print-day.md §2.3)
+- Q2 rev ₩79,318,746mn (+50.9% QoQ, +256.8% YoY); OP ₩60,542,608mn (+61.0% QoQ, +557.2% YoY); OPM 76% (72% 1Q26); pre-tax ₩122,708,355mn; NI ₩93,922,593mn (net margin 118%; ~₩62.17T non-operating gain composition undisclosed — computed pre-tax minus OP)
+- 1H26: rev ₩131,895,033mn / OP ₩98,152,891mn; cash ₩88T, debt ₩18.6T, net cash ₩69.4T
+- Miss vs consensus: Yonhap-14 rev −5.64% / OP −5.53%; 22-broker −5.17%/−4.90% (computed)
+- LTAs finalized with ~10 customers incl. key strategic partners (no prepay/duration terms disclosed); HBM4 mass shipments began 2Q26, HBM4E samples completed H1; NAND 321-layer largest production share, ~50% domestic capacity target by year-end; M15X pulled forward, Yongin P1 cleanroom early 2027; P&T7 raised to ₩7,093.1bn (DART 07-22 rcpNo 20260722800829)
+- Intel Ohio site/fab acquisition EXPLICITLY DENIED (DART 해명공시 07-22 rcpNo 20260722800178)

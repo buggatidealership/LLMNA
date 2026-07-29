@@ -59,3 +59,33 @@ Rev **₩79조3,187억** (+257% YoY, +50.8% QoQ), OP **₩60조5,426억** (+557.
 
 ### Unfilled (booked as gaps, not zeros)
 K200 basis in points + 야간선물 gap (needs broker terminal/KRX portal) · per-name foreign flows 005930/000660 (KRX MDCSTAT024) · 반대매매 covering-print (later today) · auction volume vs norm + program direction (unpublished).
+
+## §2.3 SK HYNIX Q2 PRINT — full fetch (agent A returned ~01:15Z; DART T1 rcpNo 20260729800013; conf call ONGOING at fetch, 09:00 KST start)
+
+### Headline (🟢 T1 DART, ₩mn K-IFRS consolidated)
+Rev **79,318,746** (+50.9% QoQ / +256.8% YoY) · OP **60,542,608** (+61.0% QoQ / +557.2% YoY) · **OPM 76% (vs 72% 1Q)** · 1H rev ₩131.9T first-ever >₩100T · net cash ₩69.4T (cash ₩88T, debt ₩18.6T).
+**⚠️ Net income ₩93.92T is NOT operating quality:** pre-tax ₩122.71T − OP ₩60.54T = **~₩62.17T non-operating gain, composition UNDISCLOSED** (computed; Q1 had ₩14.01T comparable). Net margin 118%. Largest unexplained item — call/quarterly-report gap #1.
+
+### Miss vs every consensus basis (computed)
+| Basis | Rev Δ | OP Δ |
+|---|---|---|
+| Yonhap-14 (₩84.06T/₩64.09T) | **−5.64%** | **−5.53%** |
+| 22-broker (₩83.65T/₩63.66T) | −5.17% | −4.90% |
+| Pre-registration basis (OP ₩63.0T) | — | **−3.90%** |
+**Local line trades UP +3-4% on the miss** (§1/§2.2) while the ADR fell −8.98% overnight pre-print — venue divergence to reconcile at EOD.
+
+### The adjudication legs (pre-registered print read)
+1. **ASP leg / GP-bridge sign test: NOT-CRACK, deceleration-consistent (🟡 derived, my model — NOT company-disclosed).** Release says both DRAM and NAND had "큰 폭의 가격 상승" (large QoQ price increases); no ASP/bit figures until the call. Arithmetic: consensus embedded +59.9% QoQ revenue, actual +50.9% — at the sell-side +9% bit anchor (Herald Biz 🟡), implied blended ASP ≈ **+38.4% QoQ vs ~+46.7% consensus-implied** (computed). Direction supports the TrendForce contract deceleration path (+58-63% → +13-18%). **Sign test requires GM↓ AND ASP↓ for CRACK: OPM ROSE +4pp and ASP rose-but-decelerated → NO CRACK.**
+2. **LTA leg: NEW disclosure — LTAs FINALIZED with ~10 customers incl. key strategic partners**, further talks ongoing; **but zero prepayment amounts, durations, or terms disclosed** — the quantitative half of the leg stays open for the call/quarterly report.
+3. **US front-end capex leg: Intel-Ohio EXPLICITLY DENIED at T1** — DART 해명공시 07-22 (rcpNo 20260722800178): "인텔의 오하이오 부지와 Fab 인수를 추진하거나 결정한 사실은 없습니다" (with the standard reviewing-opportunities non-denial clause). Indiana = advanced packaging only (2H28, CHIPS $458M grants + $570M loans, F-1). Domestic: **M15X pulled FORWARD, Yongin P1 cleanroom early 2027, P&T7 raised to ₩7,093.1bn** (DART 07-22 rcpNo 20260722800829, "Clean Room open 일정 단축"). No 2026 capex ₩ figure — "CapEx Discipline" language kept.
+4. **HBM/2027 leg: HBM4 mass shipments BEGAN in 2Q26**, H2 ramp; HBM4E samples done H1; SOCAMM2 growing; 1c shipping; **NAND 321-layer already largest production share, ~50% of domestic capacity by year-end**. No explicit "2027 sold out" or 2027 pricing in the release (CEO's prior "worst supply year in history" stands as 🟡 pre-print context). H2 guidance qualitative only: "customer demand exceeds supply capabilities."
+5. **PS leg: absent from the release** — live conf-call Q&A item (treasury-share-vs-cash dispute per Seoul Shinmun 07-23; union pushback on record).
+
+### §2.4 PRELIMINARY GRADE (pre-registered 2026-07-02 prediction, resolved today; FORMAL 3-layer grade + lessons entry deferred to good-morning when call ASP/bit prints land)
+- **Beat-call leg (P(beat)=75%): WRONG on every consensus basis** (OP −3.90% vs its own stated basis, computed above).
+- **Point estimates: rev ₩88T overshot actual by +10.9%, OP ₩68T by +12.3%** (computed).
+- **2027-HBM-language leg: pre-registered watch item — not yet resolvable** (no 2027 language in release; call pending).
+- Early layer-attribution hypotheses (my model, to be tested against call data): H1 (P~50%) COMPUTATION — the ASP-deceleration input (TrendForce path) was IN the corpus by 07-20 but the point estimates were never marked down from the +60%-QoQ-era anchor; H2 (P~30%) INPUT — HBM fixed-price contract mix dragging blended ASP below spot-informed expectations (the Herald Biz flag existed pre-print); H3 (P~20%) REASONING — P(beat)=75% overrode the visible deceleration series (dissent mandate under-applied at registration).
+- **Two-part protocol: T+24h stock-reaction grade due 07-30** (reaction so far: local +3-4% ON a miss = expectations had already crashed −40% from the July peak into the print — the reaction-function read, FOMC confound stacking this afternoon).
+
+**NO POSITION ACTION — user-gated. The conditional €3-5k add adjudication: the pre-registered CRACK condition did NOT fire (sign test §2.3.1); the print MISSED consensus while confirming deceleration directionally; LTA quantitative half + call detail outstanding. Full adjudication package at good-morning with the call transcript.**
