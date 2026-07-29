@@ -96,8 +96,9 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
 - **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
 - **L40 CANDIDATE (N=1, NBIS T+30): event-study attribution/confound-exclusion rules must be EX-ANTE + specimen-suitability check.**
+- **L46 CANDIDATE (N=1, SKHY Q2 grade 2026-07-29): the basis meta-class extends to the FORECAST layer — a multi-tier vendor's earnings point-estimate MUST carry an explicit tier-mix blend (annual-contract HBM vs quarterly commodity); market-price paths without contract-mix structure overshoot by the fixed-price share. P(beat) calls cite LTA/fixed-price revenue share as a mandatory falsifier-side input.**
 
-_Correction note (2026-07-06): this section previously claimed "L24 removed; tail is L25" — WRONG on both counts: L24 exists in lessons.md as a real lesson (mid-cap structural-inflection ATH-break, TY case) and the tail is L30. Numbering gap: L17/L18 carry tombstones (no lesson text). Full list: `predictions/lessons.md` + `meta/tags.md`._
+_Numbering: L17/L18 tombstoned; full list `predictions/lessons.md` + `meta/tags.md`._
 
 ## §4. CRITICAL RULES (full text in `CLAUDE.md` — numbered list here for orientation)
 
