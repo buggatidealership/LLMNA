@@ -1540,3 +1540,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-30 20:21:38Z anti-fabrication-hook INCONCLUSIVE (n=1 '3.90%' forms=[("'3.90%'", None, 'TimeoutExpired')] verdict:pending)
 - 2026-07-30 20:40:19Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-30 20:43:49Z anti-fabrication-hook INCONCLUSIVE (n=6 '84%' forms=[("'84%'", None, 'TimeoutExpired')]; '8.9%' forms=[("'8.9%'", None, 'BudgetExceeded')]; '8.88%' forms=[("'8.88%'", None, 'BudgetExceeded')]; '16.77%' forms=[("'16.77%'", None, 'BudgetExceeded')]; '7.45%' forms=[("'7.45%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-07-30 20:49:15Z anti-fabrication-hook FIRE (n=4 '$200.6B' forms=[("'$200.6B'", 1, None)]; '$27.5B' forms=[("'$27.5B'", 1, None)]; '$42.2B' forms=[("'$42.2B'", 1, None)]; '$7.6B' forms=[("'$7.6B'", 1, None)] verdict:pending)
+- 2026-07-30 20:56:55Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-30 21:07:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-30 21:11:50Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-30 21:11:54Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
