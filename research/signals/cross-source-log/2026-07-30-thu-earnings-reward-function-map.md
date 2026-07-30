@@ -153,3 +153,36 @@ Seoul closed **06:30 UTC, BEFORE all of this**: SK Hynix **−5.64%** (₩1,322,
 
 **Caveats:** mid-session, none of these are closes. The registered §6 AMZN call (P~65% down) now faces a materially friendlier tape than at registration — the call and its retraction condition stand as written, ungraded until the print. A news agent is out on whether a NAMED memory catalyst exists (SNDK +24.5% normally requires one) with explicit instruction to return "no catalyst, positioning" if that is the honest answer.
 **NO POSITION ACTION — user-gated.**
+
+## §8 THE DRIVER — news agent returned; my §7 "pure positioning" read is PARTIALLY REVISED
+
+**Honest correction to §7: there ARE four named, dated catalysts. I under-weighted the news leg. The revised verdict: the news is PERMISSION, the magnitude is POSITIONING — and the Seoul control proves the split.**
+
+### The catalyst I missed: SAMSUNG Q2 (reported 07-30 KST, T1)
+Revenue **KRW 171.5tn (+130% YoY)**; OP **KRW 89.5tn (+1,814% YoY)**; **semiconductor division OP KRW 89.2tn (~$61.7B) = +250× YoY**. Guidance: **shortage persists THROUGH 2028, with 2027 TIGHTER than 2026**; **60-70% of capacity committed to multi-year contracts**; HBM4 **+3× QoQ** in Q3, >60% of H2 HBM revenue; long-term deals signed with **top-5 global datacenter customers**, 5 more closing.
+**Why this detonated the memory complex: it is a direct refutation of the CXMT/China-DUV oversupply thesis that CAUSED the 07-28 crash.** Not generic good news — the *specific* bear case answered by the largest supplier. Other named catalysts: **MSFT Azure +43%** accelerating, Azure crossed **$100B** FY revenue (~$260B mcap added); **LRCX Sept guide $8.1B ±$0.4B = ~$1B / 13.6% above consensus**, GM 52% (20-yr high); **ARM 500M Neoverse cores in 9 months** vs 6 years for the first billion; **UBS initiates SKHY ADR BUY, PT $204** (market pricing LT ROE ~17.7% vs UBS 2027-31E 40.2%).
+
+### ⭐⭐ THE FINDING OF THE DAY — FORCE 3 (memory-as-cost-input) NOW PROVEN INSIDE A SINGLE P&L
+**Samsung's MOBILE division posted a KRW 700bn LOSS — its FIRST-EVER quarterly loss — because its OWN semiconductor division's chip prices crushed device margins.** Semi +250× YoY; Mobile first loss in company history; same company, same quarter. Samsung explicitly warned of higher phone/PC pricing ahead.
+**This upgrades §4 Force 3 from a cross-company inference (QCOM guide-down, PC BOM 20%→35%) to a MEASURED INTRA-COMPANY fact.** The strongest possible form of the claim: the memory upcycle is now destroying its own conglomerate's downstream margin. **→ cascade candidate for `sector/bottlenecks.md` U8/B47 falsifier-side ledger and TC-1's demand-destruction leg.**
+
+### The Seoul control — my venue test independently confirmed by the agent
+| Instrument | Intraday | Close |
+|---|---|---|
+| KOSPI | **+5.5%** | **−1.23%** |
+| Samsung | **+7%** | **−0.72%** |
+| SK Hynix | record +557% OP | **−9.61%** |
+**Seoul traded the IDENTICAL Samsung print hours earlier — was up as much as +5.5% — and CLOSED RED. US-listed memory on the same news: +15% to +25%.** If the news were sufficient, the most direct expression of it would not close red. **The Seoul↔New York delta is positioning, not information. §3/§7 CONFIRMED by an independent route.** (Korea also introduced NEW ETF curbs 07-30 — forced-selling mechanics still active there.)
+
+### Flow evidence, pre-registered (🟢 HARD, dated BEFORE the print)
+**MSFT short interest ~92M shares = 1.27% of float, HIGHEST SINCE MAY 2015, largest short-interest increase among the Mag-7, with "virtually no short covering ahead of earnings"** (CNBC 07-28). A decade-high uncovered short base met a beat — that is the cleanest causal fact behind the +8pt extension beyond the after-hours move. Plus: Deutsche Bank systematic positioning **70th percentile**; **SPX dealer gamma 27th percentile** of the past year (thin support → larger swings both ways); the 07-24/28 drawdown itself attributed to "systematic de-risking from quantitative funds." Session PT raises: MS $650, WF $650, Bernstein $647, Wedbush $625, Citi $600, Piper $550.
+**SNDK +24.53% — NEGATIVE RESULT CONFIRMED: no SanDisk-specific catalyst dated 07-30.** BofA's $2,500 PT is pre-existing. SNDK is the highest-beta, highest-short, most-drawn-down expression of the complex — **it is the beta, not the news. NARRATIVE-UNGRADED.**
+
+### Macro did NOT drive it (computed)
+**Q2 GDP advance +1.5% vs ~2.2% consensus = −0.7pp MISS**; core PCE +3.3% in line; claims 197k vs 200k. **Yet 30Y ROSE +3bp to 5.23% and 10Y +2bp to 4.70% — long yields rose INTO the equity rally.** Bonds did not buy disinflation; they are pricing the Warsh credibility problem (AllianceBernstein's Winograd called the presser *"confusing and often internally contradictory"*). **DXY −0.9% is a YEN story** (USDJPY <159, yen +2.9% to a 2-month high, intervention speculation after 40-yr lows), not a US-data story. **Any "soft-landing data drove the rally" framing is NARRATIVE-UNGRADED.**
+
+### 🔴 THE DURABILITY QUESTION (states the bear case per Rule #18)
+**The China-DUV report and CXMT capacity acceleration — the catalysts that STARTED the crash — were NOT refuted today.** No follow-up, no rebuttal published 07-30. **They were out-shouted, not disproven.** Samsung's 2028-shortage guide is a supplier's forward assertion answering a supply-side structural claim; those are not the same evidentiary class. Live tail also unpriced in equities: Iran fired ballistic missiles at US forces at Muwaffaq Salti AB, Jordan (07-28, intercepted); US struck dozens of Iranian targets; Brent +7.9% then giving back to ~$90.
+**Cascade: 1st order (P>80%) shorts cover, most-damaged names bounce hardest — realized today. 2nd order (P~60%, my model) Seoul gap-closes at tomorrow's open (18.78pp SKHY dislocation). 3rd order (P~40%) if China-DUV/CXMT produces ANY follow-up datum next week, the same positioning mechanics run in reverse from a higher base. 4th order (P~20%) Samsung's mobile loss becomes the template — downstream device makers guide down on memory costs, and the cost-input reclassification spreads to the names that BUY memory rather than sell it.**
+
+**NO POSITION ACTION — user-gated.**
