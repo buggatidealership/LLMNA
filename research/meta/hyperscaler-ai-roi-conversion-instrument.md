@@ -30,3 +30,12 @@ The reward-function map (`signals/cross-source-log/2026-07-30-thu-earnings-rewar
 - If every company's ratio improves monotonically (because revenue grows and capex is lumpy), the metric is mechanically confounded → switch to a trailing-4-quarter smoothed basis.
 
 **Cadence:** quarterly at the earnings cluster; first full build scheduled 2026-07-31 evening (reminder set, trigger registered). **NO POSITION ACTION — user-gated; the VIEW is required regardless (L47).**
+
+## FIRST DATA POINT — AMZN Q2 2026 (computed 2026-07-30, T1 8-K)
+| Framing | Computation | Result |
+|---|---|---|
+| **QoQ conversion rate** | ΔAWS rev (42.232−37.587 = +$4.645B) ÷ Δcapex (54.208−44.203 = +$10.005B) | **46.4%** |
+| Annualized-incremental framing | 4 × YoY AWS rev delta ($45.4B) ÷ TTM capex ($169.0B) | **26.9%** |
+**Read: this is literally the operator's "four tenths."** AWS is converting ~46 cents of incremental quarterly revenue per incremental dollar of quarterly capex — and doing it while the AWS operating margin EXPANDED 37.7% → 39.4%, which is the part that matters: conversion improving *with* margin expansion is the inflection signature, not conversion bought by discounting.
+**Caveat (honest):** total capex serves retail + logistics + AWS, so the AWS-only numerator against total-capex denominator UNDERSTATES AWS's true conversion — treat both figures as a directional FLOOR, and split by segment capex at the 10-Q if disclosed.
+**Instrument status: LIVE, N=1.** Needs MSFT/GOOGL/META on the same basis + ≥4 quarters of history before any ranking is trustworthy — scheduled 07-31 evening.
