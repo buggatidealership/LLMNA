@@ -85,3 +85,48 @@ BofA FMS: **"long global semis" most crowded trade at 82% = RECORD HIGH, 3rd str
 
 ### Falsifiers (carried forward, unresolved tonight)
 AMZN raises capex materially AND rallies without in-quarter conversion → Force 1 dead · memory keeps falling AFTER FMS crowding drops below ~60% and short interest normalizes → Force 2 dead, it was fundamental all along · Q3 DRAM/HBM contract ASPs roll over WHILE memory equities rally → Force 3 dead (multiple, not classification) · FactSet's next update shows beat-reactions back at the +1.0% norm → the whole regime was a two-week air-pocket.
+
+## §5 AGENTS A + D — THE INVERSION THAT COMPLETES THE MAP (all computed)
+
+### ⭐ THE FINDING: memory MAKERS crushed while memory EQUIPMENT rallied — same end-demand, same week
+- **MAKERS:** SK Hynix −9.61%, Micron −9.94%, SanDisk −7.32%, Samsung −0.72%
+- **EQUIPMENT:** **Lam Research +6.60% AH · FormFactor +10.43% AH · Silicon Motion +8.98% AH · Teradyne +13.6% AH** (faded to −0.39% next day on the market-wide tape)
+- **And the guides are MEMORY-LED:** LRCX guided Sept **+13.6% OVER consensus**; TER guided Q3 **+21.8% OVER consensus** with **AI >60% of Q2 revenue and RECORD memory revenue** (DRAM + NAND final-test resurgence). KLAC — logic-weighted process control — guided only **+2.0%** over consensus and fell −10.80%. The equipment tier is not uniformly bid; it is bid **in proportion to memory exposure.**
+
+### THE RULE THAT FITS EVERY DATA POINT (my model; supersedes the §2 tier framing)
+**At every layer of the stack simultaneously, the market is PAYING THE RECIPIENT of capex and PUNISHING THE PAYER of it.**
+- Hyperscaler pays capex → hyperscaler punished (META −7.45%, GOOGL −7.00%) **unless in-quarter conversion is shown** (MSFT +8.88%: Azure 43%, RPO $678B +84%)
+- Memory maker pays capex (**SKHY raised ~50% to ₩40조 후반**) → **memory maker punished** … and **that exact same capex is LRCX/TER/FORM revenue → equipment rewarded**
+- Apple pays no AI capex at all → **best performer of the entire complex** (+15% in July, reclaimed #1 mcap ~$4.95T explicitly on "avoids capex pitfalls")
+
+**Computed capex-intensity test (capex/revenue vs reaction, T1 filings):**
+| Bucket | n | mean reaction |
+|---|---|---|
+| LOW intensity (<20% of revenue) | 7 | **+4.63%** |
+| HIGH intensity (>20%) | 4 | −0.70% |
+| **HIGH intensity EXCLUDING MSFT** | 3 | **−3.89%** |
+**Conversion-adjusted spread = +8.53pp.** MSFT is the single high-intensity name that escaped, and it escaped on conversion — which is the whole thesis in one exception.
+
+### T1 SAME-QUARTER PROOF THAT MEMORY DEMAND IS NOT SOFTENING — it is the CONSTRAINT
+- **QCOM 8-K verbatim: "despite a challenging MEMORY and supply environment"** — a customer's guide impaired BY memory.
+- **ARM 6-K: AGI CPU production revenue SLIPS to Q4 FY27** on "TSMC N3 allocation, **advanced packaging capacity, HBM availability**."
+- **TER: AI >60% of Q2 revenue, record memory revenue**; FORM: "HBM + co-packaged optics driving sequential growth."
+**Two T1 same-quarter sources naming memory/packaging as the binding constraint on OTHER companies' revenue. TC-1 and TC-5 both get an independent third-party confirmation from the equipment layer.**
+
+### ⚠️ THE CAPEX PLATEAU — the story nobody is telling (computed, agent D)
+**Big-4 CY2026 capex: $712.5B now vs $710.0B thirty days ago = +$2.5B = +0.35%.** Alphabet's +$15B raise was almost exactly cancelled by **Microsoft's −$15B, which is ACCOUNTING, NOT A CUT** — Hood verbatim: *"our calendar year 2026 CapEx investment expectations remain unchanged"* (finance→operating lease reclass + building useful life 15y→25y). Ex-reclass the delta is +$17.5B (+2.46%). **Aggregate incl. ORCL/CRWV/NBIS ≈ $860B.**
+**Cash-cover ranking (T1 SEC XBRL) EXACTLY tracks the reaction ranking: MSFT 74.0% (+8.88%) → META 97.6% (−7.45%) → GOOGL 115.0% (−7.00%) → AMZN 169.8% Q1 / 101.7% TTM (prints TONIGHT).** Correlation −0.896 (n=3, indicative). **The reward threshold sits between 74% and 97.6% cover.**
+**Depreciation wall arriving now:** MSFT FY26 depreciation **+55.9% vs revenue +17.8% = 3.14×** (computed); D&A/revenue 7.81%→10.34%, Q4 alone 11.44%. Sector-wide $549B of 2026 spend (72.2%) not yet expensed.
+**Memory share of AI capex (my computation):** $860.5B × 60% server/IT (GOOGL-disclosed split) × 22-32% memory share of AI-server cost = **$114-165B, midpoint $139B = 16.2% of total capex.** 🟡 the 22-32% band is inference, not a published figure.
+
+### 🔴 THE LOAD-BEARING NEGATIVE RESULT (agent D searched explicitly)
+**ZERO name-specific, dated, demand-driven AI-capex cuts by any major buyer in the last 30 days.** All five apparent "cuts" resolve to non-demand causes: NY State moratorium (permitting, 07-14) · NVDA Rubin 2.0M→1.5M (SUPPLY — HBM4 qual; KeyBanc says RESOLVED, ramping July, PT RAISED $310→$330) · MSFT $190B→$175B (accounting) · AMZN $25B bond 2.5× covered vs 3.2× (funding friction — the one real crack, on the FINANCING side) · **"30-50% of 2026 US DC projects cancelled" REFUTED AT SOURCE by SemiAnalysis (06-18): their NA hyperscaler self-build forecast moved ~1% in six months.**
+⚠️ **STALENESS TRAP: "Microsoft abandons 2GW" (TD Cowen) and "Amazon halts DC leasing" (Wells Fargo) are MARCH 2025 stories** surfacing as current. Excluded. Second B40-class trap this session (with the July-2025 Goldman HBM note).
+**And SK Hynix's LTAs are PRICE-SMOOTHING, NOT price-resistance:** ~10 deals up to 5 years "structured to keep prices steady," with deposits — hyperscalers trading volume certainty for ASP stability, i.e. **locking in high prices.** No order deferral, no dual-sourcing pressure, no walk-away. The Q3 contract deceleration (+13-18% vs ~60%) is driven by **consumer-electronics OEMs unable to pay — NOT hyperscalers** (Tom's Hardware). **This materially strengthens the demand leg of the memory thesis while the equities de-rate.**
+
+## §6 GRADEABLE CALL REGISTERED (quota instrument; resolves tonight ~20:00 UTC)
+**AMZN Q2 print, Thu 2026-07-30 AMC.** Consensus: rev ~$196.7-196.9B, EPS $1.82, **AWS $40.5-40.6B (+31-31.6%)**, AWS margin 33.8%, Q2 capex ~$48.7B, FY26 capex ~$207B.
+**My call (my model, from the reward function above): P~65% AMZN trades DOWN on the print unless AWS growth accelerates to ≥32% AND capex guidance holds at ~$200B or below.** Rationale: AMZN has the WORST cash cover of the Big-4 (101.7% TTM, 169.8% Q1) and is the name closest to the OCF/capex crossover. **P~35% it rallies on an AWS beat — which would be the MSFT template repeating and would CONFIRM force 1.**
+**FALSIFIER, stated in advance: if AMZN raises capex materially AND rallies WITHOUT an in-quarter conversion proof point, the capex-duration/cash-cover reward function is DEAD and I retract §4-§5.**
+
+**NO POSITION ACTION — user-gated throughout.**
