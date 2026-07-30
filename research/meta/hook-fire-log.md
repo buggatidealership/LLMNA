@@ -1537,3 +1537,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-30 17:15:55Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-07-30 17:21:43Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-30 20:19:14Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-30 20:21:38Z anti-fabrication-hook INCONCLUSIVE (n=1 '3.90%' forms=[("'3.90%'", None, 'TimeoutExpired')] verdict:pending)
+- 2026-07-30 20:40:19Z session-prime-hook event=resume injected=False (skipped non-startup)
