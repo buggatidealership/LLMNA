@@ -1535,3 +1535,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-30 17:09:15Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-30 17:09:52Z anti-fabrication-hook INCONCLUSIVE (n=4 '46.20%' forms=[("'46.20%'", None, 'TimeoutExpired')]; '13.09%' forms=[("'13.09%'", None, 'BudgetExceeded')]; '13%' forms=[("'13%'", None, 'BudgetExceeded')]; '24.53%' forms=[("'24.53%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-07-30 17:15:55Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-30 17:21:43Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-30 20:19:14Z session-prime-hook event=resume injected=False (skipped non-startup)
