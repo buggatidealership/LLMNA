@@ -120,7 +120,7 @@ These four are independent multipliers. Composed, they explain the +320% bill gr
 
 1. **Does coding adoption saturate?** Once 70% of Fortune 1000 use Cursor or equivalent, growth comes from intensity (more tasks per developer) and new categories. Both are real but might decelerate.
 2. **Does enterprise agentic adoption follow the coding curve, or stall like Klarna?** See `wiki/agentic-ai-enterprise.md`.
-3. **Is the 95% pilot-failure rate (MIT NANDA — corrected 2026-07-30 from the 88% originally written here) going to compress aggregate enterprise spend?** Or does the ~5% success rate compound enough to keep the curve up-and-to-the-right?
+3. **Is the pilot-failure rate — 70-90% depending on what is being measured (Medium-847: 88% fail to reach production; MIT NANDA: 95% show no measurable P&L return) — going to compress aggregate enterprise spend?** Or does the succeeding minority compound enough to keep the curve up-and-to-the-right? *(2026-07-30: this originally cited a bare 88%; see the corrections block at the head of this file — the range, not a point estimate, is the defensible citation.)*
 4. **Does open-source closing the capability gap commoditize the model layer?** This would accelerate price decline but might also accelerate volume.
 5. **Does inference-at-the-edge (Apple Silicon, on-device LLM) re-route token volume off the cloud?** Watch Apple's M-series, Qualcomm Cobalt, NVDA's Jetson roadmap.
 
