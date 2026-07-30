@@ -86,3 +86,11 @@ Monthly audit: any registry row not exercised in 30 days gets flagged; any gotch
 - **Brent still has NO machine route**: `BZ.COMM` HTTPError on EODHD; FRED `DCOILBRENTEU` spot-FOB ~6-day lag. Settle-defined gates (H3) adjudicate on press-named settles, basis-stamped, until a futures-settle route is registered.
 - **Credit/CDS gap (NEW, flagged by the 07-28 absence question):** no route for CDS levels or corporate bond spreads — TC-2 rung 3 now has traded-price marks (NVDA CDS, DC-bond yields) the harness cannot machine-read. Candidate sources to evaluate: FRED HY/IG OAS series (ICE BofA) as coarse proxy; issue-level data likely needs a paid route.
 - **2026-07-29 EODHD same-day EOD-row defect (N+1 of the vendor-basis family):** the KS11.INDX EOD row for the CURRENT session printed 5,538.15 while the real-time endpoint and press both said 5,663.24 — the EOD row was mid-update at fetch. **Standing rule extension: never read a same-day EOD row; use real-time computed vs the verified prior close intra-day, and only trust the EOD row from T+1.**
+
+## 2026-07-30 route additions (agent-A verified)
+- **Treasury.gov daily yield-curve CSV (home.treasury.gov): T1 full par curve, SAME-DAY 3:30pm ET official — closes the FRED DGS10 T+1 lag gap.** Prefer for all UST tenors.
+- CBOE delayed-quote JSON `cdn.cboe.com/api/global/delayed_quotes/quotes/_VIX.json` = keyless T1 VIX.
+- CNBC `quote.cnbc.com/.../restQuote/...&exthrs=1` = keyless indices + after-hours + futures.
+- UA-block list extended: cnbc.com, federalreserve.gov 403 on WebFetch, 200 on curl with browser UA. Meta IR Cloudflare-walled → use EDGAR 8-K Ex-99.1 (CIK 0001326801).
+- CME Settlements endpoint 403 (no direct fed-funds futures route; FedWatch remains T2-derivative).
+- **EODHD daily quota is REAL: 19/20 consumed 2026-07-30 by a 12-ticker batch + wake fetches. Finnhub `/quote` is unmetered at tier and matched EODHD to the cent on 12/12 US names — default US singles to Finnhub, reserve EODHD for KR/JP/indices.**

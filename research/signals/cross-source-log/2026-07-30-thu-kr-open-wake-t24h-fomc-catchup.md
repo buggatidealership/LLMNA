@@ -28,3 +28,36 @@ DGS10 series: 07-23 4.71 → 07-24 4.69 → 07-27 4.65 → **07-28 4.61** (FRED 
 
 ### ⚖️ H3 JOINT REWEIGHT — EXECUTED (pre-registered consequence, both triggers now aligned; my-model weight layer, NOT a position action)
 The two registered triggers no longer point opposite: the KR flow trigger FIRED at N=3 accelerating (07-29 booking), and the oil leg's un-breach premise is functionally dead — settles remain sub-95 (no gate breach) but Wednesday's +7.9% settle, the transit collapse, VLCC/EFS extremes, AND the rates path (30Y at a 19-year high, 3 hike dissents, Sept >57%) all load the H3 transmission (oil→rates→risk-off) in the SAME direction, with the US tape (Dow worst day since Apr-2025, VIX +13.45%) as the realized output. Per addendum #8's pre-registration (foreign net-sell ≥3 sessions → H3 ~35): **five-calls weights move H1 60 → 54 / H2 12 → 11 / H3 28 → 35 (my model)** — booked as five-calls ADDENDUM #12. Falsifier-side note per Rule #18: the strongest case AGAINST the reweight is that the Oman channel produces a transit agreement within days (gold/VIX would mean-revert and the KR flow could flip on relief) — if Brent settles <$85 for 2 consecutive sessions with a signed mechanism, review back down. **NO POSITION ACTION — user-gated; weights are the interpretive layer only.**
+
+## §2.2 FOMC + US close catch-up (agent A returned ~01:20Z)
+
+### ⚠️ PREMISE CORRECTION (T1, booked loudly): the Fed chair is KEVIN WARSH, not Powell — since May 2026; 07-29 was his second meeting. My agent-A prompt said "Powell presser" (recall-based error, mine). Corpus grep: `sector/where-we-are.md` carries no Powell reference (verified clean); future Fed items key on Warsh.
+
+### FOMC substance (T1 federalreserve.gov + transcript PDF)
+- Held 3.50-3.75%, 5th consecutive; **vote 9-3, all three dissents FOR +25bp** (Hammack/Kashkari/Logan) — first 3-same-direction dissent since Sept 2016 (T2). **Statement text near-verbatim identical to 06-17 (agent diffed both): the entire information content of the meeting is the vote split.** Non-SEP meeting, zero September guidance. IORB 3.65%; Desk buying T-bills to maintain ample reserves (= not QT).
+- **Warsh verbatim, the harness-relevant quote:** *"The business capex boom... is driving up prices of **memory and logic chips** and associated A.I. infrastructure. Do those changes indicate a broader inflationary dynamic, or do we just focus on them because they are under the bright streetlight?"* — **memory pricing is now explicitly inside the Fed's inflation-discussion set.** Also: AI-related equipment/software capex "nearly 20 percent" 4-quarter growth; inter-meeting yield moves "top decile... in the last two decades."
+- **September odds FELL, not rose: ~80% (07-27) → 54% post-decision (−26pp, directional — third-party FedWatch derivative; CME direct 403s).** T1 corroboration via the Treasury curve: front-end RALLIED (6M −10bp, 2Y −4bp) while 10Y +6bp / 30Y +11bp to **5.20% (2007 high)** — 2s10s 35→45bp, 2s30s 83→98bp (computed). **Joint read (🟡): a term-premium/credibility repricing, NOT a hawkish policy repricing — the hike dissents did not move September up.** ⟦Refines §2.1's "Sept >57%" line: level consistent, but the DIRECTION of the repricing was DOWN from 80%.⟧
+
+### US attribution — Wednesday was a SEMIS ROUT, not a Fed day (correcting my §1 provisional "market-wide" read)
+- **Concentration decisive (computed, 2-vendor cent-exact):** SOX **−5.33%** vs equal-weight RSP **−0.90%**; cap-weight fell 1.71× equal-weight; NYSE decliners only 1.43:1. Per-name: **MU −9.94%** (closed at low), SNDK −7.32%, MRVL −6.34%, AMD −5.51%, NVDA −3.55%, TSM −4.50%; **KLAC −10.80% ON A RAISED GUIDE** (→ anomaly register); **STX +2.29% the only memory-adjacent gainer** (HDD beat); GOOGL +0.90%. **The Dow's "worst day since Apr-2025" was its own members, not breadth — the segment-scoped inversion SURVIVES in refined form: epicenter memory/semis, ordinary tape beneath (equal-weight −0.90%).**
+- Timing (T2 headline-stamps only, 5-min bars DATA-GAPPED): ~66% of the S&P loss and ~78% of the Dow's were on the tape BEFORE the 14:00 statement — do not grade the pre/post split.
+- **SKHY ADR −2.60% close ($126.79) vs local −9.61% — the ADR/ordinary spread COMPRESSED**; CNBC ran "Is the SK Hynix ADR premium the market's latest bubble warning?" (T2). Feeds the venue-reconciliation item.
+
+### MSFT / META (both Wed AMC, T1 releases/8-K) — the capex-tolerance fork made flesh
+| | MSFT | META |
+|---|---|---|
+| Print | Rev $90.007B +0.7% vs cons; **EPS $4.74 +9.5%**; **Azure +43%** (cons 40.2%); RPO $678B +84% | Rev $60.801B −0.9% vs cons; **EPS $6.18 −16.0% MISS**; op margin 31% vs 43% PY (−12pp; $2.40B legal + $1.18B severance inside) |
+| Capex | Q4 PP&E **$35.8B +109.6% YoY**; FY26 $115.9B +79.6%; FY27 "further growth" (~$175B on the new lease/life basis — NOT comparable to GAAP line); building useful-life 15→25yr | Q2 **$31.08B** incl. fin-leases; **FCF $784M** vs op-CF $31.9B; FY26 capex band low-end RAISED ($130-145B); expenses raised $165-169B |
+| AH | **+8.88%** | **−7.45%** |
+**Read (🟡, ties to TC-2 rung 3):** same capex direction, opposite equity outcome — the market is now pricing the FUNDING QUALITY of capex (FCF cover), which is TC-2's mechanism showing up in equity reaction, not just credit. Note MSFT booked a **$3.2B Anthropic gain** in the quarter. **AMZN + AAPL tonight (Thu AMC).**
+
+### Adjudication: agent A's "contamination flag" on SKH net profit — REFUTED, our T1 stands
+Agent A (which did not pull DART this pass) flagged "net profit ₩93.92tn > revenue = arithmetically impossible — do not ingest." **The on-file T1 DART filing (rcpNo 20260729800013) shows exactly NI ₩93.92T via pre-tax ₩122.71T including the ₩62.2T Kioxia disposal/valuation gain (composition solved 07-29) — unusual, not impossible; net margin 118% is booked WITH the non-operating caveat.** Kept as a clean example: plausibility heuristics lose to primary filings. Agent's "$96.78 07-24 settle unreconciled vs $89.57 now" — reconciled by the intervening corpus path (96.78 → 88.36 → 84.09 → 90.74 settles); no action.
+
+### Other structural (24h)
+1. **FCC bans imports of Chinese humanoid/quadruped robots AND power inverters** (07-29, Covered List; [CNN](https://www.cnn.com/2026/07/29/tech/us-china-robot-ban-intl-hnk) T2) — **the inverter clause is the underpriced half: DC + solar BOM item** → TC-13 rung candidate, bottlenecks review.
+2. CXMT follow-on: US senators formally warn Apple against Chinese memory sourcing; Capitol Hill probe triggered (T2 — upgrades the 07-28 T3 probe item).
+3. KLAC −10.80% on raised guidance → anomaly register (process-control WFE derating harder than memory on GOOD news — does not fit the China-competition story).
+
+### Retrieval-layer wins (→ data-access.md)
+**Treasury.gov daily yield-curve CSV = T1 full curve SAME-DAY (closes the FRED DGS10 T+1 gap)** · CBOE delayed-quote JSON = T1 VIX · CNBC restQuote = indices+AH+futures keyless · cnbc.com + federalreserve.gov 403 via WebFetch but 200 via curl browser-UA (UA-block list extended) · Meta primaries via EDGAR 8-K (IR site Cloudflare-walled) · CME settlements still 403 (FedWatch stays T2-derivative) · **⚠️ EODHD quota 19/20 consumed today — US singles via Finnhub (unmetered, cent-exact match on 12/12) for the rest of the session.**
