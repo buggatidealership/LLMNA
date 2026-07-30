@@ -832,3 +832,22 @@ Examples of what to flag:
 - **Cross-reference** all assertions to source files (`wiki/`, `sector/`, `signals/`)
 
 The file is the closest thing the OS has to a "memory palace" — themed rooms (constraints, narratives, scenarios, non-default reads, mind-changes, ambiguity) rather than chronology. Future me reads this first.
+
+## 2026-07-30 — THE RATES LAYER, integrated (operator-directed; T1 Treasury.gov, computed)
+
+**The curve since the KOSPI record (06-22) — the long end did ALL the work:**
+| Date | 2Y | 5Y | 10Y | 30Y | 2s10s | 2s30s |
+|---|---|---|---|---|---|---|
+| 06-22 | 4.24 | 4.29 | 4.51 | 4.95 | 27 | 71 |
+| 07-17 | 4.18 | 4.28 | 4.55 | 5.06 | 37 | 88 |
+| 07-24 | 4.33 | 4.43 | 4.69 | 5.16 | 36 | 83 |
+| **07-29** | **4.22** | **4.37** | **4.67** | **5.20** | **45** | **98** |
+Since 06-22 (computed): **2Y −2bp, 10Y +16bp, 30Y +25bp; 2s30s steepened +27bp to 98bp.** On the FOMC day alone: front end RALLIED (6M −10bp, 2Y −4bp) while **30Y +11bp to 5.20%, the highest since 2007.**
+
+**WHAT IT IS (my model):** a long-end-only steepening with a falling front end is neither a growth repricing nor a hike repricing — it is a **TERM-PREMIUM / CREDIBILITY repricing.** The FOMC held 9-3 with **all three dissents FOR a hike**, the statement was verbatim-identical to June, September odds FELL 80%→54%, and the presser was described by AllianceBernstein's Winograd as *"confusing and often internally contradictory."* **The Fed did not tighten; the bond market tightened for it, at the long end.**
+
+**WHY IT BINDS ON THIS BOOK (the tie-together the operator asked for):**
+1. Every held/watch name is a **long-duration** AI-capex story — SUMCO (wafer capex cycle), MURATA (multi-year AI-server MLCC content), memory (the entire bull case is the **2027** HBM repricing, and SKHY's own call confirmed those negotiations are **IN PROGRESS, UNRESOLVED**). A 30Y at 5.20% is the denominator under all of it; long-duration equity is mechanically the worst-placed asset in a term-premium shock.
+2. **THE REFLEXIVE LOOP (new, 07-29):** Warsh named **memory and logic chip prices** inside the FOMC's inflation discussion — *"the business capex boom is driving up prices of memory and logic chips... do those changes indicate a broader inflationary dynamic?"* **So the memory upcycle now feeds the rate that discounts the memory upcycle.** Memory strength is, at the margin, self-limiting through the rates channel. This is a genuinely new mechanism in this corpus and it argues the H1/H3 hypotheses in the five-calls frame are CORRELATED, not independent.
+3. Hyperscaler capex is now ~90% of operating cash flow with **$549B of 2026 spend not yet expensed**; that spending is increasingly debt-funded (Big Tech debt doubled to ~$350B; ~$570B of AI-related issuance projected 2026). **A term-premium shock raises the funding cost of the exact capex that is the held book's revenue.** Rates → financing cost → capex → supplier revenue is a live 3-hop transmission, not a backdrop.
+**Standing instruction (operator, 2026-07-30): any probabilistic action or opinion must carry the rates leg explicitly — 2Y/5Y/10Y/30Y levels and curve shape — because the channels tie together.**
