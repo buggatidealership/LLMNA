@@ -76,6 +76,9 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - **`companies/NBIS/tracking-variables.md`** — Lead-Lag Variable Framework first application; 15 verified free + 6 paid alt-data sources ranked by signal-to-noise; LEAD-indicator stack first / LAG-indicator stack second
 - **`signals/cross-source-log/2026-06-23-pm-subagent-cxmt-semianalysis-newsletter-verification.md`** — CXMT SemiAnalysis article verification; MONITOR-ONLY watchlist designation confirmed
 - **`signals/cross-source-log/2026-06-23-pm-subagent-jukan-cxmt-china-pricing-discipline-strategic-interpretation.md`** — Jukan CXMT article verification; secondary CXMT signal
+- **`signals/cross-source-log/2026-07-30-thu-earnings-reward-function-map.md`** — what the market PAYS for: three forces (capex-duration pricing / positioning washout / memory-as-cost-input) + the RECIPIENT/PAYER rule + the venue-control cross-listing test
+- **`signals/cross-source-log/2026-07-30-thu-two-spend-framework-token-economics-premise-inversion.md`** — **SPEND-A (fabs) vs SPEND-B (tokens)**: token revenue growing **2.20×/yr** (price −3.03× × volume +6.67×), triangulated within 1.4% vs MSFT/AWS/GOOG; the **premise inversion** (frontier prices flat-to-UP, deflation hits COGS not ASP ⇒ margin-accretive); coverage ~50% of depreciation; 5 leading indicators; 🔴 OpenRouter volume plateau flagged DATA-GAPPED
+- **`meta/hyperscaler-ai-roi-conversion-instrument.md`** — Δ AI-attributable revenue ÷ Δ capex, tracked as TRAJECTORY not level; N=1 (AMZN 46.4% QoQ); Spend-B sector denominator folded in 2026-07-30
 
 ## Discipline / quality
 

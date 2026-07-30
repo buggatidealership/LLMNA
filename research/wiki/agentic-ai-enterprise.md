@@ -14,6 +14,7 @@ The headline number: **88% of enterprise agentic AI deployments fail to reach pr
 - **80.3%** of all enterprise AI projects fail to deliver promised business value per RAND analysis of 2,400+ initiatives
 - **79%** of organizations have deployed agentic AI in some form per Gartner Apr 2026; only ~10-20% reach production scaling per [Agentic AI Institute](https://agenticaiinstitute.org/agentic-ai-enterprise-adoption-2026-governance-gap/)
 - **60%** of abandoned projects cite insufficient AI-ready data as primary cause per [Gartner Apr 2026](https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-says-artificial-intelligence-projects-in-infrastructure-and-operations-stall-ahead-of-meaningful-roi-returns)
+- **95%** of GenAI pilots produce no measurable P&L return per **MIT NANDA** (added 2026-07-30 during the two-spend framework build). This is the figure most external commentary means when it says "the failure rate," and it is *higher* than this file's headline 88% — the corpus had been citing the lower of two numbers as if it were consensus. Different measurement (P&L return vs reaching production), not a contradiction. **Citation discipline going forward: quote the 70-90% range or name the study; never quote a bare point estimate.**
 
 The picture is more nuanced than "88% fail" — it's broad adoption (79%) with narrow scaling (~10-20%). This actually STRENGTHENS the DDOG/observability thesis because the gap between adoption and production scaling IS the eval/governance/observability problem.
 

@@ -39,3 +39,20 @@ The reward-function map (`signals/cross-source-log/2026-07-30-thu-earnings-rewar
 **Read: this is literally the operator's "four tenths."** AWS is converting ~46 cents of incremental quarterly revenue per incremental dollar of quarterly capex — and doing it while the AWS operating margin EXPANDED 37.7% → 39.4%, which is the part that matters: conversion improving *with* margin expansion is the inflection signature, not conversion bought by discounting.
 **Caveat (honest):** total capex serves retail + logistics + AWS, so the AWS-only numerator against total-capex denominator UNDERSTATES AWS's true conversion — treat both figures as a directional FLOOR, and split by segment capex at the 10-Q if disclosed.
 **Instrument status: LIVE, N=1.** Needs MSFT/GOOGL/META on the same basis + ≥4 quarters of history before any ranking is trustworthy — scheduled 07-31 evening.
+
+## SPEND-B DENOMINATOR INPUTS (added 2026-07-30 EVE — back-ref: `signals/cross-source-log/2026-07-30-thu-two-spend-framework-token-economics-premise-inversion.md`)
+
+The two-spend build supplies two inputs this instrument was missing — a **sector-level denominator** to sanity-check per-company conversion against, and a **leading indicator** that moves before any 10-Q does.
+
+**Sector-level context for any single-company conversion rate:**
+- Spend-B (token/AI revenue) growing **~2.20×/yr** (realized blended price −3.03×/yr × volume +6.67×/yr), triangulated within 1.4% against MSFT $37B +123% (2.23×) and AWS >$25B (~2.15×)
+- Spend-B $110-135B vs hyperscaler **depreciation** $202-228B = **~50% coverage** (capex is the wrong denominator — depreciation is the annual P&L charge revenue must beat)
+- ⇒ **Any company printing conversion materially above ~50%-of-depreciation is outperforming the sector aggregate**, not just growing. AMZN's 46.4% QoQ sits right at that line, which reframes it from "good" to "sector-typical" — a useful deflation of the first data point.
+
+**Two indicators folded in as instrument inputs (from §7 of the artifact):**
+| # | Input | Bullish | Bearish | Role here |
+|---|---|---|---|---|
+| **2** | **Committed-consumption backlog YoY** (Google Cloud is the cleanest discloser: **$106B → $514B, 4.85×**) | ≥2.5× | **<2.0×** | Backlog is the *forward* conversion the ratio only sees in arrears — leads the instrument by 2-4 quarters |
+| **3** | **Artificial Analysis cost-per-task** | falling | flat/rising | Separates genuine efficiency gains from mix-shift; without it, an improving conversion ratio can be pure model-tier downgrade rather than real ROI |
+
+**⚠️ Instrument-level caveat this adds:** conversion rates computed while frontier ASP is *flat* (the premise inversion — Opus $5/$25 unchanged 8 months, GPT flagship output $10→$30) are not comparable to conversion rates computed after any frontier list-price cut. **A frontier price cut is a structural break in this instrument's time series**, not just a datapoint — re-base the history if one prints.

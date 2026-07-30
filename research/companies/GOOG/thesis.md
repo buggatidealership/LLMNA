@@ -49,3 +49,7 @@ Alphabet is the structural S2 hyperscaler winner — TPU is the most mature cust
 - `research/wiki/custom-silicon-primer.md` — TPU as S2 leader
 - `research/meta/private-tracker.md` — Anthropic stake
 - `research/sector/scenarios.md` — S2 30% weight
+
+## 2026-07-30 EVE — Two-spend framework (Spend-A fabs vs Spend-B tokens) — back-ref: signals/cross-source-log/2026-07-30-thu-two-spend-framework-token-economics-premise-inversion.md
+**Strongest conversion evidence in the dataset.** Google Cloud backlog **$106B -> $514B (4.85x YoY)** with operating margin **20.7% -> 35.5% (+14.8pp)** during the heaviest capex year on record. Backlog is committed consumption — the revenue form that actually underwrites Spend-A — and it is structurally insulated from per-token deflation (metered model spend is only **1.26%** of total AI spend: Gartner $32.6B of $2,590B). Google Cloud's +82% total-cloud growth reads *below* the 2.20x computed token-revenue multiplier because it blends non-AI compute; the direction of that gap is the expected direction.
+**Position implication: NO ACTION — not held; per the operator's 2026-07-30 standing directive a buy call requires traceable single-name reasoning and there is none yet — but these figures are the lead exhibit for the 07-31 hyperscaler AI-ROI conversion session. 🟢**

@@ -1,11 +1,47 @@
 # Token Consumption — Where, Why, and What It Means for the Stack
 
-**Last updated:** 2026-05-20
+**Last updated:** 2026-07-30 (corrections pass — see ⚠️ below; body numbers below the corrections block still date to 2026-05-20 and are pre-two-earnings-cycles)
 **Type:** Reference primer. Read for context before reasoning about inference-layer or AI-infrastructure investments.
+
+---
+
+## ⚠️ CORRECTIONS (2026-07-30) — READ BEFORE THE BODY
+
+Three errors found during the two-spend framework build (`signals/cross-source-log/2026-07-30-thu-two-spend-framework-token-economics-premise-inversion.md`). One is material and inverts a conclusion.
+
+### 🔴 MATERIAL — the "280× price collapse" is a CAPABILITY-basis number, not a FRONTIER-basis number
+
+The body below presents per-token price decline as one collapsing number. It is two different numbers, and conflating them produces the wrong investment conclusion:
+
+| Basis | Direction | Figures |
+|---|---|---|
+| **Fixed-capability** (what GPT-4-level performance costs) | **collapsing** | 280× over 2 years; cost-to-serve ~$4.20/M → ~$0.12/M ≈ 35× |
+| **Frontier** (what the best available model costs *today*) | **flat to UP** | Claude Opus $5/$25 per M unchanged for 8 months across two generations; Claude Sonnet unchanged across five generations; **GPT flagship output $10 → $30 = +200%** |
+
+**Consequence:** the labs kept frontier ASP and took the cost reduction. Deflation is landing on **COGS, not ASP** — Anthropic inference gross margin roughly **38% → 70%+** on that arithmetic. Falling *blended* prices are a **MIX effect** (volume migrating to cheap small models for routine work) not a markdown, so the correct read is **volume-unlock and margin-accretive**, not margin-compressive. The body's framing under "Names to question if token deflation accelerates" is directionally wrong for exactly this reason.
+
+**Falsifier for the correction:** any frontier LIST price cut. That is binary, public, and dated — watch it.
+
+### ⚠️ The pilot-failure rate carries TWO different sources — don't cite one number
+
+Open question #3 below (and `wiki/agentic-ai-enterprise.md`) leans on a single **88%** figure. Two distinct studies exist and they are not the same measurement:
+
+| Source | Figure | What it measures |
+|---|---|---|
+| Medium 847-deployment analysis (Q4-25/Q1-26) | **88%** | agentic deployments failing to reach production |
+| **MIT NANDA** | **95%** | GenAI pilots producing no measurable P&L return |
+
+The corpus has been citing 88% as if it were the consensus number. It is the *lower* of two, and the MIT NANDA 95% is the more widely-cited one externally. Neither is wrong; quoting either alone as "the" failure rate is. `agentic-ai-enterprise.md` already flags the broader 70-90% range at line 26 — that range, not a point estimate, is the defensible citation.
+
+### ⚠️ Staleness
+
+Body numbers below date to 2026-05-20 — before two full earnings cycles. Current-cycle replacements (Spend-B growing ~2.20×/yr; MSFT AI run-rate $37B +123%; AWS AI >$25B; Google Cloud backlog $106B → $514B) live in the 2026-07-30 artifact linked above.
+
+---
 
 ## TL;DR
 
-Per-token prices have collapsed (~280x cheaper in 2 years per Oplexa) but enterprise AI bills are up 320% (per Indexnine) — the **inference cost paradox**. Two reasons: agentic workflows consume 10–20x more tokens per task vs chat, and coding has emerged as the dominant use case (>50% of all LLM tokens per OpenRouter data per Iternal). The combined effect: aggregate token volume growing massively faster than per-unit price decline. This is bullish for memory bandwidth, networking, observability, and inference-tuned silicon — and explains why hyperscaler capex re-rated +77% in 2026.
+Per-token prices have collapsed **on a fixed-capability basis** (~280x cheaper in 2 years per Oplexa — but see corrections above: frontier prices did NOT fall) but enterprise AI bills are up 320% (per Indexnine) — the **inference cost paradox**. Two reasons: agentic workflows consume 10–20x more tokens per task vs chat, and coding has emerged as the dominant use case (>50% of all LLM tokens per OpenRouter data per Iternal). The combined effect: aggregate token volume growing massively faster than per-unit price decline. This is bullish for memory bandwidth, networking, observability, and inference-tuned silicon — and explains why hyperscaler capex re-rated +77% in 2026.
 
 ---
 
@@ -78,12 +114,13 @@ These four are independent multipliers. Composed, they explain the +320% bill gr
 
 ### Names to question if token deflation accelerates
 - **Model providers (OpenAI, Anthropic)** — if commodity pricing wins, gross margin compresses. Their answer: serve enterprise (Anthropic's strategy), build agent platforms (OpenAI's strategy)
+- **🔴 CORRECTED 2026-07-30:** this bullet's premise did not hold. Frontier list prices held flat or rose through 2026 while cost-to-serve fell ~35×, so deflation **expanded** model-provider margins rather than compressing them. The bullet is retained as the record of the earlier read; the correct current framing is in the corrections block at the top of this file. The question that survives is narrower: *does deflation eventually reach frontier ASP?* — falsifier = any frontier list-price cut.
 
 ## Open questions to watch
 
 1. **Does coding adoption saturate?** Once 70% of Fortune 1000 use Cursor or equivalent, growth comes from intensity (more tasks per developer) and new categories. Both are real but might decelerate.
 2. **Does enterprise agentic adoption follow the coding curve, or stall like Klarna?** See `wiki/agentic-ai-enterprise.md`.
-3. **Is the 88% pilot-failure rate going to compress aggregate enterprise spend?** Or does the 12% success rate compound enough to keep the curve up-and-to-the-right?
+3. **Is the 95% pilot-failure rate (MIT NANDA — corrected 2026-07-30 from the 88% originally written here) going to compress aggregate enterprise spend?** Or does the ~5% success rate compound enough to keep the curve up-and-to-the-right?
 4. **Does open-source closing the capability gap commoditize the model layer?** This would accelerate price decline but might also accelerate volume.
 5. **Does inference-at-the-edge (Apple Silicon, on-device LLM) re-route token volume off the cloud?** Watch Apple's M-series, Qualcomm Cobalt, NVDA's Jetson roadmap.
 
