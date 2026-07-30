@@ -130,3 +130,26 @@ AMZN raises capex materially AND rallies without in-quarter conversion → Force
 **FALSIFIER, stated in advance: if AMZN raises capex materially AND rallies WITHOUT an in-quarter conversion proof point, the capex-duration/cash-cover reward function is DEAD and I retract §4-§5.**
 
 **NO POSITION ACTION — user-gated throughout.**
+
+## §7 SAME-DAY REVERSAL — the US session melted up (16:20 UTC, mid-session; all computed vs verified 07-29 closes, Finnhub/EODHD T1-machine)
+
+**Macro anchor as of 2026-07-30:** the §4 Force-2 positioning stack (semis most-crowded-trade 82% record, put skew 94th pct, short interest all-time high) was the pre-condition; this session is that spring releasing. Ties to the §5 reward function — which HELD while the flow overlay flipped.
+
+| Ripping | | Still falling | |
+|---|---|---|---|
+| SanDisk **+24.53%** · Lam **+18.53%** · Micron **+16.82%** · **MSFT +16.77%** | | **Meta −8.73%** | |
+| WDC +14.41% · INTC +13.68% · AMD +13.37% · MRVL +12.34% · KLAC +8.06% · TSM +7.72% · ARM +7.37% · AMZN +5.64% · **NVDA only +2.23%** | | Apple −2.08% · Alphabet −0.78% | |
+
+**MECHANICAL-REVERSAL TEST (computed):** correlation(07-29 move, 07-30 move) across 13 names = **−0.567** — the harder it fell, the harder it bounced. Recovery multiples: SNDK **3.35×** its Wednesday loss, INTC 2.67×, AMD 2.43×, MU 1.69×. **This is a positioning unwind reversing, not a re-rating.**
+**DISCRIMINATION TEST (the tell, computed):** semis/memory mean **+12.05%** (n=10) vs megacap-spenders mean **−3.86%** (n=3) = **15.92pp spread in one session.** **The §5 reward function HELD THROUGH THE REVERSAL** — recipients bought, payers-without-conversion still sold (META −8.73% on the bounce day). MSFT is the payer-with-conversion exception, and its decade-high short interest into the print means a large squeeze component.
+**NVDA +2.23% is the loudest quiet number:** if this were "AI is back," NVDA leads. It didn't — memory did. Consistent with a squeeze in the most-shorted corner, not thesis rehabilitation. 🟡 my model.
+
+### ⭐ THE VENUE DISLOCATION — actionable into tomorrow's Seoul open
+Seoul closed **06:30 UTC, BEFORE all of this**: SK Hynix **−5.64%** (₩1,322,000), Samsung **−0.72%** (₩207,000) — both T1-machine verified. Meanwhile, trading RIGHT NOW:
+- **SK Hynix GDR (HY9H Frankfurt): 828.13 → 936.97 = +13.14%** (from today's open 814.23: +15.07%)
+- **Samsung (SSU Frankfurt): 3,190.55 → 3,577.65 = +12.13%** (from open: +9.00%)
+**SAME COMPANY, SAME DAY, TWO VENUES: SK Hynix gap = 18.78pp; Samsung gap = 12.85pp (computed).** This is the §3 TSMC-ADR control repeating at 4× the magnitude, and it is the cleanest possible confirmation that **venue/flow — not fundamentals — has been setting these prices all week.** The European lines are pricing the bounce Korea has not yet traded. **Tomorrow's Seoul open is where the gap resolves** — carried as the first read of the next KR wake.
+⚠️ **OPERATOR-FLAG: the "Samsung +25%" figure in the operator's question does not reconcile to any verified Samsung line** (Seoul −0.72%, Frankfurt +12.13%). Nearest verified +25% in the complex is **SanDisk +24.53%**. Ticker/venue confirmation requested before any use.
+
+**Caveats:** mid-session, none of these are closes. The registered §6 AMZN call (P~65% down) now faces a materially friendlier tape than at registration — the call and its retraction condition stand as written, ungraded until the print. A news agent is out on whether a NAMED memory catalyst exists (SNDK +24.5% normally requires one) with explicit instruction to return "no catalyst, positioning" if that is the honest answer.
+**NO POSITION ACTION — user-gated.**
