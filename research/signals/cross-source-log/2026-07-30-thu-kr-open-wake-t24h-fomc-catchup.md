@@ -61,3 +61,30 @@ Agent A (which did not pull DART this pass) flagged "net profit ₩93.92tn > rev
 
 ### Retrieval-layer wins (→ data-access.md)
 **Treasury.gov daily yield-curve CSV = T1 full curve SAME-DAY (closes the FRED DGS10 T+1 gap)** · CBOE delayed-quote JSON = T1 VIX · CNBC restQuote = indices+AH+futures keyless · cnbc.com + federalreserve.gov 403 via WebFetch but 200 via curl browser-UA (UA-block list extended) · Meta primaries via EDGAR 8-K (IR site Cloudflare-walled) · CME settlements still 403 (FedWatch stays T2-derivative) · **⚠️ EODHD quota 19/20 consumed today — US singles via Finnhub (unmetered, cent-exact match on 12/12) for the rest of the session.**
+
+## §2.3 KR flows / structure / T+24h (agent B returned ~01:35Z; KRX-official via Naver T1, arithmetic self-checked)
+
+### The flow ladder — SESSION 4 CONFIRMED, but the seller is CHANGING
+| Date | Retail | Foreign | Institutions |
+|---|---|---|---|
+| 07-24 | +₩5조1,782억 | **−₩3조2,683억** | −₩1조9,514억 |
+| 07-27 | +₩1조9,788억 | **−₩2조8,811억** | +₩8,595억 |
+| 07-28 | +₩4조3,152억 | **−₩4조5,009억** | +₩1,830억 |
+| **07-29** | **−₩1조9,701억** | **−₩1조2,502억** | **+₩3조1,769억** |
+| 07-30 09:37 | −₩5,133억 | **+₩2,019억 BUY** | +₩2,958억 |
+- **4-session foreign total −₩11.90조 (computed, rows sum to zero ✓).** But 07-29 foreign selling COLLAPSED −72% DoD, and **this morning foreigners are net buyers** — the escalation-trigger's own momentum is fading exactly as the H3 reweight executes (consistent, not contradictory: the reweight prices the realized regime, and the un-wind condition is pre-registered).
+- **⟦LADDER CORRECTION: the 07-28 leg booked as −₩4.97조 (etoday close-print) is re-anchored to KRX-final −₩4조5,009억 — Δ0.47조; 07-24/07-27 legs within rounding. KRX table beats press close-prints; Newspim's conflicting 07-29 set does not sum to zero and is REJECTED.⟧**
+- **The 07-29 signal is RETAIL CAPITULATION**: first retail sell day (−₩1.97조) after +₩11.47조 of 3-day dip-buying; institutions (+₩3.18조, 금융투자-led) absorbed. KOSDAQ foreigners net buyers 3 sessions running — the KOSPI-large-cap targeting holds.
+- 반대매매 (07-27 basis, released 07-29): **₩230억, ×3.1 DoD, 2.2% of 미수금** — small; BUT the 07-28-crash-covering print lands today ("압력은 향후 2~3거래일" per EBN). Single-stock leverage complex ₩6.81조 NAV, one-day drawdowns −26 to −29%. Policy-contaminated per standing flag (deposit hike effective TOMORROW).
+- Regulatory: **F4 meeting outcome = monitoring only, NO stabilization measure** despite ₩864.5조 two-day cap loss (computed ✓); 증안펀드 not activated; short-sale no action; per-investor caps floated. Political fallout live (dismissal demands; "₩56조 retail losses" claim NARRATIVE-UNGRADED).
+- Morning pattern: **failed rebound / distribution-into-strength** — KOSPI opened +0.33% carried by Samsung (+4.08% high on its own print — ₩89.5조 figure T3-unverified, OWED to good-morning) while **SKHY gapped down −2.86% and never traded positive; now −6.28%**. No sidecar/CB so far. Futures basis DERIVED-only (+1.29% contango prior-day, anomalously wide — likely artifact; night-session close ~882.40 NARRATIVE-UNGRADED).
+
+### §2.4 T+24h REACTION GRADE (two-part protocol closes; my-model decomposition)
+**Reaction record:** print (pre-market 07-29) → day-1 close **−9.61%** (after +4.45% relief high) → day-2 intraday **−6.28%** and falling; ADR **−2.60%** only. **Confound decomposition (my model):** ~70% systemic (CXMT/China-litho regime liquidation — Korean press attribution, whole complex falling, CB days) / ~20% US-semis sympathy (MU −9.94%, SOX −5.33%) / ~10% print-specific (the ~5% miss + capex raise; Nomura T2: "flows, not fundamentals," foreigners −₩15.8조 from the 06-22 peak, NPS bid exhausted). **The reaction-function-flip pattern (N=6) is NOT incremented** — the day-1 morning bought-the-miss then the regime sold everything; that is liquidation dominance, not an earnings-reaction datum.
+**ADR venue puzzle SOLVED (structurally important):** two-way ADR↔원주 conversion **opens TODAY 07-30**; on 07-29 the ADR traded at a **~35-45% premium** to the local line (10 ADS ≈ ₩1.88M vs 원주 ₩1.3-1.4M) with the reverse (원주→ADR) blocked by a weeks-long 신고 procedure — the ADR fell less because conversion friction propped it. Conversion opening = arb channel opens → expect premium compression pressure (2nd order P~60%, my model: ADR-relative-weakness or local-relative-support as arbs convert). CNBC's "ADR premium bubble warning" framing now has its mechanism.
+
+### §2.5 Call-transcript fills (THE ELEC full transcript T1-adjacent)
+LTA: **share of sales explicitly REFUSED**; 5-year base, deposits (예치금) as performance backing, "price structure designed to respond to volatility" — the quantitative half stays undisclosed (watch quarterly report). PS/treasury-share: **NO commitment — "연내" communication**, ADR-offering regulatory constraints cited. Capex 2026 **"₩40조 후반"** confirmed. EBITDA ₩64.6조 (81% margin, D&A ₩4조). Non-op composition confirmed line-item: FX +₩1.1조 + investment gains ₩63.3조. HBM4 yields "near mature HBM3E"; **2027 HBM volume+price negotiations IN PROGRESS, unresolved** (the 2027-repricing asymmetry stays a negotiation, not a fact). iHBM in-package cooling >30% thermal-resistance cut (new tech datum).
+**Broker dispersion = the market's own fork made visible:** Mirae PT **−33% to ₩2.8M** (CXMT/DUV peer-PBR derate 6.5x→4.6x; "조정 과격"; 2027-end net cash est. ₩420조) vs Nomura **₩4.7M** ("Korea's next re-rating," flows-not-fundamentals) vs 한국투자 ₩4.7M (🟡 snippet-confirmed, article unretrieved). **Street range ₩1.85M-4.70M = 2.5×** — the widest dispersion on file for a held-or-watch name.
+
+**NO POSITION ACTION — user-gated. Wake complete; remaining owed items → good-morning: Samsung Q2 print verification (₩89.5조 T3), 07-28 반대매매 covering-print (due today), 한국투자 note confirmation, per-name 07-29 flows (unpublished), formal reaction-grade lessons entry if warranted.**
