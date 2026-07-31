@@ -192,7 +192,7 @@ Anti-fragile themes (win in ≥3 scenarios): T1, T5, T6.
 
 *New watchlist (added 2026-06-06 PM):*
 - **CRUS (Cirrus Logic)** — always-on AI audio codec; Apple-tier mixed-signal
-- **MPWR (Monolithic Power)** — PMIC for AI PC variable NPU power profile
+- **MPWR (Monolithic Power)** — ~~PMIC for AI PC variable NPU power profile~~ **RE-BASED 2026-07-31 → DEMOTED out of T9 as primary.** Q2'26 (T1 8-K): Consumer is 5.8% of revenue and **−4.8% YoY**; Enterprise Data is 38.8% of revenue and **93.1% of all YoY growth**. Primary drawer is now **datacenter power / 800V HVDC**, not consumer AI swap. See `companies/MPWR/thesis.md` + `signals/cross-source-log/2026-07-31-fri-mpwr-recipient-side-capex-landing-test.md`. (Origin of the mis-filing: L53 candidate — retrieval-drawer error.)
 - **Taiyo Yuden (6976.T)** — second-tier MLCC bypass to Murata
 - **MCHP (Microchip Technology)** — on-device AI secure enclave for IoT
 - **Panasonic (6752.T)** — denser batteries for AI PC + AI smartphone

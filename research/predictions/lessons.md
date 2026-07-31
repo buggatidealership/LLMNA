@@ -1183,3 +1183,32 @@ Raw divergence (T+24h − AH) across the five printers looked like a regularity:
 **AAPL is the trap:** raw divergence −0.35pp looks like "AH got it right," but cohort-adjusted it is **−7.09pp** — the most misleading knee-jerk of the five, and it only shows up once the tape is removed.
 **Generalizable: any earnings-reaction regularity computed without a cohort control is measuring the market, not the print.** Booked into the reaction-ledger instrument so the control column is computed by default rather than remembered.
 ⚠️ n=5, one cycle, one market-regime direction (two strong up-tapes). **Not tradeable on this evidence** — B45-adjacent caution applies in the direction of over-reading a small sample.
+
+---
+
+## L53 (CANDIDATE, N=2) — THE RETRIEVAL-DRAWER ERROR: a correct classification decays into invisibility
+
+**Codified:** 2026-07-31 · **Status:** CANDIDATE (N=2: MPWR, MURATA) · **Re-eval:** first monthly audit after 2026-08-31
+
+**[2026-07-31] MPWR — corpus-presence vs analytical-invisibility**
+
+**Predicted / assumed:** nothing — that is the failure. MPWR had been in the corpus since May 2026 (11 files) and on the watchlist since 2026-06-06, and was never analysed as a datacenter name.
+
+**Actual:** Q2'26 (T1, SEC 8-K Ex-99.1) — Enterprise Data $380.6M, 38.8% of revenue, **+164.3% YoY**, and **93.1% of the company's entire YoY revenue increase** (Enterprise Data +$236.6M and Communications +$57.7M out of a +$316.0M total). Consumer, the drawer we filed it under, is 5.8% of revenue and **−4.8% YoY**.
+
+**Layer that failed: INPUT (retrieval), not reasoning.** Three separate ingests each classified it correctly *for their moment* and each landed peripheral:
+- 2026-05-31 — "laptop PMIC, high-conviction non-consensus" (`nvda-n1x-unbiased-money-flow-analysis.md`)
+- 2026-06-06 — watchlist add under **T9 Consumer Hardware AI Swap** (`watchlist/candidates.md:1126`)
+- 2026-06-25 — "IVR substitution **risk**" to MURATA's MLCC count (`…800v-hvdc-power-cascade.md:194`) — filed as a *threat to a holding*, which is the drawer that guarantees it is never evaluated as an opportunity
+
+**Generalizable lesson:** *A name filed under the wrong theme is functionally invisible even when it is in the corpus, on the watchlist, and correctly described.* The harness has intake discipline and cascade discipline but **no re-basing discipline** — nothing re-checks whether a name's primary drawer is still its primary drawer once the underlying business mix moves.
+
+**Distinct from B60 (anchored-ingest):** B60 governs the framing of *new* data on arrival. L53 governs the **decay of a correct old classification** — no new datum is mis-framed; the old frame simply stops being true and nothing notices.
+
+**N=2 confirmation — MURATA (held):** the open pre-Aug-6 to-do to re-base the MURATA thesis *off* price-flow-through and *onto* volume/utilisation/datacenter-mix is the identical failure on a **held** name. Same shape, higher stakes.
+
+**Calibration adjustment / proposed instrument:** at each monthly codification audit, for every held and watchlist name, **re-derive the primary drawer from the latest reported segment mix** rather than inheriting the drawer it was entered under. Cheap: it is a segment-table read per name.
+
+**Falsifier (built in):** if a full 30-day pass across the watchlist produces **zero** drawer changes, the check is decorative — retire it rather than run it quarterly out of habit.
+
+**Cost of this specific instance:** unquantified but non-zero — MPWR ran to an all-time high (noted in our own 2026-07-02 wave-1 artifact as already-discovered) while sitting in our watchlist under the wrong theme. This is not a claim that we would have bought it; it is a claim that we never asked.

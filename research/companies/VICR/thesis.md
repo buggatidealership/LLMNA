@@ -173,3 +173,15 @@ Per `research/meta/patel-vs-aschenbrenner-thesis-comparison.md`:
 - **Aschenbrenner: NEUTRAL** — not in long book, not in put list per `research/signals/events/2026-05-21-aschenbrenner-q1-13f.md`.
 - **Cross-cascade from MURATA deep-dig 2026-05-21:** Same Rubin TDP-doubling mechanism that drives MLCC count expansion (~6,500 → ~12,000 per board per the SemiAnalysis-style image) also drives PMIC count expansion per `research/companies/MURATA/thesis.md` §BOM-level deep-dig. VICR's binary bet on 2nd gen VPD design wins at NVDA Rubin / AMD MI400 is the key catalyst for capturing this expanding TAM.
 - **Implication:** WAIT-not-enter framing stands. Patel reinforces the customer-level reality; the open P2 todo (re-verify VICR 2nd gen VPD specs at primary source per `research/meta/todo.md`) becomes more material as the Rubin spec sheet matures.
+
+## Cross-source cascade — MPWR Q2'26 read-across (added 2026-07-31)
+
+Back-reference: `signals/cross-source-log/2026-07-31-fri-mpwr-recipient-side-capex-landing-test.md` + new folder `companies/MPWR/`.
+
+**What happened.** MPS reported a record Q2'26 on 2026-07-30 after the close: revenue $980.6M (+47.6% YoY), Enterprise Data $380.6M (+164.3% YoY, 38.8% of revenue), FY Enterprise Data growth floor raised 85% → 130%. On the settled 2026-07-31 session, **MPWR closed +8.35% while VICR opened +6.53% on read-across and closed +0.34%** — VICR round-tripped 94.8% of its opening gap (T1, Finnhub `/quote`, session settled 16:00 ET).
+
+**Implication for this thesis.** The market was handed the strongest possible datapoint on AI power-delivery demand and explicitly declined to award any of it to Vicor. That is market-priced confirmation of the standing line in this file — *"MPS has structurally won the current generation (H100, top-2 hyperscaler 48V-12V DCM)"* — and it grades the pair-trade note at `exposures.md:54` (*"long VICR / short MPWR… asymmetric in the wrong direction"*) as **correct in its rejection**: MPS's up-leg was the larger and more durable one, and the short leg would have been the loss.
+
+Second-order: MPS disclosed it is **already sampling High Voltage AC-DC products for 800V datacenter architectures** (T1, 8-K Ex-99.1). Vicor's binary bet is next-generation (2nd-gen VPD at >3 A/mm²); MPS is now visibly contesting the *next* architecture too, from a funded position (capacity goal extended beyond $6B). The WAIT-not-enter framing does not merely stand — the burden of proof on VICR's next-gen design-win binary is now **higher**, because the competitor is no longer only ahead on the current generation.
+
+**Position implication:** **NO ACTION — no position, no entry — WAIT framing reinforced, not changed.** The 07-31 read-across is confirmatory of an existing thesis line rather than new information about Vicor itself; the thesis remains a next-generation binary with no entry until 2nd-gen VPD design wins at NVDA Rubin / AMD MI400 are verified at primary source (existing P2 to-do). 🟢

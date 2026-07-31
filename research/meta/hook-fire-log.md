@@ -1581,3 +1581,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-31 20:35:22Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-07-31 20:35:33Z anti-fabrication-hook FIRE (n=1 'Q2 revenue **$1,065.4m vs our $8' forms=[("'Q2 revenue **$1,065.4m vs our $8'", 1, None), ("'Q2revenue**$1,065.4mvsour$8'", 1, None)] verdict:pending)
 - 2026-07-31 20:47:09Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-07-31 21:02:04Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-07-31 21:04:22Z session-prime-hook event=compact injected=False (skipped non-startup)

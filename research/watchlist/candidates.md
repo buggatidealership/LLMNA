@@ -1128,7 +1128,7 @@ Origin: 2026-06-06 PM user-articulated framework — "DC buildout 50% cancellati
   - Linked causal chain: AI PC NPU workload variability → high-precision PMIC demand → MPWR specialized integrated power management
   - Why interesting: Growth name with AI PC + AI server cross-exposure; not in obvious AI cohort (~$30B mkt cap; less covered than TI/ADI in semis); semi-monopoly in high-precision modular power
   - Investability: US listed (NASDAQ)
-  - Status: WATCHLIST — needs dedicated thesis; verify AI PC % of revenue
+  - Status: **RE-BASED 2026-07-31 — thesis now exists at `companies/MPWR/thesis.md`; drawer moved out of T9-consumer to datacenter-power.** The "verify AI PC % of revenue" open question is **ANSWERED and inverts the entry rationale**: Q2'26 (T1 8-K) Consumer = 5.8% of revenue, **−4.8% YoY**; Enterprise Data = 38.8% of revenue, **+164.3% YoY, 93.1% of all YoY growth**. The AI-PC framing above was correct-but-peripheral for 8 weeks. Tier: WATCHLIST, no entry (share-gain-vs-end-market ambiguity unresolved; re-eval at Q3'26 print, late Oct). See `signals/cross-source-log/2026-07-31-fri-mpwr-recipient-side-capex-landing-test.md` and lessons.md **L53 candidate (retrieval-drawer error)**.
 
 - **Taiyo Yuden (6976.T) — added 2026-06-06**
   - Source signal: Consumer-swap 2nd-order cascade (MLCC BOM intensity rise per AI device); second-tier MLCC alternative to Murata
