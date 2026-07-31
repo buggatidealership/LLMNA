@@ -91,14 +91,15 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 
 ## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
 
-- **L27** — Beat-Consensus-As-Regime-Test: per-quarter beat-or-miss across the semi cohort = primary regime-validation mechanism (first empirical test = MU Q3 FY26 print 2026-06-24; N=2 watch: HYNIX Q2 + MURATA Q1 FY27 late-Jul).
-- **L28** — Jevons/efficiency-fear misread: "efficiency reduces demand" keeps losing to volume growth (N=3 flavors incl. enterprise rate-limiting).
 - **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
 - **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
 - **L40 CANDIDATE (N=1, NBIS T+30): event-study attribution/confound-exclusion rules must be EX-ANTE + specimen-suitability check.**
 - **L46 CANDIDATE (N=1, SKHY Q2 grade 2026-07-29): the basis meta-class extends to the FORECAST layer — a multi-tier vendor's earnings point-estimate MUST carry an explicit tier-mix blend (annual-contract HBM vs quarterly commodity); market-price paths without contract-mix structure overshoot by the fixed-price share. P(beat) calls cite LTA/fixed-price revenue share as a mandatory falsifier-side input.**
 
+- **L53 CANDIDATE (N=2, MPWR + MURATA, 2026-07-31): THE RETRIEVAL-DRAWER ERROR — a name filed under the wrong theme is functionally invisible even when it is in the corpus, on the watchlist, and correctly described.** MPWR was ingested 3× (laptop PMIC / T9 consumer / IVR-substitution-RISK-to-a-holding) and never as datacenter power — the segment that is now 38.8% of its revenue and 93.1% of its YoY growth. All three filings were correct at the time and all three were peripheral. **Distinct from B60** (anchored-ingest governs framing of NEW data; L53 governs the DECAY of a correct OLD classification — nothing in the harness re-checks whether a name's primary drawer is still its primary drawer). **Operating instrument: at each monthly audit, re-derive every held/watchlist name's primary drawer from its LATEST reported segment mix, not the drawer it was entered under.** Falsifier: zero drawer changes in a 30-day pass → decorative, retire. Open N=2 twin: the pre-Aug-6 MURATA re-basing (price-flow-through → volume/utilisation/datacenter-mix) is the same failure on a HELD name.
+
 _Numbering: L17/L18 tombstoned; full list `predictions/lessons.md` + `meta/tags.md`._
+_§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURATA Q1 FY27 — resolved and graded 07-29/07-31); L28 removed (superseded at the workflow layer by the B47 efficiency-claim tripwire now embedded in INGEST step 4b). Both remain canonical in `predictions/lessons.md`._
 
 ## §4. CRITICAL RULES (full text in `CLAUDE.md` — numbered list here for orientation)
 
@@ -160,28 +161,25 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **GRADE debt: NONE** — the long-carried "MU 3-layer backfill owed" was PHANTOM (full grade existed since 07-06; row+prose synced 07-20). Samsung Q2 prelim GRADE completed Jul-7/8.
 
 
-## §7.5 — 2026-07-14 SESSION DELTAS (load-bearing; artifacts hold detail — this is orientation)
+## §7.5 — DURABLE CARRY-OVERS (was "2026-07-14 session deltas"; **pruned 2026-07-31** — resolved items removed, see note at end)
 
-- **MACRO STATE CHANGED:** Hormuz CLOSED (Iran), Brent ~$85 (was ~$79), 10Y 4.61%; June CPI COOL (−0.4% MoM, **core FLAT**, 3.5% YoY) → Sept hike odds ~63%; live tension = cool-backward-data vs hot-forward-oil. Per `cross-source-log/2026-07-14-tue-cpi-print-reaction.md` + `...-tue-morning-scan-3agent.md`.
-- **SKHY:** thesis.md canonical for marks/premium; Jul-29 GP-bridge = KIS branch-a (₩60.4tn/mix-drag) vs SemiAnalysis branch-b (₩67.6-72.2tn/commodity-torque). Conditional €3-5k add re-gated 2026-07-22 (Principle #48): demand-leg confirmed pre-print (Hanmi 15.3x QoQ + TSMC/ASML), so gate variable = GOOGL reaction-function tonight + SKH prepayment/duration disclosure Jul-29, NOT the demand number.
-- **ENTERPRISE MEMORY PULL-FORWARD** (IBM warning Jul-14, BROAD-corroborated TD Synnex/MS/Dell/HPE): SKHY near-term REINFORCE; MS "borrowed-2027-demand" now consensus-adjacent → tail-discount deepens. `...-tue-ibm-warning-enterprise-memory-pullforward.md`.
 - **Funding-node tell #11** (asset-level distribution) — 3 axes (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
-- **#45** event-anchored re-evals added; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
-- **#48 CANDIDATE (2026-07-22) EARNINGS-SEQUENCE READ-THROUGH:** don't act on a scheduled print (priced by arrival) — reconstruct from already-reported adjacent/upstream names (calendar = dependency graph). Caveat: illuminates only the leg whose upstream already printed; ask if that leg is the BINDING uncertainty. **#49 CANDIDATE OPERATOR-INTENT / MISSED-LOOP MANDATE:** extract directional intent not literal words; surface the higher-value loop the instruction skips (red-teams the QUESTION; #18 red-teams the conclusion).
-- **Jul-15/16 DONE:** ASML + TSMC Q2 GRADED (L32 N=2 upside under-branching; edge-vs-consensus 2-for-2). **FACT LAYER LIVE: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients; facts-first wake order #43b/3e).
+- **#45** event-anchored re-evals; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
+- **#48 CANDIDATE EARNINGS-SEQUENCE READ-THROUGH:** don't act on a scheduled print (priced by arrival) — reconstruct from already-reported adjacent/upstream names (calendar = dependency graph). Caveat: illuminates only the leg whose upstream already printed; ask if that leg is the BINDING uncertainty.
+- **#49 CANDIDATE OPERATOR-INTENT / MISSED-LOOP MANDATE:** extract directional intent not literal words; surface the higher-value loop the instruction skips (red-teams the QUESTION; #18 red-teams the conclusion).
+- **FACT LAYER: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients at `meta/tools/`; facts-first wake order #43b/3e).
 - **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
+
+_Pruned 2026-07-31 (cap enforcement, §0 demotion triggers — all resolved, all canonical elsewhere): the 07-14 macro snapshot (superseded by the 07-31 rates leg at T1 + ADDENDUM #14, which killed the $95 Brent gate); the SKHY Jul-29 GP-bridge gate and conditional add (graded 07-29→07-31; `companies/SKHY/thesis.md` canonical); the enterprise-memory pull-forward bullet; the ASML/TSMC Jul-15/16 grade note (L32)._
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
-- **2026-07-15** — Principle #37 first re-eval (N=20 cascade events gate) + Rule #16 30-day re-eval
-- **2026-07-24** — Monthly consolidated audit: first who-caught-it ratio + gradeable-fraction spot-sample + macro-anchor FP sampling + INCONCLUSIVE-rate first reading + META-OVERHEAD ratio first computation + K3-Swarm disposition list (audit-log SHA backfill, dead re-evals run-or-retire, hook doc-sweep)
-- **2026-07-27** — Rules #17 (ensemble) + #18 (dissent) re-evals
 - **2026-08-06** — Structural-output normalized-metric decision (fires ÷ commits) + SUMCO print
 - **2026-08-11** — Prompt-library re-eval (`meta/prompt-library.md` falsifier: unused = decorative)
 - **2026-08-12** — session-prime-cascade-hook falsifier check (hook built 2026-07-12)
 - **2026-09-11/12** — Question-generation asymptote falsifier + constraint-differential quarterly sweep + B45 cohort quarterly recalibration
 - **2026-10-11** — Worldview quarterly revision + end-demand-durability model re-eval
-- Past-due carried: BOTTLENECK-FORECAST monthly (last_review 2026-06-04) — run at next substantive weekday wake. 2026-07-12 audits COMPLETED (see `meta/recurring-audit-log.md`).
+- **PAST-DUE (pruned from this list 2026-07-31 per §0; canonical + full scope in `meta/todo.md`, surfaced loudly by the session-start hook): #37/#16 re-evals (07-15), monthly consolidated audit (07-24, P0), #17/#18 re-evals (07-27), BOTTLENECK-FORECAST monthly (last_review 2026-06-04).**
 
 ## §9. TRUTH-TIER TAGGING + SCOPED-CASCADE RULE (Principle #37 CANDIDATE — ADDED 2026-06-15, load-bearing for every analytical output)
 
