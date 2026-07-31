@@ -1558,3 +1558,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-31 07:10:39Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
 - 2026-07-31 07:10:39Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-07-31 07:10:54Z anti-fabrication-hook INCONCLUSIVE (n=11 '27.2%' forms=[("'27.2%'", None, 'TimeoutExpired')]; '813.8%' forms=[("'813.8%'", None, 'BudgetExceeded')]; '3.5%' forms=[("'3.5%'", None, 'BudgetExceeded')]; '5.64%' forms=[("'5.64%'", None, 'BudgetExceeded')]; '5.20%' forms=[("'5.20%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-07-31 07:21:21Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)

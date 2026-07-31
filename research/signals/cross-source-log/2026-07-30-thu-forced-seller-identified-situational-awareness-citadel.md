@@ -32,3 +32,17 @@ Seed ~$225m (2024; Collison brothers, Nat Friedman, Daniel Gross, Jane Street). 
 3. **⚠️ What has NOT changed (Rule #18 — the bear case stated):** the China-DUV report and CXMT capacity acceleration that STARTED the crash remain **unrefuted, not disproven — merely out-shouted**. A forced seller leaving improves the price, not the supply curve. And the term-premium shock (30Y 5.20%, +25bp since 06-22) is intact — **2nd order (P~60%): the next forced seller in a 4×-levered, record-crowded complex is a rates event, not a fundamentals event.** **3rd order (P~40%): Citadel now owns a large block bought at distress; how it distributes that inventory is itself a supply overhang on the same names over coming weeks — the buyer of a forced sale becomes the next marginal seller.**
 
 **Rule #10 cascade note:** two names from his book are ex-holdings of ours — **SanDisk (exited ~Jul 1-2) and Nebius (exited Jul-3, reportedly ~40% of his book by July)**. Both are watchlist-reference only; no thesis file requires a falsifier change. **NO POSITION ACTION — user-gated.**
+
+---
+
+## 🔴 SUPERSEDED IN PART — 2026-07-31 SIZE TEST (see `signals/events/2026-07-31-ai-complex-deleveraging-size-tested.md`)
+
+An adversarial re-examination found the **T1 primary** this artifact never had: SEC EDGAR **CIK 0002045724, Situational Awareness LP**, 13F-HR for 2026-03-31 (acc. 0002045724-26-000008). Three corrections:
+
+1. **ATTRIBUTION WRONG on the short leg.** This file says *"SHORT merchant memory via ~$8.43bn of puts."* The magnitude is right (**$8,459m**, within 0.3%) but **merchant memory was only $584m = 6.9%** of it. **90.9% of the put book was short AI-COMPUTE** (SMH/NVDA/ORCL/AVGO/AMD/TSM/ASML = $7,688m).
+2. **MEMORY SIGN BACKWARDS.** The fund was **NET LONG memory**: SNDK $1,113m + MU calls $422m − MU puts $584m = **+$951m**. ("LONG power/neocloud/miners" is ✅ CONFIRMED.)
+3. **🔴 THE CAUSAL CLAIM IS DOWNGRADED.** SNDK fell **−50%** while the fund's entire SNDK position was **0.05× median daily $ volume**, and the book moved **as a block that never hit the tape**. Trough-day volume across the cohort ran **0.6-2.2× normal**; a forced-liquidation crash prints 3-10×. **This was a buyers' strike, not a liquidation-volume event. Situational Awareness was a CASUALTY and a SYMPTOM, not the CAUSE.** The forced seller is real; the causal weight this file assigned to it is not supportable.
+
+Also: the **"bullish letter 07-24"** narrative in this file is **T3 and UNVERIFIED** — no trace found. Strike it. And the headline book size is inflated by **notional-vs-capital** conflation: the $13.68bn 13F table maps to ~**$4.36-5.36bn of actual capital** (32-39%).
+
+**L51 candidate booked:** size-test every forced-seller narrative against ADV before granting it causal weight.
