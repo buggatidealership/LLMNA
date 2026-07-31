@@ -1568,3 +1568,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-07-31 08:23:25Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-07-31 08:23:28Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-07-31 08:23:43Z anti-fabrication-hook INCONCLUSIVE (n=13 '$15 Billion' forms=[("'$15 Billion'", None, 'TimeoutExpired'), ("'$15Billion'", None, 'BudgetExceeded')]; '$450 billion' forms=[("'$450 billion'", None, 'BudgetExceeded')]; '$8.2 Billion' forms=[("'$8.2 Billion'", None, 'BudgetExceeded')]; '67%' forms=[("'67%'", None, 'BudgetExceeded')]; '67%' forms=[("'67%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-07-31 08:35:08Z cascade-enforcement-hook FIRE (Rule#10 missing thesis back-references)
+- 2026-07-31 08:35:13Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)

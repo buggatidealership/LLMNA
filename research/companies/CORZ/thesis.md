@@ -46,3 +46,27 @@ Recommend Aschenbrenner-validated crypto-miner exposure via this name IF user wa
 ## Cross-references
 - `research/wiki/power-for-ai-primer.md`
 - `research/signals/events/2026-05-21-aschenbrenner-q1-13f.md` — Aschenbrenner $389.1M
+
+## 2026-07-31 — 🔴 THE NAME WHERE OUR CASUALTY READ FAILS (back-ref: signals/events/2026-07-31-ai-complex-deleveraging-size-tested.md §9)
+
+**CORZ is the counter-example to our own conclusion.** Yesterday's artifact argued Situational Awareness was "too small to have caused" the AI-complex drawdown. That verdict was tested on large caps and **does not transfer here**:
+
+| Measure | CORZ | vs the large-cap cohort |
+|---|---|---|
+| SA position (13F, 2026-03-31) | **$389m** | — |
+| **Share of shares outstanding** | **8.2%** | SNDK/MU/ORCL all **<1%** |
+| Position ÷ median daily $ volume | **1.30×** | SNDK 0.05× |
+| July drawdown (peak→trough) | **−24.5%** | SNDK −50.0% |
+| July move (06-30→07-30, T1) | **−14.8%** | memory/neocloud mean −28.3% |
+
+**A holder of 8.2% of a company is structurally price-setting regardless of how small the fund is in absolute terms.** The ADV test (1.30×) says an exit is *not* trivially absorbable here. **The casualty read is NOT SAFE for CORZ**, and the same applies to IREN (3.5%), APLD and CLSK (~4-5% each).
+
+**⚠️ The pivotal unknown:** prime brokers at BofA/GS/JPM were reportedly **marketing the book from both the long and short sides BEFORE the 07-30 Citadel block** (T3). Whether that marketing actually transacted is **unreported** — and it is the single fact that would settle cause-vs-casualty in this name. **2026-08-14 (SA's Q2 13F) is the first hard read.**
+
+### N-th order cascade
+**1st order (P>80%)** — A ~8.2% holder is now in forced-deleveraging. That overhang either moved to Citadel in the block or is still to come.
+**2nd order (P~60%)** — **Knock-on: Citadel becomes the overhang.** Supply changed hands rather than clearing. A deep-capitalised multi-strat that likely bought at a concession is a **willing** holder, so this is a slow overhang rather than a forced one — but it is still an overhang, and the downstream casualty is anyone underwriting a clean float here.
+**3rd order (P~40%)** — **Ripple to the small-cap physical-AI cohort.** IREN, APLD, CLSK and WhiteFiber share the same shareholder and the same float-concentration problem. A second forced sale in any one of them re-prices all four, independent of fundamentals. **This cohort is where concentrated-holder risk is a live, checkable, structural feature — not a narrative.**
+**4th order (P~20%)** — If concentrated-holder unwinds become a recurring feature of the physical-AI layer, the durable consequence is a **persistent liquidity discount** on small-cap AI-infrastructure names versus their large-cap peers — which would be a *reason* the cohort trades cheap rather than an opportunity.
+
+**Position implication: NO ACTION — not held, and no independent thesis exists.** Carried as the corpus's worked counter-example to the size test, and as the anchor for the concentrated-holder risk factor across the small-cap physical-AI cohort. **Do not initiate coverage off this event alone.** 🔴 SPECULATIVE — event-driven entry, business unexamined.
