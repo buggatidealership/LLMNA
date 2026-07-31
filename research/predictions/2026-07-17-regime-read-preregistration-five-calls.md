@@ -167,3 +167,55 @@ Warsh named **memory-chip prices** in the FOMC inflation discussion → Samsung 
 ### Live falsifier on today's read (resolves within hours)
 
 Seoul opened SK Hynix **+28.37%** and has faded to **+21.63%** (24% of the move surrendered); KOSPI high **+14.17%** → **+11.69%**. **The identical shape failed 24 hours ago** (07-30 opened +0.33%, ran +6.85%, **closed −1.23%**). **If KOSPI closes red today after a +14.17% high, the positioning-flush read underpinning this H1 increase is wrong and the tape is distributing** — in which case #13 reverses. Stated before the close, not after.
+
+## ADDENDUM #14 (2026-07-31 good-morning) — 🔴 H3 RE-SPEC RESOLVED: MY OWN MEMORY-CHANNEL HYPOTHESIS IS **REFUTED**. The transmission is FED CREDIBILITY, not memory prices, not oil.
+
+Per `signals/cross-source-log/2026-07-31-fri-goodmorning-legC-wsj-16screenshot-intake.md`. Adversarial verifier, instructed to attack the house hypothesis rather than confirm it. **It succeeded. Weights UNCHANGED (H1 60 / H2 11 / H3 29) — what changes is the LABEL and the mechanism, which matters more.**
+
+### What I claimed (addendum #13, yesterday)
+
+*"Warsh named memory-chip prices in the FOMC inflation discussion → if term-premium repricing is memory-inflation-driven rather than oil-driven, H1 and H3 are not independent and current weights double-count."*
+
+### What survives: the quote is REAL
+
+**🟢 CONFIRMED VERBATIM (T1, FOMC press conference 2026-07-29):**
+> **"The business capex boom, for example, is driving up prices of memory and logic chips and associated A.I. infrastructure."** — Chairman Kevin Warsh
+
+Recovered from the Fed's own preliminary transcript PDF via two independent extractions agreeing on every content word. He cited ~20% four-quarter growth in AI-related equipment/software spend. *(Caveat kept: the verifier could not read the PDF directly — 403 — so this is T1 content via extraction, not a direct read. One direct read before it becomes load-bearing anywhere else.)*
+
+### 🔴 What does NOT survive: the transmission channel
+
+**Nobody outside this harness makes the memory-PRICE → long-end link.** What exists in the literature is a **different link with a different mechanism**: AI capex **debt issuance → duration supply → term premium** (Dallas Fed 2026-02-10; CNBC 2026-07-24 "Bond market anxiety is growing over AI capex budgets"; ~$300bn AI-related IG supply 2026 ≈ $360bn 10Y-duration equivalents). **A price/inflation channel and a flow/supply channel are not the same hypothesis**, and conflating them is exactly the error I made. **PIMCO (2026-06-03) disputes even the financing version**: the yield back-up *"reflects shifting policy expectations far more than any meaningful repricing of the term premium tied to AI."*
+
+**Three computations that kill the price form:**
+
+1. **The long end is selling off in REAL space, not expectations space.** 10Y breakeven **2.24-2.28%**, 5y5y forward **2.22%** — both **BELOW** their Apr-2022 peaks (3.02% / 2.67%), i.e. **anchored**. Derived: 10Y real ≈ **2.41%**, 30Y real ≈ **3.00%**. An inflation-pass-through story requires breakevens to move. They did not.
+2. **The weight problem — the transmission arithmetic does not close.** Memory +125% / storage +234% (Gartner 2026E), DRAM spot ~+700% YoY — against a **~1% electronics CPI basket weight**. Enormous moves on a 1% weight cannot move a 5y5y forward, **and observably did not**.
+3. **The curve SHAPE is the proof, and it points elsewhere.** A pure expectations shock lifts the whole curve; a pure supply shock lifts the long end without moving the front. **Observed 07-29: 2Y −4bp (DOWN) while 30Y +9 to +14bp (UP)** — the market priced **LESS** near-term tightening and **MORE** long-run risk simultaneously. That is the signature of a market concluding **the Fed will be too slow**. **Confirming test 07-30: core PCE COOLED (3.3% from 3.4%; +0.1% m/m vs +0.2% expected) and the long end DID NOT RALLY** (30Y 5.21%, +1bp). An expectations-driven market rallies on that print. A credibility-driven one does not.
+
+### 🔑 THE INVERSION — and this is the part that stings
+
+**Warsh deployed the memory-chip line as DOVISH COVER**, not as a hawkish inflation warning: his point was that supply shocks of this kind are **harder to address with the interest-rate tool** — i.e. a reason for *holding*. So to the extent the remark moved bonds at all, it moved them through the **credibility** channel, by reinforcing the impression that he was rationalising inaction. **I read a dovish rationalisation as a hawkish inflation signal, and then built a transmission hypothesis on top of it.**
+
+### H3 RE-SPEC — RESOLVED
+
+| | Before | After |
+|---|---|---|
+| Label | "macro/energy shock" | **"Fed reaction-function credibility repricing"** |
+| Transmission | oil → rates (orig.) → memory → rates (my #13 candidate) | **neither** — front-end-down/long-end-up credibility shock |
+| H1↔H3 dependence | feared double-counting via memory | **NOT ESTABLISHED via memory.** If a dependency exists it runs through **AI-capex financing/duration supply**, a different mechanism needing its own test |
+| $95 Brent gate | live instrument | **DEAD as the primary trigger** — replace with a 2s30s / credibility trigger. Oil retained as context only |
+
+**Weights UNCHANGED: H1 60 / H2 11 / H3 29 (my model).** The verifier resolved the *mechanism*, not the *magnitude*, and re-weighting on a label change would be motivated reasoning. **New trigger registered for the re-spec'd H3:** 2s30s > 120bp with breakevens still <2.4% → H3 +5 (credibility shock deepening without an inflation-expectations basis). **De-escalation trigger:** breakevens rise toward 2.6%+ *while* 2s30s flattens → the hypothesis was expectations after all, re-spec again.
+
+### Two framing errors of mine, corrected
+
+1. **The two WSJ headlines are NOT a contradiction.** *"Treasury Yields Mixed as Markets Sense Dovishness"* (07-29 intraday) describes the **front end** (2Y −4bp; CME no-change odds +20pp to 45%). *"Warsh's Honeymoon With the Bond Market Is Already Over"* (07-30, TD Securities line) describes the **long end** (+9 to +14bp). **"Mixed" was a curve-SHAPE claim, never a direction claim. They are the two legs of one bear steepener.** I routed them as opposing calls; that was my error.
+2. **"30Y at a 2007 high" is TIME-COMPRESSED.** True as stated, but the level was first reached **2026-05-19** and a 30Y auction **~2026-07-09** already drew the highest yield since 2007. The 07-29/30 print is a **marginal extension of a ten-week-old level**, not a fresh break — so attributing it to a single 07-29 sentence attributes a ten-week regime to one remark. **That was the single biggest overreach risk in my re-spec, and I walked into it.**
+
+### 🟢 One agent claim REFUTED from our own records
+
+The verifier flagged our Brent settle **$84.09** as possibly a mislabelled WTI print (it sits near WTI's $83.59 on 07-30). **Refuted:** `2026-07-28-tue-eod-legb-discovery...md` §8 records it as a **CNBC T1 settle-naming print for Brent on 07-28, with WTI given separately as $79.26 the same day.** The series `$88.36 / $84.09 / $90.74 / $89.03` stands. Booked because a verifier's challenge deserves the same evidentiary standard as its findings.
+
+### What is NOT touched
+**Nothing here weakens the memory-pricing story as a corporate-earnings thesis.** Memory prices are confirmed rising violently and ~70% of world memory output is going to data centres. What is refuted is only its **transmission to the long end of the Treasury curve**. The held cohort's thesis is untouched.

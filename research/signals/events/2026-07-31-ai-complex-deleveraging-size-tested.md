@@ -93,7 +93,7 @@ The operator said the balances *"are quite ridiculous in terms of size."* Two se
 | **F1** | 🔴 **SK Hynix's record quarter MISSED.** OP ₩60.54tn vs ~₩64tn expected; revenue ₩79.32tn vs ~₩84tn. **HBM4 shipments below plan**, revenue pushed to later periods | 🟢 T1/T2 |
 | **F2** | 🔴 **SK Hynix is SLOWING the HBM4 ramp**, converting an HBM3E fab to DDR5, partly on **downward revisions to NVDA Rubin production forecasts** | 🟡 T2 TrendForce |
 | F3 | **Meta Compute** (07-01) — Meta to resell excess AI compute, directly attacking the scarcity premium; MU −10.6% on the day | 🟡 T2 |
-| F4 | **Credit repricing:** ORCL CDS >125bp, 2035 notes +175bp; AI debt issuance **$334.5bn YTD 2026 vs $185.5bn for all of 2025** | 🟡 T2 |
+| F4 | **Credit repricing:** ~~ORCL CDS >125bp~~ 🔴 **PURGED as STALE 2026-07-31 — see §9.7; we have NO current level** (CNBC 07-24 confirms "multi-year high" but prints no number); ORCL **downgraded to BBB-**, one notch above junk; 2035 notes +175bp; AI debt issuance **$334.5bn YTD 2026 vs $185.5bn for all of 2025** | 🟡 T2 |
 | **F5** | 🔴 **Cash flow going negative: AMZN TTM FCF −$7.6bn** (from +$18.2bn) on +$66.1bn PP&E; Alphabet Q2 FCF **−$5.9bn** | 🟢 **T1 8-K** |
 | F6 | Alphabet **raised** capex and fell −7%; Meta missed EPS, guided light, −8.4% | 🟡 T2 |
 | F7 | Strongest bear case: Burry's **~$176bn understated GPU depreciation 2026-28** + duration mismatch; Eisman's **"$755bn of AI spend in, <$50bn of AI revenue out"** | 🟡 T2 |
@@ -168,3 +168,70 @@ I told the operator, more than once, that **"SK Hynix fell 27.2% on a record qua
 ## §8 — LESSON CANDIDATE
 
 **L51 candidate: a forced-seller narrative must be SIZE-TESTED against average daily volume before it is accepted as causal. A fund can be destroyed by a move it was far too small to cause.** We identified a real forced seller and let it carry causal weight it cannot bear — SNDK fell 50% against a position worth 0.05× one day's volume, transferred in a block that never touched the tape. **The test is cheap, mechanical, and would have caught this at the moment of the original claim.** Companion check: **13F option lines are NOTIONAL, not capital** — never quote a 13F table total as "the size of the book."
+
+---
+
+# 🔴 §9 — PARTIAL RETRACTION (2026-07-31, same day): THE DENOMINATOR WAS WRONG. "Too small to have caused it" SPLITS BY FLOAT SHARE.
+
+An adversarial follow-up leg found what this artifact did not have: **reported fund size**. It materially damages §2.2's conclusion and I am correcting it the same day rather than letting it stand.
+
+## §9.1 — The error
+
+I ran the size test against the **13F table value ($13.68bn)**. Reported fund size (all T2, 2026-07-30): **NAV $45bn on Jul 1** (WSJ), **AUM ~$20-24bn** at highs (Reuters/FT/Faber), **~4× gross leverage** (Faber, CNBC), **~$10bn retained** after the block.
+
+| 13F measure ÷ reported size | NAV $45bn | AUM $24bn | AUM $20bn |
+|---|---|---|---|
+| 13F **table value** $13.68bn | **30.4%** | 57.0% | 68.4% |
+| 13F **long US equity** $3.86bn | **8.6%** | 16.1% | 19.3% |
+
+**I sized the test against as little as 8.6% of the actual book.** The remainder lived in swaps, international listings, options and leverage — **none of it 13F-reportable**.
+
+## §9.2 — 🔴 A second error, and this one is purely mine
+
+§6 of this artifact flagged CNBC's description ("longs in AI infra such as SK Hynix, shorts in software such as Adobe") as **inconsistent with the Q1 13F**. **That flag is WITHDRAWN.** The 13F is *structurally incapable* of showing either: SK Hynix is KRX-listed and not 13F-reportable, and **single-name equity shorts are not 13F-reportable at all** — only listed puts are. CNBC was right; I treated a partial disclosure regime as a complete book. **Bias candidate: DISCLOSURE-REGIME COMPLETENESS — reading the absence of a position in a filing as the absence of the position.**
+
+## §9.3 — What survives, and what does not: the discriminator is FLOAT SHARE, not fund size
+
+| Name | Fund's share of shares outstanding | Verdict |
+|---|---|---|
+| SNDK, MU, ORCL, AVGO, NVDA, SMH | **<1%** | ✅ **Casualty read HOLDS** |
+| **CORZ** | **8.2%** | 🔴 **NOT SAFE** |
+| IREN | 3.5% | 🔴 **NOT SAFE** |
+| APLD / CLSK / WhiteFiber | ~4-5% each | 🔴 **NOT SAFE** |
+
+**Revised conclusion: casualty in the large caps; plausibly a marginal CAUSE in the micro/small-cap physical-layer names.** A fund holding 8.2% of a company can move it. A fund holding <1% cannot, no matter how levered it is. **§2.2's verdict was right for the names it was tested on and wrong to generalise to the cohort.**
+
+**Further evidence against the clean version:** prime brokers at BofA/GS/JPM were reportedly **"marketing holdings from both the long and short sides"** *before* the 07-30 block (T3) — supply reaching the market ahead of the transfer. **Whether that marketing actually transacted is unreported and is the single pivotal unknown for cause-vs-casualty.**
+
+## §9.4 — 🔑 What the computation surfaced that the prose would have smoothed
+
+A naive 4× book on the observed underlying moves gives: 4× × −25% = **−100%**; 4× × −44% = **−176%**. **The observed −67% is LESS bad than the naive arithmetic predicts.** So either gross leverage was well below 4× on the equity book, **or the short leg (91% of the put book was short AI-compute — SMH/NVDA/AVGO/AMD/TSM/ASML) partly worked and cushioned the loss.** The second is more likely given those names fell least. **This is evidence the book was a functioning long/short, not a naked levered long — and it cuts mildly back toward casualty.** I would have written "−67% is consistent with 4× leverage" in prose and been wrong.
+
+## §9.5 — The miner leg was NOT the source
+
+Computed from the agent's T1 price pull (06-30 → 07-30): **miners mean −12.6%** (CLSK −0.1%, CORZ −14.8%, IREN −16.3%, RIOT −19.2%) vs **memory/neocloud mean −28.3%** (SNDK −43.7%, NBIS −31.8%, BE −31.6%, CRWV −25.8%, MU −24.2%, ORCL −13.0%) = **the miner leg OUTPERFORMED by 15.7pp**. Strategy's **$8.22bn Q2 loss is non-cash** (fair-value BTC mark) and does not transmit. **Crypto-miner stress compounding the AI unwind: LOW-TO-MODERATE, and via cost-of-capital rather than BTC price.**
+
+## §9.6 — 🔑 THE MSFT/META NATURAL EXPERIMENT — H2 RAISED
+
+Same day-pair, identical AI-demand backdrop, opposite tape:
+
+| | MSFT **+15.51%** | META **−10%** |
+|---|---|---|
+| Capex | guide **UNCHANGED** ($50bn Q1FY27 / $175bn CY26) | ~**$137.5bn** CY26 |
+| Funding | **self-funded, raised nothing** | **$83.7bn** long-term borrowings; **negative FCF in H2 2026, first since the 2012 IPO** |
+| Debt market | n/a | **40-year bonds sold in May now yield ~7%** |
+| Demand | Azure **+43% cc**, >$100bn FY26 | AI demand not in question |
+
+**The discriminating variable was self-funding capacity, not demand.** MSFT's **$450bn one-day market-cap gain is an all-time US record** (beats NVDA's $441bn, 2025-04-09; Reuters/LSEG T2).
+
+**Corroborating financing-layer evidence, all fresh:** Meta's El Paso $12bn marketed at **>7%** vs the "generous terms" of the near-identical $27bn Hyperion deal nine months earlier · **Prime Data Centers PULLED a Nordic bond** ($600m → $500m → on hold, Bloomberg 2026-07-13) · **ORCL downgraded to BBB-**, one notch above junk · Anthropic's **$14bn bridge + revolver needed a Google GUARANTEE** on lease and power commitments to clear, with Google taking ~20% of the project equity for it.
+
+**⇒ H2 raised. New weights (my model): H1 60→52 / H2 11→19 / H3 29 unchanged.** The window is **repricing violently but is NOT closed** — $14bn cleared for a pre-revenue-scale lab, just with an investment-grade guarantor stapled on and priced accordingly. That is the precise shape of H2: *how* capex is financed re-rated, not *whether* it happens.
+
+## §9.7 — Corpus hygiene
+
+🔴 **PURGE the ">125bp ORCL CDS" figure** wherever it appears — it is stale. CNBC (2026-07-24) confirms "multi-year high" but prints **no number**; the circulating 215bp is undated T3 and the 198bp print is **2026-03-31, four months old**. **We have no current level. Say so rather than quoting the old one.**
+
+**Diarise 2026-08-14** — Situational Awareness Q2 13F. First hard read on the mid-July book, and the only thing that will settle §9.3.
+
+**Position implication: unchanged — HOLD across the memory cohort, no trim, user-gated.** The retraction moves weight from H1 to H2, and H2 attacks **levered payers** of capex while the held cohort are **recipients**. The recipient/payer distinction is what keeps the cohort on the right side of a financing-layer re-rating — and it is now doing more work than it was yesterday. 🟡
