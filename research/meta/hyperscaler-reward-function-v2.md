@@ -102,3 +102,34 @@ A project funded at 7% has to earn 7% before it creates a single cent of value. 
 **🔴 The condition that would break this insulation:** if the cost of money rises far enough that a hyperscaler actually **cuts** capex — not guides conservatively, but cuts — the recipients lose the revenue, not just the multiple. **That is the single event that converts a payer problem into a recipient problem, and it has not happened.** It is the thing to watch above all else.
 
 **Position implication: HOLD across the memory cohort — no size change — user-gated.** No written falsifier in any held thesis fires on a financing-layer re-rating of the payers. The framework argues for *continued* holding on the specific ground that recipients are insulated until spending itself is cut. 🟡
+
+---
+
+## §8 — BYPASS ROUTES (Critical Rule #9): what a capital-constrained buyer does instead of paying up for memory
+
+§7 names an actual capex **cut** as the one event that breaks recipient insulation. That is incomplete without asking the Time-to-X question: **when a buyer faces a memory shortage AND a 7% cost of money simultaneously, what do they do instead of just paying more?** Five routes exist. Their status is the interesting part.
+
+| # | Bypass route | Status | Who benefits / who pays |
+|---|---|---|---|
+| 1 | **Second-source** — CXMT / YMTC (China) | **LIVE, ramping** | Beneficiary is Chinese supply, **not investable for us**. The real structural threat to the recipient cohort |
+| 2 | **Substitution / down-spec** — less memory per unit | **FAILING** | Apple attempted it and still guided supply-capped; Cook said the constraint has *"limited flexibility in the supply chain to remedy it"* |
+| 3 | **Demand destruction** at the consumer end | **ALREADY FIRING** | Samsung's own MX division took a **first-ever quarterly loss** from its own DS division's prices. **Casualties: non-integrated OEMs** — Xiaomi, OPPO, vivo, Transsion, PC OEMs — who pay the input price without owning a fab |
+| 4 | **Rent instead of own** — neoclouds (CRWV, NBIS, IREN) | **CAPITAL-CONSTRAINED, worse than the buyer** | These are the names that just fell 25-35%. The bypass is *more* rate-sensitive than the thing it bypasses |
+| 5 | **Efficiency** — more tokens per chip instead of more chips | **SLOW, but the only unconstrained one** | Beneficiary is inference optimisation and model efficiency, **not memory volume**. Costs time, not capital — which is exactly why it becomes the preferred route as capital gets expensive |
+
+### 🔑 The non-consensus finding: the bypass routes CONVERGE on the falsifier
+
+Read the table as a system rather than a list. **Every route that requires capital is now more expensive precisely because capital got more expensive** — route 4 is the sharpest case, since renting compute is *more* rate-sensitive than owning it, which is why the neoclouds fell hardest in the very drawdown that made renting attractive. Route 1 needs fab capital and years. Route 2 is empirically failing.
+
+**That leaves routes 3 and 5 — demand destruction and efficiency — as the only two that do not require the buyer to raise money.** Both take the same form from the recipient's point of view: **buying fewer bits.**
+
+**⇒ Under a 7% hurdle rate, the cheapest available bypass IS the falsifier.** The thing a capital-constrained buyer does when it cannot cheaply substitute, second-source, or rent is **buy less** — and "buy less" *is* the capex cut that §7 names as the one condition that removes recipient revenue rather than payer multiple.
+
+**This tightens the watch item rather than loosening it.** §7 treated the capex cut as an exogenous event to monitor. It is not exogenous: it is the **terminal state of the bypass ladder**, and the ladder is already three rungs down. The honest read is that a cut is more reachable than "it hasn't happened yet" implies — not imminent, but structurally downhill from here rather than uphill.
+
+**Leading indicators for routes 3 and 5, in order of how early they fire:**
+1. **Efficiency claims from the buyers** — any hyperscaler publishing tokens-per-watt or cost-per-task gains is route 5 starting. *(Ties to the existing B47/U8 efficiency-claim tripwire — this is that tripwire's macro form.)*
+2. **Non-integrated OEM guidance cuts** — Xiaomi/OPPO/vivo/PC OEMs cutting units is route 3 firing downstream, and it fires *before* the hyperscalers cut.
+3. **Bit-shipment guidance** from the memory suppliers themselves — the first place route 3+5 shows up in our own cohort's numbers.
+
+**Position implication: HOLD — no size change — user-gated.** No change to the verdict, but the *reason* is now weaker than it was in §7: recipient insulation holds because none of the cheap bypasses have reached scale, **not** because a cut is structurally unlikely. Watch the three indicators above rather than waiting for the cut itself. 🟡
