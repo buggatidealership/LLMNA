@@ -133,3 +133,54 @@ Read the table as a system rather than a list. **Every route that requires capit
 3. **Bit-shipment guidance** from the memory suppliers themselves — the first place route 3+5 shows up in our own cohort's numbers.
 
 **Position implication: HOLD — no size change — user-gated.** No change to the verdict, but the *reason* is now weaker than it was in §7: recipient insulation holds because none of the cheap bypasses have reached scale, **not** because a cut is structurally unlikely. Watch the three indicators above rather than waiting for the cut itself. 🟡
+
+---
+
+# 🔴 §9 — SAME-DAY AMENDMENT: THE BINARY VERSION IS BROKEN. AMZN RAISED.
+
+Written 2026-07-31 morning; broken 2026-07-31 evening by the EOD discovery leg. Booking it immediately rather than letting it stand overnight.
+
+## §9.1 — The fact I did not have
+
+**Amazon RAISED 2026 capex from $200bn to $220bn on the Q2 call (T2 CNBC, 2026-07-30)** — a **+10%** increase. My §1 table recorded AMZN as *"no raise at the print."* **That is wrong.** AMZN raised, and then closed **+15.32%** on 07-31.
+
+**⇒ The binary formulation — "did you ask for more money?" — is FALSIFIED.** A raiser rallied 15%. §2's "perfect rank ordering, 4 for 4" was a perfect ordering over a **mis-coded variable**, which is worse than a bad fit: it looked like confirmation.
+
+## §9.2 — What survives, and it is what I actually wrote in §2
+
+The sentence under the table read: *"the delta of the ask against the proof you can show in the same quarter."* **That ratio version survives; the binary simplification I built the table around does not.**
+
+| | Ask | Proof shown in the same quarter | Net |
+|---|---|---|---|
+| **MSFT** | **0%** | Azure **40%→43% cc** (accelerating) | strongly positive |
+| **AMZN** | **+10%** | AWS **31%→37%**, fastest in 18 quarters | **proof outran the ask** |
+| **GOOGL** | raised | Cloud +82% — high, but **no acceleration surprise**; value sits in backlog, not this quarter | ask outran in-quarter proof |
+| **META** | raised | **EPS MISS**, guided light | ask against negative proof |
+
+The ordering is preserved **only** when the ask is measured against in-quarter conversion rather than in isolation. **I got the right answer in the prose and the wrong answer in the table, then reported the table.**
+
+## §9.3 — 🔑 The refinement that is worth more than the correction: COST-PUSH vs VOLUME-PUSH
+
+**Jassy named *rising memory prices* as the reason for the increase** (T2 CNBC 07-30). Meta's raise was likewise attributed partly to *higher component costs*.
+
+**Asking for more money because your inputs cost more is not the same act as asking for more money to buy more machines** — and the market appears to distinguish them. A cost-push raise is a *margin* event; a volume-push raise is a *commitment-duration* event. Only the second extends the payback horizon that a 7% cost of money is punishing.
+
+**⇒ Capex dollars have decoupled from capex units.** Any forecast multiplying capex dollars by a stable $/unit is now **biased high on physical buildout** — and that is a general instrument defect, not a one-name observation.
+
+## §9.4 — 🔴 A SECOND, WORSE PROBLEM: my falsifier is keyed to the wrong instrument
+
+§7 and §8 name *"a hyperscaler cuts capex"* as the single event that breaks recipient insulation. **That falsifier is now partially blind.**
+
+**Microsoft MAINTAINED its capex guidance while signing >$130bn of new data-centre leases in one quarter — not-yet-commenced lease commitments went $196.6bn → $329.1bn** (T2 Bloomberg, 2026-07-29). Spending is migrating from the capex line — which every analyst models and which my falsifier watches — into **lease commitments**, which sit in a footnote and convert to opex over time.
+
+**A company can hold or cut capex guidance while total forward obligation accelerates.** My falsifier would read "spending intact" or "spending cut" from a number that no longer measures spending.
+
+**This is the same error class as the KIOXIA falsifier booked this morning** — a falsifier keyed to an instrument that cannot register the event it is meant to detect. **N=2 in one day, which makes it a pattern rather than an accident.**
+
+**FALSIFIER RE-SPEC (registered now):** the trigger is a decline in **TOTAL FORWARD COMMITMENT** = capex guidance **+** not-yet-commenced lease commitments **+** off-balance-sheet JV/SPV financings — **not the capex line alone**. Anything keyed to capex alone is retired.
+
+## §9.5 — Status downgrade
+
+**v2 status: 🟡 DIRECTIONAL → 🔴 AMENDED, ratio-form only.** The binary form is dead. The ratio form is untested as such, because I only articulated it properly *after* the binary form broke — which means it has **zero** independent confirmations, not four. Treat §1-§8 as reasoning about a real mechanism with a mis-specified test, and re-derive before using it anywhere.
+
+**Position implication: unchanged — HOLD across the memory cohort, user-gated.** The correction does not touch the recipient/payer logic; it touches how I *measure* the payer's behaviour. If anything §9.3 strengthens the recipient case — a capex raise driven by memory prices is the recipient **capturing the increment**, which is our cohort being paid more, showing up as a bigger number on the buyer's income statement. 🟡
