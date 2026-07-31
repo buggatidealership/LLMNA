@@ -68,9 +68,41 @@ A conversion story pays out years after the spend. Discounting a 20-year-out dol
 
 ---
 
-## §1 — THE REACTION LEDGER
+## §1 — THE REACTION LEDGER (T1, three-vendor agreement to the cent)
 
-*[agent in flight — table lands on return]*
+**Reusable instrument shipped:** `meta/tools/earnings_reaction_ledger.py` — parameterised on a `CYCLE` dict, so next quarter you edit the dict, not the code.
+
+Fetch stamps: Finnhub `/quote` **2026-07-31T20:37:21Z** (all five carry exchange ts 20:00:00Z = the 16:00 ET settle) · FMP EOD 20:37:52Z · EODHD EOD 20:40:47Z (rows ≤ T-1 only — same-day row deliberately not read per the documented defect). **0 disagreement rows across 25 OHLC cells.**
+
+| | Print | Base (prior reg. close) | AH reaction | **T+24h settled** | T+48h | **Divergence (raw)** | **Cohort-adjusted** |
+|---|---|---|---|---|---|---|---|
+| **GOOGL** | 07-22 AMC | $342.09 | −4.90% (range −4.9 to −7.0) | **−7.13%** | −6.53% | −2.23pp | **+0.64pp** ⚠️ circular control |
+| **MSFT** | 07-29 AMC | $390.54 | +8.88% | **+15.51%** | +18.99% | +6.63pp | **+6.10pp** ✅ survives |
+| **META** | 07-29 AMC | $585.61 | −7.45% | **−7.95%** | −4.94% | −0.50pp | −1.03pp |
+| **AMZN** | 07-30 AMC | $235.50 (pre-print) | **+7.41% to +10% — unresolvable** | **+15.32%** | n/a (Fri) | +7.91pp | **+1.18pp** |
+| **AAPL** | 07-30 AMC | $333.43 | −6.0% to −7.8% — unresolvable | **−7.35%** | n/a (Fri) | −0.35pp | **−7.09pp** 🔑 |
+
+### §1.1 — 🔴 The headline finding: the "AH under-reacts" pattern is an ARTIFACT
+
+Raw, it looks like a regularity: **|T+24h| > |AH| in all five**, mean **+2.29pp**. **Under a cohort control** (same-session close-to-close of names not reacting to their own print) the mean collapses to **−0.04pp**. **AMZN's +7.91pp raw divergence is ~85% market beta** — GOOGL rose +6.73% the same session on no news of its own.
+
+**SIGN TEST: 0 of 5** had AH and T+24h of opposite sign. **After-hours direction was 5-for-5 correct.** So "AH is pure flow" is **false** here. The correct statement: **direction informative, magnitude not.**
+
+**AAPL is the trap** — raw −0.35pp reads as "AH got it right"; cohort-adjusted **−7.09pp** makes it the most misleading knee-jerk of the five. Only visible once the tape is removed.
+
+**Only MSFT survives the control**, and the mechanism is already on file: decade-high short interest into the print ⇒ **squeeze, not re-rating** ⇒ a *positioning* signal, not an *information* signal.
+
+⚠️ **n=5, one cycle, two strong up-tapes. NOT tradeable on this evidence.**
+
+### §1.2 — 🔴 FOUR corpus figures were intraday ticks, now corrected in place
+
+Forensic test: convert the disputed % to an implied price, check against the session range. **MSFT +16.77%** → $456.03, **$4.93 above the $451.10 settle**. **META −8.73%** → $534.49 and **−10%** → $527.05, both inside range, the latter **$11.98 off**. **GOOGL −6.5%/−7.00%** → both intraday; true **−7.13%**. Corrected in `2026-07-30-thu-earnings-reward-function-map.md`, `2026-07-31-ai-complex-deleveraging-size-tested.md` and `meta/hyperscaler-reward-function-v2.md`, old values retained inline. **L42-b booked.**
+
+**🔴 And the worse half — a Rule #10 CASCADE FAILURE:** the GOOGL figure **had already been corrected once**, on 07-25 in `companies/GOOG/thesis.md`. The stale values survived in the reward-function map five days later and **propagated into v2 today**. **A correction that does not cascade is not a correction.**
+
+### §1.3 — 🔴 AMZN GRADE RE-OPENED (the §0 caveat fired)
+
+Settled **+15.32%** vs the AH **+7.41%** the 07-30 grade used ⇒ **the miss is 2.07× larger on the correct basis.** And the gate was mis-specified: the call required **BOTH** AWS ≥32% **AND** capex ≤~$200bn; **AWS 37% ✅ but capex $220bn ❌ (RAISED)** — only one leg held and the stock rose 15.32% anyway. **A conjunctive gate half-satisfied should have produced a DOWN move on the call's own logic.** Full re-grade in `predictions/lessons.md`.
 
 ## §2 — THE ROI-CONVERSION INSTRUMENT
 

@@ -12,9 +12,9 @@
 | | Reaction | Did it ask for MORE money at this print? | Conversion shown in-quarter | Free cash flow |
 |---|---|---|---|---|
 | **MSFT** | **+15.51%** | **NO** — guide unchanged ($50bn Q1FY27 / $175bn CY26) | Azure 40%→**43% cc**, >$100bn FY26 first time | positive |
-| **AMZN** | **+3.90%** (regular close, pre-print; AH higher) | **NO** — no raise at the print | AWS 31%→**37%**, fastest in 18 quarters | **TTM −$7.6bn** |
-| **GOOGL** | **−7.00%** | **YES** — raised to $195-205bn | Cloud **+82%**; backlog $106bn→**$514bn** | **Q2 −$5.9bn** |
-| **META** | **−8.40%** | **YES** — raised (~$137.5bn CY26) **and missed EPS** | EPS **MISS**, Q3 guided light | **negative H2-26, first since the 2012 IPO** |
+| **AMZN** | **+15.32% settled T+24h** ⟨corrected 07-31 — the +3.90% was the PRE-print regular close; §5.2's "soft magnitude" caveat is now RESOLVED⟩ | **NO** — no raise at the print | AWS 31%→**37%**, fastest in 18 quarters | **TTM −$7.6bn** |
+| **GOOGL** | **−7.13%** ⟨corrected 07-31, settled⟩ | **YES** — raised to $195-205bn | Cloud **+82%**; backlog $106bn→**$514bn** | **Q2 −$5.9bn** |
+| **META** | **−7.95% settled** ⟨corrected 07-31; −8.40%/−8.73%/−10% were all intraday ticks⟩ | **YES** — raised (~$137.5bn CY26) **and missed EPS** | EPS **MISS**, Q3 guided light | **negative H2-26, first since the 2012 IPO** |
 
 ---
 

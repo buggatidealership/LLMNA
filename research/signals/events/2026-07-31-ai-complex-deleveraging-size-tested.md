@@ -215,7 +215,7 @@ Computed from the agent's T1 price pull (06-30 → 07-30): **miners mean −12.6
 
 Same day-pair, identical AI-demand backdrop, opposite tape:
 
-| | MSFT **+15.51%** | META **−10%** |
+| | MSFT **+15.51%** | META **−7.95%** ⟨corrected 07-31: −10% implied $527.05, an intraday tick near the session low; settled $539.03⟩ |
 |---|---|---|
 | Capex | guide **UNCHANGED** ($50bn Q1FY27 / $175bn CY26) | ~**$137.5bn** CY26 |
 | Funding | **self-funded, raised nothing** | **$83.7bn** long-term borrowings; **negative FCF in H2 2026, first since the 2012 IPO** |

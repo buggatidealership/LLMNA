@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|
 | MSFT | +0.71% | +9.53% | **+8.88%** (AH) | n/a (OCF not yet booked) | Azure +43% vs cons 40.2%; RPO $678B +84% |
 | META | −0.93% | −16.03% | **−7.45%** (AH) | **0.976** | capex $31.08B / OCF $31.86B; FCF $784M |
-| GOOGL (07-22) | n/a | n/a | ~−6.5% | **>1.0 (negative cover)** | capex $44.9B, **FCF −$5.9B first negative quarter**; Cloud +82% |
+| GOOGL (07-22) | n/a | n/a | **−7.13%** ⟨corrected 07-31: was ~−6.5%, an intraday tick; settled close 317.69 vs base 342.09⟩ | **>1.0 (negative cover)** | capex $44.9B, **FCF −$5.9B first negative quarter**; Cloud +82% |
 | SKHY (07-29) | −5.64% | −5.53% (OP) | **−9.61%**, then −6.28% | n/a | OPM 76% record; capex RAISED to ₩40조 후반 |
 | KLAC | n/a | n/a | **−10.80%** | n/a | **on a RAISED guide** |
 | STX | n/a | n/a | +2.29% | n/a | HDD beat — only memory-adjacent gainer |
@@ -95,7 +95,7 @@ AMZN raises capex materially AND rallies without in-quarter conversion → Force
 
 ### THE RULE THAT FITS EVERY DATA POINT (my model; supersedes the §2 tier framing)
 **At every layer of the stack simultaneously, the market is PAYING THE RECIPIENT of capex and PUNISHING THE PAYER of it.**
-- Hyperscaler pays capex → hyperscaler punished (META −7.45%, GOOGL −7.00%) **unless in-quarter conversion is shown** (MSFT +8.88%: Azure 43%, RPO $678B +84%)
+- Hyperscaler pays capex → hyperscaler punished (META **−7.95% settled** ⟨was −7.45% AH / −8.73% intraday⟩, GOOGL **−7.13% settled** ⟨was −7.00% intraday⟩ — corrected 07-31) **unless in-quarter conversion is shown** (MSFT +8.88%: Azure 43%, RPO $678B +84%)
 - Memory maker pays capex (**SKHY raised ~50% to ₩40조 후반**) → **memory maker punished** … and **that exact same capex is LRCX/TER/FORM revenue → equipment rewarded**
 - Apple pays no AI capex at all → **best performer of the entire complex** (+15% in July, reclaimed #1 mcap ~$4.95T explicitly on "avoids capex pitfalls")
 
@@ -137,7 +137,7 @@ AMZN raises capex materially AND rallies without in-quarter conversion → Force
 
 | Ripping | | Still falling | |
 |---|---|---|---|
-| SanDisk **+24.53%** · Lam **+18.53%** · Micron **+16.82%** · **MSFT +16.77%** | | **Meta −8.73%** | |
+| SanDisk **+24.53%** · Lam **+18.53%** · Micron **+16.82%** · **MSFT +15.51%** ⟨corrected 07-31: +16.77% implied $456.03, an intraday tick $4.93 above the $451.10 settle⟩ ~~+16.77%** | | **Meta −8.73%** | |
 | WDC +14.41% · INTC +13.68% · AMD +13.37% · MRVL +12.34% · KLAC +8.06% · TSM +7.72% · ARM +7.37% · AMZN +5.64% · **NVDA only +2.23%** | | Apple −2.08% · Alphabet −0.78% | |
 
 **MECHANICAL-REVERSAL TEST (computed):** correlation(07-29 move, 07-30 move) across 13 names = **−0.567** — the harder it fell, the harder it bounced. Recovery multiples: SNDK **3.35×** its Wednesday loss, INTC 2.67×, AMD 2.43×, MU 1.69×. **This is a positioning unwind reversing, not a re-rating.**
