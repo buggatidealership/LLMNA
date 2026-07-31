@@ -82,3 +82,88 @@ Two consecutive named Brent SETTLES below the $95 gate: **Mon 07-27 $88.36 (−8
 ## ADDENDUM #12 (2026-07-30 KR-open wake) — H3 JOINT REWEIGHT EXECUTED: H1 54 / H2 11 / H3 35 (my model)
 
 Both registered escalation inputs resolved aligned: (1) KR foreign net-sell trigger FIRED N=3 accelerating (−₩3.29조/−₩2.90조/−₩4.97조, addendum-#8 pre-registration "≥3 sessions → H3 ~35"); (2) the oil-leg un-breach (addendum #11) is overtaken — Brent settled **$90.74 +7.9% Wed** (press-settle basis, 2 outlets, arithmetic-verified; three sub-95 settles = gate formally NOT breached, headroom 4.7%) while the physical dashboard runs extreme (Hormuz transits 78 vs 174/wk; VLCC $382k/day; EFS $13.22) and the rates path confirmed loudly (FOMC 9-3 hold with ALL THREE dissents for a HIKE; 30Y 5.201% highest since July 2007; Sept >57%). Realized transmission: Dow −2.19% worst day since Apr-2025, VIX 20.66 +13.45% — the financial-calm side of the divergence broke toward physical. Weights: **H1 60→54 / H2 12→11 / H3 28→35** (my model). Un-wind condition (pre-registered now): Brent settles <$85 ×2 consecutive WITH a signed Hormuz transit mechanism → review H3 back toward ~28. Per `signals/cross-source-log/2026-07-30-thu-kr-open-wake-t24h-fomc-catchup.md` §2.1. NO POSITION ACTION — user-gated.
+
+## ADDENDUM #13 (2026-07-31 KR-open wake) — 🔴 THE 07-30 FLOW INPUT WAS REFUTED; H3 REWEIGHT DOWN: H1 60 / H2 11 / H3 29 (my model)
+
+Per `signals/cross-source-log/2026-07-31-fri-kr-open-wake-gap-close-overshoot-h3-respec.md`. **NO POSITION ACTION — user-gated.**
+
+### The refutation (adversarial verifier, instructed to KILL the new figure — it survived every attack)
+
+The corpus recorded 07-30 foreign KOSPI flow as **−₩1.25조 net SELL, "session 4, collapsing −72% DoD."** That is **two errors**:
+
+| | Corpus | Verified |
+|---|---|---|
+| 07-30 foreign | −₩1.25조 **SELL** | **+₩1.33조 BUY** (±₩80억 across preliminary/final variants) |
+| Session 4 date | 07-30 | **07-29** (off-by-one) |
+
+**Evidence: 10+ INDEPENDENT newsrooms**, all agreeing on direction, **zero** sources found for net-sell: 아시아경제, 파이낸셜뉴스, 아주경제, 머니투데이, 한국경제, 이투데이, digitaltoday, 경향신문, 서울경제, UPI (all T2, separate bylines — not wire syndication).
+
+**Refutation attempts run, all FAILED:** date-shift to 07-24/27/28/29 (none ≈1.25조); KOSDAQ contamination (**inverts against the corpus** — KOSDAQ foreigners were the *sole* net buyer at +2,481억); intraday-vs-close staleness (the intraday path was +4,330억 → +1조3,252억, **net positive all day and accelerating** — no moment at −1.25조 exists); 억/조 unit error (explicitly 조-denominated); **internal arithmetic balance** (+13,252 +744 −14,220 = −224억 → plausible 기타법인 residual; a sign-inverted foreign leg would NOT balance).
+
+**Origin of −₩1.25조: UNIDENTIFIED.** It matches no KOSPI cash session 07-24→07-30 and no 07-30 KOSDAQ figure. **An unexplained figure entering the corpus is a live process risk — trace the pipeline before trusting it again.** Routes to the open INTAKE-BOUNDARY P0 as a second live specimen (alongside the KIOXIA intake failure booked today).
+
+### The bigger finding: the streak was DECAYING, not persisting
+
+| Date | Foreign net | |
+|---|---|---|
+| 07-23 | **+2조1,358억** | baseline BUY |
+| 07-24 | −3조2,800억 | sell 1 |
+| 07-27 | −2조9,039억 | sell 2 |
+| 07-28 | −4조9,841억 | sell 3 — **PEAK** (circuit breaker, KOSPI −10.84%) |
+| 07-29 | **−791억** | sell 4 — **COLLAPSE: 1.6% of session 3, 0.70% of the 4-session cumulative −11.2471조** |
+| 07-30 | **+1조3,252억** | **STREAK BROKEN — reversal** |
+
+**"Persisting" and "accelerating" are FALSE on the data.** The shape is **PEAK → COLLAPSE → REVERSE**, and the true DoD collapse into session 4 was **−98.4%**, not the −72% recorded. Corroborating language: 아시아경제 "5거래일 만에 순매수" / digitaltoday "first net buying in four trading sessions" — same fact, two counting conventions, both marking 07-30 as the **reversal**.
+
+### Trigger audit — was addendum #12's reweight validly fired? YES, and this nuance matters
+
+The pre-registered trigger was *"foreign net-sell persisting ≥3 KR sessions → H3 to ~35."* Sessions 07-24/27/28 were all net-sell, N=3 ≥ 3. **The TRIGGER was validly met.** What was false is the **07-30 confirmation input**. So this is not "the reweight was wrong" — it is **"the reweight was right when fired, and the very next session delivered the de-escalation that the corpus mis-recorded as further escalation."** Recording an escalation on the session that was actually the reversal is the error.
+
+### THE REWEIGHT (my model)
+
+| | Before (#12) | **After (#13)** | Δ |
+|---|---|---|---|
+| **H1** (unwind-inside-intact-demand) | 54 | **60** | +6 |
+| **H2** (AI-top) | 11 | **11** | 0 |
+| **H3** (macro/energy shock) | 35 | **29** | **−6** |
+
+**H3 down −6 because BOTH of its escalation legs withdrew:**
+1. **Flow leg REFUTED** — streak broken and reversing, not persisting.
+2. **Oil leg UN-BREACHED on a 4th consecutive sub-95 settle** ($88.36/$84.09/$90.74/**$89.03**), with de-escalation structurally forming: Saudi naval coalition, 40+ nations at a maritime-defence meeting, **Hormuz transits recovering to 14/day from single digits**.
+
+**H1 up +6 on genuinely aligned new evidence, not merely as H3's residual:**
+- **Rotation signature** — on 07-30 전기전자 was the *only* major loser while 의약품/화학/금속/운송장비/보험/부동산 ran **+1.9% to +3.5%**. A real risk-off takes the whole tape down; this took one sector down and bid six.
+- **Foreigners bought SK Hynix +₩5,876억 INTO a −5.64% session** — the informed bid was on the other side of the decline.
+- **Retail was the seller: −₩3.392조 across 07-29+07-30** (computed).
+- **Samsung guided shortage intensifying in 2027 and persisting through 2028** (T2 ×4), with DRAM ASP +mid-40% / NAND +high-60% QoQ.
+- **Apple fell 6-8% AH after beating every line because SUPPLY, not demand, capped the guide** — a demand-exceeds-supply datum, which is H1-shaped.
+
+**H2 unchanged at 11** — no AI-demand falsifier fired. Apple's constraint is supply-side; Samsung's guide is supply-side; no capex cut, no LTA walk-back, no deferral.
+
+### 🔴 RULE #18 — THE STRONGEST CASE AGAINST THIS REWEIGHT, STATED BEFORE THE CONCLUSION STANDS
+
+**The rates leg is STRENGTHENING while I cut H3, and that is genuinely uncomfortable.** On 07-30 the **30Y printed 5.20% — a 2007 high — on a day Brent FELL 1.9%**. Since 07-14 the long end has done **3.0×** the front-end move (30Y +12bp vs 2Y +4bp); FOMC day alone delivered **15bp of steepening** (2Y −4bp, 30Y +11bp); 2s30s at 98bp. The non-Brent dashboard is **2-of-5 elevated** (war-risk **7.5-10% of hull** vs 1-3% weeks prior = **12-40×**; VLCC TCE **$382,397/day, +33.5%** since 07-02) — and the honest denominator is **3 readable, not 5**, so that is **2 of 3**. The physical risk premium did not deflate; it **migrated into freight and insurance**, a landed-cost tax on Korean industrials that flat Brent hides.
+
+**If H3 is really a TERM-PREMIUM hypothesis that merely used oil as its transmission channel, then cutting it here is exactly wrong.**
+
+**Why I cut anyway:** the flow input was **factually false**, and correcting a refuted input is a correction, not a judgment call — leaving a weight standing on a number that 10 newsrooms contradict is strictly worse. The oil leg is also un-breached on its own pre-registered terms. **The rates leg is preserved as an open question rather than silently absorbed**, per the re-spec below.
+
+### 🔴 H3 RE-SPEC — REGISTERED, NOT RESOLVED
+
+**Q: Is H3 an OIL hypothesis, or a TERM-PREMIUM hypothesis that used oil as its transmission channel?**
+
+Warsh named **memory-chip prices** in the FOMC inflation discussion → Samsung guided shortage **through 2028** → Apple's guide was **supply-capped**. That is **one causal chain touching both H1 and H3**. If term-premium repricing is memory-inflation-driven, **H1 and H3 are not independent and any weights assigned to them double-count.**
+
+**Pre-registered consequence (so this cannot be back-fitted):**
+- If the re-spec resolves toward **TERM-PREMIUM**, H3 must be **re-raised AND renamed** — at that point it is not the same hypothesis, and the **$95 Brent gate is a dead instrument** to be replaced by a term-premium/2s30s trigger.
+- If it resolves toward **OIL**, H3 continues down toward ~25 on the un-breach path.
+- **Adjudicating evidence to look for:** whether the long end keeps repricing on days crude falls (isolates the channel), and whether memory prices recur in Fed communication.
+
+**Un-wind condition from #12 carried forward, unchanged:** Brent settles <$85 ×2 consecutive WITH a signed Hormuz transit mechanism → H3 toward ~25.
+
+**New de-escalation trigger registered:** foreign net-BUY on KOSPI for ≥3 consecutive sessions → H3 −3 further and the flow leg formally retired as an H3 input.
+**New RE-escalation trigger registered:** foreign net-sell resuming ≥2 consecutive sessions **with** KOSPI closing below 5,593.56 → restore H3 toward 35.
+
+### Live falsifier on today's read (resolves within hours)
+
+Seoul opened SK Hynix **+28.37%** and has faded to **+21.63%** (24% of the move surrendered); KOSPI high **+14.17%** → **+11.69%**. **The identical shape failed 24 hours ago** (07-30 opened +0.33%, ran +6.85%, **closed −1.23%**). **If KOSPI closes red today after a +14.17% high, the positioning-flush read underpinning this H1 increase is wrong and the tape is distributing** — in which case #13 reverses. Stated before the close, not after.
