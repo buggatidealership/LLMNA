@@ -295,3 +295,50 @@ holds no key value. Used the documented remedy rather than bypassing the scanner
   12.4% position is appropriately sized"* — canonical was 20,6% at the 07-07 mark.
   `origin/main` never fixed it. The right repair points at `portfolio/holdings.md`
   rather than hard-coding any number.
+
+---
+
+## ADDENDUM 2026-08-01 — first HAND-LABELLED macro-anchor FP specimen
+
+The 07-25 audit flagged the macro-anchor FP rate as **not determinable from the
+instrument** (the log records the fire reason, never the triggering message) and
+recommended logging a message excerpt before adjudicating. That recommendation is
+still open and still operator-gated (LIVE-enforcement change). In the meantime,
+**hand-labelled specimens are the only evidence that can accumulate**, so this is
+one, recorded at the moment of the fire rather than reconstructed later.
+
+**Specimen 1 — 2026-08-01, harness-meta discussion turn.** The hook fired on a
+turn that contained no thesis, no sizing, no position implication and no
+forward company claim. It was a discussion of *where in the human-input →
+agent-construal → plan → action chain agent failures actually land*, using our own
+07-31 instrument-validity breaks as specimens. It named `MSFT` and `KIOXIA` only as
+**historical examples of our own broken falsifiers**, and used the words
+`falsifier`, `thesis` and `instrument` as harness vocabulary.
+
+**Verdict: FALSE POSITIVE, high confidence.** Cause matches the 07-25 diagnosis
+exactly — `TICKER_PATTERN` matching any 2-5 letter uppercase run plus bare
+position-marker words, against a repo whose ordinary meta-vocabulary contains both.
+The turn is squarely inside the Critical Rule #15 Q&A/harness-meta exemption; the
+exemption list (`hook`, `.py`, `methodology`, `codification`) did not contain the
+words this particular meta-discussion used.
+
+**Why this specimen is worth more than its N=1 suggests:** it is a case where the
+*content* is unambiguously exempt and the *vocabulary* is unambiguously triggering.
+That is the cleanest possible separator for whether the exemption list needs
+widening (this specimen says yes) versus the trigger needing narrowing.
+
+**Self-conflict declared:** I am the flagged party grading my own fire. A hand-label
+from the author of the flagged message is the weakest form of this evidence. It is
+recorded as a dated specimen, not as an adjudication — the 07-25 recommendation
+(log a message excerpt for two weeks, then adjudicate on evidence) remains the
+right fix and remains the operator's call.
+
+**Note the recursion:** this hook's repair criterion is keyed to a quantity its own
+log cannot register. That is the identical failure class as the KIOXIA falsifier
+and the capex-cut falsifier booked 2026-07-31 — *a falsifier keyed to an instrument
+that cannot detect the event it is meant to detect* — now found in the enforcement
+layer rather than the research layer. It strengthens the case for the open K3
+commission (audit every live falsifier for instrument-validity) by showing the
+failure class is not confined to research artifacts.
+
+**Feeds:** open P1 `MACRO-ANCHOR INSTRUMENT GAP` (due 2026-08-08).
