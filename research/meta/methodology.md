@@ -2111,3 +2111,37 @@ Detectability: POSITIVE = recommendation-bearing summaries with varied verdicts 
 **AMENDMENT — THE INTENT-CAPTURE STEP (user-articulated 2026-07-22, same day; operator's unverified assumption "everything from me has to be codified"):** half-right, calibrated here. **NOT** the literal content of every message — that is over-codification, barred by the codification-rule's transient-exempt clause (restatements / one-offs / typo-fixes stay chat, or the corpus fills with noise). **What DOES get systematically captured:** run the #49 intent-extraction on EVERY operator instruction, and codify the **generalizable residue** in the SAME session — gated by Critical Rule #13 (new pattern/method/principle, or corrected reasoning that generalizes). A high-yield input must not pass uncaptured. **The discipline is universal; the codification is gated.** Evidence the intent-layer is a high-yield source (COMPUTED 2026-07-22 from this file, not recalled): the operator produced #48 + #49 (codified) + #50-candidate (coverage-not-authority, pending) in a single day — three principles, none the literal ask, all extracted intent. **Third application same day (recursive):** this very amendment — the operator's "that has to be codified" was itself a literal ask whose generalizable residue (systematize intent-capture, don't codify content) is what got codified. Detectability/falsifier folded into #49's: if the intent-capture step produces mostly noise-codifications that later get retired, tighten the Rule #13 gate; if it reliably yields load-bearing principles, it earns its keep.
 
 **Detectability / falsifier (re-eval at next monthly audit):** POSITIVE = the missed-loop surfaced occasionally changes what the operator does next / reframes a decision (load-bearing, not theater); NEGATIVE = it becomes a rote "here's a bigger question" flourish that never redirects action → decorative, refine or retire. Distinct from #18 (conclusion-layer) and Leg-B (search-layer): #49 operates at the question/intent layer. N=1 as of 2026-07-22.
+
+## Principle #51 CANDIDATE — THE BLIND-CHECK: every detector states what would make it stop detecting (operator-forced 2026-08-01)
+
+*(#50 was nominated 2026-07-22 as "coverage-not-authority" inside the #49 amendment and never written. It stays vacant and nominated; this takes #51 rather than silently occupying it. The vacancy is itself an instance of the say-do class this principle addresses.)*
+
+**Origin (2026-08-01, operator, verbatim-adjacent):** *"Isn't it nice to have? If you are so confident, I want you to plan on integrating that across the harness."* — after I had proposed the same fix in two consecutive turns and shipped it neither time. The proposal was correct and inert. That is the failure this entry closes.
+
+**The three specimens that forced it (all dated, all ours):**
+1. **2026-07-31** — the KIOXIA falsifier could not fire inside its own resolution window. Not wrong: **unfireable**.
+2. **2026-07-31** — the "hyperscaler cuts capex" falsifier went blind when MSFT held capex guidance flat while adding **$132.5bn** of not-yet-commenced lease commitments in one quarter ($196.6bn → $329.1bn). The spending did not stop; it moved off the line the detector watches.
+3. **2026-08-01** — `macro-anchor-hook`'s repair criterion (*"FP rate >30% → tighten exemptions"*) keys on a quantity **its own log cannot register** (the log stores the fire reason, never the triggering message). Un-adjudicable through two scheduled reviews. Research-layer twice, then **enforcement-layer** — the machinery built to catch the class failing in the same way.
+
+**The principle.** A detector — thesis falsifier, prediction falsification condition, codification kill criterion, hook repair criterion — is not specified until it states **what would make it stop detecting.** A trigger names the event. A BLIND-CHECK names the world in which the trigger still reads normal while the event happens anyway.
+
+**Why this and not "specify the instrument better."** In a **binary-outcome** domain the outcome grades the instrument: the test fails, you learn the detector was bad. In a **fluid-outcome** domain (this one) the outcome *never* grades the instrument — by the time it lands, the regime moved and attribution is confounded. **So the blind-check is the only grade available at design time.** This is the operator's fluidity argument (2026-08-01) supplying the mechanism; without it the discipline looks optional, with it the discipline is the *only* ex-ante check that exists.
+
+**Required form — ONE line appended to every detector:**
+
+```
+Blind-check: distinguishes [X] from [Y] · reads on [quantity] · goes blind if [channel shift].
+```
+
+The load-bearing clause is the third. "Goes blind if" is a **lateral** question, not a forecast — it asks *what else could produce this same reading*, which is answerable without predicting the specific channel. Specimen 2 needed only "…goes blind if spending migrates to a line I am not reading," which required no foreknowledge of lease accounting.
+
+**Scope — this is a STANDARD, not a METHOD** (per the over-constraint discriminator, `meta/redteam/2026-07-24-overconstraint-audit-commission-prompt.md`): it constrains the *destination* (a detector must be specified) and leaves the *route* free (choose any instrument you like). Standards can be dense; methods must be rare. Nothing here dictates which instrument to use — only that its blindness be stated.
+
+**Honest limit (Rule #18, strongest case against).** A blind-check written before an unimaginable channel appears will not name that channel. In January nobody here would have written "goes blind if capex migrates into footnote leases." It **reduces** the class; it does not eliminate it. What it does reliably is force the generic lateral question at design time — and two of the three specimens above were catchable by the generic question alone.
+
+**Detectability / falsifier for #51 itself (re-eval at the 2026-08-24 monthly audit):**
+- **POSITIVE:** ≥1 detector is caught blind at *design* time (before it ships) within 30 days; and blind-check lines vary meaningfully rather than converging on boilerplate.
+- **NEGATIVE:** blind-check lines become rote ("goes blind if the data is wrong") on 5+ consecutive detectors → decorative, retire or replace with hook enforcement.
+- **HARD FALSIFIER:** if 30 days produce zero design-time catches AND the next instrument-validity failure is again found post-hoc, the standard is not doing the work the three specimens motivated.
+
+**Deliberately NOT enforced by a hook yet, and the reason is recursive.** A Stop hook checking for blind-check lines is an instrument, and I do not yet know the shape of the population it would fire against — 150 explicit falsifier/kill/re-eval lines and 72 thesis falsifier blocks (computed 2026-08-01). Shipping a detector before knowing what it must distinguish from what is **precisely the error #51 exists to prevent.** The hook is specced after the K3 instrument-validity audit reports (`meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`), not before.

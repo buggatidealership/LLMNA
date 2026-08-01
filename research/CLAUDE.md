@@ -14,7 +14,7 @@ Build durable, asymmetric conviction in AI-sector positions BEFORE consensus cat
 Predict → Grade (3-layer: INPUT / COMPUTATION / REASONING)
        → Lesson (predictions/lessons.md, currently L1-L39; L17/L18 tombstoned)
        → Bias (meta/biases-watchlist.md, currently B1-B65 incl. B45 regime priors; B60 anchored-ingest; B61 LLM-generated inputs; B62 lead-time (renumbered); B63 model-provenance 2026-07-07; B64 model-affinity 2026-07-13; B65 context-fluency 2026-07-20)
-       → Principle (meta/methodology.md, currently #1-#49; candidates incl. #42 retrieval-staleness, #43 configuration-over-capability + #43b COMPUTE-INSTEAD-OF-NARRATE, #44 detection-over-prediction, #45 event-anchored-re-eval-dates 2026-07-14, #46 fluid-objective-function 2026-07-18, #47 verdicts-attach-to-distributions 2026-07-19, #48 earnings-sequence-read-through 2026-07-22, #49 operator-intent-extraction/missed-loop-mandate 2026-07-22)
+       → Principle (meta/methodology.md, currently #1-#51 [#50 nominated 2026-07-22 as coverage-not-authority but never written — vacant]; #51 BLIND-CHECK 2026-08-01; candidates incl. #42 retrieval-staleness, #43 configuration-over-capability + #43b COMPUTE-INSTEAD-OF-NARRATE, #44 detection-over-prediction, #45 event-anchored-re-eval-dates 2026-07-14, #46 fluid-objective-function 2026-07-18, #47 verdicts-attach-to-distributions 2026-07-19, #48 earnings-sequence-read-through 2026-07-22, #49 operator-intent-extraction/missed-loop-mandate 2026-07-22)
        → Hook (deterministic Stop hook at ~/.claude/, currently 19 live; session-prime-cascade-hook added 2026-07-12)
        → Pattern (meta/cross-domain-pattern-register.md, currently P-1..P-8 + P-11 verified [P-9/P-10 unassigned; PC-9 promotion pending] + PC-12..PC-21 [PC-16 skipped]; PD-1..PD-8 in the 2026-07-01 Leg-B register)
        → Triangulation (signals/triangulation.md, currently TC-1 to TC-19; TC-13 grid-hardware ACTIVE [N canonical in the quick-index]; TC-19 edge-inference embodied-AI added 2026-07-19)
@@ -285,7 +285,7 @@ Build bottoms-up where possible (capacity gates, unit economics). Do NOT just we
 - Point estimate(s) with units
 - Calibrated probability per component **with P-PROVENANCE (Program v2, 2026-07-18): class base-P cited from `predictions/base-rates.md` + evidence-stack count + deviation justification; ensemble spread report-only, never sets P**
 - Comparison to consensus AND to alternative scenarios
-- 2–3 explicit falsification conditions
+- 2–3 explicit falsification conditions, **each carrying its BLIND-CHECK line** (Principle #51): `distinguishes [X] from [Y] · reads on [quantity] · goes blind if [channel shift]`. A falsification condition without a blind-check is not specified — in a fluid-outcome domain the outcome never grades the instrument, so the blind-check is the only grade available at design time.
 - Bottoms-up reasoning, then comparison to outside view
 
 Save to `predictions/{date}-{ticker}-{event}.md`. Add a stub entry to `grading-log.md` with status: pending.
@@ -413,7 +413,7 @@ Files updated:
 - ≥1 supplier capacity-response data point (not just demand forecast)
 - ≥3 tickers named in the cross-stack cascade
 - ≥1 named LOSER (not just winners)
-- Specific falsifier (not "if AI demand slows")
+- Specific falsifier (not "if AI demand slows") **with its BLIND-CHECK line** (Principle #51) — name what would make the falsifier stop registering, not just what it watches
 
 If any of these can't be met from open-web sources, state explicitly: "Source gap on [X] — would need [paid newsletter / earnings call transcript / trade press source]." Don't fabricate to fill gaps.
 
@@ -614,6 +614,8 @@ Always check against these before completing any analysis:
     - If false-positive rate >30% (legitimate analytical outputs flagged without need) → tighten exemption list
     - If I produce analytical outputs that PASS the hook's pattern check but still contradict institutional signals (the underlying B46 pattern persists despite tagging) → tagging is decorative; deeper enforcement needed (escalate to Workflow #9 mandatory pre-research subagent)
 
+13b. **BLIND-CHECK ON EVERY DETECTOR** (Principle #51, added 2026-08-01 on operator instruction). Any detector shipped anywhere in the harness — thesis falsifier, prediction falsification condition, codification kill/retirement criterion, hook repair criterion, re-eval trigger — carries one line naming what would make it **stop detecting**: `Blind-check: distinguishes [X] from [Y] · reads on [quantity] · goes blind if [channel shift]`. **This is a STANDARD, not a METHOD** — it constrains the destination (a detector must be specified) and leaves the route free (any instrument you like). Rationale, the three motivating specimens, the honest limit, and the deliberate decision NOT to hook-enforce it yet: `meta/methodology.md` Principle #51. **Retro sweep of the existing population (150 explicit detector lines / 72 thesis falsifier blocks, computed 2026-08-01) is NOT self-audited** — I authored them and graded their failures; it is commissioned to a fresh session at `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`.
+
 14. **SIGNAL DENSITY DETECTION — every cross-source-log file creation MUST run the same-segment same-direction lookup** (added 2026-06-11 as CANDIDATE; full rule + self-detecting metrics + 2026-07-11 first re-eval at `meta/signal-density-detection.md`). Manual enforcement until hook-built:
     1. Segment-classify the new signal (per Critical Rule #6 + Principle #29)
     2. Grep recent `signals/cross-source-log/` (last 90 days) for same-segment same-direction signals
@@ -689,9 +691,17 @@ Always check against these before completing any analysis:
 - ...
 
 ## Falsifiers (mandatory — what would prove me wrong)
-1. ...
+
+Every falsifier carries a **BLIND-CHECK line** (Principle #51, added 2026-08-01). A trigger names the event; the blind-check names the world in which the trigger still reads normal while the event happens anyway. Without it the falsifier is not specified — see the three specimens in `meta/methodology.md` #51 (KIOXIA unfireable; capex-line blindness when MSFT moved $132.5bn into leases; macro-anchor-hook's own unmeasurable repair criterion).
+
+```
+1. [Trigger — the event that breaks the thesis]
+   Blind-check: distinguishes [X] from [Y] · reads on [quantity] · goes blind if [channel shift].
 2. ...
 3. ...
+```
+
+The load-bearing clause is **"goes blind if"** — a lateral question (*what else could produce this same reading?*), not a forecast. It is answerable without knowing the specific channel in advance.
 
 ## Exposure to causal chains
 - Causal chain: [from sector/causal-maps/X.md] — direction (beneficiary/casualty)

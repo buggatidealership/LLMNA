@@ -89,7 +89,7 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **B61** (CANDIDATE N=1, origin 2026-07-03) — LLM-generated bottleneck fiction as an input class: unsourced single-company monopoly-bottleneck theses from social sources get the full mechanism gauntlet regardless of sharer track record.
 - **B64** (CANDIDATE N=1, origin 2026-07-13, user-flagged) — Model-affinity contamination: Claude-family models reportedly favor NOW in pick-a-stock settings; house NOW thesis cites Anthropic T1 material = closed-loop risk. Any NOW decision package: adversarial pass mandatory, Anthropic-sourced validation corroborating-only, case must survive with Anthropic evidence removed.
 
-## §3. RECENT LESSONS (rolling 5 — refreshed 2026-07-06 harness audit; current tail L30, all recent = CANDIDATE)
+## §3. RECENT LESSONS (rolling 5; all recent = CANDIDATE)
 
 - **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
 - **L37 CANDIDATE (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
@@ -99,9 +99,9 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **L53 CANDIDATE (N=2, MPWR + MURATA, 2026-07-31): THE RETRIEVAL-DRAWER ERROR — a name filed under the wrong theme is functionally invisible even when it is in the corpus, on the watchlist, and correctly described.** MPWR was ingested 3× (laptop PMIC / T9 consumer / IVR-substitution-RISK-to-a-holding) and never as datacenter power — the segment that is now 38.8% of its revenue and 93.1% of its YoY growth. All three filings were correct at the time and all three were peripheral. **Distinct from B60** (anchored-ingest governs framing of NEW data; L53 governs the DECAY of a correct OLD classification — nothing in the harness re-checks whether a name's primary drawer is still its primary drawer). **Operating instrument: at each monthly audit, re-derive every held/watchlist name's primary drawer from its LATEST reported segment mix, not the drawer it was entered under.** Falsifier: zero drawer changes in a 30-day pass → decorative, retire. Open N=2 twin: the pre-Aug-6 MURATA re-basing (price-flow-through → volume/utilisation/datacenter-mix) is the same failure on a HELD name.
 
 _Numbering: L17/L18 tombstoned; full list `predictions/lessons.md` + `meta/tags.md`._
-_§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURATA Q1 FY27 — resolved and graded 07-29/07-31); L28 removed (superseded at the workflow layer by the B47 efficiency-claim tripwire now embedded in INGEST step 4b). Both remain canonical in `predictions/lessons.md`._
+_§3 curation 07-31: L27 (watch resolved 07-29/31) + L28 (superseded by the B47 tripwire, INGEST 4b) removed; both canonical in `predictions/lessons.md`._
 
-## §4. CRITICAL RULES (full text in `CLAUDE.md` — numbered list here for orientation)
+## §4. CRITICAL RULES (full text in `CLAUDE.md`; orientation list)
 
 1. Never mix facts and interpretations (separate files)
 2. Never PREDICT without reading lessons.md first
@@ -116,6 +116,7 @@ _§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURAT
 11. Always close thesis update with explicit `Position implication:` line + auto-execute default + self-correct visibly
 12. Always verify temporal freshness before cascading T2/T3 signals (B40)
 13. Codification trigger — chat-only output MUST be persisted to file when contradicting / position-relevant / methodological / user-corrected / N≥2 recurring
+13b. **BLIND-CHECK ON EVERY DETECTOR (#51, 2026-08-01)** — every falsifier / falsification condition / kill criterion / re-eval trigger / hook repair criterion carries one line: `distinguishes [X] from [Y] · reads on [quantity] · **goes blind if [channel shift]**`. In a fluid-outcome domain the outcome NEVER grades the instrument, so this is the only ex-ante grade there is. The load-bearing clause is "goes blind if" — a LATERAL question (*what else produces this same reading?*), answerable without foreknowing the channel. STANDARD not METHOD: destination constrained, route free. Specimens: KIOXIA unfireable · capex-line blind when MSFT moved $132.5bn into leases · macro-anchor-hook's repair criterion unmeasurable from its own log.
 14. Signal density detection — every cross-source-log file MUST run same-segment same-direction lookup; promote to triangulation at N≥3
 15. Macro-first, research-anchored — articulate layer first-principles with date anchor; tag claims research-verified vs recall-based; tie micro to macro; surface contradictions before concluding (B46)
 16. Always run verification subagents immediately on external data with thesis/sizing implications — Opus 4.8, parallel, N=2-4, never ask; log to `meta/subagent-cost-yield-ledger.md`
@@ -123,7 +124,7 @@ _§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURAT
 18. Standing dissent mandate — on any thesis conclusion, sizing decision, or user framing, generate the strongest FALSIFYING case BEFORE concluding; if none exists, say so explicitly. Non-optional; suppresses confirmation-of-harness-state + sycophancy. Per-conclusion obligation (distinct from Rule #8 periodic + Leg B search-layer).
 19. Destructive-change governance (`meta/destructive-change-governance.md`) — HIGH tier (delete LIVE enforcement/active Routine/protected path; >3-file delete) = operator pre-approval FIRST; CATASTROPHIC (history rewrite/force-push, repo wipe) = explicit VERBATIM operator instruction only; inferred/relayed never qualifies. Enforced: pre-commit F4 + pre-push hook (verified 07-19); tokens only after approval.
 
-## §5. ACTIVE TRIANGULATION CLUSTERS (refreshed 2026-07-06 harness audit; quick-index in `signals/triangulation.md` is CANONICAL for N — this list is orientation only)
+## §5. ACTIVE TRIANGULATION CLUSTERS (orientation only; `signals/triangulation.md` quick-index is CANONICAL for N)
 
 - **TC-1** Memory tightness multi-tier (memory-and-storage) [ACTIVE N=22+; 60-yr WSTS trend-break + Jun-22 cohort-wide ATH cluster-state event]
 - **TC-2** AI capex on credit + state budgets (infrastructure-IaaS) [ACTIVE N=7]
@@ -135,7 +136,7 @@ _§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURAT
 - **TC-12** DRAM>HBM margin inversion [ACTIVE N=5] · **TC-13** AI power-infrastructure bottleneck cascade [ACTIVE N=7+] · **TC-14** YMTC westward NAND qualification [ACTIVE N=3, promoted 2026-07-05 — bear-vector watch on KIOXIA/SNDK consumer mix]
 
 
-## §6. HELD COHORT (per `portfolio/holdings.md` — REFRESHED 2026-07-12 session-prime audit; SKHY entry 2026-07-10 added; re-verify against holdings.md on every screenshot)
+## §6. HELD COHORT (`portfolio/holdings.md` is canonical — re-verify on every screenshot; refreshed 07-12)
 
 **3 held names (all DeGiro):**
 1. MURATA 336sh (MUR1) — ~20,6% at the 07-05 baseline (BEP €53,67; Q1 FY27 print 2026-07-31, L22/L27 test)
@@ -151,7 +152,7 @@ _§3 curation 2026-07-31: L27 removed (its N=2 watch window — HYNIX Q2 + MURAT
 
 _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 when stale — keep it synced on every portfolio screenshot._
 
-## §7. PENDING PREDICTIONS (refreshed 2026-07-12; canonical ledger = `predictions/grading-log.md` — read its NOT-CANONICAL row tags)
+## §7. PENDING PREDICTIONS (canonical ledger = `predictions/grading-log.md`; read its NOT-CANONICAL row tags)
 
 - **SUMCO Q2 FY2026 pre-registration (print 2026-08-06):** canonical = `predictions/2026-07-11-SUMCO-Q2-FY2026-preregistration.md` (rev/OP/net bands + 5 guidance-language P's + three-outcome table).
 - **SKHY gate-vs-override grading LIVE:** premium template runs at every close from Jul-13 (`companies/SKHY/thesis.md` — anchors: WI +15.6% / entry +19.3-19.7% / gate ≤~5%); one-way fungibility + TSMC-ADR ~+21% precedent booked 2026-07-12.
@@ -161,7 +162,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **GRADE debt: NONE** — the long-carried "MU 3-layer backfill owed" was PHANTOM (full grade existed since 07-06; row+prose synced 07-20). Samsung Q2 prelim GRADE completed Jul-7/8.
 
 
-## §7.5 — DURABLE CARRY-OVERS (was "2026-07-14 session deltas"; **pruned 2026-07-31** — resolved items removed, see note at end)
+## §7.5 — DURABLE CARRY-OVERS (was the 07-14 session deltas; pruned 07-31, note at end)
 
 - **Funding-node tell #11** (asset-level distribution) — 3 axes (#9 lending / #10 issuance / #11 asset); node NOT fired; weights 40/40/20.
 - **#45** event-anchored re-evals; **B64** binding on NOW re-entry. **Hindsight-gate** (meth. candidate 07-15): 5 tests before any miss→lesson booking; loss function declared at registration.
@@ -170,7 +171,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **FACT LAYER: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients at `meta/tools/`; facts-first wake order #43b/3e).
 - **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
 
-_Pruned 2026-07-31 (cap enforcement, §0 demotion triggers — all resolved, all canonical elsewhere): the 07-14 macro snapshot (superseded by the 07-31 rates leg at T1 + ADDENDUM #14, which killed the $95 Brent gate); the SKHY Jul-29 GP-bridge gate and conditional add (graded 07-29→07-31; `companies/SKHY/thesis.md` canonical); the enterprise-memory pull-forward bullet; the ASML/TSMC Jul-15/16 grade note (L32)._
+_Pruned 07-31 (cap, §0 triggers; all resolved + canonical elsewhere): 07-14 macro snapshot (superseded by the 07-31 T1 rates leg + ADDENDUM #14); SKHY GP-bridge gate (graded 07-29→31); enterprise-memory bullet; ASML/TSMC grade note (L32)._
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
@@ -179,7 +180,7 @@ _Pruned 2026-07-31 (cap enforcement, §0 demotion triggers — all resolved, all
 - **2026-08-12** — session-prime-cascade-hook falsifier check (hook built 2026-07-12)
 - **2026-09-11/12** — Question-generation asymptote falsifier + constraint-differential quarterly sweep + B45 cohort quarterly recalibration
 - **2026-10-11** — Worldview quarterly revision + end-demand-durability model re-eval
-- **PAST-DUE (pruned from this list 2026-07-31 per §0; canonical + full scope in `meta/todo.md`, surfaced loudly by the session-start hook): #37/#16 re-evals (07-15), monthly consolidated audit (07-24, P0), #17/#18 re-evals (07-27), BOTTLENECK-FORECAST monthly (last_review 2026-06-04).**
+- **PAST-DUE (pruned 07-31 per §0; canonical in `meta/todo.md`, surfaced by the session-start hook): #37/#16 (07-15), monthly audit (07-24, P0), #17/#18 (07-27), BOTTLENECK-FORECAST (06-04).**
 
 ## §9. TRUTH-TIER TAGGING + SCOPED-CASCADE RULE (Principle #37 CANDIDATE — ADDED 2026-06-15, load-bearing for every analytical output)
 
