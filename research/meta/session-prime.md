@@ -99,7 +99,7 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 - **L53 CANDIDATE (N=2, MPWR + MURATA, 2026-07-31): THE RETRIEVAL-DRAWER ERROR — a name filed under the wrong theme is functionally invisible even when it is in the corpus, on the watchlist, and correctly described.** MPWR was ingested 3× (laptop PMIC / T9 consumer / IVR-substitution-RISK-to-a-holding) and never as datacenter power — the segment that is now 38.8% of its revenue and 93.1% of its YoY growth. All three filings were correct at the time and all three were peripheral. **Distinct from B60** (anchored-ingest governs framing of NEW data; L53 governs the DECAY of a correct OLD classification — nothing in the harness re-checks whether a name's primary drawer is still its primary drawer). **Operating instrument: at each monthly audit, re-derive every held/watchlist name's primary drawer from its LATEST reported segment mix, not the drawer it was entered under.** Falsifier: zero drawer changes in a 30-day pass → decorative, retire. Open N=2 twin: the pre-Aug-6 MURATA re-basing (price-flow-through → volume/utilisation/datacenter-mix) is the same failure on a HELD name.
 
 _Numbering: L17/L18 tombstoned; full list `predictions/lessons.md` + `meta/tags.md`._
-_§3 curation 07-31: L27 (watch resolved 07-29/31) + L28 (superseded by the B47 tripwire, INGEST 4b) removed; both canonical in `predictions/lessons.md`._
+_§3 curation 07-31: L27 + L28 removed (resolved / superseded by the B47 tripwire); canonical in `predictions/lessons.md`._
 
 ## §4. CRITICAL RULES (full text in `CLAUDE.md`; orientation list)
 
@@ -116,7 +116,7 @@ _§3 curation 07-31: L27 (watch resolved 07-29/31) + L28 (superseded by the B47 
 11. Always close thesis update with explicit `Position implication:` line + auto-execute default + self-correct visibly
 12. Always verify temporal freshness before cascading T2/T3 signals (B40)
 13. Codification trigger — chat-only output MUST be persisted to file when contradicting / position-relevant / methodological / user-corrected / N≥2 recurring
-13b. **BLIND-CHECK ON EVERY DETECTOR (#51, 2026-08-01)** — every falsifier / falsification condition / kill criterion / re-eval trigger / hook repair criterion carries one line: `distinguishes [X] from [Y] · reads on [quantity] · **goes blind if [channel shift]**`. In a fluid-outcome domain the outcome NEVER grades the instrument, so this is the only ex-ante grade there is. The load-bearing clause is "goes blind if" — a LATERAL question (*what else produces this same reading?*), answerable without foreknowing the channel. STANDARD not METHOD: destination constrained, route free. Specimens: KIOXIA unfireable · capex-line blind when MSFT moved $132.5bn into leases · macro-anchor-hook's repair criterion unmeasurable from its own log.
+13b. **BLIND-CHECK ON EVERY DETECTOR (#51, 2026-08-01)** — every falsifier / falsification condition / kill criterion / re-eval trigger / hook repair criterion carries one line: `distinguishes [X] from [Y] · reads on [quantity] · **goes blind if [channel shift]**`. In a fluid-outcome domain the outcome NEVER grades the instrument, so this is the only ex-ante grade there is. The load-bearing clause is "goes blind if" — a LATERAL question (*what else produces this same reading?*), answerable without foreknowing the channel. STANDARD not METHOD: destination constrained, route free. Specimens: KIOXIA unfireable · capex-line blind when MSFT moved $132.5bn into leases · macro-anchor-hook's repair criterion unmeasurable from its own log. **VERIFIED BY MEASUREMENT:** `meta/tools/blind_check_audit.py` → `meta/blind-check-ledger.md`. Baseline 08-02 **0/155**; thresholds pre-registered; re-eval 08-24; **<80% = hook it or retire it.**
 14. Signal density detection — every cross-source-log file MUST run same-segment same-direction lookup; promote to triangulation at N≥3
 15. Macro-first, research-anchored — articulate layer first-principles with date anchor; tag claims research-verified vs recall-based; tie micro to macro; surface contradictions before concluding (B46)
 16. Always run verification subagents immediately on external data with thesis/sizing implications — Opus 4.8, parallel, N=2-4, never ask; log to `meta/subagent-cost-yield-ledger.md`
@@ -171,7 +171,7 @@ _holdings.md is authoritative. This list caused a held-vs-sold error 2026-06-27 
 - **FACT LAYER: read `meta/data-access.md` BEFORE fetching any market/filing data** (keyed APIs NEVER-ECHO + keyless clients at `meta/tools/`; facts-first wake order #43b/3e).
 - **L34 (N=2): harness claims need same-turn source reads; harness CODE changes need an independent verifier before reported applied.**
 
-_Pruned 07-31 (cap, §0 triggers; all resolved + canonical elsewhere): 07-14 macro snapshot (superseded by the 07-31 T1 rates leg + ADDENDUM #14); SKHY GP-bridge gate (graded 07-29→31); enterprise-memory bullet; ASML/TSMC grade note (L32)._
+_Pruned 07-31 (cap, §0): 07-14 macro snapshot, SKHY GP-bridge gate, enterprise-memory bullet, ASML/TSMC grade note — all resolved, canonical elsewhere._
 
 ## §8. UPCOMING RECALIBRATIONS / AUDITS (refreshed 2026-07-12; next 90 days)
 
@@ -180,7 +180,7 @@ _Pruned 07-31 (cap, §0 triggers; all resolved + canonical elsewhere): 07-14 mac
 - **2026-08-12** — session-prime-cascade-hook falsifier check (hook built 2026-07-12)
 - **2026-09-11/12** — Question-generation asymptote falsifier + constraint-differential quarterly sweep + B45 cohort quarterly recalibration
 - **2026-10-11** — Worldview quarterly revision + end-demand-durability model re-eval
-- **PAST-DUE (pruned 07-31 per §0; canonical in `meta/todo.md`, surfaced by the session-start hook): #37/#16 (07-15), monthly audit (07-24, P0), #17/#18 (07-27), BOTTLENECK-FORECAST (06-04).**
+- **PAST-DUE (canonical in `meta/todo.md`, surfaced by session-start): #37/#16 (07-15), monthly audit (07-24, P0), #17/#18 (07-27), BOTTLENECK-FORECAST (06-04).**
 
 ## §9. TRUTH-TIER TAGGING + SCOPED-CASCADE RULE (Principle #37 CANDIDATE — ADDED 2026-06-15, load-bearing for every analytical output)
 

@@ -2145,3 +2145,59 @@ The load-bearing clause is the third. "Goes blind if" is a **lateral** question,
 - **HARD FALSIFIER:** if 30 days produce zero design-time catches AND the next instrument-validity failure is again found post-hoc, the standard is not doing the work the three specimens motivated.
 
 **Deliberately NOT enforced by a hook yet, and the reason is recursive.** A Stop hook checking for blind-check lines is an instrument, and I do not yet know the shape of the population it would fire against — 150 explicit falsifier/kill/re-eval lines and 72 thesis falsifier blocks (computed 2026-08-01). Shipping a detector before knowing what it must distinguish from what is **precisely the error #51 exists to prevent.** The hook is specced after the K3 instrument-validity audit reports (`meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`), not before.
+
+### #51 — VERIFICATION MECHANISM AND ACCOUNTABILITY LAYER (added 2026-08-02 on operator instruction: *"state the verification mechanism and the accountability layer to ensure it works as your prior output stated it"*)
+
+**The honest starting position, computed on 2026-08-02 the moment the question was asked:** #51 shipped as prose in five files. **Zero hooks referenced it. Compliance was 0 of 155 detector lines. And #51 did not comply with #51** — the only `Blind-check:` strings in the corpus were the template in `CLAUDE.md` and the template in this file. A standard that does not satisfy itself is the exact object it was written to prohibit. That gap is closed below.
+
+#### #51's own blind-check
+
+```
+Blind-check: distinguishes "the standard is being APPLIED" from "the standard is being TYPED"
+· reads on the NEW-cohort compliance ratio + distinct-clause ratio in `meta/blind-check-ledger.md`
+· goes blind if detectors start being written in forms the scanner cannot match — prose falsifiers,
+  falsifiers inside table cells, hook criteria living in .py docstrings — because the ratio then
+  rises from a SHRINKING DENOMINATOR rather than from rising compliance.
+```
+
+Counter-instrument for that specific blindness: `--show-unmatched` dumps every near-miss line so denominator shrinkage is *inspectable rather than silent*. Baseline reading 2026-08-02: **2,926 near-misses** against 155 strict matches. That number is a loose keyword sweep with heavy false positives (any prose mention of "falsifier" trips it) — it is **not** a count of uncounted detectors. It is the upper bound on where the scanner could be blind, and its job is to make a future ratio-rise checkable against whether the denominator moved.
+
+#### Verification mechanism — telemetry BEFORE enforcement
+
+`meta/tools/blind_check_audit.py`. It **blocks nothing**. It computes:
+
+| Cohort | What it is | Baseline 2026-08-02 |
+|---|---|---|
+| **BASELINE** | every detector line already in the corpus | **0/155 (0.0%)** |
+| **NEW** | detectors added in commits after `0c9cad1` (the #51 ship commit) — **the only cohort #51 binds** | **0/0 (n/a)** |
+| **Boilerplate test** | distinct `goes blind if` clause texts ÷ total | n/a until N>0 |
+
+The design choice is the direct lesson from `macro-anchor-hook`, whose pre-registered repair criterion (*"FP rate >30% → tighten exemptions"*) is **unmeasurable from its own log** and has sat un-adjudicable through two scheduled reviews. **Build the instrument that produces the denominator first; decide about a gate second.** Readings append to `meta/blind-check-ledger.md`.
+
+#### Pre-registered thresholds — set 2026-08-02, BEFORE any data existed
+
+| Reading at the **2026-08-24** re-eval | Verdict |
+|---|---|
+| NEW-cohort ≥80% **and** distinct-clause ratio ≥0.5 | #51 is live — keep, stay unhooked |
+| NEW-cohort <80% | **#51 is not self-enforcing: hook it or retire it. No third option.** |
+| distinct-clause ratio <0.5 | clauses are boilerplate → decorative → same binary |
+| NEW cohort N<5 | sample too small → **ONE** extension to 2026-09-24, then decide on whatever N exists |
+
+Setting the bar before the score is the whole point. The N<5 clause exists to close the obvious gaming route: **writing no new detectors does not buy an indefinite reprieve** — it resolves against the principle, not for it.
+
+#### Accountability layer — including what it does NOT fix
+
+**The structural hole, stated plainly: I author the detectors, I wrote the standard, I run the audit, and I report the result.** Four roles, one party. No amount of internal discipline repairs that from the inside. What follows is what actually constrains me, and what does not.
+
+**Holds:**
+1. **The number is computed, not narrated.** One command reproduces it. I can spin a conclusion; I cannot spin `0/155`.
+2. **Thresholds pre-registered before the data existed** — the bar cannot move after the score is known.
+3. **Append-only dated ledger.** A missing reading shows as a gap in the date column. Absence of evidence becomes evidence.
+4. **An independent check I do not run** — the fresh-session commission at `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`, which owns the 155-line baseline cohort precisely because a self-sweep by the author is self-correlated.
+5. **Binary outcomes with no "try harder" branch.** Removing the third option removes the escape hatch that keeps decorative rules alive for months.
+
+**Does NOT hold (do not let this section read as stronger than it is):**
+- **Nothing forces the 2026-08-24 reading to happen.** The dated `todo.md` item surfaces via the session-start hook; that is real but weak, and it is the same weak mechanism that let two P0s run 9 days overdue.
+- **The scanner can drift** — that is #51's own blind-check above, only partially mitigated.
+- **Adjacency on the NEW cohort is computed over added diff lines**, so a blind-check added in a later commit than its detector reads as non-compliant. Conservative in the right direction (under-reports compliance), but it is a real defect.
+- **This layer verifies that blind-check lines are WRITTEN. It cannot verify they are CORRECT.** A well-formed clause naming the wrong blindness passes every test here. Only the fresh-session audit and live failure can catch that — and honestly, mostly live failure.
