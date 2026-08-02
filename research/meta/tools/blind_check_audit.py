@@ -30,11 +30,16 @@ USAGE
   python3 blind_check_audit.py --baseline REF  # override the #51-ship commit
 
 KNOWN LIMITS (stated, not hidden — this instrument has its own blind-check)
-  - Detector patterns are regex over markdown. Detectors written as prose, inside
-    table cells, or as .py docstrings are NOT counted. That is the denominator-
-    shrinkage failure mode: the ratio can rise because the scanner stopped seeing
-    detectors, not because compliance rose. `--show-unmatched` dumps near-misses
-    so the gap is inspectable rather than silent.
+  - Detector patterns are regex. Detectors written as prose or inside table cells
+    are NOT counted. That is the denominator-shrinkage failure mode: the ratio can
+    rise because the scanner stopped seeing detectors, not because compliance rose.
+    `--show-unmatched` dumps near-misses so the gap is inspectable, not silent.
+  - .py FIXED 2026-08-02: the original version scanned *.md only. #51's own
+    blind-check had explicitly predicted "goes blind if ... hook criteria living in
+    .py docstrings" — and that blindness fired within 24 hours, when
+    harness_supervisor.py shipped two compliant detectors the scanner could not see
+    and the NEW cohort read a false 0/0. First live proof that a blind-check earns
+    its keep: the failure was predicted in writing before it happened.
   - NEW-cohort adjacency is computed over ADDED diff lines only. A blind-check
     added in a later commit than its detector reads as non-compliant.
 """
@@ -73,7 +78,11 @@ def scan_tree(show_unmatched=False):
     """BASELINE cohort: every detector line currently in the corpus."""
     total = compliant = 0
     clauses, unmatched = [], []
-    for f in sorted(CORPUS.rglob("*.md")):
+    # .py included as of 2026-08-02: #51's own blind-check predicted "goes blind if
+    # ... hook criteria living in .py docstrings", and that blindness fired within
+    # 24h — harness_supervisor.py carried two compliant detectors the scanner missed.
+    files = sorted(CORPUS.rglob("*.md")) + sorted(CORPUS.rglob("*.py"))
+    for f in files:
         rel = _rel(f)
         if _excluded(rel):
             continue
@@ -100,6 +109,7 @@ def scan_new(baseline):
     """NEW cohort: detectors added in commits after #51 shipped."""
     try:
         diff = subprocess.run(
+            # covers .md and .py alike — the diff is path-scoped, not extension-scoped
             ["git", "diff", f"{baseline}..HEAD", "--unified=0", "--", "research/"],
             cwd=REPO, capture_output=True, text=True, timeout=60).stdout
     except Exception as e:

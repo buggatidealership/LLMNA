@@ -824,3 +824,15 @@
   - Verdict table: NEW ≥80% + distinct-clause ≥0.5 → keep unhooked · NEW <80% OR distinct <0.5 → **hook it or retire it, no third option** · N<5 → ONE extension to 2026-09-24 then decide on whatever N exists.
   - Origin: operator 2026-08-02 — *"state the verification mechanism and the accountability layer to ensure it works as your prior output stated it"* — asked because #51 had shipped with neither.
   - Linked: `meta/tools/blind_check_audit.py`, `meta/blind-check-ledger.md`, `meta/methodology.md` #51
+
+- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **HOOK EXECUTION PROBES — convert the supervisor from log-reader to actual supervisor.** `meta/tools/harness_supervisor.py` (built 2026-08-02) reads the fire log, and the fire log **cannot distinguish a dead hook from a hook that runs constantly and never logs**: 4 hooks show NO-LOG (`session-start-hook`, `llm-native-priming-hook`, `borrowed-vs-firstprinciples-hook`, `analyst-pt-context-hook`) and at least two of those provably run every turn. Extend the existing `LLMNA_PROBE` convention (already in 3 hook scripts per the 07-23 hardening) to all 19, then probe each with a fixture and check exit codes.
+  - Origin: operator supervisor-loop proposal 2026-08-02; the first check the proposed supervisor would run was already broken.
+  - Guard: probing writes to the fire log — LLMNA_PROBE tagging exists precisely to stop probe-pollution of the telemetry being measured. Do not probe without it.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §6, `meta/tools/harness_supervisor.py`
+
+- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **BACKLOG TRIAGE — delete before automating.** Computed 2026-08-02: **87 open, 64 (73%) past their date, 23 older than 30 days, oldest 73 days.** At 73% late the date field carries almost no information. Pass 1 is a DELETE pass over the 23 stale items — retire, merge, or explicitly renew with a new date and a stated reason. **Blocks the auto-executor question:** automating execution of a substantially-dead list spends real tokens finishing superseded work and locks in the accretion.
+  - Origin: operator supervisor-loop proposal 2026-08-02; the proposal's execute-half is gated on this.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §4
+
+- [ ] **P2 / harness / 2026-09-02** [INFRA, CAL, DUE] — **SUPERVISOR FALSIFIER CHECK.** If `meta/supervisor-ledger.md` shows a month of readings in which the VERDICT line never changed, the supervisor is a mirror rather than an instrument → retire it and build the forcing function instead (auto-delete to-dos past N days unless explicitly renewed, converting silence from "still open" to "dropped"). Operator decision, not mine.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §7
