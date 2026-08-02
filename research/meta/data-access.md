@@ -110,3 +110,17 @@ Across three research legs, WebFetch returned **HTTP 403 on the large majority o
 
 ## 2026-07-31 — EXTENDED-HOURS HISTORY IS NOT MACHINE-RETRIEVABLE (structural gap, not a one-off)
 No route available to this harness returns **historical** after-hours prints. Finnhub `/quote` serves only the live tick; the CNBC `exthrs=1` route serves *tonight's* extended session, not a prior date's. **Consequence: every after-hours reaction figure in the corpus is T2 press or a carry-forward — none is T1.** This is the structural weak leg of the earnings reaction ledger and it will recur every quarter until a paid extended-hours route is added. **Record AH reactions as a RANGE (`ah_lo`/`ah_hi`) rather than a point wherever press figures disagree — they usually do, because they sample different moments of the same evening.**
+
+## 2026-08-02 — NEW DEFECT: FRED `BAMLH0A0HYM2` (ICE BofA HY OAS) silently truncated to ~3 years
+
+**Route ADDED (the flagged material gap is closed):** credit spreads are now reachable at T1 via FRED `BAMLH0A0HYM2`. Reading 2026-07-30 = **2.84% (284bps)**. Companion series verified same session: `DGS10` (UST 10Y, 4.68% 07-30) and `DEXJPUS` (JPY/USD, 163.71 07-24 — note DEXJPUS lags ~1 week).
+
+**⚠️ DEFECT — the series returns only from 2023-08-01 regardless of `observation_start`.** Requested 2001-08-02 → got 2023-08-01. Re-requested 1990-01-01 → still 2023-08-01. `count=787`, `limit=100000`, `offset=0`, so it is not pagination.
+
+**Why this is dangerous rather than merely limiting:** the call succeeds, returns a clean series, and the values are entirely plausible. Only a sanity check on the *extremes* exposes it — a 25-year HY OAS maximum of 461bps is impossible (the series exceeded 2,000bps in 2008). **I computed and nearly reported a "25-year percentile" that was actually a 3-year percentile.** Same shape as the EODHD index-field corruption: the failure is in the metadata, not the numbers, so value-level inspection passes it.
+
+**Blind-check (#51):** distinguishes "spreads are historically tight" from "spreads are tight versus a truncated window" · reads on **the first observation date returned**, not on the values · **goes blind if a caller checks only the values** — which is exactly how the first pass failed, because the values looked reasonable in isolation.
+
+**OPERATING RULE:** any percentile, "richest since", or "tightest in N years" claim from a FRED series MUST print the actual first-observation date alongside the claim. Do not state a window length that was requested rather than returned.
+
+**Consequence for tonight's read:** the correctly-labelled figure is **284bps = tightest 24.7% of the LAST THREE YEARS**, 3y median 310bps, 3y min 259bps, **25bps of room to the 3-year low**. Any longer-horizon credit percentile is currently **UNOBTAINABLE at T1** in this harness — treat multi-decade credit claims from press as unverifiable, not as corroborated.

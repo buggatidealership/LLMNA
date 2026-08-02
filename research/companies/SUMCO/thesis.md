@@ -638,3 +638,15 @@ Carried forward only as an input, not an event — the Q2 interim (08-06) remain
 ## 2026-07-31 EOD — capex dollars decoupled from units; my capex-cut falsifier RETIRED (back-ref: signals/cross-source-log/2026-07-31-fri-eod-legb-discovery-month-end-capex-decoupling.md)
 **A tension for the pre-Aug-6 decision package, stated explicitly rather than left implicit.** SK Hynix is raising FY26 capex **+≥50%** to ~₩40tn-high with fabs pulled forward (T1, 07-28). **A supplier-discipline break is bearish for memory ASPs and BULLISH for whoever sells the wafers and tools** — i.e. the same event cuts opposite ways for the memory layer and for SUMCO. **That tension is now the central question the package has to resolve**, and it did not exist when the package was scoped. Q2 interim **CONFIRMED 08-06** (registered prediction: rev ¥113bn / OP −¥1.5bn), unaffected by anything in this sweep. Prior-session note retained: Shin-Etsu +0.76% vs SUMCO +17.52% on 07-31 = the market trading SUMCO as AI-cycle beta rather than as a wafer name.
 **Position implication: NO ACTION — decision package due pre-Aug-6 — the capex-up-is-revenue-for-us leg is a NEW and material input that must be written into the package alongside the China-dot adjudicator. 🟡**
+
+## 🟡 2026-08-02 (Sun) EOD cascade — FX is now a named input to the 08-06 interim
+
+Back-reference: `signals/cross-source-log/2026-08-02-sun-eod-legb-credit-gap-filled-fx-falsifier-touch.md` §2.
+
+Japan MOF/BOJ ran intermittent FX intervention 2026-07-30 → 08-01, described as **coordinated with US authorities** (T1/T2, NHK + Nomura); **full MOF totals are due 2026-08-03 to 08-07** (prior Apr-May round ¥11.7tn). JPY/USD stood at **163.71 on 2026-07-24** (T1 FRED `DEXJPUS`).
+
+**Why this lands here:** SUMCO reports in JPY against substantially USD-denominated wafer contracts, so the same translation channel that the T1 短信 named as MURATA's Q1 driver applies structurally to this name — and **the Q2 interim prints 2026-08-06, inside the MOF disclosure window.** The registered call (rev ¥113bn / OP −¥1.5bn) was not built with an intervention scenario.
+
+Separately noted from the 07-31 close and still standing: **Shin-Etsu +0.76% vs SUMCO +17.52%** on 07-31 is a hard duopoly split with no idiosyncratic news — the market is re-classifying SUMCO as an AI-cycle beta name rather than a wafer name, which raises the reaction variance around 08-06 independent of the fundamentals.
+
+**Position implication:** **HOLD — no size change — FX added as a named input to the 08-06 decision package.** No falsifier fires; the change is to the variance around the interim, not to the thesis. 🟡

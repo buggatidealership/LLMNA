@@ -702,3 +702,42 @@ Non-zero on the left means **you are not looking at the live system.** Absence o
 **STILL OPEN (unchanged from 07-31 except where struck):** two P0s — **FORCED BINARY quota decision** (re-framed above) and **INTAKE-BOUNDARY enforcement** (three live specimens) · **MURATA thesis re-basing** onto volume/utilisation/datacenter-mix, now with a named funded competitor after MPS confirmed 800V AC-DC **sampling** · decision packages for MURATA + SUMCO **pre-Aug-6** · Alphabet 2026 capex pin (needs the 8-K) · size the GOOGL TPU-hardware revenue line · MSFT timing-vs-over-build (moved on one instrument to H1 62 / H2 28 / H3 10, explicitly not settled) · MPWR customer concentration (needs the 10-Q; material to the share-gain-vs-end-market ambiguity).
 
 **PARSER NOTE:** the session-start PENDING-GRADES parser lists MURATA Q1 FY27 and BE FY2026 as pending. **Both are graded** — MURATA at `grading-log.md:24` (inline GRADED in the outcome cell), BE at `grading-log.md:198` (GRADED section, not a table row). The parser reads resolution dates but does not detect either graded form. Known drift class per the 2026-07-17 audit; recorded here so it is not re-discovered next wake.
+
+## EOD CLOSE 2026-08-02 SUN (EOD Routine — **FULL PATH**: condition computed, 0 commits since 16:00Z, last session activity 11:33Z → evening quiet → discovery leg fired)
+
+**RESOLVED TODAY (struck):**
+- **SAMSUNG Q2 CARRY-OVER GRADED** (10 days late; **found by the grade sweep, not the parser**). OP ₩89.49tn vs our unrevised ₩92tn = **−2.73%**; pre-registered beat band **+4.45–5.7%** vs computed actual **+4.56–5.78%** = **band HIT**; revenue −0.87% MISS; >₩100tn wire claims FALSE. **DS OP ₩89.2tn = 99.7% of group** — the 07-04 pre-registered decomposition ruled the ASP thesis VINDICATED on the division line, group shortfall from the MX −₩0.7tn drag + provisioning. **L54: a test whose branches are all on one side cannot adjudicate** — the ASP test branched >63% vs 58–63%, actual ~+mid-40%, below both.
+- **NEAR-MISS WORTH RECORDING:** yesterday I logged the pending-grades parser as false-positiving on MURATA and BE. Tonight's sweep checked **all five** rows rather than the two already dismissed. Generalising "the parser is noisy" from N=2 would have buried a real 10-day-overdue grade.
+- **CREDIT GAP CLOSED AT T1** — the 07-31 docket's *"highest-value data upgrade available."* FRED `BAMLH0A0HYM2` serves it.
+- **SUPERVISOR + #51 accountability layer shipped** (`316ae16`, `6dfd799`) — see those commits; #51 NEW cohort **2/2, both clauses distinct**.
+
+**🔴 THE DAY'S REAL OUTPUT — I computed a 25-year percentile over three years of data:**
+- FRED `BAMLH0A0HYM2` **returns only from 2023-08-01 regardless of `observation_start`** (requested 2001, then 1990; both truncated; count=787, limit=100000, not pagination). The call succeeds, the values look plausible, and **only a sanity check on the extremes exposes it** — a 25-year HY OAS max of 461bps is impossible (>2,000bps in 2008). Same shape as the EODHD index-field corruption: **the failure is in the metadata, not the numbers.**
+- **Correctly labelled: HY OAS 284bps (07-30) = tightest 24.7% of the LAST THREE YEARS**; 3y median 310bps; **25bps of room to the 3-year low**. The sweep's "tightest 5% of 25 years / long-run median ~450bps" is **UNVERIFIABLE at our tier and not ingested.** Direction retained, magnitude discarded.
+- **OPERATING RULE booked:** any FRED percentile claim must print the **returned** first-observation date, never the requested one.
+
+**🟡 FALSIFIER TOUCH — MURATA (HELD), from a direction nothing was watching:**
+- The Q1 raise leans on FX the T1 短信 named itself (「操業度益や円安」, ¥144.60→¥159.49 +10.30% YoY). **Computed: JPY 163.71 (07-24, T1 FRED) = +2.65% weaker than the Q1 exit — the tailwind EXTENDED.** But it is now the declared target of **coordinated** US-Japan intervention (07-30→08-01), **with MOF totals printing 08-03→08-07.** No falsifier fires; the **variance around the FY raise is now policy-driven rather than demand-driven, and policy has a print date.** Binding on the pre-Aug-6 re-basing: it must carry an FX leg or it repeats the Q1 error in a new place.
+- **SUMCO (HELD)** carries the same translation channel and its **Q2 interim prints 08-06, inside the MOF window.** FX added as a named input.
+
+**NEW, DATED, IN-WINDOW:**
+- **Korea FSC single-stock leveraged-ETF tightening EFFECTIVE 2026-08-05** (deposit ₩10m→₩30m, lot 1→20, tracking error 3%→2%; new listings halted since 07-16). Removes a volatility-amplification mechanism from **the two names that ARE the memory trade**. **2nd order (P~60%): the 08-14 float-share test gets harder — comparing pre- and post-08-05 flow regimes without noting the rule change is a basis error.** Booked now so 08-14 does not walk into it.
+- **PJM capacity $28.92 → $329.17/MW-day since 2024**; Ohio manufacturer power bill +90%; OH/PA residential +9%/+14% YoY. First quantified, politically-visible real-economy cost of the buildout → **the risk to the power trade is permission, not scarcity.** Routes to TC-13/TC-3, not promoted (single-source cluster).
+- China Politburo 07-30: targeted, **explicitly not** large-scale stimulus · Canada 35% tariff effective 08-01 · US June payrolls +57K with labour force −720K (**supply-side signature — a weak 08-07 print will not automatically mean demand is rolling over**).
+
+**NOT INGESTED (Rule #18 / B40):** SKHY "shares fell 9.6–12%" **conflicts with our T1 −5.64%** — basis mismatch, rejected · Situational Awareness "$45B→$10B, 4× leverage" — T2 AUM press of exactly the kind the 07-31 partial retraction was about; **float share, not fund size, is the discriminator; 08-14 13F still the only settler** · yen "near 160" — T1 has 163.71 on 07-24, level wrong.
+
+**INSTRUMENT NOTE:** ~half of a 12-item unanchored sweep returned things already in the corpus. Not a failure — an unanchored agent cannot know what we know, and its independent KOSPI 6,595.45/+17.91% matched our T1 record exactly. But **marginal yield sat in 4 of 12 items** (#3 FSC, #6 FX, #8 PJM, #12 credit). Worth watching whether that ratio holds.
+
+**CATALYST CLOCK — 72h from Sun 2026-08-02 20:20Z (window closes Wed 08-05 ~20:00Z):**
+- **MON 08-03** — KIOXIA **T+24h** (first print-informed price PTS ¥43,200 = −7.1%) · MURATA **T+24h** · **반대매매 07-30/07-31 prints** · KIOXIA ¥800bn buyback window opens · **quota check #4 — and the P0 FORCED BINARY it must record is now 5 days overdue** · **MOF intervention totals window OPENS**.
+- **TUE 08-04** — KR leveraged-ETF T+2 cash-recognition effects.
+- **WED 08-05** — **SNDK Q4** (guided 79-81% GM, bit ASP ~+30% QoQ) = highest-leverage near-term event in the complex · **Korea FSC leveraged-ETF rules EFFECTIVE** · Treasury quarterly refunding.
+- **JUST OUTSIDE:** **THU 08-06 SUMCO Q2 interim** (registered rev ¥113bn / OP −¥1.5bn) + structural-output normalized-metric decision · **FRI 08-07 US July payrolls** (consensus ~90-115K) + MOF window closes.
+- **HORIZON:** 08-08 macro-anchor instrument gap + #51 retro sweep · 08-11 SKT Q2 · **08-14 Situational Awareness Q2 13F** (float-share settler — now with the 08-05 regime-change caveat) · 08-24 #51 compliance re-eval + monthly audit · late-Aug FINRA July margin debt.
+
+**STILL OPEN:** two P0s (**FORCED BINARY quota — reframed 08-01 as the only outcome-independent evidence channel the harness has**; INTAKE-BOUNDARY enforcement — **the FRED window defect is specimen #4**) · MURATA re-basing **+ FX leg** · MURATA + SUMCO decision packages pre-Aug-6 · Alphabet 2026 capex pin · GOOGL TPU revenue line · MPWR customer concentration (10-Q) · **backlog triage: 90 open, 64 (71%) past date, 23 >30d** · hook execution probes.
+
+**K3-WORTHY (Routine clause):** **no new commission tonight.** The 08-01 instrument-validity paste block (`meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`) remains copy-ready and **tonight strengthened its case with two more specimens** — L54 (a pre-registered prediction test whose branches were all on one side) and the FRED truncation (a percentile instrument blind to its own window). The commission's scope line already covers both; **no redraft needed, and drafting a second commission while the first sits untransported would be motion, not work.**
+
+**SESSION-PRIME CAP:** 29,999 / 30,000 after tonight's L54 cascade. **Third consecutive commit requiring char-shaving to land a legitimate codification.** That is friction, not curation — flagged for a real demotion pass at the 08-24 audit rather than another header trim.

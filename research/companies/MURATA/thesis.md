@@ -1202,3 +1202,19 @@ Same input as SUMCO for the pre-Aug-6 decision package: Spend-B growing ~2.20x/y
 ## 2026-07-31 EOD — capex dollars decoupled from units; my capex-cut falsifier RETIRED (back-ref: signals/cross-source-log/2026-07-31-fri-eod-legb-discovery-month-end-capex-decoupling.md)
 Same pre-Aug-6 package input as SUMCO: **SK Hynix's ≥50% capex raise is revenue for the component and equipment layer even as it threatens memory ASPs.** Carried as an input, not an event. The 07-31 print work stands unchanged — numbers hit, mechanism wrong on all three causal legs, thesis flagged for RE-BASING off price-flow-through onto volume/utilisation/datacenter-mix before the package is written.
 **Position implication: NO ACTION — decision package due pre-Aug-6 — re-basing still owed and now carries the capex-up-is-revenue input as well. 🟡**
+
+## 🟡 2026-08-02 (Sun) EOD cascade — THE FY RAISE HAS AN FX LEG, AND IT NOW HAS A COUNTERPARTY
+
+Back-reference: `signals/cross-source-log/2026-08-02-sun-eod-legb-credit-gap-filled-fx-falsifier-touch.md` §2.
+
+The Q1 FY3/27 grade (07-31) established that our numbers HIT while the mechanism was **wrong on 3 of 3 causal legs** — the T1 決算短信 attributed the result to 「操業度益や円安」 (utilisation gains and a weak yen), not to the April MLCC price hikes our chain was built on, with FX at **¥144.60 → ¥159.49 (+10.30% YoY)** plausibly carrying the entire beat. The FY3/27 guidance was then **RAISED** against our pre-registered P(raise)=25%.
+
+**Computed 2026-08-02 (T1 FRED `DEXJPUS`):** latest **163.71** (2026-07-24) = **+2.65% weaker than the ¥159.49 Q1 exit**. The FX tailwind the raise leans on has **extended, not faded.**
+
+**What changed tonight is not the level — it is the counterparty.** An unanchored Leg-B sweep surfaced (T1/T2, NHK + Nomura) that Japan MOF/BOJ ran intermittent FX intervention 2026-07-30 → 08-01 described as **coordinated with US authorities**, with full totals due from MOF **2026-08-03 to 08-07** (prior Apr-May round: ¥11.7tn). The currency this thesis now demonstrably depends on is the declared target of two governments, and the size of their action prints within five days.
+
+**No falsifier fires.** H3 (P=10%) is *"MISSES — FX/yen/capacity execution drag"*; nothing has missed and the tailwind is currently stronger, not weaker. What has changed is that **the variance around the FY raise is now policy-driven rather than demand-driven** — and unlike demand, policy has a print date.
+
+**Binding on the pending re-basing (due pre-Aug-6):** the re-basing was scoped to move this thesis off price-flow-through and onto volume/utilisation/datacenter-mix. It must now carry a **third leg — the FY raise's currency dependence and the intervention risk against it.** A re-basing that lands on two of three legs would repeat the Q1 error in a new place: right numbers, incomplete mechanism.
+
+**Position implication:** **HOLD — no size change — but the pre-Aug-6 re-basing does not ship without an FX leg.** The 08-03→08-07 MOF disclosure window is now a dated input, not background. 🟡

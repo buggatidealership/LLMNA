@@ -836,3 +836,7 @@
 
 - [ ] **P2 / harness / 2026-09-02** [INFRA, CAL, DUE] — **SUPERVISOR FALSIFIER CHECK.** If `meta/supervisor-ledger.md` shows a month of readings in which the VERDICT line never changed, the supervisor is a mirror rather than an instrument → retire it and build the forcing function instead (auto-delete to-dos past N days unless explicitly renewed, converting silence from "still open" to "dropped"). Operator decision, not mine.
   - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §7
+
+- [ ] **P2 / harness / 2026-08-16** [INFRA, DUE] — **FRED long-history credit route.** `BAMLH0A0HYM2` truncates to 2023-08-01 on the current route (defect booked 2026-08-02 in `meta/data-access.md`), so any multi-year credit percentile is unobtainable at T1. Find a route that serves full history (ALFRED vintage params, an alternate ICE BofA series ID, or a different provider) OR record permanently that multi-decade credit percentiles are out of tier.
+  - Origin: EOD 08-02 — I computed and nearly reported a "25-year percentile" that was a 3-year percentile; caught only by a sanity check on the series maximum.
+  - Linked: `signals/cross-source-log/2026-08-02-sun-eod-legb-credit-gap-filled-fx-falsifier-touch.md` §1
