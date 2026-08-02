@@ -1212,3 +1212,53 @@ Raw divergence (T+24h − AH) across the five printers looked like a regularity:
 **Falsifier (built in):** if a full 30-day pass across the watchlist produces **zero** drawer changes, the check is decorative — retire it rather than run it quarterly out of habit.
 
 **Cost of this specific instance:** unquantified but non-zero — MPWR ran to an all-time high (noted in our own 2026-07-02 wave-1 artifact as already-discovered) while sitting in our watchlist under the wrong theme. This is not a claim that we would have bought it; it is a claim that we never asked.
+
+---
+
+## [2026-08-02] SAMSUNG 005930 Q2 full-print CARRY-OVER — 3-layer GRADE (10 days late; found by the EOD grade sweep)
+
+**Predicted (2026-07-02, point held unrevised through three addenda):** group OP **₩92tn**; beat-magnitude vs consensus **+4.45% to +5.7%** depending on panel; three-way blended-DRAM-ASP dispute to be adjudicated by a **>~63% QoQ** test; division-level OP checked against **>₩100tn ex-provision** wire claims.
+
+**Actual (T1/T2, booked in `meta/day-state.md` 07-31):** group OP **₩89.49tn**, revenue **₩171.5tn**, **DS OP ₩89.2tn = 99.7% of group OP**, MX first-ever quarterly loss **−₩0.7tn**, DRAM ASP **~+mid-40% QoQ**, NAND +high-60% QoQ.
+
+### INPUT layer — WRONG, and wrong in a way worth more than the miss
+
+Every ASP anchor in the stack pointed the same direction and **all of them were high**: TrendForce conventional/DDR5 +58-63% QoQ, an unidentified broker at +67%, Micron ground truth "+low-60s%". Actual came in at **~+mid-40%** — below the entire disputed range.
+
+**The generalizable failure: I called it a "three-way dispute" when all three sources shared a direction.** A disagreement about *magnitude among sources that agree on direction* is not a dispute — it is a **consensus with error bars**, and treating it as a dispute manufactured a false sense that the truth was bracketed. It was not bracketed. It was outside the bracket on the low side, where no source sat.
+
+### COMPUTATION layer — RIGHT, and the pre-registered diagnostic did its job
+
+The 07-04 addendum pre-registered the decomposition: *"if the print misses the point primarily via the bonus provision, that is a COMPUTATION-layer miss (one-off unmodeled) NOT an INPUT-layer ASP miss — grade the ASP thesis on the semiconductor-division OP line if disclosed."*
+
+The DS line **was** disclosed: **₩89.2tn**, against the brokers' ">₩80tn semiconductor OP alone" framing. So on the line the ASP thesis actually rides on, the call was **vindicated** — the group-level shortfall came from the non-DS drag (MX at −₩0.7tn) and provisioning, not from the demand thesis. **Writing that separation down BEFORE the print is what let the grade attribute the miss correctly instead of retro-fitting a story.** This is the clearest evidence so far that pre-registered decomposition rules earn their cost.
+
+### REASONING layer — SPLIT: relative calibration good, absolute anchoring high
+
+The **relative-to-consensus** call was near-exact: pre-registered +4.45% to +5.7%, computed actual **+4.56% to +5.78%**. The **absolute** point was **2.73% high**. Same pattern as the BE grade (07-31: direction right, magnitude wrong, all low) but with the sign flipped — here magnitude ran high. Two grades, two magnitude errors, opposite signs: **the absolute layer is where calibration is weakest, and it is not a consistent bias I can simply offset.**
+
+---
+
+## L54 (CANDIDATE, N=1 but structurally strong) — A TEST WHOSE BRANCHES ARE ALL ON ONE SIDE CANNOT ADJUDICATE
+
+**Codified 2026-08-02** · **Re-eval:** 2026-08-24 monthly audit
+
+The pre-registered ASP test read: **>~63% QoQ** → the aggressive-checks camp is corroborated; **inside 58-63%** → the aggressive note is an outlier bull. Actual: **~+mid-40%**.
+
+**Both branches were bullish. The test had no branch for the outcome that occurred**, so it could not adjudicate the dispute it was written to adjudicate — it could only report which of two too-high readings was less too-high.
+
+This is **Principle #51's failure class found inside a pre-registered prediction test** rather than inside a thesis falsifier or a hook criterion — and it is the first specimen the *grade sweep* surfaced rather than an adversarial agent. Its blind-check, written retroactively as the specimen it is:
+
+```
+Blind-check: distinguishes "aggressive camp right" from "conservative camp right"
+· reads on blended Q2 DRAM ASP QoQ
+· goes blind if BOTH camps are wrong in the same direction — the test's branches
+  span 58%→∞ and have no region below 58%, so any outcome under 58% returns the
+  same answer as a near-miss at 62% and the dispute stays unadjudicated.
+```
+
+**Operating rule:** when writing a test that adjudicates between sources, **check that the branch set covers outcomes where every source is wrong together.** Correlated sources are the normal case, not the exception — they read the same channel checks. A branch set that only partitions the space *between* the sources assumes the truth lies between them, which is precisely the assumption that fails when sources share a method.
+
+**BASIS CAVEAT, stated rather than buried (the exact class the open INTAKE-BOUNDARY P0 exists for):** the ~+mid-40% figure is **T2**, and our own record does not establish whether it is **blended** or **conventional-only** DRAM ASP — the dispute was specifically about the *blended* number. The direction of the finding (below both camps) is robust to that ambiguity at this gap size; the precise adjudication is **DIRECTIONAL, not settled**. Resolving it needs the Samsung Q2 division disclosure at T1.
+
+**Falsifier:** if the next three source-adjudication tests written in the harness naturally include an all-sources-wrong branch without prompting, L54 was already latent practice and does not need codifying — retire it.
