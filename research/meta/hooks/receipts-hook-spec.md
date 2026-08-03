@@ -25,3 +25,43 @@
 5. Metric wiring: weekly 20-claim sample booked into the weekly quota check (Monday wakes).
 
 **Falsifiers (registered at spec time):** blocks don't decline month-over-month → the hook isn't teaching, redesign or retire; blocks hit zero → avoidance audit (dropping action-verbs to dodge the trigger); trigger FP >2/week in live use → narrow the verb-pattern (same ladder as 1c).
+
+
+---
+
+## 1c COUNT-LEG — SHIPPED 2026-08-03 (`meta/hooks/meta-count-tripwire-hook.py`)
+
+Precondition (2 weeks of anti-fab fire-log data) verified at build time and met
+**exactly at the boundary**: anti-fabrication entries span 2026-07-20 -> 2026-08-03
+= 14 days, 45 entries. Not comfortably met — met on the day.
+
+**Pre-ship gates, both required, both run:**
+
+| Gate | Result |
+|---|---|
+| catches the origin trigger shape | **PASS** |
+| <=1 FP per 20 replayed real meta-statements | **PASS — 1/148 = 0.14 per 20** |
+
+**v1 FAILED gate 2 at 2.30 per 20 and would have shipped without this backtest.**
+Root cause of every v1 FP: bag-of-features matching scavenged numbers from
+elsewhere in the sentence (`Rule #19 HIGH` -> 19, `$29.4B` -> 29, `20:17Z` -> 20,
+`§8 ... fires today` -> 8). v2 requires the number to be BOUND to the counted noun
+by an explicit claim phrase. Receipt: `meta/tests/meta-count-tripwire-backtest-output.md`.
+
+**The circulated "0 FPs across 108,883 corpus sentences" was NOT used.** Per this
+file's own finding #3 that figure is unreceipted; the build reproduced a backtest
+instead. Note also that 108,883 is the wrong denominator — the FP rate belongs
+against the *candidate* population (sentences carrying harness-noun + past-window,
+n=285 harvested / 148 replayable), not the whole corpus, which would flatter the
+result by roughly three orders of magnitude.
+
+**Labelled honestly as a TRIPWIRE: low-FP, LOW-RECALL.** Covers hook FIRES
+(`meta/hook-fire-log.md`) and COMMITS (`git rev-list`) only. Counts of agents,
+wakes, routines and tokens have **no source of record** and pass unchecked — the
+tripwire's silence is not evidence a count is right. **1a (log_fire rollout) and
+1b (receipts hook proper) remain the real fix.**
+
+Wired into `.claude/settings.json` Stop chain (position 16). Fail-open verified on
+empty stdin / missing transcript / malformed JSON. Falsifiers registered in the
+module docstring: >2 logged FPs in 30d -> retire; 0 catches AND 0 FPs in 90d ->
+decorative, retire.
