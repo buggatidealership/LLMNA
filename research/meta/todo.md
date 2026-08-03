@@ -122,8 +122,10 @@
   - Scope: add an "AI-funding-shock" scenario to `sector/scenarios.md` (capex freezes via credit event → memory demand falls even with pristine memory balance sheets); recompute held-name anti-fragility under it (NBIS = HIGH exposure / leveraged buildout; memory names = self-funding-insulated but demand-exposed); install the **5-signal monitored set** as a standing watch: (1) neocloud HY spreads / GPU-backed-debt ratings + NBIS converts vs par; (2) neocloud raises failing/downsizing; (3) hyperscaler capex GUIDE cuts; (4) private-credit redemption/markdown; (5) GPU rental <~$1.50/hr.
   - Linked: `sector/scenarios.md`, `companies/NBIS/thesis.md`, `companies/HYNIX/thesis.md`, `sector/themes.md`
 
-- [ ] **P2 / research / 2026-07-01** [INDP, POS, BOT] — Add a lightweight FX-SENSITIVITY line per JP/KR held name (harness framework gap, KJ Leg B 2026-07-01 absence-question). Yen ~162-163 (~40-yr low, fiscal-driven/Honebuto ¥370T) + won >1,500 (16+ sessions, possible +50bp BOK hike July-16 MPC) are BOTH live simultaneously and now first-order for reported earnings + multiple across MURATA/KIOXIA/SUMCO (weak-yen translation tailwind) + HYNIX (weak-won export aid vs BOK-hike multiple headwind). Harness has NO per-name FX translation/hedge line — currently ad-hoc. Scope: one-line FX-exposure tag per JP/KR thesis + July-16 BOK MPC as a scheduled binary on the calendar. Per `signals/cross-source-log/2026-07-01-morning-feed-korea-japan-2leg-scan.md`.
-- [ ] **P2 / research / 2026-06-29** [INDP, POS, BOT] — Add 2 MACRO TRIPWIRES the harness has no framework for (KJ Leg B absence-question): (a) **Japan fiscal/rates** (JGB 10Y→3%, Takaichi ¥370tn) → yen-reversal risk that flips the JPY-translation tailwind for Murata/Kioxia/Sumco; (b) **naphtha/energy-security** (Hormuz; ~70% JP naphtha ME-sourced, spot ~doubled) → non-AI bottleneck hitting ~30% of JP mfg. Both can move the JP/KR book regardless of the memory cycle.
+- [ ] **P2 / research / 2026-08-05** [INDP, POS, BOT] — Add a lightweight FX-SENSITIVITY line per JP/KR held name (harness framework gap, KJ Leg B 2026-07-01 absence-question). Yen ~162-163 (~40-yr low, fiscal-driven/Honebuto ¥370T) + won >1,500 (16+ sessions, possible +50bp BOK hike July-16 MPC) are BOTH live simultaneously and now first-order for reported earnings + multiple across MURATA/KIOXIA/SUMCO (weak-yen translation tailwind) + HYNIX (weak-won export aid vs BOK-hike multiple headwind). Harness has NO per-name FX translation/hedge line — currently ad-hoc. Scope: one-line FX-exposure tag per JP/KR thesis + July-16 BOK MPC as a scheduled binary on the calendar. Per `signals/cross-source-log/2026-07-01-morning-feed-korea-japan-2leg-scan.md`.
+  - **RESCUED 2026-08-03 from 33d stale — this item named the exact gap that opened this weekend.** Japan MOF/BOJ ran coordinated intervention 07-30->08-01 with totals printing 08-03->08-07; MURATA's FY raise leans on the yen tailwind its own T1 短信 named, and SUMCO's Q2 interim lands 08-06 INSIDE the disclosure window. A held-name mechanism we do not track.
+- [ ] **P2 / research / 2026-08-05** [INDP, POS, BOT] — Add 2 MACRO TRIPWIRES the harness has no framework for (KJ Leg B absence-question): (a) **Japan fiscal/rates** (JGB 10Y→3%, Takaichi ¥370tn) → yen-reversal risk that flips the JPY-translation tailwind for Murata/Kioxia/Sumco; (b) **naphtha/energy-security** (Hormuz; ~70% JP naphtha ME-sourced, spot ~doubled) → non-AI bottleneck hitting ~30% of JP mfg. Both can move the JP/KR book regardless of the memory cycle.
+  - **RESCUED 2026-08-03 from 35d stale — it named yen-reversal risk 35 days before that risk arrived.** Going stale on this one was the cost, not the item.
   - Origin: `signals/cross-source-log/2026-06-29-morning-feed-korea-japan-2leg-proper.md` §absence-question.
   - Scope: add a JGB-yield/yen tripwire + a naphtha/Brent tripwire to a macro-watch note; flag if either crosses a level that would re-rate the JP exporters.
   - Linked: `sector/where-we-are.md`, `companies/MURATA|KIOXIA|SUMCO/thesis.md`
@@ -161,32 +163,12 @@
 
 ### P2 — High priority new (added 2026-06-04 PM — bypass-route + architecture-of-tomorrow research)
 
-- [ ] **P2 / research / 2026-06-05** [INDP, AF, POS, BOT] — Deep dive: BE Semiconductor Industries (BESI) — hybrid bonding equipment for 3D-stacked DRAM bypass route
-  - Origin: 2026-06-04 PM BOTTLENECK-FORECAST surfaced BESI as bypass-route beneficiary when LPDDR5X bottleneck binds. Hybrid bonding is the TTQ-18-30mo qualification path for 3D DRAM stacking (HBM-style for consumer DRAM). Less crowded than KLA/Onto in inspection layer.
-  - Investability: Euronext Amsterdam BESI ticker — Degiro accessible (confirmed)
-  - Scope: full thesis build — hybrid bonding moat vs ASMPT competitor; HBM4 + HBM5 production wins; consumer DRAM 3D-stacking opportunity timing; analyst consensus; post-2026 guidance accelerators; FY27 framework
-  - Key bypass-route question: when LPDDR5X bottleneck forces 3D-stacking workaround at memory mfg level, does BESI capture the equipment spend?
-  - Linked: `signals/cross-source-log/2026-06-04-next-bottleneck-lpddr5x-mobile-dram-forecast.md` bypass-route section; `wiki/advanced-packaging-primer.md`
-
-- [ ] **P2 / research / 2026-06-30** [INDP, AF, POS] — NVDA entry-trigger watch (post Apple-Blackwell + Rubin BOM optimization)
+- [ ] **P2 / research / 2026-08-17** [INDP, AF, POS] — NVDA entry-trigger watch (post Apple-Blackwell + Rubin BOM optimization)
+  - **RESCUED 2026-08-03 from 34d stale** — largest name in the complex with no live entry trigger. Cheap to hold, expensive to be without.
   - Origin: 2026-06-04 PM Apple-Blackwell cascade surfaced NVDA as REINFORCED thesis (marquee customer Apple confirms inference dominance). Currently 0% held per holdings.md. Need entry framework given L21 sector regime + €200K cash deployment cadence.
   - Scope: define entry triggers + sizing (recommended 4-6% if entered, per portfolio target band); monitor for L21 regime break OR macro pullback >10% from current
   - Falsifiers: NVDA Q2 FY27 (August) negative reaction despite BEAT + macro-neutral environment = L21 regime more severe; do not enter
   - Linked: `companies/NVDA/thesis.md` (updated 2026-06-04 PM with Apple-Blackwell signal); `portfolio/constraints.md` (FIRE math + cash deployment); `predictions/lessons.md` L21
-
-- [ ] **P2 / research / 2026-06-05** [INDP, AF, POS] — Deep dive: Nova Measuring (NVMI) — Israeli twin to Camtek
-  - Origin: 2026-06-04 PM Camtek DEEP-DIG v2.1 surfaced NVMI as adjacent Israeli metrology pure-play; $880M FY26 revenue, 57.6% gross margin, $1.6B war chest per Koalagains T3 (already cited in `companies/CAMT/thesis.md`)
-  - Scope: full thesis build — competitive positioning vs CAMT (dimensional metrology vs packaging inspection), GAA + advanced DRAM Nova Metrion platform, FY26 financials, analyst consensus, post-guidance accelerators, Israeli geo tail risk overlap (NOT a hedge)
-  - Key question: is NVMI a BETTER architecture-of-tomorrow bet than CAMT?
-  - Linked: `companies/CAMT/thesis.md` competitive section; `predictions/lessons.md` L22
-
-- [ ] **P2 / research / 2026-06-05** [INDP, AF, POS] — Deep dive: Onto Innovation (ONTO) — architecture-of-tomorrow CAMT competitor
-  - Origin: 2026-06-04 PM user articulation — "where's the best chance to win the architecture of tomorrow. Right? Today's winner might lose tomorrow because they're not gonna qualify for the next cycle." Applied to CAMT vs ONTO: P(ONTO wins HBM5)=40% vs P(CAMT extends)=35% (my model)
-  - Scope: full thesis build — Dragonfly G5 + 3Di moat vs Hawk; HBM5 + 1000-layer NAND positioning; FY26 raised guide >$1.3B; 30%+ OP margin EOY 2026 target; investability NYSE
-  - Key question: should portfolio enter ONTO instead of CAMT as architecture-of-tomorrow play?
-  - Linked: `companies/CAMT/thesis.md` competitive section; Onto IR T1
-
-### P1 — High priority (next session — added 2026-05-28 end of session)
 
 - [ ] **P2 / research / 2026-08-15** [INDP, AF, POS] — Structural Winners Cohort dissection — name-by-name deep-dive
   - Origin: 2026-06-08 PM user-articulated 4-way structural winner + 12-architecture resilience synthesis; user directive: "save that entire list, and we can talk about this list tomorrow... maybe dissect them a little bit more"
@@ -218,40 +200,16 @@
   - Scope: (a) Confirm Taiwan TWSE 8358 investability on user's Degiro + N26 brokerages; (b) if investable, run full thesis with Workflow 8 DEEP-DIG quality bar (≥2 indep sources for capacity, ≥1 supply response, ≥3 tickers cross-stack, ≥1 LOSER, specific falsifier); (c) compare against Mitsui Stage 3-4 entry penalty — Co-Tech at Stage 1-2 likely better Kelly bet
   - Linked: `companies/MITSUI/thesis.md`, `signals/cross-source-log/2026-06-02-citrini-lotte-hvlp-mitsui-deepdive.md`, `watchlist/candidates.md`
 
-- [ ] **P2 / research / 2026-06-02** [INDP, AF, POS] — Mitsui Mining (5706.T) entry-trigger watch
-  - Origin: Mitsui 4-subagent deep-dive 2026-06-02 → WATCHLIST status; Stage 3-4 priced-to-perfection at JPY 54,220 (+10.8× over 12mo); trading +35% above consensus PT JPY 40,178
-  - Scope: Monitor for entry triggers: (a) pullback to JPY 43,000-46,000 (~-15-20%), (b) HVLP5 customer disclosure naming hyperscaler, (c) FY27 H1 mid-year proof point Oct 2026 that strips non-recurring metals roll-off cleanly + shows Functional Materials segment OP +15%+ YoY. If trigger fires, enter 1-2% Quarter-Kelly.
-  - Falsifiers (per `companies/MITSUI/thesis.md`): Co-Tech achieves >40% HVLP3+ share by 2027; Functional Materials OP <15% YoY at FY27 H1; pricing power breaks (rollback of +12% MicroThin hike); HVLP5 has no named customer wins by Q4 FY27
-  - Linked: `companies/MITSUI/thesis.md`, `signals/cross-source-log/2026-06-02-citrini-lotte-hvlp-mitsui-deepdive.md`
-
-- [ ] **P2 / research / 2026-06-02** [INDP, AF, POS] — Furukawa Electric (5801.T) HVLP4 thesis
-  - Origin: Mitsui deep-dive surfaced Furukawa as HVLP4-class incumbent (HA-V2S, HST-HA), Japan TSE investable, less crowded valuation than Mitsui
-  - Scope: Establish dedicated thesis if HVLP4 exposure is desired without Mitsui Stage 3-4 entry penalty. Check FY26 actuals + FY27 guidance + HVLP segment contribution + capacity disclosures + analyst PTs
-  - Linked: `watchlist/candidates.md`
-
-- [x] **P1 / research / 2026-06-19** [INDP, AF, POS, CAL] — KIOXIA T+24h GRADE WINDOW OPEN — execute grade per `predictions/grading-log.md` KIOXIA prep checklist (8 steps); requires market data subagent (285A.T + SNDK + HYNIX + MU price action Jun 16-19) + MSA-CBA paper verification subagent; T+72h grade follow-up ~2026-06-22
-
-- [x] **P1 / research / 2026-06-14** [INDP, AF, POS, CAL] — Kioxia (285A.T) VLSI Symposium June 14-18 watch + L17 candidate test N=1 application (**PRE-REGISTRATION COMPLETE 2026-06-12** at `predictions/2026-06-12-KIOXIA-VLSI-symposium-pre-registration.md`; pending Pending in `grading-log.md`; T+24h resolution ~June 19-22, T+72h ~June 22-25)
-  - Origin: Kioxia 3-subagent deep-dive 2026-06-02 surfaced Stage 3 mid-melt-up with imminent CATEGORY EVENT catalyst (joint Kioxia/SanDisk MSA-CBA paper at VLSI Symposium Hawaii Jun 14-18). Forward P/E 6.24×; FY27 Q1 guide NP ¥869B = 48× YoY profit jump per [Nikkei Asia T1](https://asia.nikkei.com/business/tech/semiconductors/japan-s-kioxia-forecasts-48-fold-quarterly-profit-jump-on-ai-demand). User considering ~€4-5K initial entry parallel to SNDK SIZE UP.
-  - Scope: (a) Monitor VLSI Symposium June 14-18 for joint MSA-CBA paper + 332-layer BiCS10 validation + 1000-layer roadmap commentary; (b) Track stock reaction T+24h to T+72h to validate L14 framework forward-application (L17 candidate); (c) If entry occurs, document as N=1 forward-application of L14 framework — pre-entry estimate +20-30% per Stage 3 + CATEGORY EVENT; if actual reaction +20-40%, L17 codified at N=1
-  - Falsifier: If Kioxia drops >10% pre-VLSI Symposium OR if VLSI presentation doesn't materially validate MSA-CBA architecture, entry timing was wrong
-  - Linked: `companies/KIOXIA/thesis.md`, `signals/cross-source-log/2026-06-02-kioxia-nand-volume-shock-verification.md`
-
 - [ ] **P2 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) — **framing corrected 2026-07-06: SNDK EXITED ~07-01/02; print watch stands as watchlist-reference (L27 cohort test + TC-14 tell), size-up language below is HISTORICAL, deployment envelope-locked.** (Note: 'L17' below = the tombstoned number, see lessons.md — the live framework is L14/L14-v2.)
   - Origin: SNDK 5.2% under-sized vs 8-12% Active-Core target; Stage 2-3 + HIGH-CONCRETE CATEGORY EVENT markers ($42B backlog + Vera Rubin 1,152 TB SSD + MSA-CBA validation imminent + Vera BlueField-4 STX GIDS mandate). User considering ~€5-6K SIZE UP parallel to Kioxia initial entry.
   - Scope: (a) Track SNDK Q2 FY27 print (~late July 2026) — does revenue exceed Q4 FY26 $7.75-8.25B guide? Does backlog grow beyond $42B + 5 contracts? Does NCNR enforceability framework hold under audit?; (b) Stock reaction T+24h validates L14 framework forward-application; (c) If actual reaction +25-40% per Stage 2-3 + CATEGORY framework, L17 codified at N=2 (joint with Kioxia VLSI test)
   - Falsifier: If SNDK Q2 FY27 only +5-10% despite CATEGORY markers, L17 forward-application falsified — L14 only applies backward
   - Linked: `companies/SNDK/thesis.md`, `signals/cross-source-log/2026-06-02-kioxia-nand-volume-shock-verification.md`, `predictions/lessons.md` L14 codification + L17 candidate
 
-- [ ] **P2 / research / 2026-07-02** [INDP, AF, DISC] — HIDDEN-AI-APPS post-run-#1 standing items (run COMPLETE, falsifier FIRED — see `signals/cross-source-log/2026-07-02-hidden-ai-apps-program-FINAL-adjudication.md`): (a) fold surplus-leakage map into END-DEMAND-DURABILITY model build (the P1 framework item — this is its first hard evidence layer; distinguish token-volume durability [supported] from application-equity capture [weak]); (b) triggers: Karnov Q2 2026-08-20 / Cognizant Leap-savings split 2026-07-29 / Enova peer-spread x2 quarters / Mistras GM gate; (c) run #2 semi-annual or next major model release. SUPERSEDES the original run item — original text follows for audit: — HIDDEN-AI-APPLICATIONS PROGRAM run #1 (demand-side sibling; user-authorized "plan and build it") — wave 1 IN FLIGHT: F1 insurance/specialty-finance, F2 pharma-services/legal/info, F3 sign-error trade, F4 Japan-native, F5 Europe, F6 alt-data/absence channel. On return: lead synthesis -> wave 2 (G1 materiality scorer + S1 discovery / S2 attribution / S3 commoditization attackers, kill >=2 of 3) -> wave 3 cascade. Spec + five design gates + program falsifier: `meta/hidden-ai-applications-program.md`. Doubles as evidence layer for the END-DEMAND-DURABILITY model gap (P1 2026-06-30).
-  - Linked: `meta/hidden-ai-applications-program.md`, `wiki/agentic-ai-enterprise.md`
-- [ ] **P2 / research / 2026-07-02** [INDP, AF, BOT, DISC] — OBLIVIOUS-LAYER PROGRAM standing items post-run-#1 (run COMPLETE 2026-07-02, 10 agents): (a) backside-power thermal ILD vehicle dig (Entegris/Merck-KGaA/JP-chemistry exposure map — the one all-refuters-survived layer, no listed vehicle yet); (b) trigger-watch monitoring: ADI AI-power disaggregation H2-26 / TDK muPOL breakout / Sims SLS split signal at FY26 results ~Aug / NGK Nomi AI-framing datapoint / Daifuku first PLP order; (c) Hot Chips 2026 agenda re-run late-July (B1 rec); (d) run #2 2026-10-02 with retail/listicle-inclusive coverage dimension (rubric refinement adopted). Adjudication: `signals/cross-source-log/2026-07-02-oblivious-layer-program-wave2-3-final-adjudication.md`.
-  - Origin: user directive 2026-07-02 ("plan the research with full autonomy and authority... build a plan and a team") following the enabling-layer map finding that discovery now happens at the orders stage.
-  - Scope: ranked oblivious-layer map with measured obliviousness scores (>=15/25 threshold) + investable expressions; feeds watchlist only (sizing user-gated).
-  - Linked: `meta/oblivious-layer-discovery-program.md`, `signals/cross-source-log/2026-07-02-enabling-layer-company-map-4agent.md`
 - [ ] **P1 / process / 2026-07-02** [INDP, CAL] — WORKFLOW #11 AUTONOMOUS DAY-LOOP live (user "go") — 5 wakes armed 2026-07-02 (KR/JP 02:22 / EU 08:23 / US 14:52 / EOD 22:17 / Sat 10:03; session-scoped, 7-day expiry). RE-ARM required by ~2026-07-09 or on any new session (protocol in `meta/workflow-11-autonomous-day-loop.md`; state in `meta/day-state.md`). 30-day falsifier audit 2026-08-02: autonomous-wake yield must match user-triggered mode + >=1 time-sensitive catch, else cut to catalyst-only.
   - Linked: `meta/workflow-11-autonomous-day-loop.md`, `meta/day-state.md`
-- [ ] **P1 / prediction / 2026-07-02** [INDP, AF, POS, CAL] — AI SUPPLY-CHAIN EARNINGS PREDICTION PROGRAM — pre-register all wave-1 names before their prints; resolve each at print
+- [ ] **P1 / prediction / 2026-08-05** [INDP, AF, POS, CAL] — AI SUPPLY-CHAIN EARNINGS PREDICTION PROGRAM — pre-register all wave-1 names before their prints; resolve each at print
+  - **RESCUED 2026-08-03 from 32d stale — this is the P0 FORCED BINARY in disguise.** Per the 08-01 reframe: in a fluid-outcome domain the outcome never grades the process, so the volume of small resolvable calls is the ONLY outcome-independent evidence channel the harness has. This program IS that channel.
   - Origin: user directive 2026-07-02 (consensus → hard data → LLM-native prediction: revenue + EPS + guidance; log + resolve; spawn as many agents as needed). Program spec: `predictions/2026-07-02-AI-supplychain-earnings-program.md`.
   - Scope: per-name prediction files pre-registered BEFORE each print (Samsung prelim ~Jul-7-8 → TSMC ~Jul-16 → ASML ~Jul-15/16 → Samsung full + Murata + SKH late-Jul → BE Jul-30 [done] → SNDK Jul-31 → Sumco early-Aug → ALAB Aug-11 → Kioxia mid-Aug); grading-log stubs; GRADE each at resolution (rev/EPS/guidance + reaction, 3-layer).
   - Linked: `predictions/2026-07-02-AI-supplychain-earnings-program.md`, `predictions/grading-log.md`
@@ -294,98 +252,6 @@
 
 
 ### P2 — Medium priority
-
-- [ ] **P2 / research / 2026-05-31** [INDP, AF, POS] — Deep dive: Synaptics (SYNA) edge AI candidate — Astra SR80 + Google Coral NPU
-  - Origin: 2026-05-30 evening session subagent surfaced as best fit for Meta AI pendant + Google Gemini Spark signals tonight. Direct match: Astra SR80 NPU targets always-on wearable/AR-glasses far-edge market.
-  - **Personal-computing + mobile-phone filter (user criteria added 2026-05-30)**: SYNA also major touch controller for AI PCs + Android smartphones = fits PC + mobile replacement-cycle filter
-  - Scope: latest Q3 FY26 earnings + AI PC/wearable design wins + sell-side coverage thinness + investability check; **use ONLY data from past 30 days (no staler than April 30 2026 articles per user discipline catch 2026-05-30)**
-  - Linked: `signals/cross-source-log/2026-05-30-overlooked-candidates-deep-dive.md` (to be created)
-
-- [ ] **P2 / research / 2026-05-31** [INDP, AF, POS] — Deep dive: Camtek (CAMT) HBM + advanced packaging inspection candidate
-  - Origin: 2026-05-30 evening session — CAMT surfaced INDEPENDENTLY in 2 of 3 parallel subagents (inference infrastructure + memory bottleneck) = highest cross-confirmation signal of the night. User flagged "Camtek might also benefit outside of just edge AI, and it's still a relatively small company."
-  - Scope: HBM inspection Hawk platform + Eagle G5; 2026-2027 HBM bookings detail; broader AI chip volume exposure (beyond just edge AI); competitive position vs Onto Innovation + KLA; investability; **most-recent-quarter data only**
-  - Linked: `signals/cross-source-log/2026-05-30-overlooked-candidates-deep-dive.md`
-
-- [ ] **P2 / research / 2026-05-31** [INDP, AF, POS] — Deep dive: Lattice Semiconductor (LSCC) REFRESH from May 27 thesis
-  - Origin: 2026-05-30 evening session — subagent re-surfaced LSCC as "overlooked." User flagged LSCC already in harness per `companies/LSCC/thesis.md` (created 2026-05-27 as Active-candidate). Need REFRESH not new build.
-  - Scope: update LSCC thesis with last 3 days of news (any new design wins for edge AI / NVIDIA Halos Lab Holoscan Sensor Bridge); test personal-computing + mobile-phone filter (LSCC FPGAs serve broader edge incl. PC + mobile AI co-processors); reconcile new evening-brief Edge AI cluster with existing thesis; check AMI close timing
-  - Linked: `companies/LSCC/thesis.md` + `signals/cross-source-log/2026-05-30-overlooked-candidates-deep-dive.md`
-
-### P2 — SoC building-block layer deep-dives (added 2026-05-31)
-
-- [x] **DROPPED 2026-06-01** — Deep-dive: Synopsys (SNPS) + Cadence (CDNS) — EDA oligopoly at SoC building-block layer
-  - **Reason dropped (user-directed 2026-06-01)**: IP licensing business cannot achieve same physical-scarcity moat as physical chokepoints (Murata MLCC, Sandisk NAND, Micron HBM, Hirano tape-casters). Moat type is contractual/legal/switching-cost, not capacity-constrained. Different moat type → outside scope of alt-data probabilistic prediction framework (which is built for physical chokepoint identification). User unverified hypothesis: "IP licensing from unit economics, they can never achieve that type of scarcity that a Sandisk or a Micron or a Murata can." Hypothesis acknowledged as unverified but structurally consistent with Right-Side-of-Belka physical-scarcity principle. Revisit if hypothesis later falsified.
-  - Original origin: 2026-05-31 NVDA N1X SoC architecture analysis surfaced these as fully-convergent (edge + datacenter) beneficiaries with strong moat + low displacement + multi-quarter beat probability per `signals/cross-source-log/2026-05-31-soc-building-block-layer-analysis.md`
-  - Linked: `signals/cross-source-log/2026-05-31-soc-building-block-layer-analysis.md`
-
-- [ ] **P2 / research / 2026-06-02** [INDP, AF, POS] — Deep-dive: Advantest (6857.T) + Teradyne (TER) — SoC test duopoly
-  - Origin: 2026-05-31 SoC architecture analysis — Advantest 66% share (+10pp YoY), op margin expanded 1,490bp to 44.2%; Teradyne Q1 2026 +87% YoY, AI = 70% of revenue per `signals/cross-source-log/2026-05-31-soc-building-block-layer-analysis.md`
-  - Scope: full thesis build — duopoly moat mechanics, cyclical vs structural test demand, Blackwell Ultra + AMD MI400 + Apple + NVDA N1X pipeline, Advantest 10K systems/yr ramp, Teradyne stock-reaction-vs-fundamentals gap (Q1 2026 stock fell 19% on print), valuation check, investability confirm (6857.T = Japan TSE, accessible per `CLAUDE.md`)
-  - **Refinement 2026-05-31 (user-directed)**: both already at ATH but hardware order book gives quarter-to-quarter visibility ONLY ("limited visibility" per Teradyne 10-Q); deep-dive must address whether AI test cycle extends into 2027 OR peaks 2026; Advantest 44.2% op margin is near structural ceiling = MARGIN RUNWAY SHRINKING question is central
-  - Linked: `watchlist/candidates.md` § SoC building-block; `signals/cross-source-log/2026-05-31-soc-building-block-layer-analysis.md`; `signals/cross-source-log/2026-05-31-soc-building-block-durability-matrix.md`
-
-- [ ] **P2 / research / 2026-06-02** [INDP, AF, POS] — Deep-dive: Alphawave Semi (AWE.L) — SerDes IP at high-speed interconnect layer + M&A status verification
-
-- [ ] **P2 / research / 2026-06-04** [INDP, AF, POS] — Deep-dive: Seagate (STX) + Western Digital (WDC) — NAND-supply-constraint bypass plays at HDD cold-compliance tier
-  - Origin: V2 NAND demand model 2026-05-31 (`signals/cross-source-log/2026-05-31-nand-demand-model-v2-verified.md`) — IDC NAND supply growth ~17% YoY 2026 below historical norms; EU AI Act 10yr retention enforcement Aug 2026 creates compliance pressure; HDD = cold-tier bypass beneficiary
-  - Scope: full thesis build — HDD cold-compliance demand growth model, vs SSD substitution risk, AI-driven HDD demand vectors (training corpora cold storage, compliance retention), valuation, bottoms-up earnings, falsifiers, anti-fragility scoring
-  - Linked: `watchlist/candidates.md` § NAND supply-constraint bypass plays
-
-- [ ] **P2 / research / 2026-06-04** [INDP, AF, POS] — Deep-dive: Pure Storage (PSTG) — AI-storage software bypass play
-  - Origin: V2 NAND demand model 2026-05-31 — NAND tightness creates value capture for flash-tier optimization + AI-native storage software
-  - Scope: full thesis build — flash array competitive position vs Dell + NetApp + VAST Data, AI-storage product roadmap, valuation
-  - Linked: `watchlist/candidates.md` § NAND supply-constraint bypass plays
-  - Origin: 2026-05-31 SoC architecture analysis surfaced Alphawave at SerDes IP layer (PCIe 5.0 / USB4). User-flagged 2026-05-31 as potentially asymmetric (no parabolic move yet)
-  - **CRITICAL FIRST STEP**: verify current status of Qualcomm £1.8B acquisition announced June 2025 (per [BusinessCloud T2](https://businesscloud.co.uk/news/qualcomm-to-acquire-alphawave-in-1-8bn-mega-deal/)) — if PENDING then this is M&A arbitrage, not structural thesis; if APPROVED/CLOSED then no longer trades as independent equity. User's "no parabolic move yet" observation may simply reflect the takeover-price pin
-  - Scope: M&A status FIRST; only if Alphawave remains independent or arb-spread is wide enough → full thesis build (SerDes IP moat, customer wins, revenue trajectory, comp set vs Synopsys + Cadence SerDes IP)
-  - Investability: UK-listed (LSE main market under "AWE"); confirm Degiro access
-  - Linked: `watchlist/candidates.md` § SoC building-block; `signals/cross-source-log/2026-05-31-soc-building-block-layer-analysis.md`
-
-### P2 — Existing items
-
-- [x] **P3 / verification / 2026-06-24** [CAL, INDP, AF] — CONSOLIDATED Monthly Audit Cycle (FIRST CYCLE — merged 3 audits per user 2026-05-29)
-  - **PREP CHECKLIST COMPLETE 2026-06-19** at `meta/monthly-audit-prep-2026-06-24.md` — 10 batched candidates + Sections 2-10 (Critical Rule #11 detectability / AUTO-EXECUTE STRENGTHENING / source-reliability / bottleneck-forecast / portfolio-coherence / cross-domain-pattern-register / session-prime / INDEX-tags refresh / Critical Rule #16 detectability) + autonomous-completion authorization status pre-loaded + pre-batched grep commands ready
-  - **CONSOLIDATION NOTE 2026-05-29**: Previously 3 separate June 24 items (codification audit + claim-verification audit + Principle #34/B38 monitoring). User-directed merge into single audit per "doesn't make sense to have it three times."
-  - **PART A — Codification audit** (expanded scope per 2026-05-28): each gets the 3-question test:
-    - Principles: #29 (segmented triangulation), #30 (comp-set verification), #31 (narrative-stage modifier), #32 (pre-action checkpoints), #33 (top-down capability decomposition + 2026-05-28 competition-intensity refinement), candidate #34 (Supplier-Side Cross-Layer Moat Decomposition — check for N=2+ validation)
-    - Biases: B31 (cross-segment aggregation), B32 (comp-set anchoring at valuation), B33 (narrative-stage-blind sizing), B34 (action without verification or premortem), B35 (within-category aggregation), B36 (visible-user-adoption anchoring when embedded), candidate B38 (demand-side decomposition blind-spot — check for N=2+ validation; promote OR retain candidate OR retire)
-    - L14 (CODIFIED 2026-06-02): verify 2+ applications post-codification; confirm Stage 3-4 CATEGORY override is correctly applied in new PRO predictions
-    - L15 (NEW 2026-06-02): verify corporate-event check discipline has been applied to any EPS prediction in first 30 days; confirm checklist is not wasted overhead
-    - L16 (CANDIDATE 2026-06-02): check if N=2 accumulation-vs-conversion case has surfaced; promote or retain candidate
-    - **3 questions per codification**: (1) APPLIED since codification? (check `principle-applications-log.md` + grep recent commits); (2) if applied → REAL CATCH / FALSE POSITIVE / WASTED OVERHEAD; (3) if NOT applied in 30 days → INERT → retire OR promote to hook
-    - **Metrics**: Real-catch rate ≥40%; false-positive <30%; wasted-overhead <30%; net-positive (REAL_CATCHES > WASTED_OVERHEADS over 30 days)
-  - **PART B — Claim-verification audit** (per principle #23, codified 2026-05-24 after TrendForce HBF debacle):
-    - Sample 15 recent claims from thesis files + signals + wiki entries committed 2026-05-24 to 2026-06-24
-    - For each, verify: (a) first-order assertion stripped of interpretation, (b) ≥1 orthogonal corroboration at ingest, (c) single-source claims correctly went to `cross-source-log.md` not thesis files
-    - Re-audit 6 sources in legacy reliability queue (MLQ.ai, Sacra, Fortune, Photoncap, TweakTown, The Razor's Edge) using claim-verification framing (sample 3 claims/source; check orthogonal corroboration at citation)
-    - Flag failures in `sector/where-we-are.md` harness observations log
-  - **PART C — Critical Rule #11 detectability check** (added 2026-05-28):
-    - Grep `Position implication:` across thesis files committed 30 days prior
-    - Verify VARIED implications (mix of ENTER / HOLD / TRIM / EXIT / NO ACTION); if 5+ identical "HOLD — no size change" → rule decorative; retire or refine
-  - **Failure mode the audit protects against**: rapid codification cadence producing ossified text that's never actually applied = the most likely OS-degradation pathway given the recent codification velocity (Principles #29 → #34 + B31 → B38 + L14-L16 in <45 days)
-  - **Where to document outcome**: `research/meta/principle-applications-log.md` "Monthly audit log" section
-  - **Automation verification** (per user request 2026-05-29): 2 mechanisms confirm this will surface on 2026-06-24:
-    1. `~/.claude/session-start-hook.py` is date-aware — surfaces with OVERDUE / DUE TODAY / DUE SOON markers at top of session briefing if user starts a session that day or after
-    2. `.github/workflows/recurring-audit-reminder.yml` runs weekly Monday 9am UTC; creates a GitHub issue when DUE_SOON / DUE_TODAY / OVERDUE fires
-  - **Linked**: `meta/methodology.md` (Principles #29-#34), `meta/biases-watchlist.md` (B31-B38), `meta/principle-applications-log.md`, `meta/recurring-audit-log.md`, recent commit log
-
-- [ ] **P2 / research / 2026-06-05** [INDP] — Back-fill China sovereignty cluster TRACE event (verification catch 2026-05-28)
-  - Origin: 2026-05-28 verification step caught that `signals/events/2026-05-26-china-ai-sovereignty-cluster.md` does NOT exist despite my session-memory claim. The cluster's prior signals (Huawei LogicFolding May 25 + China talent restrictions May 26 + DeepSeek V4 State AI Fund May 16) exist only as scattered cross-references across ARM thesis + Google I/O event + 13F analysis. Today's "China 9 chips certified" (May 28) signal would be 3rd-4th data point if cluster were properly documented.
-  - Scope: (a) Read prior signals from ARM thesis cross-refs, Google I/O event file, 13F analysis to extract verified facts; (b) cross-verify Huawei LogicFolding announcement details + China talent restriction scope via independent T1/T2 sources; (c) consolidate into proper TRACE event file at `signals/events/2026-05-26-china-ai-sovereignty-cluster.md`; (d) IF cluster has 3+ verified same-segment data points within 90 days, promote to `signals/triangulation.md` as 2nd segmented-triangulation entry (advanced-packaging EMIB-T was 1st).
-  - **Discipline catch this represents**: per principle #32 + the user's discipline LOOP (spot/fix/monitor), this is a "fix" step that was incomplete on 2026-05-27 — I referenced a TRACE event without committing it. The verification step today caught the gap.
-  - Linked: `companies/ARM/thesis.md` (existing cross-refs), `signals/events/2026-05-20-google-io-2026.md`, `meta/2026-05-26-positional-strength-duration.md`, `signals/cross-source-log.md` (today's China 9 chips entry)
-
-
-### P3 — Foundational wiki entries (planned, not yet built)
-
-**Depth standard:** All wiki entries below must meet `meta/methodology.md` core principle #12 (default BELOW revenue mix). Revenue-mix summaries are insufficient — each wiki must include BOM-level unit counts, current-gen → next-gen deltas where applicable, and supplier capacity-response data. See B15 in `biases-watchlist.md`.
-
-- [ ] **P3 / wiki / 2026-05-21** [INFRA] — Hyperscaler capex primer
-  - Scope: How to read MSFT/GOOG/META/AMZN/ORCL capex disclosures; segment definitions; ROIC implications. **BOM-depth requirement:** include dollars-per-GW deployed at current vs next-gen rack densities, not just headline capex numbers.
-
-
-- [ ] **P3 / wiki / 2026-05-21** [INFRA] — Geopolitical AI primer
-  - Scope: US-China tech war, export controls, allowed/restricted lists, Taiwan dependence. **BOM-depth requirement:** wafer-volume by node × geography; specific HSCD-controlled items; substitution paths.
 
 - [ ] **P2 / harness / 2026-07-24** [INFRA, recurring] — PRUNING DISCIPLINE monthly pass + FIRST CURATION-RATIO reading (maintenance-vs-research commit share from git log; K3 dissent #1, per 2026-07-17 cross-family review artifact) (LLM-native context-hygiene, codified 2026-06-27 audit item #3)
   - **ADDED 2026-07-07 (Principle #43 standing question — wired here so the audit actually asks it):** run the AFFORDANCE REVIEW per `methodology.md` #43b protocol — (1) inventory-vs-usage diff from ledgers/logs (mechanical); (2) anthropomorphic-default sweep (human-time estimates, single-threaded plans, essay-instead-of-computation); (3) each candidate → pre-registered executable test, NOT self-report. Also: renumber the #42 collision (retrieval-staleness vs time-window) per tags.md flag.
@@ -840,3 +706,8 @@
 - [ ] **P1 / harness / 2026-08-04** [INFRA, DUE] — **AMEND THE KR-OPEN WAKE ROUTINE TEXT — its instrument list is stale.** The Routine instructs an "H3 two-path check: Brent level vs 95", but **ADDENDUM #14 (2026-07-31) superseded that gate** — it refuted the memory→term-premium hypothesis and re-labelled H3 as *"Fed reaction-function credibility repricing — not memory prices, not oil."* The 08-03 wake ran the current spec and flagged the drift; the next fire will re-instruct the retired gate unless the Routine prompt is edited.
   - Generalisable: **scheduled Routine prompts are frozen text that silently drifts from the pre-registration they cite.** Worth a sweep of ALL Routine prompts against their referenced artifacts, not just this one — same class as L53 (decay of a correct old classification) applied to automation rather than to names.
   - Linked: `signals/cross-source-log/2026-08-03-mon-kr-open-wake-leverage-stock-vs-flow.md` §3, `predictions/2026-07-17-regime-read-preregistration-five-calls.md` ADDENDUM #14
+
+- [ ] **P2 / harness / 2026-08-10** [INFRA, DUE] — **FIVE TO-DO ITEMS ARE INVISIBLE TO THE OVERDUE PARSER.** Found 2026-08-03 during the authorized backlog triage, by reconciling a loose header count (79) against the documented template (74). Five items carry a date field that is not a date — `2026-07-24→CARRIED`, `open`, `2026-Q4`, `2026-06-25→2026-07-04`, plus one non-standard `USER-ACTION` category. The session-start hook sorts and surfaces by parsed date, so **these can never be flagged overdue however long they sit.**
+  - Fix: either normalise them to real dates (and accept whatever overdue status that reveals), or teach the parser a documented "no-date" bucket that it surfaces separately — silently dropping them is the current behaviour and is the worst of the three.
+  - Generalisable: this is **L53's class applied to the queue itself** — a correct entry filed in a form nothing reads is functionally invisible. Found only because a delete pass forced two independent counts of the same file to be reconciled.
+  - Linked: `meta/todo-deletions-2026-08-03.md`, `meta/tools/harness_supervisor.py`

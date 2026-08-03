@@ -1606,3 +1606,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-03 06:52:42Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-03 06:55:30Z llm-native-reasoning-hook FIRE (revert-to-linear-reasoning)
 - 2026-08-03 06:55:38Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-03 07:47:54Z session-prime-hook event=resume injected=False (skipped non-startup)
