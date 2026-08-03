@@ -1603,3 +1603,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-03 00:31:25Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-08-03 00:31:42Z anti-fabrication-hook INCONCLUSIVE (n=12 '14.5%' forms=[("'14.5%'", None, 'TimeoutExpired')]; '85.5%' forms=[("'85.5%'", None, 'BudgetExceeded')]; '3.9%' forms=[("'3.9%'", None, 'BudgetExceeded')]; '0.7%' forms=[("'0.7%'", None, 'BudgetExceeded')]; '6.67%' forms=[("'6.67%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-08-03 06:33:12Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-03 06:52:42Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-03 06:55:30Z llm-native-reasoning-hook FIRE (revert-to-linear-reasoning)
+- 2026-08-03 06:55:38Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
