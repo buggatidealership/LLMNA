@@ -111,3 +111,96 @@ No prediction carries a 2026-08-03 resolution date. The KIOXIA and MURATA **T+24
 - **MOF FX intervention totals** — the disclosure window opened today and runs to 08-07. **Nothing confirmed at this hour.** Not asserted either way.
 - **반대매매 07-31 print** — not obtained. Still owed.
 - **투자자별 close-basis flows** — still owed (the morning attempt returned a July-3 article; specimen #5 for the INTAKE-BOUNDARY P0).
+
+---
+
+# §7 — DISCOVERY LEG (Leg B, unanchored) — and it corrected me twice on stale instruments
+
+The sweep returned 12 items. Two of them **falsify readings I published earlier today**, and the root cause is the same in both: **FRED lags, and I treated its latest available value as "current" without stamping the lag.**
+
+## 🔴 CORRECTION 1 — the MURATA yen tailwind has REVERSED, not extended (held name)
+
+This morning's KR-open wake said: *"the FX tailwind Murata's FY raise leans on has EXTENDED, not faded"*, computed off FRED `DEXJPUS` **163.71**. That was the latest value FRED would serve — **dated 2026-07-24, one week stale.**
+
+**What FRED serves now (T1, same series, re-pulled tonight):**
+
+| date | JPY/USD |
+|---|---|
+| 2026-07-27 | 163.71 ← *the number I used this morning* |
+| 2026-07-29 | 163.86 |
+| **2026-07-30** | **159.47** |
+| **2026-07-31** | **159.16** |
+| 2026-08-03 | ~157 (T2, sweep — FRED not yet published) |
+
+**The yen appreciated ~2.9% in two sessions on 07-30/07-31 — i.e. the intervention was already in the tape when I wrote that the tailwind had extended.** Against Murata's Q1 exit rate of ¥159.49, the yen is now **stronger**, not weaker.
+
+**So the direction of the FX leg flips.** Murata's FY3/27 raise leans on a tailwind that is **reversing**, and the reversal is policy-driven with the MOF disclosure window open through 08-07.
+
+🟡 **Still not a falsifier fire.** H3 on that thesis is *"MISSES — FX/yen/capacity execution drag"*, and nothing has missed. What changes is the **sign of the pressure**: this morning I said the tailwind was strengthening the raise; tonight it is weakening it. **Cascaded to `companies/MURATA/thesis.md`.**
+
+## 🔴 CORRECTION 2 — H3 is escalating, and I marked it flat on the same stale-lag error
+
+This morning: *"10Y 4.68% FLAT (−0.01pp over 5 obs)… H3 read: no escalation… weights UNCHANGED"*, then tonight I moved H3 **29→27**. Both used **`DGS10` 4.68% dated 07-30 as the latest**.
+
+**FRED now serves 2026-07-31 = 4.75%.** The actual path: 4.61 (07-28) → 4.67 → 4.68 → **4.75** = **+14bp over four sessions, +7bp on the final day.** Not flat.
+
+The sweep adds two corroborating T2 legs on the *same channel* ADDENDUM #14 re-specced H3 to (**Fed reaction-function credibility, not oil, not memory**):
+- **FOMC held 3.50–3.75% on 07-29 with three hawkish dissents — the most divided vote since 2016**, and market-implied **September HIKE** odds rising through the week. *(Sources disagree 57% / 61% / 68% across dates — treat as a rising range, not a point.)*
+- Fed officials explicitly naming **the AI buildout itself** as an inflation contributor — the same channel as Warsh's memory/logic-chip line we confirmed verbatim at T1 on 07-31.
+
+🟡 **H3 revised: 27 → 33 (my model).** Reverting tonight's move and going further, because the instrument that said "flat" was reading a stale print. **H1 65→62 / H2 8→5 / H3 27→33.**
+
+## 🟢 THE SYNTHESIS THE SWEEP EARNED: the capex reaction function is INVERTED BY LAYER
+
+The sweep's strongest finding is a same-week, three-geography convergence of **"beat, then sold"**:
+
+| Name | Print | Reaction | Framing in local press |
+|---|---|---|---|
+| **SK Hynix** | record profit, FY26 capex guided **+~50% to ≥$31B** | **−19% on the week** | *"concerns big tech such as Meta are building more data centers than they need"* (T2 Bloomberg) |
+| **Kioxia** | Q1 net **+46x YoY**; Q2 guide **+31x** vs ~33x expected | sold | 「半導体スーパーサイクル論が後退」 (T1 Nikkei) |
+| **TSMC** | strong print | **−2.06%** while TAIEX **+0.62%** | Wall Street *"reassessing AI-infrastructure investment profitability"* (T2 TW press) |
+
+**But we hold a T1 counter-example from the same week, and it is ours: AMZN raised capex +10% to $220bn and closed +15.32%.** MSFT held capex while adding $132.5bn of leases and was not punished either.
+
+**Both patterns are real, and the discriminator is which side of the trade you sit on:**
+
+> **For a PAYER, capex is a demand signal about its own business. For a RECIPIENT, capex is future supply — i.e. a price risk to its own product.**
+>
+> **The same action carries opposite information content depending on layer.** Hyperscalers get rewarded for spending; memory and foundry suppliers get punished for expanding capacity to serve that spending.
+
+**1st order (P>80%)** — "capex raise = punished" is FALSE as a general rule and TRUE within the supplier layer.
+**2nd order (P~60%)** — this is the **recipient/payer taxonomy** (booked 07-31) showing up in the reaction function, not just in credit exposure. The taxonomy is doing more work than it was built for.
+**3rd order (P~40%)** — **knock-on casualty: any thesis whose bull case rests on "supplier capex expansion confirms demand" is now reading a signal that the market has re-signed.** That framing appears across the equipment and materials cohort.
+**4th order (P~20%)** — if the inversion holds, the supplier layer de-rates on exactly the evidence the payer layer re-rates on, and the spread between them widens without either being "wrong."
+
+## 🟢 The owed 투자자별 flows arrived — and retail is absorbing the distribution
+
+The morning wake recorded these as data-gapped (a search returned a July-3 article). The sweep obtained them:
+
+- **Foreign + institutional combined: −₩4.77조 net sell** (T2 Seoul Economic Daily)
+- **Foreign only: −₩2.84조** (T2 Hankook Ilbo)
+- **Retail: +₩4.65조 net BUY**
+
+⚠️ **The two sell figures disagree because of ATS/institutional inclusion — which is precisely the KRX-vs-KRX+NXT reconciliation we booked as UNRESOLVED on 07-31 and still is.** Recorded as a range, not a point.
+
+🟢 **Read: retail absorbed institutional distribution, on a −8.8% day, with 85.5% of peak margin leverage still outstanding.** That is the same-day flow confirmation of this morning's stock-vs-flow computation, from an independent source. **Retail is not deleveraging. It is adding into the decline.**
+
+## Items retained without cascade
+
+- **ON Semiconductor −11.3%**, gross margin **−240bp to 37.6%**, EPS miss on a revenue beat. **Non-AI semis** (power/auto/industrial) margin compression — a genuinely uncorrelated read: the pressure is not confined to the AI complex.
+- **Palantir** beat and raised FY26 to **$8.15–8.16bn** from $7.65–7.66bn, US commercial **+149% YoY**. **The application layer is strong in the same week the hardware layer is being punished.** That divergence is itself the signal, and it is the cleanest pro-H1 datum in the sweep.
+- **Nikkei −0.94%** to 63,754.90, 1,059 decliners vs 462 advancers, **MURATA and Kioxia named decliners** on yen appreciation.
+- **Mortgage 30Y ~6.65–6.93%** (sources disagree) — household credit tightening on the same inflation dynamic the Fed cites. Not the same trade as the AI-equity rally.
+- **WARN layoffs** at Amazon/Walmart/FedEx alongside retail spending +3.5% YoY. ⚠️ Agent flagged per-name filing dates as **not independently pinned** — directional only.
+
+## What the sweep did NOT get (explicit, per Leg-B spec)
+
+- **MOF cumulative intervention total for August** — confirmed the intervention began 07-30 and continues; **no verified August aggregate exists yet** (MOF publishes daily data on a quarterly lag). Still owed.
+- **Treasury refunding** — the event is 08-05. Correctly nothing to report.
+- **Healthcare / industrials / transport dated to 08-03** — searched, nothing found. Agent flagged this as a **real blind spot, not a papered-over null.**
+
+## The instrument lesson, which is worth more than either correction
+
+**Both errors have one root cause: I used FRED's latest *available* value as if it were the latest *actual* value.** `DEXJPUS` and `DGS10` publish on a lag, and on 08-03 that lag spanned exactly the two sessions in which the yen moved 2.9% and the 10Y moved 7bp.
+
+**Booked to `meta/data-access.md`.** The rule: **a lagging series must be stamped with its OBSERVATION date at the point of use, and any directional claim must state the gap between that date and today.** This is the same failure family as the FRED credit-window truncation found 08-02 — that one was blind to its *range*, this one blind to its *recency*. Same instrument, two different blindnesses, two days apart.

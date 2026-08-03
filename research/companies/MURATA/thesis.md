@@ -1218,3 +1218,31 @@ The Q1 FY3/27 grade (07-31) established that our numbers HIT while the mechanism
 **Binding on the pending re-basing (due pre-Aug-6):** the re-basing was scoped to move this thesis off price-flow-through and onto volume/utilisation/datacenter-mix. It must now carry a **third leg — the FY raise's currency dependence and the intervention risk against it.** A re-basing that lands on two of three legs would repeat the Q1 error in a new place: right numbers, incomplete mechanism.
 
 **Position implication:** **HOLD — no size change — but the pre-Aug-6 re-basing does not ship without an FX leg.** The 08-03→08-07 MOF disclosure window is now a dated input, not background. 🟡
+
+## 🔴 2026-08-03 (Mon) EOD — CORRECTION TO THIS MORNING: the FX tailwind has REVERSED, not extended
+
+Back-reference: `signals/cross-source-log/2026-08-03-mon-eod-kr-us-decoupling-12pp.md` §7.
+
+**This morning's KR-open wake said the yen tailwind had EXTENDED. That was wrong, and the error was an instrument-lag error, not a judgement error.** I computed off FRED `DEXJPUS` **163.71** — the latest value the series would serve — without stamping that it was dated **2026-07-24, one week stale.**
+
+**FRED re-pulled tonight (T1, same series):**
+
+| date | JPY/USD |
+|---|---|
+| 2026-07-27 | 163.71 ← *the figure I used this morning* |
+| 2026-07-29 | 163.86 |
+| **2026-07-30** | **159.47** |
+| **2026-07-31** | **159.16** |
+| 2026-08-03 | ~157 (T2, Nikkei/Kabutan — FRED not yet published) |
+
+**The yen appreciated ~2.9% across 07-30/07-31 — the intervention was already in the tape at the moment I wrote that the tailwind had extended.** Against this thesis's Q1 exit rate of **¥159.49**, the yen is now **stronger**, so the translation benefit the FY3/27 raise leans on is **compressing**.
+
+Corroborating, same session (T2): **Nikkei −0.94% to 63,754.90 with 1,059 decliners vs 462 advancers, and MURATA named explicitly among the decliners on yen appreciation.**
+
+**The direction of the FX leg therefore flips from supportive to adverse.** Nothing else changes: the Q1 print still HIT its numbers, falsifier #1 still did not fire, and the FY raise still stands. What flips is the **sign of the pressure on that raise** — and the pressure is policy-set, with the MOF disclosure window open through **08-07**.
+
+🟡 **Still not a falsifier fire.** H3 here is *"MISSES — FX/yen/capacity execution drag"*; nothing has missed. But the variance around the raise is now adverse-skewed rather than supportive, on a dated policy calendar.
+
+**Binding on the pre-Aug-6 re-basing (unchanged in requirement, changed in content):** the FX leg the re-basing must carry is no longer *"a tailwind we under-modelled"* — it is *"a tailwind that reversed inside one week on central-bank action."* A re-basing written to yesterday's sign would be wrong on the day it ships.
+
+**Position implication:** **HOLD — no size change — but the FX leg of the pre-Aug-6 re-basing must be written to a REVERSING yen, not an extending one.** No falsifier fires; the change is to the sign and the variance, not to the thesis. 🟡

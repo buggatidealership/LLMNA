@@ -124,3 +124,21 @@ No route available to this harness returns **historical** after-hours prints. Fi
 **OPERATING RULE:** any percentile, "richest since", or "tightest in N years" claim from a FRED series MUST print the actual first-observation date alongside the claim. Do not state a window length that was requested rather than returned.
 
 **Consequence for tonight's read:** the correctly-labelled figure is **284bps = tightest 24.7% of the LAST THREE YEARS**, 3y median 310bps, 3y min 259bps, **25bps of room to the 3-year low**. Any longer-horizon credit percentile is currently **UNOBTAINABLE at T1** in this harness — treat multi-decade credit claims from press as unverifiable, not as corroborated.
+
+
+## 2026-08-03 — FRED LAG: a series' latest AVAILABLE value is not its latest ACTUAL value
+
+**Two same-day errors, one root cause.** On 2026-08-03 I published two readings computed from the most recent observation FRED would serve, without stamping the observation DATE at the point of use:
+
+| claim published | series used | value | its actual date | truth by 07-31 | consequence |
+|---|---|---|---|---|---|
+| *"the yen tailwind has EXTENDED"* | `DEXJPUS` | 163.71 | **2026-07-24** | **159.16** | **Direction inverted.** The yen had appreciated ~2.9% on 07-30/31 — the intervention was already in the tape. Wrong sign on a HELD name (MURATA). |
+| *"10Y FLAT, no H3 escalation"* | `DGS10` | 4.68 | **2026-07-30** | **4.75** | **+7bp in a day, +14bp over four sessions.** Not flat. H3 marked down when it was escalating. |
+
+**Why this is dangerous rather than merely limiting:** the call succeeds, returns a plausible number, and *nothing in the response signals staleness*. `DEXJPUS` and `DGS10` publish on a lag that on this date spanned exactly the two sessions in which both series moved most.
+
+**OPERATING RULE:** any FRED value used in a directional claim MUST be quoted with **its returned observation date**, and the claim must state the gap between that date and today. *"JPY 163.71"* is not a fact about today; *"JPY 163.71 as of 07-24, 10 days stale"* is.
+
+**Blind-check (#51):** distinguishes *"the series says X"* from *"X is true now"* · reads on the observation date returned alongside the value · **goes blind if the caller reads only the value** — which is exactly how both errors happened, and both values looked entirely reasonable in isolation.
+
+**Same instrument, second blindness in two days.** The 08-02 defect was FRED blind to its own **range** (a 25-year percentile computed over 3 years of data). This one is FRED blind to its own **recency**. Neither is a data error — both are metadata errors that value-level inspection passes.
