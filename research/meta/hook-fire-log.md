@@ -1613,3 +1613,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-03 09:29:29Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-08-03 09:29:44Z anti-fabrication-hook INCONCLUSIVE (n=1 '58%' forms=[("'58%'", None, 'TimeoutExpired')] verdict:pending)
 - 2026-08-03 09:36:27Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-03 14:23:21Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-03 14:38:38Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-03 20:20:02Z session-prime-hook event=resume injected=False (skipped non-startup)

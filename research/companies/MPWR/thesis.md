@@ -60,3 +60,22 @@ Growth decelerates from +164% to a still-strong double-digit-to-50% range throug
 ## Position implication (Critical Rule #11)
 
 **Position implication:** **NO ACTION — no entry — WATCHLIST retained with the drawer re-based from T9-consumer to datacenter-power.** Three gates: (a) the 07-31 tape faded 56% of the peak gain on a record beat, which is a poor entry regime for confirmed proof; (b) the share-gain-vs-end-market ambiguity is the whole thesis and is unresolved from this print; (c) no capacity in the book against the €160k reserve floor and the existing cohort. **Re-eval trigger: Q3'26 print (late Oct)** — falsifier #1 is the test.
+
+## 🟡 2026-08-03 (Mon) T+2 — the entire print reaction is gone
+
+Back-reference: `signals/cross-source-log/2026-08-03-mon-eod-kr-us-decoupling-12pp.md` §4.
+
+| | |
+|---|---|
+| Pre-print close 07-30 | $1,316.18 |
+| Print reaction 07-31 | $1,426.03 (+8.35%), intraday peak $1,568.21 (+19.15%) |
+| **Close 08-03** | **$1,344.37 (−5.73%)** |
+| **Cumulative vs pre-print** | **+2.14%** — **0.1% of the peak gain retained** |
+
+A record quarter, a full-year Enterprise Data growth **floor raised 85%→130%**, and a doubled buyback — **effectively the entire move surrendered in two sessions**, on a day when the US AI complex was broadly *up* (QQQ +1.76%, NVDA +2.93%, SNDK +6.03%). So this is not tape-wide risk-off; it is name-specific give-back.
+
+**This strengthens the 07-31 read rather than weakening it.** That artifact called the fade *"the highest-proof / lowest-ask cell we have observed this cycle"* and read it as a statement about the marginal buyer's price rather than the fundamental. Two more sessions of give-back against a rising cohort is further evidence for exactly that: **confirmed proof is not being paid for at these levels.**
+
+**No falsifier is touched.** All three registered falsifiers key to the Q3'26 print — Enterprise Data growth ≥130%, forward days-of-inventory ≤125, non-GAAP gross margin ≥54.5%, and the 10-Q customer-concentration disclosure. **A price move touches none of them**, which is by construction: they were written to be instrument-valid against reported quantities, not against the tape.
+
+**Position implication:** **NO ACTION — no entry — WATCHLIST unchanged.** The gate was never price; it is the unresolved share-gain-versus-end-market ambiguity (H-C 40%), and a cheaper entry does not resolve it. Re-eval stays the Q3'26 print. 🟡
