@@ -13,115 +13,24 @@
 
 ---
 
-- [ ] **P0 / harness / 2026-07-28** [INFRA, DUE] — INTAKE-BOUNDARY ENFORCEMENT (the hole all four basis errors came through)
-  - Origin: fresh-session audit 2026-07-27 (F19 + "the framework commissions the middle and neither end") + L44 meta-class N=4. Reception + independent re-check: `meta/redteam/2026-07-27-fresh-session-audit-RECEPTION-and-independent-recheck.md`
-  - Scope: (a) **CITATION_PATTERNS URL hole** — `r"https?://\S+"` accepts any URL-shaped string; verified at `meta/hooks/anti-fabrication-hook.py:76`. Needs format validation at minimum (arXiv/DOI/known-host shape) and a resolvability check where cheap. (b) **basis-tag requirement** — a price/level/commodity figure entering a threshold or valuation instrument must carry its basis (settle vs spot, auction vs tick, raw vs adjusted, benchmark name) or be rejected. (c) **same-artifact numeric contradiction check** — §1.1 vs §6.4 disagreed by a full pp in one file and nothing looked. (d) **read-only/audit session posture** — git-check hook has no concept of one; it forced the auditor to choose between its instruction and the hook.
-  - Linked: `meta/hooks/anti-fabrication-hook.py`, `predictions/lessons.md` L44, `meta/data-access.md`
-- [ ] **P1 / harness / 2026-07-29** [INFRA] — DEAD-HOOK SWEEP (F20 class; the v1 incident was a class, not an incident)
-  - Origin: verified here — `antifragility-mn-hook` requires the literal `P(bull`, present in **4 of 92** thesis files. Inert on ~96% of the corpus while passing its own fixtures, because the fixtures encode the unused format.
-  - Scope: for EVERY live hook, assert its trigger against the REAL corpus, not fixtures. A hook whose test fixtures use a format the corpus does not use is untested. Report fire-capability per hook.
-  - Linked: `meta/hooks/*.py`, `meta/tests/test_framework_codifications.py`
-- [ ] **P0 / harness / 2026-07-24** [INFRA, CAL, DUE] — DEEP-DIVE DEFERRALS + K3 REWORK, **REMAINING scope** (✅ executed 2026-07-23 by the Fable-5 audit instance, receipts at `meta/redteam/2026-07-23-fable5-harness-audit-P0-hardening.md`, commits 4b26e72 + e477487: all four 🔴 now-or-24 items (a)-(d); G-28 numerator reclassification — **MATERIAL: flips the 08-06 read from FLAT/RISING-retire to FALLING-keep**; e04eaef ref-order adjudicated origin/main-first; redirect over-block FP killed with TPs pinned; probe-pollution channel closed via LLMNA_PROBE tagging). **REMAINING:** (1) G-19 cascade-hook changeset-window (diff vs last-Stop ref — real hole, K3 refuted the masking rationale; needs stored-ref design); (2) stop-hook-git-check 8-exit-path inventory; (3) K3 Q5 blind-spots: blanket stop_hook_active guard = enforcement-free Stop after every block (LIVE-enforcement change → Rule #19 review-gated, spec-then-review, no solo ship), stdin-schema-drift invisible-death class, 337-agent journal receipt gap; (4) exit-1-outside-repo FP; (5) ~150 MEDIUM/LOW from the extract (triage pass); (6) NEW 07-23: test_framework_codifications 198/200 pre-existing RED — two stale todo.md content-couplings, re-scope test to durable anchors. **CERTIFIED (no rework):** f19663d session-start 7→83 (K3 clean on real corpus).
-- [x] **P0 / harness / 2026-07-26 DONE** — BRANCH-POSITION CHECK IS LIVE ON `main` (landed 087fbb1, operator-authorized direct push)
-  - **Verified live, not asserted:** `git merge-base --is-ancestor da04101 origin/main` now PASSES. `branch_position()` is present in `session-start-hook.py` on `main`. Any session cut from `main` from 2026-07-26 forward inherits the check.
-  - **The defect demonstrated itself on the way out:** this session's own start-briefing reported "up to date with origin/main (25 ahead)" while the branch was in fact **3 behind** — the stale-briefing failure, in the session convened to fix it. Fetch-then-measure is the only trustworthy order.
-  - **Landed 28 commits**, fast-forward, 0 conflicts. One merge conflict en route (append-only `hook-fire-log.md`) resolved by true union.
-  - **Near-miss worth keeping:** the first union attempt deduped identical lines and silently dropped ~250 of them. Those are legitimate repeat fires (same hook, same second). That file is the substrate Rule #11 requires hook-fire COUNTS to be computed from — deduping it would have corrupted the counting source inside the session about miscounting. Resolved with `git merge-file --union` (preserves duplicates); arithmetic checked: base 1384 + 41 ours + 2 theirs = 1427. **Never dedupe an append-only log during conflict resolution.**
-
-- [ ] **P1 / harness / 2026-08-02** [INFRA, CAL] — SHALLOW-CLONE COUNT CORRUPTION (new class, found 2026-07-26)
-  - **What:** session containers clone SHALLOW by default (`.git/shallow` present, `git rev-parse --is-shallow-repository` = true). Every ABSOLUTE history count is silently truncated — here by ~774 commits — and three false "root" commits appear at the fetch boundary, one dated 2026-03-29. Nothing warns you. This produced the published claim "344962f is main's 53rd commit" (true value: 826th of 1497).
-  - **The invariant that saves the hook:** the behind/ahead GAP is shallow-invariant (671 shallow vs 670 full; ±1 boundary). `branch_position()` is correct on shallow clones *because* it uses `rev-list --left-right --count`. A position-based "improvement" would break silently in the default container — noted in the docstring as do-not-regress.
-  - **Scope:** decide whether the wake protocol should run `git rev-parse --is-shallow-repository` and either unshallow or refuse to publish absolute counts. Cheap check; the failure is silent and reached a published artifact.
-  - **Cross-ref:** `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md` §0a.
-
-- [ ] **P1 / harness / 2026-08-08** [INFRA, CAL, DUE] — MACRO-ANCHOR INSTRUMENT GAP (the real overconstraint finding; artifact `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md`)
-  - **Do NOT re-attempt the three fixes withdrawn on 2026-07-25.** They were measured 668 commits stale and are wrong: (a) recursion guards — already present on all 15 Stop hooks; (b) retire `structural-output` + `llm-native-priming` — **overridden by the operator's 2026-07-06 KEEP-BOTH decision, adjudication 2026-08-06, G-28 already flips the read to FALLING/keep**; (c) delete the `WORKFLOW_LABELS` short-circuit — 2 fires ever (one a probe), not worth a Rule #19 HIGH change. Any future audit proposing these must first show `git rev-list --left-right --count origin/main...HEAD` = 0 behind.
-  - **The live finding:** 93% of all enforcement cost sits in TWO hooks — `structural-output` (169 fires) + `macro-anchor` (152 fires, one reason, ~5/day every day). Everything else combined = 4%.
-  - **Blocker is instrumentation, not policy:** `macro-anchor-hook.py:68` carries a pre-registered repair criterion ("FP rate >30% → tighten exemption list") that **cannot be evaluated** — `hook-fire-log.md` records the fire REASON and never the message. A pre-registered criterion its own instrument cannot feed is decoration; it has sat un-adjudicable through two scheduled reviews (06-24, 07-12).
-  - **Scope:** land `G-29` (per-fire message excerpt, ~120 chars) FIRST — it serves anti-fab and macro-anchor at once — then collect 2 weeks and adjudicate the FP rate on evidence. LIVE-enforcement change → operator-gated, spec-then-review.
-  - ⚠️ **Genuinely unresolved:** I do not know whether those 152 fires are false positives. The exemption list is broad and case-insensitive, which argues they may be legitimate catches on research output missing a tier tag. Reading code cannot settle it — only the excerpt log can.
-
-- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, DUE] — K3-SWARM DEFERRED FIXES (adjudicated 2026-07-20, artifact `meta/redteam/2026-07-20-K3-swarm-spec-vs-reality-adjudication.md`) — all confirmed, all dated
-  - Scope: (1) anti-fab scan-envelope patches: sub-200-char floor (G-21), bare-currency pattern (G-22), per-needle budget/skip-reason logging (G-29) — same file as the log_fire migration; (2) structural-output tier-check moved above the 800-char gate (G-27); (3) cascade-hook changeset window: diff vs last-Stop ref, not bare HEAD (G-19); (4) **structural-output-metric `tier-missing` exclusion (G-28) — HARD DEADLINE: before the 08-06 decision date**; (5) audit-log 6 placeholder-SHA backfill + 06-24 blank paths restored, else strike the lag-1 convention (G-48); (6) dead re-evals RUN-OR-RETIRE with receipts: codification-rule + signal-density (07-11), B44 (07-11), L26 (07-14), P#32 hit-rate apparatus + principle-applications-log revival-or-retirement (G-12), R1 convergence line → W10 prompt footer or retire (G-13), G-15 per-item disposition list for the 06-24 scope loss; (7) INDEX.md full refresh incl. held-positions (G-49); (8) hook doc-sweep: 5 missing CLAUDE.md bullets + README rows + mirror regeneration + install.sh counts (G-02/G-05/G-06); (9) cost-yield ledger: 10-day append-gap backfill-or-scope decision + format normalization (per the 07-20 re-eval stamp)
-  - Linked: meta/redteam/2026-07-20-K3-swarm-spec-vs-reality-adjudication.md
-- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, DUE] — RECEIPTS HOOK Phase 1 (say–do gap enforcement; K3 proposal adjudicated 2026-07-20; K3-Swarm amendment: Test-D extractor adopts "a header/status line is a PROMISE, not a receipt" — G-07)
-  - Origin: user commission via K3 ("optimal build to eliminate output-not-matching-actions"); adjudication + full spec at `meta/hooks/receipts-hook-spec.md` — every K3 incident citation verified (L36 verbatim; 2 mislabeled commits; cap-gate live)
-  - Scope: corpus FP backtest of the action-verb trigger FIRST (1c methodology); then checks 1-amended (claim-SHA accuracy — push-state stays with git-check), 3 (file-claim marker check), 4-if-cheap (Cron/sentinel); three-valued verdicts + fire-log diags + selftest; pre-commit telemetry-only-diff guard (kills the mislabeled-commit class); route built diff through K3 + fresh session BEFORE settings.json wiring. 1c (2026-08-03) is SUBSUMED as this hook's count-leg — do not build it separately.
-  - Linked: meta/hooks/receipts-hook-spec.md, meta/redteam/2026-07-20-self-trust-dual-review-adjudication.md (1c spec), meta/hook-fire-log.md
-- [ ] **P2 / harness / 2026-07-24→CARRIED** [INFRA] — fire-logging HOUSE STANDARD ✅ DONE (3805eb9) — RESIDUAL: prose-deadline extractor wiring + B47 hook post-review ship
-  - **✅ SHIPPED 2026-07-24 (commit 3805eb9, artifact `meta/redteam/2026-07-24-monthly-audit-build.md` + `meta/hooks/FIRE-LOGGING-HOUSE-STANDARD.md`):** hook_fire_log.py shared helper (house format, sanitize, fail-open, probe-aware, selftest/clock-check/rotate CLI); wired the 11 silent Stop hooks; rotation/cap policy (append-only through 08-06, metric-safe archive-aware); clock-source cross-check (first reading OK ~6h delta); structural-output-metric ref-order verified FALLING 0.120→0.102. Zero enforcement drift (suite unchanged). 7 already-logging hooks deliberately NOT re-pointed (net-negative author-blind risk).
-  - **✅ B47 HOOK DECIDED 2026-07-24:** SPEC written (`meta/hooks/b47-efficiency-claim-hook-SPEC.md`), **NOT shipped** — Rule #19 review-gated; routed to K3 + fresh-session review (4 questions, sharpest = can a text-scanning Stop hook catch a missing-LEG failure at all). Interim INGEST step-4b tripwire LIVE. Awaiting operator to relay review inputs.
-  - **RESIDUAL (carried, NOT done):** (1) prose-sweep #1 items 3+6 — wire the Test-D prose-deadline extractor into session-start-hook.py + parser coverage tests to meta/tests/ (real todo.md + grading-log.md fixtures); (2) B47 hook build+ship ONLY after review clears §6 (esp. Q4 layer question).
-  - Origin: fresh-Claude "what's missing" #1 (2026-07-20): fire evidence was ephemeral for most live hooks — now the 11 silent hooks persist.
-  - Linked: meta/hooks/, meta/hook-fire-log.md
-- [ ] **P3 / harness / 2026-07-24** [OPT] — session-prime per-item relative-age tags ([added YYYY-MM-DD · N days ago], computed at inject)
-  - Origin: K3 mechanism-3 (priming temporal decay) 2026-07-20; the TODAY header shipped same day — per-item tags need parseable per-item dates (mostly present in house headers), scoped to the audit. Companion candidate: European decimal-comma normalization for grounding (parked — over-grounding risk needs a design pass).
-  - Linked: meta/hooks/session-prime-hook.py, meta/session-prime.md
-- [ ] **P0 / prediction / 2026-07-28** [CAL, INDP, DUE] — 🔴 FORCED BINARY: quota-instrument process decision (escalated from P1 recurring after check #3)
-  - Origin: check #3 EXECUTED 2026-07-27 (`recurring-audit-log.md`) — BEHIND strict formal-call pace for the **THIRD consecutive week**, and **the fix routed at check #2 to the 07-24 audit was never made** (grepped the audit artifact: zero hits on stub-row / re-base / wake-call). Three measurements of the same unfixed gap.
-  - Scope: choose ONE, do not route again — (a) wake-calls get `grading-log.md` stub rows with P-provenance at booking time, making directional calls gradeable; or (b) the 150-by-Oct target is re-based honestly to what formal registrations actually run at. **If neither branch is chosen by check #4, retire the quota instrument rather than re-measure it** — an instrument that reports the same unactioned finding weekly is decoration.
-  - Linked: `predictions/grading-log.md`, `meta/recurring-audit-log.md`, Program v2 amendment #2
-- [ ] **P1 / prediction / 2026-08-03** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check #4 (150 provenance-tagged calls by Oct audit, ~2/day; weekly tally at Monday wakes) + folded weekly cost-yield (G-09). **Check #3 EXECUTED 2026-07-27** — 3 formal registrations / 11 graded legs / 7 lessons; BEHIND 3rd consecutive week; process decision escalated to the P0 above. Check #4 must record whether the binary was resolved.
-  - Origin: K3 plan review Q4 — n is the binding constraint, not method
-  - Linked: predictions/probability-resolution-program.md, meta/tools/brier_tally.py
-
-- [ ] **P1 / harness / 2026-08-20** [INFRA, CAL, recurring] — PROSE-DEADLINE monthly sweep #2 (recurring monthly; #1 COMPLETED 2026-07-20 in two parts — see recurring-audit-log 07-20 entries: re-evals executed/carried, extractor run, MU debt = phantom [grade existed since 07-06, row was stale], git-check collision DECIDED keep-as-is, extractor+tests bound to 07-24)
-  - Origin: self-audit found 2 methodology "First re-eval 2026-07-15" items with no execution evidence + proved session-start hook date-flags ONLY recurring items (create-date semantics otherwise)
-  - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion); (4) MERGED from v2 audit 07-17: backfill the MU formal 3-layer GRADE (owed since 06-24, now parser-visible); (5) decide the read-only-session/git-check collision (exempt hook-fire-log vs log outside tree); (6) add parser coverage tests to meta/tests/ (real todo.md + grading-log.md, fail on unmatched live rows)
-  - Linked: meta/recurring-audit-log.md 2026-07-17 entry, meta/hooks/session-start-hook.py
-
-- [ ] **P1 / process / 2026-07-19** [INFRA] — USER-SIDE API KEYS outstanding (fact-layer completion; per `meta/flows-positioning-acquisition-plan.md` + `meta/data-access.md`)
-  - Origin: 2026-07-17 flows/positioning plan + registry gaps
-  - Scope: (1) **ECOS_API_KEY** (ecos.bok.or.kr — KR credit/margin macro series; already queued, highest yield); (2) **KRX Open-API key** (openapi.krx.co.kr-class signup, Korean forms like DART — unlocks T1 daily foreign net-flows per KR stock incl. SK Hynix; else stays agent-bridged T2); (3) **EDINET_API_KEY** (parked — JP filings; MFA signup flow); env-var names already reserved in data-access.md. Add each to the cloud environment settings; session verifies via setup.sh boot probe.
-  - Linked: meta/data-access.md, meta/flows-positioning-acquisition-plan.md
-
-- [ ] **P2 / research / open** [INDP, AF, POS] — CONSUMER WORLD-REVIEW: SEALED-DIFF leg (build DONE 2026-07-11, `sector/consumer-adoption-worldview-2031.md` v2 adversarially amended; REMAINING: user sends his sealed picture -> diff artifact; then annual waypoint grading at year-end wakes)
-  - Origin: user request + v2 refinement (verbatim-adjacent: "as if somebody asked you in 1999 how end consumers would interface with the Internet and what applications would be used at scale... a lot of people would not have foreseen Facebook or Google. That's what I want to hone in on. Doesn't have to be 2030 — any year"). SPEC v2 (supersedes v1 legs 1-2; keeps 3-5): **Leg 0 RETRODICTION-FIRST** — fit the forecasting method on TWO historical cycles (1999 internet, 2007 mobile) with the loser-gate (method must retrodict pets.com/WAP/push-tech failures too, else hindsight cosplay; pre-training contamination stated: the METHOD is the deliverable, not outcome memory). **Leg 1 PRIMITIVES-NOT-APPS** — what AI makes FREE + what NEW primitive has no pre-AI analog (persistent personal memory/context, delegated agency, synthetic relationships) — winners live on primitives, not better chatbots. **Leg 2 EMBRYO INVENTORY** — today's at-scale consumer residues ranked SixDegrees-2026 vs already-winner (usage curves, not press). **Leg 3 LATTICE + SURPRISE QUOTA** — each branch needs ≥1 mechanism-backed candidate as absurd-sounding today as life-uploading in 1999. Target year derived from the analogy's own timing structure (infra inflection + 8-10yrs ≈ 2030-2033). RETAINED from v1: waypoints wired to catalyst clock/calibration ledger; decision surface (venues/layers capturing the consumer surge per branch → book implications); sealed-diff protocol (user's picture only after mine is committed).
-  - Scope: weekend-class, ~15-25 agent fires; SHARE EVIDENCE with funding-shock refresh + end-demand P1 (legs overlap). Fires when user sends the input block.
-  - Linked: sector/ (new file), meta/successful-deployment-search-spec.md, sector/ai-funding-shock-node.md
-- [ ] **P1 / USER-ACTION / 2026-07-13** [POS] — DeGiro/N26 availability check on REIA-surfaced names — LIST HANDED TO USER 2026-07-13; RESULT #1: Nanya 2408.TW NOT available on DeGiro or N26 (user-verified) → watchlist-INSTRUMENT only
-  - Origin: 2026-06-27 REIA Batch #2-4 (power / CPU-server / CXMT) per `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md`. All are watchlist-level / PRE-THESIS — availability check gates whether they're worth a Workflow #9 thesis build.
-  - ⭐ PRIORITY (EU-accessible + fills Layer-3 power + EU-sovereign-AI gaps) — check these first:
-    - [ ] Siemens Energy — ENR (Xetra/Frankfurt)
-    - [ ] Schneider Electric — SU (Euronext Paris)
-    - [ ] ABB — ABBN (SIX Swiss)
-    - [ ] Prysmian — PRY (Borsa Italiana / Milan)
-    - [ ] Nexans — NEX (Euronext Paris)
-    - [ ] Legrand — LR (Euronext Paris)
-    - [ ] Infineon — IFX (Xetra)
-    - [ ] ASML — ASML (Euronext Amsterdam) [likely already accessible]
-  - Secondary (check access — may be restricted):
-    - [ ] Lenovo — 0992 (HKEX)
-    - [ ] Wiwynn — 6669 (TWSE) / Tokyo Electron — 8035 (TSE)
-  - US (likely accessible, lower priority to verify): GEV / ETN / VRT / CEG / VST / TLN / BE / CLF / AMD / ARM / ALAB / MU / LRCX / AMAT / KLAC / ACMR
-  - NOT accessible (don't bother): CXMT (Shanghai STAR), Naura/AMEC/Piotech (China A/STAR), SK Hynix/Samsung direct KRX (Nasdaq ADR ~July 10 = workaround)
-  - NEXT STEP after check: tell Claude which are available → rank accessible subset by conviction + sizing fit → Workflow #9 thesis build on the ones to pursue.
-  - Linked: `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md`, `watchlist/candidates.md`
-
 ---
 
 ## Open
 
-- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST (UPDATED 2026-07-22: **✅ DEFAULT BRANCH → main DONE + API-CONFIRMED** — the stale-clone/F1/K3 trap is CLOSED; routine re-bind RETIRED 07-19). REMAINING user-side: (a) **stale-branch DELETE** — now UNBLOCKED (first-test-new-repo-wxedu9 no longer default, deletable), + claude/w11-wakes etc.; (b) **branch protection** — Settings→Branches confirmed "Classic branch protections not configured" (add ruleset on main: no force-push, no delete); (c) env **network allowlist** (403-wall cause); (d) **API keys** as env vars (ECOS/EODHD/DART/EDINET/Finnhub/FRED). **DEPRIORITIZED per user 07-22: loopframe pause+key-rotation** — content-tool keys (Twitter/Recraft/Runway/Ideogram), low consequence, user judged posts harmless; do at leisure. Full steps: `meta/user-browser-checklist.md`. RE-SURFACE each morning until empty.
-  - Origin: user 2026-07-08 "save everything I must do in a browser so I can recall it tomorrow."
-  - Scope: user completes in browser; I verify (fetch test / transcript read / branch gone) and delete items.
-  - Linked: `meta/user-browser-checklist.md`, `sector/market-state-function-spec.md` §6, E6 artifact.
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, DUE] — RECEIPTS HOOK Phase 1 (say–do gap enforcement; K3 proposal adjudicated 2026-07-20; K3-Swarm amendment: Test-D extractor adopts "a header/status line is a PROMISE, not a receipt" — G-07)
+  - Origin: user commission via K3 ("optimal build to eliminate output-not-matching-actions"); adjudication + full spec at `meta/hooks/receipts-hook-spec.md` — every K3 incident citation verified (L36 verbatim; 2 mislabeled commits; cap-gate live)
+  - Scope: corpus FP backtest of the action-verb trigger FIRST (1c methodology); then checks 1-amended (claim-SHA accuracy — push-state stays with git-check), 3 (file-claim marker check), 4-if-cheap (Cron/sentinel); three-valued verdicts + fire-log diags + selftest; pre-commit telemetry-only-diff guard (kills the mislabeled-commit class); route built diff through K3 + fresh session BEFORE settings.json wiring. 1c (2026-08-03) is SUBSUMED as this hook's count-leg — do not build it separately.
+  - Linked: meta/hooks/receipts-hook-spec.md, meta/redteam/2026-07-20-self-trust-dual-review-adjudication.md (1c spec), meta/hook-fire-log.md
+- [ ] **P1 / prediction / 2026-08-05** [INDP, AF, POS, CAL] — AI SUPPLY-CHAIN EARNINGS PREDICTION PROGRAM — pre-register all wave-1 names before their prints; resolve each at print
+  - **RESCUED 2026-08-03 from 32d stale — this is the P0 FORCED BINARY in disguise.** Per the 08-01 reframe: in a fluid-outcome domain the outcome never grades the process, so the volume of small resolvable calls is the ONLY outcome-independent evidence channel the harness has. This program IS that channel.
+  - Origin: user directive 2026-07-02 (consensus → hard data → LLM-native prediction: revenue + EPS + guidance; log + resolve; spawn as many agents as needed). Program spec: `predictions/2026-07-02-AI-supplychain-earnings-program.md`.
+  - Scope: per-name prediction files pre-registered BEFORE each print (Samsung prelim ~Jul-7-8 → TSMC ~Jul-16 → ASML ~Jul-15/16 → Samsung full + Murata + SKH late-Jul → BE Jul-30 [done] → SNDK Jul-31 → Sumco early-Aug → ALAB Aug-11 → Kioxia mid-Aug); grading-log stubs; GRADE each at resolution (rev/EPS/guidance + reaction, 3-layer).
+  - Linked: `predictions/2026-07-02-AI-supplychain-earnings-program.md`, `predictions/grading-log.md`
 
-- [ ] **P2 / research / 2026-07-08** [INDP, CAL, INFRA] — MARKET-STATE FUNCTION build (spec at `sector/market-state-function-spec.md` v0.1) — LLM-native holistic market read: computed state vector (dispersion/correlation/divergence, not index levels) + P-weighted regime taxonomy w/ pre-registered flips + divergence ledger. GATED ON: (1) USER DECISION — market-data source (API key vs daily agent-pull vs hybrid); (2) compute-layer P2 build; (3) routines execution (E6 saga). Conditioning layer only — never macro trades (mission guard).
-  - Origin: user design question 2026-07-08 (SKH-ADR-oversubscribed-vs-deteriorating-tape divergence example).
-  - Scope: phases P1-P3 per spec §5; kill condition = 30 refreshes of pure narration.
-  - Linked: `sector/market-state-function-spec.md`, `sector/ai-funding-shock-node.md`, compute-layer todo item.
-
-- [ ] **P3 / research / 2027-01-15** [CAL] — ANTHROPIC IPO DECISION PACKAGE — CALENDAR-PARKED 2026-07-13 per user decision (no IPO before >=2027; B63-mandatory package pre-registered in meta/principal-questions.md; revisit at first S-1/listing news or 2027-01-15, whichever first). Was: P1 ANTHROPIC IPO DECISION PACKAGE (pre-registered BEFORE any listing exists — user proposed "sell all, buy the IPO big stack" 07-08; dissent delivered, middle path = build the framework now)
-  - Origin: user hypothesis 2026-07-08 (`signals/cross-source-log/2026-07-08-user-hypothesis-expectations-treadmill-sell-all-buy-anthropic-ipo.md`); B63 governs the ENTIRE package (model-provenance — adversarial treatment mandatory on every bull claim).
-  - Scope: (a) valuation-band framework — what $-valuation makes the entry asymmetric vs the ~$965B Series H / ~$47B RRR anchors (compute forward-revenue multiples vs listed comps at their IPOs); (b) entry-route menu with pros/cons: IPO-day retail vs post-lockup vs post-first-earnings vs not-at-all; (c) allocation CAP pre-committed at Active tier (3-8%) — NOT "big stack" — with the livelihood-correlation argument written in; (d) the exposure-overlap map (user already has Anthropic exposure via workflow dependence + the semi book IS lab-capex-downstream); (e) Rule #17 ensemble at any execution decision; (f) trigger to activate: public F-1/S-1 flip or exchange/date confirmation (currently T3 speculation only).
-  - Linked: `meta/private-tracker.md` (Anthropic), `sector/application-layer-framework.md` §capture-stack, the 07-08 hypothesis artifact.
-
-- [x→MONITORING] **P2 / research / 2026-06-29→2026-07-04** — AI-FUNDING-SHOCK NODE **BUILT** (`sector/ai-funding-shock-node.md`, weekend deep-work #1, 2026-07-04): three legs + leverage dashboard + CANARY BASKET (rotation design: CoreWeave improving / Nebius flashing) + telecom calibration + 3 scenarios w/ P-weights + 6 pre-registered tells + retirement falsifier. REMAINING SUB-ITEMS: (a) margin-debt %GDP recalc at $1.42T; (b) 30Y JGB 2.810-vs-4.04% primary reconciliation; (c) 30Y UST series mismatch; (d) identify the ~$8.7B-debt issuer; (e) rating-agency maturity schedule hunt. ORIGINAL ITEM TEXT (audit): — Codify "AI-funding-shock" scenario + capital-markets/credit-channel NODE — **2026-07-03 EVE: AFFORDABILITY LEG TRIANGULATED N≥3 (Citi + CLSA/SemiAnalysis 35%→48% memory-share-of-capex + ~$236bn AI-linked debt through May ~4x YoY + capex ~94% of hyperscaler OCF; per `signals/cross-source-log/2026-07-03-broker-ddr-note-reconciliation.md`) — node build now has all three legs (vendor-financing / rates-driver / affordability)** — — **2026-07-02 EVE new datapoints: Nvidia revenue-share vendor-financing instrument (SharonAI 8-K T1, ~210k GPUs seeded into credit-constrained neoclouds) + Meta Compute excess-capacity monetization (Bloomberg T1) = circularity + overbuild-monetization both live; fold into node build; **NVIDIA BUYBACK GUARANTEE (Leg B 07-02 EVE): instrument reportedly includes buying back unsold GPU capacity at agreed price = demand-guarantee/Lucent-mechanic (Tunguz comparison T2); PRE-REGISTERED TELL: Nvidia 10-Q ~Aug-2026 buyback-liability footnote — calendar it** — (harness framework gap surfaced by BIS Annual Report 2026-06-28) — **UPGRADED 2026-07-02: add the RATES-DRIVER module** (US Leg B absence-question hit the same gap: market pricing ~54-60% Fed HIKE by YE, Warsh hawkish, 30yr 5.19%; the node has the leverage SYMPTOM but no rates DRIVER). Hard-data layer now available: FINRA margin debt record $1.28T/4.1% GDP + ~$120B off-balance-sheet AI SPV debt + H100 rentals −70-90% + CoreWeave $4.2B 2026 maturity (= the system canary). Also fold in PD-6 candidate (cost-of-capital as next bottleneck → self-funded vs debt-funded capex screen). Per `signals/cross-source-log/2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`.
-  - Origin: EU Leg B discovery → BIS Tier-2 verification (`signals/cross-source-log/2026-06-29-morning-feed-eu-2leg-bis-ai-credit-channel.md`). Harness models AI only from the physical supply side (HBM/NAND/wafers/MLCC/power) — NO node for the credit/funding transmission channel. If the next AI drawdown comes via credit (not chip oversupply), the framework is blind.
-  - Scope: add an "AI-funding-shock" scenario to `sector/scenarios.md` (capex freezes via credit event → memory demand falls even with pristine memory balance sheets); recompute held-name anti-fragility under it (NBIS = HIGH exposure / leveraged buildout; memory names = self-funding-insulated but demand-exposed); install the **5-signal monitored set** as a standing watch: (1) neocloud HY spreads / GPU-backed-debt ratings + NBIS converts vs par; (2) neocloud raises failing/downsizing; (3) hyperscaler capex GUIDE cuts; (4) private-credit redemption/markdown; (5) GPU rental <~$1.50/hr.
-  - Linked: `sector/scenarios.md`, `companies/NBIS/thesis.md`, `companies/HYNIX/thesis.md`, `sector/themes.md`
-
+- [ ] **P1 / research / 2026-08-10** [CAL, BOT, POS, AF] — HBF Gate-2 read #1: FMS + Hot Chips (~Aug 2026) silicon/sample signal + SanDisk Q4 FY26 call + SK Hynix Q2-26 call — confirm HBF samples ship ON SCHEDULE (H2-2026)
+  - Origin: `watchlist/HBF-trajectory-monitor.md` — sample-on-schedule is the explicit reversal trigger for the trim-KIOXIA verdict (3/3 ensemble ~71%). Slip past H2-2026 → reconsider.
+  - Scope: read FMS/Hot Chips HBF demos + SanDisk/SK Hynix call transcripts; update H1/H2/H3 weights in the monitor; cascade to SNDK + KIOXIA theses if material.
+  - Linked: `watchlist/HBF-trajectory-monitor.md`, `companies/SNDK/thesis.md`, `companies/KIOXIA/thesis.md`
 - [ ] **P2 / research / 2026-08-05** [INDP, POS, BOT] — Add a lightweight FX-SENSITIVITY line per JP/KR held name (harness framework gap, KJ Leg B 2026-07-01 absence-question). Yen ~162-163 (~40-yr low, fiscal-driven/Honebuto ¥370T) + won >1,500 (16+ sessions, possible +50bp BOK hike July-16 MPC) are BOTH live simultaneously and now first-order for reported earnings + multiple across MURATA/KIOXIA/SUMCO (weak-yen translation tailwind) + HYNIX (weak-won export aid vs BOK-hike multiple headwind). Harness has NO per-name FX translation/hedge line — currently ad-hoc. Scope: one-line FX-exposure tag per JP/KR thesis + July-16 BOK MPC as a scheduled binary on the calendar. Per `signals/cross-source-log/2026-07-01-morning-feed-korea-japan-2leg-scan.md`.
   - **RESCUED 2026-08-03 from 33d stale — this item named the exact gap that opened this weekend.** Japan MOF/BOJ ran coordinated intervention 07-30->08-01 with totals printing 08-03->08-07; MURATA's FY raise leans on the yen tailwind its own T1 短信 named, and SUMCO's Q2 interim lands 08-06 INSIDE the disclosure window. A held-name mechanism we do not track.
 - [ ] **P2 / research / 2026-08-05** [INDP, POS, BOT] — Add 2 MACRO TRIPWIRES the harness has no framework for (KJ Leg B absence-question): (a) **Japan fiscal/rates** (JGB 10Y→3%, Takaichi ¥370tn) → yen-reversal risk that flips the JPY-translation tailwind for Murata/Kioxia/Sumco; (b) **naphtha/energy-security** (Hormuz; ~70% JP naphtha ME-sourced, spot ~doubled) → non-AI bottleneck hitting ~30% of JP mfg. Both can move the JP/KR book regardless of the memory cycle.
@@ -129,47 +38,23 @@
   - Origin: `signals/cross-source-log/2026-06-29-morning-feed-korea-japan-2leg-proper.md` §absence-question.
   - Scope: add a JGB-yield/yen tripwire + a naphtha/Brent tripwire to a macro-watch note; flag if either crosses a level that would re-rate the JP exporters.
   - Linked: `sector/where-we-are.md`, `companies/MURATA|KIOXIA|SUMCO/thesis.md`
-- [ ] **P2 / research / 2026-07-01** [INDP, AF, POS, CAL] — US memory-tariff WATCH: read the **2026-07-01 Commerce data-center semiconductor market report** — the Phase-2 gate. (Memory-tariff verification 2026-06-29 RESOLVED the precursor → NEUTRAL/NON-EVENT: memory NOT in Phase-1, data-center exempt, pass-through-to-buyer; residual = ~15% HBM "second-wave" tail. Re-rate ONLY if Phase-2 closes the data-center exemption or a Korea-punitive tier emerges.)
-  - Origin: `signals/cross-source-log/2026-06-29-us-memory-tariff-verification-NEUTRAL-nonevent.md`.
-  - Linked: `companies/HYNIX/thesis.md` (carries the cohort tail-risk).
+- [ ] **P2 / harness / 2026-08-10** [INFRA, DUE] — **FIVE TO-DO ITEMS ARE INVISIBLE TO THE OVERDUE PARSER.** Found 2026-08-03 during the authorized backlog triage, by reconciling a loose header count (79) against the documented template (74). Five items carry a date field that is not a date — `2026-07-24→CARRIED`, `open`, `2026-Q4`, `2026-06-25→2026-07-04`, plus one non-standard `USER-ACTION` category. The session-start hook sorts and surfaces by parsed date, so **these can never be flagged overdue however long they sit.**
+  - Fix: either normalise them to real dates (and accept whatever overdue status that reveals), or teach the parser a documented "no-date" bucket that it surfaces separately — silently dropping them is the current behaviour and is the worst of the three.
+  - Generalisable: this is **L53's class applied to the queue itself** — a correct entry filed in a form nothing reads is functionally invisible. Found only because a delete pass forced two independent counts of the same file to be reconciled.
+  - Linked: `meta/todo-deletions-2026-08-03.md`, `meta/tools/harness_supervisor.py`
 
 ### HBF trajectory monitor — catalyst checkpoints (added 2026-06-28; the open hinge in the SNDK-keep / KIOXIA-trim verdict)
-
-- [ ] **P1 / research / 2026-07-28** [POS, AF, CAL, INDP] — BUILD the Gulf-conflict macro SCENARIO (scenarios.md gap surfaced by Leg-B absence question 2026-07-25)
-  - Origin: 2026-07-25 EOD Leg-B discovery. `sector/scenarios.md` has NO scenario for sustained US-Iran/Gulf conflict, despite the harness tracking H3 as a bare numeric gate (Brent >= $95) for weeks. Five months of war, Houthi strikes now hitting Saudi REFINING infrastructure (Jizan/Yanbu, 07-25), escalation decision pending, Congress unable to bind. We have a tripwire with no theory behind it.
-  - Scope: a weighted scenario with the transmission chain made explicit — Gulf energy-infra risk -> oil floor -> inflation pass-through -> Fed reaction (FOMC 07-28/29 is the first live test) -> risk appetite for high-multiple AI names -> memory/AI-capex cohort. Must state which held names win/lose in it and recompute their M/N anti-fragility. Must ALSO define what un-fires H3 (the 07-24 pullback to ~$90.47 already put Brent back below the gate — the current gate has no documented reversion rule).
-  - Why P1 not P2: FOMC lands 07-28/29, one day before the Jul-29 SKH print that gates the conditional add. The two interact and we currently have no framework for the interaction.
-  - Linked: `sector/scenarios.md`, `signals/cross-source-log/2026-07-25-fri-eod-reaction-leg-grade-legb-kr-etf-crackdown.md` §4.3, five-calls call #4 H3 leg
-- [ ] **P2 / process / 2026-07-27** [INFRA, OPT] — RECEIPTS HOOK Phase 1: add the "pending-resolution promise" extractor (L42 corollary, 2026-07-25)
-  - Origin: the 07-22 twin-print T+24h legs sat 2 sessions overdue behind a written promise ("T+24h legs I-5/N-5 pending 2026-07-23 close") that no mechanism checked. Surfaced only because the 07-25 EOD Routine happened to run the deadline parser. This is G-07's "a header/status line is a PROMISE, not a receipt" instantiated on the PREDICTIONS layer rather than the harness layer.
-  - Scope: extractor recognizes "pending {DATE}" / "pending {EVENT} close" inside predictions/*.md and grading-log rows, and surfaces any whose date has passed at session start alongside the existing pending-grade parser (which only reads grading-log resolution dates and MISSED these — the legs were inside a row already marked partially graded).
-  - Linked: `research/meta/hooks/`, `predictions/grading-log.md`, lessons L42
-- [ ] **P1 / research / 2026-08-10** [CAL, BOT, POS, AF] — HBF Gate-2 read #1: FMS + Hot Chips (~Aug 2026) silicon/sample signal + SanDisk Q4 FY26 call + SK Hynix Q2-26 call — confirm HBF samples ship ON SCHEDULE (H2-2026)
-  - Origin: `watchlist/HBF-trajectory-monitor.md` — sample-on-schedule is the explicit reversal trigger for the trim-KIOXIA verdict (3/3 ensemble ~71%). Slip past H2-2026 → reconsider.
-  - Scope: read FMS/Hot Chips HBF demos + SanDisk/SK Hynix call transcripts; update H1/H2/H3 weights in the monitor; cascade to SNDK + KIOXIA theses if material.
-  - Linked: `watchlist/HBF-trajectory-monitor.md`, `companies/SNDK/thesis.md`, `companies/KIOXIA/thesis.md`
-- [ ] **P1 / research / 2026-10-15** [CAL, BOT, POS] — HBF Gate-1 read: OCP Global Summit (~Oct 2026) — spec ratification status + new signatories; WATCH for Samsung-own-HBF fork (biggest fragmentation signal) + SanDisk Q1 FY27 / SK Hynix Q3-26 calls
-  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 1 — single-standard-wins + SanDisk-inside-it is load-bearing for the moat. Fork → H2 (revert to valuation → KIOXIA).
-  - Scope: read OCP proceedings + JEDEC + Samsung/Kioxia IR (JP/KO native parallel); update monitor weights; cascade if material.
-  - Linked: `watchlist/HBF-trajectory-monitor.md`
-- [ ] **P2 / research / 2027-02-15** [CAL, BOT, POS] — HBF Gate-2 durability read: ISSCC 2027 (Feb) — write-endurance / latency / thermal-in-HBM-form-factor papers
-  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 2 — technical-durability is the silent failure mode for NAND in a memory role.
-  - Linked: `watchlist/HBF-trajectory-monitor.md`
-- [ ] **P1 / research / 2027-03-15** [CAL, BOT, POS, AF] — HBF Gate-3 demand read: NVIDIA GTC 2027 (~Mar) — does NVIDIA name HBF (not just NVMe SSD) as a memory tier in the Rubin-successor reference architecture? (highest-information single event — would move H1 ~45%→~70%)
-  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 3 — NVIDIA reference-arch inclusion forces the standardization + hyperscaler gates to follow.
-  - Linked: `watchlist/HBF-trajectory-monitor.md`
 
 ---
 
 ### P2 — High priority new (added 2026-06-04 PM — bypass-route + architecture-of-tomorrow research)
 
-- [ ] **P2 / research / 2026-08-17** [INDP, AF, POS] — NVDA entry-trigger watch (post Apple-Blackwell + Rubin BOM optimization)
-  - **RESCUED 2026-08-03 from 34d stale** — largest name in the complex with no live entry trigger. Cheap to hold, expensive to be without.
-  - Origin: 2026-06-04 PM Apple-Blackwell cascade surfaced NVDA as REINFORCED thesis (marquee customer Apple confirms inference dominance). Currently 0% held per holdings.md. Need entry framework given L21 sector regime + €200K cash deployment cadence.
-  - Scope: define entry triggers + sizing (recommended 4-6% if entered, per portfolio target band); monitor for L21 regime break OR macro pullback >10% from current
-  - Falsifiers: NVDA Q2 FY27 (August) negative reaction despite BEAT + macro-neutral environment = L21 regime more severe; do not enter
-  - Linked: `companies/NVDA/thesis.md` (updated 2026-06-04 PM with Apple-Blackwell signal); `portfolio/constraints.md` (FIRE math + cash deployment); `predictions/lessons.md` L21
+### P2 — Medium priority
 
+---
+
+- [ ] **P1 / process / 2026-07-02** [INDP, CAL] — WORKFLOW #11 AUTONOMOUS DAY-LOOP live (user "go") — 5 wakes armed 2026-07-02 (KR/JP 02:22 / EU 08:23 / US 14:52 / EOD 22:17 / Sat 10:03; session-scoped, 7-day expiry). RE-ARM required by ~2026-07-09 or on any new session (protocol in `meta/workflow-11-autonomous-day-loop.md`; state in `meta/day-state.md`). 30-day falsifier audit 2026-08-02: autonomous-wake yield must match user-triggered mode + >=1 time-sensitive catch, else cut to catalyst-only.
+  - Linked: `meta/workflow-11-autonomous-day-loop.md`, `meta/day-state.md`
 - [ ] **P2 / research / 2026-08-15** [INDP, AF, POS] — Structural Winners Cohort dissection — name-by-name deep-dive
   - Origin: 2026-06-08 PM user-articulated 4-way structural winner + 12-architecture resilience synthesis; user directive: "save that entire list, and we can talk about this list tomorrow... maybe dissect them a little bit more"
   - Scope: Read `research/meta/structural-winners-cohort.md` — go through the 27 ranked names tier-by-tier. Priority dissection order: TIER 1 NEW (Shin-Etsu Chemical 4063.T + Nidec 6594.T), then TIER 2 cluster (TEL + AMAT + LRCX + KLA + ASML + APH + Hirose + TXN + ADI), then TIER 3 single-dependency names. Per Principle #36 multilingual parallel for Japan TSE names (Japanese press for Shin-Etsu + Nidec + TEL + Hirose + Daikin + Lasertec + HOYA + Harmonic Drive + Nabtesco).
@@ -200,34 +85,115 @@
   - Scope: (a) Confirm Taiwan TWSE 8358 investability on user's Degiro + N26 brokerages; (b) if investable, run full thesis with Workflow 8 DEEP-DIG quality bar (≥2 indep sources for capacity, ≥1 supply response, ≥3 tickers cross-stack, ≥1 LOSER, specific falsifier); (c) compare against Mitsui Stage 3-4 entry penalty — Co-Tech at Stage 1-2 likely better Kelly bet
   - Linked: `companies/MITSUI/thesis.md`, `signals/cross-source-log/2026-06-02-citrini-lotte-hvlp-mitsui-deepdive.md`, `watchlist/candidates.md`
 
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, DUE] — K3-SWARM DEFERRED FIXES (adjudicated 2026-07-20, artifact `meta/redteam/2026-07-20-K3-swarm-spec-vs-reality-adjudication.md`) — all confirmed, all dated
+  - Scope: (1) anti-fab scan-envelope patches: sub-200-char floor (G-21), bare-currency pattern (G-22), per-needle budget/skip-reason logging (G-29) — same file as the log_fire migration; (2) structural-output tier-check moved above the 800-char gate (G-27); (3) cascade-hook changeset window: diff vs last-Stop ref, not bare HEAD (G-19); (4) **structural-output-metric `tier-missing` exclusion (G-28) — HARD DEADLINE: before the 08-06 decision date**; (5) audit-log 6 placeholder-SHA backfill + 06-24 blank paths restored, else strike the lag-1 convention (G-48); (6) dead re-evals RUN-OR-RETIRE with receipts: codification-rule + signal-density (07-11), B44 (07-11), L26 (07-14), P#32 hit-rate apparatus + principle-applications-log revival-or-retirement (G-12), R1 convergence line → W10 prompt footer or retire (G-13), G-15 per-item disposition list for the 06-24 scope loss; (7) INDEX.md full refresh incl. held-positions (G-49); (8) hook doc-sweep: 5 missing CLAUDE.md bullets + README rows + mirror regeneration + install.sh counts (G-02/G-05/G-06); (9) cost-yield ledger: 10-day append-gap backfill-or-scope decision + format normalization (per the 07-20 re-eval stamp)
+  - Linked: meta/redteam/2026-07-20-K3-swarm-spec-vs-reality-adjudication.md
+- [ ] **P1 / research / 2026-10-15** [CAL, BOT, POS] — HBF Gate-1 read: OCP Global Summit (~Oct 2026) — spec ratification status + new signatories; WATCH for Samsung-own-HBF fork (biggest fragmentation signal) + SanDisk Q1 FY27 / SK Hynix Q3-26 calls
+  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 1 — single-standard-wins + SanDisk-inside-it is load-bearing for the moat. Fork → H2 (revert to valuation → KIOXIA).
+  - Scope: read OCP proceedings + JEDEC + Samsung/Kioxia IR (JP/KO native parallel); update monitor weights; cascade if material.
+  - Linked: `watchlist/HBF-trajectory-monitor.md`
 - [ ] **P2 / research / 2026-07-31** [INDP, AF, POS, CAL] — SNDK **Q4 FY2026** print (label corrected 2026-07-02; date unconfirmed late-Jul→Aug-13) — **framing corrected 2026-07-06: SNDK EXITED ~07-01/02; print watch stands as watchlist-reference (L27 cohort test + TC-14 tell), size-up language below is HISTORICAL, deployment envelope-locked.** (Note: 'L17' below = the tombstoned number, see lessons.md — the live framework is L14/L14-v2.)
   - Origin: SNDK 5.2% under-sized vs 8-12% Active-Core target; Stage 2-3 + HIGH-CONCRETE CATEGORY EVENT markers ($42B backlog + Vera Rubin 1,152 TB SSD + MSA-CBA validation imminent + Vera BlueField-4 STX GIDS mandate). User considering ~€5-6K SIZE UP parallel to Kioxia initial entry.
   - Scope: (a) Track SNDK Q2 FY27 print (~late July 2026) — does revenue exceed Q4 FY26 $7.75-8.25B guide? Does backlog grow beyond $42B + 5 contracts? Does NCNR enforceability framework hold under audit?; (b) Stock reaction T+24h validates L14 framework forward-application; (c) If actual reaction +25-40% per Stage 2-3 + CATEGORY framework, L17 codified at N=2 (joint with Kioxia VLSI test)
   - Falsifier: If SNDK Q2 FY27 only +5-10% despite CATEGORY markers, L17 forward-application falsified — L14 only applies backward
   - Linked: `companies/SNDK/thesis.md`, `signals/cross-source-log/2026-06-02-kioxia-nand-volume-shock-verification.md`, `predictions/lessons.md` L14 codification + L17 candidate
 
-- [ ] **P1 / process / 2026-07-02** [INDP, CAL] — WORKFLOW #11 AUTONOMOUS DAY-LOOP live (user "go") — 5 wakes armed 2026-07-02 (KR/JP 02:22 / EU 08:23 / US 14:52 / EOD 22:17 / Sat 10:03; session-scoped, 7-day expiry). RE-ARM required by ~2026-07-09 or on any new session (protocol in `meta/workflow-11-autonomous-day-loop.md`; state in `meta/day-state.md`). 30-day falsifier audit 2026-08-02: autonomous-wake yield must match user-triggered mode + >=1 time-sensitive catch, else cut to catalyst-only.
-  - Linked: `meta/workflow-11-autonomous-day-loop.md`, `meta/day-state.md`
-- [ ] **P1 / prediction / 2026-08-05** [INDP, AF, POS, CAL] — AI SUPPLY-CHAIN EARNINGS PREDICTION PROGRAM — pre-register all wave-1 names before their prints; resolve each at print
-  - **RESCUED 2026-08-03 from 32d stale — this is the P0 FORCED BINARY in disguise.** Per the 08-01 reframe: in a fluid-outcome domain the outcome never grades the process, so the volume of small resolvable calls is the ONLY outcome-independent evidence channel the harness has. This program IS that channel.
-  - Origin: user directive 2026-07-02 (consensus → hard data → LLM-native prediction: revenue + EPS + guidance; log + resolve; spawn as many agents as needed). Program spec: `predictions/2026-07-02-AI-supplychain-earnings-program.md`.
-  - Scope: per-name prediction files pre-registered BEFORE each print (Samsung prelim ~Jul-7-8 → TSMC ~Jul-16 → ASML ~Jul-15/16 → Samsung full + Murata + SKH late-Jul → BE Jul-30 [done] → SNDK Jul-31 → Sumco early-Aug → ALAB Aug-11 → Kioxia mid-Aug); grading-log stubs; GRADE each at resolution (rev/EPS/guidance + reaction, 3-layer).
-  - Linked: `predictions/2026-07-02-AI-supplychain-earnings-program.md`, `predictions/grading-log.md`
-
 - [ ] **P1 / research / 2026-07-08** [INDP, AF, POS, CAL] — Samsung Q2 PRELIMINARY results (~Jul-7-8) — first hard demand read post-07-02 selloff
   - Origin: 2026-07-02 KR/JP selloff Tier-2 verification (`signals/cross-source-log/2026-07-02-kr-jp-selloff-TIER2-verification-addendum.md`). The 07-02 drawdown was verified sentiment/valuation, NOT demand; Samsung's preliminary (revenue/OP guidance-level) is the first hard test of whether HBM/memory demand is cracking or the drawdown was pure positioning.
   - Scope: (a) capture prelim numbers + HBM commentary; (b) test vs the falsifier gate — TRIPWIRE: primary-sourced Nvidia BASE-Rubin HBM order-volume cut OR hyperscaler capex cut = the real demand signal (neither exists as of 07-02); (c) cohort reaction read-through to HYNIX + KIOXIA + SNDK (ALL watchlist-reference — exited ~07-01/05; read-through informs re-entry framework + L27 N=2 test, not sizing).
   - Linked: `companies/HYNIX/thesis.md`, `signals/cross-source-log/2026-07-02-kr-jp-selloff-TIER2-verification-addendum.md`
 
-- [ ] **P2 / research / 2026-09-15** [INDP, CAL] — Cloudflare AI-crawler enforcement deadline (PD-3 data-enclosure catalyst)
-  - Origin: 2026-07-01 evening-brief Leg B discovery pass (`signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`). Cloudflare forces AI companies to separate search vs training/agent crawlers by 2026-09-15 or face default blocking on publisher sites.
-  - Scope: (a) at the deadline, verify enforcement actually happened + which labs complied vs got blocked; (b) does agent-crawler blocking create paid-rails demand for agentic browsing (new surface)?; (c) accrue PD-3 data-enclosure N-count (arXiv patronage exit = N=2 candidate).
-  - Linked: `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`
+- [ ] **P2 / process / 2026-07-29** [INFRA, OPT, recurring] — Weekly competitive-product surveillance — PASS #1 EXECUTED 2026-07-22 (artifact `signals/cross-source-log/2026-07-22-wed-competitive-surveillance-pass1.md`: SKH Δ LOWER / SUMCO watch-firmed / MURATA nil). **Cadence decision still USER-GATED: weekly (~200-320k tokens/mo) vs keep monthly-H2-only** — next pass provisionally 2026-07-29 (pairs with the SKH Q2 print; pushes the Samsung-HBM4-sample-only T2 datum to triangulation)
+  - Origin: harness-optimization audit 2026-06-26 TIER 3; MRVL Trainium 3 loss + SNDK MU 245TB ION both surfaced POST-HOC via monthly H2 bear-case workflow (should surface earlier)
+  - Scope: per held name, scan competitor-product announcements weekly (1-2 hops to direct substitutes); output per-name competitive displacement risk Δ vs prior week
+  - Cost: ~50-80k tokens/week for 7-name cohort = ~200-320k/month vs current monthly H2 bear-case (~280k); 4× cost vs monthly catches displacement 3-4 weeks earlier
+  - User-decision required: add weekly cadence OR keep monthly H2-only
+  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 3
 
-- [ ] **P2 / research / 2026-07-15** [INDP, POS, BOT] — Agent-security investable-surface scan (PD-4 watchlist GAP)
-  - Origin: same Leg B pass. Agents gaining OS/terminal access (Gemini Spark, ZCode) while being weaponized (Claude Desktop double-agent, DeepSeek ransomware) = CrowdStrike-shaped nascent category; NO public pure-play identified.
-  - Scope: map the emerging agent-security/identity/sandboxing landscape (startups, incumbent bolt-ons, funding rounds); identify any investable expression (public adjacents included); trigger-watch = first enterprise agent-breach headline.
-  - Linked: `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`, `watchlist/candidates.md`
+- [ ] **P1 / research / 2026-07-14** [INDP, POS, CAL] — TSMC-ADR premium-history study (SKHY catch-down calibration)
+  - Origin: user belief-debt question 2026-07-13; premium = dominant near-term SKHY risk (event artifact read ladder)
+  - Scope: TSMC ADR-vs-Taipei premium behavior in Taiwan drawdown episodes (compress/cushion/lag + half-lives); Korean Seoul→ADR conversion-approval mechanics (what breaks the one-way valve); output = catch-down odds calibration into SKHY read ladder
+  - Linked: companies/SKHY/thesis.md, signals/events/2026-07-13-korea-semi-crash-adr-unwind.md
+
+- [ ] **P1 / harness / 2026-07-19** [INFRA, CAL] — DESTRUCTION-DEFENSE SYNTHESIS: merge K3 + Claude-new-session reviews, build HELD amendments
+  - Origin: K3 red-team ADOPT-WITH-AMENDMENTS (2026-07-19); guard v2 built the deterministic pattern-coverage, HELD the architecture pending the Claude cross-review the user is running.
+  - Scope: after Claude review lands — build nonce challenge-response tokens (K3#3, replaces blanket env tokens), Edit/Write matcher on enforcement files (K3#7, warn-or-nonce not hard-block to avoid self-edit alarm fatigue), cumulative cross-commit thresholds (K3#6), semantic settings-diff guard (K3#8, hook-count-may-not-decrease + allow-list-may-not-widen), hook-content hash-manifest self-heal (K3#1). Each verified before "applied" per L34.
+  - Linked: signals/cross-source-log/2026-07-19-sun-late-k3-destruction-defense-redteam-adjudication.md, meta/destructive-change-governance.md §Held, meta/hooks/git-guard-pretooluse.py
+
+- [ ] **P1 / research / 2026-09-12** [CAL, INDP] — B45 cohort base-rate quarterly recalibration
+  - Origin: B45 codification 2026-06-12 — empirical regime base rates need quarterly re-verification; falsifier in B45 specifies "if cohort median 18-month return drops below +60% in next measurement period, revert toward standard prior"
+  - Scope: re-run the 15-name AI-infrastructure basket subagent calibration (same names + Kioxia reference) for Jan/Feb 2026 → Sep 2026 window. Compute new band counts. If extreme-outlier count drops below 2 of 15 (vs current 6 of 15), regime priors weakened — update CLAUDE.md banner + priming hook item 8 to reflect new base rate. If extreme-outlier count stays ≥4 of 15, regime priors confirmed — B45 promoted from CANDIDATE to CONFIRMED.
+  - Cascade: principle-applications-log.md entry + biases-watchlist.md B45 status update + CLAUDE.md banner refresh if needed
+  - Linked: `meta/biases-watchlist.md` B45, `signals/cross-source-log/2026-06-12-pre-training-magnitude-conservatism-calibration.md`
+
+- [x] **DONE 2026-06-26** — DURABLE HOOK ACTIVATION resolved via Architecture A (project-level `.claude/settings.json`), NOT laptop env-setup-script as originally planned. H1 test 2026-06-26 14:52:32Z confirmed Claude Code on Web reads `<repo-root>/.claude/settings.json` (diagnostic hook fired). Migration: all 16 research-OS hooks moved to `<repo>/.claude/settings.json` with absolute paths to `/home/user/Health-Calculators/research/meta/hooks/*.py`; `~/.claude/settings.json` emptied (backup at `~/.claude/settings.json.bak.pre-arch-a-2026-06-26`) to prevent merge duplication. Result: zero laptop dependency, zero install.sh dependency, zero ~/.claude/ dependency for hook persistence — settings ride with the repo via git clone. install.sh deprecated as primary activation; remains as emergency fallback. Full architecture rationale + verification protocol + migration history at `meta/hooks/DURABLE-ACTIVATION.md`. Falsifier: 2026-07-19 30-day audit checks `hook-fire-log.md` for fires on fresh-container sessions; if no fires, Architecture A failed and we fall back to install.sh + the original laptop-env-script approach.
+
+- [x] **DONE 2026-06-26** — Activate session-prime-hook + macro-anchor-hook in mirror `research/meta/hooks/settings.json` (USER AUTHORIZED 2026-06-26 via "yes try it and test it"). Both hooks now wired in mirror + installed to `~/.claude/settings.json` via `install.sh`. Smoke-tested: session-prime-hook returns full `session-prime.md` as `additionalContext` on SessionStart events (exit 0); macro-anchor-hook fail-open on empty input (exit 0). DURABILITY caveat: persistence across container restarts still depends on P0 item directly above (install.sh as Web UI env setup script) — laptop required for that piece. Until then, run `bash research/meta/hooks/install.sh` at start of every fresh cloud container (or trigger via keyword pattern TBD). 2026-07-12 effectiveness audit unchanged.
+
+- [x] **P2 / harness / 2026-06-24** [INFRA] — Session-prime curation rule integration into monthly audit
+  - Origin: 2026-06-12 session-prime.md created with explicit cap rules (500-line hard / 250-400 target) — needs first monthly audit verification
+  - Scope: at monthly codification audit (2026-06-24), verify session-prime.md (a) is ≤500 lines, (b) all listed CANDIDATE biases are still active (not gone INERT >30 days), (c) listed recent lessons are within rolling-5 window, (d) regime base rate not stale, (e) any codification commits since session-prime creation also updated session-prime
+  - Action: prune INERT items; promote/demote per the file's own cap rules; add to consolidated monthly audit checklist
+
+- [ ] **P1 / prediction / 2026-08-03** [CAL, INDP, recurring] — GRADED-CALL VOLUME QUOTA weekly check #4 (150 provenance-tagged calls by Oct audit, ~2/day; weekly tally at Monday wakes) + folded weekly cost-yield (G-09). **Check #3 EXECUTED 2026-07-27** — 3 formal registrations / 11 graded legs / 7 lessons; BEHIND 3rd consecutive week; process decision escalated to the P0 above. Check #4 must record whether the binary was resolved.
+  - Origin: K3 plan review Q4 — n is the binding constraint, not method
+  - Linked: predictions/probability-resolution-program.md, meta/tools/brier_tally.py
+
+- [ ] **P1 / harness / 2026-08-04** [INFRA, DUE] — **AMEND THE KR-OPEN WAKE ROUTINE TEXT — its instrument list is stale.** The Routine instructs an "H3 two-path check: Brent level vs 95", but **ADDENDUM #14 (2026-07-31) superseded that gate** — it refuted the memory→term-premium hypothesis and re-labelled H3 as *"Fed reaction-function credibility repricing — not memory prices, not oil."* The 08-03 wake ran the current spec and flagged the drift; the next fire will re-instruct the retired gate unless the Routine prompt is edited.
+  - Generalisable: **scheduled Routine prompts are frozen text that silently drifts from the pre-registration they cite.** Worth a sweep of ALL Routine prompts against their referenced artifacts, not just this one — same class as L53 (decay of a correct old classification) applied to automation rather than to names.
+  - Linked: `signals/cross-source-log/2026-08-03-mon-kr-open-wake-leverage-stock-vs-flow.md` §3, `predictions/2026-07-17-regime-read-preregistration-five-calls.md` ADDENDUM #14
+
+- [ ] **P1 / harness / 2026-08-08** [INFRA, CAL, DUE] — MACRO-ANCHOR INSTRUMENT GAP (the real overconstraint finding; artifact `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md`)
+  - **Do NOT re-attempt the three fixes withdrawn on 2026-07-25.** They were measured 668 commits stale and are wrong: (a) recursion guards — already present on all 15 Stop hooks; (b) retire `structural-output` + `llm-native-priming` — **overridden by the operator's 2026-07-06 KEEP-BOTH decision, adjudication 2026-08-06, G-28 already flips the read to FALLING/keep**; (c) delete the `WORKFLOW_LABELS` short-circuit — 2 fires ever (one a probe), not worth a Rule #19 HIGH change. Any future audit proposing these must first show `git rev-list --left-right --count origin/main...HEAD` = 0 behind.
+  - **The live finding:** 93% of all enforcement cost sits in TWO hooks — `structural-output` (169 fires) + `macro-anchor` (152 fires, one reason, ~5/day every day). Everything else combined = 4%.
+  - **Blocker is instrumentation, not policy:** `macro-anchor-hook.py:68` carries a pre-registered repair criterion ("FP rate >30% → tighten exemption list") that **cannot be evaluated** — `hook-fire-log.md` records the fire REASON and never the message. A pre-registered criterion its own instrument cannot feed is decoration; it has sat un-adjudicable through two scheduled reviews (06-24, 07-12).
+  - **Scope:** land `G-29` (per-fire message excerpt, ~120 chars) FIRST — it serves anti-fab and macro-anchor at once — then collect 2 weeks and adjudicate the FP rate on evidence. LIVE-enforcement change → operator-gated, spec-then-review.
+  - ⚠️ **Genuinely unresolved:** I do not know whether those 152 fires are false positives. The exemption list is broad and case-insensitive, which argues they may be legitimate catches on research output missing a tier tag. Reading code cannot settle it — only the excerpt log can.
+
+- [ ] **P1 / harness / 2026-08-06** [INFRA, CAL, OPT] — Two-bracket experiment EXTENDED close (normalized metric)
+  - Origin: 30-day close ran 2026-07-06 (5d late, harness audit). Raw weekly fires 7→7→25→~23/wk-pace = literal INCREASE, but weeks 3-4 were the heaviest analytical-volume window on record → volume-confounded; pre-registered criteria couldn't cleanly adjudicate. **USER DECISION 2026-07-06: KEEP BOTH, extend 30 days.**
+  - Scope: at 2026-08-06 compute the NORMALIZED metric — weekly structural-output fires ÷ weekly main-branch commits — for the full 2026-06-12→2026-08-06 span. Falling → priming works, keep both. Flat/rising → retire llm-native-priming-hook (structural-output-hook then stands on the ordinary <5 fires/month inert rule).
+  - Cost context: priming injects ~10-15k tokens per UserPromptSubmit — the extension consciously accepts ~30 more days of that spend to buy a clean read.
+  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item A; resolution codified in `research/CLAUDE.md` structural-output-hook entry 2026-07-06
+
+- [ ] **P1 / harness / 2026-08-08** [INFRA, DUE] — **BLIND-CHECK (#51) RETRO SWEEP — commissioned, NOT self-audited.** Forward-looking half is DONE 2026-08-01 (CLAUDE.md thesis template + Workflow #4 PREDICT + DEEP-DIG quality bar + new Critical Rule #13b + methodology #51 + session-prime §4). **REMAINING = the existing detector population: 150 explicit falsifier/kill/re-eval lines and 72 thesis falsifier blocks (computed 2026-08-01).** Deliberately NOT swept by me — I authored them and graded their failures, so a self-sweep is self-correlated. Paste block is copy-ready at `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`; operator transports it to a fresh session, no steering.
+  - Origin: operator 2026-08-01 — *"if you are so confident, I want you to plan on integrating that across the harness"*, after I proposed the fix twice and shipped it neither time.
+  - Scope: audit report back → then triage which detectors get a blind-check line retro-fitted vs which get retired outright.
+  - Linked: `meta/methodology.md` #51, `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`, `research/CLAUDE.md` Rule #13b
+
+- [ ] **P0 / harness / 2026-07-28** [INFRA, DUE] — INTAKE-BOUNDARY ENFORCEMENT (the hole all four basis errors came through)
+  - Origin: fresh-session audit 2026-07-27 (F19 + "the framework commissions the middle and neither end") + L44 meta-class N=4. Reception + independent re-check: `meta/redteam/2026-07-27-fresh-session-audit-RECEPTION-and-independent-recheck.md`
+  - Scope: (a) **CITATION_PATTERNS URL hole** — `r"https?://\S+"` accepts any URL-shaped string; verified at `meta/hooks/anti-fabrication-hook.py:76`. Needs format validation at minimum (arXiv/DOI/known-host shape) and a resolvability check where cheap. (b) **basis-tag requirement** — a price/level/commodity figure entering a threshold or valuation instrument must carry its basis (settle vs spot, auction vs tick, raw vs adjusted, benchmark name) or be rejected. (c) **same-artifact numeric contradiction check** — §1.1 vs §6.4 disagreed by a full pp in one file and nothing looked. (d) **read-only/audit session posture** — git-check hook has no concept of one; it forced the auditor to choose between its instruction and the hook.
+  - Linked: `meta/hooks/anti-fabrication-hook.py`, `predictions/lessons.md` L44, `meta/data-access.md`
+- [ ] **P0 / prediction / 2026-07-28** [CAL, INDP, DUE] — 🔴 FORCED BINARY: quota-instrument process decision (escalated from P1 recurring after check #3)
+  - Origin: check #3 EXECUTED 2026-07-27 (`recurring-audit-log.md`) — BEHIND strict formal-call pace for the **THIRD consecutive week**, and **the fix routed at check #2 to the 07-24 audit was never made** (grepped the audit artifact: zero hits on stub-row / re-base / wake-call). Three measurements of the same unfixed gap.
+  - Scope: choose ONE, do not route again — (a) wake-calls get `grading-log.md` stub rows with P-provenance at booking time, making directional calls gradeable; or (b) the 150-by-Oct target is re-based honestly to what formal registrations actually run at. **If neither branch is chosen by check #4, retire the quota instrument rather than re-measure it** — an instrument that reports the same unactioned finding weekly is decoration.
+  - Linked: `predictions/grading-log.md`, `meta/recurring-audit-log.md`, Program v2 amendment #2
+- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **HOOK EXECUTION PROBES — convert the supervisor from log-reader to actual supervisor.** `meta/tools/harness_supervisor.py` (built 2026-08-02) reads the fire log, and the fire log **cannot distinguish a dead hook from a hook that runs constantly and never logs**: 4 hooks show NO-LOG (`session-start-hook`, `llm-native-priming-hook`, `borrowed-vs-firstprinciples-hook`, `analyst-pt-context-hook`) and at least two of those provably run every turn. Extend the existing `LLMNA_PROBE` convention (already in 3 hook scripts per the 07-23 hardening) to all 19, then probe each with a fixture and check exit codes.
+  - Origin: operator supervisor-loop proposal 2026-08-02; the first check the proposed supervisor would run was already broken.
+  - Guard: probing writes to the fire log — LLMNA_PROBE tagging exists precisely to stop probe-pollution of the telemetry being measured. Do not probe without it.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §6, `meta/tools/harness_supervisor.py`
+
+- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **BACKLOG TRIAGE — delete before automating.** Computed 2026-08-02: **87 open, 64 (73%) past their date, 23 older than 30 days, oldest 73 days.** At 73% late the date field carries almost no information. Pass 1 is a DELETE pass over the 23 stale items — retire, merge, or explicitly renew with a new date and a stated reason. **Blocks the auto-executor question:** automating execution of a substantially-dead list spends real tokens finishing superseded work and locks in the accretion.
+  - Origin: operator supervisor-loop proposal 2026-08-02; the proposal's execute-half is gated on this.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §4
+
+- [ ] **P3 / research / 2027-01-15** [CAL] — ANTHROPIC IPO DECISION PACKAGE — CALENDAR-PARKED 2026-07-13 per user decision (no IPO before >=2027; B63-mandatory package pre-registered in meta/principal-questions.md; revisit at first S-1/listing news or 2027-01-15, whichever first). Was: P1 ANTHROPIC IPO DECISION PACKAGE (pre-registered BEFORE any listing exists — user proposed "sell all, buy the IPO big stack" 07-08; dissent delivered, middle path = build the framework now)
+  - Origin: user hypothesis 2026-07-08 (`signals/cross-source-log/2026-07-08-user-hypothesis-expectations-treadmill-sell-all-buy-anthropic-ipo.md`); B63 governs the ENTIRE package (model-provenance — adversarial treatment mandatory on every bull claim).
+  - Scope: (a) valuation-band framework — what $-valuation makes the entry asymmetric vs the ~$965B Series H / ~$47B RRR anchors (compute forward-revenue multiples vs listed comps at their IPOs); (b) entry-route menu with pros/cons: IPO-day retail vs post-lockup vs post-first-earnings vs not-at-all; (c) allocation CAP pre-committed at Active tier (3-8%) — NOT "big stack" — with the livelihood-correlation argument written in; (d) the exposure-overlap map (user already has Anthropic exposure via workflow dependence + the semi book IS lab-capex-downstream); (e) Rule #17 ensemble at any execution decision; (f) trigger to activate: public F-1/S-1 flip or exchange/date confirmation (currently T3 speculation only).
+  - Linked: `meta/private-tracker.md` (Anthropic), `sector/application-layer-framework.md` §capture-stack, the 07-08 hypothesis artifact.
+
+- [x→MONITORING] **P2 / research / 2026-06-29→2026-07-04** — AI-FUNDING-SHOCK NODE **BUILT** (`sector/ai-funding-shock-node.md`, weekend deep-work #1, 2026-07-04): three legs + leverage dashboard + CANARY BASKET (rotation design: CoreWeave improving / Nebius flashing) + telecom calibration + 3 scenarios w/ P-weights + 6 pre-registered tells + retirement falsifier. REMAINING SUB-ITEMS: (a) margin-debt %GDP recalc at $1.42T; (b) 30Y JGB 2.810-vs-4.04% primary reconciliation; (c) 30Y UST series mismatch; (d) identify the ~$8.7B-debt issuer; (e) rating-agency maturity schedule hunt. ORIGINAL ITEM TEXT (audit): — Codify "AI-funding-shock" scenario + capital-markets/credit-channel NODE — **2026-07-03 EVE: AFFORDABILITY LEG TRIANGULATED N≥3 (Citi + CLSA/SemiAnalysis 35%→48% memory-share-of-capex + ~$236bn AI-linked debt through May ~4x YoY + capex ~94% of hyperscaler OCF; per `signals/cross-source-log/2026-07-03-broker-ddr-note-reconciliation.md`) — node build now has all three legs (vendor-financing / rates-driver / affordability)** — — **2026-07-02 EVE new datapoints: Nvidia revenue-share vendor-financing instrument (SharonAI 8-K T1, ~210k GPUs seeded into credit-constrained neoclouds) + Meta Compute excess-capacity monetization (Bloomberg T1) = circularity + overbuild-monetization both live; fold into node build; **NVIDIA BUYBACK GUARANTEE (Leg B 07-02 EVE): instrument reportedly includes buying back unsold GPU capacity at agreed price = demand-guarantee/Lucent-mechanic (Tunguz comparison T2); PRE-REGISTERED TELL: Nvidia 10-Q ~Aug-2026 buyback-liability footnote — calendar it** — (harness framework gap surfaced by BIS Annual Report 2026-06-28) — **UPGRADED 2026-07-02: add the RATES-DRIVER module** (US Leg B absence-question hit the same gap: market pricing ~54-60% Fed HIKE by YE, Warsh hawkish, 30yr 5.19%; the node has the leverage SYMPTOM but no rates DRIVER). Hard-data layer now available: FINRA margin debt record $1.28T/4.1% GDP + ~$120B off-balance-sheet AI SPV debt + H100 rentals −70-90% + CoreWeave $4.2B 2026 maturity (= the system canary). Also fold in PD-6 candidate (cost-of-capital as next bottleneck → self-funded vs debt-funded capex screen). Per `signals/cross-source-log/2026-07-02-morning-feed-us-legB-discovery-rates-regime.md`.
+  - Origin: EU Leg B discovery → BIS Tier-2 verification (`signals/cross-source-log/2026-06-29-morning-feed-eu-2leg-bis-ai-credit-channel.md`). Harness models AI only from the physical supply side (HBM/NAND/wafers/MLCC/power) — NO node for the credit/funding transmission channel. If the next AI drawdown comes via credit (not chip oversupply), the framework is blind.
+  - Scope: add an "AI-funding-shock" scenario to `sector/scenarios.md` (capex freezes via credit event → memory demand falls even with pristine memory balance sheets); recompute held-name anti-fragility under it (NBIS = HIGH exposure / leveraged buildout; memory names = self-funding-insulated but demand-exposed); install the **5-signal monitored set** as a standing watch: (1) neocloud HY spreads / GPU-backed-debt ratings + NBIS converts vs par; (2) neocloud raises failing/downsizing; (3) hyperscaler capex GUIDE cuts; (4) private-credit redemption/markdown; (5) GPU rental <~$1.50/hr.
+  - Linked: `sector/scenarios.md`, `companies/NBIS/thesis.md`, `companies/HYNIX/thesis.md`, `sector/themes.md`
+
+- [ ] **P2 / research / 2026-08-17** [INDP, AF, POS] — NVDA entry-trigger watch (post Apple-Blackwell + Rubin BOM optimization)
+  - **RESCUED 2026-08-03 from 34d stale** — largest name in the complex with no live entry trigger. Cheap to hold, expensive to be without.
+  - Origin: 2026-06-04 PM Apple-Blackwell cascade surfaced NVDA as REINFORCED thesis (marquee customer Apple confirms inference dominance). Currently 0% held per holdings.md. Need entry framework given L21 sector regime + €200K cash deployment cadence.
+  - Scope: define entry triggers + sizing (recommended 4-6% if entered, per portfolio target band); monitor for L21 regime break OR macro pullback >10% from current
+  - Falsifiers: NVDA Q2 FY27 (August) negative reaction despite BEAT + macro-neutral environment = L21 regime more severe; do not enter
+  - Linked: `companies/NVDA/thesis.md` (updated 2026-06-04 PM with Apple-Blackwell signal); `portfolio/constraints.md` (FIRE math + cash deployment); `predictions/lessons.md` L21
 
 - [ ] **P1 / research / 2026-Q4** [INDP, AF, POS, CAL] — BE (Bloom Energy) gas-supply TRIPWIRE — time-to-power falsifier checkpoint (REFRAMED 2026-07-01 PM after 2-agent verify)
   - Origin: 2026-07-01 BE+ALAB deep-dives + a 2-agent pipeline-vs-turbine verify (`signals/cross-source-log/2026-07-01-gas-pipeline-vs-turbine-time-to-power-2agent.md`). **CORRECTION: the original "~24-inch pipeline live ~2026-08-15" spec was UNVERIFIED — struck.** The real marquee gas-gated build is Oracle/BorderPlex "Project Jupiter" (NM, 2.45GW Bloom fuel cells) fed by the ~16-18mi "Green Chile" lateral off an EXISTING El Paso Natural Gas trunk. The lateral itself is fast (14-day BLM emergency review); the gate is permitting/legal.
@@ -250,28 +216,302 @@
   - Linked: `meta/alt-data-probabilistic-prediction-framework.md`, `meta/hooks/llm-native-priming-hook.py`, `meta/hooks/structural-output-hook.py`, `CLAUDE.md` Enforcement hooks section
 
 
-
-### P2 — Medium priority
-
-- [ ] **P2 / harness / 2026-07-24** [INFRA, recurring] — PRUNING DISCIPLINE monthly pass + FIRST CURATION-RATIO reading (maintenance-vs-research commit share from git log; K3 dissent #1, per 2026-07-17 cross-family review artifact) (LLM-native context-hygiene, codified 2026-06-27 audit item #3)
-  - **ADDED 2026-07-07 (Principle #43 standing question — wired here so the audit actually asks it):** run the AFFORDANCE REVIEW per `methodology.md` #43b protocol — (1) inventory-vs-usage diff from ledgers/logs (mechanical); (2) anthropomorphic-default sweep (human-time estimates, single-threaded plans, essay-instead-of-computation); (3) each candidate → pre-registered executable test, NOT self-report. Also: renumber the #42 collision (retrieval-staleness vs time-window) per tags.md flag.
-  - Origin: 2026-06-27 LLM-native audit — harness is engineered to ACCRETE (every cascade appends) but my attention budget per context degrades with length ("lost in the middle"); a bloated harness dilutes retrieval MORE for an LLM than it slows a human. There is an accrete cadence but no matching PRUNE cadence.
-  - Scope (monthly, 24th, alongside consolidated audit): identify what can be archived/compressed without losing load-bearing state — oversized thesis files (rounds 1-N → compress resolved rounds to a 1-line ledger + link), tier-cascade-log + subagent-cost-yield-ledger rotation (archive >30-day entries to a dated archive file, keep audit-summary head), stale cross-source-log consolidation, session-prime cap enforcement (≤500 lines). Treat pruning with the SAME seriousness as the audits — bloat is a silent cognition tax.
-  - Metric: total harness char-count growth rate; per-file size flags (thesis.md >X KB → compress-resolved-rounds candidate); was anything load-bearing lost? (must be NO)
-  - Linked: `meta/methodology.md`, `meta/session-prime.md` cap rules, `companies/*/thesis.md`, `meta/tier-cascade-log.md`, `meta/subagent-cost-yield-ledger.md`
-
+- [ ] **P1 / research / 2026-07-28** [POS, AF, CAL, INDP] — BUILD the Gulf-conflict macro SCENARIO (scenarios.md gap surfaced by Leg-B absence question 2026-07-25)
+  - Origin: 2026-07-25 EOD Leg-B discovery. `sector/scenarios.md` has NO scenario for sustained US-Iran/Gulf conflict, despite the harness tracking H3 as a bare numeric gate (Brent >= $95) for weeks. Five months of war, Houthi strikes now hitting Saudi REFINING infrastructure (Jizan/Yanbu, 07-25), escalation decision pending, Congress unable to bind. We have a tripwire with no theory behind it.
+  - Scope: a weighted scenario with the transmission chain made explicit — Gulf energy-infra risk -> oil floor -> inflation pass-through -> Fed reaction (FOMC 07-28/29 is the first live test) -> risk appetite for high-multiple AI names -> memory/AI-capex cohort. Must state which held names win/lose in it and recompute their M/N anti-fragility. Must ALSO define what un-fires H3 (the 07-24 pullback to ~$90.47 already put Brent back below the gate — the current gate has no documented reversion rule).
+  - Why P1 not P2: FOMC lands 07-28/29, one day before the Jul-29 SKH print that gates the conditional add. The two interact and we currently have no framework for the interaction.
+  - Linked: `sector/scenarios.md`, `signals/cross-source-log/2026-07-25-fri-eod-reaction-leg-grade-legb-kr-etf-crackdown.md` §4.3, five-calls call #4 H3 leg
 - [ ] **P1 / harness / 2026-07-27** [INFRA, CAL] — Critical Rules #17 (ensembling) + #18 (dissent mandate) 30-day detectability re-eval
   - Origin: 2026-06-27 LLM-native audit codification (CLAUDE.md Rules #17/#18)
   - Scope #17: grep for ensembled high-stakes calls; did spread vary meaningfully (some 5/5, some 3/5)? did 3/5-flagged calls correlate with later-graded misses? POSITIVE = spread predicted uncertainty; NEGATIVE = always 5/5 (decorative) OR spread never correlates → retire
   - Scope #18: did thesis/sizing outputs reliably contain a falsifying-case section AND did it occasionally flip/temper a conclusion? POSITIVE = load-bearing; NEGATIVE = rote "bear case dismissed" boilerplate never changing a conclusion → refine or build falsifier-section Stop hook
   - Linked: `CLAUDE.md` Critical Rules #17/#18; `predictions/inference-log.md`; `meta/subagent-cost-yield-ledger.md`
 
----
+- [ ] **P0 / harness / 2026-07-24** [INFRA, CAL, DUE] — DEEP-DIVE DEFERRALS + K3 REWORK, **REMAINING scope** (✅ executed 2026-07-23 by the Fable-5 audit instance, receipts at `meta/redteam/2026-07-23-fable5-harness-audit-P0-hardening.md`, commits 4b26e72 + e477487: all four 🔴 now-or-24 items (a)-(d); G-28 numerator reclassification — **MATERIAL: flips the 08-06 read from FLAT/RISING-retire to FALLING-keep**; e04eaef ref-order adjudicated origin/main-first; redirect over-block FP killed with TPs pinned; probe-pollution channel closed via LLMNA_PROBE tagging). **REMAINING:** (1) G-19 cascade-hook changeset-window (diff vs last-Stop ref — real hole, K3 refuted the masking rationale; needs stored-ref design); (2) stop-hook-git-check 8-exit-path inventory; (3) K3 Q5 blind-spots: blanket stop_hook_active guard = enforcement-free Stop after every block (LIVE-enforcement change → Rule #19 review-gated, spec-then-review, no solo ship), stdin-schema-drift invisible-death class, 337-agent journal receipt gap; (4) exit-1-outside-repo FP; (5) ~150 MEDIUM/LOW from the extract (triage pass); (6) NEW 07-23: test_framework_codifications 198/200 pre-existing RED — two stale todo.md content-couplings, re-scope test to durable anchors. **CERTIFIED (no rework):** f19663d session-start 7→83 (K3 clean on real corpus).
+- [x] **P0 / harness / 2026-07-26 DONE** — BRANCH-POSITION CHECK IS LIVE ON `main` (landed 087fbb1, operator-authorized direct push)
+  - **Verified live, not asserted:** `git merge-base --is-ancestor da04101 origin/main` now PASSES. `branch_position()` is present in `session-start-hook.py` on `main`. Any session cut from `main` from 2026-07-26 forward inherits the check.
+  - **The defect demonstrated itself on the way out:** this session's own start-briefing reported "up to date with origin/main (25 ahead)" while the branch was in fact **3 behind** — the stale-briefing failure, in the session convened to fix it. Fetch-then-measure is the only trustworthy order.
+  - **Landed 28 commits**, fast-forward, 0 conflicts. One merge conflict en route (append-only `hook-fire-log.md`) resolved by true union.
+  - **Near-miss worth keeping:** the first union attempt deduped identical lines and silently dropped ~250 of them. Those are legitimate repeat fires (same hook, same second). That file is the substrate Rule #11 requires hook-fire COUNTS to be computed from — deduping it would have corrupted the counting source inside the session about miscounting. Resolved with `git merge-file --union` (preserves duplicates); arithmetic checked: base 1384 + 41 ours + 2 theirs = 1427. **Never dedupe an append-only log during conflict resolution.**
+
+
+## Parked (did not make the weekly cut — revive freely)
+
+_Cut of 2026-08-03: 49 items parked, 31 kept. Parking is reversible and deliberately visible — an item that is proposed, cut, revived and cut again is telling us something a clock never would. Kill criteria: `meta/backlog-forced-ranking-spec.md` §4._
 
 - [ ] **P1 / harness / 2026-07-28** [INFRA, INDP] — CREDIT-INSTRUMENTATION LEG (the 07-28 absence-question finding: no CDS/spread route)
   - Origin: EOD Leg-B 2026-07-28 — the market's dominant conversation (NVDA CDS record 82bp, DC bond 7.534% failing to tighten, $250bn backstop talks) has NO harness instrument; TC-2 rung 3 now shows traded-price marks the desk cannot machine-read; every equity position is a late-cycle derivative of an unmonitored financing condition.
   - Scope: register a machine route for at least a coarse credit read (FRED ICE-BofA HY/IG OAS as first rung); map funding-cost → order-book → memory-demand lead-lag as a TC-2 monitorable; decide whether issue-level (CDS/bond) data justifies a paid route.
   - Linked: meta/data-access.md, signals/triangulation.md TC-2, signals/cross-source-log/2026-07-28-tue-eod-legb-discovery-kospi-cb8-cxmt-duv-credit.md §7
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-07** [INDP, AF, POS] — APPLICATION-LAYER FRAMEWORK post-build standing items (framework BUILT 2026-07-07 — `sector/application-layer-framework.md`; the build item is DONE, artifact is the record): (a) NEC 6701 + Fujitsu 6702 thesis-build (watchlist-elevated per framework §4 — anti-fragile 人月→outcome converters, records on T1 IR); (b) SHIFT 3697 H2 FY26/8 print watch (modernization-vs-test-deflation adjudicator); (c) seat-erosion promotion triggers 0/3 (filed seat decline / public SaaS-retirement-for-inhouse / pilot success >30%); (d) coding-deceleration tripwire NOW LIVE in the 2027 early-warning stack (earliest indicator, ahead of capex guides); (e) exit-cohort re-underwrite question (DDOG/NOW class — 120-125% NRR, working AI monetization) surfaced to user, user-gated; (f) framework re-eval 2026-08-07 or first SIer print.
+  - Linked: `sector/application-layer-framework.md`, `signals/cross-source-log/2026-07-07-applayer-framework-4agent-step0.md`, end-demand item above
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-08-24** [INFRA, CAL, DUE, recurring] — **#51 BLIND-CHECK COMPLIANCE RE-EVAL — thresholds pre-registered 2026-08-02, verdict is COMPUTED not argued.** Run `python3 research/meta/tools/blind_check_audit.py --ledger --show-unmatched`, append the reading, then apply the pre-registered table in `meta/methodology.md` #51 verbatim. **Do not re-negotiate the thresholds at read time — that is the failure the pre-registration exists to prevent.**
+  - Baseline 2026-08-02: BASELINE cohort **0/155 (0.0%)**, NEW cohort **0/0**, 2,926 scanner near-misses recorded as the denominator-shrinkage watch.
+  - Verdict table: NEW ≥80% + distinct-clause ≥0.5 → keep unhooked · NEW <80% OR distinct <0.5 → **hook it or retire it, no third option** · N<5 → ONE extension to 2026-09-24 then decide on whatever N exists.
+  - Origin: operator 2026-08-02 — *"state the verification mechanism and the accountability layer to ensure it works as your prior output stated it"* — asked because #51 had shipped with neither.
+  - Linked: `meta/tools/blind_check_audit.py`, `meta/blind-check-ledger.md`, `meta/methodology.md` #51
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-08-20** [INFRA, CAL, recurring] — PROSE-DEADLINE monthly sweep #2 (recurring monthly; #1 COMPLETED 2026-07-20 in two parts — see recurring-audit-log 07-20 entries: re-evals executed/carried, extractor run, MU debt = phantom [grade existed since 07-06, row was stale], git-check collision DECIDED keep-as-is, extractor+tests bound to 07-24)
+  - Origin: self-audit found 2 methodology "First re-eval 2026-07-15" items with no execution evidence + proved session-start hook date-flags ONLY recurring items (create-date semantics otherwise)
+  - Scope: (1) verify/execute the two 07-15 methodology re-evals; (2) run the Test-D extractor regex over meta/+signals/ for past-due prose deadlines; (3) if ≥2 confirmed danglers → wire extractor into session-start-hook.py as a deterministic pass (hook-candidate promotion); (4) MERGED from v2 audit 07-17: backfill the MU formal 3-layer GRADE (owed since 06-24, now parser-visible); (5) decide the read-only-session/git-check collision (exempt hook-fire-log vs log outside tree); (6) add parser coverage tests to meta/tests/ (real todo.md + grading-log.md, fail on unmatched live rows)
+  - Linked: meta/recurring-audit-log.md 2026-07-17 entry, meta/hooks/session-start-hook.py
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / process / 2026-08-09** [INDP, OPT] — User-channel coverage model first monthly audit: compute share-classification histogram from verification artifacts (per user-source-profile §channel-coverage, codified 2026-07-09); rank absence-question-register rows by recurrence; promote ≥2-recurrence rows to research items. Falsifier check: histogram ≠ the guessed map, else drop per-share tags.
+  - Origin: user question 2026-07-09 "what must be true for you to research my blind spots?"
+  - Linked: meta/user-source-profile.md, meta/absence-question-register.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-07-29** [INFRA] — DEAD-HOOK SWEEP (F20 class; the v1 incident was a class, not an incident)
+  - Origin: verified here — `antifragility-mn-hook` requires the literal `P(bull`, present in **4 of 92** thesis files. Inert on ~96% of the corpus while passing its own fixtures, because the fixtures encode the unused format.
+  - Scope: for EVERY live hook, assert its trigger against the REAL corpus, not fixtures. A hook whose test fixtures use a format the corpus does not use is untested. Report fire-capability per hook.
+  - Linked: `meta/hooks/*.py`, `meta/tests/test_framework_codifications.py`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-08-02** [INFRA, CAL] — SHALLOW-CLONE COUNT CORRUPTION (new class, found 2026-07-26)
+  - **What:** session containers clone SHALLOW by default (`.git/shallow` present, `git rev-parse --is-shallow-repository` = true). Every ABSOLUTE history count is silently truncated — here by ~774 commits — and three false "root" commits appear at the fetch boundary, one dated 2026-03-29. Nothing warns you. This produced the published claim "344962f is main's 53rd commit" (true value: 826th of 1497).
+  - **The invariant that saves the hook:** the behind/ahead GAP is shallow-invariant (671 shallow vs 670 full; ±1 boundary). `branch_position()` is correct on shallow clones *because* it uses `rev-list --left-right --count`. A position-based "improvement" would break silently in the default container — noted in the docstring as do-not-regress.
+  - **Scope:** decide whether the wake protocol should run `git rev-parse --is-shallow-repository` and either unshallow or refuse to publish absolute counts. Cheap check; the failure is silent and reached a published artifact.
+  - **Cross-ref:** `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md` §0a.
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / process / 2026-07-19** [INFRA] — USER-SIDE API KEYS outstanding (fact-layer completion; per `meta/flows-positioning-acquisition-plan.md` + `meta/data-access.md`)
+  - Origin: 2026-07-17 flows/positioning plan + registry gaps
+  - Scope: (1) **ECOS_API_KEY** (ecos.bok.or.kr — KR credit/margin macro series; already queued, highest yield); (2) **KRX Open-API key** (openapi.krx.co.kr-class signup, Korean forms like DART — unlocks T1 daily foreign net-flows per KR stock incl. SK Hynix; else stays agent-bridged T2); (3) **EDINET_API_KEY** (parked — JP filings; MFA signup flow); env-var names already reserved in data-access.md. Add each to the cloud environment settings; session verifies via setup.sh boot probe.
+  - Linked: meta/data-access.md, meta/flows-positioning-acquisition-plan.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / USER-ACTION / 2026-07-13** [POS] — DeGiro/N26 availability check on REIA-surfaced names — LIST HANDED TO USER 2026-07-13; RESULT #1: Nanya 2408.TW NOT available on DeGiro or N26 (user-verified) → watchlist-INSTRUMENT only
+  - Origin: 2026-06-27 REIA Batch #2-4 (power / CPU-server / CXMT) per `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md`. All are watchlist-level / PRE-THESIS — availability check gates whether they're worth a Workflow #9 thesis build.
+  - ⭐ PRIORITY (EU-accessible + fills Layer-3 power + EU-sovereign-AI gaps) — check these first:
+    - [ ] Siemens Energy — ENR (Xetra/Frankfurt)
+    - [ ] Schneider Electric — SU (Euronext Paris)
+    - [ ] ABB — ABBN (SIX Swiss)
+    - [ ] Prysmian — PRY (Borsa Italiana / Milan)
+    - [ ] Nexans — NEX (Euronext Paris)
+    - [ ] Legrand — LR (Euronext Paris)
+    - [ ] Infineon — IFX (Xetra)
+    - [ ] ASML — ASML (Euronext Amsterdam) [likely already accessible]
+  - Secondary (check access — may be restricted):
+    - [ ] Lenovo — 0992 (HKEX)
+    - [ ] Wiwynn — 6669 (TWSE) / Tokyo Electron — 8035 (TSE)
+  - US (likely accessible, lower priority to verify): GEV / ETN / VRT / CEG / VST / TLN / BE / CLF / AMD / ARM / ALAB / MU / LRCX / AMAT / KLAC / ACMR
+  - NOT accessible (don't bother): CXMT (Shanghai STAR), Naura/AMEC/Piotech (China A/STAR), SK Hynix/Samsung direct KRX (Nasdaq ADR ~July 10 = workaround)
+  - NEXT STEP after check: tell Claude which are available → rank accessible subset by conviction + sizing fit → Workflow #9 thesis build on the ones to pursue.
+  - Linked: `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md`, `watchlist/candidates.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / process / 2026-07-09** [INFRA] — USER BROWSER CHECKLIST (UPDATED 2026-07-22: **✅ DEFAULT BRANCH → main DONE + API-CONFIRMED** — the stale-clone/F1/K3 trap is CLOSED; routine re-bind RETIRED 07-19). REMAINING user-side: (a) **stale-branch DELETE** — now UNBLOCKED (first-test-new-repo-wxedu9 no longer default, deletable), + claude/w11-wakes etc.; (b) **branch protection** — Settings→Branches confirmed "Classic branch protections not configured" (add ruleset on main: no force-push, no delete); (c) env **network allowlist** (403-wall cause); (d) **API keys** as env vars (ECOS/EODHD/DART/EDINET/Finnhub/FRED). **DEPRIORITIZED per user 07-22: loopframe pause+key-rotation** — content-tool keys (Twitter/Recraft/Runway/Ideogram), low consequence, user judged posts harmless; do at leisure. Full steps: `meta/user-browser-checklist.md`. RE-SURFACE each morning until empty.
+  - Origin: user 2026-07-08 "save everything I must do in a browser so I can recall it tomorrow."
+  - Scope: user completes in browser; I verify (fetch test / transcript read / branch gone) and delete items.
+  - Linked: `meta/user-browser-checklist.md`, `sector/market-state-function-spec.md` §6, E6 artifact.
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-08-16** [INFRA, DUE] — **FRED long-history credit route.** `BAMLH0A0HYM2` truncates to 2023-08-01 on the current route (defect booked 2026-08-02 in `meta/data-access.md`), so any multi-year credit percentile is unobtainable at T1. Find a route that serves full history (ALFRED vintage params, an alternate ICE BofA series ID, or a different provider) OR record permanently that multi-decade credit percentiles are out of tier.
+  - Origin: EOD 08-02 — I computed and nearly reported a "25-year percentile" that was a 3-year percentile; caught only by a sanity check on the series maximum.
+  - Linked: `signals/cross-source-log/2026-08-02-sun-eod-legb-credit-gap-filled-fx-falsifier-touch.md` §1
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / process / 2026-07-27** [INFRA, OPT] — RECEIPTS HOOK Phase 1: add the "pending-resolution promise" extractor (L42 corollary, 2026-07-25)
+  - Origin: the 07-22 twin-print T+24h legs sat 2 sessions overdue behind a written promise ("T+24h legs I-5/N-5 pending 2026-07-23 close") that no mechanism checked. Surfaced only because the 07-25 EOD Routine happened to run the deadline parser. This is G-07's "a header/status line is a PROMISE, not a receipt" instantiated on the PREDICTIONS layer rather than the harness layer.
+  - Scope: extractor recognizes "pending {DATE}" / "pending {EVENT} close" inside predictions/*.md and grading-log rows, and surfaces any whose date has passed at session start alongside the existing pending-grade parser (which only reads grading-log resolution dates and MISSED these — the legs were inside a row already marked partially graded).
+  - Linked: `research/meta/hooks/`, `predictions/grading-log.md`, lessons L42
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / research / 2027-03-15** [CAL, BOT, POS, AF] — HBF Gate-3 demand read: NVIDIA GTC 2027 (~Mar) — does NVIDIA name HBF (not just NVMe SSD) as a memory tier in the Rubin-successor reference architecture? (highest-information single event — would move H1 ~45%→~70%)
+  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 3 — NVIDIA reference-arch inclusion forces the standardization + hyperscaler gates to follow.
+  - Linked: `watchlist/HBF-trajectory-monitor.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / research / 2026-07-16** [INDP, AF, POS] — Engineering-out state audit (SKHY falsifier #2 live gauge)
+  - Origin: user belief-debt question 2026-07-13; falsifier currently instrumented only by Aug FMS/Hot Chips gate reads
+  - Scope: PRODUCTION evidence (not papers) for KV-cache compression, sparse attention, flash-tier KV offload (HBF-adjacent), cheaper-DRAM-flavor architectures; quantify distance of "less memory-hungry technique does not exist yet" (newsletter Vik claim); output = engineering-out gauge + tripwire refresh
+  - Linked: companies/SKHY/thesis.md falsifier #2, sector/memory-gross-profit-bridge.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, OPT] — TC-cluster predictive hit-rate audit (grade the pattern-matcher; fold into monthly)
+  - Origin: user harness-upgrade question 2026-07-13 — 18 TC clusters, zero measured hit rate
+  - Scope: for each ACTIVE cluster: did promotion LEAD subsequent prices/prints (lead time, direction accuracy)? retirement criteria per cluster; output = pattern-matcher calibration table + methodology note
+  - Linked: signals/triangulation.md, meta/recurring-audit-log.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-07-24** [INFRA, OPT, CAL] — DETECTOR-COVERAGE AUDIT (user hypothesis 2026-07-13: rules+patterns co-dependent; unruled data = patterns buried in plain sight)
+  - Scope: enumerate ALL intake streams (tape, prints, contracts, flows, FX, insider filings, patents, hiring, credit, native-language legs) × which rule/detector each flows through (B45, freshness-parity, tells, templates, GM-marker...); output = coverage matrix + top-3 unruled streams + detector candidates for each; pairs with the TC hit-rate audit (patterns side) at the same monthly
+  - Linked: meta/methodology.md, meta/biases-watchlist.md, signals/triangulation.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-27** [OPT, INDP] — WEEKLY anomaly-clustering pass #2 (recurring weekly; #1 COMPLETED 2026-07-20 in two runs: morning = PC-19 + Rhyme-2 rejection; evening = PC-20 export-control design-around ~50% + PC-21 listing-wave ~45% w/ proceeds-tell + intake-gap flag for 07-24)
+  - Origin: user design 2026-07-13 (`signals/anomaly-register.md`) — cross-domain co-occurrence hunt over the anomaly register, segment-gate open for discovery, closed for action
+  - Scope: 1 agent reads register; finds n≥3 independent-source mechanism-rhymes across segments; outputs PC-candidates to cross-domain-pattern-register w/ falsifiers; ages out stale entries
+  - Linked: signals/anomaly-register.md, meta/cross-domain-pattern-register.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-08-22** [INFRA, DUE] — **BLIND-CHECK HOOK — SPEC ONLY, DO NOT SHIP BEFORE THE AUDIT REPORTS.** A Stop hook checking for a blind-check line on new detectors. **Held deliberately:** shipping a detector before knowing the shape of the population it fires against is exactly the error #51 exists to prevent, and the FP-rate lesson from `macro-anchor-hook` (repair criterion unmeasurable from its own log) says design the telemetry FIRST. **Pre-condition: the #51 retro sweep above must report.** Then spec with (a) message-excerpt logging built in from day one so the FP rate is computable, (b) its own blind-check line, (c) Rule #19 review-gate — LIVE-enforcement change, spec-then-review, no solo ship.
+  - Origin: 2026-08-01, same operator instruction; the restraint is the principle applied to itself.
+  - Linked: `meta/methodology.md` #51 final paragraph, `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md` (the unmeasurable-FP finding)
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-09-02** [INFRA, CAL, DUE] — **SUPERVISOR FALSIFIER CHECK.** If `meta/supervisor-ledger.md` shows a month of readings in which the VERDICT line never changed, the supervisor is a mirror rather than an instrument → retire it and build the forcing function instead (auto-delete to-dos past N days unless explicitly renewed, converting silence from "still open" to "dropped"). Operator decision, not mine.
+  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §7
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-08-22** [INDP, AF, OPT, CAL, recurring] — AGENTIC-DAU monthly reading #2 (instrument COMPLETE 2026-07-22: general basket `meta/agentic-dau-general-basket.md` + education + scaffold modules, wired into `sector/end-demand-durability-model.md` head block; reading #1 = 🟡 DIRECTIONAL intensity-based support). Monthly scan per basket §E watch-series; highest-value pending disclosure: OpenAI ChatGPT WAU refresh
+  - Origin: user-designed 2026-07-12 night (`wiki/newly-viable-frontier.md` §6b); built 07-14 (2 modules) + 07-22 (general basket)
+  - Linked: meta/agentic-dau-general-basket.md, sector/end-demand-durability-model.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / verification / 2026-08-25** [INDP, AF, CAL] — MRVL Q2 FY27 print + L14/L19/B42 watch — **re-framed 2026-07-06: MRVL EXITED 2026-06-27; print = the thesis's pre-registered RE-ENTRY trigger watch (die-design-minority disclosure OR Trainium-4 win), not a held-position falsifier**
+  - Origin: 2026-06-12 3-subagent MRVL deep-dive (`signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`); falsifier #1 of MRVL thesis fires/falsifies at this print
+  - Scope: (a) Was FY28 custom Si guide RAISED with named NEW XPU customer (Google MPU, new hyperscaler)? → confirms H1 bull; (b) Was guide reaffirmed with no new named customer? → base case dominant; (c) Was guide trimmed? → bear K2 fires → trim trigger; (d) Stock T+24h reaction vs L14/L14-v2 framework — calibration data point
+  - Linked: `companies/MRVL/thesis.md` falsifier #1; `predictions/lessons.md` L11/L12/L13; `signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-24** [INDP, AF] — DEFENSE-ELECTRONICS FRAMEWORK build (promotion trigger N≥3 HIT 2026-07-19)
+  - Origin: Jul-07 Ankara cluster + GM-Defense/Lockheed munitions MOU (T1 CNBC Jun-16) + NATO $50B package w/ US-prime EU co-production (T1 Jul-07); per 2026-07-19 wake Leg B
+  - Scope: passives-density (MURATA second demand leg) quantification + segment map + named-name screen (NOC reference); framework file under sector/
+  - Linked: watchlist/candidates.md (counter-drone cluster), companies/MURATA/thesis.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-08** [INDP, CAL, INFRA] — MARKET-STATE FUNCTION build (spec at `sector/market-state-function-spec.md` v0.1) — LLM-native holistic market read: computed state vector (dispersion/correlation/divergence, not index levels) + P-weighted regime taxonomy w/ pre-registered flips + divergence ledger. GATED ON: (1) USER DECISION — market-data source (API key vs daily agent-pull vs hybrid); (2) compute-layer P2 build; (3) routines execution (E6 saga). Conditioning layer only — never macro trades (mission guard).
+  - Origin: user design question 2026-07-08 (SKH-ADR-oversubscribed-vs-deteriorating-tape divergence example).
+  - Scope: phases P1-P3 per spec §5; kill condition = 30 refreshes of pure narration.
+  - Linked: `sector/market-state-function-spec.md`, `sector/ai-funding-shock-node.md`, compute-layer todo item.
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-01** [INDP, AF, POS, CAL] — US memory-tariff WATCH: read the **2026-07-01 Commerce data-center semiconductor market report** — the Phase-2 gate. (Memory-tariff verification 2026-06-29 RESOLVED the precursor → NEUTRAL/NON-EVENT: memory NOT in Phase-1, data-center exempt, pass-through-to-buyer; residual = ~15% HBM "second-wave" tail. Re-rate ONLY if Phase-2 closes the data-center exemption or a Korea-punitive tier emerges.)
+  - Origin: `signals/cross-source-log/2026-06-29-us-memory-tariff-verification-NEUTRAL-nonevent.md`.
+  - Linked: `companies/HYNIX/thesis.md` (carries the cohort tail-risk).
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2027-02-15** [CAL, BOT, POS] — HBF Gate-2 durability read: ISSCC 2027 (Feb) — write-endurance / latency / thermal-in-HBM-form-factor papers
+  - Origin: `watchlist/HBF-trajectory-monitor.md` Gate 2 — technical-durability is the silent failure mode for NAND in a memory role.
+  - Linked: `watchlist/HBF-trajectory-monitor.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-09-15** [INDP, CAL] — Cloudflare AI-crawler enforcement deadline (PD-3 data-enclosure catalyst)
+  - Origin: 2026-07-01 evening-brief Leg B discovery pass (`signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`). Cloudflare forces AI companies to separate search vs training/agent crawlers by 2026-09-15 or face default blocking on publisher sites.
+  - Scope: (a) at the deadline, verify enforcement actually happened + which labs complied vs got blocked; (b) does agent-crawler blocking create paid-rails demand for agentic browsing (new surface)?; (c) accrue PD-3 data-enclosure N-count (arXiv patronage exit = N=2 candidate).
+  - Linked: `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / process / 2026-07-15** [INFRA, CAL] — session-prime-cascade-hook v2 fix: INDEPENDENT VERIFICATION (fix APPLIED 2026-07-14 EVE same-session; do NOT re-fix — adversarially verify)
+  - Run the pre-registered protocol: `meta/hooks/session-prime-cascade-hook-fix-verification-prompt.md` (6 gates: selftest 21/21, fail-open, independent 30-day backtest with 12 must-fire + 5 must-suppress anchor SHAs, live exit-2/exit-0 paths, blind-spot hunt, wiring). Recompute everything; treat the fixing session's numbers as pre-registrations to test, not truths (B63 applies)
+  - On VERIFIED: flip fix-spec status, close this item, book verification artifact. On PARTIAL/REFUTED: book evidence + surface to user
+  - History: v1 shipped 2026-07-12 dead-on-arrival (ID-dash-adjacency regex matched no real header, zero telemetry); diagnosed + rebuilt as ID-set-diff design 2026-07-14 per `meta/hooks/session-prime-cascade-hook-fix-spec.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / process / 2026-07-07** [CAL, INDP] — BUILD THE COMPUTE LAYER (Principle #43b boundary rule): (a) ~~calibration-curve script~~ **✅ BUILT 2026-07-09 (`meta/scripts/calibration_curve.py` → generates `meta/trust-map.md`; #43b first-run grade: HIGH — computed finding: 1,528 P-claims across 240 files vs ZERO structured graded outcomes; prose-era grades only ~2/6 machine-adjudicable → created `predictions/calibration-ledger.csv`, BINDING: every GRADE appends CSV rows from now on; NEW SUBTASK: one-time backfill of ~15 prose-era grades into the CSV at next audit);** **REFRAMED 2026-07-09 (user 'trust calibration system' concept, confirmed valuable): the script's output = the TRUST MAP — per-faculty trust scores computed from outcomes only (P-band hit rates, magnitude-error direction, source-attribution failure rate, verifier-pipeline yield), regenerated not hand-maintained, auto-fed into session-prime. Rationale: tagging=instrumentation, grading=measurement, codification=update — the text-layer analog of gradient descent on live data; the trust map is the aggregated read-out. Self-trust must be built from outcomes, never self-assessment (introspection unverifiable per the 2026-07-09 pretraining discussion, wiki/llm-synaptic-consolidation.md);** (b) grading-delta helper (predicted-vs-actual %, band adjudication) for use AT each grade starting NOW Jul-22; (c) ledger-stats script (HIGH-rate trend, tokens/catch) before the 2026-07-15 Rule #16 audit; (d) tags-tail consistency checker (counts L/B/TC/P tails vs actual files — kills the B47-collision class); (e) generalize `structural-output-metric.py` to all-hooks inert-rule checks. Grade each build's first run under the #43b test protocol.
+  - Origin: user question 2026-07-07 EVE ("what must be computed vs narrated?") + the boundary rule in `methodology.md` #43b-3a.
+  - Linked: `meta/structural-output-metric.py` (template), `predictions/grading-log.md`, `meta/subagent-cost-yield-ledger.md`, `meta/tags.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-07-24** [INFRA, OPT, CAL] — LLM-native compression: N=3-per-variant ensemble replication + session-prime format-migration decision
+  - Origin: 2026-07-12 pilot (`meta/experiments/2026-07-12-llm-native-compression-pilot.md`) — V1 telegraphic hit 12/12 at 27.6% of size; decision rule triggered
+  - Scope: re-run probe battery with 3 readers per variant (fresh probes, second author-blind set if feasible); if replicated, rewrite session-prime.md in telegraphic form (keep human-skimmable) inside the 30k-char cap = ~3.6x state headroom; log two-audience constraint decision
+  - Linked: meta/experiments/2026-07-12-llm-native-compression-pilot.md, meta/session-prime.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-14** [CAL] — Cheap pins: HBM4 $4-5/Gb second source (TrendForce official) + S&P-Oracle rating-action date (tell-#7-adjacent)
+  - Linked: signals/cross-source-log/2026-07-13-mon-eve-newsletter-yongin-hbm4-verification.md, sector/ai-funding-shock-node.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-16** [POS, CAL] — ASML post-print: run the 8-item EUV-ladder residual checklist (FMS-2025 deck = highest value; 5 items proxy-blocked → needs browser session) before ANY entry-framework build
+  - Origin: 2026-07-14 user-commissioned EUV workflow adjudication (true-but-priced verdict)
+  - Scope: convert 1c "≥5" to exact integer if possible; decompose ₩11.95tn order; test residual edge vs the three offsets; output = pullback-conditioned entry framework OR explicit no-framework verdict
+  - Linked: `signals/cross-source-log/2026-07-14-tue-euv-layers-workflow-adjudication.md`, `watchlist/candidates.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / verification / 2026-07-22** [POS, CAL] — MRVL post-S&P inclusion drag watch (falsifier #5)
+  - Origin: 2026-06-12 MRVL deep-dive K5 imminent risk (S&P inclusion Jun-22; 30-day post-inclusion drag pattern); falsifier #5 from `companies/MRVL/thesis.md`
+  - Scope: at Jul-22 (30d post-inclusion), check MRVL stock action: down >15% AND no fundamental bear-news → L14 give-back pattern worse than expected → reweight Stage 3-4 modifier + trim trigger. Down <10% → K5 risk dissipated. Anywhere in between → monitoring
+  - Linked: `companies/MRVL/thesis.md` falsifier #5
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / harness / 2026-07-15** [INFRA, OPT] — Build temporal-attribution-hook + input-data-tier-hook + cohort-decoupling-hook (3 new Stop hooks)
+  - Origin: harness-optimization audit 2026-06-26 TIER 2 item B; failure modes H2 + H1 + H3 surfaced as N=2+ pattern in 7 days
+  - Scope: build 3 deterministic enforcement hooks per Principles #39 / #40 / #41 candidates (added today to methodology.md)
+  - Cost: ~30min build each; minimal runtime; requires user `cp` to `~/.claude/` for activation
+  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item B
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / research / 2026-07-14** [INDP, AF, OPT] — Newly-viable frontier PHASE 2: hunting-map sweep (Mode B candidate register)
+  - Origin: user framework 2026-07-12 (`wiki/newly-viable-frontier.md`) — "what can LLM-native business models enable that previously wasn't possible or economically unviable"
+  - Scope: multi-agent enumeration of cost structures w/ cognition >~50% COGS + latent demand at lower price points ("only the rich could afford X") + impossible-at-any-price primitives; run the viability-flip screen (pre-2023 labor prices) on each candidate; rank into a Mode-B candidate register; apply toy-detector + Griffin attribution filter; condition design on the historical base-rate agent's H1/H2/H3 verdict (if H3, add graveyard denominator)
+  - Linked: wiki/newly-viable-frontier.md, wiki/agent-native-organization.md, sector/end-demand-durability-model.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P1 / process / 2026-07-11** [OPT, AF] — Codification rule first 30-day net-positive check
+  - Origin: `meta/codification-rule.md` §3 self-detecting metrics; user 2026-06-11 directive
+  - Scope: grep sessions 2026-06-11 → 2026-07-11 for (a) §1-triggered codifications (POSITIVE = ≥4 in 30 days); (b) read-rate of newly codified items in subsequent sessions; (c) FALSIFIER firing (zero codifications OR ≥10 codifications with zero subsequent reads); (d) B40 expansion garble taxonomy fire-rate per sub-type; (e) B44 chat-summary discipline drift recurrence; (f) L25 explicit-Bayesian-update pattern recurrence
+  - Decision matrix: positive → promote codification rule to Critical Rule #13 in CLAUDE.md + B40/B44/L25 to confirmed; flat → refine triggers; negative → retire + build deterministic chat-summary-mirror hook
+  - Linked: `meta/codification-rule.md`, `meta/biases-watchlist.md` B40/B44, `predictions/lessons.md` L25, `meta/principle-applications-log.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-07-24→CARRIED** [INFRA] — fire-logging HOUSE STANDARD ✅ DONE (3805eb9) — RESIDUAL: prose-deadline extractor wiring + B47 hook post-review ship
+  - **✅ SHIPPED 2026-07-24 (commit 3805eb9, artifact `meta/redteam/2026-07-24-monthly-audit-build.md` + `meta/hooks/FIRE-LOGGING-HOUSE-STANDARD.md`):** hook_fire_log.py shared helper (house format, sanitize, fail-open, probe-aware, selftest/clock-check/rotate CLI); wired the 11 silent Stop hooks; rotation/cap policy (append-only through 08-06, metric-safe archive-aware); clock-source cross-check (first reading OK ~6h delta); structural-output-metric ref-order verified FALLING 0.120→0.102. Zero enforcement drift (suite unchanged). 7 already-logging hooks deliberately NOT re-pointed (net-negative author-blind risk).
+  - **✅ B47 HOOK DECIDED 2026-07-24:** SPEC written (`meta/hooks/b47-efficiency-claim-hook-SPEC.md`), **NOT shipped** — Rule #19 review-gated; routed to K3 + fresh-session review (4 questions, sharpest = can a text-scanning Stop hook catch a missing-LEG failure at all). Interim INGEST step-4b tripwire LIVE. Awaiting operator to relay review inputs.
+  - **RESIDUAL (carried, NOT done):** (1) prose-sweep #1 items 3+6 — wire the Test-D prose-deadline extractor into session-start-hook.py + parser coverage tests to meta/tests/ (real todo.md + grading-log.md fixtures); (2) B47 hook build+ship ONLY after review clears §6 (esp. Q4 layer question).
+  - Origin: fresh-Claude "what's missing" #1 (2026-07-20): fire evidence was ephemeral for most live hooks — now the 11 silent hooks persist.
+  - Linked: meta/hooks/, meta/hook-fire-log.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / open** [INDP, AF, POS] — CONSUMER WORLD-REVIEW: SEALED-DIFF leg (build DONE 2026-07-11, `sector/consumer-adoption-worldview-2031.md` v2 adversarially amended; REMAINING: user sends his sealed picture -> diff artifact; then annual waypoint grading at year-end wakes)
+  - Origin: user request + v2 refinement (verbatim-adjacent: "as if somebody asked you in 1999 how end consumers would interface with the Internet and what applications would be used at scale... a lot of people would not have foreseen Facebook or Google. That's what I want to hone in on. Doesn't have to be 2030 — any year"). SPEC v2 (supersedes v1 legs 1-2; keeps 3-5): **Leg 0 RETRODICTION-FIRST** — fit the forecasting method on TWO historical cycles (1999 internet, 2007 mobile) with the loser-gate (method must retrodict pets.com/WAP/push-tech failures too, else hindsight cosplay; pre-training contamination stated: the METHOD is the deliverable, not outcome memory). **Leg 1 PRIMITIVES-NOT-APPS** — what AI makes FREE + what NEW primitive has no pre-AI analog (persistent personal memory/context, delegated agency, synthetic relationships) — winners live on primitives, not better chatbots. **Leg 2 EMBRYO INVENTORY** — today's at-scale consumer residues ranked SixDegrees-2026 vs already-winner (usage curves, not press). **Leg 3 LATTICE + SURPRISE QUOTA** — each branch needs ≥1 mechanism-backed candidate as absurd-sounding today as life-uploading in 1999. Target year derived from the analogy's own timing structure (infra inflection + 8-10yrs ≈ 2030-2033). RETAINED from v1: waypoints wired to catalyst clock/calibration ledger; decision surface (venues/layers capturing the consumer surge per branch → book implications); sealed-diff protocol (user's picture only after mine is committed).
+  - Scope: weekend-class, ~15-25 agent fires; SHARE EVIDENCE with funding-shock refresh + end-demand P1 (legs overlap). Fires when user sends the input block.
+  - Linked: sector/ (new file), meta/successful-deployment-search-spec.md, sector/ai-funding-shock-node.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-15** [INDP, POS, BOT] — Agent-security investable-surface scan (PD-4 watchlist GAP)
+  - Origin: same Leg B pass. Agents gaining OS/terminal access (Gemini Spark, ZCode) while being weaponized (Claude Desktop double-agent, DeepSeek ransomware) = CrowdStrike-shaped nascent category; NO public pure-play identified.
+  - Scope: map the emerging agent-security/identity/sandboxing landscape (startups, incumbent bolt-ons, funding rounds); identify any investable expression (public adjacents included); trigger-watch = first enterprise agent-breach headline.
+  - Linked: `signals/cross-source-log/2026-07-01-evening-brief-LEGB-discovery-pass-5-patterns.md`, `watchlist/candidates.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / harness / 2026-07-24** [INFRA, recurring] — PRUNING DISCIPLINE monthly pass + FIRST CURATION-RATIO reading (maintenance-vs-research commit share from git log; K3 dissent #1, per 2026-07-17 cross-family review artifact) (LLM-native context-hygiene, codified 2026-06-27 audit item #3)
+  - **ADDED 2026-07-07 (Principle #43 standing question — wired here so the audit actually asks it):** run the AFFORDANCE REVIEW per `methodology.md` #43b protocol — (1) inventory-vs-usage diff from ledgers/logs (mechanical); (2) anthropomorphic-default sweep (human-time estimates, single-threaded plans, essay-instead-of-computation); (3) each candidate → pre-registered executable test, NOT self-report. Also: renumber the #42 collision (retrieval-staleness vs time-window) per tags.md flag.
+  - Origin: 2026-06-27 LLM-native audit — harness is engineered to ACCRETE (every cascade appends) but my attention budget per context degrades with length ("lost in the middle"); a bloated harness dilutes retrieval MORE for an LLM than it slows a human. There is an accrete cadence but no matching PRUNE cadence.
+  - Scope (monthly, 24th, alongside consolidated audit): identify what can be archived/compressed without losing load-bearing state — oversized thesis files (rounds 1-N → compress resolved rounds to a 1-line ledger + link), tier-cascade-log + subagent-cost-yield-ledger rotation (archive >30-day entries to a dated archive file, keep audit-summary head), stale cross-source-log consolidation, session-prime cap enforcement (≤500 lines). Treat pruning with the SAME seriousness as the audits — bloat is a silent cognition tax.
+  - Metric: total harness char-count growth rate; per-file size flags (thesis.md >X KB → compress-resolved-rounds candidate); was anything load-bearing lost? (must be NO)
+  - Linked: `meta/methodology.md`, `meta/session-prime.md` cap rules, `companies/*/thesis.md`, `meta/tier-cascade-log.md`, `meta/subagent-cost-yield-ledger.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / process / 2026-07-11** [OPT] — Signal-density-detection first 30-day net-positive check
+  - Origin: `meta/signal-density-detection.md` §3 self-detecting metrics; built same day as codification rule first-check
+  - Scope: (a) triangulation.md growth ≥1-3 lines/wk (was 0/wk during the 72-cross-source-log gap); (b) every [ACTIVE] cluster cites ≥3 dated sources; (c) cross-source-log files that produced NO triangulation entry after 60 days reviewed for missed convergence; (d) FALSIFIER firing → build deterministic promotion-check hook
+  - Decision matrix: positive → keep manual; flat → tighten promotion rule; negative → deterministic hook required
+  - Linked: `meta/signal-density-detection.md`, `signals/triangulation.md`, `meta/codification-rule.md` (parallel first check)
+
+- [x] **P3 / process / 2026-06-24** [OPT] — INDEX.md + tags.md refresh + monthly audit consolidation
+  - Origin: `INDEX.md` monthly refresh cadence; tags.md sync with newly added principles/biases/lessons
+  - Scope: regenerate INDEX held-positions section against `portfolio/holdings.md`; sync tags.md against actual file state; cross-source-log >30 days summarized into triangulation entries OR explicitly flagged as noise
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / verification / 2026-07-13** [INDP] — Fable 5 / Mythos 5 access-restore check (H1 transient vs H2 structural resolver) — **re-dated 2026-07-06 (was 06-20, went 16d overdue unexecuted); still TC-10-live: by now the H1-transient window has long passed, so the check doubles as an H2-structural confirmation datapoint unless access was quietly restored**
+  - Origin: 2026-06-12 US export-control directive disabled Fable 5 + Mythos 5 globally (`signals/cross-source-log/2026-06-12-us-export-control-fable-mythos-suspension-model-layer-FIRST.md`). H1 transient (P~45% my model) confirms if access restored allied-tier by ~June 20; if still disabled or a 2nd model-layer action appears, H2 structural-regime weight rises.
+  - Scope: check Anthropic status + news for Fable/Mythos restoration; check for any SECOND model-layer export action (any provider); update TC-10 candidate cluster N-count + status
+  - Linked: TC-10 in `signals/triangulation.md`; the export-control cross-source-log
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-06-25→2026-07-04** [INDP, AF, BOT] — EU-sovereign-AI investable expressions: PARTIALLY CLOSED (per `signals/cross-source-log/2026-07-04-all-regions-weekend-consolidation.md`): OVHcloud = sole direct pure-play (small/risky); Schneider+Legrand = agnostic picks-and-shovels (>20% DC revenue); no sovereign DC REIT exists; financing = same US private-credit sponsors (node scope note cascaded). REMAINING: watch the EuroHPC gigafactory CALL ("summer 2026") — award winners = the next expression surface; deep-dig Schneider/Legrand DC-segment momentum before any tiering.
+  - Origin: 2026-06-12 model-layer export-control signal (TC-10) — IF H2/H3 plays out, cleanest investable expression is EU-sovereign-AI serving infra; currently NO held or watchlist name captures it. Mistral is private (€3B raise 2026-06-12). Need investable proxies.
+  - Scope: during the monthly supply-chain graph reconstruction cycle, fan out specifically on EU-sovereign-AI infra investable names (sovereign cloud, EU-compliant model serving, EU data-residency infra) that pass the investability filter (Degiro/N26 accessible). Surface 2-3 candidates if they exist.
+  - Linked: TC-10; `signals/cross-source-log/2026-06-12-us-export-control-fable-mythos-suspension-model-layer-FIRST.md`; existing supply-chain graph reconstruction P1 (2026-06-25)
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / verification / 2026-09-13** [INDP] — TC-11 ITC Section 337 petition watch (UMC vs TSMC patent enforcement)
+  - Origin: 2026-06-13 AM brief item #15 — Republican congresspersons petition ITC to block TSMC chip imports via UMC patents (T2 Tom's Hardware). N=1 candidate cluster TC-11 (hardware-IP/patent enforcement at chip-import layer; distinct from TC-7 export-side).
+  - Scope: 90-day watch for (a) ITC formal acceptance of Section 337 investigation (procedural milestone); (b) N=2 instance — any other hardware-IP enforcement action targeting AI chip flow; (c) hyperscaler/foundry public commentary
+  - **2026-07-23 UPDATE: condition (b) FIRED** — Renesas trade-secret suit vs Navitas (T3 newsletter relay of Reuters, VERIFY) = TC-11 N=2; newsletter editorial implies an unlogged Wolfspeed lawsuit (verify → potential N=3 promotion review). Per `signals/cross-source-log/2026-07-23-semidoped-quicktakes-7item-newsletter-ingest.md`. Remaining before promotion: verify Renesas filing at T1/T2 + condition (a) ITC procedural milestone OR Wolfspeed N=3.
+  - Outcome decision tree: ITC accepts + N=2 emerges → promote TC-11 CANDIDATE → ACTIVE → cascade to MRVL/NVDA watchlist + held MRVL thesis update; ITC declines OR no N=2 → keep candidate; close at 2026-09-13 monthly review
+  - Linked: TC-11 in `signals/triangulation.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-20** [INDP, AF] — Chokepoint-history study: ASML/TSMC precedent comparison
+  - Origin: user question 2026-07-12 ("has there ever been that amount of chokepoint?")
+  - Scope: historical chokepoints (Standard Oil, De Beers, Intel x86, Boeing/Airbus, others surfaced) vs ASML EUV/TSMC leading-edge on: capability-vs-supply control, replication time/cost, what happened to margins when substitutes arrived; deliverable = wiki entry + implications for TC-13/TC-16 chokepoint names
+  - Linked: wiki/newly-viable-frontier.md §6b
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / research / 2026-07-17** [INDP, OPT] — EU coverage-gap audit: Leg B German-sweep "nothing" = reality or detection failure? (constraint-differential applied geographically)
+  - Scope: systematic DE/FR/NL AI-supply-chain enumeration vs our sweep prompts; either licensed clean-negative or blind-spot map + prompt-library patch
+  - Linked: meta/prompt-library.md block A, meta/morning-feed-prompts.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P3 / harness / 2026-07-24** [OPT] — session-prime per-item relative-age tags ([added YYYY-MM-DD · N days ago], computed at inject)
+  - Origin: K3 mechanism-3 (priming temporal decay) 2026-07-20; the TODAY header shipped same day — per-item tags need parseable per-item dates (mostly present in house headers), scoped to the audit. Companion candidate: European decimal-comma normalization for grounding (parked — over-grounding risk needs a design pass).
+  - Linked: meta/hooks/session-prime-hook.py, meta/session-prime.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P3 / research / 2026-07-15** [INDP, AF] — PARKED: Medtech-AI × Edge-AI/Physical-AI/AI-chip cross-theme overlap mapping
+  - Origin: user brain dump 2026-06-10 PM ("there might be some overlap within the edge AI, robotics AI, physical AI and AI chip architecture... that's for later")
+  - Scope: map ISRG da Vinci 5 (NVIDIA Blackwell/Clara), medical-edge inference SoCs (AMBA/SYNA adjacency), NVIDIA IGX/Holoscan medical-edge cohort against T8 + medtech-biotech-ai-thesis.md branches
+  - Linked: sector/medtech-biotech-ai-thesis.md (PARKED section), sector/themes.md T8 + T10
+
+- [x] **P2 / process / 2026-06-24** [OPT] — Monthly audit add-on: cross-domain-pattern-register first review
+  - Origin: register created 2026-06-10 per user combinatorial-harness directive
+  - Scope: verify register was load-bearing in any dissection since creation (cited in prompts? new instances appended?); promote/demote PC-9/10/11 candidates; apply net-positive test (subagent compute per dissection trending down?)
+  - Linked: meta/cross-domain-pattern-register.md
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P3 / research / 2026-09-30** [INDP, AF] — Retrieve NVDA Securities Purchase Agreement full exhibit (currently SEC 403)
+  - Origin: 2026-06-12 MRVL bear subagent — SPA exhibit not retrievable at T1; lock-up + standstill + exclusivity terms unverified; this drives MRVL falsifier #4
+  - Scope: attempt EDGAR retrieval via alternate paths (10-Q/10-K reference exhibits, FOIA equivalents, redacted version in proxy materials); failing that, monitor for 13D/G or 8-K amendment exposing terms
+
+- [x] **DONE 2026-06-12 PM** — Activate macro-anchor-hook in ~/.claude/settings.json — USER AUTHORIZED verbally ("I would activate it") 2026-06-12 20:11 UTC; registered as 14th Stop hook; verified via settings.json parse + sanity run exit 0. NOTE: session-prime-hook activation REMAINS PENDING (separate P0 item) — user's authorization was singular ("it") in macro-anchor context
+  - Origin: 2026-06-12 user-articulated cross-session anchoring concern (every output should be macro-first research-anchored); Critical Rule #15 + B46 candidate codified same day; hook built + smoke-tested (fires on position-relevant without anchor; passes with macro/T1/tie-together marker)
+  - Action: add `{"type":"command","command":"~/.claude/macro-anchor-hook.py"}` to Stop hooks array in ~/.claude/settings.json
+  - Trade-off: more output friction (analytical responses must explicitly anchor to macro / tag claims / tie micro-to-macro); user explicitly accepted "slower replies, more accuracy" trade
+  - Falsifier already in place per Critical Rule #15: 30-day fire-rate audit; retire if <3x/month OR false-positive >30%
+  - Linked: `CLAUDE.md` Critical Rule #15; `meta/biases-watchlist.md` B46; `meta/hooks/macro-anchor-hook.py`
+
+- [x] **DONE 2026-06-12 PM** — Workflow #9 MACRO-FIRST RESEARCH full specification — completed early (was due 2026-06-20); written into CLAUDE.md Core Workflows section as Workflow #9 incorporating user's 5-step pipeline articulation verbatim (research pass → first-principles articulation → metric evaluation → future inference via triangulation + pattern-matching against P-register/TC-clusters → company tie-in). Quality bar + #8 relationship + origin failure + falsifier all specified. Artifact: CLAUDE.md §Workflow 9.
+
+- [x] **DONE 2026-06-12 EVE same-session** — Rubin CPX B40 contradiction RESOLVED via verification subagent: Scenario (c) — June 12 brief recycled Sept 10, 2025 SemiAnalysis article as fresh news (URL confirmed `semianalysis.com/2025/09/10/...`). June 4 cancellation anchor was CORRECT. HYNIX HBM thesis INTACT. B40.1 increment to N=10+. Closed in cross-source-log verification register. Discovery D2 (inference architecture bifurcation) ALSO COLLAPSES — no Rubin CPX = no prefill/decode chip-class split from NVDA side.
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
+- [ ] **P2 / verification / 2026-09-30** [INDP, AF, POS] — ALAB Trainium3 Scorpio fabric award watch (Q3 2026 expected per RBC T2)
+  - Origin: 2026-06-12 connectivity-layer re-evaluation (`signals/cross-source-log/2026-06-12-connectivity-layer-alab-reevaluation-2subagent.md`) — single most informative upcoming datapoint for the ALAB H1/H3 split
+  - Scope: confirm whether AWS Trainium3 scale-up fabric socket goes to ALAB Scorpio or MRVL; if ALAB → entry trigger (a) fires, enter 2-3% per re-evaluation; if MRVL → demote ALAB watchlist P2→P3 + H3 (absorption squeeze) reweights up materially
+  - Secondary triggers tracked same item: 2nd CXL hyperscaler disclosure (CATEGORY EVENT, run L14-v2 pre-rally check before entry); ALAB Q2-26 print ~Aug 11 (estimate)
+  - Linked: `companies/ALAB/thesis.md` 2026-06-12 re-evaluation
+  - _Parked 2026-08-03 — did not make the cut of 30. Revive freely: `backlog_rank.py --revive "..."`_
 
 ## Archive (completed process items without permanent artifact)
 
@@ -451,120 +691,7 @@
 - SessionStart hook auto-surfaces top 5 + any P0 at every session start
 - User can ask "what's on the to-do list" anytime; I read this file
 
-- [ ] **P3 / research / 2026-07-15** [INDP, AF] — PARKED: Medtech-AI × Edge-AI/Physical-AI/AI-chip cross-theme overlap mapping
-  - Origin: user brain dump 2026-06-10 PM ("there might be some overlap within the edge AI, robotics AI, physical AI and AI chip architecture... that's for later")
-  - Scope: map ISRG da Vinci 5 (NVIDIA Blackwell/Clara), medical-edge inference SoCs (AMBA/SYNA adjacency), NVIDIA IGX/Holoscan medical-edge cohort against T8 + medtech-biotech-ai-thesis.md branches
-  - Linked: sector/medtech-biotech-ai-thesis.md (PARKED section), sector/themes.md T8 + T10
-
-- [x] **P2 / process / 2026-06-24** [OPT] — Monthly audit add-on: cross-domain-pattern-register first review
-  - Origin: register created 2026-06-10 per user combinatorial-harness directive
-  - Scope: verify register was load-bearing in any dissection since creation (cited in prompts? new instances appended?); promote/demote PC-9/10/11 candidates; apply net-positive test (subagent compute per dissection trending down?)
-  - Linked: meta/cross-domain-pattern-register.md
-
-- [ ] **P1 / process / 2026-07-11** [OPT, AF] — Codification rule first 30-day net-positive check
-  - Origin: `meta/codification-rule.md` §3 self-detecting metrics; user 2026-06-11 directive
-  - Scope: grep sessions 2026-06-11 → 2026-07-11 for (a) §1-triggered codifications (POSITIVE = ≥4 in 30 days); (b) read-rate of newly codified items in subsequent sessions; (c) FALSIFIER firing (zero codifications OR ≥10 codifications with zero subsequent reads); (d) B40 expansion garble taxonomy fire-rate per sub-type; (e) B44 chat-summary discipline drift recurrence; (f) L25 explicit-Bayesian-update pattern recurrence
-  - Decision matrix: positive → promote codification rule to Critical Rule #13 in CLAUDE.md + B40/B44/L25 to confirmed; flat → refine triggers; negative → retire + build deterministic chat-summary-mirror hook
-  - Linked: `meta/codification-rule.md`, `meta/biases-watchlist.md` B40/B44, `predictions/lessons.md` L25, `meta/principle-applications-log.md`
-
-- [ ] **P2 / process / 2026-07-11** [OPT] — Signal-density-detection first 30-day net-positive check
-  - Origin: `meta/signal-density-detection.md` §3 self-detecting metrics; built same day as codification rule first-check
-  - Scope: (a) triangulation.md growth ≥1-3 lines/wk (was 0/wk during the 72-cross-source-log gap); (b) every [ACTIVE] cluster cites ≥3 dated sources; (c) cross-source-log files that produced NO triangulation entry after 60 days reviewed for missed convergence; (d) FALSIFIER firing → build deterministic promotion-check hook
-  - Decision matrix: positive → keep manual; flat → tighten promotion rule; negative → deterministic hook required
-  - Linked: `meta/signal-density-detection.md`, `signals/triangulation.md`, `meta/codification-rule.md` (parallel first check)
-
-- [x] **P3 / process / 2026-06-24** [OPT] — INDEX.md + tags.md refresh + monthly audit consolidation
-  - Origin: `INDEX.md` monthly refresh cadence; tags.md sync with newly added principles/biases/lessons
-  - Scope: regenerate INDEX held-positions section against `portfolio/holdings.md`; sync tags.md against actual file state; cross-source-log >30 days summarized into triangulation entries OR explicitly flagged as noise
-
-- [ ] **P1 / research / 2026-09-12** [CAL, INDP] — B45 cohort base-rate quarterly recalibration
-  - Origin: B45 codification 2026-06-12 — empirical regime base rates need quarterly re-verification; falsifier in B45 specifies "if cohort median 18-month return drops below +60% in next measurement period, revert toward standard prior"
-  - Scope: re-run the 15-name AI-infrastructure basket subagent calibration (same names + Kioxia reference) for Jan/Feb 2026 → Sep 2026 window. Compute new band counts. If extreme-outlier count drops below 2 of 15 (vs current 6 of 15), regime priors weakened — update CLAUDE.md banner + priming hook item 8 to reflect new base rate. If extreme-outlier count stays ≥4 of 15, regime priors confirmed — B45 promoted from CANDIDATE to CONFIRMED.
-  - Cascade: principle-applications-log.md entry + biases-watchlist.md B45 status update + CLAUDE.md banner refresh if needed
-  - Linked: `meta/biases-watchlist.md` B45, `signals/cross-source-log/2026-06-12-pre-training-magnitude-conservatism-calibration.md`
-
-- [x] **DONE 2026-06-26** — DURABLE HOOK ACTIVATION resolved via Architecture A (project-level `.claude/settings.json`), NOT laptop env-setup-script as originally planned. H1 test 2026-06-26 14:52:32Z confirmed Claude Code on Web reads `<repo-root>/.claude/settings.json` (diagnostic hook fired). Migration: all 16 research-OS hooks moved to `<repo>/.claude/settings.json` with absolute paths to `/home/user/Health-Calculators/research/meta/hooks/*.py`; `~/.claude/settings.json` emptied (backup at `~/.claude/settings.json.bak.pre-arch-a-2026-06-26`) to prevent merge duplication. Result: zero laptop dependency, zero install.sh dependency, zero ~/.claude/ dependency for hook persistence — settings ride with the repo via git clone. install.sh deprecated as primary activation; remains as emergency fallback. Full architecture rationale + verification protocol + migration history at `meta/hooks/DURABLE-ACTIVATION.md`. Falsifier: 2026-07-19 30-day audit checks `hook-fire-log.md` for fires on fresh-container sessions; if no fires, Architecture A failed and we fall back to install.sh + the original laptop-env-script approach.
-
-- [x] **DONE 2026-06-26** — Activate session-prime-hook + macro-anchor-hook in mirror `research/meta/hooks/settings.json` (USER AUTHORIZED 2026-06-26 via "yes try it and test it"). Both hooks now wired in mirror + installed to `~/.claude/settings.json` via `install.sh`. Smoke-tested: session-prime-hook returns full `session-prime.md` as `additionalContext` on SessionStart events (exit 0); macro-anchor-hook fail-open on empty input (exit 0). DURABILITY caveat: persistence across container restarts still depends on P0 item directly above (install.sh as Web UI env setup script) — laptop required for that piece. Until then, run `bash research/meta/hooks/install.sh` at start of every fresh cloud container (or trigger via keyword pattern TBD). 2026-07-12 effectiveness audit unchanged.
-
-- [x] **P2 / harness / 2026-06-24** [INFRA] — Session-prime curation rule integration into monthly audit
-  - Origin: 2026-06-12 session-prime.md created with explicit cap rules (500-line hard / 250-400 target) — needs first monthly audit verification
-  - Scope: at monthly codification audit (2026-06-24), verify session-prime.md (a) is ≤500 lines, (b) all listed CANDIDATE biases are still active (not gone INERT >30 days), (c) listed recent lessons are within rolling-5 window, (d) regime base rate not stale, (e) any codification commits since session-prime creation also updated session-prime
-  - Action: prune INERT items; promote/demote per the file's own cap rules; add to consolidated monthly audit checklist
-
-- [ ] **P2 / verification / 2026-09-30** [INDP, AF, POS] — ALAB Trainium3 Scorpio fabric award watch (Q3 2026 expected per RBC T2)
-  - Origin: 2026-06-12 connectivity-layer re-evaluation (`signals/cross-source-log/2026-06-12-connectivity-layer-alab-reevaluation-2subagent.md`) — single most informative upcoming datapoint for the ALAB H1/H3 split
-  - Scope: confirm whether AWS Trainium3 scale-up fabric socket goes to ALAB Scorpio or MRVL; if ALAB → entry trigger (a) fires, enter 2-3% per re-evaluation; if MRVL → demote ALAB watchlist P2→P3 + H3 (absorption squeeze) reweights up materially
-  - Secondary triggers tracked same item: 2nd CXL hyperscaler disclosure (CATEGORY EVENT, run L14-v2 pre-rally check before entry); ALAB Q2-26 print ~Aug 11 (estimate)
-  - Linked: `companies/ALAB/thesis.md` 2026-06-12 re-evaluation
-
-- [ ] **P2 / verification / 2026-08-25** [INDP, AF, CAL] — MRVL Q2 FY27 print + L14/L19/B42 watch — **re-framed 2026-07-06: MRVL EXITED 2026-06-27; print = the thesis's pre-registered RE-ENTRY trigger watch (die-design-minority disclosure OR Trainium-4 win), not a held-position falsifier**
-  - Origin: 2026-06-12 3-subagent MRVL deep-dive (`signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`); falsifier #1 of MRVL thesis fires/falsifies at this print
-  - Scope: (a) Was FY28 custom Si guide RAISED with named NEW XPU customer (Google MPU, new hyperscaler)? → confirms H1 bull; (b) Was guide reaffirmed with no new named customer? → base case dominant; (c) Was guide trimmed? → bear K2 fires → trim trigger; (d) Stock T+24h reaction vs L14/L14-v2 framework — calibration data point
-  - Linked: `companies/MRVL/thesis.md` falsifier #1; `predictions/lessons.md` L11/L12/L13; `signals/cross-source-log/2026-06-13-MRVL-deep-dive-3subagent.md`
-
-- [ ] **P2 / verification / 2026-07-22** [POS, CAL] — MRVL post-S&P inclusion drag watch (falsifier #5)
-  - Origin: 2026-06-12 MRVL deep-dive K5 imminent risk (S&P inclusion Jun-22; 30-day post-inclusion drag pattern); falsifier #5 from `companies/MRVL/thesis.md`
-  - Scope: at Jul-22 (30d post-inclusion), check MRVL stock action: down >15% AND no fundamental bear-news → L14 give-back pattern worse than expected → reweight Stage 3-4 modifier + trim trigger. Down <10% → K5 risk dissipated. Anywhere in between → monitoring
-  - Linked: `companies/MRVL/thesis.md` falsifier #5
-
-- [ ] **P3 / research / 2026-09-30** [INDP, AF] — Retrieve NVDA Securities Purchase Agreement full exhibit (currently SEC 403)
-  - Origin: 2026-06-12 MRVL bear subagent — SPA exhibit not retrievable at T1; lock-up + standstill + exclusivity terms unverified; this drives MRVL falsifier #4
-  - Scope: attempt EDGAR retrieval via alternate paths (10-Q/10-K reference exhibits, FOIA equivalents, redacted version in proxy materials); failing that, monitor for 13D/G or 8-K amendment exposing terms
-
-- [x] **DONE 2026-06-12 PM** — Activate macro-anchor-hook in ~/.claude/settings.json — USER AUTHORIZED verbally ("I would activate it") 2026-06-12 20:11 UTC; registered as 14th Stop hook; verified via settings.json parse + sanity run exit 0. NOTE: session-prime-hook activation REMAINS PENDING (separate P0 item) — user's authorization was singular ("it") in macro-anchor context
-  - Origin: 2026-06-12 user-articulated cross-session anchoring concern (every output should be macro-first research-anchored); Critical Rule #15 + B46 candidate codified same day; hook built + smoke-tested (fires on position-relevant without anchor; passes with macro/T1/tie-together marker)
-  - Action: add `{"type":"command","command":"~/.claude/macro-anchor-hook.py"}` to Stop hooks array in ~/.claude/settings.json
-  - Trade-off: more output friction (analytical responses must explicitly anchor to macro / tag claims / tie micro-to-macro); user explicitly accepted "slower replies, more accuracy" trade
-  - Falsifier already in place per Critical Rule #15: 30-day fire-rate audit; retire if <3x/month OR false-positive >30%
-  - Linked: `CLAUDE.md` Critical Rule #15; `meta/biases-watchlist.md` B46; `meta/hooks/macro-anchor-hook.py`
-
-- [x] **DONE 2026-06-12 PM** — Workflow #9 MACRO-FIRST RESEARCH full specification — completed early (was due 2026-06-20); written into CLAUDE.md Core Workflows section as Workflow #9 incorporating user's 5-step pipeline articulation verbatim (research pass → first-principles articulation → metric evaluation → future inference via triangulation + pattern-matching against P-register/TC-clusters → company tie-in). Quality bar + #8 relationship + origin failure + falsifier all specified. Artifact: CLAUDE.md §Workflow 9.
-
-- [x] **DONE 2026-06-12 EVE same-session** — Rubin CPX B40 contradiction RESOLVED via verification subagent: Scenario (c) — June 12 brief recycled Sept 10, 2025 SemiAnalysis article as fresh news (URL confirmed `semianalysis.com/2025/09/10/...`). June 4 cancellation anchor was CORRECT. HYNIX HBM thesis INTACT. B40.1 increment to N=10+. Closed in cross-source-log verification register. Discovery D2 (inference architecture bifurcation) ALSO COLLAPSES — no Rubin CPX = no prefill/decode chip-class split from NVDA side.
-
-- [ ] **P2 / verification / 2026-07-13** [INDP] — Fable 5 / Mythos 5 access-restore check (H1 transient vs H2 structural resolver) — **re-dated 2026-07-06 (was 06-20, went 16d overdue unexecuted); still TC-10-live: by now the H1-transient window has long passed, so the check doubles as an H2-structural confirmation datapoint unless access was quietly restored**
-  - Origin: 2026-06-12 US export-control directive disabled Fable 5 + Mythos 5 globally (`signals/cross-source-log/2026-06-12-us-export-control-fable-mythos-suspension-model-layer-FIRST.md`). H1 transient (P~45% my model) confirms if access restored allied-tier by ~June 20; if still disabled or a 2nd model-layer action appears, H2 structural-regime weight rises.
-  - Scope: check Anthropic status + news for Fable/Mythos restoration; check for any SECOND model-layer export action (any provider); update TC-10 candidate cluster N-count + status
-  - Linked: TC-10 in `signals/triangulation.md`; the export-control cross-source-log
-
-- [ ] **P2 / research / 2026-06-25→2026-07-04** [INDP, AF, BOT] — EU-sovereign-AI investable expressions: PARTIALLY CLOSED (per `signals/cross-source-log/2026-07-04-all-regions-weekend-consolidation.md`): OVHcloud = sole direct pure-play (small/risky); Schneider+Legrand = agnostic picks-and-shovels (>20% DC revenue); no sovereign DC REIT exists; financing = same US private-credit sponsors (node scope note cascaded). REMAINING: watch the EuroHPC gigafactory CALL ("summer 2026") — award winners = the next expression surface; deep-dig Schneider/Legrand DC-segment momentum before any tiering.
-  - Origin: 2026-06-12 model-layer export-control signal (TC-10) — IF H2/H3 plays out, cleanest investable expression is EU-sovereign-AI serving infra; currently NO held or watchlist name captures it. Mistral is private (€3B raise 2026-06-12). Need investable proxies.
-  - Scope: during the monthly supply-chain graph reconstruction cycle, fan out specifically on EU-sovereign-AI infra investable names (sovereign cloud, EU-compliant model serving, EU data-residency infra) that pass the investability filter (Degiro/N26 accessible). Surface 2-3 candidates if they exist.
-  - Linked: TC-10; `signals/cross-source-log/2026-06-12-us-export-control-fable-mythos-suspension-model-layer-FIRST.md`; existing supply-chain graph reconstruction P1 (2026-06-25)
-
-- [ ] **P2 / verification / 2026-09-13** [INDP] — TC-11 ITC Section 337 petition watch (UMC vs TSMC patent enforcement)
-  - Origin: 2026-06-13 AM brief item #15 — Republican congresspersons petition ITC to block TSMC chip imports via UMC patents (T2 Tom's Hardware). N=1 candidate cluster TC-11 (hardware-IP/patent enforcement at chip-import layer; distinct from TC-7 export-side).
-  - Scope: 90-day watch for (a) ITC formal acceptance of Section 337 investigation (procedural milestone); (b) N=2 instance — any other hardware-IP enforcement action targeting AI chip flow; (c) hyperscaler/foundry public commentary
-  - **2026-07-23 UPDATE: condition (b) FIRED** — Renesas trade-secret suit vs Navitas (T3 newsletter relay of Reuters, VERIFY) = TC-11 N=2; newsletter editorial implies an unlogged Wolfspeed lawsuit (verify → potential N=3 promotion review). Per `signals/cross-source-log/2026-07-23-semidoped-quicktakes-7item-newsletter-ingest.md`. Remaining before promotion: verify Renesas filing at T1/T2 + condition (a) ITC procedural milestone OR Wolfspeed N=3.
-  - Outcome decision tree: ITC accepts + N=2 emerges → promote TC-11 CANDIDATE → ACTIVE → cascade to MRVL/NVDA watchlist + held MRVL thesis update; ITC declines OR no N=2 → keep candidate; close at 2026-09-13 monthly review
-  - Linked: TC-11 in `signals/triangulation.md`; `signals/cross-source-log/2026-06-13-morning-brief-15-item-triage-tc10-promoted.md`
-
 ---
-
-- [ ] **P1 / harness / 2026-08-06** [INFRA, CAL, OPT] — Two-bracket experiment EXTENDED close (normalized metric)
-  - Origin: 30-day close ran 2026-07-06 (5d late, harness audit). Raw weekly fires 7→7→25→~23/wk-pace = literal INCREASE, but weeks 3-4 were the heaviest analytical-volume window on record → volume-confounded; pre-registered criteria couldn't cleanly adjudicate. **USER DECISION 2026-07-06: KEEP BOTH, extend 30 days.**
-  - Scope: at 2026-08-06 compute the NORMALIZED metric — weekly structural-output fires ÷ weekly main-branch commits — for the full 2026-06-12→2026-08-06 span. Falling → priming works, keep both. Flat/rising → retire llm-native-priming-hook (structural-output-hook then stands on the ordinary <5 fires/month inert rule).
-  - Cost context: priming injects ~10-15k tokens per UserPromptSubmit — the extension consciously accepts ~30 more days of that spend to buy a clean read.
-  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item A; resolution codified in `research/CLAUDE.md` structural-output-hook entry 2026-07-06
-
-- [ ] **P1 / harness / 2026-07-15** [INFRA, OPT] — Build temporal-attribution-hook + input-data-tier-hook + cohort-decoupling-hook (3 new Stop hooks)
-  - Origin: harness-optimization audit 2026-06-26 TIER 2 item B; failure modes H2 + H1 + H3 surfaced as N=2+ pattern in 7 days
-  - Scope: build 3 deterministic enforcement hooks per Principles #39 / #40 / #41 candidates (added today to methodology.md)
-  - Cost: ~30min build each; minimal runtime; requires user `cp` to `~/.claude/` for activation
-  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 2 item B
-
-- [ ] **P2 / process / 2026-07-15** [INFRA, CAL] — session-prime-cascade-hook v2 fix: INDEPENDENT VERIFICATION (fix APPLIED 2026-07-14 EVE same-session; do NOT re-fix — adversarially verify)
-  - Run the pre-registered protocol: `meta/hooks/session-prime-cascade-hook-fix-verification-prompt.md` (6 gates: selftest 21/21, fail-open, independent 30-day backtest with 12 must-fire + 5 must-suppress anchor SHAs, live exit-2/exit-0 paths, blind-spot hunt, wiring). Recompute everything; treat the fixing session's numbers as pre-registrations to test, not truths (B63 applies)
-  - On VERIFIED: flip fix-spec status, close this item, book verification artifact. On PARTIAL/REFUTED: book evidence + surface to user
-  - History: v1 shipped 2026-07-12 dead-on-arrival (ID-dash-adjacency regex matched no real header, zero telemetry); diagnosed + rebuilt as ID-set-diff design 2026-07-14 per `meta/hooks/session-prime-cascade-hook-fix-spec.md`
-
-- [ ] **P2 / process / 2026-07-29** [INFRA, OPT, recurring] — Weekly competitive-product surveillance — PASS #1 EXECUTED 2026-07-22 (artifact `signals/cross-source-log/2026-07-22-wed-competitive-surveillance-pass1.md`: SKH Δ LOWER / SUMCO watch-firmed / MURATA nil). **Cadence decision still USER-GATED: weekly (~200-320k tokens/mo) vs keep monthly-H2-only** — next pass provisionally 2026-07-29 (pairs with the SKH Q2 print; pushes the Samsung-HBM4-sample-only T2 datum to triangulation)
-  - Origin: harness-optimization audit 2026-06-26 TIER 3; MRVL Trainium 3 loss + SNDK MU 245TB ION both surfaced POST-HOC via monthly H2 bear-case workflow (should surface earlier)
-  - Scope: per held name, scan competitor-product announcements weekly (1-2 hops to direct substitutes); output per-name competitive displacement risk Δ vs prior week
-  - Cost: ~50-80k tokens/week for 7-name cohort = ~200-320k/month vs current monthly H2 bear-case (~280k); 4× cost vs monthly catches displacement 3-4 weeks earlier
-  - User-decision required: add weekly cadence OR keep monthly H2-only
-  - Linked: `meta/harness-optimization-audit-2026-06-26.md` TIER 3
 
 ---
 
@@ -599,115 +726,8 @@
   - Spec: `meta/methodology.md` Workflow #10 KEYWORD-TRIGGER REPLACEMENT section
   - Status: LIVE; first fire on next user trigger message
 
-- [ ] **P2 / process / 2026-07-07** [CAL, INDP] — BUILD THE COMPUTE LAYER (Principle #43b boundary rule): (a) ~~calibration-curve script~~ **✅ BUILT 2026-07-09 (`meta/scripts/calibration_curve.py` → generates `meta/trust-map.md`; #43b first-run grade: HIGH — computed finding: 1,528 P-claims across 240 files vs ZERO structured graded outcomes; prose-era grades only ~2/6 machine-adjudicable → created `predictions/calibration-ledger.csv`, BINDING: every GRADE appends CSV rows from now on; NEW SUBTASK: one-time backfill of ~15 prose-era grades into the CSV at next audit);** **REFRAMED 2026-07-09 (user 'trust calibration system' concept, confirmed valuable): the script's output = the TRUST MAP — per-faculty trust scores computed from outcomes only (P-band hit rates, magnitude-error direction, source-attribution failure rate, verifier-pipeline yield), regenerated not hand-maintained, auto-fed into session-prime. Rationale: tagging=instrumentation, grading=measurement, codification=update — the text-layer analog of gradient descent on live data; the trust map is the aggregated read-out. Self-trust must be built from outcomes, never self-assessment (introspection unverifiable per the 2026-07-09 pretraining discussion, wiki/llm-synaptic-consolidation.md);** (b) grading-delta helper (predicted-vs-actual %, band adjudication) for use AT each grade starting NOW Jul-22; (c) ledger-stats script (HIGH-rate trend, tokens/catch) before the 2026-07-15 Rule #16 audit; (d) tags-tail consistency checker (counts L/B/TC/P tails vs actual files — kills the B47-collision class); (e) generalize `structural-output-metric.py` to all-hooks inert-rule checks. Grade each build's first run under the #43b test protocol.
-  - Origin: user question 2026-07-07 EVE ("what must be computed vs narrated?") + the boundary rule in `methodology.md` #43b-3a.
-  - Linked: `meta/structural-output-metric.py` (template), `predictions/grading-log.md`, `meta/subagent-cost-yield-ledger.md`, `meta/tags.md`
 
-- [ ] **P2 / research / 2026-07-07** [INDP, AF, POS] — APPLICATION-LAYER FRAMEWORK post-build standing items (framework BUILT 2026-07-07 — `sector/application-layer-framework.md`; the build item is DONE, artifact is the record): (a) NEC 6701 + Fujitsu 6702 thesis-build (watchlist-elevated per framework §4 — anti-fragile 人月→outcome converters, records on T1 IR); (b) SHIFT 3697 H2 FY26/8 print watch (modernization-vs-test-deflation adjudicator); (c) seat-erosion promotion triggers 0/3 (filed seat decline / public SaaS-retirement-for-inhouse / pilot success >30%); (d) coding-deceleration tripwire NOW LIVE in the 2027 early-warning stack (earliest indicator, ahead of capex guides); (e) exit-cohort re-underwrite question (DDOG/NOW class — 120-125% NRR, working AI monetization) surfaced to user, user-gated; (f) framework re-eval 2026-08-07 or first SIer print.
-  - Linked: `sector/application-layer-framework.md`, `signals/cross-source-log/2026-07-07-applayer-framework-4agent-step0.md`, end-demand item above
-
-- [ ] **P2 / process / 2026-08-09** [INDP, OPT] — User-channel coverage model first monthly audit: compute share-classification histogram from verification artifacts (per user-source-profile §channel-coverage, codified 2026-07-09); rank absence-question-register rows by recurrence; promote ≥2-recurrence rows to research items. Falsifier check: histogram ≠ the guessed map, else drop per-share tags.
-  - Origin: user question 2026-07-09 "what must be true for you to research my blind spots?"
-  - Linked: meta/user-source-profile.md, meta/absence-question-register.md
-- [ ] **P2 / harness / 2026-07-24** [INFRA, OPT, CAL] — LLM-native compression: N=3-per-variant ensemble replication + session-prime format-migration decision
-  - Origin: 2026-07-12 pilot (`meta/experiments/2026-07-12-llm-native-compression-pilot.md`) — V1 telegraphic hit 12/12 at 27.6% of size; decision rule triggered
-  - Scope: re-run probe battery with 3 readers per variant (fresh probes, second author-blind set if feasible); if replicated, rewrite session-prime.md in telegraphic form (keep human-skimmable) inside the 30k-char cap = ~3.6x state headroom; log two-audience constraint decision
-  - Linked: meta/experiments/2026-07-12-llm-native-compression-pilot.md, meta/session-prime.md
-
-- [ ] **P1 / research / 2026-07-14** [INDP, AF, OPT] — Newly-viable frontier PHASE 2: hunting-map sweep (Mode B candidate register)
-  - Origin: user framework 2026-07-12 (`wiki/newly-viable-frontier.md`) — "what can LLM-native business models enable that previously wasn't possible or economically unviable"
-  - Scope: multi-agent enumeration of cost structures w/ cognition >~50% COGS + latent demand at lower price points ("only the rich could afford X") + impossible-at-any-price primitives; run the viability-flip screen (pre-2023 labor prices) on each candidate; rank into a Mode-B candidate register; apply toy-detector + Griffin attribution filter; condition design on the historical base-rate agent's H1/H2/H3 verdict (if H3, add graveyard denominator)
-  - Linked: wiki/newly-viable-frontier.md, wiki/agent-native-organization.md, sector/end-demand-durability-model.md
-
-- [ ] **P2 / research / 2026-08-22** [INDP, AF, OPT, CAL, recurring] — AGENTIC-DAU monthly reading #2 (instrument COMPLETE 2026-07-22: general basket `meta/agentic-dau-general-basket.md` + education + scaffold modules, wired into `sector/end-demand-durability-model.md` head block; reading #1 = 🟡 DIRECTIONAL intensity-based support). Monthly scan per basket §E watch-series; highest-value pending disclosure: OpenAI ChatGPT WAU refresh
-  - Origin: user-designed 2026-07-12 night (`wiki/newly-viable-frontier.md` §6b); built 07-14 (2 modules) + 07-22 (general basket)
-  - Linked: meta/agentic-dau-general-basket.md, sector/end-demand-durability-model.md
-
-- [ ] **P2 / research / 2026-07-20** [INDP, AF] — Chokepoint-history study: ASML/TSMC precedent comparison
-  - Origin: user question 2026-07-12 ("has there ever been that amount of chokepoint?")
-  - Scope: historical chokepoints (Standard Oil, De Beers, Intel x86, Boeing/Airbus, others surfaced) vs ASML EUV/TSMC leading-edge on: capability-vs-supply control, replication time/cost, what happened to margins when substitutes arrived; deliverable = wiki entry + implications for TC-13/TC-16 chokepoint names
-  - Linked: wiki/newly-viable-frontier.md §6b
-
-- [ ] **P1 / research / 2026-07-14** [INDP, POS, CAL] — TSMC-ADR premium-history study (SKHY catch-down calibration)
-  - Origin: user belief-debt question 2026-07-13; premium = dominant near-term SKHY risk (event artifact read ladder)
-  - Scope: TSMC ADR-vs-Taipei premium behavior in Taiwan drawdown episodes (compress/cushion/lag + half-lives); Korean Seoul→ADR conversion-approval mechanics (what breaks the one-way valve); output = catch-down odds calibration into SKHY read ladder
-  - Linked: companies/SKHY/thesis.md, signals/events/2026-07-13-korea-semi-crash-adr-unwind.md
-
-- [ ] **P1 / research / 2026-07-16** [INDP, AF, POS] — Engineering-out state audit (SKHY falsifier #2 live gauge)
-  - Origin: user belief-debt question 2026-07-13; falsifier currently instrumented only by Aug FMS/Hot Chips gate reads
-  - Scope: PRODUCTION evidence (not papers) for KV-cache compression, sparse attention, flash-tier KV offload (HBF-adjacent), cheaper-DRAM-flavor architectures; quantify distance of "less memory-hungry technique does not exist yet" (newsletter Vik claim); output = engineering-out gauge + tripwire refresh
-  - Linked: companies/SKHY/thesis.md falsifier #2, sector/memory-gross-profit-bridge.md
-
-- [ ] **P2 / research / 2026-07-14** [CAL] — Cheap pins: HBM4 $4-5/Gb second source (TrendForce official) + S&P-Oracle rating-action date (tell-#7-adjacent)
-  - Linked: signals/cross-source-log/2026-07-13-mon-eve-newsletter-yongin-hbm4-verification.md, sector/ai-funding-shock-node.md
-
-- [ ] **P1 / harness / 2026-07-24** [INFRA, CAL, OPT] — TC-cluster predictive hit-rate audit (grade the pattern-matcher; fold into monthly)
-  - Origin: user harness-upgrade question 2026-07-13 — 18 TC clusters, zero measured hit rate
-  - Scope: for each ACTIVE cluster: did promotion LEAD subsequent prices/prints (lead time, direction accuracy)? retirement criteria per cluster; output = pattern-matcher calibration table + methodology note
-  - Linked: signals/triangulation.md, meta/recurring-audit-log.md
-
-- [ ] **P2 / research / 2026-07-17** [INDP, OPT] — EU coverage-gap audit: Leg B German-sweep "nothing" = reality or detection failure? (constraint-differential applied geographically)
-  - Scope: systematic DE/FR/NL AI-supply-chain enumeration vs our sweep prompts; either licensed clean-negative or blind-spot map + prompt-library patch
-  - Linked: meta/prompt-library.md block A, meta/morning-feed-prompts.md
-- [ ] **P1 / harness / 2026-07-24** [INFRA, OPT, CAL] — DETECTOR-COVERAGE AUDIT (user hypothesis 2026-07-13: rules+patterns co-dependent; unruled data = patterns buried in plain sight)
-  - Scope: enumerate ALL intake streams (tape, prints, contracts, flows, FX, insider filings, patents, hiring, credit, native-language legs) × which rule/detector each flows through (B45, freshness-parity, tells, templates, GM-marker...); output = coverage matrix + top-3 unruled streams + detector candidates for each; pairs with the TC hit-rate audit (patterns side) at the same monthly
-  - Linked: meta/methodology.md, meta/biases-watchlist.md, signals/triangulation.md
-
-- [ ] **P2 / research / 2026-07-27** [OPT, INDP] — WEEKLY anomaly-clustering pass #2 (recurring weekly; #1 COMPLETED 2026-07-20 in two runs: morning = PC-19 + Rhyme-2 rejection; evening = PC-20 export-control design-around ~50% + PC-21 listing-wave ~45% w/ proceeds-tell + intake-gap flag for 07-24)
-  - Origin: user design 2026-07-13 (`signals/anomaly-register.md`) — cross-domain co-occurrence hunt over the anomaly register, segment-gate open for discovery, closed for action
-  - Scope: 1 agent reads register; finds n≥3 independent-source mechanism-rhymes across segments; outputs PC-candidates to cross-domain-pattern-register w/ falsifiers; ages out stale entries
-  - Linked: signals/anomaly-register.md, meta/cross-domain-pattern-register.md
-
-- [ ] **P2 / research / 2026-07-16** [POS, CAL] — ASML post-print: run the 8-item EUV-ladder residual checklist (FMS-2025 deck = highest value; 5 items proxy-blocked → needs browser session) before ANY entry-framework build
-  - Origin: 2026-07-14 user-commissioned EUV workflow adjudication (true-but-priced verdict)
-  - Scope: convert 1c "≥5" to exact integer if possible; decompose ₩11.95tn order; test residual edge vs the three offsets; output = pullback-conditioned entry framework OR explicit no-framework verdict
-  - Linked: `signals/cross-source-log/2026-07-14-tue-euv-layers-workflow-adjudication.md`, `watchlist/candidates.md`
-- [ ] **P2 / research / 2026-07-24** [INDP, AF] — DEFENSE-ELECTRONICS FRAMEWORK build (promotion trigger N≥3 HIT 2026-07-19)
-  - Origin: Jul-07 Ankara cluster + GM-Defense/Lockheed munitions MOU (T1 CNBC Jun-16) + NATO $50B package w/ US-prime EU co-production (T1 Jul-07); per 2026-07-19 wake Leg B
-  - Scope: passives-density (MURATA second demand leg) quantification + segment map + named-name screen (NOC reference); framework file under sector/
-  - Linked: watchlist/candidates.md (counter-drone cluster), companies/MURATA/thesis.md
-
-- [ ] **P1 / harness / 2026-07-19** [INFRA, CAL] — DESTRUCTION-DEFENSE SYNTHESIS: merge K3 + Claude-new-session reviews, build HELD amendments
-  - Origin: K3 red-team ADOPT-WITH-AMENDMENTS (2026-07-19); guard v2 built the deterministic pattern-coverage, HELD the architecture pending the Claude cross-review the user is running.
-  - Scope: after Claude review lands — build nonce challenge-response tokens (K3#3, replaces blanket env tokens), Edit/Write matcher on enforcement files (K3#7, warn-or-nonce not hard-block to avoid self-edit alarm fatigue), cumulative cross-commit thresholds (K3#6), semantic settings-diff guard (K3#8, hook-count-may-not-decrease + allow-list-may-not-widen), hook-content hash-manifest self-heal (K3#1). Each verified before "applied" per L34.
-  - Linked: signals/cross-source-log/2026-07-19-sun-late-k3-destruction-defense-redteam-adjudication.md, meta/destructive-change-governance.md §Held, meta/hooks/git-guard-pretooluse.py
-
-- [ ] **P1 / harness / 2026-08-08** [INFRA, DUE] — **BLIND-CHECK (#51) RETRO SWEEP — commissioned, NOT self-audited.** Forward-looking half is DONE 2026-08-01 (CLAUDE.md thesis template + Workflow #4 PREDICT + DEEP-DIG quality bar + new Critical Rule #13b + methodology #51 + session-prime §4). **REMAINING = the existing detector population: 150 explicit falsifier/kill/re-eval lines and 72 thesis falsifier blocks (computed 2026-08-01).** Deliberately NOT swept by me — I authored them and graded their failures, so a self-sweep is self-correlated. Paste block is copy-ready at `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`; operator transports it to a fresh session, no steering.
-  - Origin: operator 2026-08-01 — *"if you are so confident, I want you to plan on integrating that across the harness"*, after I proposed the fix twice and shipped it neither time.
-  - Scope: audit report back → then triage which detectors get a blind-check line retro-fitted vs which get retired outright.
-  - Linked: `meta/methodology.md` #51, `meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`, `research/CLAUDE.md` Rule #13b
-
-- [ ] **P2 / harness / 2026-08-22** [INFRA, DUE] — **BLIND-CHECK HOOK — SPEC ONLY, DO NOT SHIP BEFORE THE AUDIT REPORTS.** A Stop hook checking for a blind-check line on new detectors. **Held deliberately:** shipping a detector before knowing the shape of the population it fires against is exactly the error #51 exists to prevent, and the FP-rate lesson from `macro-anchor-hook` (repair criterion unmeasurable from its own log) says design the telemetry FIRST. **Pre-condition: the #51 retro sweep above must report.** Then spec with (a) message-excerpt logging built in from day one so the FP rate is computable, (b) its own blind-check line, (c) Rule #19 review-gate — LIVE-enforcement change, spec-then-review, no solo ship.
-  - Origin: 2026-08-01, same operator instruction; the restraint is the principle applied to itself.
-  - Linked: `meta/methodology.md` #51 final paragraph, `meta/redteam/2026-07-25-overconstraint-audit-CORRECTION-and-live-remeasure.md` (the unmeasurable-FP finding)
-
-- [ ] **P1 / harness / 2026-08-24** [INFRA, CAL, DUE, recurring] — **#51 BLIND-CHECK COMPLIANCE RE-EVAL — thresholds pre-registered 2026-08-02, verdict is COMPUTED not argued.** Run `python3 research/meta/tools/blind_check_audit.py --ledger --show-unmatched`, append the reading, then apply the pre-registered table in `meta/methodology.md` #51 verbatim. **Do not re-negotiate the thresholds at read time — that is the failure the pre-registration exists to prevent.**
-  - Baseline 2026-08-02: BASELINE cohort **0/155 (0.0%)**, NEW cohort **0/0**, 2,926 scanner near-misses recorded as the denominator-shrinkage watch.
-  - Verdict table: NEW ≥80% + distinct-clause ≥0.5 → keep unhooked · NEW <80% OR distinct <0.5 → **hook it or retire it, no third option** · N<5 → ONE extension to 2026-09-24 then decide on whatever N exists.
-  - Origin: operator 2026-08-02 — *"state the verification mechanism and the accountability layer to ensure it works as your prior output stated it"* — asked because #51 had shipped with neither.
-  - Linked: `meta/tools/blind_check_audit.py`, `meta/blind-check-ledger.md`, `meta/methodology.md` #51
-
-- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **HOOK EXECUTION PROBES — convert the supervisor from log-reader to actual supervisor.** `meta/tools/harness_supervisor.py` (built 2026-08-02) reads the fire log, and the fire log **cannot distinguish a dead hook from a hook that runs constantly and never logs**: 4 hooks show NO-LOG (`session-start-hook`, `llm-native-priming-hook`, `borrowed-vs-firstprinciples-hook`, `analyst-pt-context-hook`) and at least two of those provably run every turn. Extend the existing `LLMNA_PROBE` convention (already in 3 hook scripts per the 07-23 hardening) to all 19, then probe each with a fixture and check exit codes.
-  - Origin: operator supervisor-loop proposal 2026-08-02; the first check the proposed supervisor would run was already broken.
-  - Guard: probing writes to the fire log — LLMNA_PROBE tagging exists precisely to stop probe-pollution of the telemetry being measured. Do not probe without it.
-  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §6, `meta/tools/harness_supervisor.py`
-
-- [ ] **P1 / harness / 2026-08-09** [INFRA, DUE] — **BACKLOG TRIAGE — delete before automating.** Computed 2026-08-02: **87 open, 64 (73%) past their date, 23 older than 30 days, oldest 73 days.** At 73% late the date field carries almost no information. Pass 1 is a DELETE pass over the 23 stale items — retire, merge, or explicitly renew with a new date and a stated reason. **Blocks the auto-executor question:** automating execution of a substantially-dead list spends real tokens finishing superseded work and locks in the accretion.
-  - Origin: operator supervisor-loop proposal 2026-08-02; the proposal's execute-half is gated on this.
-  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §4
-
-- [ ] **P2 / harness / 2026-09-02** [INFRA, CAL, DUE] — **SUPERVISOR FALSIFIER CHECK.** If `meta/supervisor-ledger.md` shows a month of readings in which the VERDICT line never changed, the supervisor is a mirror rather than an instrument → retire it and build the forcing function instead (auto-delete to-dos past N days unless explicitly renewed, converting silence from "still open" to "dropped"). Operator decision, not mine.
-  - Linked: `meta/redteam/2026-08-02-supervisor-loop-design.md` §7
-
-- [ ] **P2 / harness / 2026-08-16** [INFRA, DUE] — **FRED long-history credit route.** `BAMLH0A0HYM2` truncates to 2023-08-01 on the current route (defect booked 2026-08-02 in `meta/data-access.md`), so any multi-year credit percentile is unobtainable at T1. Find a route that serves full history (ALFRED vintage params, an alternate ICE BofA series ID, or a different provider) OR record permanently that multi-decade credit percentiles are out of tier.
-  - Origin: EOD 08-02 — I computed and nearly reported a "25-year percentile" that was a 3-year percentile; caught only by a sanity check on the series maximum.
-  - Linked: `signals/cross-source-log/2026-08-02-sun-eod-legb-credit-gap-filled-fx-falsifier-touch.md` §1
-
-- [ ] **P1 / harness / 2026-08-04** [INFRA, DUE] — **AMEND THE KR-OPEN WAKE ROUTINE TEXT — its instrument list is stale.** The Routine instructs an "H3 two-path check: Brent level vs 95", but **ADDENDUM #14 (2026-07-31) superseded that gate** — it refuted the memory→term-premium hypothesis and re-labelled H3 as *"Fed reaction-function credibility repricing — not memory prices, not oil."* The 08-03 wake ran the current spec and flagged the drift; the next fire will re-instruct the retired gate unless the Routine prompt is edited.
-  - Generalisable: **scheduled Routine prompts are frozen text that silently drifts from the pre-registration they cite.** Worth a sweep of ALL Routine prompts against their referenced artifacts, not just this one — same class as L53 (decay of a correct old classification) applied to automation rather than to names.
-  - Linked: `signals/cross-source-log/2026-08-03-mon-kr-open-wake-leverage-stock-vs-flow.md` §3, `predictions/2026-07-17-regime-read-preregistration-five-calls.md` ADDENDUM #14
-
-- [ ] **P2 / harness / 2026-08-10** [INFRA, DUE] — **FIVE TO-DO ITEMS ARE INVISIBLE TO THE OVERDUE PARSER.** Found 2026-08-03 during the authorized backlog triage, by reconciling a loose header count (79) against the documented template (74). Five items carry a date field that is not a date — `2026-07-24→CARRIED`, `open`, `2026-Q4`, `2026-06-25→2026-07-04`, plus one non-standard `USER-ACTION` category. The session-start hook sorts and surfaces by parsed date, so **these can never be flagged overdue however long they sit.**
-  - Fix: either normalise them to real dates (and accept whatever overdue status that reveals), or teach the parser a documented "no-date" bucket that it surfaces separately — silently dropping them is the current behaviour and is the worst of the three.
-  - Generalisable: this is **L53's class applied to the queue itself** — a correct entry filed in a form nothing reads is functionally invisible. Found only because a delete pass forced two independent counts of the same file to be reconciled.
-  - Linked: `meta/todo-deletions-2026-08-03.md`, `meta/tools/harness_supervisor.py`
+- [ ] **P1 / harness / 2026-08-10** [INFRA, CAL, DUE, recurring] — **WEEKLY FORCED CUT #2 (Option B test, week 2 of the trial).** Run `python3 research/meta/tools/backlog_rank.py` to propose, review the KEEP list and the P0 flag, then `--apply`. **Kill criteria are pre-registered in `meta/backlog-forced-ranking-spec.md` §4 — apply them verbatim, do not re-negotiate at read time.** Two consecutive skipped cuts = B is dead, revert to manual purges and say so.
+  - Week-1 baseline (2026-08-03): 80 open -> 31 kept / 49 parked. One P0 force-included that did not earn a slot (DEEP-DIVE DEFERRALS + K3 REWORK, score 57, ranked below 30 other items while 10 days overdue).
+  - Watch for: cut >80% identical to week 1 (ranking is re-sorting, not deciding); nothing ever revived from Parked (parking is deletion with extra steps); **a parked item revived because reality forced it (the FX-class failure — log which score component missed it)**.
+  - Linked: `meta/backlog-forced-ranking-spec.md`, `meta/tools/backlog_rank.py`
