@@ -11,6 +11,18 @@
 - **Post-hoc:** Stop hooks catch revert patterns
 - **Audit:** 2026-07-12 effectiveness check; 2026-09-12 cohort recalibration
 
+## 🔴 2026-08-04 — THIS FILE WAS SILENTLY OVER ITS OWN CAP, AND NOTHING SAID SO
+
+**Measured today while adding L55/L56: the file was 30,347 chars against the hook's `MAX_INJECT_CHARS=30000`.** It had been **347 chars over**, so **everything past char 30,000 was being silently dropped at every cold-start injection** — the tail (a PC-20/21/22 pattern line) was in the file, in git, readable by anyone who opened it, and **never reaching the session it exists to prime.**
+
+**The failure mode is the cap's, not the content's:** it truncates instead of failing. 1 char over and 5,000 over behave identically, and the only symptom is content that quietly stops arriving. **Nothing measures the file against the cap** — the hook enforces it at read time and never reports it.
+
+**Fixed by pruning, not by raising the cap:** dropped §9c's 07-07 batch narrative (3,269 → 380 ch; its principles live in `CLAUDE.md` + `methodology.md`) and applied §3's own **rolling-5** rule, which had drifted to 6.
+
+**Blind-check (#51):** distinguishes *"session-prime is priming the session"* from *"session-prime's tail is being cut off"* · reads on `len(file)` vs `MAX_INJECT_CHARS` · **goes blind if** the cap is enforced somewhere the file's authors never look — which is exactly what happened; it is enforced inside the hook at read time, and no writer, commit or audit compares the two numbers. **A limit that is only checked by the thing consuming it is invisible to the thing producing it.**
+
+**Booked:** add a length assertion to the pre-commit checks so this fails loudly at write time rather than silently at read time.
+
 ## Cap rules (load-bearing — without these the file degrades)
 
 - **Size budget:** hard cap 500 lines / 30,000 chars (hook MAX_INJECT_CHARS). Soft target 250-400 lines. Over 500 lines → forced demotion at monthly audit
@@ -91,10 +103,9 @@ Session-prime is reviewed on the **24th of each month** as part of the monthly c
 
 ## §3. RECENT LESSONS (rolling 5; all recent = CANDIDATE)
 
-- **L29** — LLM-native inference as the analytical anchor, not sell-side aggregation (user methodological preference 2026-06-25).
-- **L37 (N=2): blocks attach to implementations, not needs — sweep blocked items vs newly-exercised capabilities.**
+- **L56 (2026-08-04): AN "ANOMALOUS AND UNRESOLVED" FIGURE IN A PREDICTION FILE IS A DEFECT, NOT A DISCLOSURE.** Our KIOXIA file carried "Bloomberg consensus ¥874.1bn, −32.7% below the company's own guide, anomalous and unresolved." No such consensus exists; real consensus OP ~¥1,370bn, ABOVE guidance. Computed provenance: ¥874.1 ÷ ¥869bn (the company's **NET** guide) = +0.6% — **a net-income figure crossed against an operating-profit guide**, and the "anomaly" was the arithmetic signature of the cross. **Before any figure is carried as a bar, scale-check it against the entity's OTHER published lines — one division.** Labelling something unresolved preserves the error and transfers it to a reader who never comes. Setup inverted: Kioxia MISSED every street line. **Name the basis on every profit line** — the OP miss spans −3.25% to −7.35% purely on GAAP/non-GAAP/ex-item choice (subsumes the retired L46 forecast-layer basis note).
+- **L55 (2026-08-04): WHEN YOU REJECT AN AGGREGATOR FIGURE AS IMPLAUSIBLE, IT MAY BE THE COMPANY'S OWN GUIDANCE.** KIOXIA Q1 registered ¥1,250bn against an actual ¥1,767.1bn (−29.3%, band ceiling missed entirely, actual = 1.31× ceiling) — while **the company's own ¥1,750bn guide was accurate to 1.0%.** The file's note "MUST re-pull consensus — current aggregator figures discarded as implausible" was discarding *the guide*, for being too large. **B45 magnitude-conservatism at the INTAKE step, inside a prediction file.** Rule: an earnings registration must state the company's guide explicitly and either CONTAIN it in the band or justify exclusion in writing; absence is itself a defect. Also check every falsifier against public guidance at registration time — KIOXIA's #1 ("rev <¥1,100bn") was 1.61× unfireable before the print.
 - **L54 CANDIDATE (2026-08-02): A TEST WHOSE BRANCHES ARE ALL ON ONE SIDE CANNOT ADJUDICATE.** Samsung Q2 ASP test branched >63% (aggressive camp) vs 58-63% (outlier note); actual ~+mid-40% — **below both**, so it could only say which too-high reading was less too-high. When writing a test that adjudicates BETWEEN sources, check the branch set covers **all-sources-wrong-together** — correlated sources are the normal case (they read the same channel checks), and partitioning only the space *between* them assumes the truth lies there. #51's failure class found inside a pre-registered PREDICTION test, and the first specimen surfaced by the grade sweep rather than an adversarial agent.
-- **L46 CANDIDATE (N=1, SKHY Q2 grade 2026-07-29): the basis meta-class extends to the FORECAST layer — a multi-tier vendor's earnings point-estimate MUST carry an explicit tier-mix blend (annual-contract HBM vs quarterly commodity); market-price paths without contract-mix structure overshoot by the fixed-price share. P(beat) calls cite LTA/fixed-price revenue share as a mandatory falsifier-side input.**
 
 - **L53 CANDIDATE (N=2, MPWR + MURATA, 07-31): THE RETRIEVAL-DRAWER ERROR** — a name filed under the wrong theme is functionally invisible even when it is in the corpus, on the watchlist and correctly described (MPWR ingested 3×, never as datacenter power = 38.8% of its revenue / 93% of its growth). Governs DECAY of a correct OLD classification, not framing of NEW data (that is B60). **Instrument: at each monthly audit re-derive every held/watchlist name's primary drawer from its LATEST reported segment mix.** Falsifier: zero drawer changes in 30d = decorative.
 
@@ -213,22 +224,7 @@ For every gate / falsifier / monitoring variable: build BOTH lead-indicator stac
 
 **B47 candidate** listed in §2 above. First application: `companies/NBIS/tracking-variables.md`. Next application N=2: any TC cluster's tracking variables (TC-1 / TC-6 / TC-10 most likely given active cascade rate).
 
-### §9c — 2026-07-07 codification batch (Principles #43/#43b/#44 candidates + B63 — load-bearing operating changes)
-
-- **#43 Configuration Over Capability:** latent capability ≠ deployed behavior; sampling defaults anchor to training-distribution patterns (English sources, linear prose, human-time estimates). Operator-surfaced affordances = HIGH-VALUE codification triggers. Monthly-audit standing question: *"what capability exists but is not deployed by default?"*
-- **#43b — COMPUTE INSTEAD OF NARRATE (deployed behavior, not a suggestion):** for ANY quantitative task (envelope/band math, P/L decomposition, correlations, prediction bands, count metrics, calibration aggregation) EXECUTE the computation via Bash/python FIRST, then explain. Prose smooths errors; computation surfaces mismatches, and the mismatch is information. First run (2026-07-07): 2 tasks → 3 catches (impossible cross-position FX residuals; git history-graft trap in `--first-parent`; miscounted hook-fire series narrated as fact). Deterministic tool: `meta/structural-output-metric.py` (the 2026-08-06 hook-experiment adjudicator). Also in priming-hook item 10.
-- **#44 Detection Over Prediction:** revenue-model emergence is unforecastable ex-ante, detectable early — instrument for it (pricing-transition metrics); under model-uncertainty own the substrate every candidate model consumes; the Cisco warning: substrate pricing power is ERA-BOUND → buildout-maturation falsifiers (coding-deceleration tripwire, capex guides) outrank technology-substitution falsifiers in firing order.
-- **B63 model-provenance bias:** the analyst is an Anthropic model — ALL Anthropic/lab-favorable conclusions get mandatory adversarial treatment (never bank lab-sourced ARR; third-party evidence for rankings; explicit Rule #18 falsifier run).
-- Anthropomorphic-default bias (inside #43b): pre-training imports human constraints that don't bind the model; sweep at affordance review.
-- **AGENT-PRIMITIVES CAPABILITY MAP (docs-verified + executed-tested 2026-07-08; #43 N+1; CONDENSED 2026-07-20 for the 30k cap):** (1) completed subagents are RESUMABLE via SendMessage with context intact (executed-verified — use for follow-ups instead of re-firing); (2) parallel fan-out = single message, multiple Agent calls; (3) full capability detail lives in the 07-08 day-state entry + docs — this line is the pointer, not the manual.
-
-- **PC-18 CANDIDATE (07-17): open-layer commoditization re-concentrates margin at scarcest complement, never even-spread; infra busts on 2-4yr lag (N=5). ARMED: capex-vs-monetization tripwire, first reading late-Jul hyperscaler prints.**
-
-- **NO-DELAY (07-19): computable-net-positive upgrades execute NOW; queuing is a cost. Kill: >=2 user-caught errors/30d.**
-
-- **#46 CANDIDATE (07-18): FLUID OBJECTIVE — goal-definition versioned (v2 = calibration + available-edge×capture); noise floor is instrument-relative, re-audited each cycle; no asymptote assumed.**
-
-- **#47 CANDIDATE (07-19): VERDICTS ATTACH TO DISTRIBUTIONS, NOT POINTS — no verdict on single outcomes; the ledger convicts the PROCESS (Brier vs base, 2σ floor); only provenance-tagged points move dials; wins graded as rigorously as losses (L32/timidity/PF-1 receipts); failure-study = engine, capture = goal.**
+### §9c — 2026-07-07 codification batch — **PRUNED 2026-08-04 to fit the 30,000-char injection cap.** Principles #43 configuration-over-capability / #43b COMPUTE-INSTEAD-OF-NARRATE / #44 detection-over-prediction are all carried in `CLAUDE.md`'s loop header and `meta/methodology.md`; the batch narrative added no orientation value the IDs don't. Full text: `meta/methodology.md`.
 
 ## §10. ARCHITECTURE NOTE — how this file gets maintained
 
