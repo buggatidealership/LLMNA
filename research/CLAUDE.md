@@ -13,7 +13,7 @@ Build durable, asymmetric conviction in AI-sector positions BEFORE consensus cat
 ```
 Predict → Grade (3-layer: INPUT / COMPUTATION / REASONING)
        → Lesson (predictions/lessons.md, currently L1-L39; L17/L18 tombstoned)
-       → Bias (meta/biases-watchlist.md, currently B1-B65 incl. B45 regime priors; B60 anchored-ingest; B61 LLM-generated inputs; B62 lead-time (renumbered); B63 model-provenance 2026-07-07; B64 model-affinity 2026-07-13; B65 context-fluency 2026-07-20)
+       → Bias (meta/biases-watchlist.md, currently B1-B66 incl. B45 regime priors; B60 anchored-ingest; B61 LLM-generated inputs; B62 lead-time (renumbered); B63 model-provenance 2026-07-07; B64 model-affinity 2026-07-13; B65 context-fluency 2026-07-20; B66 entity-type-collapse CANDIDATE 2026-08-04)
        → Principle (meta/methodology.md, currently #1-#51 [#50 nominated 2026-07-22 as coverage-not-authority but never written — vacant]; #51 BLIND-CHECK 2026-08-01; candidates incl. #42 retrieval-staleness, #43 configuration-over-capability + #43b COMPUTE-INSTEAD-OF-NARRATE, #44 detection-over-prediction, #45 event-anchored-re-eval-dates 2026-07-14, #46 fluid-objective-function 2026-07-18, #47 verdicts-attach-to-distributions 2026-07-19, #48 earnings-sequence-read-through 2026-07-22, #49 operator-intent-extraction/missed-loop-mandate 2026-07-22)
        → Hook (deterministic Stop hook at ~/.claude/, currently 19 live; session-prime-cascade-hook added 2026-07-12)
        → Pattern (meta/cross-domain-pattern-register.md, currently P-1..P-8 + P-11 verified [P-9/P-10 unassigned; PC-9 promotion pending] + PC-12..PC-21 [PC-16 skipped]; PD-1..PD-8 in the 2026-07-01 Leg-B register)

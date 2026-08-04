@@ -232,6 +232,12 @@ Same day-pair, identical AI-demand backdrop, opposite tape:
 
 🔴 **PURGE the ">125bp ORCL CDS" figure** wherever it appears — it is stale. CNBC (2026-07-24) confirms "multi-year high" but prints **no number**; the circulating 215bp is undated T3 and the 198bp print is **2026-03-31, four months old**. **We have no current level. Say so rather than quoting the old one.**
 
-**Diarise 2026-08-14** — Situational Awareness Q2 13F. First hard read on the mid-July book, and the only thing that will settle §9.3.
+**Diarise 2026-08-14** — Situational Awareness Q2 13F. ~~First hard read on the mid-July book~~ 🔴 **CORRECTED 2026-08-04: that framing was WRONG and would have mis-run the review.** A Q2 13F carries a **record date of 2026-06-30**. It cannot read on mid-July. It shows the book **as it stood BEFORE the drawdown and before the Citadel block** — a portfolio that no longer exists by the time it is filed.
+
+**This does not downgrade the review; it re-points it.** §9.3 asks whether the fund was big enough in CORZ/IREN/APLD to have *caused* the July moves, and the correct denominator for that question is precisely the **pre-drawdown 06-30 position**. So the filing is the right instrument for the float-share test and the wrong instrument for "what did they do in July." **State it as "settles float share as of 06-30," never as "reads the mid-July book."**
+
+Second constraint, consistent with §9.2: the 13F **cannot** show SK Hynix (KRX-listed), single-name equity shorts, or swaps — and the reported damage concentrated in SK Hynix and Nebius. Nebius *will* appear if held at 06-30 (13G, event 2026-05-19, 12,410,060 sh = 5.6%). **Absence is not absence.** Also watch **Citadel's own 13F, due the same day** — the block has no 13D/13G/8-K/Form 4 trace.
+
+*Found by an external verification pass 2026-08-04, not by re-reading our own file. The error was a date-arithmetic slip on a filing regime we have documented correctly elsewhere in this very artifact (§9.2) — the constraint was known and simply not applied one section later.*
 
 **Position implication: unchanged — HOLD across the memory cohort, no trim, user-gated.** The retraction moves weight from H1 to H2, and H2 attacks **levered payers** of capex while the held cohort are **recipients**. The recipient/payer distinction is what keeps the cohort on the right side of a financing-layer re-rating — and it is now doing more work than it was yesterday. 🟡

@@ -678,3 +678,50 @@ SanDisk share flat 13→13% Q1'25→Q1'26 (verified Counterpoint; "YMTC surpasse
 **Computation the prose would have smoothed:** a naive 4× book on the observed underlying moves implies **−100% to −176%**; the reported **−67%** is *less bad than that*, which means either gross leverage was well below 4× on the equity book **or the short leg (91% of the puts were short AI-compute) partly worked**. Evidence the book was a functioning long/short rather than a naked levered long — which cuts mildly back toward casualty.
 **🔴 Q4 PRINT 2026-08-05 remains the highest-leverage near-term event in the complex** (guided 79-81% GM, blended bit ASP ~+30% QoQ). July move now measured two ways: **−50.0% peak-to-trough** and **−43.7% month-over-month** (06-30→07-30, T1) — different measures, not a contradiction.
 **Position implication: NO ACTION — not held — but 08-05 is a scheduled cohort-wide risk event, not a single-name one. 🟡**
+
+---
+
+## 🟢🟡 2026-08-04 (Tue) — T−1 to the print: NAND participation CONFIRMED at T1, and a counterweight nobody has reported
+
+Back-reference: `signals/cross-source-log/2026-08-04-tue-ai-newsletter-batch-8-editions-intake-audit.md` §4. Verified 2026-08-04 by commissioned Opus verification (Critical Rule #16), off an 8-edition newsletter batch the operator shared.
+
+**Macro anchor (research-verified 2026-08-04, T1):** the memory layer's first-principles state today is **ASP-driven, not bit-driven** — Kioxia grew on a ~70% ASP move against low-single-digit bit growth. Pricing power, not volume, is the earnings engine, and that is what a print must be read against.
+
+### The two T1 facts that matter, and neither was in the newsletter
+
+| Source | Date | Datapoint | Why it reads on SNDK |
+|---|---|---|---|
+| **Kioxia FQ1 FY26** | **2026-07-31** | ASP **+~70% QoQ** on low-single-digit bit shipments · GM **80%** (82% ex-JV) · OM 75% · Q2 guide **¥2,390B, +35% QoQ, ~70% of it ASP** · demand > supply expected into **CY2027** | **The closest proxy that exists** — shared Yokkaichi JV, extended to 2034. Same fab, same bits, reported 5 days before SNDK |
+| **Samsung Q2 2026** | **2026-07-30** | **NAND ASP +high-60s% QoQ vs DRAM ASP +mid-40s% QoQ** | 🔴 **NAND out-inflated DRAM last quarter.** Settles the DRAM-vs-NAND question that the whole consumer-channel cluster left open |
+
+**🔴 The eight newsletter editions carried none of this.** They carried Apple's cost complaint, an Xbox price list, and a Korean GPU retail move — all **demand-side, downstream, and DRAM-weighted**. The two genuinely new, T1, thesis-moving prints came from the two companies that most directly proxy this position, and the aggregator missed both. **Recorded as a source-coverage finding, not a gripe: this publisher surfaces consumer-visible symptoms and misses supplier disclosures, which is exactly the inverse of what this thesis needs.**
+
+**Corroborating forward curve (T1, named OEM):** Microsoft, justifying the Xbox increase — *"console **storage and** memory prices have increased by more than 2.5×, and we expect **another doubling by the fall of 2027**."* Storage is named explicitly, so NAND is inside the claim. A buyer putting a forward curve on his own cost line through late 2027.
+
+### 🟡 The counterweight — and it is the highest-value unverified item we hold
+
+**NAND contract prices are still climbing while NAND SPOT has stopped.** DRAM spot DDR4 8Gb $36.00 (06-30) → $42.08 (07-28), **+16.9%**; NAND spot 512Gb TLC **fell in every published observation through 07-20**, then rebounded ~1.7% in the final week. **Tier: T3, single source, UNVERIFIED — flagged, not load-bearing.**
+
+**If it holds, spot typically leads contract**, and a contract-rising/spot-flat divergence of this shape indicates a position **nearer the top of the pricing cycle than the start**. That is precisely the asymmetry that matters into a print where consensus assumes continuation. It converges with TrendForce's own 3Q26 language (2026-07-03): NAND contract **+10–15% QoQ**, DRAM **+13–18%**, gains **"moderating"**, consumer/PC/smartphone buyers hitting an **affordability ceiling**.
+
+### Joint state into the print (H-weights are my model, not sourced)
+
+| | Hypothesis | P | What confirms it tomorrow |
+|---|---|---|---|
+| **H1** | **ASP cycle intact** — the Kioxia/Samsung read carries straight through; guide is raised on price | **50%** | FQ1-27 guide above $9.2B; ASP commentary echoing Kioxia's "demand > supply into CY2027" |
+| **H2** | **Print strong, guide moderates** — the quarter reflects prices already struck; forward language turns cautious on the affordability ceiling | **35%** | In-line-to-strong revenue with a guide at or below the $9.2B registration and hedged ASP language |
+| **H3** | **Spot divergence is real and early** — the roll-over is visible in the guide, not just the tone | **15%** | Explicit sequential-ASP deceleration, or LTA mix framed as downside protection rather than upside participation |
+
+**The LTA disclosure is the swing factor and it cuts both ways.** Five LTAs as of FQ3 cover ~⅓ of FY27 bits at an estimated floor **~$0.29/GB — roughly in line with Q2-26 ASPs.** A floor *at* current prices caps the downside and **caps the upside participation by the same construction.** Read the LTA slide as a volatility-narrowing disclosure, not a bullish one.
+
+### Multi-year asymmetry that cuts against this name relative to the cohort
+
+DRAM is constrained through 2027 with new capacity not meaningful until 2028; **NAND is expected to loosen sooner, possibly 2H27.** On duration, that argues **DRAM > NAND**, i.e. **SK Hynix over SanDisk on a multi-year horizon** — a genuine relative-preference finding inside the held cohort, and the first time this asymmetry has been stated with dated supply-side language on both sides.
+
+### Falsifiers — status
+
+**None fired.** All registered falsifiers key to reported quantities at the print; nothing above touches one. The 2026-08-05 print and the **2026-08-13 Investor Day** are the resolution events. Print **2026-08-05, 1:30pm PT**.
+
+**The registered prediction stands UNREVISED** (`predictions/grading-log.md`; rev pt $8.4B / NG EPS pt $33.5 / FQ1-27 guide pt ~$9.2B). **No revision on the strength of aggregator content**, and the two T1 prints above were already inside the information set that registration was built on. Revising a registration the night before resolution on second-hand inputs is how a prediction stops being a measurement.
+
+**Position implication:** **NO ACTION — HOLD — no size change — user-gated.** NAND participation is confirmed at T1 and supports the position through the print; the spot/contract divergence and the LTA floor are reasons to expect the *guide* to matter more than the *quarter*, not reasons to trim ahead of a resolution event. 🟡

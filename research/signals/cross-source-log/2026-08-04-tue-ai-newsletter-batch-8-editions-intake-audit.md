@@ -1,7 +1,7 @@
 # 2026-08-04 (Tue) — 8 newsletter editions ingested: the intake audit found an 11.5% recycling rate, and my own duplicate-detector under-read it 3.6×
 
 **Workflow:** INGEST (Workflow #1) — operator shared 8 consecutive editions of "AI Intelligence Brief" (07-28 AM → 08-04 AM), belatedly, as a batch.
-**Rule #16:** six Opus verification subagents fired in parallel at intake, no permission ask. **Verdicts PENDING at time of writing — this artifact is the intake layer only.**
+**Rule #16:** six Opus verification subagents fired in parallel at intake, no permission ask. **5 of 6 returned — verdicts in PART II below.** (InP/CPO bottleneck pass still running.)
 **Rule #12 (temporal freshness):** applied first, before any cascade. This is the whole point of the artifact.
 
 ---
@@ -167,3 +167,113 @@ A standing bear case on the held memory cohort is that **Chinese domestic DRAM f
 The artifact exists to record the **intake layer** — what was received, what was measured about the source, and what was commissioned — before any of it is allowed to touch a thesis file. Six verification verdicts are outstanding; this file will be amended with them, and only then will per-name cascades run under Critical Rule #10.
 
 **The one durable finding that does not depend on any verdict:** the recycling rate is real, computed, and higher than my own instrument first reported. **Everything numeric from this source must be re-sourced before it is used**, and that is now the standing rule for this publisher rather than a caution attached to this batch.
+
+---
+
+# PART II — VERIFICATION VERDICTS (5 of 6 returned, 2026-08-04)
+
+**Scorecard across all verified claims: 2 clean relays · 4 distorted · 3 stale-recycles · 1 category error · 1 population error · 1 inherited double-count.** Not one load-bearing numeric claim survived unaltered.
+
+## §7 — 🔴 MEMORY CLUSTER — the newsletter reported the symptoms and missed both diagnoses
+
+**The four claims it did carry:**
+
+| Claim | Verdict | The correction |
+|---|---|---|
+| Apple "hundred-year flood" | **TRUE**, one framing error | Cook said it on the **2026-07-30** call, about memory specifically. But the newsletter's *"expects to pay more in Q3"* is wrong: **Apple's fiscal Q3 IS the June quarter just reported.** Cook guided higher cost in **September = fiscal Q4**. Inventory $11.09B vs $5.7B = **+94.6%** ✓; GM 49.3%→48.1%, >100% of the −120bp attributed to memory ✓ |
+| Xbox "+£200" | **DISTORTED** | UK max is **+£170**; **€200 is the euro figure**. Series X £499.99→£669.99. And the memory rationale was announced in **June** — only the UK/EU price list was new on 08-01 |
+| RTX 50 Korea +30% | **TRUE-BUT-COMPOSITE** | Korea leg fresh and native-sourced (ZDNet Korea 08-03, ₩7.3M, third Korean hike this year). But **the "$20 GDDR7 module" is anonymous VideoCardz sourcing from ~07-17/23, T3, unverified**, published to explain the RTX 50 SUPER hold and re-purposed here. **$5,100 is FX noise** — ₩7.3M spans **$5,060–$5,115** across 08-03's intraday range |
+| CXMT/Lexar $592 "comparable" | **PARTIAL / DISTORTED** | ¥3,999 ÷ 6.755 = **$592** ✓. But **Lexar never names CXMT** — its own copy says only *"精选国产DDR5颗粒"* (selected domestic dies). And in-market it **does** undercut: **−4.3% vs Corsair, −16.7% vs G.Skill in China.** "Comparable" is too strong |
+
+**🟢 The investment conclusion survives anyway, at higher confidence than the Lexar item alone supports.** Chinese domestic DRAM is **not** suppressing prices — three independent points: CXMT **server DDR5 listed ABOVE Samsung's** (~$1,240/unit, Reuters **2026-07-24**); the retail kit only 4–17% under international brands *in its home market*; and TrendForce reading CXMT (7.6% of global DRAM revenue, #4 worldwide) as a **shortage beneficiary capturing rents, not a price-suppressing force.** The standing bear case is refuted at three points — **but the finding is 11 days old via Reuters, not new on 08-03.**
+
+### 🔴 §7.1 — The two T1 prints the newsletter never carried
+
+| Source | Date | Datapoint |
+|---|---|---|
+| **Samsung Q2** | 2026-07-30 | **NAND ASP +high-60s% QoQ vs DRAM ASP +mid-40s%** — NAND out-inflated DRAM |
+| **Kioxia FQ1** | 2026-07-31 | ASP **+~70% QoQ** on low-single-digit bits · GM **80%** · Q2 guide **+35% QoQ, ~70% from ASP** · demand > supply into **CY2027** |
+
+**This settles the DRAM-vs-NAND split flagged in §4 — and it settles it in the direction that matters for the held cohort.** It is not a DRAM-only shortage.
+
+**The source-coverage finding is sharper than the items themselves:** the newsletter carried Apple's cost complaint, an Xbox price list and a Korean GPU retail move — all **downstream, consumer-visible, DRAM-weighted symptoms** — and missed the two supplier disclosures that actually price the position. **This publisher surfaces what a consumer notices and misses what a supplier reports**, which is the inverse of what this harness needs. That is a structural property of the source, not a bad week.
+
+### 🟡 §7.2 — The counterweight, and it is the highest-value unverified item in the batch
+
+**NAND contract still rising while NAND SPOT stopped.** DRAM spot DDR4 8Gb $36.00 (06-30) → $42.08 (07-28) **+16.9%**; NAND spot 512Gb TLC **fell in every published observation through 07-20**, +1.7% in the final week. **T3, single source, UNVERIFIED — flagged, not load-bearing, and booked as the item to chase.** Spot leads contract; a divergence of this shape reads nearer the **top** of the pricing cycle than the start. Converges with TrendForce 3Q26 (07-03): NAND **+10–15%**, DRAM **+13–18%**, gains **"moderating"**, an explicit **affordability ceiling** in consumer/PC/smartphone.
+
+**Cascaded to `companies/SNDK/thesis.md`** with the H1/H2/H3 print-day weighting, the LTA-floor reading (~$0.29/GB ≈ current ASPs → caps downside **and** upside), and a new multi-year relative finding: **DRAM constrained through 2027 vs NAND loosening possibly 2H27 argues SK Hynix over SanDisk on duration.** Registered SNDK prediction **stands unrevised**.
+
+## §8 — 🔴 SITUATIONAL AWARENESS: the number is right, the noun is wrong, and OUR file had a date error
+
+**The −67% is CONFIRMED** — Situational Awareness LP, **fund NAV, month-to-date July**, WSJ 2026-07-30/31 sourced to one person who saw the investor letter. **T2, single-origin** — Reuters/CNBC all trace back to the same scoop; that is echo, not corroboration.
+
+**It survives an arithmetic check, which is why it is usable:** +439% H1 × 0.33 = **+77.9% YTD** against reporting that the fund is "up around 80% on the year" — **reconciles to 2.1pp.** A portfolio-*value* decline would not reconcile that way. **So it is a NAV return, not a change in market value.**
+
+**And it breaks the leverage story:** 67 / 20.6 (SOX) = **3.25×**; 67 / 28.3 (our computed long-book mean) = **2.37×**. Naive 4× on −25% = −100%. **The short leg partly worked** (91% of the put book was short AI-compute, the least-damaged names). **A long/short that broke, not a levered long that blew up.**
+
+**Two aggregator errors, one of which is a new failure mode:**
+- **"Situational awareness THESIS"** — 🔴 **category error.** It is a hedge fund (CIK 0002045724). Aschenbrenner's 2024 essay shares the name, and the aggregator collapsed the legal entity into the abstract noun. **The number survived intact; the subject of the sentence did not.**
+- Filed under **"Regulation & Policy"** with zero regulatory content, and attributed to *"WSJ reporting on investor sentiment"* when WSJ reported a specific investor letter.
+
+**July WAS a genuine rout — my prior was wrong and is retracted.** SOX **−20.6%, worst month since October 2008**; −28% from the 06-22 record. NDX/QQQ ≈ −7%. But **S&P 500 −0.2% and the Dow posted a fourth straight winning month.** So: *rout* is fully earned for semis/memory/neoclouds, **overstated for "AI equities" broadly** — a concentrated levered vehicle destroyed inside a benign index tape, which is the more interesting reading. **"Deepens/continues" is the real error**: the move had already inflected 24–48h before that edition. **Our 08-03 figures are the bounce, not a contradiction.**
+
+### 🔴 §8.1 — The correction to our own corpus (found externally, not by re-reading)
+
+`signals/events/2026-07-31-ai-complex-deleveraging-size-tested.md` §9.7 said the Q2 13F would be the *"first hard read on the mid-July book."* **Wrong.** A Q2 13F has a **06-30 record date** — it shows the book **before** the drawdown and **before** the Citadel block. **Corrected in place.** It does not downgrade the 08-14 review: §9.3's float-share test *needs* the pre-drawdown denominator, so the filing is the right instrument for that question and the wrong one for "what did they do in July."
+
+**What makes this worth recording: the constraint was already stated correctly in §9.2 of the same artifact and simply not applied one section later.** Also superseded: the 07-30 file's instruction *"do NOT repeat any post-July drawdown figure — none has been published."* One was, four hours to a day later. **A standing prohibition written against a moving fact needs an expiry, or it becomes a trap for the session that obeys it.**
+
+**New bias candidate booked — ENTITY-TYPE COLLAPSE:** a source rendering a named legal entity as an abstract noun because the entity shares its name with a famous document. Distinct from B40 (staleness — the item was fresh) and from B11 (the number was correct). **The failure is in the subject, not the predicate**, and it would have corrupted the 08-14 review while every number in the sentence checked out.
+
+## §9 — 🔴 AI FINANCING: figure real, mechanism false, population wrong
+
+| Claim | Verdict |
+|---|---|
+| **Nvidia $250B guarantee / $350B chips** | **UNCONFIRMED-REPORT, accurately relayed, one clause fused.** Origin **WSJ 2026-07-26** (9 days old, static; Nvidia declined comment, did not deny). **$250B is a guarantee on the lease + construction debt and explicitly EXCLUDES the chips.** The **$350B chip financing is a SEPARATE negotiation** — the newsletter's *"deal would also include"* fuses two instruments with different risk profiles. **The Ohio campus is T1-real** (PORTS/Piketon, ~3,700 acres, SB Energy, Phase 1 ~800MW targeted early 2028) |
+| **$1.65T "hidden" AI debt** | 🔴 **DISTORTED — figure real, mechanism FALSE, population WRONG.** Nikkei in-house study, JP print **~2026-07-20/21** (14 days stale). **Population is FIVE companies INCLUDING ORACLE** — the newsletter named four and dropped Oracle, which is the fastest-growing component. **Basis: uncommenced leases + GPU purchase commitments + SPVs — disclosed in SEC footnotes, legal under GAAP.** "Hidden" means *off the balance-sheet line*, not concealed. **It is definitionally NOT bond issuance** — that is the separate **$1.35T on-BS** (1.65/1.35 = **122.2%** ✓). The newsletter's sentence *"funded by bond issuance… $1.65T"* is **false as written** |
+| **>$1T since 2023 / +$745B in 2026** | **CONFIRMED / DOUBLE-COUNTED.** FT 2026-07-31: **$1.1T cumulative 2023 → JUNE 2026**, and **$745B is full-calendar-2026**. **H1-26 sits inside both.** Naive addition gives $1.845T; **corrected end-2026 cumulative ≈ $1.5–1.6T.** Q1-26 actuals for the four computed at **$132.8B** |
+| **Cloud >$143B quarterly** | 🟢 **CONFIRMED — the only fully clean item in eight editions.** Synergy Research, **$143.4B Q2 2026, +43% YoY**, IaaS+PaaS+hosted private cloud. **11th successive quarter of RISING growth rate** — "accelerating" is the actual news hook and it is correct |
+
+**Independent corroboration of the off-BS magnitude (survives adversarial attack):** Moody's July 2026 — six companies incl. CoreWeave committed to **$1.2T of datacentre lease obligations, of which >$820B is on facilities still under construction**, called **debt-equivalent liabilities**. Narrower instrument, narrower population ⇒ **a subset of Nikkei's $1.65T, not a contradiction.** Two methodologies landing at $1.2T (leases only) and $1.65T (leases + purchase commitments + SPVs) is genuine corroboration of order of magnitude. **Moody's counterweight, omitted by the newsletter:** the four megacaps retain among the strongest corporate balance sheets globally; IG ratings not under imminent threat.
+
+**For the funding-shock node:** escalate on the **$350B chip leg, not the $250B**. The $250B is Nvidia lending its *credit rating* to real-estate debt; only the $350B is the vendor-financing analogue that escalates the mechanic we already track — and it is the **less** well-sourced of the two. **Do not carry the "71× everything Nvidia has guaranteed to date" line** — that is T3 commentary, not WSJ.
+
+## §10 — SK HYNIX / TPU / MEDIATEK: the Samsung talent story is division-inverted
+
+🔴 **Claim: "Samsung losing engineers to SK Hynix signals trouble for Samsung's AI chip ambitions." The data says the opposite about the AI-relevant unit.**
+
+| Samsung DS intent-to-leave within 2yr (union survey, 2026-07-16) | |
+|---|---|
+| **Foundry** | **81.5%** |
+| System LSI | 75.4% |
+| 반도체연구소 | 60.6% |
+| **DS average** | **49.5%** |
+| **Memory 사업부** | **32.7% — the LOWEST in DS** |
+
+**Memory — the division that actually competes with SK Hynix on HBM — has the lowest intent-to-leave, because memory got the big bonus (~6억원 vs SK Hynix ~7억원).** The mechanism is a **within-Samsung bonus gap between memory and foundry**, not Samsung-memory-losing-to-SK-Hynix. **And the exodus frame is itself contested:** Samsung DS attrition is ~1%, and on a 5-year basis **2.1% vs SK Hynix's 2.3% — Samsung is LOWER.** The viral "10× SK Hynix" claim was explicitly debunked in Korean press (2026-05-29) as a base mismatch (Samsung's figure folded in overseas production workers).
+
+**🔴 DO NOT upgrade the SK Hynix moat on this.** It reroutes to **Samsung Foundry / logic-foundry competition**. Story is also **~7 months old** in Korean sources (originating 2026-01-12), re-reported in English 07-28. Real SKHY-side signal is its **hiring capacity** (2,152 adds in H1 2026, 54 job families in HBM circuit/digital design) and its comp advantage — not Samsung memory being hollowed out.
+
+**Google TPU vs Nvidia 2028 — DISTORTED by range-cherry-picking.** Fubon: Google **12–15M** vs Nvidia **12.4M**. Computed: low end **−3.2%**, mid **+8.9%**, high **+21.0%**. **The bottom of Google's own range is BELOW Nvidia.** Correct framing is **parity with upside skew** — the Traditional-Chinese coverage says 「超越或媲美」 (*exceeding or comparable to*); the English dropped "or comparable to." And it is **not like-for-like**: TPU v9 is a **four-compute-die** design, so unit parity is not economic parity; Google's figure is a *deployment plan*, Nvidia's a *shipment* estimate; Google's is captive, Nvidia's merchant. **The Intel Foundry leg rests on an unconfirmed 2026-06-08 rumour** that JPMorgan called "a storm in a teacup." **Flagged, not averaged: Morgan Stanley models ~7M TPUs for 2028 against Fubon's 12–15M — a 1.7–2.1× divergence between two houses on the same metric in the same year. Carry it as a band, never a point.**
+
+**🟢 STANDING QUESTION UPDATED — Alphabet TPU revenue.** Answer has **changed** and needs re-scoping, not repeating. **Alphabet began recognising TPU system revenue in Q2 2026** (first deliveries to customer datacentres) and states **"Google Cloud generates product revenues primarily from the sale of TPU systems."** No standalone dollar line, and the CFO gave none — "a small amount," with the majority in 2027. **But the Cloud product-revenue line in the Q2 10-Q disaggregation note is now a near-pure TPU proxy and would be the first quantitative TPU datapoint in existence.** Booked as a to-do; the filing was 403-blocked this pass. Replace "we can't find one" with **"none exists; here is the proxy, and it started in Q2 2026."**
+
+**MediaTek — DISTORTED, and the buried number is the interesting one.** $5B is a board-approved **financing ceiling** (bonds + convertibles, discretionary, for FX/procurement/supplier capacity and locking TSMC + advanced-packaging allocation) — **not a spend or a target.** "20%" is the **top of a 15–20% range**, and the **2027 horizon was dropped**. Computed: 15–20% × $80B = **$12–16B of 2027 datacentre revenue against >$2B in 2026 — a 6–8× single-year ramp.** That is the falsifiable number and the newsletter omitted it entirely, presenting "$5B push" and "20% of $80B" side by side so the $5B reads as the ambition. First ASIC mass production **Q4 2026** is the first checkpoint. Google reported as first customer, **Meta REPORTED not confirmed**.
+
+## §11 — Standing verification gaps (403-blocked, not closed)
+
+The agent egress proxy returned **HTTP 403** across tomshardware, videocardz, trendforce, sec.gov, MediaTek's own PDF, The Register, CNA and MIT TR. **Every verdict above rests on search-index extraction, not direct primary-document reads.** Recorded as a limitation on this whole pass, not on individual items. Highest-value retries, in order:
+
+1. **Alphabet Q2-2026 10-Q** revenue-disaggregation note — would yield the first quantitative TPU revenue datapoint that has ever existed.
+2. **Meta Q2-2026 10-Q** non-marketable-equity footnote — the only document that settles "no 2026 Scale change" at T1.
+3. **The NAND spot/contract divergence** — T3 single-source and the highest-value unverified item in the batch.
+4. **MediaTek prepared-remarks PDF** — T1 verbatim on $80B / 15–20%.
+
+## §12 — What this whole ingest changes
+
+**No falsifier fired. No position action. One thesis cascade (SNDK), two corpus corrections, one new bias candidate.**
+
+**The durable finding is about the instrument, not the content.** Across five verifications, **not one load-bearing numeric claim survived unaltered** — and the two facts that actually move a held position (Samsung's NAND ASP, Kioxia's +70%) appeared in **none of the eight editions**. The source reliably surfaces what a consumer can see and reliably misses what a supplier discloses.
+
+**And the errors were not random — they were all of one type: the number was usually right and the frame around it was wrong.** Apple's quote was real but attached to the wrong fiscal quarter. The 67% was real but attached to the wrong kind of noun. The $1.65T was real but attached to the wrong mechanism and the wrong population. Fubon's range was real but reported from one end. **A source that gets numbers right and frames wrong is more dangerous than one that is simply inaccurate**, because every spot-check of a figure passes.
