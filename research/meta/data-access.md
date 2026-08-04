@@ -142,3 +142,38 @@ No route available to this harness returns **historical** after-hours prints. Fi
 **Blind-check (#51):** distinguishes *"the series says X"* from *"X is true now"* · reads on the observation date returned alongside the value · **goes blind if the caller reads only the value** — which is exactly how both errors happened, and both values looked entirely reasonable in isolation.
 
 **Same instrument, second blindness in two days.** The 08-02 defect was FRED blind to its own **range** (a 25-year percentile computed over 3 years of data). This one is FRED blind to its own **recency**. Neither is a data error — both are metadata errors that value-level inspection passes.
+
+
+## 2026-08-04 — EODHD index `previousClose` defect REPRODUCED, and this time it INVERTED A SIGN
+
+**Recorded because the 08-03 non-reproduction could otherwise be read as a fix. It was not.**
+
+| KOSPI, 2026-08-04 ~09:24 KST | |
+|---|---|
+| vendor `previousClose` | **6,595.45** — the **07-31** close, one session stale |
+| true prior close (our T1 record) | **6,257.45** |
+| vendor `change_p` | **−3.26%** |
+| **TRUE change** | **+1.96%** |
+| **error** | **5.22pp, SIGN INVERTED** |
+
+KOSDAQ same defect, 2.54pp error. **All four single-stock `previousClose` values were clean** — the defect is INDEX-ONLY, as the standing note says.
+
+**The dangerous property is INTERMITTENCY.** It did not reproduce on 08-03 and did today. A permanent defect trains the check; an intermittent one invites you to stop running it after a clean session. **The verification step — compare `prevClose` against our own T1 record for the prior session before using any index figure — is LOAD-BEARING and must not be dropped.**
+
+**Blind-check:** distinguishes "vendor field correct" from "vendor field stale" · reads on prevClose vs our own prior-session record · **goes blind if our own prior-session record is missing or wrong** — it is a comparison against the corpus, so it inherits corpus errors and cannot run at all on a name whose prior close was never booked. Not vendor-independent.
+
+## 2026-08-04 — THE H3 DAILY CHECK RUNS ON A 4-8 DAY LAG (structural, not incidental)
+
+Applying the 08-03 lag-stamping rule to the full H3 instrument set produced a finding about the **Routine**, not the data:
+
+| instrument | obs date | lag |
+|---|---|---|
+| UST 10Y / 2Y | 2026-07-31 | **4d** |
+| JPY/USD | 2026-07-31 | **4d** |
+| HY OAS | 2026-07-30 | **5d** |
+| Brent spot | 2026-07-27 | **8d** |
+| 10y breakeven | 2026-08-03 | 1d |
+
+**Five of six ≥4 days stale; median lag 4 days.** The KR-OPEN WAKE runs daily and its H3 two-path check is specified against these instruments, so **it cannot detect an escalation inside the window it exists to monitor.** The 08-03 error (marking H3 "flat" off a stale 10Y) was not carelessness — it was this instrument set behaving as designed.
+
+**Consequence for reporting:** "weights unchanged" must be distinguished from "weights unchanged because nothing was visible." Only the second is true on most daily wakes.
