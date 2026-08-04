@@ -1,7 +1,7 @@
 # 2026-08-04 (Tue) — 8 newsletter editions ingested: the intake audit found an 11.5% recycling rate, and my own duplicate-detector under-read it 3.6×
 
 **Workflow:** INGEST (Workflow #1) — operator shared 8 consecutive editions of "AI Intelligence Brief" (07-28 AM → 08-04 AM), belatedly, as a batch.
-**Rule #16:** six Opus verification subagents fired in parallel at intake, no permission ask. **5 of 6 returned — verdicts in PART II below.** (InP/CPO bottleneck pass still running.)
+**Rule #16:** six Opus verification subagents fired in parallel at intake, no permission ask. **ALL 6 RETURNED — verdicts in PART II below.**
 **Rule #12 (temporal freshness):** applied first, before any cascade. This is the whole point of the artifact.
 
 ---
@@ -277,3 +277,80 @@ The agent egress proxy returned **HTTP 403** across tomshardware, videocardz, tr
 **The durable finding is about the instrument, not the content.** Across five verifications, **not one load-bearing numeric claim survived unaltered** — and the two facts that actually move a held position (Samsung's NAND ASP, Kioxia's +70%) appeared in **none of the eight editions**. The source reliably surfaces what a consumer can see and reliably misses what a supplier discloses.
 
 **And the errors were not random — they were all of one type: the number was usually right and the frame around it was wrong.** Apple's quote was real but attached to the wrong fiscal quarter. The 67% was real but attached to the wrong kind of noun. The $1.65T was real but attached to the wrong mechanism and the wrong population. Fubon's range was real but reported from one end. **A source that gets numbers right and frames wrong is more dangerous than one that is simply inaccurate**, because every spot-check of a figure passes.
+
+## §13 — 🔴 InP / CO-PACKAGED OPTICS: the sixth verdict, and the sharpest catch in the batch
+
+**Claim as printed (08-01):** *"Critical indium phosphide shortage worse than memory crisis: Lumentum CEO warns that **InP substrate supply for silicon photonics** already lags **30% below demand for co-packaged optics**."*
+
+| Element | Verdict |
+|---|---|
+| Lumentum CEO warned of an InP shortage | **CONFIRMED** — Michael Hurlston, Sourcery podcast recorded at RAISE Summit Paris **8–9 Jul 2026**, published ~**21 Jul** |
+| The memory comparison is the CEO's own | **CONFIRMED — credit where due.** Verbatim: *"the shortage of indium phosphide, I think, will become even more acute than what we see from the memory guys."* Not a journalist's addition |
+| "30%" is a real figure | **CONFIRMED but MISATTRIBUTED** — it is from Lumentum's **FQ3 earnings call, 6 May 2026**, and it measures **Lumentum's own EML and pump-laser shipments against its own order book** |
+| "InP **substrate** supply … 30% below demand **for CPO**" | 🔴 **REFUTED — three distortions in one sentence** |
+| Freshness | **STALE-RECYCLE** — utterance 8–9 Jul → primary ~21 Jul → newsletter 08-01. **~3.5 weeks; and the number inside it is ~3 months old** |
+
+**The three distortions:** (1) **substrate ≠ laser-fab output** — the chain is substrate growth (Sumitomo/AXT/JX) → epitaxy (LandMark/VPEC/IQE) → laser fab (Lumentum/Coherent/Broadcom); Lumentum's 30% is step 3, the circulating 70% figures are step 1. (2) **CPO is not the denominator** — EMLs and pump lasers go into *pluggable* 800G/1.6T optics, today's volume. (3) **company metric presented as industry metric.**
+
+### 🔴 §13.1 — The "70% InP gap" is arithmetically impossible, and it is everywhere
+
+Chinese sell-side and a cited Nomura note put 2026 substrate demand at **2.6–3.0M wafers** against effective capacity **~750k** → *"over 70% gap."* Computed: **73.2% gap, implying a 26.8% fill rate.**
+
+**Against that, TrendForce has 800G+ transceiver shipments going 24M units (2025) → ~63M (2026) = 2.62×, +162%.**
+
+**A market physically receiving 27% of the substrate it needs does not grow unit shipments 160%.** The two facts cannot both describe reality. **The 70% figure is an order-book artifact** — unconstrained wish-list demand, double- and triple-booking across a panicked buyer base — and quite possibly a wafer-diameter unit error on top. **Do not cascade it anywhere.**
+
+**The unit-basis problem, computed:** a 150mm wafer yields **(150/100)² = 2.25×** the usable die area of a 100mm wafer, and **not one circulating capacity figure states its wafer-diameter basis** while the industry is mid-conversion to 6-inch (Coherent Sherman, AXT–Coherent MDSA 06-25, Lumentum Greensboro, Yunnan Ge). Any wafer-count gap could be overstated by ~2× on this alone.
+
+**Carry the >30%, labelled correctly:** *"Lumentum's laser shipments vs its order book"* — T1, disclosed under securities law, specific about what it measures. **Never** *"global InP substrate supply vs CPO demand."*
+
+### 🟢 §13.2 — Indium metal is NOT the constraint (computed, and it kills a whole investment framing)
+
+| | |
+|---|---|
+| 150mm InP wafer: π(7.5cm)²×0.0625cm = 11.04 cm³ × 4.81 g/cm³ | **53.1 g** |
+| In fraction of InP by mass (78.7%) | **41.8 g of indium** |
+| At $775/kg (China spot, 07-01) | **$32.40 of metal** |
+| Against a ~$5,000 wafer price | **0.65% of substrate value** |
+
+**So an "indium metal squeeze" thesis trades the wrong leg.** China holds ~70% of refined indium (USGS) and added it to export controls 2025-02-04 — but the binding constraints are **export licensing** (a policy switch, reversible overnight in either direction) and **crystal growth + polishing + customer qualification capacity**. Indium prices did roughly double (2025 avg $390 → $775/kg = **+99%**) and it barely matters at 0.65% of value.
+
+### §13.3 — Lead time is TWO-SPEED, which is the number that decides everything
+
+| Action | Lead time | Evidence |
+|---|---|---|
+| Debottleneck / double an existing substrate line | **~12 months per doubling** | AXT: double 2026, double again 2027, existing site (T1) |
+| Quadruple output at an existing device fab | **~12 months** | Coherent Sherman, "within 12 months" (T1) |
+| Convert a GaAs fab to InP | **~24–30 months** | Lumentum Greensboro → ramp ~2028 (T1) |
+| 7–10× including greenfield | **~4 years** | JX Advanced Metals, **¥120bn over 4 years**, announced 2026-06-16 (T1) |
+| 3.1× brownfield | **~3–4 years** | Sumitomo **¥18bn**, target FY2028 (T2) |
+
+**⇒ Tight window is roughly NOW through 2027, easing from 2028.** Brownfield relief is already in flight; structural capacity lands 2028–2030.
+
+**⚠️ AXT's capacity targets are stated in DOLLARS, not wafers** ("~$60M quarterly InP revenue capacity exiting 2026, ~$130M exiting 2027" vs $30.7M actual in Q2-26) — **during a price spike that took 6-inch InP from ~$1,400 to ~$5,000 (+257%).** A dollar-denominated capacity target inside a 3.6× price move is **not a volume target**, and anyone modelling wafer output from it will be badly wrong.
+
+### 🔴 §13.4 — The bypass route that contradicts the whole claim: CPO itself is slipping
+
+Nvidia's **Kyber NVL144 reportedly slipped to 2028**; the **NVL576 — the CPO-dependent configuration — is delayed or low-volume**; SemiAnalysis puts a production-ready CPO NVSwitch no earlier than Feynman. Nvidia disputes this ("roadmap intact").
+
+**If CPO slips, the CPO-driven InP demand curve slips with it.** The newsletter's framing — an InP shortage as *"a bottleneck for AI networking infrastructure"* caused by CPO — is in **direct tension with the best available reporting that CPO is the thing being delayed.** Winners on that path are copper/PCB, not optics: **APH · TEL · Volex · 002463 沪电股份 · 600183 生益科技**.
+
+**Other named bypasses:** CW-DFB + silicon photonics instead of EML (shifts demand off the Nvidia-locked EML supply — TSMC/**TSEM**/**GFS**/688498); micro-transfer printing (cuts InP die per laser ~an order of magnitude in one or both lateral dimensions); quantum-dot lasers monolithic on silicon (**the only route that removes InP substrates entirely** — research-stage, narrower thermal range, not a 2026–27 relief valve); 6-inch conversion (2.25× area, the biggest near-term effective-capacity lever); external/field-replaceable laser modules (Broadcom **TH6-Davisson** — doesn't cut demand but decouples supply risk and permits second-sourcing).
+
+### §13.5 — Structure, exposure, and the asymmetry worth stating plainly
+
+**Concentration is extreme: three firms ≈ 85%+** — Sumitomo (TSE **5802**) ~40%, AXT (**AXTI**) ~35%, JX (TSE **5016**) ~10–13%. ⚠️ **All share figures are third-party estimates; not one of the three publishes its own.** And the #2 player did **$47.6M of revenue in a quarter** — this is more concentrated than DRAM and orders of magnitude smaller.
+
+🔴 **Nvidia is the least-exposed consumer, having pre-empted the constraint:** $2bn each into **Lumentum and Coherent on 2026-03-02** ($4bn total, T1 Nvidia newsroom), plus purchase commitments and future capacity rights. TrendForce's read is that Nvidia's EML lock-in **pushed everyone else's lead times past 2027**. **So the casualty set is not "AI buyers" — it is NON-Nvidia AI buyers and their module suppliers**: 300308 中际旭创 · 300502 新易盛 · 002281 光迅科技 · **FN** · **AAOI** · **ANET/CSCO/CIEN** · and Korea's 009150/011070 pushing into CPO **with no domestic InP substrate chain behind them**. **That is the tradeable shape, and it is nine months old, not new.**
+
+⚠️ **Governance flag on a name that will screen well: 先导基电 (SSE 600641).** The exchange issued an inquiry letter over a **136%–600%+ premium** on a related-party purchase from the controlling shareholder, after the stock had already run two-to-three limit-ups **before disclosure**, explicitly asking whether inside information leaked. **Do not let the InP narrative carry this into a portfolio.**
+
+### §13.6 — Verdict on the bottleneck question itself
+
+**InP is a genuine second-order constraint that FAILS the "new" test.** The binding narrative dates to TrendForce's **2025-12-08** laser-shortage note and China's **2025-02** export controls — **8–18 months old.** It is a *maturing* constraint, not an emerging one: **low on novelty, moderate-to-high on severity for 2026–27, decaying from 2028** as the two-speed capacity lands.
+
+**Dated falsification event, one week out: Lumentum FQ4 FY2026, 2026-08-11 after close.** If the supply-demand language moves off ">30%", that dates the claim precisely.
+
+**Blind-check (#51) on this bottleneck read:** distinguishes *"InP is physically short"* from *"InP order books are inflated by panic double-booking"* · reads on realised transceiver unit shipments against substrate capacity, not on quoted gap percentages · **goes blind if** the industry converts to 6-inch faster than reported — effective capacity rises 2.25× per wafer with no change in wafer count, so a wafer-denominated shortage can close while every published gap figure still reads wide. **The gap metric and the physical constraint can move in opposite directions and nothing in the public data would show it.**
+
+**Does NOT touch:** any held name. No thesis cascade fired — the exposure set is entirely unheld. Nothing here supports a claim that InP constrains **aggregate AI capex**; it supports relative winners and losers inside the optics chain only. **And the "worse than memory" line is a CEO's simile, not a magnitude claim** — DRAM contract prices rose 90–95% QoQ in Q1-26 on a market orders of magnitude larger. Do not propagate it as a magnitude comparison.
