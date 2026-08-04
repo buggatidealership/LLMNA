@@ -5,6 +5,60 @@
 ## ⏰ STANDING USER-SIGNAL (registered 2026-07-09, ~10:35 UTC)
 **When the user writes "got access to my computer" → immediately deliver the browser checklist:** (0) **THE UNLOCK:** claude.ai/code/routines → BOTH routines ("KR-JP morning wake" + "EOD synthesis") → repository selector → change Health-Calculators → `buggatidealership/LLMNA` → save. Both triggers are currently DISABLED with prompts/schedules preserved — after his fix, I re-enable via `update_trigger enabled:true` and verify the first fire (E8). (1) Environment network allowlist per `meta/network-allowlist-recommendation.md` **(⚠️ 2026-07-27: this file was never written — the recommendation exists only as this checklist line. Write it or drop the reference.)** (benefits wake sessions immediately; this session's pickup = test next container). (3) Delete stale branches (claude/w11-wakes etc.). (4) NEW 2026-07-09: PAUSE the two "loopframe" posting routines (April ARS project — morning 08:43 + evening 20:23 UTC, still firing daily) at claude.ai/code/routines — platform refused agent-side disable (created via http_api, not by an agent); ALSO rotate the Twitter/Recraft/Runway/Ideogram API keys embedded in their prompts in plaintext. Item 2 (transcript look) already DONE 2026-07-08. Until then: user is sharing news/data ad-hoc + main session runs wakes manually on request.
 
+## 2026-08-04 (TUE) EOD DOCKET CLOSE — **DEGRADED to increment-only, AGAINST the Routine's own condition check, which is defective**
+
+**🔴 THE CONDITION CHECK FAILED, AND THE FAILURE IS THE FIRST THING TO BOOK.** The Routine specifies: *run `git log --since="16:00"` — if substantive user-driven evening work already happened, DEGRADE.* It returned **0 commits** ⇒ literal verdict "quiet evening, run the full discovery leg."
+
+**The evening was not quiet.** Four substantive commits landed at **15:35 / 15:44 / 15:49 / 15:52 UTC — 25, 16, 11 and 8 minutes BEFORE the 16:00 boundary** (computed). They carry the operator's 8-edition newsletter batch, six Opus verifications, a thesis cascade to a name printing tomorrow, two corpus corrections and a new bias. That is the *exact* content the DEGRADE clause enumerates — *"user-shared batches, ingest artifacts committed this evening."*
+
+**Followed intent, not the boundary: DEGRADED.** Running a fresh discovery leg tonight would have burned a Leg-B sweep on top of six verifications completed 90 minutes earlier.
+
+```
+Blind-check on the EOD condition check: distinguishes "the evening was quiet" from
+"the evening's work landed just before the clock boundary" · reads on commit count after a
+FIXED wall-clock time · GOES BLIND IF work concludes shortly before 16:00Z — which is the
+NORMAL shape of a session that starts in the afternoon and finishes its commits before the
+Routine fires. The check does not measure activity; it measures activity-after-an-arbitrary-line.
+```
+
+**Why this is the week's running failure class again, not a one-off:** a real quantity (was the evening busy?) measured with the wrong instrument (commits after a fixed clock time). Same shape as the "4× cost" that was 1.01×, the surface-form duplicate counter that under-read 3.6×, the 13F date that couldn't read mid-July, and the tense-blind `blocked-on-operator` component. **Five instances in one day, all of them instrument-validity.**
+
+**Fix booked** (to-do, P2, dated 2026-08-11): the check should read *"any non-telemetry commit since the previous EOD fire"* — a **relative** window anchored to the last fire, not an absolute clock time. Companion to the already-due KR-OPEN Routine text amendment; both are Routine-prompt edits, both need the operator's Routines UI.
+
+---
+
+**✅ RESOLVED TODAY**
+- **Five operator-gated to-do items decided in one pass** (`meta/todo-decisions-2026-08-04.md`): quota forced binary → **branch (a), plumbing fixed same day** (`grading-log.md` § Wake-call registrations `[WAKE]`, convention + first 2 stub rows); Workflow #11 → **closed as superseded**, design file marked SUPERSEDED in place; competitive surveillance → **WEEKLY**, next pass 08-05; DeGiro/N26 check → **closed as superseded by the 07-05 directive**, ~10 names migrated to `watchlist/candidates.md` merit-ranked; the six-headed P0 → **split** into a dated P1 (G-19 cascade-hook changeset-window) and a P3 (audit residue).
+- **Two of those five items were WRONG, not merely stale** — the surveillance item's "4× cost" is **1.01× on its own figures**; the DeGiro item reinstated a gate abolished 8 days *before it was written*. Neither is detectable by a ranking function.
+- **Access result: all 10 REIA power-cluster names user-verified tradable** — including the three secondaries (Lenovo 0992, Wiwynn 6669, Tokyo Electron 8035) whose access had been an open question since 06-27.
+- **8 newsletter editions ingested, 6 Opus verifications, not one load-bearing number survived unaltered** (`signals/cross-source-log/2026-08-04-tue-ai-newsletter-batch-8-editions-intake-audit.md`). **B40 recidivism confirmed at N=3** on a byte-for-byte identical headline we had already filed on 06-06 — and the retrieval failure was ours. **Source quarantined by default.**
+- **SNDK cascade shipped T−1 to the print:** Samsung Q2 NAND ASP **+high-60s% QoQ vs DRAM +mid-40s%**, Kioxia FQ1 **+~70% ASP on flat bits, 80% GM** — the two T1 facts that price the position, **in none of the eight editions**.
+- **Two corpus corrections, both found externally:** the Q2 13F cannot read the mid-July book (06-30 record date); the 07-30 "do not repeat any drawdown figure" prohibition was superseded within a day.
+- **B66 booked** (entity-type collapse, CANDIDATE, re-eval 09-04).
+
+**⚠️ CARRIED / STILL OPEN**
+- **NAND spot-vs-contract divergence** — T3 single-source, **the highest-value unverified item in the batch** and directly relevant to tomorrow's print. Spot leads contract.
+- **Alphabet Q2-2026 10-Q disaggregation note** — TPU revenue recognition **began in Q2 2026**; the Cloud product-revenue line is now a near-pure proxy. 403-blocked this pass.
+- Meta Q2-2026 10-Q non-marketable-equity footnote (settles "no 2026 Scale change" at T1); MediaTek prepared-remarks PDF.
+- **Hook candidate booked:** exact-string / near-duplicate match of incoming headlines against the B40 catch list. Would have caught today's recidivist in milliseconds.
+- Unchanged standing gaps: 반대매매 07-31 + 08-03 prints · 투자자별 close-basis flows · MOF cumulative August intervention total · KOSPI200 futures basis.
+
+**⏰ CATALYST CLOCK — NEXT 72h**
+
+| When | Event | Why it matters |
+|---|---|---|
+| **08-05 Wed** | 🔴 **SanDisk Q4 FY26, 1:30pm PT** | Registered prediction stands unrevised (rev pt $8.4B / NG EPS pt $33.5 / FQ1-27 guide ~$9.2B). Print-day weights **H1 50 / H2 35 / H3 15**. Watch the **guide** and the **LTA floor** (~$0.29/GB ≈ current ASPs — caps downside *and* upside), not the quarter |
+| **08-05 Wed** | 🔴 **KR FSC single-stock leveraged-ETF rules EFFECTIVE** | **The registered ETF-divergence forward test resolves here.** Two readings so far, equal magnitude opposite sign (−2.09pp then +2.09pp) = what plain beta produces. Stub row booked with `⚠️ NO P STATED AT BOOKING` |
+| **08-05 Wed** | Competitive surveillance **pass #2** — first under the new weekly cadence | Decided today; cadence starts immediately |
+| **08-05 Wed** | Treasury refunding · quota check #4 | Check #4 measures **compliance with the new convention**, not the old gap |
+| **08-06 Thu** | **SUMCO Q2 interim** (registered rev ¥113bn / OP −¥1.5bn) | Inside the MOF window |
+| **08-06 Thu** | **MURATA + SUMCO decision packages due** | MURATA re-basing must carry an FX leg written to a **reversing** yen |
+| **08-06 Thu** | structural-output normalized-metric decision | Pre-registered 07-06: falling → keep priming hook; flat/rising → retire |
+| **08-07 Fri** | US July payrolls · **MOF intervention window closes** · **Kioxia Q1 FY27 registered resolution target** | |
+| **08-11 Tue** | Lumentum FQ4 — dated falsifier on the ">30%" InP figure | From today's InP verdict |
+
+**NO POSITION ACTION. No falsifier fired today.** 🟡
+
 ## 🚨 2026-07-28 (TUE) KR-OPEN WAKE — THE BOUNCE FAILED. Selloff resumed; escalation trigger UNREADABLE
 Artifact: `signals/cross-source-log/2026-07-28-tue-kr-open-wake-selloff-resumes-vendor-prevclose-defect.md`. Full time-sensitive leg (only commit today was my own 00:00 spillover, not user-driven evening work).
 
