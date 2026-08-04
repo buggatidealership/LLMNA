@@ -1,5 +1,17 @@
 # WORKFLOW #11 — AUTONOMOUS INVESTOR-DAY LOOP (codified 2026-07-02, user "go")
 
+> # ⛔ SUPERSEDED 2026-08-04 — DO NOT RE-ARM
+>
+> **Status: dead since ~2026-07-09. Formally closed 2026-08-04 on operator decision.** Retained as the design record, not as live protocol. Nothing below should be read as describing the harness's current behaviour.
+>
+> **What happened.** The five wake slots were armed 2026-07-02 with a **7-day, session-scoped expiry**. They expired around 07-09 and were never re-armed. The 30-day falsifier audit this file registered for **2026-08-02** — *"autonomous-wake yield must match user-triggered mode + ≥1 time-sensitive catch, else cut to catalyst-only"* — came due and passed unrun, because by then there was nothing left running to audit.
+>
+> **What replaced it, and why that is better.** The scheduled **Routines** — KR-OPEN WAKE and EOD CONDITIONAL SYNTHESIS — now perform this function. They are **not session-scoped**, which is precisely the property whose absence killed this design: a wake that dies with its session dies silently, and re-arming it is a manual step nobody was assigned. Re-arming Workflow #11 on top of the live Routines would duplicate coverage at duplicate token cost.
+>
+> **The lesson, which outlives the mechanism.** *An expiry-dated mechanism whose expiry nobody watches does not announce its own death.* This file went on being cited as live infrastructure — and its to-do went on consuming session-start briefing attention as a live P1 — for **33 days** after it stopped existing. It is the same shape as everything else found this week: the absence of a signal was read as the absence of a problem. Any future scheduled mechanism must either be non-expiring or must register its expiry as a dated to-do in its own right.
+>
+> Closure receipt: `meta/todo.md` (Workflow #11 entry, 2026-08-04).
+
 **User authorization (2026-07-02):** the six-condition design ("what must be true to mimic an investor's day, LLM-natively") approved verbatim with "go". Rule #11d framework gate cleared.
 
 **Design principle:** NOT a mimicry of a human's serialized day — an **event mesh**: few scheduled wakes (cache/cost-aware) + catalyst checks inside each wake + massive parallelism within a wake when warranted. Decision authority NEVER crosses the order ticket (Rule #11: sizing user-gated, holdings.md canonical-on-screenshot only).

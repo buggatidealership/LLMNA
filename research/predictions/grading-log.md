@@ -6,6 +6,27 @@
 
 Index of every prediction made by the system. Each row resolves to "pending" or "graded." When an event passes its resolution date, run GRADE workflow.
 
+---
+
+## Wake-call registrations `[WAKE]`
+
+**Shipped 2026-08-04 on operator decision — branch (a) of the quota forced binary** (`meta/todo.md`; the binary had been measured BEHIND three consecutive weeks without ever being fixed).
+
+**The diagnosis this implements.** The quota instrument reported a shortfall against 150 formally-recorded calls by October and was read as *"the harness is not making enough forecasts."* That was wrong. **Dated directional calls are made in almost every wake** — hypothesis tests with resolution dates, H1/H2/H3 reweights, vendor-behaviour predictions — and none of them were written anywhere gradeable, so none of them could count. **It was a recording gap, not a volume gap.** Branch (b) — re-basing 150 down to the formal-registration run-rate — was rejected because it would have produced an honest-looking number out of an unmeasured process.
+
+**The convention (binding from 2026-08-04).** Any wake, EOD synthesis, or scheduled Routine that states a **directional call with a resolution date** books a one-line stub row here **at booking time**, before the artifact is committed. Minimum fields: date made · resolution date · what resolves it · the call · **P-provenance** (class base-rate cited, or explicitly `(my model)` / `(no P stated at booking)`).
+
+**The `[WAKE]` tag is the guard, and it is load-bearing.** Branch (a)'s obvious risk is that the count inflates with low-stakes calls until 150 stops meaning anything. So wake registrations are tagged, and **the quota is reported BOTH ways — with and without them.** The `[WAKE]`-excluded count is reported alongside, never instead of. A rising total against a flat excluded count means the plumbing got fixed and nothing else did; that is a legitimate reading and the tag exists so it stays visible.
+
+**Blind-check (#51):** distinguishes *"the harness is making gradeable calls"* from *"the harness is making calls nobody records"* · reads on stub-rows booked ÷ dated calls stated in wake artifacts · **goes blind if** the row becomes the point — rows booked for calls no wake actually reasoned to, or calls phrased vaguely enough to dodge the "dated" test and thus never trip the requirement. Neither failure moves the ratio. The excluded-count report is the only thing that would show the first; nothing currently shows the second.
+
+| Date made | Resolution | Subject | The call | P-provenance | Status |
+|---|---|---|---|---|---|
+| **2026-08-04** | **2026-08-05** (FSC single-stock leveraged-ETF rules take effect) | KR ETF-divergence hypothesis | Reading #1 (08-03) gave lev-ETF underlyings **−2.09pp** vs non-ETF Hanmi; reading #2 (08-04) gave **+2.09pp** — same magnitude, opposite sign, which is what plain beta produces. Call: the 08-05 rule-effective date is the adjudicating session; a spread that persists **after** the mechanical-selling channel closes is not mechanical selling. | **⚠️ NO P STATED AT BOOKING** — the 08-04 artifact hedged in prose (*"equally consistent with plain beta"*) without ever writing a number. Recorded as-is rather than back-filled. **This is the first thing the convention catches: an unfalsifiable hedge reads as caution and grades as nothing.** | pending |
+| **2026-08-04** | rolling — recheck by **2026-08-11** | EODHD index `previousClose` defect | Called **intermittent, not permanent** (clean on 08-03, sign-inverting on 08-04). The call: it recurs at least once more within 7 sessions, and single-stock `previousClose` stays clean while INDEX symbols do not. | `(my model)` — N=3 observations, no external base rate exists for a vendor field defect. Directional, not numeric. | pending |
+
+---
+
 ## Pending
 
 | Date made | Resolution target | Ticker | Event | Prediction file |

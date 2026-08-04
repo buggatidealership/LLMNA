@@ -1,6 +1,34 @@
 # Watchlist Candidates
 
-**Last updated:** 2026-07-18 BOTTLENECK-FORECAST next-regime sweep (consumables + test-layer radar cluster)
+**Last updated:** 2026-08-04 — REIA power / electrical-infrastructure cluster migrated in from `meta/todo.md` (the availability-gated item was closed as superseded)
+
+---
+
+### ⚪ REIA power / electrical-infrastructure cluster — Layer-3 power + EU-sovereign-AI gap fillers — radar/pre-thesis (migrated 2026-08-04 from a to-do that had gated them on the wrong thing)
+
+Source of record: `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserver-cxmt-investable-list.md` (REIA Batch #2-4: power / CPU-server / CXMT).
+
+**⚠️ Migration note — why these sat idle for 22 days.** These names were parked behind a **DeGiro/N26 availability check** created 2026-07-13, whose scope line read *"availability check **gates** whether they're worth a Workflow #9 thesis build."* That gate had already been abolished on **2026-07-05** — `research/CLAUDE.md:42`: *"accessibility is NO LONGER a research gate… surface every name on merit."* The item reinstated an abolished rule eight days after its abolition and blocked ~10 names with it. **They are now ranked on merit; the exchange tag is a courtesy, not a filter.** Tradability is the operator's check, made only when a name earns an entry package.
+
+Merit ranking (conviction-ordered, not access-ordered):
+
+| Rank | Name | Ticker / venue | Why it ranks here | Status |
+|---|---|---|---|---|
+| 1 | **Schneider Electric** | SU · Euronext Paris | Already identified as an agnostic picks-and-shovels play with **>20% DC revenue** in the 2026-07-04 all-regions consolidation; the DC-segment momentum deep-dig is a standing REMAINING item on the EU-sovereign-AI to-do | pre-thesis; deep-dig owed before any tiering |
+| 2 | **Legrand** | LR · Euronext Paris | Same 07-04 finding, same >20% DC-revenue class; pairs with Schneider as the electrical-distribution leg | pre-thesis |
+| 3 | **Siemens Energy** | ENR · Xetra/Frankfurt | Grid + generation side of the Layer-3 power gap the harness has never held a name in | radar |
+| 4 | **ABB** | ABBN · SIX Swiss | Electrification / drives; adjacent to the same DC power-chain | radar |
+| 5 | **Prysmian** | PRY · Borsa Italiana | Cable/grid-interconnect — the physical constraint layer behind DC power delivery | radar |
+| 6 | **Nexans** | NEX · Euronext Paris | Same layer as Prysmian, second source | radar |
+| 7 | **Infineon** | IFX · Xetra | Power semis; overlaps the 800V HVDC cascade already tracked via MPWR/VICR/MURATA | radar |
+
+Secondary, access previously flagged as possibly restricted (recorded, not a gate): **Lenovo 0992 (HKEX)** · **Wiwynn 6669 (TWSE)** · **Tokyo Electron 8035 (TSE)**.
+US names from the same batch, no access question: GEV / ETN / VRT / CEG / VST / TLN / BE / CLF / AMD / ARM / ALAB / MU / LRCX / AMAT / KLAC / ACMR.
+
+**Verified-unavailable (factual result retained from the closed item):** **Nanya 2408.TW** — NOT available on DeGiro or N26 (user-verified 2026-07-13) → **watchlist-INSTRUMENT only**, i.e. useful as a read on the DRAM layer, never as a position.
+**Structurally unavailable (recorded so nobody re-derives it):** CXMT (Shanghai STAR); Naura / AMEC / Piotech (China A/STAR); SK Hynix + Samsung direct on KRX (the Nasdaq ADR is the workaround).
+
+**None of these is an entry package.** Next step for the top 2 is a Workflow #9 thesis build on merit; nothing here has cleared a B39 asymmetry test.
 
 ---
 

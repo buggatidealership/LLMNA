@@ -91,3 +91,17 @@ Answering that question required looking in **Parked** — and the week-1 cut ha
 **What this says about the mechanism, honestly:** the kill criteria in §4 anticipated a *revival forced by reality*. They did **not** anticipate the score being blind to a whole category on day one. **Both bugs were found by a human asking an ordinary question, not by the instrument's own checks** — which is the same lesson as everything else this week: the mechanism cannot see the category it has no component for, and its silence about that category is not evidence the category is empty.
 
 **Added to the §4 kill criteria:** if a third structural blind spot is found in the score within 30 days, the score is under-specified for the population and should be replaced by a simple operator-facing "which 30?" prompt rather than patched again.
+
+---
+
+## §7 — DAY 2, second finding: a false positive, and why it is NOT the third blind spot
+
+**Found 2026-08-04, minutes after the BLOCKED-ON-OPERATOR component shipped**, by running the tool on the very edits that recorded the operator's decisions.
+
+The competitive-surveillance item was **decided** that day — cadence set to weekly, no longer waiting on anyone. Its rewritten text says *"Was user-gated 13 days."* The component matched `user-gated`, and **the item scored +35 for being blocked on the operator in the same edit that unblocked it.** Two other decided items matched the same way.
+
+**Fix:** the match is now **line-scoped**, and a line carrying a resolution marker (`DECIDED`, `RESOLVED`, `was user-gated`, `CLOSED <date>`, `SUPERSEDED`, `operator decision <date>`) does not count. Blocked-on-operator hits fell 4 → 2, and the two survivors are genuine.
+
+**Classification matters here, so state it explicitly: this is a FALSE POSITIVE, not a structural blind spot.** §6 added a kill criterion — *a third structural blind spot within 30 days retires the score in favour of a plain operator-facing "which 30?" prompt.* This does not count toward it. The distinction: a blind spot means the score has **no component** that can see a category (day 1: nothing could see operator-blocked items, so they were invisible by construction). This is the opposite — the component sees the category correctly and merely **cannot read tense**. One is a missing dimension; the other is a noisy reading on a dimension that exists. Conflating them would let ordinary bugs consume the budget reserved for the mechanism's real failure mode.
+
+**What it does say about the mechanism, honestly:** every defect in this tool so far — the `## Archive` parse bug, the identical bug in `--revive`, the day-1 blind spot, and now this — was found by **running it and looking at the output**, never by a test and never by the tool itself. Four for four. A ranking that is only ever read as a ranking will keep hiding this class of error, because a plausible-looking score is indistinguishable from a correct one at a glance.

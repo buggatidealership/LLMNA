@@ -126,8 +126,22 @@ def score(item, held, recent_blob, today):
     # items that need the operator — the opposite of what a decision-surfacing
     # mechanism should do. Weighted above POSITION because an unanswered question
     # blocks work indefinitely, while a position item merely waits its turn.
-    if re.search(r"USER-GATED|user-gated|USER-ACTION|operator decision|operator pre-approval"
-                 r"|awaiting (?:the )?operator|your call|HANDED TO USER", item["text"], re.I):
+    #
+    # FALSE-POSITIVE PATCH 2026-08-04 (same day, found by running the tool after
+    # answering the operator's decisions): a DECIDED item still contains the words
+    # "user-gated" — in the past tense, in the sentence recording that it is no longer
+    # gated. The surveillance item scored +35 for being blocked on the operator in the
+    # very edit that unblocked it. So the match is now LINE-SCOPED and a line carrying a
+    # resolution marker does not count. This is a false positive, NOT a third structural
+    # blind spot under spec §4 — the score sees the category, it just cannot read tense.
+    BLOCKED = re.compile(r"USER-GATED|user-gated|USER-ACTION|operator decision"
+                         r"|operator pre-approval|awaiting (?:the )?operator|your call"
+                         r"|HANDED TO USER", re.I)
+    RESOLVED = re.compile(r"\bDECIDED\b|\bRESOLVED\b|was user-gated|no longer user-gated"
+                          r"|operator decision \d{4}-\d{2}-\d{2}|CLOSED \d{4}-\d{2}-\d{2}"
+                          r"|SUPERSEDED", re.I)
+    if any(BLOCKED.search(ln) and not RESOLVED.search(ln)
+           for ln in item["text"].split("\n")):
         s += 35
         why.append("blocked-on-operator+35")
 
