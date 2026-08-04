@@ -118,6 +118,19 @@ def score(item, held, recent_blob, today):
     s += pw
     why.append(f"pri+{pw}")
 
+    # BLOCKED-ON-OPERATOR (0-35) — added 2026-08-04, DAY 2, after the first cut
+    # parked FOUR items that were waiting on the operator, including one escalated to
+    # him by name the day before. The defect is structural: an item awaiting a decision
+    # has nobody working on it, so it scores 0 on LIVE RELEVANCE by construction, and
+    # usually carries no near date either. The ranking therefore BURIES exactly the
+    # items that need the operator — the opposite of what a decision-surfacing
+    # mechanism should do. Weighted above POSITION because an unanswered question
+    # blocks work indefinitely, while a position item merely waits its turn.
+    if re.search(r"USER-GATED|user-gated|USER-ACTION|operator decision|operator pre-approval"
+                 r"|awaiting (?:the )?operator|your call|HANDED TO USER", item["text"], re.I):
+        s += 35
+        why.append("blocked-on-operator+35")
+
     # LIVE RELEVANCE (0-15) — referenced by work touched in the last 14 days
     key = re.sub(r"[^a-z0-9 ]", " ", item["head"].lower())
     toks = [t for t in key.split() if len(t) > 6][:6]
@@ -154,8 +167,17 @@ def main():
         for b in moved:
             print("REVIVED:", re.sub(r"\s+", " ", b.split("\n")[0])[:110])
         body = re.sub(r"\n  - _Parked \d{4}-\d{2}-\d{2}[^\n]*_", "", "".join(moved))
-        out = head.replace("## Archive", body.rstrip() + "\n\n## Archive", 1) \
-            if "## Archive" in head else head + body
+        # Same "## Archive appears in the how-to-use prose ABOVE Open" trap that
+        # parse_items() already guards (fixed 2026-08-04, day 2): a naive replace put
+        # revived items BEFORE the Open heading, i.e. straight back out of the section
+        # the ranker reads. Insert at the END of the Open section instead.
+        mo = re.search(r"^## Open\s*$", head, re.M)
+        if mo:
+            nxt = re.search(r"^## ", head[mo.end():], re.M)
+            cut = mo.end() + (nxt.start() if nxt else len(head) - mo.end())
+            out = head[:cut].rstrip("\n") + "\n" + body.rstrip("\n") + "\n\n" + head[cut:]
+        else:
+            out = head + body
         TODO.write_text(out + PARKED_HDR + "".join(keep))
         print("\n⚠️  KILL-CRITERION EVENT: if this revival happened because reality")
         print("    forced it, that is the FX-class failure — log which score")

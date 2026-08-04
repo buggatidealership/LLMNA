@@ -70,3 +70,24 @@ Blind-check: distinguishes "this item earns a slot" from "this item is merely fa
 1. **I propose the ranking, and I am the party that let the list rot.** The operator's override is the only real check, which means the mechanism is only as good as his willingness to look at the cut. If he rubber-stamps, B is theatre.
 2. **The score can be gamed by me** — adding a held-name mention or a `[DUE]` tag to an item's title would lift it. Not currently a risk, recorded so it is not a surprise later.
 3. **A 2.5:1 cut is aggressive for a first test.** Chosen deliberately: a gentle cut would not generate enough signal to evaluate the mechanism. If it proves too aggressive the cut size rises before the mechanism is abandoned.
+
+
+---
+
+## §6 — DEFECT FOUND ON DAY 2: the ranking buried the operator's own decisions
+
+**Found 2026-08-04, one day after ship, when the operator asked "any items that need my input?"**
+
+Answering that question required looking in **Parked** — and the week-1 cut had parked **four items that were waiting on the operator**, including:
+- the **US memory-tariff Phase-2 gate**, which I had escalated to him **by name the previous day** as one of two items needing his decision, and
+- the **DeGiro/N26 availability check**, which had literally been *handed to him* as a browser checklist.
+
+**The defect is structural, not a tuning miss.** An item awaiting an operator decision has **nobody working on it** — so it scores **0 on LIVE RELEVANCE by construction** — and it usually carries no near date either. **So the ranking systematically buries exactly the items that need the operator, which is the opposite of what a decision-surfacing mechanism is for.**
+
+**Fix shipped same day:** new score component **BLOCKED-ON-OPERATOR (0-35)**, weighted **above POSITION**. Rationale: an unanswered question blocks work *indefinitely*, whereas a position item merely waits its turn. All four items revived; the cut re-run.
+
+**A second bug surfaced in the same repair:** `--revive` inserted items at the first `## Archive` string, which appears in the file's own how-to-use prose **above** `## Open` — so revived items landed *outside* the section the ranker reads. **This is the same trap `parse_items()` was already guarding against, in a function written minutes later.** Fixed, and six misplaced items moved back with a before/after count check (79 → 79).
+
+**What this says about the mechanism, honestly:** the kill criteria in §4 anticipated a *revival forced by reality*. They did **not** anticipate the score being blind to a whole category on day one. **Both bugs were found by a human asking an ordinary question, not by the instrument's own checks** — which is the same lesson as everything else this week: the mechanism cannot see the category it has no component for, and its silence about that category is not evidence the category is empty.
+
+**Added to the §4 kill criteria:** if a third structural blind spot is found in the score within 30 days, the score is under-specified for the population and should be replaced by a simple operator-facing "which 30?" prompt rather than patched again.
