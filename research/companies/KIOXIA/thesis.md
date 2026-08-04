@@ -412,3 +412,27 @@ Kioxia 17→14% share Q1'25→Q1'26 in the verified Counterpoint data — the co
 ## 2026-07-31 CLOSE — record KR session + JP prints (back-ref: predictions/lessons.md 2026-07-31 entries)
 **Q1 PRINTED — the pre-print INPUT-layer grade is VINDICATED.** Actual (T1-derived TDnet XBRL): rev **¥1,767,117m**, OP **¥1,270,017m**, NI **¥842,165m**, OPM **71.9%** from 13.1%; YoY rev **5.2×**, OP **28×**, NI **46×**. **Versus our call: rev +41.4%, OP +111.7% — 2.12× our point and 1.95× our band CEILING.** Versus the company's own guide: rev **BEAT +1.0%**, OP **MISS −2.2%**, NI **MISS −3.1%**; versus street OP ¥1.37tn, **MISS −7.3%**. **The company's own guidance was a better predictor than our model on all three lines** — which is exactly what the pre-print grade asserted hours before the number existed. Also: **3-for-1 split + ¥800bn buyback** (window opens 08-03); **no full-year guidance issued (未定)**. 🔴 **Falsifier #2 (bit-shipment guidance CUT) CANNOT be adjudicated — bit-growth guidance is a DATA GAP, as is the FY3/27 capex revision (the swing factor); both sit in the 16:00 JST briefing deck.** Basis caveat retained per L46: the ¥1,270bn is IFRS-reported and the guide's basis is unverified, so the −2.2% miss is provisional. **T+24h: do NOT grade off the +17.72% limit-up close — the print landed 15:30 AFTER the cash close, so that is pre-print beta; the first print-informed price is PTS ¥43,200 = −7.1%.** Real reaction resolves 08-03.
 **Position implication: NO ACTION — the numeric grade closes as an INPUT failure on our side, not a thesis failure; NAND economics printed at a 71.9% operating margin. Capex and bit-growth stay OPEN and are the two items that could change the supply-discipline read. 🟡**
+
+## 🔴 2026-08-04 — Q1 FY3/27 GRADED (printed 07-31), and the bar in our own file was fabricated
+
+Back-reference: `predictions/lessons.md` L55 + L56; `predictions/2026-07-02-KIOXIA-Q1FY27-earnings-prediction.md` (corrected in place).
+
+**Actual (T1-derived / T2-verified):** revenue **¥1,767.1bn** (+76.2% QoQ, +415.5% YoY) · GAAP OP **¥1,270.0bn** / non-GAAP **¥1,326.2bn** (75.0% margin) · net **¥842.2bn** · GM 80% (82% ex-JV) · ASP **+~70% QoQ** · data-centre revenue ¥1,174.7bn, >5× YoY · **net cash position achieved** · capex ¥52.4bn (a large underspend vs ~¥92.5bn expected).
+
+**Our registered revenue point ¥1,250bn was −29.3% below actual and the band ceiling ¥1,350bn missed entirely** (actual = 1.31× our ceiling). **The company's own guide of ¥1,750bn was accurate to +1.0%** — and it was the figure our file discarded as implausible. **L55.**
+
+**The consensus in our file (¥874.1bn OP) was refuted** — a net-income-scale figure crossed against an operating-profit guide. Real consensus OP ~¥1,370bn, **above** guidance, and **Kioxia missed every street line**: rev −3.96%, OP −4.68% (GAAP ex-litigation, the clean read), net −13.52%. **L56.**
+
+**Computed mix (from disclosed revenue + ASP): bits +3.6% QoQ ⇒ the quarter was ~97% price, ~3% volume.** Load-bearing for the whole NAND complex: this was a repricing quarter almost entirely, with no volume cushion underneath it.
+
+**Forward:** Q2 guided **¥2,390bn revenue (+35% QoQ)** with **~70% of the growth from ASP** — but Q2 OP guidance (¥1,890–1,900bn) came in **BELOW consensus ¥1.95tn**. Management sees **demand exceeding supply into CY2027** and reaffirmed a **50% LTA-coverage target for 2028**. **No FY3/27 full-year guidance was issued** — any full-year model is analyst-constructed, not company-sanctioned. No dividend declared; a first-ever dividend remains "under consideration."
+
+**Capital structure — the reason the tape moved:** **¥800bn buyback** (up to 30m shares = **5.5% of shares ex-treasury**, window **2026-08-03 → 10-30**) plus a **3-for-1 split** (record 09-30, effective 10-01). **The stock FELL in PTS on the print** and then rose +5.72% (T+1) / +12.02% cumulative (T+2) off the ¥46,500 base — against a TOPIX that fell 1.04%. Japanese press attribution is unanimous that this is **buyback-and-split alpha, not results alpha**.
+
+**Litigation, now inside the P&L:** Viasat, E.D. Texas jury, 2026-07-16, ~$229m ⇒ a **¥36.6bn Q1 provision** (in GAAP OP, out of non-GAAP). Two limit-downs preceded the print: **−16.10% (07-17, the verdict)** and **−18.33% (07-28, US semi rout)**. Drawdown from the 06-22 closing ATH ¥108,700 to the pre-print close was **−63.7%** — the "~−70%" carried in our files **overstates it**; use −64%.
+
+**Bain Capital is at ZERO** as of 2026-07-08/09 (confirmed on Bloomberg TV). **The overhang was gone three weeks before the print** and cannot be invoked to explain the rebound — a standing assumption in our files that is now retired.
+
+**Falsifiers:** #1 (rev <¥1,100bn) was **unfireable by construction** — actual 1.61× the trigger, and public guidance had already excluded it before the print. #2 (bit-shipment guidance CUT) **NOT FIRED**. Both re-specified needs at the next registration, with blind-check lines per #13b.
+
+**Position implication: HOLD — no size change — user-gated.** 🟡 The thesis is intact and strengthened on demand (net cash, >5× data-centre, demand>supply into CY2027), but the quarter was **97% price**, the forward OP guide **missed the street**, and the price recovery is **capital-return-driven rather than earnings-driven**. None of those is a falsifier; all three argue against reading the +12% as validation.

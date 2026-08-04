@@ -1262,3 +1262,115 @@ Blind-check: distinguishes "aggressive camp right" from "conservative camp right
 **BASIS CAVEAT, stated rather than buried (the exact class the open INTAKE-BOUNDARY P0 exists for):** the ~+mid-40% figure is **T2**, and our own record does not establish whether it is **blended** or **conventional-only** DRAM ASP — the dispute was specifically about the *blended* number. The direction of the finding (below both camps) is robust to that ambiguity at this gap size; the precise adjudication is **DIRECTIONAL, not settled**. Resolving it needs the Samsung Q2 division disclosure at T1.
 
 **Falsifier:** if the next three source-adjudication tests written in the harness naturally include an all-sources-wrong branch without prompting, L54 was already latent practice and does not need codifying — retire it.
+
+---
+
+## [2026-08-04] KIOXIA Q1 FY3/27 — GRADED. **L55: when you reject an aggregator figure as implausible, the figure you are rejecting may be the company's own guidance.**
+
+**Registered** 2026-07-02 (`predictions/2026-07-02-KIOXIA-Q1FY27-earnings-prediction.md`). **Printed** 2026-07-31 15:30 JST. **Graded** 2026-08-04, 4 days late — but the input-layer failure was booked **pre-print on 07-31**, before any actual existed, specifically so it could not be back-fitted. This entry confirms that pre-registered diagnosis against the result.
+
+### The revenue leg — basis-free, and the only cleanly gradeable line
+
+| | ¥bn | vs actual |
+|---|---|---|
+| **Actual (T1, 連結売上高)** | **1,767.1** (+76.2% QoQ, +415.5% YoY) | — |
+| Our point | 1,250 | **−29.3%** — we captured 70.7% |
+| Our band ceiling | 1,350 | **−23.6% — the band missed entirely; actual = 1.31× our ceiling** |
+| **The company's own Q1 guide** | **1,750** | **+1.0%** |
+
+🔴 **The guidance we discarded as implausible was accurate to 1.0%.** The registration file's own v2 note reads: *"MUST re-pull consensus — current aggregator figures discarded as implausible."* Those aggregator figures **were the company's guidance**, and they were discarded **for being too large**.
+
+### 3-layer diagnostic
+
+- **INPUT — CATASTROPHIC, and this is the whole failure.** The band was built without the company's published guide in it. Not weighted-and-rejected: absent. Everything downstream inherited a base that public information had already excluded.
+- **COMPUTATION — sound given the inputs.** The +24.6% QoQ step was internally consistent with "repricing on flat bits, below the +84.5% catch-up quarter." The reasoning was defensible; it was applied to the wrong anchor.
+- **REASONING — the failure is upstream of it.** No chain from a 71%-of-guide input reaches the right answer.
+
+### The falsifiers, both dead on arrival
+
+1. *"Rev <¥1,100bn"* — actual is **1.61× the trigger**. It was unfireable the moment the company guided ¥1,750bn, i.e. **before the print**. Booked 07-31 as a falsifier-design failure distinct from the estimate failure, and the more transferable of the two.
+2. *"Bit-shipment guidance CUT"* — bits grew low-single-digit and Q2 was guided **+35% QoQ with ~70% of the growth from ASP**. Not fired, correctly.
+
+### 🔴 L55 (new) — THE ANCHOR-REJECTION RULE
+
+> **When an aggregator or consensus figure is rejected as implausible, the rejection must be justified against company guidance BEFORE it is discarded — and the justification must be written down. In a supercycle the implausible number is frequently the company's own.**
+
+This is **B45 magnitude-conservatism operating at the intake step, inside a prediction file** — one layer earlier than where B45 usually gets caught. It is also a live **INTAKE-BOUNDARY** specimen (the open P0): the error entered where a number acquires its basis, and every downstream check passed because the figure was correctly cited and internally consistent. **Anti-fabrication cannot catch a correctly-cited number that is anchored to nothing.**
+
+**Blind-check on L55 (#51):** distinguishes *"we considered the guide and had reason to deviate"* from *"the guide never entered the band"* · reads on whether a prediction file contains the company's own guidance as an explicit named anchor · **goes blind if** the guide is cited in the file but plays no role in the band — a file can quote a number and still not be anchored to it, and a presence-check cannot tell the difference. The only real test is whether the band CONTAINS the guide or states why it does not.
+
+### Reaction leg — SUSPENDED, and 🔴 I got the reaction figure wrong 20 minutes ago
+
+**CORRECTION, same session:** I first wrote *"Kioxia closed +17.7% at ¥46,500 on the print."* **That is the PRE-print move and contains zero print information.** The Tokyo Stock Exchange has closed at **15:30 JST since 2024-11-05**, and the 短信 landed **at 15:30** — simultaneous with the close, not after it. The +17.72% (¥39,500 → ¥46,500) was 07-31 beta on a day the Nikkei rose 2,494 points and the SOX ~8.2%.
+
+**Correct base is the 07-31 close of ¥46,500.** Computed:
+
+| | Close | vs base |
+|---|---|---|
+| **T+24h — 2026-08-03** | ¥49,160 | **+5.72%** |
+| **T+48h — 2026-08-04** | ¥52,090 | **+12.02%** |
+
+Using the wrong base would have read **+24.46% / +31.87% — inflated by 18.7pp / 19.9pp.** This is an **L42-class basis error** (a number is not usable until its normalisation basis is named), committed while writing up a grade whose headline lesson is about anchors. Recorded rather than silently fixed.
+
+🔴 **And the +12.02% is NOT a verdict on the numbers.** The stock **fell in PTS after-hours on 07-31** (minkabu). Japanese press attribution is unanimous — kabutan: *「決算は想定線も自社株買いの実施発表を好感」*; Bloomberg JP: *「自社株買いは想定外との声－業績は下振れ」*. The move is **buyback-driven**: ¥800bn, up to 30m shares = **5.5% of shares ex-treasury**, with the acquisition window **opening 2026-08-03** — the company was itself an authorised buyer in both reaction sessions — plus a **3-for-1 split** (record date 09-30). TOPIX fell **−1.04%** across the two sessions, so the ~+13.1pp is genuine alpha, but it is **capital-return alpha, not results alpha**.
+
+**Not graded.** The registered band was written for a *"crowded, +670% YTD"* setup that no longer existed (the stock was ~−70% off its 2026-06-22 peak, including a −16% limit-down on 07-17 from a US patent verdict). **And the print carried a ¥800bn buyback plus a 1:3 stock split announced the same day** — two capital-structure events. A reaction band graded against an inverted positioning setup *and* two simultaneous confounders measures nothing. Same treatment as MURATA and BE.
+
+### Calibration adjustment
+
+1. **Any earnings registration must state the company's own guidance explicitly and either contain it in the band or justify exclusion in writing.** Absence is now itself a defect.
+2. **A falsifier must be checked against public guidance at registration time** — if guidance already makes it unreachable, it is decoration.
+3. Carries forward directly into the **SanDisk FQ4 print tomorrow** — see the T−1 addendum in that prediction file. The structural difference is that the SanDisk call was anchored ON its guide, not against it.
+
+---
+
+## [2026-08-04] 🔴 **L56 — THE BAR IN OUR OWN FILE WAS FABRICATED BY A LINE-ITEM CROSS, AND IT INVERTED THE SETUP**
+
+Found the same day as the L55 grade above, by commissioned verification — **not** by re-reading the file.
+
+**The claim, carried in `predictions/2026-07-02-KIOXIA-Q1FY27-earnings-prediction.md` (07-31 addendum) as T2:** *"the Bloomberg consensus (¥874.1bn, 10 analysts) sits −32.7% below the company's own guide, which is itself anomalous and unresolved."*
+
+**REFUTED. No source in any language supports a ¥874.1bn operating-profit consensus.** Every compiled consensus put Q1 OP at **~¥1,370bn**, i.e. **+5.5% ABOVE** the company's ~¥1,298bn guide.
+
+### The provenance of the error, computed
+
+| | |
+|---|---|
+| ¥874.1bn ÷ company **OP** guide ¥1,298bn | **−32.7%** ← reproduces the "anomaly" our file recorded |
+| ¥874.1bn ÷ company **NET** guide ¥869bn | **+0.6%** ← same scale |
+
+**A net-income-scale figure was compared against an operating-profit guide.** The "anomaly" our file flagged as *unresolved* was not an anomaly in the world; it was the arithmetic signature of a line-item cross. **We wrote down the symptom, labelled it unresolved, and moved on — instead of testing the one hypothesis that explains it exactly.**
+
+### 🔴 The consequence: the setup inverts
+
+| Framing | Reads as |
+|---|---|
+| **Our file's framing** | consensus anomalously LOW vs guide → an easy bar |
+| **Verified truth** | **consensus ABOVE the company's own guide, and Kioxia MISSED every street line** |
+
+| Line | Consensus | Actual | Miss |
+|---|---|---|---|
+| Revenue | ¥1,840bn | ¥1,767.1bn | **−3.96%** |
+| OP (headline GAAP) | ¥1,370.7bn | ¥1,270.0bn | **−7.35%** |
+| **OP (GAAP ex-litigation)** | ¥1,370.7bn | ¥1,306.6bn | **−4.68% ← the only economically clean read** |
+| OP (non-GAAP) | ¥1,370.7bn | ¥1,326.2bn | −3.25% |
+| Net | ¥973.8bn | ¥842.2bn | **−13.52%** |
+
+**And a second basis trap sits inside the OP line.** The 決算短信 headline OP is **GAAP ¥1,270.0bn**; the IR deck headline is **non-GAAP ¥1,326.2bn**. The ¥56.2bn wedge is **¥36.6bn of Viasat litigation provision** — booked off a jury verdict dated **2026-07-16, fifteen days before the print and after every model in the consensus was set.** No analyst could have carried it. **Grading the headline −7.35% overstates the operational miss by more than 2×.**
+
+**Restated against the real bar, our ¥1,250bn point is −32.1% below consensus**, worse than the −28.6% vs guide we booked this morning.
+
+### L56 (new) — THE UNRESOLVED-ANOMALY RULE
+
+> **An "anomalous and unresolved" number in a prediction file is a defect, not a disclosure. Before a figure is carried as a bar, the cheapest cross-check is whether it matches a DIFFERENT line item of the same entity — a consensus that sits ~33% below guidance is far more likely to be the wrong line than a real dislocation.**
+
+Labelling something unresolved feels like rigour. It is not: **it preserves the error while transferring responsibility to a future reader who never comes.** Both this file's failures — L55's discarded guide and L56's crossed line — are **intake-boundary** errors (the open P0), and both passed every downstream check because the figures were correctly cited and internally consistent.
+
+**Blind-check (#51):** distinguishes *"this figure is a bar"* from *"this figure is a different line item wearing a bar's label"* · reads on scale-matching each carried figure against the entity's other published lines · **goes blind if** the crossed line happens to sit at a plausible distance from the true bar — a net figure ~10% off an OP guide would raise no flag at all. **It caught this one only because the cross was large enough to look anomalous, which means the rule protects worst against the errors that hide best.**
+
+### Calibration adjustment
+
+1. **No figure enters a prediction as a bar while flagged unresolved.** Resolve it, or state the call without it.
+2. **Scale-check every carried consensus against the company's other guided lines** before use — this is one division.
+3. **Name the basis on every profit line** (GAAP / non-GAAP / ex-item). The Kioxia OP miss spans −3.25% to −7.35% purely on basis choice.
+4. Both L55 and L56 are routed to the **INTAKE-BOUNDARY P0** as live specimens.
