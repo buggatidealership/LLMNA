@@ -1,6 +1,6 @@
 # Watchlist Candidates
 
-**Last updated:** 2026-08-04 — REIA power / electrical-infrastructure cluster migrated in from `meta/todo.md` (the availability-gated item was closed as superseded)
+**Last updated:** 2026-08-04 — REIA power / electrical-infrastructure cluster migrated in from `meta/todo.md` (the availability-gated item was closed as superseded); access checked same day by the operator — **all 10 available**
 
 ---
 
@@ -12,17 +12,23 @@ Source of record: `signals/cross-source-log/2026-06-27-REIA-batch-power-cpuserve
 
 Merit ranking (conviction-ordered, not access-ordered):
 
-| Rank | Name | Ticker / venue | Why it ranks here | Status |
-|---|---|---|---|---|
-| 1 | **Schneider Electric** | SU · Euronext Paris | Already identified as an agnostic picks-and-shovels play with **>20% DC revenue** in the 2026-07-04 all-regions consolidation; the DC-segment momentum deep-dig is a standing REMAINING item on the EU-sovereign-AI to-do | pre-thesis; deep-dig owed before any tiering |
-| 2 | **Legrand** | LR · Euronext Paris | Same 07-04 finding, same >20% DC-revenue class; pairs with Schneider as the electrical-distribution leg | pre-thesis |
-| 3 | **Siemens Energy** | ENR · Xetra/Frankfurt | Grid + generation side of the Layer-3 power gap the harness has never held a name in | radar |
-| 4 | **ABB** | ABBN · SIX Swiss | Electrification / drives; adjacent to the same DC power-chain | radar |
-| 5 | **Prysmian** | PRY · Borsa Italiana | Cable/grid-interconnect — the physical constraint layer behind DC power delivery | radar |
-| 6 | **Nexans** | NEX · Euronext Paris | Same layer as Prysmian, second source | radar |
-| 7 | **Infineon** | IFX · Xetra | Power semis; overlaps the 800V HVDC cascade already tracked via MPWR/VICR/MURATA | radar |
+| Rank | Name | Ticker / venue | Why it ranks here | Access | Status |
+|---|---|---|---|---|---|
+| 1 | **Schneider Electric** | SU · Euronext Paris | Already identified as an agnostic picks-and-shovels play with **>20% DC revenue** in the 2026-07-04 all-regions consolidation; the DC-segment momentum deep-dig is a standing REMAINING item on the EU-sovereign-AI to-do | ✅ | pre-thesis; **deep-dig owed before any tiering** |
+| 2 | **Legrand** | LR · Euronext Paris | Same 07-04 finding, same >20% DC-revenue class; pairs with Schneider as the electrical-distribution leg | ✅ | pre-thesis; deep-dig owed |
+| 3 | **Siemens Energy** | ENR · Xetra/Frankfurt | Grid + generation side of the Layer-3 power gap the harness has never held a name in | ✅ | radar |
+| 4 | **ABB** | ABBN · SIX Swiss | Electrification / drives; adjacent to the same DC power-chain | ✅ | radar |
+| 5 | **Prysmian** | PRY · Borsa Italiana | Cable/grid-interconnect — the physical constraint layer behind DC power delivery | ✅ | radar |
+| 6 | **Nexans** | NEX · Euronext Paris | Same layer as Prysmian, second source | ✅ | radar |
+| 7 | **Infineon** | IFX · Xetra | Power semis; overlaps the 800V HVDC cascade already tracked via MPWR/VICR/MURATA | ✅ | radar |
 
-Secondary, access previously flagged as possibly restricted (recorded, not a gate): **Lenovo 0992 (HKEX)** · **Wiwynn 6669 (TWSE)** · **Tokyo Electron 8035 (TSE)**.
+**✅ ACCESS RESULT — USER-VERIFIED 2026-08-04: ALL AVAILABLE.** Operator checked DeGiro/N26 and reported *"all available"* — **all seven priority names AND all three secondaries** (Lenovo 0992 · Wiwynn 6669 · Tokyo Electron 8035), which had been flagged as possibly restricted since 2026-06-27. Recorded as a user-verified T1 datum on the operator's own accounts.
+
+**What this does and does not change.** It does **not** promote anything — access was never a gate after the 2026-07-05 directive, and none of these has cleared a B39 asymmetry test. What it changes is **downstream routing**: any entry package built off this cluster can now actually execute, so the deep-dig on Schneider/Legrand is no longer speculative work against a possibly-untradable name. **The three secondaries clearing is the genuinely new information** — the priority seven were large EU listings and expected to clear; HKEX and TWSE access were open questions, and Tokyo Electron in particular is a semicap name the harness has reasoned about without ever treating it as investable.
+
+**The standing caution survives the result:** availability is not a reason to look at a name, and a clean sweep is exactly the condition under which access quietly starts functioning as a filter again in the other direction — everything is reachable, so nothing gets ranked on merit. The ranking above is conviction-ordered and stays that way.
+
+Secondary names (access question now CLOSED — all available, user-verified 2026-08-04): **Lenovo 0992 (HKEX)** · **Wiwynn 6669 (TWSE)** · **Tokyo Electron 8035 (TSE)**.
 US names from the same batch, no access question: GEV / ETN / VRT / CEG / VST / TLN / BE / CLF / AMD / ARM / ALAB / MU / LRCX / AMAT / KLAC / ACMR.
 
 **Verified-unavailable (factual result retained from the closed item):** **Nanya 2408.TW** — NOT available on DeGiro or N26 (user-verified 2026-07-13) → **watchlist-INSTRUMENT only**, i.e. useful as a read on the DRAM layer, never as a position.
