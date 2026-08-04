@@ -1619,3 +1619,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-03 20:25:27Z anti-fabrication-hook INCONCLUSIVE (n=9 '8.76%' forms=[("'8.76%'", None, 'TimeoutExpired')]; '8.79%' forms=[("'8.79%'", None, 'BudgetExceeded')]; '0.79%' forms=[("'0.79%'", None, 'BudgetExceeded')]; '6.03%' forms=[("'6.03%'", None, 'BudgetExceeded')]; '8.8%' forms=[("'8.8%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-08-03 22:15:49Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-04 00:24:17Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-04 00:28:26Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-04 00:28:41Z anti-fabrication-hook INCONCLUSIVE (n=18 '3.26%' forms=[("'3.26%'", None, 'TimeoutExpired')]; '1.96%' forms=[("'1.96%'", None, 'BudgetExceeded')]; '3.26%' forms=[("'3.26%'", None, 'BudgetExceeded')]; '1.96%' forms=[("'1.96%'", None, 'BudgetExceeded')]; '3.3%' forms=[("'3.3%'", None, 'BudgetExceeded')] verdict:pending)
