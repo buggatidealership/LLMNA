@@ -5,6 +5,26 @@
 ## ⏰ STANDING USER-SIGNAL (registered 2026-07-09, ~10:35 UTC)
 **When the user writes "got access to my computer" → immediately deliver the browser checklist:** (0) **THE UNLOCK:** claude.ai/code/routines → BOTH routines ("KR-JP morning wake" + "EOD synthesis") → repository selector → change Health-Calculators → `buggatidealership/LLMNA` → save. Both triggers are currently DISABLED with prompts/schedules preserved — after his fix, I re-enable via `update_trigger enabled:true` and verify the first fire (E8). (1) Environment network allowlist per `meta/network-allowlist-recommendation.md` **(⚠️ 2026-07-27: this file was never written — the recommendation exists only as this checklist line. Write it or drop the reference.)** (benefits wake sessions immediately; this session's pickup = test next container). (3) Delete stale branches (claude/w11-wakes etc.). (4) NEW 2026-07-09: PAUSE the two "loopframe" posting routines (April ARS project — morning 08:43 + evening 20:23 UTC, still firing daily) at claude.ai/code/routines — platform refused agent-side disable (created via http_api, not by an agent); ALSO rotate the Twitter/Recraft/Runway/Ideogram API keys embedded in their prompts in plaintext. Item 2 (transcript look) already DONE 2026-07-08. Until then: user is sharing news/data ad-hoc + main session runs wakes manually on request.
 
+## 2026-08-05 (WED) KR-OPEN WAKE — the ETF test resolved and could not adjudicate; vendor defect 4th instance
+
+Artifact: `signals/cross-source-log/2026-08-05-wed-kr-open-wake-etf-test-resolves-on-one-name.md`. Clean sync, 0 commits today, no prior operator wake — full time-sensitive leg at 09:05 KST.
+
+🔴 **ETF-DIVERGENCE TEST: UNRESOLVED — the instrument failed, not the hypothesis.** FSC single-stock leveraged-ETF rules took effect today, the pre-registered adjudicating session. Spread **−2.57pp** (2-vs-2) **or +2.75pp** (vs Hanmi, the same control used 08-03/08-04). **Sign flips on SEMCO's +14.09%, cause unverified.** Series: −2.09 / +2.09 / ±2.6. Effect sought ~2pp against a cohort whose routine daily dispersion is ±5-12% (B45) — **the instrument's resolution was always smaller than its noise, and that was computable at registration.** Root cause: a FLOW hypothesis measured with a PRICE instrument because all four designated flow discriminators are unreachable. **Re-spec-or-retire booked, dated 08-06; a 4th reading of this design is not acceptable.**
+
+🔴 **EODHD index `previousClose` defect — 4th instance (07-28 / 07-31 / 08-04 / 08-05).** Both KR indices carried the 08-03 close; all four singles clean. KOSDAQ would have read **+7.23%** vs a true **+1.27% — a 5.96pp error**, the largest the defect has produced. **The 08-04 `[WAKE]` stub row predicting recurrence within 7 sessions resolves TRUE at N=1** on the very next session; row left open to the 08-11 recheck as registered.
+
+🟢 **Tape:** KOSPI **+4.49%** (true; vendor would say +6.18%), KOSDAQ +1.27%, SK Hynix **+6.98%**, Samsung +5.42%, SEMCO +14.09%, Hanmi +3.45%. **The index has round-tripped the flush (+0.74% vs 07-31) but the memory large-caps have NOT** — Samsung −3.62%, SK Hynix −1.80% vs their pre-flush closes. Hanmi is the only material fader (open +6.65% → +3.45%, −3.20pp).
+
+🟡 **CORRECTION TO YESTERDAY'S H3 FINDING.** 08-04 computed "5 of 6 ≥4d stale, median 4d, blind by construction." Today: **median 2d, only 2 of 6 ≥4d.** The difference is the weekend — Tuesday-reading-Friday vs Wednesday-reading-Monday. **I overstated the structural component.** Rates legs (10Y 4.70% obs 08-03, 2Y, breakeven, OAS) are 1-2d and usable; **JPY (5d) and Brent (9d, spot-FOB not a settle) are the genuine gaps.** To-do re-scoped rather than deleted. **H1/H2/H3 HELD 62/5/33 — today "nothing moved", not "nothing could be seen."**
+
+⛔ **Second consecutive wake to execute a RETIRED instruction:** the Routine text still says "Brent level vs 95" (91.82 = BELOW, 9d stale, wrong basis), retired by ADDENDUM #14 on 07-31. The amendment to-do is **1 day overdue** and needs the operator's Routines UI — same trip as the EOD condition-check fix.
+
+**Discriminators UNREADABLE (4th consecutive session, on the test's most important date):** 투자자별 flows · 반대매매 · KOSPI200 futures basis · CME/EUREX gap · KOFIA margin. Logged as UNREADABLE, not "not fired."
+
+**TODAY:** 🔴 **SanDisk Q4 FY26 prints 13:30 PT** — registered call unrevised, consensus above guide-top, T−1 addendum booked 08-04 · competitive surveillance pass #2 (first weekly) · quota check #4 (2d overdue).
+
+**NO POSITION ACTION. No falsifier touched.** 🟡
+
 ## 2026-08-04 (TUE) EOD DOCKET CLOSE — **DEGRADED to increment-only, AGAINST the Routine's own condition check, which is defective**
 
 **🔴 THE CONDITION CHECK FAILED, AND THE FAILURE IS THE FIRST THING TO BOOK.** The Routine specifies: *run `git log --since="16:00"` — if substantive user-driven evening work already happened, DEGRADE.* It returned **0 commits** ⇒ literal verdict "quiet evening, run the full discovery leg."

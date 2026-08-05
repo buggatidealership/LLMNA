@@ -1647,3 +1647,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-04 20:33:47Z anti-fabrication-hook INCONCLUSIVE (n=17 '$5.95B' forms=[("'$5.95B'", None, 'TimeoutExpired')]; '$8.4B' forms=[("'$8.4B'", None, 'BudgetExceeded')]; '$10.38B' forms=[("'$10.38B'", None, 'BudgetExceeded')]; '74.5%' forms=[("'74.5%'", None, 'BudgetExceeded')]; '30.3%' forms=[("'30.3%'", None, 'BudgetExceeded')] verdict:pending)
 - 2026-08-04 20:46:27Z session-prime-cascade-hook FIRE (new-codification-ids=L56)
 - 2026-08-04 20:46:39Z borrowed-vs-firstprinciples-hook FIRE (borrowed-framing-unverified)
+- 2026-08-04 22:26:55Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-05 00:24:31Z session-prime-hook event=resume injected=False (skipped non-startup)
