@@ -155,3 +155,59 @@ Three good-faith attempts, three different answers:
 | Catch-audit (did any fire prevent a shipped error?) | 🔴 **COMMISSION TO A FRESH SESSION** — cannot be self-audited (§7) |
 
 **Net-positive test, restated against outcomes:** this pass **added** L58 and one to-do, and **removed** L42-b as an independent object plus retired one measurement instrument. **It has not yet reduced the codification tail, because §8.3 established the tail cannot currently be enumerated.** By the test written in §6, this artifact is **NOT YET PASSING** — it passes only when the normalisation pass plus the commissioned catch-audit produce net removals. **Stated plainly so it cannot be quietly counted as a win.**
+
+---
+
+# §9 — CATCH-AUDIT, first real measurement (operator question: "does a fire mean you needed it, or that you've learned it?")
+
+**Operator's framing, and it is the right one:** *"maybe I just had to say it once and now you're applying it in your own reasoning… does it mean when it fires you do check and wrote it in, or that you've checked four times and after the fourth it works autonomously?"*
+
+## 9.1 — 🔴 A FIRE IS NOT AN OBSERVATION. IT IS A BLOCK.
+
+All seven below-threshold hooks call `sys.exit(2)` — verified by inspection. **Exit-2 stops the message and forces a redo.** Therefore **a logged fire is by definition a case where the behaviour was ABSENT** and had to be compelled.
+
+🔴 **This partially inverts §4 of this artifact.** §4 said fire counts are not catch counts — true for *injection* hooks (`session-prime`, 672 "fires" = context injections) and for *guard* hooks (`git-guard`, 395 = invocations, mostly passing). **But for BLOCKING hooks that check "did you do X", a fire IS a catch.** The two classes must not be pooled. **Recording this as a correction to my own §4 rather than editing it silently.**
+
+## 9.2 — 🔴 AND I MADE THE BASIS ERROR AGAIN WHILE MEASURING IT
+
+First computation returned **473 cross-source-log files created since 2026-07-06 → "99% autonomous"**. **465 of those came from ONE bulk commit (`37000dc`, 2026-08-01, a telemetry/backfill commit).** The denominator was contaminated with non-events.
+
+**Corrected: 8 genuine ingest artifacts.** **Third L58 instance of the day, caught by one sanity check on an implausible number.** The self-catch rate is improving; the error rate is not.
+
+## 9.3 — The measurements
+
+| Hook | Trigger events (since 2026-07-06) | Fires (= failures forced) | **Autonomous rate** | Verdict |
+|---|---|---|---|---|
+| **signal-ingest-cascade** | **8** genuine ingest artifacts | **4** | 🔴 **50%** | **KEEP — load-bearing** |
+| **cascade-enforcement** | **3** commits touching ≥2 company thesis files | **1** | 67% | **KEEP — but n=3 is not a sample; kept on the invisibility argument below** |
+
+**On signal-ingest-cascade specifically, answering the operator's question directly: NO, it has not become autonomous.** The four fires are **2026-07-26, 07-28, 07-29 and 08-04** — the most recent was yesterday. **There is no learning curve in that distribution, only a steady ~50% failure rate.** Half the time an operator-shared brief does not reach the corpus unless something stops the message.
+
+## 9.4 — Why cascade-enforcement survives on 1 fire, and the general principle
+
+**Its failure mode is SILENT BY CONSTRUCTION.** A skipped cascade leaves the chat analysis looking correct; the damage surfaces weeks later when a position decision is made from a company file that never received the update. **Neither operator nor I would notice at the time.**
+
+Contrast `bottoms-up`: if I average sell-side instead of building from units, the defect is visible in the reasoning itself and is catchable in conversation.
+
+> **PROPOSED RETIREMENT PRINCIPLE (candidate, supersedes fire-count for this decision): retire on VISIBILITY OF FAILURE, not on fire count. A hook guarding a failure mode that is detectable in conversation may be retired and re-learned; a hook guarding a failure mode that is invisible until it has already propagated must be kept regardless of frequency.**
+>
+> *Blind-check (#51): distinguishes "this habit is internalised" from "this habit's absence is simply unobservable" · reads on whether the guarded failure would be visible in the turn it occurs · **goes blind if** a visible failure mode has a silent variant — e.g. bottoms-up reasoning that LOOKS built-up but rests on a borrowed number, which reads as compliant and is not.*
+
+## 9.5 — The five hooks I cannot adjudicate, and why I am the wrong judge
+
+**segment-trajectory · antifragility-M/N · bottoms-up · borrowed-vs-first-principles · llm-native-reasoning** — **no countable denominator exists.** There is no log of "times the situation arose."
+
+**The operator's read on segment-trajectory is probably correct** (said once in May 2026, plausibly internalised). **But I am the worst available judge of it:** the hook exists precisely because I articulated B28 correctly and then re-committed it on a different name within 24 hours. **Self-assessment of an internalised habit is the exact capability the origin failure disproved.**
+
+**The only instrument that resolves these is a deliberate OFF-TEST** — disable one, watch for the behaviour to return, re-enable if it does. **Cheap for segment-trajectory (visible failure). NOT cheap for either cascade hook (invisible failure, weeks of latency).**
+
+## 9.6 — Standing recommendation to the operator (Rule #19 — all live enforcement, operator's call)
+
+| Hook | Recommendation | Basis |
+|---|---|---|
+| signal-ingest-cascade | 🟢 **KEEP** | measured 50% failure rate, no learning curve, most recent failure yesterday |
+| cascade-enforcement | 🟢 **KEEP** | invisible failure mode; n=3 too small to retire on |
+| segment-trajectory | 🟡 **OFF-TEST candidate** | visible failure mode, lowest risk, operator believes internalised |
+| antifragility-M/N · bottoms-up · borrowed-vs-first-principles · llm-native-reasoning | ⏸️ **HOLD** | no denominator; do not retire on fire count alone, which §9.1 shows is the wrong instrument for blocking hooks |
+
+**Net effect on the §6 net-positive test: still NOT PASSING.** This pass produced **zero retirements** and one new candidate principle. It did, however, replace fire-count with a defensible retirement criterion — which is a precondition for any future removal rather than a removal itself. **Stated so it is not booked as progress it hasn't made.**
