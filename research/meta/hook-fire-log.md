@@ -1656,3 +1656,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-05 07:23:31Z structural-output-hook FIRE (structural-markers-missing)
 - 2026-08-05 07:23:34Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
 - 2026-08-05 07:23:49Z anti-fabrication-hook INCONCLUSIVE (n=6 '$1.65 trillion' forms=[("'$1.65 trillion'", None, 'TimeoutExpired'), ("'$1.65trillion'", None, 'BudgetExceeded')]; '20.6%' forms=[("'20.6%'", None, 'BudgetExceeded')]; '0.2%' forms=[("'0.2%'", None, 'BudgetExceeded')]; '67%' forms=[("'67%'", None, 'BudgetExceeded')]; '43%' forms=[("'43%'", None, 'BudgetExceeded')] verdict:pending)
+- 2026-08-05 07:52:51Z session-prime-hook event=resume injected=False (skipped non-startup)

@@ -92,3 +92,40 @@ The 07-03 input note read TrendForce Q3 NAND **+10–15%** as *REINFORCING*. Ver
 **Falsifiers unchanged and none pre-fired:** rev <$7.75B · GM <79% · backlog/NCNR weakening.
 
 **Blind-check on the reaction band (#51):** distinguishes *"the market repriced the quarter"* from *"the market repriced something else that landed in the same window"* · reads on the T+24h move against the last pre-print close · **goes blind if** a non-earnings catalyst lands inside the window — which has **already happened** (HBF spec 08-03), and which is exactly what invalidated the Kioxia reaction leg (buyback + split). **A reaction band with a live independent catalyst in its window cannot grade the print, and this one has one.**
+
+---
+
+## 🔒 REACTION LEG — REGISTERED 2026-08-05 ~07:40Z, ~6h BEFORE THE PRINT (was never registered; operator asked for it explicitly)
+
+**The fundamental legs above are LOCKED and UNREVISED** (rev pt $8.4B / NG EPS pt $33.5 / Q1-FY27 guide pt ~$9.2B). This adds the price leg the file never had. Anchored to the 2026-08-04 verification pass (T1 guide / T2 consensus + options); no new data since.
+
+### The structural claim (this is the falsifiable part, higher conviction than the direction)
+
+> **The GUIDE decides the reaction, not the quarter — and the 2026-08-13 Investor Day probably absorbs the guide.**
+
+Computed: last quarter SNDK printed **EPS $23.41 against a $12–14 guide = 1.80× the midpoint (+80%)**. On that history, **beating the guide is near-certain**; a repeat magnitude puts EPS far above the $34.24 consensus. **So the quarter is not the variable.** The variables are (a) whether the FY27 framing lands tonight or is held 8 days for Investor Day, and (b) whether management acknowledges the July pricing deceleration.
+
+### The calls
+
+| # | Call | P *(my model)* | Basis |
+|---|---|---|---|
+| **R-1** | **Q4 revenue AND non-GAAP EPS both beat consensus** ($8.3B / $34.24) | **70%** | 1.80× guide-beat history + Samsung NAND ASP +high-60s% QoQ in the same calendar quarter (T1, 07-30) |
+| **R-2** | **\|T+1 move\| ≥ 10%** | **60%** | implied 12–15.62%; last 5 prints averaged 7.96% absolute but **exceeded implied in 4 of 5** |
+| **R-3** | **T+1 direction NEGATIVE** | **52% / 48%** — 🔴 **a coin flip, stated as one** | see below |
+| **R-4** | **A beat on both lines is followed by a NEGATIVE T+1 close** (the Kioxia shape) | **35%** | the non-consensus call; would confirm the structural claim above |
+
+### R-3 is near-even and I am not dressing it up
+
+**For negative:** consensus sits **above the top of the guide on both lines**, so an in-range print is a miss · the stock enters after a **~30% five-session bounce** (07-29 $1,015.89 → 08-04 ~$1,334–1,430), i.e. **not washed out** · part of that bounce is the **08-03 HBF/OCP spec, exogenous to earnings** · Investor Day 8 days out invites a vague guide · and **Kioxia, same fab, same quarter, five days ago, printed +76.2% QoQ / +415.5% YoY, missed every street line, guided Q2 OP below consensus and fell in after-hours.**
+
+**For positive:** the 1.80× beat history is extraordinary · GM guide 79–81% against Kioxia's realised 80% · short interest 5.31% · HBF momentum with a catalyst 8 days out · and **B45 binds me here — my documented failure mode is under-calling upside in this regime, and I am consciously resisting a larger negative tilt because of it.**
+
+### Falsifiers on this leg
+
+1. **R-1 fails (either line misses consensus)** → the "quarter is not the variable" premise is wrong and R-3/R-4 grade as luck, not skill.
+2. **A full FY27 guide lands tonight** → the Investor-Day-absorbs-the-guide premise is refuted; regrade R-3 without it.
+3. **|T+1| < 5%** → both R-2 and the "guide decides" framing are wrong; the market found it uneventful, which no branch here predicts.
+
+**Blind-check (#51):** distinguishes *"the market repriced the quarter"* from *"the market repriced something else in the same window"* · reads on the T+1 close vs the last pre-print close · **goes blind if** a non-earnings catalyst lands inside the window — **which has already happened once** (HBF, 08-03) and could recur at FMS 2026, which runs **Aug 4–6**. If an HBF/FMS headline lands 08-05→08-06, this leg is **CONFOUNDED and must be suspended, not graded** — the same treatment Kioxia's leg got for its buyback+split.
+
+**Position implication: NO ACTION — HOLD — user-gated.** 🟡 A reaction call is calibration data, not a trade.
