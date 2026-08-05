@@ -183,3 +183,48 @@ Also computed and verified: **consensus $8.3B implies only +39.5% QoQ** against 
 **Nothing moves the view, so nothing moves the number.** Revising P without an input that changes the reasoning would be revising to *appear* responsive — which is the failure mode that makes a prediction ledger worthless. **The register moves when the evidence moves.**
 
 **The one live trigger that WOULD force a revision before 13:30 PT:** if verification returns that the 332-layer announcement is genuinely new AND the stock is already up materially on it during the 08-05 session. That shifts the base the reaction is measured from, and **R-2 (magnitude) would be revised** — a stock that has already discharged event energy intraday has less left for T+1. Direction would stay.
+
+### 🔴 REVISION #1 — 2026-08-05 ~09:3xZ, still pre-print. **THIS one is evidence-driven.**
+
+An hour ago I declined to move the numbers and said *"the register moves when the evidence moves."* **The evidence moved.**
+
+**THE INPUT: AMD reported 2026-08-04 (T1, AMD IR).** Datacentre revenue **$6.7B, +107% YoY**; total **$11.5B, +50%**, a company record; **beat consensus (~$6.5B)** — and **the stock fell after hours.**
+
+**That makes N=3 in six days, same complex, same mechanism:**
+
+| Name | Date | The print | The reaction |
+|---|---|---|---|
+| **MPWR** | 07-30 | record quarter, FY AI growth floor raised 85%→130%, buyback doubled | **gave back the entire print reaction in 2 sessions** (+8.35% → −5.73%) |
+| **Kioxia** | 07-31 | rev **+76.2% QoQ / +415.5% YoY**, ASP +70%, GM 80% | **missed consensus on every line**, guided Q2 OP below street, **fell after-hours** |
+| **AMD** | 08-04 | datacentre **+107%**, total **+50%** record, **beat** | **fell after hours** |
+
+**R-4 is precisely this shape, and it was registered at 35%. Three consecutive instances in six days is no longer an anecdote.**
+
+#### 🔴 And decomposing it caught an inconsistency in my own registration
+
+| | |
+|---|---|
+| R-4 = P(beat) × P(neg\|beat) | 0.35 / 0.70 ⇒ **P(neg\|beat) = 0.500** |
+| R-3 = R-4 + P(miss) × P(neg\|miss) | (0.52 − 0.35) / 0.30 ⇒ **P(neg\|miss) = 0.567** |
+
+**That implies a MISS is only 57% likely to close negative** — against a consensus sitting *above guide-high*, on a stock up ~30% in five sessions. **Not credible. R-3 and R-4 as registered were mutually inconsistent**, and I found it by decomposing rather than by re-reading. The original numbers were each set by feel, separately, and never reconciled.
+
+#### Rebuilt from conditionals
+
+| Term | Value | Basis |
+|---|---|---|
+| P(neg \| miss) | **0.85** *(my model)* | a miss against an above-guide bar on an extended tape is close to one-way |
+| P(neg \| beat) | **0.55** *(my model)*, was ~0.50 | **N=3 beat-and-fall in 6 days**, same complex |
+
+| Call | Was | **Now** |
+|---|---|---|
+| **R-3** direction NEGATIVE | 0.52 | **0.64** |
+| **R-4** beat-then-negative | 0.35 | **0.39** |
+| R-1 quarter beats consensus | 0.70 | **0.70 — unchanged** |
+| R-2 \|T+1\| ≥ 10% | 0.60 | **0.60 — unchanged** |
+
+**R-1 and R-2 do not move — nothing arriving bore on the quarter's size or the move's magnitude.**
+
+**Stating plainly what this does to my standing versus the ensemble:** the three judges averaged **0.583**. I registered **0.52**, the lowest of four, explicitly flagging that B45 caution might be costing me conviction. **I am now at 0.64 — the highest of four.** That is a real reversal of position and it should be visible in the grade. If the print closes UP, the honest reading is that I over-corrected on a three-observation pattern, and the B45 caution I abandoned was right.
+
+**Both prior versions stand in this file.** Original registration ~07:40Z, amendment ~08:5xZ, this revision ~09:3xZ — all pre-print, all timestamped, none overwritten.
