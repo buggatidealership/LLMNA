@@ -256,3 +256,72 @@ That is precisely the risk in a **+14.86% five-session run-in**, and it is why R
 **FINAL FOR THE PRINT: revenue $1,118m · EPS $0.65 · FY guide ~$4.53bn · R-1 0.87 · R-2 0.90 · R-3 0.93 · R-4 UP 0.55 · R-5 0.60 · move +3%.** Reaction baseline remains the 2026-08-05 close, still unknown at revision time.
 
 **Position implication: NO ACTION — 0% — not held; calibration call only.** 🟡
+
+---
+
+## 🔴 OPERATOR-DRIVEN ADDENDUM — 2026-08-05, pre-print. "Why did the bar jump — the AI story, or extrapolation?"
+
+**Operator's question, registered before the print so it grades honestly.** He asked whether the consensus jump is (a) Datadog being re-rated into the AI basket, or (b) the street mechanically revising up off recent delivery — and asked to see what the street *wanted* versus what Datadog actually *gave* in prior quarters.
+
+**The question is better than the one I was answering.** I treated the record bar as a fact about the setup. He asked what *causes* it, which is the question that generalises.
+
+### The decomposition (T1 guides + FMP consensus snapshots + actuals)
+
+| Quarter | company guide-top implies QoQ | consensus implies QoQ | **consensus vs guide-top** | actual QoQ | actual vs guide-top |
+|---|---|---|---|---|---|
+| Q4-25 (rep 2026-02-10) | +3.43% | +3.73% | **+0.29%** | +7.63% | **+4.06%** |
+| Q1-26 (rep 2026-05-07) | +0.82% | +0.73% | **−0.09%** | +5.58% | **+4.73%** |
+| **Q2-26 (rep 2026-08-06)** | **+7.31%** | **+7.17%** | **−0.13%** | *pending* | *pending* |
+
+🔴 **ANSWER: neither (a) nor (b) — on the revenue line the street did nothing at all.** Consensus tracks the company's guide **top** to within 0.6pp in all three quarters, including this one. **The street is not front-running the AI story and is not extrapolating. It is transcribing the guide.**
+
+**The thing that jumped is Datadog's OWN guide: +3.43% → +0.82% → +7.31% sequential.** Management removed its own sandbag. That is a *company* decision, not a market one — and the operator's framing surfaced it because he asked about causation rather than level.
+
+### What the street wanted vs what Datadog gave — the operator's direct question
+
+**In guide-space (T1, the honest space):** Datadog promised ≤$916m and delivered $953.2m (**+4.06% above its own ceiling**); promised ≤$961m and delivered $1,006.4m (**+4.73%**). Mean overshoot of its own ceiling **+4.39%** *(n=2 T1 — thin, and I will not dress it as a base rate)*.
+
+**In consensus-space (13 quarters, FMP):** beat every single time, band **+2.72% to +4.82%**, median **+3.75%**.
+
+**⇒ Datadog has never once been asked for what it actually delivers.** The 13/13 streak is not thirteen acts of outperformance. It is **one act of conservative guidance, repeated thirteen times, with the street copying it each time.**
+
+### 🔴 WHERE THE AI RE-RATING ACTUALLY LANDED — not where the question assumed
+
+The operator's AI-basket hypothesis is **CORRECT, but about the wrong line item.** Over the last 30 days:
+
+| | |
+|---|---|
+| Price targets | KeyBanc $225→**$320** · Mizuho $220→**$300** · Jefferies $210→**$280** · Morgan Stanley →$300 · BTIG →$289 · Citi →$300. **Mean raise +37.3% where the prior is known (n=3); ≥6 raises total** |
+| **Earnings estimates, same window** | **$0.58 → $0.58. Unchanged.** |
+
+🔴 **The AI re-rating went entirely into the MULTIPLE and not at all into the NUMBERS.** Six brokers raised what they think the stock is worth by roughly a third while changing nothing about what they think it will earn. *(Analyst-PT framing recorded as neutral context, not as a valuation argument — B28/B37.)*
+
+**Scale, computed over the guide-raise window:** from the 2026-02-10 pre-print close (**$114.01**) to 2026-08-04 (**$288.15**) the stock rose **+152.7%**. Over the same window the company's own FY26 revenue guide midpoint went **$4.08bn → $4.32bn = +5.88%** (T1). **The price moved 26× the guide; ~96% of the move is re-rating rather than earnings revision** *(my model, single-window, deliberately crude — it ignores the FY27 forward roll, so treat it as an order of magnitude, not a decomposition)*.
+
+**This ties directly to the 2026-08-05 macro read** (`signals/cross-source-log/2026-08-05-wed-wsj-15-screenshot-batch-three-verifications-and-four-of-my-own-errors.md` §1): *fundamentals accelerating while multiples compress.* Datadog is the mirror-image specimen — **a name whose multiple expanded ~26× faster than its numbers, walking into a tape that has spent this week compressing exactly that.** Infineon, AMD and SpaceX all beat or raised this week and fell. That is the risk in R-4 stated in its proper form at last: **not "the beat will be small" but "the multiple did the work, and the multiple is what is under pressure."**
+
+### 🔴 THE FINDING THAT OUTLIVES THIS PRINT — a harness finding, not a Datadog one
+
+**A beat streak measures the distance between guidance and reality. It does not measure the company.** When management stops sandbagging — as Datadog just did, guiding +7.31% against +0.82% one quarter earlier — **the streak ends by construction, with the business unchanged and possibly stronger.**
+
+**So the instrument expires exactly when the news is best**, and a reader who does not decompose books the end of the streak as deterioration.
+
+🔴 **We are exposed to this across the prediction program, not just here.** A grep of `research/predictions/` returns **12 prediction files using beat-history reasoning**, including the SanDisk call resolving *today*, whose structural claim is *"last quarter beat its guide midpoint 1.80×."* **Every one inherits the same hidden assumption — that the street stays behind. None of them states it.**
+
+> **Lesson candidate — L57 (CANDIDATE, N=1): a beat-history base rate measures the GUIDANCE GAP, not the company. Before using one, check whether the gap is still open — compare the current guide's implied sequential growth to the prior two guides'. If the company has re-based its own guide, the historical beat magnitude does not transfer, and the streak's end is not evidence of deterioration.**
+>
+> *Blind-check (#51): distinguishes "the company is decelerating" from "the company stopped sandbagging" · reads on guide-implied sequential growth versus the trailing two guides, and on actual-vs-guide-top rather than actual-vs-consensus · **goes blind if** the company stops issuing quarterly guidance, or guides on a metric it did not previously guide (the L10 re-framing move) — there is then no guide-space to measure in, and the base rate silently reverts to consensus-space without anyone noticing the substitution.*
+
+**Validation criterion:** if the next three prediction files invoking a beat-history base rate carry an explicit guide-gap check, L57 is being applied. If DDOG's beat lands inside the historical +2.72–4.82% band **despite** the re-based guide, L57 is weakened at N=1 — the sandbag would have been re-established at the new level rather than removed.
+
+### Operator hypotheses, registered as gradable calls
+
+| | Claim | Verdict | Resolves |
+|---|---|---|---|
+| **O-1** | The consensus jump is caused by Datadog's inclusion in the AI story/basket | 🟡 **PARTIAL — refuted on the revenue line, confirmed on the multiple.** Consensus = guide top (no AI premium in the estimate); PTs +37.3% with EPS estimates flat (all the AI premium in the target) | resolved pre-print, above |
+| **O-2** | The street revised upward off recent delivery (extrapolation) | 🔴 **REFUTED.** Consensus never deviates from the guide by more than 0.6pp in any of the three quarters with T1 guide data | resolved pre-print, above |
+| **O-3** *(mine, arising from his question)* | Because the guide was re-based, the Q2 beat lands **below** the historical +2.72–4.82% consensus-relative band | **P = 0.45** *(my model)* — my registered point of $1,118m is +3.64%, i.e. **inside** the band, so I am predicting against my own O-3 | 2026-08-06 |
+
+**O-3 is deliberately registered against my own point estimate.** If the beat lands inside the historical band, my revenue call is right and L57 is weakened. If it lands below, L57 is strengthened and my revenue point was too high. **Both outcomes teach something, which is the only reason to register it.**
+
+**Position implication: NO ACTION — 0% — not held; calibration only.** 🟡
