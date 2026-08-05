@@ -25,6 +25,60 @@ Artifact: `signals/cross-source-log/2026-08-05-wed-kr-open-wake-etf-test-resolve
 
 **NO POSITION ACTION. No falsifier touched.** 🟡
 
+## 2026-08-05 (WED) EOD DOCKET CLOSE — **DEGRADED, correctly this time. And the condition check is STILL defective (N=2).**
+
+**CONDITION CHECK, run at 20:19 UTC:**
+
+| Window | Commits returned | Verdict |
+|---|---|---|
+| Literal `--since="16:00"` (as the Routine specifies) | **1** | would read "quiet" |
+| Relative `--since="6 hours ago"` (the booked fix) | **6** | **DEGRADE** |
+| All commits today | **22** | — |
+
+🔴 **The 08-04 defect RECURRED — N=2.** The literal check again under-reads a heavily-worked evening. **DEGRADE is correct on intent and I took it**, but the prompt text has now mis-adjudicated twice. The amendment needs the operator's Routines UI and rides the **same trip** as the retired "Brent vs 95" gate in the KR-OPEN wake — **both now 1 day overdue.**
+
+### What the day actually produced (22 commits)
+
+**MORNING — 3 verifiers on a 15-screenshot WSJ batch. Four of the findings were errors in my own files.** Artifact: `signals/cross-source-log/2026-08-05-wed-wsj-15-screenshot-batch-three-verifications-and-four-of-my-own-errors.md`. The "N=3 beat-and-fall" was N=1; AMD's −8.8% netted to −2.41%; semis were NOT in a bear market (SOX −16.90%, not −22.01%); Infineon read backwards; **B40 catch #11** — I told the operator the corpus held SpaceX as private when it carried a dated STATE REPAIR saying the opposite. New `companies/SPCX/thesis.md` stub created (file-location-is-retrieval-probability).
+
+**SNDK — four registrations, all pre-print, none overwritten.** Confound resolution (do not suspend; FMS items pre-absorbed), price baseline corrected to **$1,427.62** (+40.5% five-session, not ~30%), then **REVISION #2** after the morning verification: R-3 0.64 → **0.62**, R-4 → **0.36**. **Prints 20:30 UTC — 11 minutes after this docket closes.**
+
+**DDOG — full registration + two revisions, resolves tomorrow PRE-MARKET.** Structural finding: DDOG reports pre-market, so the reaction leg is the **same session**. Operator's causation question drove the best work of the day: consensus tracks the guide TOP to within 0.6pp in all three quarters with T1 guides — **the street transcribes, it does not extrapolate**. Then EDGAR XBRL (CIK 0001561550) produced two artifacts: **Q1 is the seasonally weak quarter (+4.16% vs ~+7%), so my "record bar" was partly my own seasonality error**, and **RPO went +24.16% QoQ in Dec then +0.67% in March — the "+51% YoY" is 57% carried by one quarter.** Final: rev **$1,108m** · EPS **$0.64** · R-1 0.83 · R-3 0.93 · **R-4 declared NO EDGE at 0.50** rather than flipped a third time · O-3 0.55.
+
+**HARNESS — the day's largest artifact.** `meta/redteam/2026-08-05-the-enforcement-layer-checks-form-not-comparability.md`, §§1-11. **33 hook fires, 8 errors, 0 overlap.** L58 shipped (basis-mismatch, generalising L42-b which is now SUPERSEDED). Hook audit: **17 blocking / 2 injecting / 1 observing**. **§10.5 RETRACTED in §11** — the errors were not violations of items 10/11; I complied with both and was wrong anyway. **Real defect relocated: every discipline specifies an ACTION, none specifies a POSTCONDITION.** Five necessary conditions registered with a 2026-09-05 falsifier.
+
+### Struck — resolved today
+
+- ✅ **ETF-divergence test** — adjudicating session ran; recorded **UNRESOLVED (instrument failed, not hypothesis)**. Re-spec-or-retire still dated 08-06.
+- ✅ **`structural-output` / `llm-native-priming` normalized-metric decision** — was due **08-06**, **SETTLED ONE DAY EARLY: 0.131 → 0.050, −61.9% ⇒ KEEP BOTH** per the pre-registered rule. Metric retired as an instrument going forward; §10.4 later narrowed that retirement, since for *blocking* hooks fires and catches coincide.
+- ✅ **B40 catch #11** booked; SPCX mis-filing fixed.
+- ✅ **L42-b** folded into L58.
+
+### 🔴 NOT done today — carried, not struck
+
+- **Competitive surveillance pass #2** — was due TODAY (first weekly). **Not run.** Carries to 08-06.
+- **Quota check #4** — now **3 days overdue**.
+- **Two Routine-prompt edits** (EOD relative window · KR-OPEN retired Brent gate) — **1 day overdue, operator UI required**.
+
+### ⏰ CATALYST CLOCK — next 72h (to 2026-08-08 20:19 UTC)
+
+| When | Event | Registered exposure |
+|---|---|---|
+| **08-05 20:30 UTC** | 🔴 **SNDK Q4 FY26 print** | R-1 0.70 · R-2 0.60 · R-3 0.62 · R-4 0.36 · R-3a after-hours leg |
+| **08-06 pre-market** | 🔴 **DDOG Q2 print + reaction (same session)** | R-1 0.83 · R-2 0.90 · R-3 0.93 · R-4 0.50 no-edge · R-5 0.60 · O-3 0.55 |
+| **08-06** | SNDK T+1 grade (R-3, R-3a); grade sector-relative over **3-5 sessions**, not same-day | baseline = 08-05 close |
+| **08-06** | ⚠️ **SPCX lockup expiry ~911.5m shares** — in-window market-structure event for the SNDK T+1 grade | logged, not ignored |
+| **08-06** | ETF-divergence re-spec-or-retire · SUMCO Q2 interim · MURATA/SUMCO decision packages · competitive surveillance (carried) | — |
+| **08-07** | US payrolls · MOF intervention window closes · Kioxia registered resolution · ERCOT Batch Zero classifications (suspended — PUCT 08-20) · VST Q2 | H3 / power cluster |
+| **08-08** | Macro-anchor instrument gap · **#51 retro sweep** (commissioned; operator must transport) | — |
+| *(beyond)* | 08-09 hook execution probes · 08-11 Lumentum FQ4 + EODHD defect recheck · 08-13 SanDisk Investor Day · 08-14 Situational Awareness + Citadel 13Fs | — |
+
+### 🔴 K3-WORTHY ARTIFACT — commission block drafted, operator must transport
+
+Two items today are **explicitly not self-auditable** and both are named as such in their own files (§7, §11 N5). Paste block written to **`meta/redteam/2026-08-05-K3-commission-postcondition-audit.md`**.
+
+**NO POSITION ACTION. No falsifier touched. No notification sent (degraded run).** 🟡
+
 ## 2026-08-04 (TUE) EOD DOCKET CLOSE — **DEGRADED to increment-only, AGAINST the Routine's own condition check, which is defective**
 
 **🔴 THE CONDITION CHECK FAILED, AND THE FAILURE IS THE FIRST THING TO BOOK.** The Routine specifies: *run `git log --since="16:00"` — if substantive user-driven evening work already happened, DEGRADE.* It returned **0 commits** ⇒ literal verdict "quiet evening, run the full discovery leg."
