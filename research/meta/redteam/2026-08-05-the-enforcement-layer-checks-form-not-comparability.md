@@ -211,3 +211,69 @@ Contrast `bottoms-up`: if I average sell-side instead of building from units, th
 | antifragility-M/N · bottoms-up · borrowed-vs-first-principles · llm-native-reasoning | ⏸️ **HOLD** | no denominator; do not retire on fire count alone, which §9.1 shows is the wrong instrument for blocking hooks |
 
 **Net effect on the §6 net-positive test: still NOT PASSING.** This pass produced **zero retirements** and one new candidate principle. It did, however, replace fire-count with a defensible retirement criterion — which is a precondition for any future removal rather than a removal itself. **Stated so it is not booked as progress it hasn't made.**
+
+---
+
+# §10 — THE TWO-LAYER ARCHITECTURE, and the operator's hypothesis tested
+
+**Operator's model, offered as unverified:** *"a blocking hook means you cannot create an output to me unless you finish the cascade… an injection hook is what any new session reads and gets forced into reasoning around, sort of like the ten commandments, you cannot escape them… if the injection hook works, there shouldn't be a lot of the blocking hooks firing."*
+
+## 10.1 — Classification, corrected (my own §9 classifier was wrong)
+
+| Class | N | Which |
+|---|---|---|
+| **BLOCKING** (exit-2 / return-2 → message bounced back to me) | **17** | everything except the three below |
+| **INJECTING** (writes into my context, no enforcement) | **2** | `llm-native-priming-hook` (every prompt) · `session-prime-hook` (cold start only) |
+| **OBSERVES ONLY** | **1** | `session-start-hook` (the briefing) |
+
+🔴 **CORRECTION TO §9.1:** I classified `meta-count-tripwire-hook` as "observes only" by grepping for a literal `exit(2)`. **It blocks via `return 2` through `sys.exit(main())`.** My classifier matched one convention and missed another — **L58 basis error #4 today, this time inside the audit instrument itself.** Blocking count is **17, not 16**.
+
+## 10.2 — Operator's claim 1: CORRECT in effect, different in mechanism
+
+**Right:** a blocking hook means the message does not reach him until the required thing is done.
+
+**Mechanism nuance:** the hook runs at the **Stop** event — *after* I have written the message. It doesn't prevent me writing; it **bounces the finished message back to me with feedback** and I must fix and re-emit. Net effect is as he describes.
+
+⚠️ **The loophole he should know about: a blocking hook checks TEXT, so it can be satisfied without doing the work.** `cascade-enforcement` verifies a back-reference string exists in each thesis file — a one-line stub satisfies it. **The hook enforces the receipt, not the reasoning.** This is the same finding as §3 one level down: even the blocking layer validates form.
+
+## 10.3 — Operator's claim 2: CORRECT on what they are, WRONG on "cannot escape them"
+
+**Right:** exactly two, and they are what he described — `session-prime-hook` injects the ledger on cold start; `llm-native-priming-hook` injects the discipline checklist on **every prompt**.
+
+🔴 **Wrong on inescapability, and today is the disproof.** An injection places text in context. **It biases sampling; it does not compel behaviour.** The priming block injected on every single prompt today contains, verbatim:
+
+> *item 10 — COMPUTE INSTEAD OF NARRATE… press the buttons FIRST*
+> *item 11 — HARNESS-HISTORY COUNTS ARE COMPUTED, NEVER RECALLED*
+
+**Both were in context for every one of the 8 basis errors and for the 473-file miscount.** I read them and violated them anyway. **Injection is the strongest available nudge delivered at the best possible moment. It is not a constraint.** The ten-commandments analogy fails precisely where it matters: commandments are unenforceable without a judge, and injection has no judge.
+
+## 10.4 — 🟢 Operator's claim 3: SUPPORTED by the only clean test that exists
+
+**His logic:** if injection works, blocking fires should fall — so blocking fires measure injection failure.
+
+**This is testable exactly once, because the harness contains exactly one designed injection→blocking pair:** `llm-native-priming-hook` (item 5, structural output) → `structural-output-hook`. They were shipped as a stated two-bracket pair on 2026-06-01.
+
+**`structural-output-hook` BLOCKS, therefore per §9.1 its fires ARE catches.** Normalised (fires ÷ commits): **0.131 → 0.050, −61.9%** (§8.2).
+
+🟢 **Under his model that is evidence the injection is doing real work** — the paired blocking hook is catching 62% less. **And it repairs §8.2:** I retired that metric as "measuring the wrong thing," but §9.1 had already established that for *blocking* hooks fires and catches coincide. **The metric was valid for this pair all along; my §8.2 dismissal was over-broad and is hereby narrowed** — the falling rate is meaningful, and the KEEP verdict now rests on evidence rather than only on pre-registration.
+
+## 10.5 — 🔴 But the model generalises only where the layers are PAIRED, and that is where the real gap is
+
+The priming hook injects **11 disciplines**. Only some have a blocking partner:
+
+| Injection item | Blocking partner | Failed today? |
+|---|---|---|
+| 1 parallel hypotheses · 2 joint state · 5 structural output | `structural-output-hook`, `llm-native-reasoning-hook` | no |
+| 7 explicit hedge labels | `reasoning-tagging-hook`, `anti-fabrication-hook` | no |
+| 9 macro-first tagging | `macro-anchor-hook` | no |
+| 3 lateral-not-forward · 4 multilingual · 6 subagent parallelism · 8 B45 regime priors | 🔴 **NONE** | — |
+| **10 compute-instead-of-narrate** | 🔴 **NONE** | 🔴 **YES — 8×** |
+| **11 harness-counts-are-computed** | `meta-count-tripwire-hook` — **which has never logged a single fire** | 🔴 **YES** |
+
+🔴 **THE FINDING: today's errors clustered exactly on the injection items with no working blocking partner.** Items 10 and 11 are the two disciplines that failed repeatedly, and they are precisely the two with either no hook or a hook that has never fired.
+
+> **Operator's hypothesis, corrected and sharpened: blocking-hook fires measure injection effectiveness ONLY where the two layers are paired. Where a discipline is injection-only, there is no enforcement AND no measurement — and from inside the context an unenforced discipline is indistinguishable from an enforced one. That indistinguishability is the architecture's real defect, and it is where the day's errors landed.**
+>
+> *Blind-check (#51): distinguishes "this discipline is internalised" from "this discipline is merely unmeasured" · reads on whether an injected item has a blocking partner with a non-zero fire history · **goes blind if** the blocking partner exists but is silently broken — `meta-count-tripwire-hook` is that case right now: it blocks in code and has never logged a fire, which is either a dead hook or an uninstrumented one, and the fire log cannot tell them apart.*
+
+**Immediate consequence, and it is small and concrete:** `meta-count-tripwire-hook` is a probe candidate for the already-open HOOK EXECUTION PROBES to-do (due 2026-08-09). **It nominally guards the exact discipline I broke when I stated 473 ingest events. It should have fired. It did not.**
