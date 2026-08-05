@@ -151,3 +151,35 @@ Identical fact set, no web access, no house view disclosed, run in parallel.
 > **SanDisk's LTAs carry floors AND CEILINGS on ~⅓ of bits, while Kioxia is more spot-exposed. So Kioxia's realised ASP should EXCEED SanDisk's, and the peer read-across is an UPPER BOUND on SanDisk, not a template.** Computed: if un-LTA'd bits reprice +70%, SNDK blended ASP ≈ **+46.7%** against Kioxia's +70%.
 
 Also computed and verified: **consensus $8.3B implies only +39.5% QoQ** against Kioxia's actual **+76.2%** — a **36.7pp** gap. If SanDisk tracked the peer, revenue would be **$10.48B, +26.3% above consensus.** The ceiling mechanism above is the reason it plausibly doesn't, and that tension is the whole trade.
+
+### 🔧 AMENDMENT 2026-08-05 ~08:5xZ — operator pushback, adopted. Design improved; P UNCHANGED.
+
+**Operator, verbatim-adjacent:** *"why would it be ungradable? … just change your prediction based on the new inputs. The [print] hasn't happened yet, so it's fine to make amendments until the earnings."*
+
+**He is right on the amendment point and I stated the problem badly.** A pre-print registration can be revised pre-print — the original stays visible, the revision is timestamped, and that is ordinary honest practice. "Suspension" was the wrong instinct, and part of its appeal was that it protects the grade. Naming that.
+
+**What the confound actually threatens is ATTRIBUTION, not OBSERVABILITY.** The T+1 close is always measurable. What a same-window catalyst destroys is the ability to say *how much of the move was the earnings*. Kioxia is the specimen: it closed **+12.02% over two sessions but FELL in after-hours on the numbers** — the move was a ¥800bn buyback plus a 3-for-1 split. Grading "reaction positive ⇒ call correct" there would have banked a false lesson.
+
+**FIX ADOPTED — decompose rather than suspend:**
+
+| Leg | Window | Measures |
+|---|---|---|
+| **R-3a (NEW)** | **After-hours 2026-08-05, first print on the numbers** | the clean earnings reaction — no FMS overlap, no overnight news |
+| **R-3 (unchanged)** | T+1 close 2026-08-06 | the full reaction, including anything else that lands |
+
+**If R-3a and R-3 disagree, the disagreement IS the finding** — that is exactly what the Kioxia verification demonstrated, and it should have been in the registration six hours ago. The blind-check is amended accordingly: a same-window catalyst now triggers **decomposition**, not suspension.
+
+**P VALUES UNCHANGED. R-1 70% · R-2 60% · R-3 52/48 DOWN · R-4 35%.** Inputs arriving since registration, assessed one by one:
+
+| New input (2026-08-04 evening brief + operator screenshot) | Effect on the direction call |
+|---|---|
+| J.P. Morgan leveraged-ETF AUM chart | **none** — Korea-specific, no SNDK read |
+| Kioxia+SanDisk 332-layer BiCS10 demo | marginal positive; a technology demo, not a financial event; newness under verification |
+| SanDisk+SK hynix HBF spec | **already priced into the registration** — cited there as part of the +30% five-session bounce |
+| GPU prices +20-40% Asia on memory cost | **ambiguous** — confirms pricing power AND confirms buyer price-tolerance strain |
+| AMD datacenter +107% YoY | mild sentiment positive, not name-specific |
+| Texas 474 GW datacenter moratorium | multi-year power constraint, not a T+1 driver |
+
+**Nothing moves the view, so nothing moves the number.** Revising P without an input that changes the reasoning would be revising to *appear* responsive — which is the failure mode that makes a prediction ledger worthless. **The register moves when the evidence moves.**
+
+**The one live trigger that WOULD force a revision before 13:30 PT:** if verification returns that the 332-layer announcement is genuinely new AND the stock is already up materially on it during the 08-05 session. That shifts the base the reaction is measured from, and **R-2 (magnitude) would be revised** — a stock that has already discharged event energy intraday has less left for T+1. Direction would stay.
