@@ -325,3 +325,33 @@ The operator's AI-basket hypothesis is **CORRECT, but about the wrong line item.
 **O-3 is deliberately registered against my own point estimate.** If the beat lands inside the historical band, my revenue call is right and L57 is weakened. If it lands below, L57 is strengthened and my revenue point was too high. **Both outcomes teach something, which is the only reason to register it.**
 
 **Position implication: NO ACTION — 0% — not held; calibration only.** 🟡
+
+---
+
+## §DATA — Last four reported quarters: consensus vs actual (source table)
+
+**Source:** FMP `/stable/earnings?symbol=DDOG`, pulled 2026-08-05. `epsEstimated` / `revenueEstimated` are FMP's pre-print consensus snapshot; actuals are as reported. Beat percentages computed from levels (L42-b).
+
+| Quarter | Reported | Revenue consensus | Revenue actual | Beat | EPS consensus | EPS actual | Beat |
+|---|---|---|---|---|---|---|---|
+| Q1 2026 | 2026-05-07 | $960.1m | **$1,006.4m** | **+4.82%** | $0.508 | **$0.60** | **+18.11%** |
+| Q4 2025 | 2026-02-10 | $918.7m | **$953.2m** | **+3.75%** | $0.555 | **$0.59** | **+6.31%** |
+| Q3 2025 | 2025-11-06 | $852.8m | **$885.7m** | **+3.86%** | $0.458 | **$0.55** | **+20.19%** |
+| Q2 2025 | 2025-08-07 | $791.1m | **$826.8m** | **+4.50%** | $0.410 | **$0.46** | **+12.11%** |
+| **Q2 2026** | **2026-08-06** | **$1,078.575m** | *pending* | — | **$0.583** | *pending* | — |
+
+Unrounded revenue figures as pulled: consensus 960,117,500 / 918,700,800 / 852,761,661 / 791,123,833 / 1,078,575,000; actuals 1,006,426,000 / 953,194,000 / 885,651,000 / 826,760,000.
+
+**8 of 8 lines beaten. Revenue beat band +3.75% to +4.82%** across these four (the 13-quarter band in §2 is wider, +2.72% to +4.82%, because it reaches back further).
+
+**Cross-verification status (stated because it is uneven):**
+
+| Row | Second source? |
+|---|---|
+| Q2 2026 consensus ($1.08bn rev / $0.58 EPS) | 🟢 **CONFIRMED** by commissioned Opus verification 2026-08-05, independent of FMP |
+| Q1 2026 EPS consensus (~$0.51) | 🟢 **CONFIRMED** by the same verification |
+| Q1 2026 / Q4 2025 revenue consensus | 🟡 **PARTIAL** — verifier derived ~$959.9m and ~$914.6m, close to but not identical with FMP's $960.1m and $918.7m; vendor-compilation noise, not a contradiction |
+| **Q3 2025 and Q2 2025 revenue consensus** | 🔴 **NOT INDEPENDENTLY VERIFIED** — the verifier marked both "not pinned" after most finance hosts returned HTTP 403. **Single-vendor rows.** |
+| All actuals | 🟢 Consistent with the T1 company releases cited elsewhere in this file |
+
+**This uneven verification is itself the caveat that matters for §2 and the OPERATOR ADDENDUM:** the consensus series is the load-bearing input to the "record bar" finding, and two of its rows rest on one vendor.
