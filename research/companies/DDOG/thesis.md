@@ -578,3 +578,31 @@ Per `signals/cross-source-log/2026-06-03-morning-brief-microsoft-build-solara-pr
 
 
 **🔴 CORRECTION 2026-07-25 (per `meta/redteam/2026-07-25-opus5-vs-fable5-model-selection-dive.md`, T1-verified):** the "90-minute global shutdown" framing carried in this file is **INVERTED**. The 90 minutes was the **COMPLIANCE DEADLINE** in the BIS "is informed" letter (ECRA, 2026-06-12); the actual outage ran **~19 days (12 Jun → 1 Jul 2026)**. Controls were **WITHDRAWN 2026-06-30**; Fable 5 redeployed globally 2026-07-01 and is **generally available worldwide with no export restriction as of 2026-07-25** (T1 docs). Mythos 5 remains invitation-only. The precedent-risk read (a US agency can zero a frontier model globally on ~90 minutes' notice; the authority was never disclaimed) is UNCHANGED and arguably strengthened by the 19-day duration.
+
+---
+
+## 🟡 2026-08-05 — PRE-PRINT REGISTRATION for the 2026-08-06 Q2 print (not held; calibration call)
+
+Back-reference: `predictions/2026-08-05-DDOG-Q2-2026-earnings-prediction.md`. Machine-route data (Finnhub `/quote`, FMP `/stable/earnings` + `/stable/historical-price-eod/full`) plus a commissioned Opus verification (Critical Rule #16). **Position: NONE — full exit 2026-06-22. Nothing here is a re-entry recommendation.**
+
+**🔴 STRUCTURAL FACT the thesis file did not previously record: Datadog reports PRE-MARKET.** Verified by opening-gap share of the report-day move: 98% (2026-05-07), 86% (2023-11-07), 120% (2023-08-08), 94% (2024-05-07). **The reaction is the SAME session**, not T+1. Any future DDOG reaction call must be defined on the report-day close.
+
+**T1 company guidance for the quarter about to print (2026-05-07):** revenue **$1.07–1.08B**, non-GAAP EPS **$0.57–0.59**, non-GAAP OI **$225–235M** (embeds ~$15M DASH cost). FY2026 **$4.30–4.34B**, raised once (Feb→May: revenue midpoint +5.88%, EPS midpoint +13.21%), **never cut**.
+
+🔴 **Consensus ($1,078.575m) is 99.87% of the guide TOP.** The guide implies **+7.31% QoQ** against +0.82% and +3.43% for the prior two guides — **management itself signalled an acceleration**, and the street simply copied it. The correct beat instrument is therefore **guide-relative**: +4.06% (Q4-25) and +4.72% (Q1-26) above guide high.
+
+**Registered:** revenue **$1,118m** (+35.2% YoY) · EPS **$0.65** · FY guide raised to ~**$4.53bn** · same-day direction **UP P=0.55** · P(\|move\|≥10%) **0.60**. **Direction was FLIPPED intraday from DOWN 0.58** when the T1 guide refuted the compressed-beat premise — recorded in the prediction file with both versions intact.
+
+**Thesis-relevant findings independent of the call:**
+
+🟢 **Leading indicators support the bifurcation-WINNER read this file already carries:** **RPO $3.48B, +51% YoY** and **current RPO +mid-40s%**, both far above the 29–31% revenue guide; **NRR inflecting up to low-120s%** from ~120%. CFO verbatim, second consecutive quarter: *"we are applying a higher degree of conservatism to our largest customer."*
+
+🔴 **DISCLOSURE-QUALITY REGRESSION — and this file must stop citing the old metric.** Datadog **discontinued the "AI-natives as % of revenue" series after Q3 2025** (3.5% → ~4% → ~6% → 8.5% → ~11% → **12%**, then nothing). Verified by absence in the Q1-26 release and the full Q1-26 call transcript. It was replaced by growth *excluding* AI-natives (Q1-26: mid-20s%) plus a customer count (22 AI-native customers >$1M, 5 >$10M). **Any live use of "AI-natives are 12% of revenue" is three quarters stale.** This is **L10** — when management re-frames a metric, infer from the TYPE chosen: a percentage-of-revenue series was swapped for a counting metric, which is the direction you move when the percentage stops flattering.
+
+🔴 **The OpenAI-concentration bear case in circulation is STALE and should not be carried:** the $170–300M ARR estimates, the "$240M → $80M" projection, and Guggenheim's July-2025 Sell downgrade warning of a ">$150M shortfall by 2026" are all **mid-2025 vintage, overtaken by three prints in which revenue ACCELERATED 28% → 29% → 32%.** Datadog has **never named OpenAI** in any T1 document — only "our largest customer."
+
+🟡 **Setup:** 08-04 close **$288.15**, the **highest CLOSE** on record (prior closing ATH $277.49, 2026-06-01); the $289.90 52-week high is an **intraday** print from the same session (L42-b basis stamps). Five-session run-in **+14.86%** — more than double the largest run-in into any of the prior twelve prints (+7.26%). Acquired **Adaptive ML** 2026-06-30 (RLOps/agentic post-training; **terms not disclosed anywhere, including the T1 release**).
+
+⚠️ **A documented beat-and-fade precedent, recovered by resolving a source contradiction:** on **2025-08-07** DDOG beat revenue by +4.50% — a normal beat — **gapped +7.88% at the open and closed −0.42%**, giving the entire gap back. Secondary sources quoting "−8.4%" for that day are using an **open-to-close** basis (−7.70%); close-to-close was −0.42%. Both real, different bases.
+
+**Position implication: NO ACTION — 0% — not held; WATCHLIST-REFERENCE unchanged.** 🟡 The bifurcation-WINNER thesis is *reinforced* by RPO +51% and the NRR inflection, but re-entry is a user-gated decision the operator settled on 2026-06-22 and nothing here reopens it. The print is thesis evidence, not a trigger.
