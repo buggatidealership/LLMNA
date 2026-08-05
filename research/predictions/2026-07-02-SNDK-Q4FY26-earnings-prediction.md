@@ -53,10 +53,10 @@ The reaction band was calibrated on a washed-out tape. It isn't one any more.
 | 2026-07-29 | $1,015.89 | **−56.5%** ← the "−55%" figure, and it is **this** date |
 | 2026-07-30 | $1,279.96 (**+26.0%**) | −45.2% |
 | 2026-07-31 | $1,214.83 | **−48.0%** |
-| 2026-08-03 | $1,288–1,311 (band, unpinned) | ~−44% |
-| 2026-08-04 | unpinned, $1,334–1,430 | **~−43%** |
+| 2026-08-03 | ~~$1,288–1,311 (band, unpinned)~~ → **$1,288.03 PINNED** | ~−44.8% |
+| 2026-08-04 | ~~unpinned, $1,334–1,430~~ → **$1,427.62 PINNED (+10.84%)** | **−38.9%** |
 
-**SanDisk enters the print near −43% after a ~30% five-session bounce, not −55% washed out.** Materially worse risk/reward than the premise the band was written against. *(Aug 3 and Aug 4 closes could not be pinned — a possible ~$1,428 → ~$1,334 intraday fade on 08-04 is unresolved and is the single biggest open item in the setup.)*
+**SanDisk enters the print near ~~−43%~~ −38.9% after a ~~~30%~~ +40.5% five-session bounce, not −55% washed out.** Materially worse risk/reward than the premise the band was written against. ~~*(Aug 3 and Aug 4 closes could not be pinned — a possible ~$1,428 → ~$1,334 intraday fade on 08-04 is unresolved and is the single biggest open item in the setup.)*~~ 🟢 **RESOLVED 2026-08-05 — see CONFOUND RESOLUTION at the foot of this file. There was NO fade: $1,427.62 − $1,288.03 = $139.59 = +10.838%, closing 1.31% off the high. The strikethroughs above are corrections, and every one of them moves AGAINST the bull setup, not for it.**
 
 **And a slice of that bounce is exogenous to earnings:** SanDisk + SK hynix published the **first OCP technical specification for High Bandwidth Flash on 2026-08-03** (T1, both newsrooms), timed to FMS 2026 — up to 512GB on 8-/16-high stacks, ~0.4–3.0 TB/s, UCIe; Google and Tenstorrent joined the consortium. Shares rose >10% on it. **Treat the pre-print rally as partly HBF narrative, not earnings positioning.**
 
@@ -228,3 +228,46 @@ An hour ago I declined to move the numbers and said *"the register moves when th
 **Stating plainly what this does to my standing versus the ensemble:** the three judges averaged **0.583**. I registered **0.52**, the lowest of four, explicitly flagging that B45 caution might be costing me conviction. **I am now at 0.64 — the highest of four.** That is a real reversal of position and it should be visible in the grade. If the print closes UP, the honest reading is that I over-corrected on a three-observation pattern, and the B45 caution I abandoned was right.
 
 **Both prior versions stand in this file.** Original registration ~07:40Z, amendment ~08:5xZ, this revision ~09:3xZ — all pre-print, all timestamped, none overwritten.
+
+---
+
+## 🟢 CONFOUND RESOLUTION — 2026-08-05 ~10:1xZ, still pre-print. Commissioned verifier returned.
+
+I raised the FMS-confound concern to the operator myself, and he pushed back on suspension. **The verification came back and the concern was largely unfounded. Recording that against myself.**
+
+### Verdict: DO NOT SUSPEND. Grade the leg, with two annotations.
+
+| FMS item | Timing | Verdict |
+|---|---|---|
+| Kioxia+SanDisk **332-layer BiCS10 QLC**, 37.6 Gb/mm² | Result presented at **ISSCC 2026 (Feb 15–19)**; TLC sampling PR **2026-07-03**; joint PR **08-04** | 🔴 **RE-REPORT, not news.** The 08-04 release is corporate packaging of a February result. Landed **one session before the print — pre-absorbed** |
+| **HBF OCP specification** | **2026-08-03 ~19:34 ET** | **Two sessions before. Pre-absorbed.** No second HBF release on 08-04 or 08-05 |
+| **SanDisk FMS keynote** | **2026-08-05, 11:40 a.m. PT** | **Before the 13:00 PT cash close AND before the 13:30 PT print** — it lands in the **baseline**, not the reaction window |
+| **SanDisk on HBF panel** w/ Google + SK hynix (VP Rajeev Nagabhirava) | **2026-08-06** | 🟡 **THE ONE IN-WINDOW ITEM.** Pre-announced, a panel not a product/financial release. **Low confound risk — logged, not ignored** |
+
+**So the blind-check's "goes blind if" clause fired on a threat that mostly wasn't there.** The catalysts I feared are in the baseline, not the window. **This is the R-3a decomposition being vindicated as design and unnecessary in fact** — I keep it registered anyway, because a leg that only works when you correctly guess the confound in advance is not an instrument.
+
+**B40 note, on my own file:** I treated the 08-04 332-layer joint PR as a fresh input in the AMENDMENT table above ("marginal positive… newness under verification"). It is a **February result re-packaged** — a textbook aggregator recycle, and I ingested it. B40 catch #10.
+
+### 🔴 PRICE AMBIGUITY RESOLVED — and it corrects a figure I put in front of the operator
+
+**2026-08-04 close = $1,427.62** (not the ~$1,334.38 the band admitted). The arithmetic closes exactly: **$1,427.62 − $1,288.03 = $139.59 = +10.838%**, and the close sat **1.31% off the session high**. **There was no fade into the close.**
+
+| Claim as I stated it | Verified | Direction of the error |
+|---|---|---|
+| "~30% five-session bounce" (07-29 $1,015.89 → 08-04) | **$1,015.89 → $1,427.62 = +40.5%** | 🔴 **I UNDERSTATED it by ~10pp** |
+| "possible intraday fade $1,428 → $1,334" | **No fade.** Closed 1.31% off the high | I invented a bull-favourable possibility that did not occur |
+| "enters near −43% from ATH" | **−38.9%** | Less washed out than I said |
+| Two-session move 07-31 → 08-04 | **+17.5%** | (new, not previously stated) |
+
+**Honest statement of which way this cuts.** I flagged pre-print that the "not washed out" argument was a pillar of the DOWN case and that I might have to weaken it. **The opposite happened: the corrected numbers strengthen it.** The stock enters the print **+40.5% in five sessions, +10.84% on the last session alone, closing on its high, 38.9% off the ATH rather than 43%.** Every strikethrough moves the same way.
+
+**And R-3 does NOT move on it.** Not because nothing changed, but because I already reasoned *"extended, not washed out"* into the 0.64 — the correction makes a premise I already used more true, it does not add a premise. **Moving P on a figure I was already leaning on would be double-counting the same evidence.** Stating that explicitly so the grade can check it: **R-1 0.70 · R-2 0.60 · R-3 0.64 · R-4 0.39 — all as revised, all final.**
+
+### Two grading annotations, adopted
+
+1. **CONTAMINATED BASELINE, NOT CONTAMINATED WINDOW.** The reference price for R-3/R-3a is the **2026-08-05 close** (which will already contain the 11:40 PT keynote). The pre-print run-up is *setup*, not noise to be netted out. Do not grade against 07-31 or 08-03.
+2. **SECTOR CONFOUND — GRADE SECTOR-RELATIVE.** AMD's 08-04 selloff dragged the semis complex, and the 08-06 tape may carry that rather than SanDisk's numbers. **R-3 grades on the absolute close as registered** (changing the target post-hoc is not allowed), **but the grade must ALSO report SNDK vs SOXX/SMH over the same window**, and a lesson may only be drawn from the relative leg. A DOWN call that is right only because the whole sector fell is not evidence my reasoning worked.
+
+**Blind-check on this resolution (#51):** distinguishes *"a catalyst landed inside the reaction window"* from *"a catalyst landed just outside it and is already in the price"* · reads on the timestamp of each release against the 13:00 PT cash close and the 13:30 PT print · **goes blind if** a catalyst is **unscheduled** — every item above was found because it was announced in advance, and the whole method fails against a surprise. It also goes blind on **anything at FMS said by a competitor**: I checked SanDisk's calendar, not Micron's, Samsung's, or SK hynix's, and a rival HBF claim on 08-06 would hit this leg through a channel this check never looked at.
+
+**Position implication: NO ACTION — HOLD — user-gated.** 🟡

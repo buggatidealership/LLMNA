@@ -725,3 +725,27 @@ DRAM is constrained through 2027 with new capacity not meaningful until 2028; **
 **The registered prediction stands UNREVISED** (`predictions/grading-log.md`; rev pt $8.4B / NG EPS pt $33.5 / FQ1-27 guide pt ~$9.2B). **No revision on the strength of aggregator content**, and the two T1 prints above were already inside the information set that registration was built on. Revising a registration the night before resolution on second-hand inputs is how a prediction stops being a measurement.
 
 **Position implication:** **NO ACTION — HOLD — no size change — user-gated.** NAND participation is confirmed at T1 and supports the position through the print; the spot/contract divergence and the LTA floor are reasons to expect the *guide* to matter more than the *quarter*, not reasons to trim ahead of a resolution event. 🟡
+
+---
+
+## 🟢 2026-08-05 (Wed) — PRE-PRINT: the price ambiguity is resolved, and it moves against the bull setup
+
+Back-reference: `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md` § CONFOUND RESOLUTION (commissioned verification, Critical Rule #16, returned pre-print).
+
+🔴 **2026-08-04 close PINNED at $1,427.62** — the band above admitted ~$1,334, and the prediction file carried a possible intraday fade as "the single biggest open item in the setup." **There was no fade.** $1,427.62 − $1,288.03 = **$139.59 = +10.838%**, closing **1.31% off the session high**.
+
+| | As carried | Verified |
+|---|---|---|
+| Five-session bounce (07-29 $1,015.89 →) | ~30% | **+40.5%** |
+| Two-session move (07-31 $1,214.83 →) | not stated | **+17.5%** |
+| Drawdown from $2,335.00 ATH at the print | ~−43% | **−38.9%** |
+
+**Every correction moves the same way: the stock enters the print MORE extended than the thesis file said, not less.** The July drawdown framing above (−50.0% peak-to-trough / −43.7% MoM) is unchanged and still correct — this corrects the *recovery* leg, not the drawdown leg.
+
+**FMS 2026 confound — resolved, do not suspend the reaction leg.** The HBF OCP spec (08-03) and the 332-layer BiCS10 PR (08-04) are both **pre-print and pre-absorbed**; the SanDisk FMS keynote runs **08-05 11:40 a.m. PT — before the 13:00 PT close and before the 13:30 PT print**, so it lands in the baseline. One in-window item: an **HBF panel 08-06** with Google and SK hynix — pre-announced, panel not product, low confound risk, logged.
+
+🔴 **B40 catch #10 against this file's own intake:** the 332-layer BiCS10 result was presented at **ISSCC 2026 (Feb 15–19)** — the 08-04 joint PR is repackaging, and I had ingested it as a fresh 08-04 input. Booked in `meta/biases-watchlist.md`.
+
+**No falsifier fires.** Nothing above touches a reported quantity; all registered falsifiers still resolve at tonight's print and the 08-13 Investor Day.
+
+**Position implication: NO ACTION — HOLD — no size change — user-gated.** 🟡 A more-extended entry price raises the *reaction* risk into the print, which is a graded-call input, **not** a sizing input — the thesis is 6-24 month and resolves on the guide and the Investor Day, not on the T+1 close.
