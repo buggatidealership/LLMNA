@@ -40,3 +40,24 @@ Falsifier-1 residual ("terms materially below headline once 2nd wire prints") no
 ## 2026-07-24 — Venice launch + MI455X software note (back-ref: signals/cross-source-log/2026-07-24-fri-ai-brief-intake-gm-memory-auto-amd-venice-3agent.md)
 Venice (Zen 6, ships Q4-26) is real and lands into a hot server-CPU tape (Intel DCAI +59% print + China volume-locked LTAs, both booked) — the server-CPU complex now has BOTH vendors capacity-tight and pricing-firm; perf claims stay vendor-tier until silicon ships. The decision-relevant MI455X datum is CDNA 5's Wave32-native programming model (independent Chips-and-Cheese read): it narrows exactly the ROCm/software gap the Anthropic MI455X deal must close — supportive of the deal-execution leg, unverified on timeline. (research-verified 2026-07-24, T2)
 **Position implication: NO ACTION — not held; watch-tier — 🟡 competitive/content color; no entry package pending.**
+
+## 2026-08-05 — 🔴 ADJUDICATION: the Q2 sell-off was cash, not customers, and not a margin miss
+Back-ref: `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md` § REVISION #2 (three commissioned Opus verifiers, Critical Rule #16).
+
+**Q2 2026 print (2026-08-04 AMC, T1 AMD IR):** revenue **$11.536bn** (+50% YoY) vs ~$11.284bn cons; non-GAAP EPS **$1.66** vs $1.62; **datacentre $6.72bn (+107% YoY, 58% of total)** vs ~$6.5bn; **Q3 guide ~$13.0bn ±$300m** vs ~$12.52bn cons. **Beat on every line the street models, and raised.**
+
+**The actual negative is cash:** **capex $808m against ~$298m consensus (2.7×)**; **FCF $1.56bn, −39% sequential** from $2.57bn; inventory $8.468bn from $7.920bn. Q3 non-GAAP GM guided **flat at ~56%** — no expansion on 41% revenue growth, attributed to Helios rack-scale ramp costs.
+
+🔴 **REJECT THE "GROSS MARGIN MISS" LINE.** Several outlets ran *"GM missed, 54% vs 56% consensus."* That compares **GAAP 54% against a non-GAAP 56% consensus**. AMD's **non-GAAP GM was 56%, in line with its own guide.** No margin miss occurred. **B40.2 magnitude-inflation-by-rewording — do not carry it.**
+
+🔴 **REJECT THE MONOCAUSAL SPACEX FRAMING.** WSJ ran *"AMD Shares Fall 8% as Elon Musk Commits to Nvidia Chips for SpaceX."* Musk's statement (SpaceX Q2 call, 2026-08-04 ~17:1x-17:3x ET) was **affirmative-exclusive toward NVIDIA and never named AMD**; the displacement is reporter inference off his May-2026 "likely keep buying both" remark. Three independent outlets headline **capex only, with no mention of Musk**; one explicitly rejects the Musk explanation. Verifier decomposition: **~6.5-7pp earnings-driven, ~1.5-2.5pp SpaceX**, ordinal confidence MODERATE-HIGH, split confidence LOW-MODERATE (no minute-level tape; all price WebFetch 403'd).
+
+🔴 **AND THE MAGNITUDE IS INFLATED 3.65×.** The −8.80% after-hours move is measured off an 08-04 close that was itself **+7.00%** on a Palantir-sympathy AI rally. **Net vs the 08-03 close $484.64 → $472.94 = −2.41%.** The 08-04 after-hours −8.8% and the 08-05 session −8% are **ONE event** (overnight gap realising), not two — do not double-count.
+
+**SpaceX exposure adjudicated: ABSENCE-OF-WIN, NOT A QUANTIFIED LOSS.** SpaceX appears nowhere in AMD's Helios/MI400 customer roster (Microsoft, OpenAI, Oracle, Meta, TCS named). The only AMD footprint is a legacy **xAI MI300 deployment (June 2025)**, pre-merger and pre-IPO. **No AMD contract, backlog, order or revenue attributable to SpaceX has ever been disclosed, and no cancellation was announced.** Decisively: **AMD guided Q3 UP after the SpaceX call** — the place removed revenue would show. Anyone marking down AMD's model for "lost SpaceX revenue" is marking down a number that never existed publicly.
+
+⚠️ **UNVERIFIED-SINGLE-SOURCE, do not cascade:** a reported Anthropic commitment of *"up to 2 GW of MI450-series in Helios, AMD investing up to $5bn."* One source in the verifier's set, no AMD or Anthropic primary. **B63 lab-favourable flag — quarantined pending an independent primary.**
+
+⚠️ **B40 retrieval hazard booked:** AMD has had **at least three distinct ~8-9% down days in three weeks** with near-identical headlines (07-16 sector, 07-28 "AI chip trade narrows to NVIDIA" −9% to $453.37 with no company news, plus a −8.2% to $479.24 pre-earnings session). **$479.24 sits inside the unpinned 08-05 band ($470-485) — check the date on any retrieved "AMD −8%" story before using it.**
+
+**Position implication: NO ACTION — 0% — not held; watch-tier.** 🟡 The thesis-relevant update is that AMD's AI revenue trajectory *accelerated* (DC +107%, Q3 +41% guided) while the market repriced it on capex and FCF. That is a cash-conversion question, not a demand question, and it does not change the watch status.

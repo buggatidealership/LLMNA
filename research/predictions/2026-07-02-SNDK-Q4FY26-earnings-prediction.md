@@ -271,3 +271,90 @@ I raised the FMS-confound concern to the operator myself, and he pushed back on 
 **Blind-check on this resolution (#51):** distinguishes *"a catalyst landed inside the reaction window"* from *"a catalyst landed just outside it and is already in the price"* · reads on the timestamp of each release against the 13:00 PT cash close and the 13:30 PT print · **goes blind if** a catalyst is **unscheduled** — every item above was found because it was announced in advance, and the whole method fails against a surprise. It also goes blind on **anything at FMS said by a competitor**: I checked SanDisk's calendar, not Micron's, Samsung's, or SK hynix's, and a rival HBF claim on 08-06 would hit this leg through a channel this check never looked at.
 
 **Position implication: NO ACTION — HOLD — user-gated.** 🟡
+
+---
+
+## 🔴 REVISION #2 — 2026-08-05 ~12:2xZ, still pre-print. **REVISION #1's headline evidence did not survive verification.**
+
+Three commissioned Opus verifiers (Critical Rule #16) returned off the operator's WSJ batch. **The "N=3 beat-and-fall in six days" that I raised R-3 on two hours ago is not N=3.** Taking it apart:
+
+| | What I filed | What verification returned | Survives? |
+|---|---|---|---|
+| **MPWR** 07-30 | record quarter, raised, gave it all back in 2 sessions | unchallenged | 🟢 **YES — N=1** |
+| **Kioxia** 07-31 | "missed consensus on every line, guided Q2 OP below street, fell" | unchallenged | 🔴 **NO — that is a MISS-and-fall.** My own table said so. I counted a miss as a beat |
+| **AMD** 08-04 | "beat, and the stock fell after hours" | beat rev/EPS/DC/guide — but **capex $808M vs ~$298M consensus (2.7×)** and **FCF −39% q/q**. And a named-customer defection (Musk committing SpaceX exclusively to NVIDIA) landed in the **same after-hours window** | 🔴 **CONTAMINATED** — beat on P&L, missed on cash, plus an idiosyncratic confounder |
+
+**Honest count: N=1, not N=3.**
+
+### 🔴 And the magnitude was inflated 3.65×
+
+| | |
+|---|---|
+| AMD 08-03 close $484.64 → 08-04 close $518.58 | **+7.00%** — a Palantir-sympathy AI rally, nothing to do with AMD |
+| 08-04 close → after-hours $472.94 | **−8.80%** ← the figure I used |
+| **08-03 close → after-hours (net vs pre-event)** | **−2.41%** |
+
+**The "8% punishment" nets to −2.4% against the last pre-event close.** I measured a fall from a top the *sector* had built that same afternoon. Same instrument error as the SNDK baseline correction six hours ago — a move measured from a reference price that itself moved for unrelated reasons — **twice in one day, in opposite directions.**
+
+**Double-count warning booked:** AMD's 08-04 after-hours −8.8% and its 08-05 session −8% are **ONE event**, the overnight gap realising. Not two.
+
+### 🔴 A garbled figure I nearly cascaded, caught by a second verifier
+
+One verifier reported **"AMD gross margin missed, 54% vs 56% consensus."** That is **GAAP 54% compared against a non-GAAP 56% consensus.** AMD's **non-GAAP GM was 56% — in line with its own guide. There was no margin miss.** I had already started building "the market is repricing on margin quality" on top of it. **B40.2 magnitude-inflation-by-rewording, and it nearly became my replacement thesis.** Do not carry the margin-miss line anywhere.
+
+### 🔴 The sector backdrop I assumed is one session out of date — and it cuts against me
+
+WSJ: *"the semiconductor index fell into a bear market."* Computed from verified SOX levels:
+
+| | SOX | vs 2026-06-22 peak 14,655.29 |
+|---|---|---|
+| 2026-08-03 | 11,430.35 | **−22.01%** ← the headline's world |
+| **2026-08-04** | **12,179.26** | **−16.90%** ← the actual state entering tonight |
+
+**A +6.55% single session pulled the complex OUT of bear territory the day before the print.** Re-entry needs a **−3.74%** day. **The tape into this print is risk-ON, not risk-off** — a genuine negative for my DOWN case that I did not have at registration.
+
+### 🟡 But one same-day instance replaces the pattern, and it is the right template
+
+**Infineon, 2026-08-05 pre-market (T1): RAISED FY26 revenue guidance to ~€16.3bn on booming AI demand — and the stock fell 3.36% to €61.58 on the margin line.** In my morning read I called this the *opposite* of the bear-market headline. It isn't. **It is the same story: a priced-for-perfection AI-semis name raises and sells off anyway.** One clean, same-day, same-mechanism observation is worth more than three miscounted ones.
+
+*(WSJ's "$18.80 billion" is a currency conversion at ~1.153 against Infineon's own 1.17 planning rate. The company guides **€16.3bn**. Do not store the dollar figure.)*
+
+### The rebuild
+
+| Term | Was | **Now** | Why |
+|---|---|---|---|
+| P(neg \| miss) | 0.85 | **0.85 — unchanged** | Untouched by today. Consensus still sits **+0.61% above the guide top on revenue and +1.15% to +4.61% above on EPS** (T1 guide 2026-04-30: rev $7.75–8.25bn, non-GAAP GM 79–81%, EPS $30–33) |
+| P(neg \| beat) | 0.55 | **0.52** | The count justifying 0.55 was wrong (N=1, not 3). Infineon is a real same-day instance, so not all the way back to 0.50; the risk-ON sector tape pulls the other way |
+
+| Call | Registered | Rev #1 | **Rev #2** |
+|---|---|---|---|
+| **R-3** T+1 direction NEGATIVE | 0.52 | 0.64 | **0.62** |
+| **R-4** beat-then-negative | 0.35 | 0.39 | **0.36** |
+| R-1 quarter beats consensus | 0.70 | 0.70 | **0.70 — unchanged** |
+| R-2 \|T+1\| ≥ 10% | 0.60 | 0.60 | **0.60 — unchanged**; SNDK printed **2 of its last 4 sessions ≥10%**, 3 of 4 ≥6% (+25.99 / −5.09 / +6.03 / +10.84) |
+
+### 🔴 The number barely moves, and that is NOT because the error was small
+
+R-3 goes 0.64 → 0.62 although the reasoning I headlined REVISION #1 with largely collapsed. **Decomposed:**
+
+| Component of the 0.52 → 0.64 move | Contribution | Share |
+|---|---|---|
+| Internal-consistency repair, P(neg\|miss) 0.567 → 0.85 | **+0.085** | **70.8%** |
+| The beat-and-fall pattern, P(neg\|beat) 0.50 → 0.55 | **+0.035** | **29.2%** |
+
+**The pattern was 29% of that revision and I presented it as the whole story** — the commit message led with AMD and named the consistency repair second. The part that was right was the boring part. **A near-unchanged P after a refuted premise is not vindication; it means the premise never carried much weight and I described its importance wrongly.** Lesson candidate: *identify which term a new datapoint actually moves before writing the headline.*
+
+### 🔴 A confound the resolution missed, and it lands on the grading day
+
+**2026-08-06: ~911.5m SPCX insider shares come off lockup** — more than the ~640m currently floating. That is **SanDisk's T+1 grading day.** My CONFOUND RESOLUTION two hours ago checked SanDisk's event calendar and the FMS agenda and never looked at market-structure events. **My own blind-check said the method "goes blind if a catalyst is unscheduled" — this one was scheduled, on a channel I didn't think to read.**
+
+**Amended grading annotations:**
+1. **Baseline = the 2026-08-05 close** (unchanged).
+2. **Sector-relative grading: use a 3–5 session window, NOT same-day.** The complex just did −22% → +6.55% in two sessions; a one-day relative read on 08-06 measures mean-reversion, not SanDisk.
+3. **08-06 SPCX lockup logged as a known in-window market-structure event.**
+
+**Blind-check (#51) on this revision:** distinguishes *"the market punished good numbers"* from *"the stock fell for a company-specific or mechanical reason inside the same window"* · reads on the net move against the **last pre-event close**, and on whether an independent negative (cash, margin, customer, index flow) sits in the same print · **goes blind if** the confounder is *inside the earnings release itself* — AMD's capex line was in the press release and I still read the reaction as sentiment, because I only looked at the lines consensus tracks. **A beat is defined by the lines the street models; a sell-off is caused by any line at all.**
+
+**P VALUES FINAL FOR THE PRINT: R-1 0.70 · R-2 0.60 · R-3 0.62 · R-4 0.36.** Every version stands in this file, none overwritten: 07:40Z original → 08:5xZ amendment → 09:3xZ REVISION #1 → 10:1xZ confound resolution → 12:2xZ REVISION #2.
+
+**Position implication: NO ACTION — HOLD — user-gated.** 🟡

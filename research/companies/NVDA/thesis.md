@@ -175,3 +175,20 @@ Custom-ASIC bear leg gains a NEW SPECIES, not a new magnitude: a model-family-sp
 ## 2026-07-23 — Wenfeng leak: moat-RELOCATION, not moat-obituary (back-ref: signals/cross-source-log/2026-07-23-thu-10input-batch-mlcc-lta-ymtc-wenfeng-corporate-4agent.md)
 Provenance-tagged: leaked May-20 DeepSeek investor-meeting transcript (leaked Jul-22; investor-corroborated, NOT Liang/DeepSeek-confirmed; circulating versions paraphrased) claims CUDA-moat ending ~1yr via TileLang/own-compiler ports to Huawei. House read after verification: the claim CONCEDES a ~4:1 per-card gap (~75% efficiency deficit, his own estimate) + ~2yr lag, and the corroborated binding constraint is HBM supply + SMIC yield (SemiAnalysis T2) — i.e., the moat relocates from software DOWN to HBM/advanced fabs rather than disappearing. Watch-inputs: TileLang Ascend backend adoption beyond DeepSeek; Atlas 950 SuperPoD ship ~Q4-26; CXMT HBM ramp (~2M stacks/yr ≈ 250-300k 910C-class chips = the real ceiling). PC-20 design-around reference increment.
 **Position implication: NO ACTION — 0% — not held; competitive-map input only; a verified non-DeepSeek TileLang/CANN production migration would be the upgrade trigger for this WATCH. 🟡**
+
+## 2026-08-05 — 🟢 SpaceX exclusivity is real; 🔴 the $52bn number attached to it is not
+Back-ref: `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md` § REVISION #2 (commissioned Opus verification, Critical Rule #16).
+
+**The win (T1 by venue — SpaceX Q2 2026 earnings call, 2026-08-04 16:30 ET, Musk opening remarks):** *"Going forward, we have decided to build exclusively on Nvidia because we think the Vera Rubin architecture is the best architecture… we greatly value our close cooperation and partnership on many levels with Nvidia."* This is a **documented reversal** — in May 2026 Musk said Tesla and SpaceX would *"likely continue to buy both Nvidia and AMD chips."*
+
+🔴 **QUARANTINE THE $52bn.** A reported ~**$52bn** SpaceX order via Foxconn (~13,000 racks / ~1m GB300) originated in Taiwanese media citing **unnamed industry sources**. **Musk publicly branded it "This is Fake News" on X, 2026-07-20 (T1 — the principal's own denial).** Any dollar-quantified SpaceX-NVIDIA commitment now circulating traces to that refuted figure. **Do not let it re-enter the corpus.**
+
+**What was actually committed is CAPACITY, not currency:** **>2 GW of compute by end-2026** (the only firm figure); "several times higher" by end-2027; "a significant percentage of NVIDIA's GPUs next year" — no unit count, no share, no dollars; a **Starmind** satellite-compute payload co-designed with NVIDIA; **Vera Rubin NVL72** deployments starting next year.
+
+⚠️ **THREE INCOMPATIBLE CAPACITY CLAIMS — flagged, not averaged:** "several times higher than 2GW by end-2027" vs **"10 GW by end-2027"** (T3) vs **"20 GW cumulative by end of next year"**. Only **">2 GW by end-2026" is firm.**
+
+⚠️ **VERBATIM CONFLICT in the money quote:** five sources render the architecture as **Vera Rubin**; one derivative outlet renders it **Blackwell**. Adjudicated as Vera Rubin, flagged because a Blackwell/Rubin substitution materially changes the deployment-timing read.
+
+**What this is worth:** a T1-venue exclusivity commitment from a buyer running **>2 GW by end-2026** is a genuine competitive-moat datapoint — a new gigawatt-class buyer outside the hyperscaler set choosing NVIDIA on architecture, not price. **What it is NOT is a quantified revenue line**, and the corpus must not carry one.
+
+**Position implication: NO ACTION — 0% — not held; competitive-map input only.** 🟡 A disclosed dollar or unit commitment from SpaceX (10-Q, 8-K, or NVIDIA customer-concentration disclosure) is the upgrade trigger; until then this is capacity language.
