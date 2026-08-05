@@ -376,3 +376,102 @@ Unrounded prior-quarter actuals: 761,553,000 / 826,760,000 / 885,651,000 / 953,1
 **The beat column is stable; the growth column is the one that jumped.** And it jumped because **the company guided it** — T1 guide top **$1.08bn** ÷ Q1 actual $1,006.426m − 1 = **+7.31%**, and consensus of $1,078.575m is **99.87% of that guide top**.
 
 🔴 **So the question worth carrying into the call is not "why did analysts want more?" but "why did DATADOG promise +7.31% after promising +0.73% one quarter earlier?"** The only T1 evidence on the record that could support it: **RPO $3.48bn, +51% YoY** and current RPO **+mid-40s%** (Q1-26 call) — forward contracted usage running well ahead of the 29–31% revenue guide, which is the kind of visibility that permits a management team to raise its own bar. **Whether that is the actual reason, or whether the guide is being written to the AI narrative, is UNRESOLVED and is the single most informative thing tomorrow's call can settle.**
+
+---
+
+## 🔴 REVISION #2 — 2026-08-05, pre-print. **I went looking for Datadog's hidden artifact and found one in my own analysis first.**
+
+Operator asked *why* Datadog re-based its guide and told me to find the artifact. I pulled the XBRL company facts directly from **SEC EDGAR, CIK 0001561550** (keyless route via `meta/tools/edgar_client.py` — EDGAR was reachable when every commercial host 403'd). Two artifacts came back. **The first one is mine.**
+
+### 🔴 ARTIFACT 1 — the "record bar" was partly a SEASONALITY error in my own measurement
+
+Sequential revenue growth, by fiscal quarter, computed from actuals:
+
+| Fiscal quarter | Sequential growth | mean |
+|---|---|---|
+| **Q1** | Q1-24 **+3.66%** · Q1-25 **+3.23%** · Q1-26 **+5.58%** | **+4.16%** |
+| **Q2** | Q2-24 +5.57% · Q2-25 +8.56% | +7.06% |
+| **Q3** | Q3-24 +6.93% · Q3-25 +7.12% | +7.03% |
+| **Q4** | Q4-24 +6.91% · Q4-25 +7.63% | +7.27% |
+
+🔴 **Q1 is Datadog's structurally weak sequential quarter. Q2/Q3/Q4 all run ~7%.**
+
+**I compared a Q1 guide (+0.82%) against a Q2 guide (+7.31%) and called the difference a re-basing of management's bar.** Those are different seasons. The comparison was invalid on its face and I made it twice — once in §2 and again in the operator addendum.
+
+**Judged against its own season the Q2-26 guide is utterly ordinary:**
+
+| Benchmark | Implied Q2-26 revenue | vs guide top $1,080m |
+|---|---|---|
+| 3-yr mean Q2 seasonal (+7.06%) | $1,077.5m | **guide is +0.23% above — i.e. dead on** |
+| Q2-25 seasonal (+8.56%) | $1,092.6m | guide is −1.15% **below** |
+| Q2-24 seasonal (+5.57%) | $1,062.5m | guide is +1.65% above |
+
+**⇒ Management did not do anything unusual. There is no hidden company artifact behind the guide. The anomaly was in my instrument.** Third time this week I have read a real quantity through the wrong lens — and this one I built myself, then presented to the operator twice.
+
+### 🟡 ARTIFACT 1b — but something real survives, and only the like-for-like view shows it
+
+| | Q2-24 | Q2-25 | **Q2-26** |
+|---|---|---|---|
+| Consensus-implied QoQ | +2.56% | +3.88% | 🔴 **+7.17%** |
+| Actual QoQ delivered | +5.57% | +8.56% | *pending* |
+| **Gap the street left on the table** | **2.99pp** | **4.68pp** | **?** |
+
+**Q2-on-Q2, the bar genuinely is +3.29pp higher than last year** — that part of my finding survives. But the mechanism is now precise: **in Q2-25 the guide (≈consensus) sat ~3.2pp BELOW the seasonal norm; this year it sits ON it.** The conservatism has been squeezed out of the Q2 guide specifically. **If the seasonal simply repeats (+8.56%), the beat is only +1.30% — well below the 13-quarter minimum of +2.72%.**
+
+### 🔴 ARTIFACT 2 — the real one, and it is not in the guide. It is in the backlog.
+
+**Remaining performance obligations (contracted future revenue), T1 XBRL, EDGAR CIK 0001561550:**
+
+| Quarter end | RPO $m | QoQ | $ added | YoY | RPO ÷ quarterly revenue |
+|---|---|---|---|---|---|
+| 2024-12-31 | 2,273.1 | +24.77% | +451.3 | — | 3.08× |
+| 2025-03-31 | 2,309.0 | +1.58% | +35.9 | +33.4% | 3.03× |
+| 2025-06-30 | 2,425.8 | +5.06% | +116.8 | +35.3% | 2.93× |
+| 2025-09-30 | 2,787.6 | +14.91% | +361.8 | +53.0% | 3.15× |
+| 2025-12-31 | 3,461.2 | **+24.16%** | **+673.6** | +52.3% | **3.63×** |
+| **2026-03-31** | **3,484.4** | 🔴 **+0.67%** | 🔴 **+23.2** | +50.9% | **3.46×** |
+
+🔴 **Management's headline "RPO +51% YoY" — which I repeated twice today as bullish corroboration — is carried almost entirely by ONE quarter.** The December-2025 quarter alone added **$673.6m of the $1,175.4m** added across the whole year = **57%**. The most recent quarter added **$23.2m.**
+
+**Q4 is the renewal quarter and Q1 is flat in BOTH years, so the seasonality is real and I am not calling this a collapse.** But like-for-like: **Q1-26 added +0.67% versus Q1-25's +1.58%** — the weak quarter was weaker than last year's weak quarter. And **coverage has slipped from 3.63× to 3.46×** quarterly revenue, i.e. contracted backlog is no longer outgrowing revenue.
+
+**⇒ The "+51% RPO" I cited as the thing that justifies a confident guide is a stale-by-one-quarter statistic.** It describes December, not March. That is B40 in a T1 disclosure rather than an aggregator — the number is true, current, and management's own; it is the *inference* from it that is stale.
+
+### Rebuilt revenue estimate — five independent methods
+
+| Method | Q2-26 revenue | Beat vs consensus |
+|---|---|---|
+| 3-yr mean Q2 seasonal (+7.06%) | $1,077.5m | **−0.10%** |
+| Seasonal repeat of Q2-25 (+8.56%) | $1,092.6m | **+1.30%** |
+| **YoY +34.0% ← MEDIAN** | **$1,107.9m** | **+2.72%** |
+| YoY +35.0% | $1,116.1m | +3.48% |
+| Guide-relative beat (+4.39% on $1,080m) | $1,127.4m | +4.53% |
+
+**Range $1,077.5m–$1,127.4m. Median $1,107.9m.** My registered $1,118m sits above the median — the seasonal methods pull down, and two of the five put the beat **below** the 13-quarter minimum.
+
+### REGISTERED CALLS — REVISED AGAIN
+
+| Call | Rev #1 | **Rev #2** | Why |
+|---|---|---|---|
+| **Revenue point** | $1,118m | **$1,108m** | median of five methods; the guide-relative method was over-weighted because it assumed a constant sandbag, which the seasonal view says has shrunk |
+| **EPS point** | $0.65 | **$0.64** | flow-through |
+| **R-1** Revenue > $1,078.575m | 0.87 | **0.83** | two of five methods now land at-or-below consensus |
+| **R-2** EPS > $0.583 | 0.90 | **0.90 — unchanged** | |
+| **R-3** FY guide raised > $4.34bn | 0.93 | **0.93 — unchanged** | untouched by any of this |
+| 🔴 **R-4** Same-day direction | UP 0.55 | 🔴 **0.50 — NO EDGE DECLARED** | see below |
+| **R-5** \|move\| ≥ 10% | 0.60 | **0.60 — unchanged** | |
+| **O-3** beat lands below +2.72% | 0.45 | **0.55** | the seasonal methods support it; two of five are below |
+
+### 🔴 On R-4: I am declaring no edge rather than flipping a third time
+
+**I registered DOWN 0.58, flipped to UP 0.55, and this evidence pulls back toward DOWN.** A third flip in one day would not be responsiveness — it would be noise with a timestamp.
+
+**The honest reading is that my directional signal does not exist.** The beat estimate ranges $1,077m–$1,127m depending on which defensible method is used; the low end maps to a negative reaction and the high end to a strongly positive one, and I cannot choose between the methods on evidence. The N=3 judge ensemble split 2 UP / 1 DOWN at 0.57–0.60, which said the same thing and which I should have weighted more heavily the first time.
+
+**R-4 = 0.50 is registered as a genuine prediction: that I have no skill on this leg.** It grades as a non-call and costs me nothing on the scoreboard, which is exactly why declaring it must be reserved for cases like this one and not used as cover. **R-1, R-2, R-3, R-5 and O-3 remain real calls with real content — the direction leg is the only one where the edge collapsed.**
+
+**Blind-check on the no-edge declaration:** distinguishes *"the evidence genuinely underdetermines direction"* from *"I lost my nerve after being wrong twice"* · reads on whether the five revenue methods span the reaction-sign boundary (they do: −0.10% to +4.53% beat, straddling the ~+3.2% threshold where the historical reaction flips) · **goes blind if** I apply it to a leg where the methods agree and only my confidence wavers — so the test is mechanical and stated: **no-edge may only be declared when independent methods straddle the outcome boundary, never on feel.**
+
+**FINAL FOR THE PRINT: revenue $1,108m · EPS $0.64 · FY guide ~$4.53bn · R-1 0.83 · R-2 0.90 · R-3 0.93 · R-4 0.50 (no edge) · R-5 0.60 · O-3 0.55.**
+
+**Position implication: NO ACTION — 0% — not held; calibration only.** 🟡
