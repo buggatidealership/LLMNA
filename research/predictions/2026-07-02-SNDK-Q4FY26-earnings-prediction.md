@@ -129,3 +129,25 @@ Computed: last quarter SNDK printed **EPS $23.41 against a $12–14 guide = 1.80
 **Blind-check (#51):** distinguishes *"the market repriced the quarter"* from *"the market repriced something else in the same window"* · reads on the T+1 close vs the last pre-print close · **goes blind if** a non-earnings catalyst lands inside the window — **which has already happened once** (HBF, 08-03) and could recur at FMS 2026, which runs **Aug 4–6**. If an HBF/FMS headline lands 08-05→08-06, this leg is **CONFOUNDED and must be suspended, not graded** — the same treatment Kioxia's leg got for its buyback+split.
 
 **Position implication: NO ACTION — HOLD — user-gated.** 🟡 A reaction call is calibration data, not a trade.
+
+### Rule #17 ensemble — N=3 independent Opus judges, returned 2026-08-05 ~08:0xZ (pre-print)
+
+Identical fact set, no web access, no house view disclosed, run in parallel.
+
+| | Direction | P(down) | P(quarter beats) | \|T+1\| |
+|---|---|---|---|---|
+| **Me (registered)** | DOWN | **0.52** | 0.70 | 60% ≥10% |
+| Judge 1 | DOWN | 0.58 | 0.63 | ~13% |
+| Judge 2 | DOWN | 0.57 | 0.68 | ~14% |
+| Judge 3 | DOWN | 0.60 | 0.68 | ~14% |
+| **Ensemble** | **3/3 DOWN** | **mean 0.583, spread 0.03** | **mean 0.663** | **~13.7%** |
+
+**🔴 THE REGISTERED P IS NOT REVISED.** Program v2: *ensemble spread is report-only, never sets P.* My 0.52 stands and grades as written. Recording that **I am the lowest of the four** — if the outcome is DOWN, the honest read is that B45 caution cost me conviction I had the evidence for.
+
+**🔴 And the agreement is worth less than it looks.** All three judges received **the same facts, from me**, and all three named **the same decisive fact (Kioxia) and the same counter-case (stale April guide + ASP read-through → EPS far above $34)**. That is not three independent observers converging on a truth; it is **one reasoning chain re-run three times.** Rule #17 measures my *sampling consistency*, not correctness — and a 0.03 spread says the chain is stable, not that it is right. Correlated sources are the normal case (L54's lesson, applied to my own ensemble).
+
+**What the ensemble genuinely added — one new mechanism I had not stated:**
+
+> **SanDisk's LTAs carry floors AND CEILINGS on ~⅓ of bits, while Kioxia is more spot-exposed. So Kioxia's realised ASP should EXCEED SanDisk's, and the peer read-across is an UPPER BOUND on SanDisk, not a template.** Computed: if un-LTA'd bits reprice +70%, SNDK blended ASP ≈ **+46.7%** against Kioxia's +70%.
+
+Also computed and verified: **consensus $8.3B implies only +39.5% QoQ** against Kioxia's actual **+76.2%** — a **36.7pp** gap. If SanDisk tracked the peer, revenue would be **$10.48B, +26.3% above consensus.** The ceiling mechanism above is the reason it plausibly doesn't, and that tension is the whole trade.
