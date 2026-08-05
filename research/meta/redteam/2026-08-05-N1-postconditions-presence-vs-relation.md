@@ -99,7 +99,32 @@ Measured basis for preferring redundancy over self-audit here, unchanged from th
 - **The classification is mine.** Whether `#2` is RELATION or PRESENCE, whether `#11b` is checkable at all — those are judgment calls by the same system whose judgment is under audit. The counts are computed; the labels being counted are not. The K3 commission's Task 2 should attack the labels, not redo the table.
 - **`postcondition_audit.py` is a data file with a print statement.** It computes tallies honestly, but it verifies nothing about the world. Unlike `hook_probe.py`, it cannot be wrong in a way that a test would catch. Do not mistake it for an instrument.
 - **Two counting errors occurred while writing it**, both L58: the split-clause count printed 5 for 4 because I inferred "split" from a letter suffix, and `#13b` is a real rule with a letter suffix. Both are fixed and both are recorded in the code comments. An audit of basis errors made two basis errors in its own counter.
-- **Zero of the six queued relation-checks are built.** This artifact is a plan with a computed justification, not a shipped defence. The §6 net-positive test remains **NOT PASSING**.
+- **§8 below supersedes this bullet.** As first written, this section said *"zero of the six queued relation-checks are built — this artifact is a plan, not a shipped defence."* That was true for about an hour. One is now built and one was killed by its own backtest.
+- The **§6 net-positive test remains NOT PASSING** — still zero retirements.
+
+## 8. What happened when I tried to build the queue (added same evening)
+
+I attempted the queue in §4 order and got a result that corrects §2.
+
+**#12, ranked FIRST, is unshippable as designed.** Backtest against the real corpus: of **473** cross-source-log files, **247 name an aggregator-class source** (SemiAnalysis, Substack, newsletter, brief, Reddit, digest, roundup) and **244 of those — 99% — record no separate date for the underlying primary claim.** A blocking hook demanding the two-date relation would fire on essentially every new signal file. That is a wall, not a check. It would be retired inside a week as noise, and in the meantime it would degrade into a presence demand for a convention nobody follows.
+
+That is an ordering constraint §2 missed, and it corrects the claim in §2 that presence checks are near-worthless:
+
+> **A RELATION check requires BOTH OPERANDS TO ALREADY EXIST in the output. Where the corpus records only one operand, the prerequisite is a convention — and a convention is a presence requirement. Presence checks are not worthless. They are the floor a relation check stands on.**
+
+§2 overstated. The right statement is not *"presence is inert"* but *"presence without a relation built on top of it is inert."* Every presence check in this harness is a floor with nothing standing on it. That is a different diagnosis and a more actionable one — it says build upward from the presence checks that already pass, rather than replace them.
+
+**#8 is built and probe-verified LIVE.** `meta/hooks/falsifier-provenance-hook.py`, registered in `.claude/settings.json` (Rule #19 LOW tier — creation of new enforcement, not deletion or disabling of any). Postcondition: *every EXIT/TRIM names a falsifier LITERALLY PRESENT in that ticker's `thesis.md` falsifier block.* Both operands already exist, which is precisely why this one was buildable and #12 was not.
+
+Its probe fixtures are the discrimination test, and they are the reason it can be claimed as a relation check rather than another presence check:
+- **positive** — names a falsifier, in perfect form, about a Taiwan earthquake, for NVDA, whose falsifier block says nothing of the kind → **blocks (exit 2)**
+- **negative** — quotes NVDA's real falsifier #1 (gross margin below 73%, custom-silicon bargaining power) → **passes (exit 0)**
+
+A presence check cannot tell those two apart. Both mention a falsifier. Verified in the same run that produced the status file this artifact's tallies read from.
+
+**Revised tally:** RELATION-form postconditions probe-verified enforcing: **0 → 1 (#8)**. Hooks backed: 5/24 → **6/24**. Ten of the twenty-four clauses remain relation-form; eight of those still have nothing.
+
+**Live catch from the exercise, unrelated to the hook build.** While measuring whether #5 was buildable, the relation itself failed: `sector/bottlenecks.md` carries `last_review: 2026-07-06` while its most recent commit is `2026-08-01`. The last real BOTTLENECK-FORECAST was **30 days ago** on a monthly cadence. Ten lines of relation-checking, run once, surfaced an overdue workflow that the session-start briefing reads past every morning. Logged to `meta/todo.md`.
 
 ## 7. Amendment to the K3 commission
 

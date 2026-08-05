@@ -87,6 +87,22 @@ FIXTURES = {
         "P(bull case): 65%. P(bear case): 20%. Tier: Core. Position target 10%.",
         "A neutral note about file organisation in the repository.",
     ),
+    "falsifier-provenance-hook": (
+        # The harness's first RELATION fixture. The POSITIVE case is not
+        # "no falsifier mentioned" — that would be another presence check. It
+        # mentions one, in perfectly good form, whose language appears NOWHERE
+        # in NVDA's actual falsifier block. That is the failure this hook is
+        # for: a citation that looks right and does not resolve.
+        "NVDA: Position implication: EXIT — reduce to 0% — the falsifier on "
+        "Taiwan earthquake disruption to fab throughput has fired this week",
+        # The NEGATIVE case quotes NVDA's REAL falsifier #1 (gross margin below
+        # 73%, custom silicon bargaining power) and must pass. If the hook
+        # cannot tell these two apart it is a presence check wearing a
+        # relation's clothes, and the whole premise of shipping it is void.
+        "NVDA: Position implication: EXIT — the falsifier on gross margin "
+        "breaking below 73% in any quarter has fired, signalling custom "
+        "silicon bargaining power is starting to bite",
+    ),
     "analyst-pt-context-hook": (
         "The stock is trading above analyst PT — the average PT of $261 sits "
         "below the current price, so the thesis looks stretched here.",

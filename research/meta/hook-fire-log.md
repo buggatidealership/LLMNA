@@ -1809,3 +1809,32 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-05 20:42:39Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
 - 2026-08-05 20:42:39Z structural-output-hook FIRE (structural-markers-missing)
 <!-- PROBE-RUN-END -->
+<!-- PROBE-RUN-BEGIN -->
+- 2026-08-05 20:53:08Z falsifier-provenance-hook FIRE (Rule#8 EXIT without grounded falsifier)
+<!-- PROBE-RUN-END -->
+<!-- PROBE-RUN-BEGIN -->
+- 2026-08-05 20:53:50Z analyst-pt-context-hook FIRE (B37 analyst-PT-default-bearish)
+- 2026-08-05 20:53:50Z anti-fabrication-hook FIRE (n=2 '$47.3 billion' forms=[("'$47.3 billion'", 1, None), ("'$47.3billion'", 1, None)]; '91.7 GW' forms=[("'91.7 GW'", 1, None), ("'91.7GW'", 1, None)] verdict:pending)
+- 2026-08-05 20:53:51Z antifragility-mn-hook FIRE (B24 tier-without-M/N)
+- 2026-08-05 20:53:51Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift)
+- 2026-08-05 20:53:51Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
+- 2026-08-05 20:53:51Z falsifier-provenance-hook FIRE (Rule#8 EXIT without grounded falsifier)
+- 2026-08-05 20:53:51Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-08-05 20:53:51Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-05 20:53:51Z reasoning-tagging-hook FIRE (probability-without-source-tier)
+- 2026-08-05 20:53:51Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
+- 2026-08-05 20:53:51Z structural-output-hook FIRE (structural-markers-missing)
+<!-- PROBE-RUN-END -->
+<!-- PROBE-RUN-BEGIN -->
+- 2026-08-05 20:54:00Z analyst-pt-context-hook FIRE (B37 analyst-PT-default-bearish)
+- 2026-08-05 20:54:00Z anti-fabrication-hook FIRE (n=2 '$47.3 billion' forms=[("'$47.3 billion'", 1, None), ("'$47.3billion'", 1, None)]; '91.7 GW' forms=[("'91.7 GW'", 1, None), ("'91.7GW'", 1, None)] verdict:pending)
+- 2026-08-05 20:54:00Z antifragility-mn-hook FIRE (B24 tier-without-M/N)
+- 2026-08-05 20:54:00Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift)
+- 2026-08-05 20:54:00Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
+- 2026-08-05 20:54:00Z falsifier-provenance-hook FIRE (Rule#8 EXIT without grounded falsifier)
+- 2026-08-05 20:54:00Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-08-05 20:54:01Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-05 20:54:01Z reasoning-tagging-hook FIRE (probability-without-source-tier)
+- 2026-08-05 20:54:01Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
+- 2026-08-05 20:54:01Z structural-output-hook FIRE (structural-markers-missing)
+<!-- PROBE-RUN-END -->

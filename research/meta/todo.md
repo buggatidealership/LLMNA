@@ -21,6 +21,12 @@
 
 ## Open
 
+- [ ] **P1 / research / 2026-08-05** [DUE, BOT, CAL] — BOTTLENECK-FORECAST is 30 DAYS OVERDUE on a monthly cadence, and nothing surfaced it
+  - Origin: caught 2026-08-05 while measuring whether Critical Rule #5 was buildable as a RELATION check. `sector/bottlenecks.md` carries `last_review: 2026-07-06`; its most recent commit is `2026-08-01`. The relation `last_review == date of the commit that touched it` fails, and has been failing silently for a month.
+  - **The finding under the finding:** the session-start briefing reads `bottlenecks.md` every morning and never once flagged it. A ten-line relation check found in one run what 30 days of reading the file did not — see `meta/redteam/2026-08-05-N1-postconditions-presence-vs-relation.md` §8.
+  - Scope: run Workflow #7 (current bottleneck / next / next-next, lead times, beneficiary names, confirming signals), update `last_review`, and decide whether #5 gets the second relation hook.
+  - Linked: `sector/bottlenecks.md`, `research/CLAUDE.md` Critical Rule #5 + Workflow #7, `meta/tools/postcondition_audit.py`
+
 
 - [x] **P1 / USER-ACTION / 2026-07-13 → CLOSED 2026-08-04 (SUPERSEDED BY STANDING DIRECTIVE, operator-authorized)** — DeGiro/N26 availability check on REIA-surfaced names.
   - 🔴 **Why it is closed, and the finding that matters more than the closure: THE ITEM CONTRADICTED A DIRECTIVE THAT WAS ALREADY IN FORCE WHEN IT WAS WRITTEN.** `research/CLAUDE.md:42` — *"**Investability filter** (added 2026-05-28; **SUPERSEDED 2026-07-05 by user directive**): accessibility is NO LONGER a research gate… surface every name on merit; the user checks tradability himself before any entry package executes."* The item is dated **2026-07-13**, eight days later, and its own scope line read *"availability check **gates** whether they're worth a Workflow #9 thesis build."* I wrote a to-do that reinstated a gate the operator had abolished, then let it block ~10 names for 22 days.

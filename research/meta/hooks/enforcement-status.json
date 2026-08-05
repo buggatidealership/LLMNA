@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-05T20:42:40Z",
+  "generated_utc": "2026-08-05T20:53:52Z",
   "generator": "research/meta/tools/hook_probe.py --emit-status",
   "note": "Computed, not authored. Every verdict here came from feeding the hook its real stdin contract and reading the exit code. UNPROBEABLE is not a pass.",
   "hooks": {
@@ -30,6 +30,10 @@
     "cascade-enforcement-hook": {
       "verdict": "UNPROBEABLE",
       "fires_logged": null
+    },
+    "falsifier-provenance-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 0
     },
     "git-guard-pretooluse": {
       "verdict": "UNPROBEABLE",

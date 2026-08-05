@@ -76,7 +76,7 @@ RULES = [
     ("8", "no sell on macro without falsification",
      "every EXIT/TRIM names a falsifier that is literally present in that "
      "ticker's thesis.md falsifier block",
-     "RELATION", "MACHINE", ""),
+     "RELATION", "MACHINE", "falsifier-provenance-hook"),   # BUILT 2026-08-05
 
     ("9", "bypass-route thinking",
      "every binding-constraint claim is followed by a named bypass route or "
