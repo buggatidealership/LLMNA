@@ -1374,3 +1374,23 @@ Labelling something unresolved feels like rigour. It is not: **it preserves the 
 2. **Scale-check every carried consensus against the company's other guided lines** before use — this is one division.
 3. **Name the basis on every profit line** (GAAP / non-GAAP / ex-item). The Kioxia OP miss spans −3.25% to −7.35% purely on basis choice.
 4. Both L55 and L56 are routed to the **INTAKE-BOUNDARY P0** as live specimens.
+
+---
+
+## L58 (CANDIDATE, N=7 in a single day) — BASIS MISMATCH: two numbers are not comparable just because they are both floats
+
+**Origin:** 2026-08-05. Operator asked why errors kept recurring despite the codification layer. Computed answer: **33 hook fires that day, 8 errors, 0 overlap.** Seven of the eight were the same failure — comparing two numbers measured on different bases. Full root-cause: `meta/redteam/2026-08-05-the-enforcement-layer-checks-form-not-comparability.md`.
+
+**The seven basis mismatches:** category (a *miss* counted inside a list of *beats*; an *instance* of a pattern logged as its *counterexample*) · reference point (a −8.80% move measured off a close that had itself risen +7.00% that day on unrelated news — net was −2.41%) · date (a sector state one session stale) · **season** (a Q1 guide compared to a Q2 guide, where Q1 sequential averages +4.16% and Q2/Q3/Q4 ~+7%) · **time window** (a "+51% YoY" of which one quarter carried 57%) · **denominator** (quarters of 90, 91 and 92 days treated as equal — worth ~3.3pp of a 6.5pp "anomaly").
+
+**Layer that failed: COMPUTATION — but not arithmetic.** Every calculation was correct. Principle #43b worked as designed and produced the wrong comparison faster and to more decimal places. **A calculator does not check units.**
+
+**Generalizable lesson: every number carries what it was measured AGAINST, and no two numbers may be compared until their bases match. Basis includes at minimum — reference point, date, category, season, time window, and denominator (including day count).**
+
+**This GENERALISES L42-b rather than adding to it.** L42-b (*every percent-change figure carries a basis stamp — settle/intraday/extended-hours — or it is unusable*) was the right discipline scoped to price only, because it was written after a single price-basis error. **Fold L42-b in as the price worked-example.**
+
+**Calibration adjustment — CONSTRUCTIVE, not filtering:** any multi-row comparison table must carry an explicit **BASIS column**, and building that column is what performs the check. A table whose basis column holds two different values is not a finding, it is a bug. This cannot be a Stop hook — the error happens in reasoning before text exists to scan — which is also why it must not become hook #22.
+
+**Blind-check (#51):** distinguishes *"these two numbers are comparable"* from *"these two numbers are both floats"* · reads on whether every row declares reference point, period length and category · **goes blind if** the basis is genuinely unknowable (an undated vendor snapshot — the exact hole that left the DDOG consensus series unfalsifiable), in which case the row is marked UNCOMPARABLE and excluded, never silently averaged in.
+
+**Validation criterion (re-eval 2026-09-05):** ≥2 further basis-mismatch errors in 30 days after L58 ships ⇒ the constructive-template approach failed and the problem is not fixable at the discipline layer — which would itself be the most important thing the harness has learned about its own limits.
