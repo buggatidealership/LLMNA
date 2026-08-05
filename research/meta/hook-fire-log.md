@@ -1797,3 +1797,15 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-05 20:40:52Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
 - 2026-08-05 20:40:52Z structural-output-hook FIRE (structural-markers-missing)
 <!-- PROBE-RUN-END -->
+<!-- PROBE-RUN-BEGIN -->
+- 2026-08-05 20:42:38Z analyst-pt-context-hook FIRE (B37 analyst-PT-default-bearish)
+- 2026-08-05 20:42:39Z anti-fabrication-hook FIRE (n=2 '$47.3 billion' forms=[("'$47.3 billion'", 1, None), ("'$47.3billion'", 1, None)]; '91.7 GW' forms=[("'91.7 GW'", 1, None), ("'91.7GW'", 1, None)] verdict:pending)
+- 2026-08-05 20:42:39Z antifragility-mn-hook FIRE (B24 tier-without-M/N)
+- 2026-08-05 20:42:39Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift)
+- 2026-08-05 20:42:39Z bypass-route-hook FIRE (B22 consensus-solution-anchoring)
+- 2026-08-05 20:42:39Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-08-05 20:42:39Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-05 20:42:39Z reasoning-tagging-hook FIRE (probability-without-source-tier)
+- 2026-08-05 20:42:39Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
+- 2026-08-05 20:42:39Z structural-output-hook FIRE (structural-markers-missing)
+<!-- PROBE-RUN-END -->

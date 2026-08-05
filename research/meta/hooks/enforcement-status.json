@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-08-05T20:42:40Z",
+  "generator": "research/meta/tools/hook_probe.py --emit-status",
+  "note": "Computed, not authored. Every verdict here came from feeding the hook its real stdin contract and reading the exit code. UNPROBEABLE is not a pass.",
+  "hooks": {
+    "analyst-pt-context-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 0
+    },
+    "anti-fabrication-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 62
+    },
+    "antifragility-mn-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 1
+    },
+    "borrowed-vs-firstprinciples-hook": {
+      "verdict": "FIXTURE-UNMATCHED",
+      "fires_logged": 2
+    },
+    "bottoms-up-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 4
+    },
+    "bypass-route-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 7
+    },
+    "cascade-enforcement-hook": {
+      "verdict": "UNPROBEABLE",
+      "fires_logged": null
+    },
+    "git-guard-pretooluse": {
+      "verdict": "UNPROBEABLE",
+      "fires_logged": null
+    },
+    "llm-native-reasoning-hook": {
+      "verdict": "FIXTURE-UNMATCHED",
+      "fires_logged": 2
+    },
+    "macro-anchor-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 172
+    },
+    "meta-count-tripwire-hook": {
+      "verdict": "DEAD-SUSPECT",
+      "fires_logged": 0
+    },
+    "nth-order-cascade-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 19
+    },
+    "reasoning-tagging-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 6
+    },
+    "segment-trajectory-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 1
+    },
+    "session-prime-cascade-hook": {
+      "verdict": "UNPROBEABLE",
+      "fires_logged": null
+    },
+    "signal-ingest-cascade-hook": {
+      "verdict": "UNPROBEABLE",
+      "fires_logged": null
+    },
+    "structural-output-hook": {
+      "verdict": "LIVE",
+      "fires_logged": 176
+    }
+  }
+}

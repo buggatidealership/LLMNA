@@ -43,6 +43,7 @@ USAGE
   python3 research/meta/tools/hook_probe.py --json     # machine-readable
   python3 research/meta/tools/hook_probe.py --hook structural-output-hook
 """
+import datetime as _dt
 import json
 import os
 import subprocess
@@ -224,6 +225,8 @@ def run_hook(hook_name: str, assistant_text: str, timeout: int = 25):
 PROBE_OPEN = "<!-- PROBE-RUN-BEGIN -->"
 PROBE_CLOSE = "<!-- PROBE-RUN-END -->"
 
+STATUS_FILE = HOOKS / "enforcement-status.json"
+
 
 def _fence(marker):
     """Fence probe-induced fires so they never pollute the audit baseline.
@@ -340,6 +343,31 @@ def main():
     # Calibration check BEFORE reporting anything.
     miscalled = [n for n in CALIBRATION_LIVE
                  if results.get(n, {}).get("verdict") in ("DEAD-SUSPECT", "FIXTURE-UNMATCHED")]
+
+    if "--emit-status" in sys.argv:
+        # N2: the priming hook reads this to label each of its items ENFORCED /
+        # UNVERIFIED / ADVISORY. The label must be COMPUTED, never hand-written,
+        # or it rots into a claim of enforcement that outlives the enforcement.
+        # Refuse to emit from a run whose own calibration failed — a status file
+        # written by a broken probe is worse than no status file, because the
+        # consumer cannot tell the difference.
+        if miscalled:
+            print("REFUSING to emit status: probe calibration failed this run "
+                  f"({', '.join(sorted(miscalled))}).", file=sys.stderr)
+            return 2
+        payload = {
+            "generated_utc": _dt.datetime.now(_dt.timezone.utc)
+                                .strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "generator": "research/meta/tools/hook_probe.py --emit-status",
+            "note": ("Computed, not authored. Every verdict here came from feeding "
+                     "the hook its real stdin contract and reading the exit code. "
+                     "UNPROBEABLE is not a pass."),
+            "hooks": {n: {"verdict": r["verdict"],
+                          "fires_logged": r.get("fires_logged")}
+                      for n, r in sorted(results.items())},
+        }
+        STATUS_FILE.write_text(json.dumps(payload, indent=2) + "\n")
+        print(f"wrote {STATUS_FILE.relative_to(REPO)}")
     if miscalled:
         print("=" * 74)
         print("  PROBE SELF-TEST FAILED — these hooks have independent evidence")

@@ -211,6 +211,149 @@ is the only output the user sees.
 """
 
 
+# ===================================================================
+# N2 — THE ENFORCEMENT LEDGER (added 2026-08-05)
+#
+# Defect A, from meta/redteam/2026-08-05-the-enforcement-layer-checks-
+# form-not-comparability.md: from inside the context, an ADVISORY discipline
+# and an ENFORCED one are typographically identical. Every item in the block
+# below reads with the same authority, so all 11 get the same weight — which
+# means the 4 with a real blocking backstop get too little and the 7 without
+# one get too much.
+#
+# Defect B, same artifact §11: every item states an ACTION and none states a
+# POSTCONDITION. You can perform the action perfectly and still ship a wrong
+# result, and nothing downstream can tell. So each item now carries the
+# end-state a reader could verify WITHOUT having watched the work.
+#
+# The LABEL is computed from meta/hooks/enforcement-status.json, which is
+# written by `hook_probe.py --emit-status` — a probe that feeds each hook its
+# real stdin contract and reads the exit code. It is deliberately NOT
+# hand-authored: a hand-written "ENFORCED" survives the death of the hook it
+# describes, and that is precisely the lie this ledger exists to prevent.
+# If the status file is missing or stale, the ledger says UNKNOWN rather than
+# claiming enforcement. Absence of evidence is reported as absence of evidence.
+# ===================================================================
+
+# Overridable ONLY so the falsification tests can point at a doctored status
+# file without touching the live one. A test that mutates the artifact it is
+# verifying is not a test.
+_STATUS_FILE = _Path(_os.environ.get(
+    "LLMNA_ENFORCEMENT_STATUS",
+    str(_Path(_REPO_ROOT) / "research" / "meta" / "hooks" / "enforcement-status.json")))
+_STALE_DAYS = 14
+
+# hooks: which blocking hooks, if any, actually check this item.
+# post:  the checkable end-state (NOT the action).
+# check: MACHINE / HUMAN / UNCHECKABLE — who could verify `post` after the fact.
+_ITEMS = {
+    1:  ([], "MACHINE",
+         ">=3 hypotheses named with explicit P weights, or an explicit line "
+         "saying why the question is not hypothesis-shaped"),
+    2:  ([], "HUMAN",
+         "every multi-name decision appears as ONE table with all names as "
+         "rows; no name evaluated in isolated prose"),
+    3:  ([], "HUMAN",
+         "the strongest falsifying case is argued at full strength BEFORE the "
+         "conclusion, or its absence is stated as a result (Rule #18)"),
+    4:  ([], "MACHINE",
+         "every non-Western name carries >=1 native-language source URL"),
+    5:  (["structural-output-hook"], "MACHINE",
+         "analytical output >800 chars contains >=1 structural marker. NOTE: "
+         "this checks that ONE marker exists, NOT item 1's hypothesis count"),
+    6:  ([], "MACHINE",
+         "independent research threads were dispatched in a SINGLE message "
+         "(verifiable in the transcript, not in the output)"),
+    7:  (["reasoning-tagging-hook", "anti-fabrication-hook"], "MACHINE",
+         "every probability carries a tier or hedge; every number is cited, "
+         "computed in-message, hedged, or exact-string grounded in the repo"),
+    8:  ([], "MACHINE",
+         "no return or move is called extreme/elevated/stretched/"
+         "priced-to-perfection without the cohort base rate stated adjacent"),
+    9:  (["macro-anchor-hook"], "MACHINE",
+         "position-relevant output carries a date-anchored first-principles "
+         "line and research-verified-vs-recall tags on load-bearing claims"),
+    10: ([], "MACHINE",
+         "every quantitative result in the output has a corresponding tool "
+         "call in the same turn's transcript"),
+    11: (["meta-count-tripwire-hook"], "MACHINE",
+         "every count about the harness's own state was produced by a tool "
+         "call in THIS turn, not recalled from context"),
+}
+
+
+def _load_status():
+    """Returns (hooks_dict, staleness_note). Never raises — a broken status
+    file must degrade to UNKNOWN labels, never to a silent claim of coverage."""
+    try:
+        import datetime
+        raw = json.loads(_STATUS_FILE.read_text())
+        hooks = raw.get("hooks", {})
+        gen = raw.get("generated_utc", "")
+        note = ""
+        try:
+            ts = datetime.datetime.strptime(gen, "%Y-%m-%dT%H:%M:%SZ").replace(
+                tzinfo=datetime.timezone.utc)
+            age = (datetime.datetime.now(datetime.timezone.utc) - ts).days
+            if age > _STALE_DAYS:
+                note = (f"  !! STATUS IS {age} DAYS OLD (probe last run {gen}). "
+                        f"Treat every ENFORCED below as UNVERIFIED until "
+                        f"`python3 research/meta/tools/hook_probe.py "
+                        f"--emit-status` is re-run.\n")
+        except Exception:
+            note = "  !! status file has no parseable timestamp — treat as stale.\n"
+        return hooks, note
+    except Exception:
+        return None, ("  !! enforcement-status.json MISSING OR UNREADABLE. Every "
+                      "item below is UNKNOWN — do not assume any of them is "
+                      "backstopped. Run `python3 research/meta/tools/"
+                      "hook_probe.py --emit-status`.\n")
+
+
+def _ledger() -> str:
+    hooks, note = _load_status()
+    lines = [
+        "=== ENFORCEMENT LEDGER (computed at inject time from probe results) ===",
+        "",
+        "ENFORCED  = a blocking hook was probe-verified to fire on this. Failing it",
+        "            costs you the message.",
+        "UNVERIFIED= a hook exists in code but the probe could NOT make it fire, or",
+        "            it cannot be probed at all. Treat as ADVISORY. It may be dead.",
+        "ADVISORY  = nothing checks this. It holds only if I hold it. These are the",
+        "            items where a silent failure is invisible to the harness.",
+        "",
+    ]
+    if note:
+        lines.append(note.rstrip("\n"))
+        lines.append("")
+    for n in sorted(_ITEMS):
+        backing, check, post = _ITEMS[n]
+        if hooks is None:
+            label, via = "UNKNOWN", "status unavailable"
+        elif not backing:
+            label, via = "ADVISORY", "no hook"
+        else:
+            live = [h for h in backing if hooks.get(h, {}).get("verdict") == "LIVE"]
+            if live:
+                label, via = "ENFORCED", " + ".join(live)
+            else:
+                states = ", ".join(f"{h}={hooks.get(h, {}).get('verdict', 'ABSENT')}"
+                                   for h in backing)
+                label, via = "UNVERIFIED", states
+        lines.append(f"  #{n:<3} {label:<10} [{check}] via {via}")
+        lines.append(f"        POSTCONDITION: {post}")
+    lines += [
+        "",
+        "Read the POSTCONDITION lines, not just the action text below. An item is",
+        "satisfied when its end-state is true in the output — not when the action",
+        "was performed. Every error of 2026-08-05 was an action performed correctly",
+        "with the postcondition false, which is why none of them tripped anything.",
+        "=== END ENFORCEMENT LEDGER ===",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 def _date_header() -> str:
     """Computed at inject time (B65 context-fluency / mechanism-3 fix,
     2026-07-20): absolute dates inside static priming prose are not salient
@@ -266,7 +409,7 @@ def main():
     output = {
         "hookSpecificOutput": {
             "hookEventName": "UserPromptSubmit",
-            "additionalContext": _date_header() + INJECTION,
+            "additionalContext": _date_header() + _ledger() + INJECTION,
         }
     }
     print(json.dumps(output))
