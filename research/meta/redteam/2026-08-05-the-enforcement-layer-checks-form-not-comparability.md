@@ -277,3 +277,60 @@ The priming hook injects **11 disciplines**. Only some have a blocking partner:
 > *Blind-check (#51): distinguishes "this discipline is internalised" from "this discipline is merely unmeasured" · reads on whether an injected item has a blocking partner with a non-zero fire history · **goes blind if** the blocking partner exists but is silently broken — `meta-count-tripwire-hook` is that case right now: it blocks in code and has never logged a fire, which is either a dead hook or an uninstrumented one, and the fire log cannot tell them apart.*
 
 **Immediate consequence, and it is small and concrete:** `meta-count-tripwire-hook` is a probe candidate for the already-open HOOK EXECUTION PROBES to-do (due 2026-08-09). **It nominally guards the exact discipline I broke when I stated 473 ingest events. It should have fired. It did not.**
+
+---
+
+# §11 — "What must be true to eradicate the defect?" — and a correction that changes the answer
+
+## 11.1 — 🔴 FIRST, §10.5 DOES NOT SURVIVE ITS OWN TEST
+
+§10.5 claimed *"today's errors clustered exactly on the injection items with no working blocking partner"* — naming priming items **10 (COMPUTE INSTEAD OF NARRATE)** and **11 (HARNESS COUNTS ARE COMPUTED, NEVER RECALLED)**.
+
+**Tested. Both were COMPLIED WITH:**
+
+| Item | Requirement | What I actually did |
+|---|---|---|
+| 10 | *"press the buttons FIRST"* | Every figure today came from a tool call — AMD net move, SOX drawdowns, seasonality-by-quarter, the RPO series, the 473 count. **Nothing was narrated.** |
+| 11 | *"produce it with a tool call BEFORE stating it"* | The 473 figure **was** produced by `git log`, not recalled. |
+
+🔴 **So the eight errors were not violations of anything. I satisfied the disciplines and produced wrong answers.** §10.5 was pattern-matching a conclusion onto the two items that happened to lack a backstop. **It is retracted.**
+
+**This is the fifth self-correction of the day and the most consequential, because it relocates the defect.**
+
+## 11.2 — THERE ARE TWO DEFECTS, AND I HAD ONLY NAMED THE SMALLER ONE
+
+| | Defect | Real? | Caused today's errors? |
+|---|---|---|---|
+| **A** | From inside the context, an **advisory** discipline is indistinguishable from an **enforced** one | 🟢 YES | 🔴 **NO** |
+| **B** | **Every discipline in the harness specifies an ACTION. None specifies a POSTCONDITION.** | 🟢 YES | 🟢 **YES — all seven** |
+
+**"Compute it with a tool" is an action. "The two numbers are comparable" is a postcondition.** You can perform the action flawlessly and fail the postcondition — which is precisely what happened eight times.
+
+**Every enforcement object in this harness — all 17 blocking hooks, all 11 injected items — is phrased as an action or a text-marker requirement. Not one is phrased as an end-state that could be false after the action completes.**
+
+## 11.3 — NECESSARY CONDITIONS TO ERADICATE
+
+**N1 — Every discipline states a POSTCONDITION, not an action.**
+*Not* "compute it" → **"the numbers being compared share a declared basis."** *Not* "cite it" → **"every figure resolves to a source that a reader could open."** A postcondition is checkable after the fact by someone who did not watch the work. An action is only checkable by watching.
+
+**N2 — Every injected item declares its enforcement status, and the label is COMPUTED, not hand-written.**
+`ENFORCED` (live blocking partner, probe-verified) / `ADVISORY` (no backstop — you are the only check) / `UNCHECKABLE` (no machine test exists). Generated at injection time from settings + probe results. **A hand-maintained label rots and becomes a lie, which is worse than no label.** *(This is the fix for Defect A — still worth doing, just not the fix for today.)*
+
+**N3 — A backstop counts as live only when a FIXTURE HAS MADE IT FIRE.**
+`meta-count-tripwire-hook` blocks in code and has never logged a fire. Dead or merely quiet is currently indeterminable. **Code-inference is not evidence of execution.** This is the already-open HOOK EXECUTION PROBES item, and N2 depends on it.
+
+**N4 — Whatever is UNCHECKABLE routes to REDUNDANCY, not to a hook.**
+Today's strongest evidence: the day-count error was caught by an **independent subagent**, and the GAAP/non-GAAP garble was caught **only because two verifiers covered the same event**. **Redundancy caught what specification could not.** Pretending a regex covers a semantic postcondition is how Defect A gets manufactured in the first place.
+
+**N5 — The postcondition set must be adversarially reviewed by something that is not me.**
+N1–N4 close known holes. They cannot close holes I cannot see — and the day's record is that **five of five self-corrections were prompted by an external question or an independent agent, never by unprompted self-audit.**
+
+## 11.4 — What is actually achievable, stated honestly
+
+🔴 **"Eradicate" is not available.** N1–N5 do not produce a system that cannot fail.
+
+**They produce a system with NO SILENT FAILURES: every failure is either blocked, or explicitly flagged as unblockable so a human knows the check is theirs.** That is the honest target, and it is a large improvement over the current state, where an unenforced discipline and an enforced one are indistinguishable **from both sides** — I cannot tell while reasoning, and the operator cannot tell while reading.
+
+**Falsifier for this whole framework (re-eval 2026-09-05):** if the next 30 days produce a basis-class error that occurs **while a postcondition covering it was declared ENFORCED and probe-verified**, then N1–N4 are insufficient and the problem is not addressable by specification at all — the honest conclusion would then be that only redundancy works, and the harness should reallocate from hooks to second-agent passes.
+
+**Cost note, because this must not become codification bloat:** N1 is a **rewrite** of existing disciplines, not an addition. N2/N3 are one generated label and the already-scheduled probe work. N4 reallocates spend from hooks to verification. **N5 is the only genuinely new commissioned artifact. Net object count should FALL, and if it rises this framework has failed the §6 test like everything else in this file.**
