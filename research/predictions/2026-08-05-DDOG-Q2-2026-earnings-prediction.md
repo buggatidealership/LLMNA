@@ -355,3 +355,24 @@ Unrounded revenue figures as pulled: consensus 960,117,500 / 918,700,800 / 852,7
 | All actuals | 🟢 Consistent with the T1 company releases cited elsewhere in this file |
 
 **This uneven verification is itself the caveat that matters for §2 and the OPERATOR ADDENDUM:** the consensus series is the load-bearing input to the "record bar" finding, and two of its rows rest on one vendor.
+
+### §DATA-b — "Growth asked for" vs "beat": two different measures, kept apart
+
+Added 2026-08-05 after the operator conflated them — reasonably, because I had used both in the same conversation without labelling. **Nobody forecasts a beat**; consensus is a level, and the beat is what happens to it afterwards.
+
+| Quarter | Report | Prior-quarter ACTUAL | Consensus | **GROWTH ASKED** (cons ÷ prior actual − 1) | Actual | **BEAT** (actual ÷ cons − 1) |
+|---|---|---|---|---|---|---|
+| Q2 2025 | 2025-08-07 | $761.6m | $791.1m | **+3.88%** | $826.8m | +4.50% |
+| Q3 2025 | 2025-11-06 | $826.8m | $852.8m | **+3.15%** | $885.7m | +3.86% |
+| Q4 2025 | 2026-02-10 | $885.7m | $918.7m | **+3.73%** | $953.2m | +3.75% |
+| Q1 2026 | 2026-05-07 | $953.2m | $960.1m | **+0.73%** | $1,006.4m | +4.82% |
+| **Q2 2026** | **2026-08-06** | **$1,006.4m** | **$1,078.575m** | 🔴 **+7.17%** | *pending* | *pending* |
+
+Unrounded prior-quarter actuals: 761,553,000 / 826,760,000 / 885,651,000 / 953,194,000 / 1,006,426,000. Source and per-row verification status as in §DATA above.
+
+**GROWTH ASKED:** 3.88 → 3.15 → 3.73 → 0.73 → **7.17**
+**BEAT:** 4.50 → 3.86 → 3.75 → 4.82 → pending
+
+**The beat column is stable; the growth column is the one that jumped.** And it jumped because **the company guided it** — T1 guide top **$1.08bn** ÷ Q1 actual $1,006.426m − 1 = **+7.31%**, and consensus of $1,078.575m is **99.87% of that guide top**.
+
+🔴 **So the question worth carrying into the call is not "why did analysts want more?" but "why did DATADOG promise +7.31% after promising +0.73% one quarter earlier?"** The only T1 evidence on the record that could support it: **RPO $3.48bn, +51% YoY** and current RPO **+mid-40s%** (Q1-26 call) — forward contracted usage running well ahead of the 29–31% revenue guide, which is the kind of visibility that permits a management team to raise its own bar. **Whether that is the actual reason, or whether the guide is being written to the AI narrative, is UNRESOLVED and is the single most informative thing tomorrow's call can settle.**
