@@ -83,3 +83,75 @@ The finding above indicts the *volume* of form-checking. It would be self-refuti
 **I cannot self-audit this.** The eight errors are mine, the enumeration is mine, and the proposal to retire hooks is being written by the thing the hooks constrain. **The §6 audit should be commissioned to a fresh session** the way the #51 retro sweep was (`meta/redteam/2026-08-01-instrument-validity-audit-commission-prompt.md`), and for the same reason.
 
 **Re-eval: 2026-09-05.** If the next 30 days produce ≥2 further basis-mismatch errors after L58 ships, the constructive-template approach has failed and the problem is not fixable at the discipline layer at all — which would itself be the most important thing the harness has learned about its own limits.
+
+---
+
+# §8 — THE AUDIT, EXECUTED 2026-08-05 (operator: "do it")
+
+## 8.1 — Hook fire audit, all 20 hooks (`hook_fire_log.py` is a library, not a hook)
+
+Computed from `meta/hook-fire-log.md`, 30-day window ending 2026-08-05.
+
+| Class | N | Hooks |
+|---|---|---|
+| **ACTIVE** (≥5 fires/30d) | **9** | anti-fabrication (62) · macro-anchor (115) · structural-output (129) · session-prime (672) · git-guard (395) · nth-order-cascade (19) · session-prime-cascade (8) · bypass-route (7) · reasoning-tagging (6) |
+| **BELOW the harness's own <5/month retirement threshold** | **7** | bottoms-up (4) · signal-ingest-cascade (4) · borrowed-vs-firstprinciples (2) · llm-native-reasoning (2) · antifragility-mn (1) · cascade-enforcement (1) · segment-trajectory (1) |
+| **NO LOG AT ALL** | **4** | session-start · llm-native-priming · analyst-pt-context · meta-count-tripwire |
+
+🔴 **The 4 NO-LOG hooks are NOT inert — that is an instrumentation gap, and conflating the two would be another basis error.** `session-start-hook` demonstrably runs every session (it produced today's briefing) and `llm-native-priming-hook` demonstrably runs every prompt (its injection is visible in-context). **They are unmeasurable, not dead.** The already-open to-do "HOOK EXECUTION PROBES — convert the supervisor from log-reader to actual supervisor" is exactly this and is **4 days from due**.
+
+⚠️ **Fire counts are NOT catch counts, which is this artifact's whole thesis.** `session-prime-hook`'s 672 "fires" are context *injections*, not checks. `git-guard`'s 395 are guard *invocations*, most passing. **Nine of the biggest numbers in that table are not evidence of anything being caught.** Do not use this table to justify keeping a hook — only to identify candidates for the catch-audit that must follow.
+
+**7 hooks sit below the harness's own pre-registered retirement threshold.** Retiring any of them is **Rule #19 MEDIUM-to-HIGH** (live enforcement) and is **left for the operator** — flagged, not executed.
+
+## 8.2 — 🟢 THE PRE-REGISTERED DECISION DUE 2026-08-06, SETTLED ONE DAY EARLY
+
+Metric fixed 2026-07-06: *weekly structural-output fires ÷ weekly main-branch commits.* Rule: **falling ⇒ priming works, KEEP; flat/rising ⇒ RETIRE the priming hook.**
+
+| Week beginning | fires | commits | normalized |
+|---|---|---|---|
+| 2026-06-29 | 24 | 183 | 0.131 |
+| 2026-07-06 | 32 | 272 | 0.118 |
+| 2026-07-13 | 31 | 220 | 0.141 |
+| 2026-07-20 | 58 | 230 | **0.252** |
+| 2026-07-27 | 6 | 86 | 0.070 |
+| 2026-08-03 (partial, 3 days) | 2 | 40 | **0.050** |
+
+**0.131 → 0.050 = −61.9%. VERDICT PER THE PRE-REGISTERED RULE: FALLING ⇒ KEEP BOTH HOOKS.**
+
+🔴 **And I am honoring that verdict while stating that the metric is now known to be invalid.** Today's finding is that **fire counts and catch counts are uncorrelated** — 33 fires, 8 errors, 0 overlap. A falling fire rate therefore shows fewer messages tripped a *form* check; it says nothing about whether the priming works. **The criterion was pre-registered before that was known.**
+
+**Changing a criterion after seeing the data is precisely the failure pre-registration exists to prevent, so the rule binds and the hooks stay.** But it must not be re-used: **the metric is retired as an instrument going forward**, and any future keep/retire decision on these two hooks must be made on catches. ⚠️ Two further caveats: the last two weeks have small denominators (86 and 40 commits), and the final week is **3 days, not 7**.
+
+## 8.3 — 🔴 "PUBLISH A REAL COUNT" — THE ANSWER IS THAT THE HARNESS CANNOT COUNT ITSELF
+
+Three good-faith attempts, three different answers:
+
+| Attempt | Method | Result |
+|---|---|---|
+| 1 | grep header patterns per canonical file | **164** |
+| 2 | distinct-ID extraction, per file, one convention | **141** |
+| 3 | corpus-wide ID extraction, any convention | **242** (and it returned a max Principle ID of **#99**, which is a false match on a page number or percentage) |
+
+**The spread is 72% of the smallest figure.** The cause is that the corpus uses **inconsistent ID conventions** — early principles are referenced from CLAUDE.md and the hooks but never headed in `methodology.md`; lessons and biases carry tombstones and numbering gaps; sub-clauses of Critical Rules match the same pattern as the rules themselves.
+
+🔴 **I nearly published "22 phantom principles" from attempt 2** — a finding produced entirely by searching **one file** for **one convention** and comparing it against a max ID drawn from **the whole corpus**. **That is L58 committed while auditing L58**, caught by one corpus-wide re-run.
+
+**So the honest deliverable for this item is not a number. It is: the codification tail is not enumerable by any instrument the harness currently has, and therefore cannot be audited for inertness.** Every "L1-L58 / B1-B66 / #1-#51" header in this corpus is a claim nobody can verify. **That is a stronger argument for the retirement audit than any count would have been** — you cannot retire what you cannot list.
+
+**Prerequisite, now the binding one:** an ID-convention normalisation pass must precede any retirement sweep. Until then a retirement audit would be operating on an unknown population.
+
+## 8.4 — What was executed vs left for the operator
+
+| Item | Status |
+|---|---|
+| Fold L42-b into L58 | ✅ **DONE** — L42-b marked SUPERSEDED-BY-L58 in `lessons.md`, retained as the price worked-example |
+| Hook fire audit, all 20 | ✅ **DONE** — §8.1 |
+| Pre-registered 08-06 decision | ✅ **SETTLED — KEEP BOTH**, metric retired as an instrument (§8.2) |
+| Publish a real count | ✅ **ANSWERED — not countable; see §8.3** |
+| Retire any of the 7 below-threshold hooks | ⏸️ **OPERATOR — Rule #19, live enforcement** |
+| Instrument the 4 NO-LOG hooks | ⏸️ Already an open to-do, due 2026-08-09 |
+| ID-convention normalisation | 🔴 **NEW, and now the blocker** for any retirement sweep |
+| Catch-audit (did any fire prevent a shipped error?) | 🔴 **COMMISSION TO A FRESH SESSION** — cannot be self-audited (§7) |
+
+**Net-positive test, restated against outcomes:** this pass **added** L58 and one to-do, and **removed** L42-b as an independent object plus retired one measurement instrument. **It has not yet reduced the codification tail, because §8.3 established the tail cannot currently be enumerated.** By the test written in §6, this artifact is **NOT YET PASSING** — it passes only when the normalisation pass plus the commissioned catch-audit produce net removals. **Stated plainly so it cannot be quietly counted as a win.**
