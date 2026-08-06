@@ -123,6 +123,27 @@ What is *not* established: that the seat is defensible. The moat claim is manage
 
 **Second registered watch item:** the **TCV-vs-revenue divergence**. If total TCV growth keeps decelerating while revenue growth stays high, revenue is being recognised out of a backlog that is not being replaced at the same rate. **That is the falsifier-side reading of an otherwise spectacular print, and it is the one thing in this release that argues against the operator's conclusion.**
 
+## §10 — TRACE: the bookings/revenue divergence, walked out (Workflow #2; added after `nth-order-cascade-hook` blocked a first-order-only restatement)
+
+**Trigger:** revenue **+93% YoY** against total bookings **+49% YoY** — a 44pp gap, revenue running at ~1.9× the rate of the order book.
+
+**1st order (P>80%) — arithmetic, not opinion.** Revenue is being recognised out of a backlog replenishing more slowly than it is drawn down. **If the gap persists, the revenue growth rate must converge downward toward the bookings growth rate.** There is no path where a 49%-growing book indefinitely funds 93% revenue growth. Timing is the only open variable.
+
+**2nd order (P~60%) — it lands in 2027, and it lands on the multiple, not the earnings.** FY2026 is already guided ($8.154B midpoint) and Q3 is guided; the convergence therefore cannot show up as a 2026 miss. **It shows up as the FY2027 guide.** At ~48× forward sales (computed: ~$390.9B market cap ÷ $8.154B guided revenue), a decelerating guide is a **multiple event, not an earnings event** — which is precisely the mechanism that took the stock −29% YTD in the first place, and would be the same mechanism firing twice.
+
+**3rd order (P~40%) — the third category gets re-tested by its own test.** If the "converts someone else's capex" seat is real, it must show up as **bookings** keeping pace, not just revenue. Backlog-drawdown revenue is **cyclical-quality revenue wearing structural clothes** — the exact distinction the 2026-08-06 growth-quality frame was built to make. Applied consistently, that frame does not exempt Palantir from its own rule: **a name whose revenue outruns its bookings is, on this frame, closer to SanDisk's price-driven quarter than to Arista's volume-driven one.** Read-through to the same seat elsewhere: **DDOG, SNOW, MDB, NOW, CRWD** — every AI-application name should be checked on bookings-vs-revenue, not revenue alone. **This is a cheap check nobody is running.**
+
+**4th order (P~20%) — and this is where it meets the operator's other question.** If application-layer bookings decelerate *broadly* while infrastructure capex is still guided **+57% to +71%** ($381B → $600–650B), that is the arrival of the "capex without return" moment the operator's hyperscaler-ratio question is asking about — **because the application layer is where the return shows up first.** Enterprise AI spend converts into someone's bookings before it converts into anyone's revenue. **Palantir's total-TCV line is therefore a leading indicator for the hyperscaler capex-return question**, running ahead of the hyperscalers' own disclosure by at least a quarter.
+
+**Names whose exposure changed:**
+- **PLTR** — 1st/2nd order, direct. The bookings line becomes the monitored quantity, not the revenue line.
+- **DDOG, SNOW, MDB, NOW, CRWD** — 3rd order, same seat, same unrun check. *(Named as a check to run, not as a view. DDOG prints today and its own registered call is unaffected — R-1/R-2/R-3/R-5/O-3 are revenue- and guide-conditioned, not bookings-conditioned.)*
+- **Hyperscalers (MSFT/GOOG/META/AMZN)** — 4th order, as the *destination* of the read-through rather than its source.
+
+**Blind-check on this whole chain:** *distinguishes "enterprise AI demand is broadening" from "a 2025 booking wave is being recognised through 2026" · reads on total TCV growth vs revenue growth, both YoY, across the application cohort · **goes blind if** the cohort reports RPO or "remaining deal value" instead of TCV, or changes contract-duration mix — either re-bases the denominator and makes the two series non-comparable without disclosure that is not currently given.*
+
+**NOT a prediction.** No P-weight is attached to any outcome here; the orders above are the standard TRACE decay markers, not calibrated forecasts. **This is a monitoring chain, registered so that if it fires, it fires against something written down first.**
+
 ## §9 — NOT CONCLUDED
 
 - **No re-weight.** H1 60 / H2 11 / H3 29 (my model) stand. PLTR is not in the held cohort and this is not a demand-hypothesis input.
