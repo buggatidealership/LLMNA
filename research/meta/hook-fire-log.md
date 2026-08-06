@@ -1869,3 +1869,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-06 07:29:34Z segment-trajectory-hook FIRE (B20 segment-snapshot-anchoring)
 - 2026-08-06 07:29:34Z structural-output-hook FIRE (structural-markers-missing)
 <!-- PROBE-RUN-END -->
+- 2026-08-06 07:35:42Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-06 07:44:41Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-06 08:01:43Z session-prime-hook event=resume injected=False (skipped non-startup)
