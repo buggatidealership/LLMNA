@@ -749,3 +749,22 @@ Back-reference: `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md` § C
 **No falsifier fires.** Nothing above touches a reported quantity; all registered falsifiers still resolve at tonight's print and the 08-13 Investor Day.
 
 **Position implication: NO ACTION — HOLD — no size change — user-gated.** 🟡 A more-extended entry price raises the *reaction* risk into the print, which is a graded-call input, **not** a sizing input — the thesis is 6-24 month and resolves on the guide and the Investor Day, not on the T+1 close.
+
+
+---
+
+## 2026-08-06 — THE PRINT LANDED: reported quantities, and what they do (and do not) touch
+
+Back-reference: `signals/cross-source-log/2026-08-06-thu-kr-open-wake-h3-instrument-measured-first-time-and-it-is-a-ratchet.md` §4 · `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md`.
+
+**Q4 FY26 actuals (T1 release, 2026-08-05 20:30Z; T2 press corroboration):** revenue **$8.965B** (+51% QoQ, **+372% YoY**) · non-GAAP EPS **$39.25** · GAAP EPS $43.97 · GM **84.6%** (+6.2pp QoQ) · operating income **$7.04B** (+71% QoQ) · datacenter **$2.98B (+103% QoQ)** · edge $5.43B (+48%) · consumer $556M (−32%) · FY26 revenue **$20.25B (+175%)**. **Q1-FY27 guide $10.30–10.80B, NG EPS $44.00–46.00** — a **+17.7% QoQ** revenue acceleration off a quarter that grew 51%.
+
+**Against the bar:** consensus was $8.30B / $34.24. **Beat by +8.0% and +14.6%.** Against the stale April guide ($7.75–8.25B / $30–33), the beat is far larger. Against **my** registered points ($8.40B / $33.50 / ~$9.2B guide) I was low on all three — **−12.8% on the guide, the line I had myself named as decisive.**
+
+**Price, decomposed — and the decomposition is the point.** The 08-05 regular session closed **$1,350.50, −5.40%** from the $1,427.62 baseline **thirty minutes BEFORE the release**; same-session sector was AMD −7.04%, WDC −5.36%, NVDA +3.43%. The **clean post-print reaction is ~−4.65% after hours** (~$1,287.67, T2). **The −5.40% is not the earnings reaction and must not be cited as one** — that is the L58 basis error made against AMD on 2026-08-05, and it was avoided here only because the R-3a/R-3 split was registered six hours pre-print.
+
+**Falsifier check — none fires.** The registered falsifiers were (1) rev <$7.75B in a sold-out quarter, (2) GM breaking the guide band, (3) a demand-side acceptance/timing problem. Revenue cleared the guide top by 8.7%, GM printed **84.6% against a 79–81% guide**, and datacenter doubled sequentially. **Every reported quantity moved the thesis's way.** The 08-13 Investor Day remains the second live resolution point.
+
+**What the print does NOT settle:** the stock fell on numbers that beat every published line, with a guide 17.7% above the quarter. That is a **multiple-compression** observation, not a demand observation, and it is registered as **candidate H4** in `predictions/2026-07-17-regime-read-preregistration-five-calls.md` ADDENDUM #15 rather than being read into this thesis as a bear datapoint. A thesis that resolves on the guide and the Investor Day is not falsified by a T+1 tape it never claimed to predict.
+
+**Position implication: NO ACTION — HOLD — no size change — user-gated.** 🟢 Reported fundamentals came in above the thesis on every line including the forward guide; the reaction leg is a graded-call input, not a sizing input, and R-2/R-3 do not resolve until the 2026-08-06 US close.

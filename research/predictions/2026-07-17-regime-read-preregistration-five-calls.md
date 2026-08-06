@@ -219,3 +219,32 @@ The verifier flagged our Brent settle **$84.09** as possibly a mislabelled WTI p
 
 ### What is NOT touched
 **Nothing here weakens the memory-pricing story as a corporate-earnings thesis.** Memory prices are confirmed rising violently and ~70% of world memory output is going to data centres. What is refuted is only its **transmission to the long end of the Treasury curve**. The held cohort's thesis is untouched.
+
+
+---
+
+## ADDENDUM #15 (2026-08-06 KR-open wake) — 🔴 THE #14 H3 TRIGGER IS A RATCHET. No re-weight; instrument governance only.
+
+Origin: `signals/cross-source-log/2026-08-06-thu-kr-open-wake-h3-instrument-measured-first-time-and-it-is-a-ratchet.md`. FRED reachable for the first time since the 403 wall ⇒ **first machine reading of the ADDENDUM #14 trigger since it was registered on 07-31.**
+
+**Reading (matched-date only; curve obs 2026-08-04, breakeven obs 2026-08-05 — 1d apart, stated not smoothed; all US-session cut per #10):**
+- **2s30s = 98bp** against the **>120bp** trigger ⇒ **NOT FIRED, 22bp away.**
+- +15bp over 5 observations, but **the whole step occurred 07-28→07-29 (83→98) and it has been flat at 98–99 for five consecutive sessions.** The credibility repricing stepped once and stalled.
+- **10Y breakeven 2.22%** — the `<2.4%` arm holds; the `≥2.6%` de-escalation arm is 38bp away.
+- 10Y itself +2bp/5obs.
+
+**🔴 THE DEFECT.** Escalation needs 2s30s >120bp **with breakevens <2.4%** — the breakeven condition is *already satisfied*, so it needs only 22bp of steepening. De-escalation needs **breakevens ≥2.6%** while 2s30s flattens. **ADDENDUM #14's own central argument is that breakevens are structurally anchored** (*"both BELOW their Apr-2022 peaks, i.e. anchored"* — the evidence for the whole re-spec). **The de-escalation arm therefore requires precisely the thing the hypothesis asserts will not happen.** In the world H3 describes, H3 can only gain weight.
+
+This is a **Principle #51 blind-check failure inside an instrument written six days after #51 was codified** — the blind-check line was never written for it. Written now:
+
+> **Blind-check:** distinguishes a deepening credibility repricing from a stalled one · reads on 2s30s (bp) and 10Y breakeven (%) · **goes blind if the steepening stalls without breakevens moving — the observed state as of 2026-08-04 — because neither arm can fire and H3 freezes at 29 regardless of the world.**
+
+**PROPOSED REPAIR, REGISTERED NOT EXECUTED** (it changes a live call's instrument, so it is operator-visible rather than auto-applied): replace the de-escalation arm with the reachable **stall** condition — *2s30s flattening ≥15bp from its running high WITHOUT breakevens rising* ⇒ H3 −5. That is the state the data is actually in.
+
+**WEIGHTS UNCHANGED: H1 60 / H2 11 / H3 29 (my model).** Nothing about the *world* changed today; what changed is my knowledge that one of my instruments is one-sided. Re-weighting on that would be confusing an instrument repair for evidence.
+
+### Companion observation — a shape none of H1/H2/H3 covers
+
+Three consecutive prints in six days: **Kioxia (07-31)**, **AMD (08-04, DC rev +107% YoY, beat, −7.04%)**, **SanDisk (08-05, rev +372% YoY, beat consensus by 8%, EPS by 14.6%, guided Q1-FY27 UP 17.7% QoQ, datacenter +103% QoQ — and fell)**. The reaction function now punishes **beats**, not merely capex raises (the ADDENDUM #8 precursor, then N=1).
+
+**No H2 falsifier fired** — H2 requires an AI-*demand* break (capex cut / LTA walk-back / foundry deferral) and SanDisk delivered the opposite. **Registered as CANDIDATE H4 — "demand intact, multiple compressing" — NOT folded into H2**, because folding a multiple-compression observation into a demand hypothesis is how the two become unfalsifiable together. H4 gets its own weight and its own falsifier when the 08-06 closes are in.
