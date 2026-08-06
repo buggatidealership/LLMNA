@@ -92,7 +92,7 @@ Six clauses are RELATION-form, machine-checkable, and currently unhooked. These 
 
 `#4t` (did I file the events I never noticed), `#13` (did a codification trigger fire that I did not act on), `#18b` (was my bear case the strongest one available). All three share a shape: **they are about what did not happen.** Nothing in the output records an absence, so no postcondition can read it. Per N4 these route to redundancy, and redundancy here means a second agent working from the same inputs without my conclusion in front of it — which is the design the K3 commission already implements.
 
-Measured basis for preferring redundancy over self-audit here, unchanged from the parent artifact: **five of five self-corrections on 2026-08-05 came from an operator question or an independent subagent. Zero came from unprompted self-audit.**
+Measured basis for preferring redundancy over self-audit here: **CORRECTED 2026-08-06 by the first `Receipts:` run.** The "five of five" figure was a SUBSET statistic — the WSJ-batch corrections only — restated as a whole-day one. That is an L58 basis error inside the sentence that justifies commissioning this audit. **Computed over all 16 corrections booked on 2026-08-05: 8 self-caught (50%), 6 by verifier agents, 2 by operator question.** The self-audit claim survives in a sharper and narrower form: **all 8 self-catches came from RUNNING A TOOL. Zero came from re-reading my own prose — and 6 of the 8 externally-caught errors were sitting in my own files, findable by re-reading.** The gap is not that I cannot self-correct; it is that I cannot self-correct by INSPECTION, only by EXECUTION.
 
 ## 6. Honest limits of this artifact
 
