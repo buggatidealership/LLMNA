@@ -1,7 +1,7 @@
 # INSTRUMENT SPEC — hyperscaler capex→return, and why the obvious version cannot be built
 
 **Created:** 2026-08-06, on operator question: *"What must be true for you to close that gap? For you to run a deep analysis on hyperscaler CapEx to ROI?"*
-**Status:** SPEC — not yet run. Conditions N1–N5 below state what must be true; three of the five are blocked by **disclosure**, not by access.
+**Status:** 🟢 **N5 RUN 2026-08-06 — see `signals/cross-source-log/2026-08-06-thu-circularity-the-operator-aimed-at-microsoft-and-the-answer-is-amazon.md`. The pre-registered failure mode below FIRED ON THE FIRST RUN and produced the artifact's headline finding (48% of Amazon's backlog owed by two counterparties Amazon funded $68B into). N1 confirmed permanently blocked. N3 and N4 confirmed as real distortions with T1 magnitudes.** Original spec text preserved below unedited. Conditions N1–N5 below state what must be true; three of the five are blocked by **disclosure**, not by access.
 **Parent frame:** `signals/cross-source-log/2026-08-06-thu-legC-wsj-16-screenshot-batch...md` §6 (growth-quality repricing) · `2026-08-06-thu-pltr-...md` §10 (the 4th-order leg that makes this the live question).
 
 ---
@@ -89,3 +89,22 @@ This is not a Microsoft-specific question. The same structure is alleged across 
 ## Re-eval
 
 **2026-09-06**, or on the first hyperscaler quarter after this date, whichever is sooner. If N2 has not been run by then, this spec is a plan that did not become an instrument, and should be either executed or retired rather than carried.
+
+
+---
+
+## 2026-08-06 — RESULT OF THE FIRST RUN (appended; spec text above left unedited)
+
+| condition | predicted | found |
+|---|---|---|
+| **N1** no AI-revenue numerator | blocked permanently | 🟢 **CONFIRMED.** Microsoft has no AI revenue line item and **stopped updating** even its run-rate proxy at Q4 FY26. The circulating "~70%" divides a T1 numerator by an extrapolated denominator. |
+| **N2** capex→backlog | runnable | 🟢 **RUN.** And it produced the finding, not the ratio. |
+| **N3** capex incl. leases | real distortion | 🟢 **CONFIRMED with magnitudes.** MSFT finance-lease additions **$24.6B on top of $115.9B** cash capex (17.5%); **$329.1B MSFT + ~$347B META uncommenced leases** in no capex table. Plus: Microsoft's "$15B capex cut" is a **lease reclassification**, not a cut. |
+| **N4** useful-life normalisation | real distortion | 🟢 **CONFIRMED — and the common narrative is backwards.** Amazon **SHORTENED** server lives 6→5yrs (−$0.7B op income). MSFT and GOOGL made **no** server change. Only META extended. |
+| **N5** related-party strip-out | could void the ratio | 🟢 **RUN.** Amazon **28.6%** vendor-financed vs Microsoft **5.2%** — the operator's premise aimed at the wrong company, and Microsoft's circularity claim is **refuted outright** ($11.9B funded cumulative vs $24.1B revenue in one year). |
+
+**The pre-registered failure mode was the point.** The spec said N5 would contaminate N2 and that detecting a vendor-financed backlog would be worth more than the ratio. **It was detected at the first attempt, at 48%, from two T1 figures in a single 10-Q.**
+
+**Instrument upgrade, registered:** the primary reading of N2 is no longer `Δcapex vs Δbacklog`. It is **`share of backlog owed by counterparties the vendor capitalised`** — with *"not disclosed"* scored as an attribute rather than left blank, since today only Amazon discloses both legs.
+
+**Re-eval unchanged: 2026-09-06.** N2's full cohort run (MSFT/GOOGL/AMZN backlog vs life-normalised capex incl. leases) is still owed; what ran today was N5 plus the N3/N4 magnitudes.
