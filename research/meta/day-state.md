@@ -5,6 +5,35 @@
 ## ⏰ STANDING USER-SIGNAL (registered 2026-07-09, ~10:35 UTC)
 **When the user writes "got access to my computer" → immediately deliver the browser checklist:** (0) **THE UNLOCK:** claude.ai/code/routines → BOTH routines ("KR-JP morning wake" + "EOD synthesis") → repository selector → change Health-Calculators → `buggatidealership/LLMNA` → save. Both triggers are currently DISABLED with prompts/schedules preserved — after his fix, I re-enable via `update_trigger enabled:true` and verify the first fire (E8). (1) Environment network allowlist per `meta/network-allowlist-recommendation.md` **(⚠️ 2026-07-27: this file was never written — the recommendation exists only as this checklist line. Write it or drop the reference.)** (benefits wake sessions immediately; this session's pickup = test next container). (3) Delete stale branches (claude/w11-wakes etc.). (4) NEW 2026-07-09: PAUSE the two "loopframe" posting routines (April ARS project — morning 08:43 + evening 20:23 UTC, still firing daily) at claude.ai/code/routines — platform refused agent-side disable (created via http_api, not by an agent); ALSO rotate the Twitter/Recraft/Runway/Ideogram API keys embedded in their prompts in plaintext. Item 2 (transcript look) already DONE 2026-07-08. Until then: user is sharing news/data ad-hoc + main session runs wakes manually on request.
 
+## 2026-08-06 (THU) EOD — TWO PREDICTIONS RESOLVED. 4 hits / 1 miss / 1 declared no-call — and the leg I won, I won on a mechanism the event REFUTED.
+
+Artifact: `signals/cross-source-log/2026-08-06-thu-eod-two-predictions-resolve-and-the-lesson-is-that-i-was-right-for-a-reason-that-did-not-happen.md`.
+
+**CONDITION CHECK — first agreement in three sessions.** Literal `--since="16:00"` = 0; relative `--since="6 hours ago"` = 0; all commits today = **13**, all landing 00:33Z-13:54Z. **The evening WAS quiet, so both windows are correct.** The 08-04/08-05 defect (N=2) is now better characterised: it **under-reads a WORKED evening but reads a QUIET one correctly** — asymmetric, not general. Amendment still owed.
+
+🔴 **BASIS TRAP CAUGHT AT THE FETCH.** First quote pull returned prices stamped **19:08Z = 15:08 ET, 52 minutes before the close.** Grading a "T+1 close" off those would have repeated the intraday-presented-as-close error the Brent verifier caught the same morning. Re-fetched independently; both names settled 16:03 ET.
+
+**SETTLED CLOSES:** SNDK **$1,242.40** (vs registered $1,350.50 baseline = **−8.00%**) · DDOG **$229.54** (vs $283.17 = **−18.94%**; session high $243.00 sits BELOW the reference — never traded up).
+
+🔴 **THE BASIS DECIDED R-2 AGAINST ME AND I GRADED IT THAT WAY.** On the registered 08-05 basis SNDK moved −8.00% ⇒ R-2 (|move|≥10%, P=0.60) **MISSES**. On the 08-04 basis it is −12.97% and would be a HIT. **Graded on what was registered.** Picking the flattering baseline post-hoc is the exact L58 error this week was about.
+
+**SNDK REGISTERED LEGS:** R-1 (0.70) **HIT** · R-2 (0.60) 🔴 **MISS** · R-3 (0.52) **HIT** · **R-4 (0.35) HIT — the non-consensus call** · R-3a **HIT**.
+**DDOG:** **R-5 (0.60) HIT decisively** at −18.94% · R-4 registered 0.50 **NO-CALL** · R-1/R-2/R-3/O-3 pending reported figures.
+
+🔴 **3-LAYER GRADE — INPUT FAILED, measurably worst-in-class.** Revenue −6.3%, EPS −14.6%, guide −12.8%, all low. Against two other frontier arms on the identical question: MAE **GPT-5.6 2.18% / Kimi K3 4.98% / me 10.48% — 4.8× worse than the best.** B45 fired on every line in a week when it was named, banner-flagged, injected into every prompt, and explicitly anticipated one file over. **COMPUTATION failed on magnitude in the OPPOSITE direction.** **REASONING: right conclusion, refuted chain** — R-4's justification was "consensus sits above the guide so an in-range print is a miss"; the print cleared consensus by 8-15% and guided +17.7% QoQ and fell anyway.
+
+🔴 **CANDIDATE L59 REGISTERED:** *a correct direction call from a REFUTED mechanism scores a MISS on the reasoning layer regardless of outcome, and must NOT update the P on the mechanism that produced it.* Without it, the natural update from "R-4 hit at 0.35" strengthens a chain the outcome disproved — and strengthens it MORE than an ordinary hit because the odds were long. **That is how a lucky long-shot becomes a house rule.** Blind-check registered; mitigation: no direction leg ships without a stated mechanism.
+
+🟢 **A CANDIDATE BIAS BORN AND KILLED IN ONE SESSION.** Proposed "under-model the company, over-model the drama" — tested against DDOG R-5 and **REFUTED at N=2**: same P (0.60), same threshold (10%), same week, **opposite errors** (SNDK over-called at −8.00%, DDOG under-called at −18.94%). **My magnitude calls are NOISY, not biased.** Different defect, different fix — a directional bias gets a correction factor, noise gets a wider band. Merging them would have applied a correction to a noisy quantity and made calibration worse. **B45 survives as directional and consistent; magnitude is separated out and needs N≥8 before it is readable (realised 1/2 vs a stated 0.60).**
+
+🟢 **THE DECLARED NO-CALL WAS RIGHT AND IT COST ME.** DDOG R-4 registered at 0.50 with "I have no skill on this leg"; the stock fell 18.94%. Declaring no-edge forfeited a leg I would have won by flipping direction a third time in 24h on no new information. **A no-call that would have won is the strongest evidence the rule is real rather than decorative.**
+
+🟡 **DISPERSION INSIDE THE COMPLEX (15:08 ET intraday, stamped, directional only):** WDC **−11.82%** is the second memory/storage name down hard — but **AMD +2.75%, MU +0.38%, NVDA +0.28%: compute did NOT follow memory.** First same-session evidence bearing on the morning's growth-quality frame — price-driven growth sold, volume-driven growth not. **N=1 session, registered as a test not a conclusion.**
+
+**OWED:** DDOG reported figures + the OPEN (for the gap-vs-fade decomposition the blind-check requires) · discovery leg **DEFERRED not skipped** (Rule #14 auditable) · **ETF re-spec-or-retire now OVERDUE** · quota check #4 (4d) · **bare-Opus-5 control** (cheapest high-value item on the docket) · two Routine-prompt amendments still needing the operator's UI.
+
+**NO POSITION ACTION. NO RE-WEIGHT.** H1 60 / H2 11 / H3 29. 🟡
+
 ## 2026-08-06 (THU) KR-OPEN WAKE — the re-spec'd H3 trigger got its first reading ever and it is a RATCHET; SNDK R-4 hits; vendor defect N=2 as predicted
 
 Artifact: `signals/cross-source-log/2026-08-06-thu-kr-open-wake-h3-instrument-measured-first-time-and-it-is-a-ratchet.md`. Clean sync (0 behind / 9 ahead), no prior operator wake — full time-sensitive leg at 09:24-09:45 KST. **EODHD 8/20 consumed.**

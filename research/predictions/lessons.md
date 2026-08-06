@@ -1394,3 +1394,25 @@ Labelling something unresolved feels like rigour. It is not: **it preserves the 
 **Blind-check (#51):** distinguishes *"these two numbers are comparable"* from *"these two numbers are both floats"* · reads on whether every row declares reference point, period length and category · **goes blind if** the basis is genuinely unknowable (an undated vendor snapshot — the exact hole that left the DDOG consensus series unfalsifiable), in which case the row is marked UNCOMPARABLE and excluded, never silently averaged in.
 
 **Validation criterion (re-eval 2026-09-05):** ≥2 further basis-mismatch errors in 30 days after L58 ships ⇒ the constructive-template approach failed and the problem is not fixable at the discipline layer — which would itself be the most important thing the harness has learned about its own limits.
+
+---
+
+## L59 — A CORRECT CALL FROM A REFUTED MECHANISM IS A REASONING MISS [CANDIDATE, N=1, codified 2026-08-06]
+
+**Origin:** SNDK Q4 FY26, graded 2026-08-06. `signals/cross-source-log/2026-08-06-thu-eod-two-predictions-resolve-and-the-lesson-is-that-i-was-right-for-a-reason-that-did-not-happen.md`
+
+**Predicted:** R-4 — beat on both lines followed by a NEGATIVE close, the Kioxia shape. **P=0.35, the non-consensus leg.**
+**Actual:** revenue $8.965B vs $8.30B consensus, NG EPS $39.25 vs $34.24, FQ1-27 guide +17.7% QoQ — **and the stock closed −8.00%. The call HIT.**
+
+**Layer that failed: REASONING.** R-4's registered justification was *"consensus sits above the guide, so an in-range print is a miss."* **The print was not in-range.** It cleared consensus by 8–15% on every line and raised the guide sharply. **The premise of the chain was false in the resolved event. The conclusion landed anyway.**
+
+**Generalizable lesson:** a correct direction call produced by a **refuted mechanism** is scored a **MISS on the reasoning layer regardless of outcome**, and **must not update the P on the mechanism that produced it.**
+
+**Calibration adjustment:** the natural update from *"R-4 hit at 0.35"* is to raise confidence in consensus-above-guide reasoning — reasoning **falsified by the very event it predicted**. Without this rule the harness reinforces a disproved chain, and reinforces it **more strongly than an ordinary hit** because the odds were long. **That is the mechanism by which a lucky long-shot becomes a house rule.** Outcome and mechanism are graded separately from here.
+
+**Blind-check:** distinguishes *"the mechanism worked"* from *"the conclusion happened to land"* · reads on whether the registered causal chain's **own premises** were true in the resolved event · **goes blind if** a prediction is registered without an explicit mechanism, because there is then nothing to falsify separately from the outcome.
+**Mitigation, binding from today: no direction leg is registered without a stated mechanism.**
+
+**Promotion condition:** N=2 — a second graded instance of outcome-right/mechanism-wrong. **Kill condition:** if 30 days of grading produce no case where mechanism and outcome diverge, the distinction is decorative and L59 retires.
+
+**Companion finding, same session — a candidate bias born and killed in one grade.** Proposed *"under-model the company, over-model the drama."* **Refuted at N=2 immediately:** SNDK R-2 (|move|≥10%, P=0.60) over-called at −8.00%; DDOG R-5 (same claim, same P, same week) under-called at −18.94%. **Opposite errors ⇒ magnitude calls are NOISY, not biased.** A directional bias earns a correction factor; noise earns a wider band. **Merging them would have applied a correction factor to a noisy quantity and degraded calibration.** B45 survives as directional and consistent; magnitude is now tracked separately and needs **N≥8** before it is readable (realised **1/2** against a stated 0.60).
