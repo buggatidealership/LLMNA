@@ -1,7 +1,7 @@
 # CROSS-MODEL BENCHMARK — a standing experiment, registered because the N=1 version is a trap
 
 **Created:** 2026-08-06, on operator-supplied data point.
-**Status:** PROTOCOL REGISTERED · N=1 observation logged · **the observation is NOT yet evidence and is explicitly not being treated as such.**
+**Status:** PROTOCOL REGISTERED · N=1 SCORED IN FULL (operator supplied both other arms' tables, 2026-08-06) · **the observation is NOT evidence of harness superiority, and the full scoring shows the opposite of the framing it arrived with.**
 
 ---
 
@@ -64,3 +64,52 @@ For every prediction registered in `predictions/`:
 **No re-weight. No position action. No claim of superiority anywhere in the corpus.** The honest one-line summary, and the only one supported:
 
 > **On one direction call, out of one comparison, my answer differed from two other frontier models and matched the outcome so far — for a mechanism I have already graded as wrong. The control arm that would make this interpretable has not been run.**
+
+
+---
+
+## 2026-08-06 — FULL SCORING, once the operator supplied both other arms' tables
+
+The initial framing was *"you were the only one who predicted a beat but said the stock would drop."* True. **And incomplete in the way that matters.** Scoring every line rather than the one I won:
+
+| arm | revenue est / error | NG EPS est / error | NG GM est / error | FQ1-27 guide est / error | **numbers rank** | direction |
+|---|---|---|---|---|---|---|
+| **GPT-5.6** (bare) | $9.18B / **+2.4%** | $38.48 / **−2.0%** | 82.2% / −2.4pp | $12.0B mid / **+13.7%** | **1st** | UP ❌ |
+| **Kimi K3** (bare) | ~$8.70B / **−3.0%** | ~$36.50 / **−7.0%** | ~82.2% / −2.3pp | qualitative only | **2nd** | UP ❌ |
+| **Opus 5 + this harness** | $8.40B / **−6.3%** | $33.50 / **−14.6%** | not registered | $9.20B / **−12.8%** | 🔴 **3rd** | DOWN ✅ |
+
+**Actual:** revenue **$8.965B** · NG EPS **$39.25** · NG GM **84.6%** · FQ1-27 guide **$10.3–10.8B**.
+
+**Mean absolute error on the two scorable numeric lines: GPT-5.6 2.18% · Kimi K3 4.98% · me 10.48%.**
+
+> 🔴 **I was the LEAST accurate of the three, by 4.8× against the best. On the fundamentals, the harness did not help — it hurt.**
+
+### The decoupling is the actual finding
+
+**The arm with the best numbers had the worst direction call. The arm with the worst numbers had the only correct one.** In this sample, fundamentals accuracy and reaction accuracy are **anti-correlated**.
+
+That is **not** a point in the harness's favour. It is evidence that **modelling the company and pricing the reaction are different skills**, and that my direction call **did not come from understanding the business better** — because on the business I was demonstrably worst. Whatever produced R-4 (the Kioxia/AMD graded memory, per the protocol's H-A) operated **independently of, and despite, a worse fundamental model.**
+
+**This strengthens the case for running the bare-Opus-5 control, not the case for the harness.**
+
+### 🔴 B45 fired on me exactly as documented, on the line I was not watching
+
+I was **low on revenue (−6.3%), low on EPS (−14.6%), and low on the guide (−12.8%)** — three for three, all in the same direction. That is **B45**, the regime-magnitude conservatism bias, which is codified, banner-flagged in `research/CLAUDE.md`, and injected into every single prompt as priming item 8.
+
+And in the DDOG registration **the same week** I wrote: *"If this call fails, the most likely reason is B45 — under-calling upside in this regime."* **It did not fail on DDOG. It failed here, on the call where I was watching a different leg.** The bias was named, primed, and expected — and it still landed, on all three lines, because attention was on the direction call.
+
+**This is the cleanest B45 specimen the corpus has: not a missed codification, but a codification that was present, primed, and correctly anticipated in a neighbouring file, and still did not bind.** It belongs in `meta/biases-watchlist.md` as evidence that priming an item does not enforce it — the exact ADVISORY-vs-ENFORCED distinction the 2026-08-05 enforcement ledger was built to make legible. **B45 is an ADVISORY item. It behaved like one.**
+
+### 🔴 And GPT-5.6 was scoring against a different bar
+
+| arm | its consensus (rev) | its consensus (EPS) | beat it would have seen |
+|---|---|---|---|
+| GPT-5.6 | **$8.71B** | **$35.45** | **+2.9% rev** / +10.7% EPS |
+| Kimi K3 | ~$8.35B | ~$34.40 | +7.4% rev / +14.1% EPS |
+| **verified (T2, multi-source)** | **$8.30B** | **$34.24** | **+8.0% rev** / +14.6% EPS |
+
+**GPT-5.6 used a revenue bar 4.9% higher and an EPS bar 3.5% higher than the other two arms and than the figure verified today.** It therefore saw a **+2.9%** beat where the real beat was **+8.0%** — **it under-read the beat by more than half, because its denominator was wrong, not its model.**
+
+**That is an L58 basis error sitting in another lab's input layer**, and it is a plausible partial explanation for its direction call: a company that beats by 3% against an already-high bar is a much weaker "up" case than one that beats by 8%. **A bare session has no instrument that would catch this. That — not reaction-pricing — is where a harness plausibly earns its keep, and it is a testable claim rather than a flattering one.**
+
+**Revised protocol requirement:** every arm must log **the consensus figure it used**, not just its estimate. Two arms that disagree on the answer while silently disagreeing on the question are not comparable, and without this the whole benchmark measures the wrong thing.
