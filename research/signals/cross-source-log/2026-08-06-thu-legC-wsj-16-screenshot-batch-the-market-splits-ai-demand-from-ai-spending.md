@@ -2,7 +2,7 @@
 
 **Workflow:** GOOD-MORNING PROTOCOL → Leg C (WSJ screenshot ingest, T2 headline layer) → Critical Rule #16 verification (4 parallel Opus subagents).
 **Input:** operator shared 16 WSJ app screenshots, captured 2026-08-06 09:58–10:00 local (device clock visible in each frame), spanning Top Stories / Markets / Business / Tech.
-**Status:** **PARTIAL — 2 of 4 verifiers returned at time of writing.** Sections marked ⏳ await the remaining two (SpaceX AI-spend selloff · Siemens data-centre raise + Warsh/Fed credibility).
+**Status:** **COMPLETE — all 4 verifiers returned.** 🔴 **THE FILENAME AND TITLE RECORD A HYPOTHESIS THAT THE VERIFIERS REFUTED.** Both are preserved deliberately, unrenamed, so the refutation is legible in the file listing rather than tidied away. **Read §6 first — it overturns §3.**
 **Clock at ingest:** 2026-08-06 08:07Z = **04:07 ET**. This matters — see §1.
 
 ---
@@ -192,3 +192,85 @@ I treated the "beat-and-fall" pattern as newly surfaced on 2026-08-06. **It was 
 ---
 
 **NO POSITION ACTION. NO RE-WEIGHT. Grade deferred.** 🟡
+
+## §6 — 🔴 REFUTATION: THE SPINE I COMMITTED IS WRONG ON BOTH LEGS
+
+Two verifiers returned after §3 was written and committed. **They refute it.** §3 is left standing above, unedited, because a hypothesis that was published and then killed is worth more as a record than as a deletion.
+
+### The claim, and what killed it
+
+> **CLAIMED (§3):** *"The market has split AI DEMAND from AI SPENDING. Suppliers get paid; spenders get charged."*
+
+| name | date | move | capex posture | what actually explains it |
+|---|---|---|---|---|
+| Alphabet | 07-23 | **−7.00%** | guide **RAISED** $180–190B → **$195–205B** | **FCF turned NEGATIVE — first time since the 2004 IPO** |
+| Meta | 07-29 | **−7.00%** | floor **RAISED** $125–145B → **$135–145B** | **FCF $8.5B → $784M (−90.8%, computed)**; EPS missed ~13.8% |
+| SpaceX | 08-05 | **−13.61%** | Q2 capex **ACTUAL $18.369B** — *no guide was issued* | op cash flow **$3.5B vs $28.5B H1 capex** ⇒ **~88% funded off balance sheet/IPO cash** |
+| AMD | 08-05 | **−6.50%** | capex **trivial** — $808M vs $282M a year ago | sold for a **LIGHT Q3 revenue guide**, the *opposite* complaint |
+| **Arista** | 08-03 | **+11.5% AH** | — | FY26 revenue guide **RAISED** to $12.6B, third raise this year ⇒ **ROSE** |
+| **Siemens** | 08-06 | **−2.78%** | — | SI guide **RAISED** on data-centre demand — **and the stock FELL** |
+
+**LEG 1 — "suppliers get paid" is REFUTED.** My §3 table recorded Siemens as *"rewarded for selling into AI."* **Siemens fell 2.78%** (€285.90 → ~€278.00, Xetra). I asserted the direction of a price move I had not checked, in a table built to demonstrate a pattern. That is not a data error; it is **motivated construction** — the row existed because the hypothesis needed it.
+
+**LEG 2 — "spenders get charged" is REFUTED.** AMD fell with **trivial** capex and was sold for insufficient revenue guidance. Arista **rose 11.5%** in the same week on a raise. Microsoft and Amazon **rose** in the very week Alphabet and Meta fell.
+
+### What survives, and it is better than what I had
+
+> **CORRECTED:** the market sells capex increases that arrive with **deteriorating free cash flow and no visible near-term return**, and rewards capex that arrives with **accelerating revenue guidance**. The discriminator is not *spender vs supplier*. It is **funded-by-returns vs funded-by-balance-sheet.**
+
+All three names that were sold share one computable feature — a collapsing self-funding ratio — and it is **not "spending."** Hyperscaler aggregate 2026 AI capex is now guided to **$600–650B vs $381B in 2025 (+~67%)** and the market is not selling that in aggregate; it is selling the subset where the cash-conversion broke.
+
+**Consequence for candidate H4 (ADDENDUM #15):** H4 must be re-specified. "Demand intact, multiple compressing" and "suppliers get paid" are both too crude. The testable form is **cash-conversion-conditioned**: the market re-rates AI capex by whether it is self-funding. That is a ratio I can compute from filings, which makes it a **RELATION check** rather than a narrative — the class the 08-05 N1 audit found the harness has almost none of.
+
+### 🔴 THE THIRD INSTANCE OF THE SAME BASIS TRAP IN THREE DAYS
+
+| date | name | headline move | measured off | true net | overstatement |
+|---|---|---|---|---|---|
+| 2026-08-05 | AMD | −8.80% | a close that had risen **+7.00%** | **−2.41%** | **3.65×** |
+| 2026-08-06 | SNDK | −5.40% | a session that closed **30 min before the print** | reaction was **−4.65% AH** | wrong instrument |
+| 2026-08-06 | **SPCX** | **−13.61%** | a close that had risen **+9.43%** into the print | **−5.47%** (Aug-3 → Aug-5) | **2.49×** |
+
+Every "SpaceX craters 13.6%" headline is arithmetically true and economically half the story. **I would have written it.** The verifier caught it, as it caught the SanDisk one. **Three instances, three days, and I self-caught none of them.**
+
+Headline percentages for SPCX ranged 7% → 13.6% across outlets — **not disagreement, different cut times**: −7.3% is an 11:38am ET snapshot, −8.56% is after-hours, −10.34% is the open, **−13.61% is the only regular-session close figure.**
+
+### Four more framing errors netted before cascade
+
+1. **"AI spending PLANS" is mis-framed.** The $18.369B is an **ACTUAL for a completed quarter**, disclosed in the 8-K. **The 8-K contains no forward capex guidance at all.** The only forward statement is a *verbal CFO remark on the call* — "the next two quarters are very similar to the current quarter" — implying ~$65B FY26, a number **SpaceX never printed**.
+2. **"A capex RAISE" is false.** This was SpaceX's **first-ever public quarter**. There was no prior guidance to raise. Contrast Alphabet and Meta, which were genuine raises.
+3. **The entity is not what the name implies.** SPCX is the **post-merger SpaceX + xAI** entity (xAI absorbed 2026-02-02, all-stock, $1.25T combined). "SpaceX AI capex" is **xAI's neocloud buildout consolidated onto SpaceX's balance sheet** — not a rocket company diversifying. **This is a B66 entity-type-collapse specimen.**
+4. **The "$123B lockup on Aug 6" figure circulating is ~6× overstated.** 911.5M shares become *eligible* on 08-06 but only the **first 20% (~182.3M)** frees up, and the $123B prices all 911.5M at the **stale $135 IPO price**. At the 08-05 close the actual Aug-6 tranche is **~$19.7B** (computed). **Blacklist "$123B unlock."**
+
+### Siemens: the headline's causality is the journalist's, not the company's
+
+| | Company (T1 release, 2026-08-06) | Headline |
+|---|---|---|
+| SI FY26 revenue guide | **8–10% → 10–11%** | ✅ raise is real |
+| SI FY26 margin guide | **18–19% → 18.5–19.5%** | ✅ real |
+| SI Q3 orders | **€8.0bn, +42% comparable YoY**, record | ✅ real |
+| Data-centre figure | **~€6bn — but that is NINE-MONTH ORDERS**, not Q3, not revenue | ⚠️ period-shifted if quoted as Q3 |
+| **Profit attribution** | *"higher revenue, improved capacity utilization and ongoing productivity measures"* — **data centres not named** | 🔴 *"Data Center Demand Boosts **Profit**"* is **journalist causal framing** |
+| Group revenue guide | **NOT raised** — reaffirmed 6–8% | omitted |
+| Digital Industries | **NOT raised** — the reason the stock fell | omitted |
+| CEO/CFO quotes | **neither mentions data centres at all** | — |
+
+**Stale-recycle traps flagged:** "€1.9bn data-centre orders" and "SI orders €7.5bn" are **Q2 FY26 (2026-05-13)**. *"Data center demand has materially exceeded our expectations"* is a **Q1 FY26 (Feb 2026)** CFO line still circulating as current. And *"Siemens boosts outlook on AI data-centre demand, **shares jump**"* is the **Q1** story — pairing that headline with this print inverts the price reaction.
+
+**Read-across REFUTED as sourced:** the Bernstein quote circulating as read-across (*"a positive read-across for other competitors"*) is dated **2026-04-22 and is about ABB's Q1**. **Do not cascade it to ETN / VRT / GEV / Legrand off this print.** No 2026-08-06 read-across note naming those peers could be established.
+
+**TC-13 cascade (grid-hardware, ACTIVE):** Siemens is a clean **N+1 demand-side instance** at the switchgear/electrification rung — **but it must be logged with the −2.78% price reaction attached**, exactly as the existing GEV −10% instance already is. Order-book evidence accumulated uncoupled from equity response is how that cluster mis-grades.
+
+### Warsh: the story cannot have moved anything, and its content is DE-escalating
+
+- **Warsh confirmed 2026-05-13, sworn in 2026-05-22** (T1, federalreserve.gov). **~2.5 months in office.** Anything framing him as long-tenured is wrong.
+- 🔴 **The WSJ story published ~22:51 ET on 2026-08-05 — AFTER the US cash close.** **No 08-05 market move can be attributed to it.** The 08-05 drivers were **ADP private payrolls +44k vs ~70k expected** (weakest since January) and Hormuz-deal oil weakness.
+- **The story's most market-relevant line is de-escalating:** *"the president has not raised the topic of interest rates with Warsh since his confirmation."*
+- **Novelty is PARTIAL:** Warsh publicly said on **2026-07-15** that he meets "often" with the administration. The *fact* of frequent contact was already public three weeks earlier; what is new is the cadence detail and the rates-not-discussed claim. **Entirely anonymous sourcing; every other outlet is syndicating WSJ, not corroborating it.**
+- 🔴 **The credibility quotes are STALE-RECYCLE for this purpose.** All substantive named commentary tying Fed credibility to the long end (BofA's *"inflation credibility shock"*; Emons's *"policy strategy lacks credibility"*; ING's *"loss-of-confidence trade"*) clusters around the **2026-07-29 FOMC** — six days earlier, a different event, with an intervening FOMC. **No named market participant commented on the Trump-calls story.** Attaching those quotes to it would be a manufactured link.
+- **And the mechanism is not clean either way:** 30Y breakevens surged *and* 30Y TIPS real yields hit **~2.98%, highest since 2008**. **Both channels moved.** Asserting "this is term premium" or "this is inflation expectations" over-claims. My 08-06 morning note called Warsh *"directly the re-specced H3 mechanism"* — **that was premature**; the evidence does not isolate the channel.
+
+### Net effect on the day's conclusions
+
+**NO RE-WEIGHT. H1 60 / H2 11 / H3 29 (my model) stand.** Nothing here is a demand falsifier; the corrected discriminator is a *financing/cash-conversion* read, which is the AI-capex-financing dependency ADDENDUM #14 flagged as needing its own test and still has not got one.
+
+**Three of my own claims died today, all caught externally:** the DDOG "printed" tense error, the "suppliers get paid" leg (Siemens fell), and the SpaceX headline percentage I was about to inherit. **Zero were self-caught.** That is the fourth consecutive day the correction ledger has read the same way, and it is the strongest argument yet for routing conclusions through redundancy rather than through more inspection.
