@@ -21,6 +21,16 @@
 
 ## Open
 
+- [ ] **P1 / harness / 2026-08-07** [INFRA, CAL] — **PRIOR-READ GREP CHECK (L60 enforcement) — mechanize it before it decays into an intention**
+  - Origin: 2026-08-07 KR-OPEN WAKE §5.3. I derived the correct cause of the 08-06 KR crash (SanDisk read-through) from our own tape on 08-06, then silently replaced it 24h later with an unsourced Korean-press supply-delay story that a verifier refuted on every leg. **Displacement left no trace — nothing contradicted, one story just took the slot.**
+  - Scope: before an external causal attribution enters an artifact, grep the corpus for our own prior read of the same event and state one of three verdicts explicitly — *none exists* / *agrees* / *CONFLICTS and here is why theirs wins*. Currently a discipline; the failure mode it addresses is exactly the class that disciplines lose to. Hook candidate — the check is cheap and mechanical.
+  - ⚠️ **Note the precedent this item exists against:** the guard against this bias was written in the same section where the bias was committed. A restated intention is not a countermeasure.
+  - Linked: `predictions/lessons.md` L60 · `signals/cross-source-log/2026-08-07-fri-kr-open-wake-the-wake-measures-the-open-and-i-have-been-narrating-it-as-the-tape.md`
+- [ ] **P2 / harness / 2026-08-07** [INFRA] — **`session-prime.md` REAL CURATION PASS — 12 chars of headroom left**
+  - Origin: cascading L60 on 2026-08-07 required four separate prune rounds (rotate L56 out, compress the 08-04 cap-incident block, tighten L53/L57/L58) to land at **29,988 of 30,000 chars**. The rolling-5 rule is no longer sufficient — the file is structurally at its ceiling.
+  - Scope: the next lesson CANNOT be cascaded without this. Decide deliberately between (a) a genuine content pass on §9 (4,062 ch) / §0 (2,810 ch) / §4 (3,496 ch), or (b) raising `MAX_INJECT_CHARS` with an explicit token-cost justification. **Do not resolve it ad-hoc mid-cascade again** — that is how the 08-04 silent-truncation incident happened.
+  - ⚠️ Measure in **CHARACTERS**, not bytes — `wc -c` overstates by ~370 on this file (Korean text, arrows, emoji) and reads OVER when the file is under.
+  - Linked: `meta/session-prime.md` · `meta/hooks/session-prime-hook.py:68`
 - [ ] **P1 / research / 2026-08-05** [DUE, BOT, CAL] — BOTTLENECK-FORECAST is 30 DAYS OVERDUE on a monthly cadence, and nothing surfaced it
   - Origin: caught 2026-08-05 while measuring whether Critical Rule #5 was buildable as a RELATION check. `sector/bottlenecks.md` carries `last_review: 2026-07-06`; its most recent commit is `2026-08-01`. The relation `last_review == date of the commit that touched it` fails, and has been failing silently for a month.
   - **The finding under the finding:** the session-start briefing reads `bottlenecks.md` every morning and never once flagged it. A ten-line relation check found in one run what 30 days of reading the file did not — see `meta/redteam/2026-08-05-N1-postconditions-presence-vs-relation.md` §8.

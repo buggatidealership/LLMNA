@@ -1416,3 +1416,29 @@ Labelling something unresolved feels like rigour. It is not: **it preserves the 
 **Promotion condition:** N=2 — a second graded instance of outcome-right/mechanism-wrong. **Kill condition:** if 30 days of grading produce no case where mechanism and outcome diverge, the distinction is decorative and L59 retires.
 
 **Companion finding, same session — a candidate bias born and killed in one grade.** Proposed *"under-model the company, over-model the drama."* **Refuted at N=2 immediately:** SNDK R-2 (|move|≥10%, P=0.60) over-called at −8.00%; DDOG R-5 (same claim, same P, same week) under-called at −18.94%. **Opposite errors ⇒ magnitude calls are NOISY, not biased.** A directional bias earns a correction factor; noise earns a wider band. **Merging them would have applied a correction factor to a noisy quantity and degraded calibration.** B45 survives as directional and consistent; magnitude is now tracked separately and needs **N≥8** before it is readable (realised **1/2** against a stated 0.60).
+
+---
+
+## L60 — WHEN AN EXTERNAL ATTRIBUTION ARRIVES, CHECK WHETHER THE CORPUS ALREADY DERIVED A BETTER ONE [CANDIDATE, N=1, codified 2026-08-07]
+
+**Origin:** KR-OPEN WAKE 2026-08-07. `signals/cross-source-log/2026-08-07-fri-kr-open-wake-the-wake-measures-the-open-and-i-have-been-narrating-it-as-the-tape.md` §5.3.
+
+**What happened.** On 2026-08-06 at 09:07 KST, from our own tape and with no external prompting, I wrote that SK Hynix's decline was *"a −3.2pp relative move in the single most SNDK-correlated name on the KR board, hours after SanDisk beat every line and fell — the read-through is the obvious candidate cause."* **That was correct.** Twenty-four hours later I opened the wake with a Korean-press attribution — a possible delay in a next-generation AI chip supply schedule — called it *"the first hard evidence bearing on the operator's fab-gated thesis,"* and **dropped my own explanation without noticing I was replacing it.** A commissioned verifier then refuted the press story on every leg: no lineage across six 08-06 Korean articles, the nearest real item a 30-day-stale report about a server *rack*, the accompanying "SOX crash" actually **−1.40% after +6.55%**, and the true driver the SanDisk/WDC guidance miss — **the thing I had already named.**
+
+**Layer that failed: REASONING.** Not input (the correct input was in the corpus, authored by me, one file away) and not computation (the arithmetic was right in both artifacts).
+
+**Generalizable lesson:** an external causal attribution does not merely have to be *verified* — it has to be **compared against whatever mechanism the corpus already holds for the same event.** A worse-sourced explanation must never silently displace a better-sourced one, and displacement is the failure mode precisely because it leaves no trace: nothing contradicts, nothing fires, one story simply occupies the slot the other held.
+
+**Why it happened, stated plainly:** the substitution ran **toward a hypothesis already live in the conversation** (the operator's fab-gated thesis) and **away from a mechanism that was merely correct.** The new story was more interesting and more confirming. Neither is evidence.
+
+**The aggravating detail, which is the real lesson.** The draft of that same §5 contained an explicit guard — *"an attractive mechanism that would confirm the operator's live thesis is exactly the one I am most likely to promote on thin evidence"* — written in the same section where I called the unsourced story hard evidence for that thesis. **Stating the guard did not prevent the error; it decorated it.** Naming a bias in the paragraph where you commit it is not a countermeasure, and this is now the second instance in three days of a hedge being mistaken for a check (cf. the 08-05 §10.5 retraction).
+
+**What actually caught it:** the mechanical rule that a T2 load-bearing claim gets a verifier before it cascades. **Process, not judgement** — consistent with the 2026-08-05 correction ledger finding that all 8 self-catches came from RUNNING something and none from re-reading prose.
+
+**Calibration adjustment / mitigation, binding from today:** before any external attribution for a market event enters an artifact, **grep the corpus for our own prior explanation of the same event** and state one of three verdicts explicitly — *no prior read exists* · *the external attribution agrees with ours* · *it CONFLICTS, and here is why the external one wins.* Silent replacement is the thing being banned. The check is cheap, mechanical, and hook-able.
+
+**Blind-check:** distinguishes *"the external source knows something we don't"* from *"the external source is more interesting than what we already worked out"* · reads on the presence and dating of a prior corpus-derived mechanism for the same event · **goes blind if** the prior read was never written down, which converts this into an argument for writing the candidate cause down at the time it is inferred, even when it is only a candidate.
+
+**Promotion condition:** N=2 — a second instance of a corpus-held mechanism being displaced by a weaker external one. **Kill condition:** if 30 days of the grep-check produce only *"no prior read exists"* or *"agrees,"* the check is not catching anything and L60 retires.
+
+**Companion, separately registered — the ADJECTIVE-WITHOUT-A-NUMBER rule.** I inherited the word *"crash"* for a **−1.40%** session and carried it into my own artifact. Third instance in four days of a magnitude-bearing adjective propagating without its magnitude (cf. SPCX, AMD), and the first arriving in a foreign language, which made it harder to see. **Binding: any inherited index-move adjective — crash, plunge, tumble, rip, spike — is unusable until a number is attached to it.** This is L58 (basis mismatch) applied to words rather than to figures.
