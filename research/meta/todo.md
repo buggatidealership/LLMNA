@@ -21,6 +21,17 @@
 
 ## Open
 
+- [ ] **P1 / harness / 2026-08-07** [INFRA, DUE] — **INDEX.md IS A MONTH STALE AND ITS OWN REFRESH CALENDAR WAS MISSED** (flagged by the fresh session, verified)
+  - Origin: fresh-session boot 2026-08-07 flagged it; verified — `research/INDEX.md` header reads **"Last refreshed: 2026-07-06"** and its tails read **L1-L27** (actual: **L60**), **B1-B65** (actual: B66), Principles 1-38, TC-1..TC-11. Its own 07-24 monthly refresh did not happen.
+  - **Why this is not cosmetic:** CLAUDE.md's retrieval-first protocol says to check INDEX.md BEFORE grepping, precisely to answer "where did we cover X?". An index 33 lessons out of date sends every retrieval to a stale answer or a dead end — and the sessions most likely to trust it are fresh ones, which have nothing else to go on.
+  - Scope: refresh tails + re-verify pointers resolve; re-arm the monthly cadence with a date that is actually checked.
+  - Linked: `research/INDEX.md` · `research/CLAUDE.md` (retrieval-first protocol)
+- [ ] **P1 / harness / 2026-08-07** [INFRA, OPT] — **BUILD THE ID-RECONCILIATION CHECK (a RELATION check, which is the class the harness lacks)**
+  - Origin: L57 was cited in `session-prime.md` + `day-state.md`, injected into every cold session, and graded against on 08-06 — while having **no entry in `lessons.md` and never having had one** (`git log -S"L57"` empty). Found by a fresh session computing the ID set; **I ran a grep over L54-L60 the same morning, saw L56/L58/L59 with no L57, and did not notice.**
+  - Scope: set-difference of L/B/P/TC IDs cited in the summary layers vs present in the canonical files, run as a script and eventually a hook. **Per the 2026-08-05 N1 audit this is a RELATION check — two things in the corpus must AGREE — which is the class with almost no coverage.**
+  - **Note the asymmetry it repairs:** `session-prime-cascade-hook` fires when a canonical ID ships WITHOUT a prime update, and is structurally blind to the reverse. The summary layer is cheaper to write than the canonical layer, so the gradient points toward exactly this failure.
+  - Status: one-off reconciliation RUN 2026-08-07 — L57 was the sole orphan; **L1-L60 now complete, zero gaps**. The recurring/automated version is what remains.
+  - Linked: `predictions/lessons.md` (L57 + ORPHAN NOTE) · `meta/hooks/session-prime-cascade-hook.py`
 - [ ] **P1 / harness / 2026-08-07** [INFRA, CAL, OPT] — **FRESH-SESSION AUDIT ON A FIXED WEEKLY SLOT — the mechanism is built and has been parked 10 days** ⏸️ **OPERATOR CALL PENDING**
   - Origin: 2026-08-07 operator question — *"I've been using the same session for months… how can we use new sessions… a fresh pair of eyes."* Computed the same turn: `meta/redteam/` holds **12 commission prompts and 10 return/adjudication artifacts**. The mechanism works and has produced some of the sharpest corrections in the corpus. **Last return ~2026-07-28.** `2026-08-05-K3-commission-postcondition-audit.md` is complete and waiting solely on transport.
   - Scope: a fixed weekly slot with a **rotating** target, fired on the calendar rather than on alarm. **Every audit to date fired because I noticed something alarming — i.e. precisely when my own judgement was already engaged, which is the worst moment to sample an independent opinion.** The ones that found the most went looking without a target.

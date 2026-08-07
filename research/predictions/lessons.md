@@ -1377,6 +1377,42 @@ Labelling something unresolved feels like rigour. It is not: **it preserves the 
 
 ---
 
+## L57 (CANDIDATE, N=1, codified 2026-08-05) — A BEAT-HISTORY BASE RATE MEASURES THE GUIDANCE GAP, NOT THE COMPANY
+
+🔴 **THIS ENTRY WAS WRITTEN 2026-08-07, TWO DAYS LATE, AFTER A FRESH SESSION FOUND IT MISSING. See the ORPHAN note at the end — the way it went missing matters more than the lesson.**
+
+**Origin:** DDOG Q2 FY26 registration, 2026-08-05. Companion to the SNDK work of the same week.
+
+**The claim.** A company's history of beating consensus is routinely used as evidence that the company outperforms. It is not. **A beat streak is a fact about how conservatively management guided — the size of the gap between what they promised and what they could already see.** The business and the guidance gap are different quantities, and only one of them is being measured.
+
+**The specimen.** SNDK printed **EPS $23.41 against a $12–14 guide — 1.80× the midpoint.** Read as a company fact, that is an extraordinary business. Read correctly, it says management guided far below what it knew. **DDOG's bar-jump the same week was the company removing its own sandbag, not the street re-rating the business.**
+
+**Layer: INPUT.** The number was real and correctly computed. It was the wrong quantity for the question being asked.
+
+**Generalizable lesson:** before using a beat streak as evidence, **check whether the gap is still open.** A streak tells you nothing forward once management stops sandbagging — and management removing the sandbag looks identical, in the beat-history series, to the business decelerating.
+
+**Calibration adjustment:** a beat-history base rate may be used to forecast *the beat*, never to forecast *the reaction*. The 2026-08-05 SNDK reaction leg used it correctly — "the quarter is not the variable" — and that framing survived the event (see the L59 amendment).
+
+**Blind-check:** distinguishes *"the business outperforms"* from *"management guides low"* · reads on the guide-to-actual gap per quarter, tracked as a series rather than as a count of beats · **goes blind if** management changes guidance philosophy in the same quarter the business inflects, because both show up as a single narrowing gap with no way to attribute it.
+
+⚠️ **WEAKENED 2026-08-06 BY ITS OWN PRE-REGISTERED TEST.** O-3 was registered deliberately against my own point estimate as a test of this lesson, and it **MISSED**. Recorded as a weakening, not explained away. **Promotion condition:** N=2 — a second case where a beat streak misleads on the reaction. **Kill condition:** a second failure of a deliberately-registered L57 test retires it.
+
+---
+
+### 🔴 ORPHAN NOTE — how a lesson came to be injected into every session while existing nowhere canonical
+
+**L57 was never in this file.** `git log -S"L57" -- predictions/lessons.md` returns **empty** — not deleted, never written. It was born directly in `meta/session-prime.md` §3 and `meta/day-state.md`, and lived there for two days.
+
+**What that means concretely:** L57 was **force-injected into the context of every cold-start session** by `session-prime-hook.py`, was **cited in a grade** on 08-06 (*"missing it WEAKENS L57 by its own pre-registered test"*), and **had no canonical text anywhere.** The summary was the only copy. Anyone following the pointer would have found nothing.
+
+**How it was found — and this is the part worth keeping.** A **fresh session**, on its first task, was asked for the highest lesson number and computed the ID set over the file rather than reading the tail. It reported *"L1–L60 present, L57 missing."* **I ran a grep across L54–L60 the same morning, saw output containing L56, L58, L59 and no L57, and did not notice.** I was looking for the highest number, and the gap was not what I was looking for.
+
+**Generalizable, and it is a second lesson hiding inside the first:** **a summary layer that is cheaper to write than the canonical layer will accumulate entries the canonical layer never receives.** `session-prime.md` is one line; a lessons.md entry is a section. The gradient points the wrong way, and nothing measured the difference — the cascade hook fires when a canonical ID ships *without* a prime update, and is **structurally blind to the reverse.**
+
+**Booked, not just noted:** the ID-set reconciliation (`session-prime.md` §3 / `day-state.md` citations vs `lessons.md` headings) is now a checkable computation, and a hook candidate — it is a set difference, which is exactly the kind of check the harness has almost none of (PRESENCE vs RELATION, per the 08-05 N1 audit; **this is a RELATION check**).
+
+---
+
 ## L58 (CANDIDATE, N=7 in a single day) — BASIS MISMATCH: two numbers are not comparable just because they are both floats
 
 **Origin:** 2026-08-05. Operator asked why errors kept recurring despite the codification layer. Computed answer: **33 hook fires that day, 8 errors, 0 overlap.** Seven of the eight were the same failure — comparing two numbers measured on different bases. Full root-cause: `meta/redteam/2026-08-05-the-enforcement-layer-checks-form-not-comparability.md`.
