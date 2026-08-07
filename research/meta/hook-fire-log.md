@@ -1901,3 +1901,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 00:43:37Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-08-07 06:35:09Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 06:38:55Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-07 08:37:44Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 08:44:18Z session-prime-hook event=resume injected=False (skipped non-startup)
