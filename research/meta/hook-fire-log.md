@@ -1915,3 +1915,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 15:42:19Z claim-receipt-hook FIRE c1=1 c2=0 c3=False
 - 2026-08-07 15:42:29Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
 - 2026-08-07 15:42:37Z claim-receipt-hook FIRE c1=1 c2=0 c3=False
+- 2026-08-07 16:26:21Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 17:25:37Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 19:31:59Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 19:53:47Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 20:19:15Z session-prime-hook event=resume injected=False (skipped non-startup)
