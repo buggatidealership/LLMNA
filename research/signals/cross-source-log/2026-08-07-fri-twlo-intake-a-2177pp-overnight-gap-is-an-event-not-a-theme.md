@@ -2,7 +2,7 @@
 
 **WORKFLOW: INGEST + TRACE.** Operator-surfaced name, 2026-08-07 evening.
 **Operator hypothesis (verbatim-adjacent):** *"Twilio is that company that does mobile phone services and numbers, and agents are picking up — Twilio is going to get most of the bulk of the agentic use for doing calls."*
-**Status:** 🔴 **TWO VERIFIERS IN FLIGHT.** Nothing here is a conclusion. This artifact exists so the price facts are on file with their basis stated, before any explanation is attached to them.
+**Status:** 🟢 **BOTH VERIFIERS RETURNED — §5 (structural) and §6 (event). BOTH pre-registered doubts CONFIRMED: L3 and L4 both break.** Nothing here is a conclusion. This artifact exists so the price facts are on file with their basis stated, before any explanation is attached to them.
 
 ---
 
@@ -164,3 +164,81 @@ BYOC/SIP is a first-class documented feature across ElevenLabs, Vapi, Retell and
 **Position implication: 🔴 NO ACTION** — no position exists, TWLO is not in the tracked universe, and **the structural leg of the operator's thesis is refuted at the mechanism level: telephony is 4–10% of the bill falling to 1–3% on BYOC, the bypass ships as the default architecture, Twilio has disclosed no AI revenue, and its own margin compression is carrier fees paid upward rather than AI mix earned.** Weights unchanged **H1 60 / H2 11 / H3 29**.
 
 ⚠️ **What this does NOT say:** it does not say the quarter was bad or the stock was wrong to gap. **A company can print an excellent quarter and still be structurally mispositioned for the theme being attributed to it** — those are different claims on different horizons, and conflating them is precisely what §2 pre-registered against.
+
+---
+
+## 6. 🔴 EVENT LEG RETURNED — L3 BREAKS ON THE MIX, AND THE REAL FINDING IS THE RE-RATING/EARNINGS SPLIT
+
+**L3 was pre-registered at ~35%** (*"the jump was CAUSED by agentic-AI adoption"*). **It breaks.**
+
+### 6.1 The event, confirmed
+
+**Q2 2026 earnings — 8-K accession `0001447669-26-000088`, filed 2026-08-06, Items 2.02/9.01; call 5:00pm ET the same evening** (T1 SEC). Stock traded **+16.82% to $225.70 after hours on 08-06**.
+
+🟢 **Independent corroboration of our own tape read:** $193.20 × 1.1682 = **$225.70 exactly.** The prior close in §1 is confirmed by a completely separate source path. **The +21.77pp gap is a scheduled after-close release — there was no mystery event, exactly as §1 argued from arithmetic alone.**
+
+**The print (T1):** revenue **$1,499.089M**, +22.03% YoY, vs ~$1.43B consensus (**+4.8%**). Non-GAAP EPS **$1.47** vs $1.32 (**+11.4%**). Organic growth **17%** against a 10–11% own-guide. FY26 guide raised **14–15% → 18–18.5%** reported, **9.5–10.5% → 13–13.5%** organic. **A genuine beat-and-raise, second consecutive raise.**
+
+### 6.2 🔴 THE MIX REFUTES THE HYPOTHESIS DIRECTLY
+
+| | contribution to the +22.03pp |
+|---|---|
+| **Messaging** (SMS / WhatsApp / RCS) | **15.6pp — 71% of all growth** |
+| Voice + software add-ons + Segment + email, combined | 6.4pp — 29% |
+
+**⇒ Voice is AT MOST 6.4pp of 22.0pp, and AI voice is a fraction of that fraction.** The growth engine was messaging volume plus a regulatory carrier-fee pass-through. **The user's causal chain is not what produced the $69M beat.**
+
+### 6.3 Attribution verdict: **(b) — qualitative colour, no number. Ever.**
+
+**The complete AI content of the T1 release** is four sentences, of which the strongest is CEO Shipchandler: *"In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both."* **A positioning sentence with zero quantification.** 🔴 **The lead CEO quote on the actual results does not mention AI at all.**
+
+🔴 **And from the CEO's own mouth, voice AI is *"pretty early innings. Very early innings."*** ⚠️ Two T3 renderings of that remark disagree on the exact formulation and the verifier refused to adjudicate without the primary transcript (403/paywalled) — **direction certain, wording not. Flagged, not averaged.**
+
+**World (c) operates too:** press headlines are harder-AI than the release (*"strong momentum in voice AI"*, *"boosted by the rapid uptake of a new voice-based AI product"*) — **no such product-level uptake figure exists in T1.**
+
+🔴 **B40: this is the THIRD CONSECUTIVE QUARTER of the same unquantified AI frame** (Q4 2025, Q1 2026, Q2 2026). **The print is fresh; the frame is recycled.**
+
+### 6.4 🟢 THE FINDING WORTH KEEPING — 76% OF THE MOVE WAS RE-RATING, NOT NUMBERS
+
+Computed like-for-like, each metric on its own vintage:
+
+| | before | after | change |
+|---|---|---|---|
+| FY26E FCF guide (midpoint, $bn) | 1.090 | 1.145 | **+5.0%** |
+| EV multiple on that guide | 26.9× | 32.0× | **+19.0%** |
+| market cap ($bn) | 29.3 | 36.62 | **+25.0%** |
+
+**Compounded: 1.190 × 1.050 = +25.0%, ties exactly to the market-cap move.**
+**⇒ 76% of the move is multiple expansion. 20% is the raised numbers.**
+
+⚠️ **BASIS CORRECTION (L58), caught in this computation.** The circulating *"25.6× → 32.0×"* framing holds FCF constant at the **new** guide, which makes the "multiple move" just the price move restated (+25.0%) — **it is not the re-rating.** On like-for-like vintages the re-rating is **+19.0%**, not +25.0%. **Two multiples quoted a sentence apart were on different denominators.** Same error family as the CMBS bid-to-cover conflation four hours earlier.
+
+**⇒ The market paid ~20 points for a story, and ~5 points for the earnings.** That is where — and *only* where — an AI narrative can live in this tape.
+
+### 6.5 THREE THINGS THE DIGESTS GOT WRONG (all T1-checkable)
+
+1. 🔴 **GAAP EPS $6.68 is an accounting artifact** — a one-time tax valuation-allowance release worth **$5.91/share**. Anyone reporting "GAAP EPS up 47×" is reporting a deferred-tax entry.
+2. 🔴 **Gross margin went the WRONG way** — revenue +22.0% but non-GAAP gross profit only +18%; GM **49.1% vs ~50.8%, −170bp**. The fingerprint of zero-margin pass-through in the mix. **Consistent with §5.4: the carrier squeeze is the dominant margin fact, not AI.**
+3. 🔴 **DBNER 116% is inflated** — roughly **5 of the 8 points** of improvement are carrier pass-through fees. Underlying expansion ~111%, up ~3pts not 8.
+
+### 6.6 🔴 THE FALSIFIABLE NEAR-TERM TEST, AND IT LANDS ON THE AI LINES
+
+The guide embeds **sharp deceleration**: organic 16% (Q1) → 17% (Q2) → **11–12% (Q3 guide)** → **~9–10% implied Q4**. The CFO's stated reason: *"we do face some more challenging comparisons in Q3 and Q4 in **voice and software add-ons**."*
+
+🔴 **The two lines management flags for tough H2 comps are precisely the two lines carrying the AI narrative.** **Registered test: Q3 2026 prints late Oct / early Nov; organic must come in at 11–12%.** If voice decelerates on schedule while the AI frame persists into a fourth quarter, the frame is decorative.
+
+### 6.7 THE 6.84pp FADE — UNVERIFIED, AND NOT MANUFACTURED
+
+**Ruled out: a weak tape.** 2026-08-07 was a strong up session (S&P 500 record close). **TWLO faded into a rising market, so the fade is idiosyncratic.** No same-day Twilio-specific item found — no offering, downgrade, or second 8-K. Candidate mechanisms (profit-taking after +31.7% intraday; the embedded deceleration becoming visible as analysts worked the model; valuation pushback at ~32× FY26E FCF) **cannot be evidenced. VERDICT: UNVERIFIED.** The verifier declined to invent a cause, which is correct.
+
+### 6.8 WHERE THE OPERATOR IS RIGHT — stated as plainly as the refutations
+
+**The hypothesis fails as a claim about EARNINGS and survives as a claim about BELIEF.** Twilio's quarter was carried by messaging; its AI revenue is undisclosed and its CEO calls voice-AI penetration early. **But the market paid ~20 points of multiple for the AI-adjacency story on a 5% numbers revision.** *"AI agents will drive telephony demand"* is demonstrably **what the market is currently willing to pay for** — it is simply **not yet what the company is being paid for.**
+
+**Those are different claims with different horizons, and conflating them is what §2 pre-registered against.** The operator identified a real re-rating mechanism and attached it to the wrong line of the P&L.
+
+### 6.9 POSITION IMPLICATION
+
+**Position implication: 🔴 NO ACTION** — **no position exists, TWLO is not in the tracked universe, and both testable legs of the hypothesis are now refuted: L3 on the growth mix (messaging 71%), L4 on the value-capture structure (§5).** Weights held **H1 60 / H2 11 / H3 29**.
+
+**Ties to macro (2026-08-07 first-principles read):** the regime is **supply-gated at memory/compute**; this is a **demand-side application** name and **touches the binding-constraint ledger in neither direction.** The one genuinely transferable finding is methodological, not sectoral: **a clean, well-measured case of ~76% of a 25% single-day move being narrative re-rating on a ~5% fundamental revision** — that belongs in the methodology corpus as a specimen, not in a thesis.
