@@ -1904,3 +1904,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 08:37:44Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 08:44:18Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 08:52:39Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 09:13:31Z session-prime-hook event=startup injected=True (30301 chars)
+- 2026-08-07 09:14:21Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))
