@@ -1930,3 +1930,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 22:43:06Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 22:45:48Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-08-07 22:45:48Z anti-fabrication-hook FIRE (n=2 '24.89%' forms=[("'24.89%'", 1, None)]; '31.73%' forms=[("'31.73%'", 1, None)] verdict:pending)
+- 2026-08-07 22:51:18Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
