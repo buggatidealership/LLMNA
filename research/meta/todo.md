@@ -21,6 +21,11 @@
 
 ## Open
 
+- [ ] **P1 / harness / 2026-08-07** [INFRA] — **TWO UNRESOLVED FILE CITATIONS (class-A gaps found by the 08-07 claim-receipt sweep)**
+  - `nvda-n1x-unbiased-money-flow-analysis.md` — cited **bare, with no hedge, inside `predictions/lessons.md`**. A canonical file citing an artifact that does not exist. Either write it, retrieve it from the 2026-05-31 transcript, or mark the citation `(never written)` like the corpus does elsewhere.
+  - `meta/network-allowlist-recommendation.md` — cited as a deliverable in the standing operator checklist; **self-flagged 2026-07-27 as never written** and still open. Write it or drop the reference.
+  - Scope: 21 of 23 unresolved references carry an explicit "(to be created)" / "(when written)" / "Phase 3" marker — **the discipline is working; these two are the exceptions and should be brought into line with it.**
+  - Linked: `meta/redteam/2026-08-07-claim-receipt-audit-what-did-i-say-i-wrote.md`
 - [ ] **P1 / harness / 2026-08-07** [INFRA, DUE] — **INDEX.md IS A MONTH STALE AND ITS OWN REFRESH CALENDAR WAS MISSED** (flagged by the fresh session, verified)
   - Origin: fresh-session boot 2026-08-07 flagged it; verified — `research/INDEX.md` header reads **"Last refreshed: 2026-07-06"** and its tails read **L1-L27** (actual: **L60**), **B1-B65** (actual: B66), Principles 1-38, TC-1..TC-11. Its own 07-24 monthly refresh did not happen.
   - **Why this is not cosmetic:** CLAUDE.md's retrieval-first protocol says to check INDEX.md BEFORE grepping, precisely to answer "where did we cover X?". An index 33 lessons out of date sends every retrieval to a stale answer or a dead end — and the sessions most likely to trust it are fresh ones, which have nothing else to go on.
