@@ -199,7 +199,16 @@ The mechanical market facts largely hold and are **not** marked down:
 
 ## 7. POSITION IMPLICATION
 
-**Position implication: NO ACTION** — no size change on any name — **the day's two real findings are an instrument-labelling defect (§2) and a flow configuration standing at 1 of the 3 readings its own pre-registered trigger requires (§4); the one finding that could move a thesis (§5) is T2, unverified, and names no company.** Weights held H1 60 / H2 11 / H3 29. Any sizing decision remains operator-gated regardless.
+**Position implication: NO ACTION** — no size change on any name.
+
+Three findings, none of them a position trigger:
+- **§2** is an instrument-labelling defect. It changes how wake readings are written, not what they say.
+- **§4** is a FRAGILE flow configuration standing at **1 of the 3** readings its own pre-registered trigger requires, and the missing two cannot be back-filled.
+- **§5** is a **refutation, not a signal.** The claim I flagged as potentially thesis-moving turned out to have no source; the corrected reading (a memory demand-guidance reset, not a supply delay) is **directionally bearish for the two Korean names** — but it arrives as a correction to my own error, not as new evidence, and one session of guidance reaction is not a thesis input. **SK Hynix's HBM4 schedule is T1-reaffirmed on-track and is explicitly NOT marked down.**
+
+**Weights held H1 60 / H2 11 / H3 29.** Any sizing decision remains operator-gated regardless.
+
+⚠️ **This section was left stale for one commit** (`bd9789b`) — it still read *"the one finding that could move a thesis is T2, unverified"* after §5 had already been rewritten to REFUTED. Corrected here rather than silently. **A summary section that outlives the analysis it summarises is the same displacement failure L60 was codified for this morning, pointed inward** — and it survived a full read-through of the file before commit.
 
 ---
 
