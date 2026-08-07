@@ -1415,6 +1415,39 @@ Labelling something unresolved feels like rigour. It is not: **it preserves the 
 
 **Promotion condition:** N=2 — a second graded instance of outcome-right/mechanism-wrong. **Kill condition:** if 30 days of grading produce no case where mechanism and outcome diverge, the distinction is decorative and L59 retires.
 
+---
+
+### 🔴 L59 AMENDMENT (2026-08-07) — THE ORIGINATING GRADE WAS WRONG. R-4 HAD SIX REGISTERED REASONS AND I GRADED ALL OF THEM ON THE ONE THAT FAILED.
+
+**Origin:** operator question, 2026-08-07 — *"what is the reasoning and logic behind you saying that even though they beat on most of the variables, the stock will still go down?"* Answering it required re-reading `predictions/2026-07-02-SNDK-Q4FY26-earnings-prediction.md` rather than recalling my own grade. **The grade did not survive the re-read.**
+
+**What R-4 was actually registered on** (all of it written 2026-08-05, ~6h BEFORE the print, none of it retro-fitted):
+
+> **The structural claim, stated in the file as the falsifiable part and explicitly flagged as higher-conviction than the direction:** *"The GUIDE decides the reaction, not the quarter."* Computed basis: SNDK had printed **EPS $23.41 against a $12–14 guide = 1.80× the midpoint**, so beating was near-certain and therefore **not information**. → **"So the quarter is not the variable."**
+
+Six supporting premises, and how each resolved:
+
+| # | registered premise | resolved |
+|---|---|---|
+| 1 | consensus sits **above the top of guidance** on both lines, so an in-range print is a technical miss | 🔴 **REFUTED** — the print cleared consensus by 8–15% |
+| 2 | stock enters after a **~30% five-session bounce**, "not washed out" | 🟢 HELD |
+| 3 | part of that bounce is the **08-03 HBF/OCP spec, exogenous to earnings** — event energy already spent | 🟢 HELD |
+| 4 | **Investor Day 8 days out** invites management to hold the FY27 framing back | 🟢 HELD |
+| 5 | **the pattern: MPWR 07-30, Kioxia 07-31, AMD 08-04** — three names, six days, all printed strong, all fell | 🟢 **HELD — SNDK became the 4th** |
+| 6 | the core claim: **the print does not set the reaction; positioning and the guide do** | 🟢 **HELD** |
+
+**The 2026-08-06 grade quoted premise 1, found it false, and scored the entire leg a REASONING MISS.** Five of six premises and the load-bearing structural claim survived the event. **The mechanism largely worked.**
+
+**What this changes in L59:** the *rule* stands and is unweakened — a correct call from a refuted mechanism is still a reasoning miss, and must still not update the P on the refuted chain. **What was wrong was its application.** L59 was applied to a leg carrying SIX mechanisms as though it carried one, because the grade re-read my own summary of the prediction instead of the prediction.
+
+**Generalizable addition to L59, binding from today:** **when a prediction leg registers multiple independent premises, the reasoning grade is per-premise, not per-leg.** Collapsing them to a single verdict destroys the information the grade exists to produce — here it converted a 5-of-6 mechanism into a total miss, and would have suppressed a P update on a chain that had just worked four times in seven days.
+
+🔴 **THE SELF-INDICTMENT, STATED SO IT CAN BE CHECKED.** Re-grading in the direction that flatters me is exactly the move L59 exists to prevent, and I am the one proposing it. **The only reason this is admissible is that all six premises were written down and timestamped ~6h before the print, in a file that records five successive revisions with none overwritten.** The operator, or anyone, can verify the amendment against the pre-print text. **If the premises had not been pre-registered individually, this amendment would be indistinguishable from motivated reasoning and should have been refused.** That is the test, and it is the argument for registering premises separately rather than as prose.
+
+**Unchanged and NOT softened by this amendment:** the INPUT layer failed badly and independently. Revenue −6.3%, EPS −14.6%, guide −12.8%, all low; MAE against two other frontier arms on the identical question was **GPT-5.6 2.18% / Kimi K3 4.98% / me 10.48% — 4.8× worse than the best.** **Right about behaviour, wrong about arithmetic** is the durable finding and this amendment does not touch it.
+
+**Cross-reference:** the four-instance pattern in premise 5 (MPWR / Kioxia / AMD / SNDK) is the same reaction-function asymmetry booked 2026-08-03 and is now the more useful object than R-4 itself — see the TRACE in the 2026-08-07 wake artifact.
+
 **Companion finding, same session — a candidate bias born and killed in one grade.** Proposed *"under-model the company, over-model the drama."* **Refuted at N=2 immediately:** SNDK R-2 (|move|≥10%, P=0.60) over-called at −8.00%; DDOG R-5 (same claim, same P, same week) under-called at −18.94%. **Opposite errors ⇒ magnitude calls are NOISY, not biased.** A directional bias earns a correction factor; noise earns a wider band. **Merging them would have applied a correction factor to a noisy quantity and degraded calibration.** B45 survives as directional and consistent; magnitude is now tracked separately and needs **N≥8** before it is readable (realised **1/2** against a stated 0.60).
 
 ---

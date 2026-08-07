@@ -1898,3 +1898,6 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 00:23:37Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 00:28:42Z session-prime-hook event=compact injected=False (skipped non-startup)
 - 2026-08-07 00:36:18Z git-guard-pretooluse BLOCK (core.hooksPath override to a non-canonical value (disables git guards))
+- 2026-08-07 00:43:37Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
+- 2026-08-07 06:35:09Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 06:38:55Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)

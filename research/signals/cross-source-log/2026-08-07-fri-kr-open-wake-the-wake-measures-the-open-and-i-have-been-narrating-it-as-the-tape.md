@@ -214,3 +214,25 @@ Three findings, none of them a position trigger:
 
 **EODHD quota:** consumed this wake — logged against the daily allowance; quota check #4 remains overdue.
 **Signal density (Critical Rule #14):** §4 FRAGILE-configuration reading is same-segment (memory-and-storage, Korea) and same-direction as the 2026-08-03 flow reading — **N=2 within 5 sessions.** Booked to the ADDENDUM #8 counter rather than opening a new TC cluster, since the existing pre-registered instrument already holds it.
+
+---
+
+## 8. TRACE (appended 2026-08-07, operator question + nth-order hook) — THE REACTION FUNCTION HAS FLIPPED, AND THAT IS THE INVESTABLE OBJECT, NOT R-4
+
+**Trigger:** four names in seven days printed strong results and fell — **MPWR 07-30 · Kioxia 07-31 · AMD 08-04 · SNDK 08-05**. Registered as premise 5 of SNDK R-4 ~6h before the print, and it held. This TRACE runs the premise forward instead of leaving it as a scoring detail.
+
+**The mechanism, stated plainly:** *the print no longer sets the reaction; positioning going in does.* A near-certain beat carries no information, so the reaction is decided by what was already in the price and by what the guide implies next.
+
+**1st order (P>80%) — observed, four instances.** In this complex, a strong print into a stretched position closes negative. This is measurement, not forecast.
+
+**2nd order (P~60%) — the tradeable consequence is that the EVENT stops being the edge and the SET-UP becomes the edge.** If the print is near-certain, then forecasting the print is forecasting a constant — which is precisely where my numbers were **4.8× worse than the best of three models** while my direction call landed. **Downstream: effort should move off estimate-precision and onto run-in condition** (five-session move, whether an exogenous catalyst already discharged, distance to a scheduled investor event). Falsifier: a name that prints strong from a *flat* run-in and still falls would break the positioning explanation and point back at the fundamentals.
+
+**3rd order (P~40%) — this is the same payer/recipient asymmetry booked 08-03, seen a second way.** Capex *recipients* (memory, compute, storage) get punished on good news into stretched positioning; capex *payers* were not punished on the same days. **Knock-on: any thesis using a recipient's earnings reaction as a read on AI demand is reading a signal the market has re-signed** — the reaction now measures crowding, not demand. That is a live risk to the H1/H2 discrimination itself, because both hypotheses are partly scored off exactly these reactions.
+
+**4th order (P~20%, speculative) — if the reaction function has flipped, the pre-registered magnitude bands are calibrated to the wrong regime.** B45 was built on a regime where upside was systematically under-modelled. A regime where good prints close negative is not the same distribution. **Casualty: my own magnitude bands** — realised **1/2** against a stated 0.60 on |move| ≥10%, and SNDK/DDOG erred in *opposite* directions in the same week, which is why magnitude is now tracked separately and needs **N≥8** before it is readable. **Registered as a test, not a conclusion.**
+
+**Names whose exposure changed:** none by tier. MPWR / AMD / SNDK / MU / WDC / SK Hynix / Samsung all sit in the 1st-order set as *evidence*, not as actions.
+
+**Position implication: NO ACTION** — the finding changes where analytical effort goes, not what is owned. **Weights held H1 60 / H2 11 / H3 29**, and 3rd order above is the specific reason that discrimination may be getting harder to read rather than easier.
+
+**Blind-check:** *distinguishes "the reaction function flipped" from "four crowded names happened to report in one week" · reads on the run-in condition of each name at print, scored separately from the print's own quality · **goes blind if** the run-in is measured over a window chosen after the reaction is known — which is the L58 basis trap, arriving at the one place it would be least visible.*
