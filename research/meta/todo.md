@@ -21,6 +21,13 @@
 
 ## Open
 
+- [ ] **P0 / harness / 2026-08-07** [INFRA, DUE] — 🔴 **A HELD POSITION HAS TWO LIVE THESIS FILES — `companies/HYNIX/` AND `companies/SKHY/`** ⏸️ **OPERATOR DECISION REQUIRED (Rule #19 MEDIUM-HIGH)**
+  - Origin: 2026-08-07 EOD discovery. The L60 prior-read check made me look up where SK Hynix knowledge lives before cascading into it. **Both files carry a Position-implication line for the SAME live position (37 ADS)** — `HYNIX/thesis.md` line 21 states `HOLD (SKHY 37 ADS)` explicitly, so this is NOT a held/exited or GDR-vs-ADS split. Both written to within one day of each other in late July.
+  - Measured: `HYNIX/thesis.md` **334 KB, 183 inbound references, INDEX.md points here**, most recent entry 2026-07-28. `SKHY/thesis.md` **89 KB, 22 inbound references**, most recent entry 2026-07-27. **`holdings.md` names the position SKHY.** ⇒ **the retrieval gradient (183:22 toward HYNIX) and the position record (SKHY) point at different files.**
+  - **Why P0:** every Rule #10 cascade on this name lands in whichever folder the session picks. Work in one is invisible from the other, and both look complete. **L53 (retrieval-drawer error) at the FOLDER level, on a live position.**
+  - Scope: pick ONE canonical folder, migrate, leave a tombstone pointer in the other, re-point `INDEX.md`. **Touches live position records and a 334 KB file ⇒ Rule #19 MEDIUM-to-HIGH ⇒ operator decides, NOT executed by the party that found it.**
+  - ⚠️ Note on the finding: my first read was "duplicate folders = defect"; I then checked whether it was a deliberate two-instrument distinction. It is not — **but the check is what established that, and the wrong read was the intuitive one.**
+  - Linked: `signals/cross-source-log/2026-08-07-fri-eod-discovery-memory-locked-through-2027-and-a-held-name-has-two-thesis-files.md` §4
 - [ ] **P1 / harness / 2026-08-07** [INFRA] — **TWO UNRESOLVED FILE CITATIONS (class-A gaps found by the 08-07 claim-receipt sweep)**
   - `nvda-n1x-unbiased-money-flow-analysis.md` — cited **bare, with no hedge, inside `predictions/lessons.md`**. A canonical file citing an artifact that does not exist. Either write it, retrieve it from the 2026-05-31 transcript, or mark the citation `(never written)` like the corpus does elsewhere.
   - `meta/network-allowlist-recommendation.md` — cited as a deliverable in the standing operator checklist; **self-flagged 2026-07-27 as never written** and still open. Write it or drop the reference.
