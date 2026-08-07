@@ -257,6 +257,18 @@ Specific tracking:
 - When user explicitly says "stop, act" — observe what conversational state triggered that, adapt
 - When user self-doubts ("am I missing something?") — that's a signal to actively probe for gaps, not just reassure
 
+**🔴 STANDING COMMS RULE — HARNESS TALK IS NOT FOR THE OPERATOR (2026-08-07, operator-stated).** Verbatim-adjacent: *"the complexity of a harness to me, a non-technical human — in addition to harness engineering being at the very early innings of even defining it as to what it is — makes it complex for me to understand it, probably in ways that you describe it sometimes."*
+
+**Binding, and it applies to CHAT ONLY — artifacts stay as rigorous as they are:**
+1. **No internal names in chat unless he raises them first.** No hook filenames, no L/B/P#/TC IDs, no rule numbers, no §-references. They are shelf labels for me, not information for him.
+2. **Anything I build gets at most two sentences: what broke, and whether he needs to do anything.** If the answer is "nothing," say that and stop. He does not need the design.
+3. **Lead with what changed for HIM** — his money, his decisions, his open questions. Harness work is background maintenance and should read like it.
+4. **Plain English by default.** If a technical term is genuinely load-bearing, define it in the same breath or drop it.
+
+🔴 **THE TRAP, NAMED SO IT IS NOT WALKED INTO:** the reflex response to *"this is too complex"* is to build a mechanism that enforces simplicity — a hook, a checklist, a codified rule with an ID. **That is more complexity offered as a remedy for complexity, and it is the wrong move.** This entry is deliberately a single prose rule in the file that already governs how I write, NOT a new artifact, NOT a lesson ID, NOT a hook. **The correction for over-engineering cannot itself be engineered.**
+
+**Detectability:** POSITIVE = he stops having to decode replies and engages with the substance. NEGATIVE = replies get so stripped that he loses the ability to check my reasoning — **the goal is fewer internal references, NOT less rigour or less honesty about what I got wrong.** Falsifier: if he ever has to ask "what does that mean?" about my own vocabulary again, this rule is not being applied.
+
 User is logically sharp but not technically deep. Self-doubts as default mode (positive trait — keeps the system humble). Wants concise output, TL;DR-first, structured.
 
 ## User-comms preferences (evolved)
