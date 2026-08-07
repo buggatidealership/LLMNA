@@ -1910,3 +1910,8 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-07 09:27:50Z session-prime-cascade-hook FIRE (new-codification-ids=L57)
 - 2026-08-07 14:57:29Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-07 15:28:22Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 15:38:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-07 15:42:06Z git-guard-pretooluse BLOCK (interpreter-level file deletion (rmtree/unlink) on a repo path)
+- 2026-08-07 15:42:19Z claim-receipt-hook FIRE c1=1 c2=0 c3=False
+- 2026-08-07 15:42:29Z git-guard-pretooluse BLOCK (truncating redirect (>) onto an enforcement/protected file)
+- 2026-08-07 15:42:37Z claim-receipt-hook FIRE c1=1 c2=0 c3=False
