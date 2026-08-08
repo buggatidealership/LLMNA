@@ -75,3 +75,110 @@ Until **2026-08-07** the harness declared *"Not in scope: … non-AI sectors"*. 
 🔴 **STILL NO TIER AND NO PROBABILITIES ON THE POSITION ITSELF.** Legs A–E are priors on his ARGUMENT, not a valuation of the stock. **A thesis requires the research to return first.**
 
 **Position implication: 🔴 NO ACTION — no view offered, research in flight.** Held on the operator's own decision. **The absence of a view is not a neutral view.**
+
+---
+
+## 🟡 ADVERSARIAL LEG (2 of 2) COMPLETE — 2026-08-08
+
+Full findings in `companies/LLY/facts.md` (cited facts) and `companies/LLY/interpretations.md` (my read). Leg 1 (operator's literal market-sizing question — US patient counts, funnel) status not confirmed in this pass; check for a separate cross-source-log entry before treating market-size numbers as covered.
+
+**Updated priors (post-research, my model — supersedes the pre-research row above for D and E only):**
+
+| # | leg | prior (pre-research) | prior (post-research) | why it moved |
+|---|---|---|---|---|
+| D | Oral works well enough that convenience decides | ~40% | **~30%** — Lilly's specific oral asset (orforglipron/Foundayo) shows a real, cross-trial efficacy gap vs Lilly's own injectable (12.4% vs 22.5% top-dose, ATTAIN-1 vs SURMOUNT-1) with NO offsetting tolerability edge (AE-discontinuation 10.3% oral vs GI-discontinuation 4.3% injectable, not a clean comparison but directionally unfavorable to "pills are gentler"). Novo's oral PEPTIDE (oral semaglutide, OASIS 4: 16.6%) reads much closer to its own injectable (STEP 1: 14.9%) — so the doubt is confirmed hardest against Lilly's own molecule, which is the one that matters for this thesis. Real-world revealed preference (~20% oral share of US branded obesity market, Q2 2026) trails stated preference (71% say they'd prefer a pill, Currax survey) by a wide margin — convenience is not yet winning in practice.
+| E | Lilly CAPTURES the oral market rather than merely opening it | ~40% | **~25%** — Novo, not Lilly, was first to an approved oral obesity GLP-1 (2025-12-22 vs Lilly 2026-04-01) and is currently AHEAD on oral uptake (week-13 scripts: oral Wegovy >105,000 vs Foundayo 19,550) — the inverse of the injectable market where Lilly leads. Patent runway is long for both (no near-term generic risk either side), so this isn't a capture-via-exclusivity story — it's a capture-via-execution story, and the early data says Novo is executing faster in the pill category specifically. A third entrant (Structure Therapeutics, Phase 3 starting Q3 2026, Phase 2 efficacy in a similar band to orforglipron) is also in the field.
+
+**Net read:** the operator's TWO pre-registered doubts both firm up as real risks on this evidence, not settled cases — D and E move DOWN, not up. The "Lilly wins oral because Lilly understands the needle-aversion" framing is not supported by the launch data available as of 2026-08-08; the more parsimonious read is "Novo got to the oral form factor first and is currently winning it," while Lilly's durable edge (Zepbound's dual-agonist efficacy) is exactly the edge that does NOT carry over to its oral molecule.
+
+🔴 **STILL NO TIER AND NO PROBABILITY ON THE STOCK ITSELF.** These are updated priors on the operator's ARGUMENT (legs D/E), not a valuation call on LLY. A stock-level thesis still requires leg 1 (market-sizing) to close and the operator's leg-1 ambiguity (item 1, "massive weakness" — bullish or bearish reading unresolved) to be clarified by him directly.
+
+**Position implication: 🔴 NO ACTION.** Held on the operator's own decision; nothing here supports adding, trimming, or exiting. The absence of a tier is not a neutral read — it is a statement that the operator's own load-bearing leg (oral captures the market because Lilly understands the preference) is the part of his thesis this pass finds *weakest*, not strongest.
+
+---
+
+# 🟢 RESEARCH RETURNED 2026-08-08 — BOTH PRE-REGISTERED DOUBTS CONFIRMED, AND ONE FINDING CUTS **FOR** THE OPERATOR THAT NEITHER OF US ARGUED
+
+Two legs fired in parallel (Rule #16): market-size/adoption, and adversarial competitive-capture. **Doubts D and E were registered at ~40% each BEFORE either ran.** Both broke against the thesis as the operator stated it. **But the strongest single finding supports him — for a reason he did not give.**
+
+## 1. LEG D — THE EFFICACY GAP IS REAL, AND LARGE
+
+| drug | route | trial | top-dose weight loss | source |
+|---|---|---|---|---|
+| **Orforglipron (Foundayo)** — Lilly | **oral** | ATTAIN-1, 72wk | **12.4%** | 🟢 T1 Lilly IR |
+| Oral semaglutide — Novo | oral | OASIS-4, 64wk | 16.6% ⚠️ | 🟢 T1/T2 |
+| **Tirzepatide (Zepbound)** — Lilly | injectable | SURMOUNT-1, 72wk | **22.5%** | 🟢 T1 Lilly IR |
+| Semaglutide (Wegovy) — Novo | injectable | STEP-1, 68wk | 14.9% | T2 |
+
+🔴 **Lilly's own pill delivers roughly HALF the weight loss of Lilly's own injection (12.4% vs 22.5%).**
+
+⚠️ **THREE BASIS WARNINGS, kept rather than smoothed (L58 discipline):**
+1. **No head-to-head RCT exists.** Every comparison above is CROSS-TRIAL — different populations, durations, protocols. ATTAIN-MAINTAIN compares orforglipron to placebo in patients already switched off injectable, **not** to continued injectable use.
+2. **The 16.6% OASIS-4 figure is ADHERENT-ONLY (completers), which inflates it** against intention-to-treat numbers. Not like-for-like with the others.
+3. 🔴 **THE TOLERABILITY COMPARISON IS NOT VALID AS USUALLY QUOTED.** Orforglipron **10.3% all-cause AE discontinuation** vs tirzepatide **4.3% GI-specific discontinuation**. **These are DIFFERENT MEASURES — all-cause versus one cause — and cannot be subtracted.** What can be said: **the oral shows no tolerability advantage in the available data**, which is enough to matter, since "gentler" is a common implicit assumption. The stronger claim ("2.4× worse") is unsupported by these figures.
+
+**⇒ Leg D confirmed: convenience is being asked to beat a large efficacy gap, not break a tie.**
+
+## 2. LEG E — NOVO GOT THERE FIRST AND IS CURRENTLY WINNING THE ORAL RACE
+
+| | oral obesity approval | week-13 scripts |
+|---|---|---|
+| **Novo — oral Wegovy** | **2025-12-22** (launched 01-05) | **~105,000** |
+| **Lilly — Foundayo** | 2026-04-01 | **~19,550** |
+
+🔴 **This is the INVERSE of the injectable market, where Lilly leads with ~60% US share.** Novo's oral had a ~3.5-month head start and >3 million prescriptions filled in ~5 months, with **>80% of new scripts going to patients new to any GLP-1** (🟢 T1 Novo). Foundayo did **$98M in its first full quarter** with **~1 in 4** new oral starts (🟢 T1 Lilly Q2 2026).
+
+**No generic or biosimilar threat inside a 6–24 month horizon**, and the 2023–24 compounding channel is largely closed since the FDA shortage-resolution wind-downs. **So the risk is competitive share, not price collapse.**
+
+**⇒ Leg E confirmed: Lilly's durable edge is dual-agonist INJECTABLE efficacy, and it does not carry into its oral molecule.**
+
+## 3. 🟢 THE FINDING THAT CUTS **FOR** THE OPERATOR — AND NEITHER OF US ARGUED IT
+
+**Orforglipron is a TRUE SMALL MOLECULE.** Ordinary organic synthesis, conventional tableting. **No sterile fill-finish, no pen/device assembly, no cold chain** — precisely the constraints that caused the 2022–24 injectable shortages.
+
+**Novo's oral is NOT.** It is the same peptide as the injection, co-formulated with an absorption enhancer because peptide oral bioavailability is ~1%. ⚠️ **The 25mg oral dose therefore requires far more API mass per patient than the 2.4mg injection — the agent's inference from published dosing, NOT a company-disclosed figure. Flagged as inferred.**
+
+🟢 **So Novo's pill solves the needle problem while being MORE peptide-intensive per patient than its own injectable. Lilly's pill sidesteps peptide manufacturing entirely.**
+
+**The operator's instinct may be right for a reason he did not state: not "Lilly understands consumers," but "Lilly picked a molecule that can actually be made at population scale."** ⚠️ Lilly still treats it as a major new build — disclosed commitments include **$6.5B**, **>$6B** (Huntsville AL), **$1.2B** (Puerto Rico) and **$3B** (China, oral solid-dose) — so it is a *different* bottleneck, not the absence of one. **No comparable Novo oral-specific capacity disclosure was found.**
+
+## 4. THE OPERATOR'S QUESTION, ANSWERED: HOW MANY, AND HOW BIG
+
+| step | number | note |
+|---|---|---|
+| US adults with obesity (BMI≥30) | **~104M** | 🟢 CDC/NHANES prevalence; count derived |
+| On ANY GLP-1 (all indications) | **~28–31M** (11–12% of adults) | 🟢 KFF + Gallup, self-report |
+| ⚠️ claims-based alternative | **~11M** | 🔴 **unresolved ~3× gap** vs surveys — not reconciled |
+| **On an ORAL GLP-1** | **~0.7–0.9M** | 🔴 **derived estimate, NOT disclosed by anyone** |
+| **Penetration of the eligible pool** | **~0.8%** | 🔴 wide bars, plausibly 0.5–1.3% |
+
+⚠️ **DENOMINATOR WARNING:** orals are **~2.7% of all GLP-1 users** but **~20% of the branded OBESITY market**. **Different denominators — do not quote them interchangeably.**
+
+🟢 **The operator's "the market is absolutely massive" leg HOLDS.** ~104M eligible against ~0.8M on orals.
+
+🔴 **But the binding constraint is COVERAGE AND AFFORDABILITY, not eligibility or awareness.** List price **$1,349/month** for oral Wegovy — **Novo did NOT discount the pill versus its own injectable.** Cash-pay entry tiers run **$149–349/month**. Medicaid covers obesity GLP-1s in **13 states**; Medicare's statutory exclusion is only partly bridged by a **$50/month** programme running **2026-07-01 → 2027-12-31**; **>90% of commercial plans require prior authorisation.**
+
+## 5. 🔴 THE MOST INTERESTING NUMBER IN THE WHOLE PASS — SAYING VERSUS DOING
+
+**71%** of adults with obesity say they would prefer a pill to a weekly injection (survey, n>1,000).
+**Orals are ~20% of the branded obesity market**, months after both launched.
+
+**That gap IS the thesis, and it is unresolved.** Candidate explanations — efficacy-aware prescribing, payer friction, launch-timing lag, or the *"a weekly injection is not a daily injection"* effect that makes the inconvenience smaller than intuition suggests. **Which dominates was NOT determined, and it is the single highest-value follow-up.**
+
+**Blind-check (#51):** *distinguishes "consumers will switch to pills" from "consumers say they would prefer pills" · reads on oral share of NEW obesity starts, tracked over time, not on stated-preference surveys · **goes blind if** payer policy changes simultaneously, because a coverage shift would move share for reasons unrelated to preference.*
+
+## 6. VERDICT ON THE THESIS AS STATED
+
+| leg | prior | outcome |
+|---|---|---|
+| A — people prefer swallowing | ~85% | 🟡 **stated yes (71%), revealed not yet** |
+| B — Lilly has a real oral product | ~90% | 🟢 **CONFIRMED** — FDA-approved for obesity, 2026-04-01 |
+| C — market is very large | ~80% | 🟢 **CONFIRMED** — ~0.8% penetrated |
+| D — pill works well enough | ~40% | 🔴 **BROKE** — ~half the injectable's weight loss |
+| E — Lilly captures it | ~40% | 🔴 **BROKE** — Novo first and currently ahead on orals |
+
+**The honest restatement: "Lilly is a strong GLP-1 franchise with a genuine manufacturing-scalability edge in orals" is well-supported. "Lilly wins the oral market because it understands needle aversion" is not supported by current data.** Those are different claims and only the first survives.
+
+⚠️ **STILL NO TIER, NO PROBABILITY, NO VALUATION.** Competitive-position research is not a valuation. **What is missing: what Lilly is worth at today's price.** Until that runs, no tier can be honest.
+
+**Position implication: 🔴 NO ACTION — no view offered, and none is implied.** The position is held on the operator's decision. **Two of five legs of his stated reasoning broke, one finding supports him on different grounds than he gave, and no valuation work exists.** Sizing is operator-gated regardless.
