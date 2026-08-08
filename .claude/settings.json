@@ -125,6 +125,15 @@
             "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/claim-receipt-hook.py"
           }
         ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/research/meta/hooks/anchor-inheritance-hook.py"
+          }
+        ]
       }
     ]
   },

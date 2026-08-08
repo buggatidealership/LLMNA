@@ -21,6 +21,16 @@
 
 ## Open
 
+- [ ] **P0 / research / 2026-08-08** [DUE, INDP] — 🔴 **ELI LILLY: HELD WITH NO THESIS. Do the work.**
+  - Origin: operator disclosed a full portfolio change 2026-08-07 — now holds **Eli Lilly, Palantir, Amazon, Nvidia**. LLY had **no folder and one mention** in the corpus, because the rulebook excluded non-AI sectors until the operator widened the scope the same evening.
+  - 🔴 **The specimen that justified the widening:** the operator raised LLY himself on **2026-07-16**; one reading ran (LLY +25.6% 3m vs XLV +6.8%), called it *"an idiosyncratic candidate"*, proposed a tripwire — and **nothing followed for three weeks.** He now owns it.
+  - Scope: (1) **ask him what the position is and why he bought it** — his reasoning is a primary input, not something to reverse-engineer; (2) dated first-principles read on the layer, from research not recall; (3) real thesis with weights, falsifiers carrying blind-checks, position-translation line.
+  - ⚠️ `companies/LLY/thesis.md` currently holds **no tier and no probabilities on purpose** — assigning either from a 3-week-old price table would be fabrication wearing a thesis's clothes.
+  - Linked: `companies/LLY/thesis.md` · `signals/cross-source-log/2026-07-16-thu-eve-healthcare-rotation-hypothesis-first-reading.md` · `portfolio/holdings.md`
+- [ ] **P1 / research / 2026-08-08** [INDP] — **Re-verify PLTR / AMZN / NVDA theses against the NEW portfolio, and check them for the same neglect**
+  - Origin: same portfolio change. Folders exist for all three, but they were maintained under a portfolio that no longer exists — several were sized/framed against holdings now sold (Murata, Sumco, SK Hynix).
+  - Scope: confirm each thesis's position line reflects the current portfolio, and check whether any carries the LLY defect in milder form — last-touched date, and whether the "held" framing is still true.
+  - Linked: `companies/PLTR/` · `companies/AMZN/` · `companies/NVDA/` · `portfolio/holdings.md`
 - [ ] **P0 / harness / 2026-08-07** [INFRA, DUE] — 🔴 **A HELD POSITION HAS TWO LIVE THESIS FILES — `companies/HYNIX/` AND `companies/SKHY/`** ⏸️ **OPERATOR DECISION REQUIRED (Rule #19 MEDIUM-HIGH)**
   - Origin: 2026-08-07 EOD discovery. The L60 prior-read check made me look up where SK Hynix knowledge lives before cascading into it. **Both files carry a Position-implication line for the SAME live position (37 ADS)** — `HYNIX/thesis.md` line 21 states `HOLD (SKHY 37 ADS)` explicitly, so this is NOT a held/exited or GDR-vs-ADS split. Both written to within one day of each other in late July.
   - Measured: `HYNIX/thesis.md` **334 KB, 183 inbound references, INDEX.md points here**, most recent entry 2026-07-28. `SKHY/thesis.md` **89 KB, 22 inbound references**, most recent entry 2026-07-27. **`holdings.md` names the position SKHY.** ⇒ **the retrieval gradient (183:22 toward HYNIX) and the position record (SKHY) point at different files.**

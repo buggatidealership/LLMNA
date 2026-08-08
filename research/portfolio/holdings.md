@@ -1,5 +1,24 @@
 # Current Holdings — CANONICAL PORTFOLIO REFERENCE
 
+🔴 **2026-08-07 — OPERATOR-STATED FULL PORTFOLIO CHANGE. THE CANONICAL STATE BELOW IS SUPERSEDED AND KNOWN STALE.**
+
+**Operator, 2026-08-07 (chat, no screenshot yet):** *"I've changed my portfolio. I essentially sold everything. And I just now have Eli Lilly, Palantir, Amazon, and Nvidia."*
+
+| | |
+|---|---|
+| **Now held (operator-stated)** | **Eli Lilly · Palantir · Amazon · Nvidia** |
+| **Now exited** | Murata (336 sh) · Sumco (626 sh) · SK Hynix ADS (37) — every position in the 2026-07-10 snapshot below |
+| Sizes / prices / dates | **NOT STATED — unknown** |
+| Screenshot confirmation | ⏸️ **PENDING** |
+
+⚠️ **Handled per the screenshot-canonical rule: this is recorded as OPERATOR-STATED, not promoted to canonical.** Prices, weights and dates are unknown and are NOT to be inferred or estimated. **But the 2026-07-10 state below is now KNOWN FALSE and must not be read as current** — leaving it unflagged would be worse than the incomplete update.
+
+🔴 **COVERAGE GAP THIS CREATES, computed 2026-08-07:** we hold thesis folders for **Palantir, Amazon and Nvidia**. **There is no folder for Eli Lilly, and only three files in the whole corpus mention it** — one of which is `signals/cross-source-log/2026-07-16-thu-eve-healthcare-rotation-hypothesis-first-reading.md`, a single pass run on the operator's own prompt on 2026-07-16 that **was never followed up.** The corpus contains exactly **one** healthcare file, total.
+
+🔴 **AND THE CAUSE IS WRITTEN INTO THE RULEBOOK, NOT ACCIDENTAL.** `research/CLAUDE.md` line 58 states: *"Not in scope: macro trades, **non-AI sectors**, single-day directionals."* **Eli Lilly is excluded by design.** The harness would never have surfaced it, never followed up on it, and will not monitor it — **the scope and the portfolio now disagree, and the portfolio is the thing that is real.**
+
+**Operator decision required — NOT taken autonomously (framework change with direct portfolio impact):** either widen the declared scope beyond AI-sector, or accept explicitly that one of four holdings sits outside what this system watches. **Recorded rather than resolved.**
+
 **Last updated / CURRENT CANONICAL STATE: 2026-07-10 EVE** (user DeGiro screenshots — SKHY buy; see the "2026-07-10 EVE snapshot" section below: MURATA 336 sh + SUMCO 626 sh + **SKHY 37 ADS @ $173.45**, cash €53,063.88, balance €93,597.97). The 07-07 PM table below is the PRIOR mark, kept for history — header re-rolled 2026-07-20 (K3-Swarm G-54: cold sessions were reading a 2-position stale book).
 
 ## 📸 2026-07-07 PM CANONICAL STATE (screenshots ×2)

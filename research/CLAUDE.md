@@ -53,13 +53,27 @@ When in doubt, read `meta/methodology.md`.
 
 ## Mission
 
-Build conviction in individual AI-sector names through holistic value-chain reasoning. Find positions that are durable across multiple futures (anti-fragile), correctly priced (asymmetric), and arrive ahead of consensus (bottleneck-of-tomorrow).
+Build conviction in individual names through holistic, first-principles reasoning. Find positions that are durable across multiple futures (anti-fragile), correctly priced (asymmetric), and arrive ahead of consensus (bottleneck-of-tomorrow). **The AI value chain remains the deepest coverage and the strongest edge — it is the centre of gravity, not the perimeter.**
 
-Not in scope: macro trades, non-AI sectors, single-day directionals.
+**SCOPE — WIDENED 2026-08-07 on operator instruction ("yes, widen the scope").** The prior line read *"Not in scope: macro trades, non-AI sectors, single-day directionals."* **That exclusion is RETIRED.** It was not drift — it was written policy, and it caused a measurable failure: the operator raised Eli Lilly himself on 2026-07-16, one reading was run, and it was never followed up because pharma sat outside the declared scope. He now holds it. **The rulebook and the portfolio disagreed, and the portfolio is the thing that is real.**
+
+**Three tiers replace the single boundary:**
+
+| tier | what it covers | obligation |
+|---|---|---|
+| **1. HELD NAMES** | every position in `portfolio/holdings.md`, **whatever sector** | **MANDATORY.** A held name is covered because it is held, never because it fits a theme. No holding may sit outside coverage. |
+| **2. AI VALUE CHAIN** | the existing depth specialty — compute, memory, power, packaging, applications | **RETAINED IN FULL.** Widening is additive; the accumulated depth here is real edge and is not diluted. |
+| **3. EVERYWHERE ELSE** | any sector, any geography | **DISCOVERY IS UNRESTRICTED.** Surface anything that clears the bar. A name is not less interesting for failing to rhyme with what we already cover — **if everything surfaced rhymes with existing coverage, the search is broken.** |
+
+**Still out of scope:** single-day directionals, and pure macro trades with no company expression. **Horizon discipline is unchanged: 6–24 months primarily, opportunistic swings ≥1 month.**
+
+**⇒ The morning discovery sweep is no longer an AI-sector sweep.** Its instruction is: read broadly, filter hard on structural merit, and bring back what is genuinely interesting — sector-agnostic by construction. The filter is QUALITY, not CATEGORY.
 
 ---
 
 ## Universe
+
+**⚠️ THIS TABLE IS A STARTING MAP, NOT A BOUNDARY (clarified 2026-08-07 with the scope widening).** It records where the deepest existing coverage sits. **It does NOT define what may be researched.** Any name from any sector enters on merit; held names enter automatically regardless of sector.
 
 **Pre-stubbed in `companies/`** (folders may not exist yet — created on first ingest):
 
