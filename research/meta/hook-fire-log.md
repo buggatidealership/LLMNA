@@ -1954,8 +1954,14 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-08 15:45:06Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-08 17:33:47Z session-prime-hook event=resume injected=False (skipped non-startup)
 - 2026-08-08 17:36:23Z structural-output-hook FIRE (structural-markers-missing)
+<<<<<<< Updated upstream
 - 2026-08-08 17:39:40Z session-prime-hook event=startup injected=True (30443 chars)
 - 2026-08-08 18:02:45Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift)
 - 2026-08-08 18:02:45Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-08-08 18:02:45Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
 - 2026-08-08 18:47:59Z session-prime-hook event=resume injected=False (skipped non-startup)
+=======
+- 2026-08-08 17:45:15Z session-prime-hook event=resume injected=False (skipped non-startup)
+- 2026-08-08 18:52:46Z session-prime-hook event=resume injected=False (skipped non-startup)
+>>>>>>> Stashed changes
+- 2026-08-08 18:54:36Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))

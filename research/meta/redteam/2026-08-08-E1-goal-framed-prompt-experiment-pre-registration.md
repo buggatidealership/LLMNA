@@ -126,3 +126,115 @@ likely mis-specification was measuring NOVELTY when the operator asked about SCO
 neither novelty nor scope but WHETHER A CHECK ADDS REASONING OR ADDS VOCABULARY** —
 a distinction E1 was not designed to measure. **Booked now, while it is still a
 prediction, so it cannot be presented afterwards as something the experiment found.**
+
+---
+
+## 7. RESULT AND GRADE — booked 2026-08-08, against §3 only
+
+**Returned: INTUIT (INTU, Nasdaq), $325.25, −57% from its 52-week high.** Full
+package on `main` at `companies/INTU/{facts,thesis,interpretations,bottoms-up-and-cascade}.md`.
+
+### 7.1 🔴 THE NOVELTY AXIS IS UNGRADEABLE BY §3. THAT IS A MIS-SPECIFICATION, AND IT WAS PRE-REGISTERED.
+
+| | §3 said | INTU is |
+|---|---|---|
+| **H1 — corpus gravity** | power/grid · data-centre REIT · memory/semi · networking · cooling | ❌ none of these |
+| **H2 — lateral move** | healthcare services · financials · industrials · consumer · non-US ex-Asia | ❌ not cleanly any of these |
+
+🔴 **I CANNOT CLAIM H2 AND WILL NOT.** §5 binds: *"if the result is interesting in
+a way §3 does not cover, that is recorded as a mis-specification of the experiment,
+explicitly labelled, and not converted into a retroactive success condition."*
+**Booked as MIS-SPECIFICATION.**
+
+**Why my categories failed:** ⚠️ **I enumerated SECTORS. The result moved on an
+AXIS.** The winning lane was *"companies sold off BECAUSE OF AI, where the fear is
+wrong"* — **the inverse of this corpus's factor, not a different neighbourhood of
+it.** A sector list cannot express that. **§4 pre-registered exactly this failure
+("novelty may be the wrong thing to measure"), and §6 sharpened it hours before the
+result landed. Both were right, which is worth exactly as much as the prediction
+that was wrong — no more.**
+
+### 7.2 🟢 WHAT §3 *CAN* GRADE — the sub-question, and it is answered
+
+**§3's stated primary question: *"does the corpus's gravity override an explicit
+instruction to ignore it?"*** That is answerable independent of the sector buckets.
+
+**The corpus is ~90% semis/AI-supply-chain by the discovery session's own count.
+The answer came from outside it. ⇒ CORPUS GRAVITY DID NOT WIN.** On the specific
+mechanism I named, the instruction beat the retrieval gradient. **🟢 Directional
+evidence FOR the operator's hypothesis, on a narrower claim than H2 stated.**
+
+**H3 also partially fired and this was not an either/or:** four domains returned an
+explicit **"nothing here"** with reasons (life-science tools — *already re-rated,
++85–114% off lows, we are 9–12 months late*; copper — *the lag I hypothesised does
+not exist*; precious metals — *GDX +21% in a week, that is chasing*; European
+banks/insurance/autos/aerospace). 🟢 **Discarding one's own hypotheses in writing is
+the behaviour §3 called "the hardest of the three."**
+
+### 7.3 🟢 FALSIFIABILITY AXIS — PASS, and on the harness's own hardest standard
+
+Four falsifiers, and **the first set was thrown away by its own author** on the
+grounds that *"a falsifier against an undisclosed metric is decoration"* (Intuit has
+declined to disclose QuickBooks customer count for four quarters). **The replacement
+F1 carries: *"goes blind if they stop breaking out the line — treat the
+disappearance itself as the falsifier firing."*** 🟢 **That is Principle #51
+BLIND-CHECK, satisfied by a session that was never told Principle #51 exists.**
+
+⚠️ **Booked honestly: this is evidence the standard is DISCOVERABLE from the task,
+not that our codification transmitted it.** The session reached it by asking what
+would make the detector stop reading — the same question, arrived at independently.
+
+### 7.4 INDEPENDENT ARITHMETIC CHECK (this session, computed not asserted)
+
+**Every reconcilable figure ties.** Revenue +13.96%→+14.0% ✓ · operating margin
+31.64% vs 30.56% = +1.1pp ✓ · P/E 20.56× on the $15.82 GAAP guide ✓ · FCF yield
+7,590/90,800 = 8.36% ✓ · market-cap-implied share count 279.2M vs diluted-EPS-implied
+279.3M ✓ · Q4 residual EPS $0.77 into the seasonally weakest quarter ✓ · scenario EV
+0.32(−26)+0.40(51)+0.16(112)+0.12(30) = **+33.6% vs the +34% stated** ✓.
+
+🔴 **ONE FINDING THE HEADLINE DOES NOT NET — SBC.**
+
+| | value |
+|---|---|
+| Headline FCF yield | **8.36%** |
+| FY26 SBC run-rate | $2,065M = **2.27% of market cap** |
+| FY26 buyback run-rate | $4,455M = **4.91% of market cap** |
+| Net diluted share-count change | **−1.28%** |
+| **SBC-adjusted FCF yield** | **🔴 6.08%** |
+
+**⇒ Of 4.91% of market cap spent on buybacks, only ~2.6pp retires stock; the rest
+offsets dilution.** ⚠️ **The components are all in `facts.md` — SBC at 9.1% of
+revenue, "buybacks fully offset dilution" — so nothing is hidden. They are simply
+not netted in the metric that carries the argument.** **6.1% at 20.6× GAAP is still
+a defensible thing to own; it is not the same sentence as 8.4%.**
+
+⚠️ **Two summary-vs-canonical drifts in ITS chat report, both minor, both the
+familiar direction — the file is more careful:** (a) *"the price embeds −2.5%
+cash-flow growth in perpetuity"* — `facts.md` gives a **three-row sensitivity**
+(−3.6% / −2.5% / −1.4% at 12% / 10% / 8% starting growth); the conditionality was
+dropped. (b) The Nintendo sentence reads as if 8.4% were Nintendo's yield. **I
+suspected a leaked number, checked the file, and was WRONG — `interpretations.md`
+contrasts the two names correctly.** *(Recorded because a suspicion I acted on and
+disproved is a data point about my own priors, not a finding about theirs.)*
+
+### 7.5 VERDICT
+
+| axis | grade |
+|---|---|
+| **Novelty (sector)** | 🔴 **UNGRADEABLE — experiment mis-specified.** Not a pass, not a fail. |
+| **Scope (did it leave the corpus's gravity well)** | 🟢 **YES** |
+| **Falsifiability** | 🟢 **PASS** — including a blind-check clause reached independently |
+| **Honest nulls reported** | 🟢 **YES — four domains, with reasons** |
+| **Arithmetic integrity** | 🟢 **PASS on every reconcilable line** |
+| **Adversarial honesty** | 🟢 **PASS** — kill attempt landed, cost ~15pp of expected return, reported as the result |
+
+🔴 **WHAT THIS DOES NOT ESTABLISH — §2 still binds.** The hooks fired in that
+session too (its own report: *"three content hooks fired — and they're right"*).
+**So this is evidence for GOAL-FRAMING + FRESH CONTEXT. It is NOT evidence that
+enforcement is the problem — enforcement was present and, on its own account,
+useful.** Anyone reading this later must not upgrade it into an anti-harness result.
+
+**Position implication: 🔴 NO ACTION from this file.** INTU is a 🟡 CANDIDATE with a
+DIRECTIONAL read authored elsewhere; **`holdings.md` untouched; sizing operator-gated.**
+**The SBC adjustment in §7.4 should be carried into `companies/INTU/` before any
+entry decision** — booked as the single open item this grade generates.
