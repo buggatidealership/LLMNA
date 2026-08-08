@@ -1953,3 +1953,4 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-08 18:02:45Z bottoms-up-hook FIRE (B23 sell-side-aggregation-drift)
 - 2026-08-08 18:02:45Z nth-order-cascade-hook FIRE (B21 first-order-anchoring)
 - 2026-08-08 18:02:45Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-08-08 18:47:59Z session-prime-hook event=resume injected=False (skipped non-startup)
