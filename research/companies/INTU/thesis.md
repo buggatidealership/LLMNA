@@ -144,8 +144,19 @@ Staging is not hedging — it is the Phase-1 rule already written into `portfoli
 
 ---
 
+## Bottoms-up, macro anchor and cascade
+
+Three Stop hooks caught this file's first version carrying a multiple argument with **no unit model, no N-th order cascade, and no dated macro anchor**. All three were right. Supplied in **`bottoms-up-and-cascade.md`**; the three results that change how this thesis should be read:
+
+1. **The binding variable is churn, not customer acquisition.** At ~8M QBO subscribers, each $10/month of realised price is ~$960M/yr. The 2026-08-01 increase moved blended list **+40.6%**. At 30% realisation the installed base alone carries revenue **+12.2% at zero churn, +6.6% at 5%, and only +1.0% at 10%**. Falsifier F1 is the observable proxy for a churn number Intuit will not disclose.
+2. **The 1st-order exposure is ~12% of revenue, not the franchise.** Non-Live DIY TurboTax is ~$2,480M of ~$21,357M. Goldman's "$0.12 vs $162 per return" attacks that 12%; ~88% sits at 2nd order or later (system of record + regulated money rails + the liability-bearing advisor channel).
+3. **The bottoms-up FY27 revenue build is +10.2% to +13.9%, and consensus (~+11–12%) sits INSIDE that band.** I claim **no edge on revenue** — which is the correct supporting result for a thesis whose entire claim is about the terminal multiple.
+
+⚠️ **And one honest correction to the portfolio story.** The cascade puts INTU and PLTR on the *same* side of the 2nd-order claim (value accrues to the system of record) — incumbent and challenger expressions of one idea, not opposite bets. Realised correlation INTU↔PLTR is **+0.31**, the highest of the four holdings. The +0.01 to NVDA is real; the "uncorrelated across the book" framing is not.
+
 ## Cross-references
 - `research/companies/INTU/facts.md` — all filing-grade numbers, correlations, reverse-DCF
+- `research/companies/INTU/bottoms-up-and-cascade.md` — unit model, dated macro anchor, N-th order cascade
 - `research/companies/INTU/interpretations.md` — the read, kept separate from the facts
 - `research/watchlist/candidates.md` — the 2026-08-08 discovery sweep and the six domains that returned nothing
 - `research/portfolio/risk-envelope.md` §2 (drawdown), §5 (benchmark ladder) — the bar this is measured against
