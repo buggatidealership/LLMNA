@@ -80,3 +80,49 @@ into a retroactive success condition.
 **Position implication: 🔴 NONE. This is a harness experiment.** Any name it
 returns enters as a research candidate at tier-none and is subject to the same
 verification as any other intake. **Sizing remains operator-gated.**
+
+---
+
+## 6. IN-FLIGHT OBSERVATION — the enforcement layer cannot distinguish "no parallel reasoning" from "parallel reasoning in prose"
+
+**Appended 2026-08-08, same day, BEFORE the experiment result. Recorded here because
+it is evidence about the operator's hypothesis produced incidentally while setting
+the experiment up — not evidence gathered to support a conclusion already reached.**
+
+**N=2 fires of `structural-output-hook` today, on messages written to the operator's
+standing "layman terms" instruction. Verified by reading `STRUCTURAL_MARKERS` in the
+hook source rather than inferring from the block text.**
+
+| # | message content | what the hook required | verdict |
+|---|---|---|---|
+| **1** | Plain-language report of the LLY cosmetic-demand research. **Genuinely had no parallel-hypothesis structure.** | H1/H2/H3 or table | 🟢 **TRUE FIRE.** The forced restatement produced the three-mechanism decomposition now at `companies/LLY/thesis.md` §9.4 — **content that did not previously exist.** |
+| **2** | E1 predictions stated in prose: three named outcomes at **~55% / ~30% / ~15%** with consequences attached. | literal `\bH1\b.*\bH2\b.*\bH3\b`, `P~60%`, or a markdown table | 🔴 **FALSE FIRE.** **The parallel hypotheses were present and weighted. Only the TOKENS were absent.** |
+
+🔴 **THE INSTRUMENT CHECKS PRESENCE, NOT RELATION.** `STRUCTURAL_MARKERS` is a
+literal-token list. It answers *"does the string `H1` appear?"* — never *"did
+parallel reasoning happen?"* **This is the exact weakness the 2026-08-05 N1 audit
+named as the harness's standing structural defect** (`meta/redteam/2026-08-05-N1-postconditions-presence-vs-relation.md`),
+now reproduced in the hook that most directly implements the operator's complaint.
+
+⚠️ **AND THE TWO FIRES POINT OPPOSITE WAYS — WHICH IS THE FINDING.** Fire 1 forced
+thinking that was genuinely missing and paid for itself. Fire 2 forced relabelling
+of thinking already done and cost a turn. **⇒ The dichotomy is NOT "structure vs
+freedom."** It is:
+
+- 🟢 **checks that detect ABSENT reasoning** — these pay, and fire 1 is a receipt
+- 🔴 **checks that detect ABSENT VOCABULARY** — these tax, and fire 2 is a receipt
+
+**The same hook did both, in one session, because it cannot tell the two cases
+apart.** *(Recorded as a CANDIDATE distinction, N=2, one session — not codified.)*
+
+**Consequence, and it is deliberately narrow: NO CHANGE TO THE HOOK.** Disabling or
+loosening LIVE enforcement is Rule #19 HIGH tier and requires operator pre-approval;
+**and doing it mid-experiment would alter the arm being measured.** Logged, left
+running, revisited when E1 returns.
+
+**⇒ THE PRE-REGISTERED SUSPECT LEG (§4) IS ALREADY LOOKING RIGHT.** It said the
+likely mis-specification was measuring NOVELTY when the operator asked about SCOPE.
+**This observation suggests a second mis-specification: the interesting axis may be
+neither novelty nor scope but WHETHER A CHECK ADDS REASONING OR ADDS VOCABULARY** —
+a distinction E1 was not designed to measure. **Booked now, while it is still a
+prediction, so it cannot be presented afterwards as something the experiment found.**
