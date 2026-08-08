@@ -228,3 +228,47 @@ Two legs fired in parallel (Rule #16): market-size/adoption, and adversarial com
 **Research fired 2026-08-08** on how much demand is off-label/cosmetic, how it pays, and the strongest disconfirming case that it is media-inflated anecdote rather than a market. **Deliberately goal-framed with no prescribed method**, per the operator's same-day point about giving a goal and tools rather than a procedure.
 
 **Position implication: 🔴 NO ACTION — unchanged.** No tier, no valuation. **The correction widens the plausible market and weakens the constraint, both in the position's favour — which is exactly why it must not be adopted before the research returns.**
+
+---
+
+## 9. 🔴 THE COSMETIC-DEMAND RESEARCH RETURNED AND IT REFUTES §8's FRAMING — INCLUDING MY OWN AMPLIFICATION OF IT
+
+**§8 accepted the operator's correction and asserted it "STRENGTHENS the §7 3rd-order limb." The research does not support that as stated.** *(subagent-confirmed 2026-08-08.)*
+
+### 9.1 The cash channel is real and large — the cosmetic population is not
+
+| finding | value | source |
+|---|---|---|
+| Cash-pay share of Zepbound scripts | **~20%** | 🟢 T1/T2 Lilly earnings, 2026-08-07 |
+| KFF ever-users reporting an obesity/overweight diagnosis | **77%** ⇒ ~23% did not | 🟢 T1/T2, fielded 2025-10/11 |
+| 🔴 **People injecting UNPRESCRIBED semaglutide — the most "bypass-shaped" behaviour measurable** | **88.5% obese · 8.9% normal weight · 100% female · 81% privately insured** | 🟡 medRxiv preprint (NSDUH 2024), **NOT peer-reviewed** |
+| Heaviest-use demographic | **women 50–64** | 🟢 RAND, n=8,793 |
+| Microdosers citing cost or side-effect management | ~⅓ cost, ~41% side-effects | T2/T3 — **appearance is NOT the leading motive** |
+
+🔴 **CASH-PAY IS NOT COSMETIC. I CONFLATED THEM.** The evidence says cash-payers are overwhelmingly **clinically eligible people whose coverage was denied or unaffordable** — routing around insurance, not sitting outside the clinical population. **Even the population that obtains the drug with no prescription at all is 88.5% obese.**
+
+**The operator's celebrity observation is a real phenomenon** (explicit telehealth marketing to non-obese consumers exists, from smaller players). **What is NOT established is that it is a material market segment.** No population-level BMI-stratified figure exists publicly. **Recorded as "not established," not as "refuted" — those differ.**
+
+### 9.2 🔴 MY ERROR, AND IT IS THE ONE I KEEP MAKING
+
+**In chat I wrote: *"That doesn't weaken the pricing argument — it strengthens it."*** I asserted that **before any evidence existed**, on the strength of a correction that was pleasing because it was the operator's and because it pointed where I already wanted to go.
+
+⚠️ **And the file was more careful than the chat.** §8 states *"which is exactly why it must not be adopted before the research returns."* **The hedge was written down and then dropped on the way to him.** That is the same summary-versus-canonical divergence recorded three times on 2026-08-07 (L57 · the stale §7 · the anchoring strip). **Fourth instance, and the first where it changed an analytical claim rather than a formatting one.**
+
+### 9.3 🟢 BUT THE UNDERLYING INSTINCT SURVIVES — WITH A BETTER MECHANISM THAN EITHER OF US GAVE
+
+**Two things are true at once:**
+1. **The population claim fails.** There is no large non-obese cosmetic market in the data.
+2. **The structural claim holds, and is now better evidenced.** **~20% of scripts are cash-pay** — a fifth of the market genuinely does bypass prior authorisation. **The funnel keyed on insured, diagnosed patients did understate reachable demand. Just not for the reason given.**
+
+🟢 **AND THE STRONGEST DATUM FOR THE PRICE ARGUMENT ARRIVED FROM THE DISCONFIRMING SIDE:** cash-pay patients **discontinue markedly sooner than insured ones — 128 vs 154 days at the 180-day mark** (🟢 IQVIA, 2026-02-10). **They quit because it costs too much.**
+
+**⇒ That is a cost-driven failure mode in a fifth of the market, and a structurally cheaper pill addresses it directly.** The §7 price-war limb is now supported by **observed discontinuation behaviour in real patients** rather than by an inferred cosmetic segment. **Better evidence, different mechanism, same direction.**
+
+⚠️ **It also cuts the other way and that must not be dropped: price-sensitive buyers are, by definition, the least durable revenue.** A market won on price is won at lower margin per patient, and the same data shows those patients leave sooner. **Volume expansion and revenue quality are in tension here.**
+
+### 9.4 What is still missing
+
+🔴 **The single number that would settle this does not appear to exist publicly:** a claims-linkage study tying **BMI at index date** to **payer type**. Everything above is survey self-report or preprint. **Stated as a gap rather than filled.**
+
+**Position implication: 🔴 NO ACTION — unchanged, and no tier.** **One leg of the operator's reasoning is not supported, one is supported by different evidence than he gave, and the price limb is now better founded but carries an unresolved margin-versus-volume tension.** Still no valuation. **Sizing is operator-gated regardless.**
