@@ -182,3 +182,29 @@ Two legs fired in parallel (Rule #16): market-size/adoption, and adversarial com
 ⚠️ **STILL NO TIER, NO PROBABILITY, NO VALUATION.** Competitive-position research is not a valuation. **What is missing: what Lilly is worth at today's price.** Until that runs, no tier can be honest.
 
 **Position implication: 🔴 NO ACTION — no view offered, and none is implied.** The position is held on the operator's decision. **Two of five legs of his stated reasoning broke, one finding supports him on different grounds than he gave, and no valuation work exists.** Sizing is operator-gated regardless.
+
+---
+
+## 7. TRACE — WHAT THE MANUFACTURING ASYMMETRY ACTUALLY IMPLIES (nth-order hook fired; it was right — §3 named a cause and stopped)
+
+**Trigger:** Lilly's oral is a small molecule (no sterile fill-finish, no device assembly, no cold chain); Novo's oral is a peptide plus absorption enhancer, needing more API mass per patient than its own injectable. *(subagent-confirmed 2026-08-08; the per-patient API delta is INFERRED from published dosing, not company-disclosed.)*
+
+**1st order (P>80%) — Lilly can scale oral supply without the bottleneck that caused the 2022–24 shortages.** Nearly mechanical: the constraints that bound injectables are absent from small-molecule tableting. Already visible in the disclosed build-out ($6.5B, >$6B Huntsville, $1.2B Puerto Rico, $3B China). **This is the part §3 stopped at.**
+
+**2nd order (P~60%) — IF ORAL SUPPLY IS UNCONSTRAINED WHILE DEMAND IS NOT, THE BINDING CONSTRAINT MOVES FROM MANUFACTURING TO PAYERS.** During the shortage the winner was whoever could *make* it. Post-shortage, with 104M eligible and <1% penetrated, **the winner is whoever gets *covered and afforded*.** 🔴 **That is a different game with different winners, and it is exactly what the funnel already shows** — >90% prior authorisation, 13 Medicaid states, a partial Medicare bridge, $1,349 list. **The competitive question stops being "can you supply it" and becomes "can you be paid for it."**
+
+**3rd order (P~40%) — AND THIS IS THE INVESTABLE FORM OF THE OPERATOR'S THESIS, SHARPER THAN HE STATED IT.** If the constraint is affordability, the durable winner is whoever can **sustainably price lowest**. Small-molecule cost of goods is structurally far below peptide cost of goods. **⇒ Lilly could fight a price war that Novo cannot structurally match on its oral.** Novo has already declined to discount the pill against its own injectable ($1,349 list, unchanged) — **which is consistent with a company that cannot afford to.**
+🔴 **This inverts the read on the efficacy gap.** A pill at half the weight loss and a *fraction* of the price is not a worse product — **it is a different rung of the market, and it is the rung where 100M untreated people actually sit.** The 12.4%-vs-22.5% gap only kills the thesis if both compete for the same patient at the same price. **They may not.**
+**Falsifier:** Lilly prices Foundayo at parity with injectables and holds it there — that would say management sees it as a premium alternative, not a volume expander, and this whole limb collapses.
+
+**4th order (P~20%, speculative) — if orals get cheap enough to break the coverage barrier, the pool expands by an order of magnitude and the CASUALTIES sit outside pharma entirely.** *(All casualty data subagent-confirmed 2026-08-08; class effects of GLP-1s generally, NOT oral-specific.)*
+- **Bariatric surgery** — already −14.4% (2022→23) and −23% YoY (2024). Clearest structural casualty; likely most priced.
+- **Gastric band/balloon devices** — market shrinking (~$49M→$34M by 2035).
+- **Food / CPG / restaurants** — estimated −$32–44B annual US CPG effect; snacks/confectionery −12.4%; restaurant spend −8% among GLP-1 users.
+- 🔴 **Pen and autoinjector makers (Ypsomed, SHL Medical, Phillips-Medisize) — NOT yet showing damage**, because injectables still hold ~80% share. **This is the cleanest forward-looking casualty of an oral shift specifically, and it is the one with no signal yet.** A leading indicator to watch rather than a conclusion.
+
+**Names whose exposure changed: NONE in the corpus.** Novo Nordisk, Structure Therapeutics, Viking, Ypsomed, Teleperformance-style BPO — **none are held or tracked. This is watchlist territory, not a thesis update.**
+
+**Ties to macro (first-principles read as of 2026-08-08):** our worked-out macro view is AI-infrastructure supply-gating, and **this touches none of it** — which is the point of the 2026-08-07 scope widening. **The transferable link is a MECHANISM, not a sector: "carrying the volume is not capturing the value" (Twilio, 08-07) and "supply advantage only pays once supply is the constraint" (here, 08-08) are the same family of question — WHERE in a chain does the money actually stop?** That question travels across sectors; the AI depth does not.
+
+**Position implication: 🔴 NO ACTION** — no view, no tier, **and note that the 3rd-order limb ARGUES FOR the position while legs D and E argue against it.** That tension is unresolved and is exactly why no tier is assigned. **What would resolve it: Lilly's actual pricing strategy on Foundayo, and a valuation. Neither has been done.**
