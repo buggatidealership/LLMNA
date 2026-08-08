@@ -30,6 +30,28 @@
 🔴 **B40 tally for today: FOUR de-dating/stale-recycle instances** — the refuted Korean supply-delay attribution, the Japan packaging item, the Apollo cover ratio, the 2045→2033. **First day all four were caught before any cascaded.**
 **Position implication: NO ACTION. Weights held H1 60 / H2 11 / H3 29.** Rule #10 cascade still DEFERRED — target file ambiguous per the P0.
 
+## 2026-08-08 — HARNESS COST/BENEFIT, MEASURED RATHER THAN ARGUED (operator: "too many mechanisms")
+
+**Operator's claim:** the harness has too many layers, and this model works better given a goal, tools and freedom over the path than given a prescribed procedure. ⚠️ **The cited interview is NOT verified and is not treated as evidence** — same discipline applied to the unverified "8× more code" figure on 08-07. **But the underlying claim is testable against our own record, so it was computed rather than debated.**
+
+| measure | value |
+|---|---|
+| errors caught by verification, last 2 days | **9** (Korean supply-delay attribution · bond-coverage metric conflation · the 2045→2033 recycle · double-counted Kwak quote · both LLY legs) |
+| open backlog items | **93** |
+| **dated items >7 days stale** | **40 of 91 — 44%** |
+| hook fires today | 3 macro-anchor · 1 structural-output · 1 nth-order |
+
+🔴 **THE SPLIT THIS EXPOSES, and it is the useful output: VERIFICATION PAYS, SCAFFOLDING ROTS.**
+- **Verification** — *do not assert what you have not checked.* Nine catches in two days. Cheap, and it prevented two materially wrong statements to the operator.
+- **Scaffolding** — workflows, categories, required forms, ID systems. **44% decayed, and it actively COST coverage**: the AI-sector-only scope rule made a held position invisible for three weeks. **A rule did not make me careful there; it made me blind.**
+
+🟢 **ONE COUNTER-EXAMPLE, recorded because it cuts against the conclusion:** the nth-order hook fired today on the LLY work, and pushing past it produced the price-war argument — **the best idea in that analysis, and one I did not have before the nudge.** ⇒ **Checks that force more THINKING pay; checks that force more FORMATTING do not.** That is the discriminator, not "hooks good" or "hooks bad."
+
+**Design principle, stated: FREEDOM IN THE PATH, RIGOUR AT THE DESTINATION.** The route should not be prescribed; the output's truth should be checked. **Most current scaffolding constrains the route.**
+
+🔴 **THE NEXT MOVE IS DELETION, NOT CONSTRUCTION.** Two mechanisms were added in 24 hours. **The answer to "too many layers" cannot be another layer** — and building one would be the same trap named in the 08-07 comms rule. The 44% stale backlog is the obvious target. **Not executed unilaterally: retiring process items is a framework change, and the operator has been offered the simpler test instead — give the next question as a goal with no procedure and judge the output.**
+
+
 ## 2026-08-07 (FRI) OPERATOR SESSION — the fresh-session mechanism is BUILT, has RETURNED 10 TIMES, and has been PARKED FOR 10 DAYS
 
 **Operator question (verbatim intent):** *"I've been using the same session for months… how can we use new sessions with fresher context windows… you essentially get a fresh pair of eyes."* Plus: what does the "engineers running ten agents" setup actually look like, and why did my SNDK direction call land when my numbers were the worst of three models.

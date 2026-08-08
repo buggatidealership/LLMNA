@@ -208,3 +208,23 @@ Two legs fired in parallel (Rule #16): market-size/adoption, and adversarial com
 **Ties to macro (first-principles read as of 2026-08-08):** our worked-out macro view is AI-infrastructure supply-gating, and **this touches none of it** — which is the point of the 2026-08-07 scope widening. **The transferable link is a MECHANISM, not a sector: "carrying the volume is not capturing the value" (Twilio, 08-07) and "supply advantage only pays once supply is the constraint" (here, 08-08) are the same family of question — WHERE in a chain does the money actually stop?** That question travels across sectors; the AI depth does not.
 
 **Position implication: 🔴 NO ACTION** — no view, no tier, **and note that the 3rd-order limb ARGUES FOR the position while legs D and E argue against it.** That tension is unresolved and is exactly why no tier is assigned. **What would resolve it: Lilly's actual pricing strategy on Foundayo, and a valuation. Neither has been done.**
+
+---
+
+## 8. 🔴 OPERATOR-CAUGHT ERROR, 2026-08-08 — THE ADDRESSABLE MARKET WAS BUILT ON THE WRONG POPULATION
+
+**§4 built the funnel from "US adults with BMI≥30 = ~104M". The operator's correction:** *"the starting point does not per se have to be obesity… celebrities, actors, anyone that just wants to kill a bit of their appetite. It's just not specific to people that are obese."*
+
+**He is right, and the error is not one of size — it is one of KIND.**
+
+🔴 **The clinical population and the buying population are different sets, and I used the first as a proxy for the second without noticing.** BMI≥30 defines who has a *diagnosis*. It does not define who *wants the drug*. Cosmetic and lifestyle demand sits partly outside it and is invisible to a funnel keyed on prevalence.
+
+🔴 **AND IT LANDS ON THE EXACT VARIABLE §7 CALLED BINDING.** §4 concluded the constraint is **coverage and affordability** — prior authorisation, Medicaid patchwork, $1,349 list. **Cosmetic/lifestyle buyers pay cash and therefore BYPASS that constraint entirely.** A funnel that omits them does not merely undercount the market; **it overstates how binding the constraint is**, because it models every buyer as needing an insurer's permission.
+
+🟢 **This STRENGTHENS the §7 3rd-order limb rather than weakening it.** That limb argued Lilly's small-molecule cost base lets it price where Novo's peptide cannot follow. **A cash-paying cosmetic segment is precisely the buyer that a low-cost oral reaches and a $1,349 reimbursed injectable does not.** The operator's correction and the price-war argument are the same insight arriving from opposite directions.
+
+**Registered as a genuine INPUT-layer error** — the number was right, the population it described was the wrong one for the question. Same family as the basis errors of 2026-08-05/07: *a correct quantity measured against the wrong reference set.*
+
+**Research fired 2026-08-08** on how much demand is off-label/cosmetic, how it pays, and the strongest disconfirming case that it is media-inflated anecdote rather than a market. **Deliberately goal-framed with no prescribed method**, per the operator's same-day point about giving a goal and tools rather than a procedure.
+
+**Position implication: 🔴 NO ACTION — unchanged.** No tier, no valuation. **The correction widens the plausible market and weakens the constraint, both in the position's favour — which is exactly why it must not be adopted before the research returns.**
