@@ -267,7 +267,25 @@ Two legs fired in parallel (Rule #16): market-size/adoption, and adversarial com
 
 ⚠️ **It also cuts the other way and that must not be dropped: price-sensitive buyers are, by definition, the least durable revenue.** A market won on price is won at lower margin per patient, and the same data shows those patients leave sooner. **Volume expansion and revenue quality are in tension here.**
 
-### 9.4 What is still missing
+### 9.4 THE DECOMPOSITION §9.3 LEFT IMPLICIT — three revenue mechanisms, not one
+
+⚠️ **WHY THIS SECTION EXISTS, STATED PLAINLY:** §9.1–9.3 established *that* a cheaper oral matters and *why* the cosmetic framing failed. **It never separated the mechanisms by which an oral changes the revenue base — and they have opposite signs.** This was written first in chat and is being written here to close the same summary-versus-canonical gap §9.2 documents. **Same defect class, opposite direction: chat holding analysis the canonical file lacked.**
+
+**Three readings run simultaneously. They are not sequenced and not mutually exclusive:**
+
+| | mechanism | weight | consequence for the position |
+|---|---|---|---|
+| **H1 — EXPANSION** | Oral reaches patients who never initiated an injectable at all. Primary-care prescribing, retail pharmacy, **no cold chain, no titration device**. | **~50%** | 🟢 **Accretive.** The version where the **small-molecule manufacturing asymmetry** (§ earlier trace — no peptide fill-finish ceiling) is the binding advantage. Supports hold-and-build. |
+| **H2 — CANNIBALISATION** | Existing Zepbound patients migrate down to a cheaper oral. Volume up, **revenue per patient down**. | **~25%** | ⚠️ **Flat-to-negative near term.** But **Lilly sets both prices** — this is partly a *chosen* margin trade for share defence vs Novo. Not thesis-breaking; is a **multiple-compression** risk. |
+| **H3 — DURABILITY REPAIR** | Same patients, **fewer quit**. The **128-vs-154-day** gap (§9.3) closes because cost stops being the reason for discontinuation. | **~25%** | 🟢 **The limb nobody models.** **More months per patient at a lower monthly price can beat fewer months at a higher one.** This is where the operator's instinct lands once restated correctly. |
+
+🔴 **WEIGHTS ARE JUDGEMENT, NOT DERIVED.** No model produced them; they encode a ranking (H1 > H2 ≈ H3), not a calibrated probability. **Stated so no later reader inherits them as computed.** *(L58 basis-mismatch discipline — the recurring failure is a soft number hardening as it travels.)*
+
+**⇒ CONSEQUENCE, because a weight without one is decoration (operator, 2026-08-07):** **H1 and H3 argue the same direction and jointly carry ~75%** ⇒ the read is **hold and build on weakness, NOT trade the launch**. **Sizing remains operator-gated; this is a direction, not an instruction.**
+
+🟢 **PRE-REGISTERED FALSIFIER — checkable at launch, no model required:** **if oral list/net pricing arrives close to injectable pricing, H1 collapses** (the access unlock never happens) **and H2 becomes the base case.** That single datapoint reallocates the weight. **Registered in advance so the reallocation cannot be done retroactively to fit whatever the stock did.**
+
+### 9.5 What is still missing
 
 🔴 **The single number that would settle this does not appear to exist publicly:** a claims-linkage study tying **BMI at index date** to **payer type**. Everything above is survey self-report or preprint. **Stated as a gap rather than filled.**
 
