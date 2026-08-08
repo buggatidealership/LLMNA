@@ -26,6 +26,8 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 - AXTI **EXITED** 2026-05-29 — `companies/AXTI/thesis.md`; HDS **EXITED** 2026-06-09 — `companies/HDS/thesis.md`
 - TE **EXITED** (date unrecorded, pre-2026-07-05; user-confirmed 2026-07-06 after harness-audit catch) — `companies/TE/thesis.md`; PURR **EXITED** (same — undocumented earlier sale) — `companies/PURR/thesis.md`
 
+**🆕 2026-08-08 PROPOSED ADDITION — INTUIT (INTU, Nasdaq, $325.25):** the single name surfaced by the unbounded portfolio-addition sweep (7 agents, 6 sectors fenced out of AI + 1 adversarial kill pass). −57% from 52w high; 20.6× FY26 GAAP; 8.4% FCF yield; reverse-DCF implies −2.5% terminal growth in perpetuity. Displacement fear has **zero** customer-level evidence; the real problem is that growth is price-carried. Prob-weighted +34% (was +49% before the kill attempt). **`companies/INTU/`** · sweep + four honest "nothing here" domains in `watchlist/candidates.md` §2026-08-08. Runners-up: Nintendo 7974 · Rheinmetall RHM · argenx ARGX.
+
 **Active-candidate (not held):** IBIDEN (TIER S+ deep-dig priority; ABF bear-case inverted; glass-core medium-term displacement risk surfaces); CAMT (TIER S equipment vector at PLP layer); BESI (TIER S equipment vector at PLP die-attach layer)
 
 **Monitor-only (WATCHLIST — NOT investable via user's brokers directly):** CXMT (watchlist only; premium-tier HBM qualification at NVDA = TC-1 falsifier candidate; tracked via PM-CXMT-SEMIANALYSIS + PM-JUKAN-CXMT cross-source-log artifacts 2026-06-23)
@@ -120,6 +122,10 @@ Read `portfolio/holdings.md` for canonical positions + sizing. Held cohort as of
 | **2026-09-12** | B45 cohort base-rate quarterly recalibration | Magnitude conservatism re-anchor |
 | **2026-09-13** | **PC-13 90-day promotion check** (Government emergency-order model-shutdown precedent N=2 watch) | TC-10 H_d + bypass-route cohort |
 | **2026-09-17** | PC-14 first re-eval (Universal Sovereign-AI Bifurcation Doctrine) | TC-10 + T6 + NBIS thesis |
+| **2026-08-11** | H&R Block FY26 results — industry DIY unit truth (INTU F2 cross-check) | INTU candidate |
+| **2026-08-25** AMC | **INTUIT Q4+FY26 results + first FY27 guide** (INTU falsifier F3; carries the $300–340M restructuring charge) | INTU candidate |
+| **2026-09-17** | **INTUIT Investor Day** — F1 blind-check: do they finally disclose QuickBooks Online customer count? | INTU candidate |
+| ~2026-11 | Nintendo 7974 Q2 FY27 print — the guidance-raise binary | Runner-up watch |
 | 2026-11-XX | Epic Penny launches | WAY moat falsifier |
 | **2026-07-24 (next monthly audit)** | INDEX.md + tags.md refresh + monthly audit #2 | All meta/ frameworks; L27 empirical resolution graded (B46 promotion EXECUTED 2026-07-20) |
 

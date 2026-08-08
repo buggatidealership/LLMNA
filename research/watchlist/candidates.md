@@ -2063,3 +2063,39 @@ Next step (gate): one verification pass per verb (share/backlog/B39/access) BEFO
 - **Seagate (STX) / Western Digital (WDC)** — storage cohort trading as one book with SNDK (−7 to −12% 07-28, T2); candidates for cohort-decoupling reads.
 - **DUV-subsystem Japan cluster (unworked thread, HIGH value): Gigaphoton, Ushio, Canon/Nikon optics, Tokyo Seimitsu** — if China solves tool assembly, the choke point migrates to the subsystems it still imports; the load-bearing sentence in the Reuters piece (artifact §6.1).
 - **Recursive Superintelligence** (private; added 2026-07-28 EVE) — Socher-founded self-improving-AI lab; $650M raise at $4.65B (2026-05-13, GV/Greycroft + AMD Ventures + NVIDIA); **$410M multi-year AWS compute deal 07-28 (T1 AWS release), no equity component, ≈63% of treasury, pre-product**. On radar as the cleanest specimen of the opex→compute substitution class (agents-over-headcount) and of vendor-unbundled compute booking (capital ≠ compute provider). Per `signals/cross-source-log/2026-07-28-tue-eve-ai-brief-intake-samsung-defections-openai-hf-cluster.md` §2.3.
+
+---
+
+## 🔎 2026-08-08 — UNBOUNDED PORTFOLIO-ADDITION SWEEP (7 parallel agents, sector-agnostic by construction)
+
+**Origin:** operator directive — *"find one company we should own that we don't"* — with scope explicitly unbounded and an explicit warning: *"If the only names you surface rhyme with what the corpus already covers, the search was too narrow."*
+
+**Method:** six discovery agents fenced HARD out of the AI-infrastructure complex (no semis, semicap, memory, packaging, AI networking, AI-datacenter power, hyperscalers, AI application software) + one adversarial kill-agent on the winner. Bar applied throughout: must plausibly beat BOTH the better of NDX/SPX total return AND buy-and-hold NVDA over 6–24 months (`portfolio/risk-envelope.md` §5). NVDA reference: **$223.96, 22.4× forward** (2026-08-07).
+
+**Outcome: ONE name proposed — `companies/INTU/thesis.md`. Three genuine runners-up. Four domains returned an honest "nothing here."**
+
+### Cleared the bar (ranked)
+
+| # | Name | Ticker / venue | Price 2026-08-07 | The setup | Why ranked here |
+|---|---|---|---|---|---|
+| **1** | **Intuit** | INTU, Nasdaq | **$325.25** | −57% from 52w high; 20.6× FY26 GAAP / 13.7× non-GAAP; 8.4% FCF yield; reverse-DCF implies **−2.5% terminal growth in perpetuity**; displacement fear has **zero** customer-level evidence | Only candidate whose multiple has ALREADY compressed. Return needs the market to stop pricing extinction, not growth to accelerate. **See `companies/INTU/`** |
+| 2 | **Nintendo** | 7974, TSE | ¥8,043 | −46% from ATH; **Q1 FY27 delivered 38.5% of full-year OP guidance in the seasonally weakest quarter, guidance unchanged**; net cash 21% of cap; ROIC 52.8% | Cleanest *arithmetic* edge of the seven. Ranked 2nd: revenue −9.5%, ~¥45bn one-off tariff refund in Q1, year-2 hardware cycle, TSE 100-share lots (~€4,600), unhedged JPY. **Elegant offset: its main cost headwind is memory pricing, driven by the AI capex this book is long.** Re-eval: **Nov 2026 Q2 print** |
+| 3 | **Rheinmetall** | RHM, Xetra | €1,146.40 | −43% from high on a **2% guidance cut**; backlog €80.4bn = 5.7yr, 70% firm, book-to-bill >3×; 25.3× fwd on 28–31% growth | Bear case has DATA not narrative: H1 FCF **−€1.6bn** on €6.2bn inventory build, 4 consensus misses in 6 quarters, monopsony customer cancelled the €12.8bn F126 frigate after spending €2.3bn. Own agent: ~50/50 vs NVDA |
+| 4 | **argenx** | ARGX, Euronext Brussels | $865.04 | Product sales +60%, 90% GM, operating profit +146%, $5.2B net cash; lead competitor's batoclimab discontinued Apr-2026; 24.6× 2027E | Excellent business — rejected as an ADDITION because it is only **9% off its ATH**. It is a fifth bet of the same shape as the existing four: quality growth at a full multiple, failing the same way |
+
+**Also surfaced, not recommended:** Nu Holdings (NU, $13.84, 16.3× fwd, 30% ROE — but the tail is a *capital event* not a de-rating: 15–90d NPL +89bp to 5.0% in Q1; Q2 print 2026-08-13) · Grab (GRAB, $3.66, ~13× EV/EBITDA, 36% of cap in net cash — but GAAP operating income is **$19M on $997M revenue**; the "profit" is interest income) · Alnylam (ALNY, −56% drawdown, 24.5× fwd — but the add-on-to-stabiliser efficacy problem is mechanistic and dated) · Symbotic (85% Walmart concentration, 22% GM, 58× fwd).
+
+### Honest "nothing here" — recorded so the ground is not re-walked
+
+| Domain | Finding |
+|---|---|
+| **Energy / materials / commodities** | Nothing clears without a commodity-price forecast. **Copper already priced** (FCX $69.62 vs $72.28 52w high, 34× P/E — the hypothesised equity-vs-metal lag does not exist). Precious metals: **GDX +21% in the week to Aug-7**, +57.7% 12m — recommending into a move that already happened; at flat spot AEM yields 5.9% / PAAS 9.0%, neither clears. **Tankers killed by their own orderbook** (130m dwt = 27% of fleet, 183 VLCC contracts H1'26 vs 18 H1'25 — capital indiscipline firing at maximum). Fertilizer: demand destruction, not a turn |
+| **Life-science tools / bioprocessing / payers** | **The de-rating was wrong AND the market already paid it out, H2-2025→H1-2026. We are 9–12 months late.** Danaher bioprocessing orders +30% in Q1'26; Repligen book-to-bill "significantly above 1" — and ILMN/BRKR/AVTR/CRL are now +85–114% off their lows, within 0–19% of 52w highs, PTs 0–13% above spot. **Repligen 72× forward for 12% growth.** UNH +73% off its low, Centene +162%. Do not buy this recovery |
+| **Financials** | **European banks are done** — EURO STOXX Banks +76% in 2025 (best year ever), aggregate P/B at pre-GFC highs, ECB itself flags the re-rating as complete. Exchanges at/near long-run averages on mid-single-digit growth. **Insurance is a short-avoid** — Jan-2026 renewals saw property cat **−10% to −20%** with dedicated capital +9%. Visa/Mastercard fear is real but 27.7×/29.2× fwd on 10–12% growth is not enough |
+| **Consumer / industrials / Japan reform** | **Aerospace aftermarket thesis correct and fully priced** (Safran 36× P/E). **Autos are a confirmed value trap** — CLEPA: 1 in 4 European suppliers expects negative profitability in 2026, 76% expect sub-5% margins. **Japan governance is real but is an index trade, not a stock trade** — best single name (Seven & i) has its 7-Eleven NA IPO slipped to 2027+ and buyback running to FY2030. LVMH: genuine trough (FLG −7→−3→−2→**+1%**) but ~10–18%/yr, fails the bar |
+| **Space / crypto rails / humanoids** | *"The categories flagged as most likely to hide something are the ones where I found the least."* AST SpaceMobile burning $1.37B TTM on $150–200M guided revenue. Rocket Lab **73× sales** with Neutron never flown. Coinbase revenue −18.5% with a $359M GAAP loss at record market share |
+
+### Method notes worth keeping
+- **The winner was found by a hypothesis no domain agent was assigned:** *companies sold off BECAUSE of AI, where the fear is wrong.* The six sector sweeps were fenced out of AI by design and would never have reached it. **Cross-cutting factor hypotheses need their own lane alongside sector lanes.**
+- **The discriminator that did the work** was applying the same test to a control: Boston Scientific is also −53% in 2026, and its numbers **confirm** the de-rating (organic growth guided 19.5% → 10–11% → 6.5–8% → 5–6% across three cuts). Intuit's contradicted it. A de-rating is only interesting when the numbers disagree with it.
+- **The adversarial pass on the winner cost it 15 points of expected return** (+49% → +34% probability-weighted) and forced a complete falsifier rebuild — the original set was written against QuickBooks Online customer count, which **Intuit has declined to disclose for four straight quarters.** A falsifier against an undisclosed metric is decoration. This is Principle #51 (BLIND-CHECK) earning its place.
