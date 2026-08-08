@@ -238,3 +238,68 @@ useful.** Anyone reading this later must not upgrade it into an anti-harness res
 DIRECTIONAL read authored elsewhere; **`holdings.md` untouched; sizing operator-gated.**
 **The SBC adjustment in §7.4 should be carried into `companies/INTU/` before any
 entry decision** — booked as the single open item this grade generates.
+
+---
+
+## 8. 🔴 CORRECTION TO §6 — the dichotomy was wrong, and the third fire is what shows it
+
+**Appended after fires 3 and 4, same day. §6 told the operator the enforcement layer
+splits two ways. That was an N=2 generalisation and N=3 broke it.**
+
+| fire | what the message contained | class | verdict |
+|---|---|---|---|
+| **1** LLY report | no parallel structure existed at all | **absent REASONING** | 🟢 TRUE — produced `LLY/thesis.md` §9.4 |
+| **2** E1 predictions | three weighted outcomes in prose; only tokens missing | **absent VOCABULARY** | 🔴 FALSE — cost a turn |
+| **3** E1 grade (structural) | linear narrative; **genuinely no weighted hypotheses** | **absent REASONING** | 🟢 **TRUE. Not another false fire — I was about to score it as one.** |
+| **4** E1 grade (macro-anchor) | position-relevant read on INTU, **no dated macro frame carried** | 🔴 **absent INHERITANCE — a third class §6 did not have** | 🟢 **TRUE, and the most useful of the four** |
+
+### 8.1 Why fire 4 is a different animal
+
+**The macro anchor was not missing from the corpus. It exists, dated, at
+`companies/INTU/bottoms-up-and-cascade.md` §0** — *"first-principles read as of
+2026-08-08"*, written by the discovery session **because its own `macro-anchor-hook`
+fired on the first draft of that thesis.**
+
+⚠️ **So the reasoning existed, was correct, was written down — and did not travel
+into my message.** That is not missing thinking and not missing vocabulary. **It is
+missing LINKAGE, and it is the FIFTH instance of summary-versus-canonical drift
+recorded this week** (L57 · the stale §7 · the chat anchoring strip · the LLY
+"strengthens the pricing argument" · this).
+
+### 8.2 🔴 AND `anchor-inheritance-hook.py` — built 2026-08-07 for exactly this — HAS A SCOPE HOLE
+
+**Verified by reading the source, not inferred:**
+- `ARTIFACT_DIR = "research/signals/cross-source-log/"` — **it watches one directory**
+- `recent_anchored_artifacts()` reads `git show --name-only HEAD` — **it watches one commit, by this session**
+
+**The INTU macro anchor is in `research/companies/` and was committed by ANOTHER
+session. Both conditions fail. The hook could not have fired.** 🔴 **I built a
+mechanism on 2026-08-07 to stop anchors being stripped from chat summaries, and
+four weeks of corpus later the first anchor that got stripped was invisible to it.**
+
+**The generalisable form, which is the actual lesson:** ⚠️ **the hook enforces a
+relation between MY message and MY last commit. The relation that matters is
+between my message and THE CORPUS — regardless of who wrote it or when.** A
+multi-session corpus breaks every single-session assumption baked into the
+enforcement layer, and this is the first place it showed.
+
+### 8.3 Consequence — deliberately NOT a rebuild
+
+🔴 **NO CODE CHANGE MADE.** Widening the hook is cheap and I am not doing it
+unilaterally: the operator's standing correction (2026-08-07) is that this harness
+over-builds, and *"the correction for over-engineering cannot itself be
+engineered."* **Recorded, scoped, costed — and left for him.** The fix is two
+constants (directory set, commit range); it is not urgent; it is his call.
+
+**What I told him in chat before this fire — that the split is reasoning-vs-vocabulary
+— was wrong by omission, and the correction is going to him in the same turn rather
+than sitting in this file. That is the whole point of §8.1.**
+
+**Position implication: 🔴 NO ACTION.** ⚠️ **Open item this generates, carried to
+`companies/INTU/`: the SBC-adjusted 6.08% yield (§7.4) and the Xero FY26 North
+America subscriber disclosure — the discovery session's own highest-value open item,
+unclosed because its search budget ran out — both belong in the file before any
+entry decision.** *(Ties to macro: `INTU/bottoms-up-and-cascade.md` §0, dated
+2026-08-08 — 2026 as the year the market priced agentic AI as a TRANSFER of value,
+bidding capacity suppliers and selling incumbent workflow owners as one paired trade.
+Intuit is a position in the short leg of that trade, not a stock-specific de-rating.)*

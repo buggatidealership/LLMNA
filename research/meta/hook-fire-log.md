@@ -1965,3 +1965,5 @@ Baseline before instrumentation (from transcript archaeology, deduped — see `r
 - 2026-08-08 18:52:46Z session-prime-hook event=resume injected=False (skipped non-startup)
 >>>>>>> Stashed changes
 - 2026-08-08 18:54:36Z git-guard-pretooluse BLOCK (git plumbing that discards commits/refs/working-tree (history/record class))
+- 2026-08-08 18:57:42Z macro-anchor-hook FIRE (missing macro-anchor / research-tag / tie-together)
+- 2026-08-08 18:57:42Z structural-output-hook FIRE (structural-markers-missing)
